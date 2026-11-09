@@ -856,6 +856,7 @@ const DRAWINGS_DATA = [
     level: 3,
     levelName: "Usta Sanatçı (Seviye 3)",
     levelBadge: "🔴 Usta",
+    previewImage: "assets/images/ates_ejderhasi_master.jpg",
     description: "22 adımda profesyonel konsept sanat kalitesinde kükreyen çene, tam pul zırh dokusu, dev yarasa kanatları ve ağzından fışkıran ateş fırtınası.",
     materials: "1 Adet Kağıt, Dereceli Kurşun Kalemler, Silgi ve Koyu Bordo, Kırmızı, Turuncu, Parlak Sarı Kalemler",
     colors: [

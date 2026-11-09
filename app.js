@@ -566,11 +566,16 @@ class KivancDrawingApp {
       const card = document.createElement('div');
       card.className = 'drawing-card';
 
-      // Kartta profesyonel bitmiş illüstrasyon gösterilir (previewSvg)
+      // previewSvg yerine gerçek resim desteği:
+      const previewContent = item.previewImage 
+        ? `<image href="${item.previewImage}" x="0" y="0" width="600" height="600" preserveAspectRatio="xMidYMid meet"/>`
+        : item.previewSvg;
+
+      // Kartta profesyonel bitmiş illüstrasyon gösterilir (previewContent)
       card.innerHTML = `
         <div class="card-svg-wrapper">
           <svg viewBox="0 0 600 600" class="card-preview-svg">
-            ${item.previewSvg}
+            ${previewContent}
           </svg>
         </div>
         <h3 class="card-title">${item.emoji} ${item.name}</h3>
@@ -612,8 +617,12 @@ class KivancDrawingApp {
     this.preLessonLevel.textContent = drawing.levelBadge;
     this.preLessonSteps.textContent = `${drawing.steps.length} Adımda Tamamla`;
 
-    // Bitmiş Profesyonel Referans İllüstrasyonu Yükle
-    this.preLessonSvg.innerHTML = drawing.previewSvg;
+    // Bitmiş Profesyonel Referans İllüstrasyonu Yükle (Gerçek resim veya SVG)
+    const previewContent = drawing.previewImage 
+      ? `<image href="${drawing.previewImage}" x="0" y="0" width="600" height="600" preserveAspectRatio="xMidYMid meet"/>`
+      : drawing.previewSvg;
+
+    this.preLessonSvg.innerHTML = previewContent;
 
     // Renk Paleti Çipleri
     this.preLessonColors.innerHTML = '';
@@ -712,23 +721,21 @@ class KivancDrawingApp {
     this.instructionTitle.textContent = step.title;
     this.instructionDesc.textContent = step.instruction;
 
-    // Önceki adımların SVG çizgileri (gri / tamamlanmış)
-    let prevSvg = '';
-    for (let i = 0; i < this.currentStep; i++) {
-      prevSvg += this.currentDrawing.steps[i].svg;
+    // Önceki ve şimdiki adım (Resim veya SVG desteği)
+    if (step.image) {
+      this.layerPrevious.innerHTML = '';
+      this.layerCurrent.innerHTML = `
+        <image href="${step.image}" x="0" y="0" width="600" height="600" preserveAspectRatio="xMidYMid meet" />
+      `;
+    } else {
+      // Eski SVG desteği
+      let prevSvg = '';
+      for (let i = 0; i < this.currentStep; i++) {
+        prevSvg += this.currentDrawing.steps[i].svg;
+      }
+      this.layerPrevious.innerHTML = `<g class="svg-stroke-prev">${prevSvg}</g>`;
+      this.layerCurrent.innerHTML = `<g class="svg-stroke-current">${step.svg}</g>`;
     }
-    this.layerPrevious.innerHTML = `
-      <g class="svg-stroke-prev">
-        ${prevSvg}
-      </g>
-    `;
-
-    // Şimdiki adımın SVG çizgileri (kalın canlı siyah / mavi kılavuz)
-    this.layerCurrent.innerHTML = `
-      <g class="svg-stroke-current">
-        ${step.svg}
-      </g>
-    `;
 
     // Boyama katmanı sıfırla
     this.layerColoring.innerHTML = '';
@@ -978,10 +985,14 @@ class KivancDrawingApp {
     this.stopTimer();
     this.audio.playVictoryFanfare();
 
-    // Tamamlanan eseri kutlama modalında göster
+    // Tamamlanan eseri kutlama modalında göster (Gerçek resim veya SVG)
+    const previewContent = this.currentDrawing.previewImage
+      ? `<image href="${this.currentDrawing.previewImage}" x="0" y="0" width="600" height="600" preserveAspectRatio="xMidYMid meet"/>`
+      : this.currentDrawing.previewSvg;
+
     this.modalPreviewBox.innerHTML = `
       <svg viewBox="0 0 600 600">
-        ${this.currentDrawing.previewSvg}
+        ${previewContent}
       </svg>
     `;
 
