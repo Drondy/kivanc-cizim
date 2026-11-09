@@ -304,12 +304,14 @@ class KivancDrawingApp {
 
     // 3. Breadcrumb Geri Butonu
     if (this.btnBackCategories) {
-      this.btnBackCategories.addEventListener('click', () => {
+      const handleBack = (e) => {
+        if (e && e.type === 'touchend') e.preventDefault();
         this.audio.playPop();
         this.activeCategory = 'all';
-        this.updateCategoryPills();
         this.renderView();
-      });
+      };
+      this.btnBackCategories.onclick = handleBack;
+      this.btnBackCategories.addEventListener('touchend', handleBack, { passive: false });
     }
 
     // 4. Workshop Başlık Butonları
@@ -525,23 +527,29 @@ class KivancDrawingApp {
         ? DRAWINGS_DATA.filter(d => d.categoryId === cat.id).length
         : DRAWINGS_DATA.filter(d => d.categoryId === cat.id && String(d.level) === this.activeLevel).length;
 
-      const card = document.createElement('div');
+      const card = document.createElement('button');
+      card.type = 'button';
       card.className = 'category-folder-card';
+      card.setAttribute('role', 'button');
+      card.setAttribute('tabindex', '0');
       card.innerHTML = `
         <span class="cat-card-icon">${cat.emoji}</span>
         <h3 class="cat-card-title">${cat.name}</h3>
         <p class="cat-card-desc">${cat.desc || 'Keşfetmeye hazır çizim dünyası'}</p>
         <div class="cat-card-footer">
           <span class="cat-badge-count">${count} Çizim</span>
-          <span class="cat-card-enter">Aç ➔</span>
+          <span class="cat-card-enter">Aç →</span>
         </div>
       `;
 
-      card.addEventListener('click', () => {
+      const selectCat = (e) => {
+        if (e && e.type === 'touchend') e.preventDefault();
         this.audio.playPop();
         this.activeCategory = cat.id;
         this.renderView();
-      });
+      };
+      card.onclick = selectCat;
+      card.addEventListener('touchend', selectCat, { passive: false });
 
       this.categoryFoldersGrid.appendChild(card);
     });
@@ -589,11 +597,14 @@ class KivancDrawingApp {
         </button>
       `;
 
-      // Karta dokununca DERS ÖNCESİ BİTMİŞ RESİM REFERANSI açılır
-      card.addEventListener('click', () => {
+      // Karta dokununca DERS ÖNCESİ BİTMİŞ RESİM REFERANSI açılır (Touch + Click desteği)
+      const openLesson = (e) => {
+        if (e && e.type === 'touchend') e.preventDefault();
         this.audio.playPop();
         this.openPreLessonModal(item.id);
-      });
+      };
+      card.onclick = openLesson;
+      card.addEventListener('touchend', openLesson, { passive: false });
 
       this.drawingGrid.appendChild(card);
     });

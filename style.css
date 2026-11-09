@@ -342,6 +342,12 @@ body {
 }
 
 .category-folder-card {
+  appearance: none;
+  -webkit-appearance: none;
+  font: inherit;
+  color: inherit;
+  width: 100%;
+  outline: none;
   background: #ffffff;
   border-radius: var(--border-radius-lg);
   border: 4px solid #e2e8f0;
@@ -356,6 +362,8 @@ body {
   position: relative;
   overflow: hidden;
 }
+
+.category-folder-card * { pointer-events: none; }
 
 .category-folder-card::before {
   content: '';
