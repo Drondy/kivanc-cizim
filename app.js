@@ -155,7 +155,8 @@ class KivancDrawingApp {
     this.timerRemaining = 15;
     this.timerInterval = null;
 
-    // Türkçe Ses Sentezi Motoru (TTS)
+    // Gerçek İnsan Sesi & TTS Motoru
+    this.currentVoiceAudio = null;
     this.synth = window.speechSynthesis || null;
     this.speechVoice = null;
     this.initVoice();
@@ -169,7 +170,12 @@ class KivancDrawingApp {
     if (!this.synth) return;
     const findTurkish = () => {
       const voices = this.synth.getVoices();
-      this.speechVoice = voices.find(v => v.lang.startsWith('tr')) || null;
+      const trVoices = voices.filter(v => v.lang.startsWith('tr') || v.lang.replace('_', '-').startsWith('tr'));
+      if (trVoices.length > 0) {
+        // En kaliteli doğal sesi seç (Enhanced, Premium, Siri, Natural, Neural)
+        const natural = trVoices.find(v => /premium|enhanced|siri|natural|neural/i.test(v.name));
+        this.speechVoice = natural || trVoices[0];
+      }
     };
     findTurkish();
     if (this.synth.onvoiceschanged !== undefined) {
@@ -177,14 +183,48 @@ class KivancDrawingApp {
     }
   }
 
-  speak(text) {
-    if (!this.synth || !this.audio.soundEnabled || !text) return;
+  speak(text, audioUrl) {
+    if (!this.audio.soundEnabled) return;
+
+    // Önceki sesleri durdur
+    if (this.currentVoiceAudio) {
+      try {
+        this.currentVoiceAudio.pause();
+        this.currentVoiceAudio.currentTime = 0;
+      } catch (e) {}
+      this.currentVoiceAudio = null;
+    }
+    if (this.synth) {
+      try { this.synth.cancel(); } catch (e) {}
+    }
+
+    // 1. ÖNCELİK: Stüdyo Kalitesinde Gerçek İnsan Sesi (MP3)
+    if (audioUrl) {
+      try {
+        const audio = new Audio(audioUrl);
+        this.currentVoiceAudio = audio;
+        audio.play().catch(err => {
+          console.warn("MP3 oynatılamadı, doğal Web Speech ile konuşuluyor:", err);
+          this.speakWebSpeech(text);
+        });
+        return;
+      } catch (e) {
+        console.warn("Audio nesnesi oluşturulamadı:", e);
+      }
+    }
+
+    // 2. FALLBACK: Web Speech API (Doğal İnsan Tonu: pitch 1.0, rate 0.98)
+    this.speakWebSpeech(text);
+  }
+
+  speakWebSpeech(text) {
+    if (!this.synth || !text) return;
     try {
       this.synth.cancel();
       const utter = new SpeechSynthesisUtterance(text);
       utter.lang = 'tr-TR';
-      utter.rate = 0.92;  // 6 yaşındaki çocuğun net anlaması için hafif tane tane
-      utter.pitch = 1.15; // Neşeli ve dostça öğretmen tonu
+      utter.rate = 0.98; // Doğal insan hızı (kesinlikle yavaşlatılmamış)
+      utter.pitch = 1.0;  // 1.0 = Robotik olmayan, gerçek insan frekansı
       if (this.speechVoice) {
         utter.voice = this.speechVoice;
       }
@@ -363,7 +403,7 @@ class KivancDrawingApp {
     this.btnSpeakStep.addEventListener('click', () => {
       this.audio.playPop();
       const step = this.currentDrawing.steps[this.currentStep];
-      if (step) this.speak(step.voice || step.instruction);
+      if (step) this.speak(step.voice || step.instruction, step.audio);
     });
 
     // 11. Sayaç Aç / Kapat
@@ -402,6 +442,13 @@ class KivancDrawingApp {
       } else {
         pillIcon.textContent = '🔇';
         pillText.textContent = 'Ses Kapalı';
+        if (this.currentVoiceAudio) {
+          try {
+            this.currentVoiceAudio.pause();
+            this.currentVoiceAudio.currentTime = 0;
+          } catch(e) {}
+          this.currentVoiceAudio = null;
+        }
         if (this.synth) this.synth.cancel();
       }
     });
@@ -650,8 +697,9 @@ class KivancDrawingApp {
 
     this.preLessonModal.classList.remove('hidden');
 
-    // Kıvanç'a sıcak sesli karşılama
-    this.speak(`${drawing.name} çizmeye hazır mısın Kıvanç? Kağıdını ve kalemini hazırla, birlikte çizelim!`);
+    // Kıvanç'a sıcak sesli karşılama (Gerçek insan sesi veya doğal ses)
+    const welcomeTxt = drawing.welcomeText || `${drawing.name} çizmeye hazır mısın Kıvanç? Kağıdını ve kalemini hazırla, birlikte çizelim!`;
+    this.speak(welcomeTxt, drawing.welcomeAudio);
   }
 
   closePreLessonModal() {
@@ -743,24 +791,8 @@ class KivancDrawingApp {
       for (let i = 0; i < this.currentStep; i++) {
         prevSvg += (this.currentDrawing.steps[i].svg || '');
       }
-      const tempDiv = document.createElement('div');
-      tempDiv.innerHTML = `<svg>${prevSvg}</svg>`;
 
-      const isFinalStep = (this.currentStep === total - 1);
-      if (isFinalStep) {
-        // Son adım tam renklendirme ve kutlama adımıdır: Mavi kılavuz çizgileri silinir
-        tempDiv.querySelectorAll('[stroke="#3b82f6"], [stroke="#60a5fa"], .guide-stroke').forEach(el => el.remove());
-      } else {
-        // Çizim esnasında: Mavi kılavuz çizgileri silinmez, açık mavi ve kesikli kalarak çocuğun nereye çizdiğini gösterir!
-        tempDiv.querySelectorAll('[stroke="#3b82f6"]').forEach(el => {
-          el.setAttribute('stroke', '#60a5fa');
-          el.setAttribute('opacity', '0.45');
-          el.setAttribute('stroke-dasharray', '8 6');
-        });
-      }
-      const cleanPrevSvg = tempDiv.querySelector('svg').innerHTML;
-
-      this.layerPrevious.innerHTML = `<g class="svg-stroke-prev">${cleanPrevSvg}</g>`;
+      this.layerPrevious.innerHTML = `<g class="svg-stroke-prev">${prevSvg}</g>`;
       this.layerCurrent.innerHTML = `<g class="svg-stroke-current">${step.svg || ''}</g>`;
     }
 
@@ -778,8 +810,8 @@ class KivancDrawingApp {
       actionSub.textContent = `Sıradaki Adıma Geç (${this.currentStep + 2}/${total})`;
     }
 
-    // Sesli anlatım
-    this.speak(step.voice || step.instruction);
+    // Sesli anlatım (Gerçek insan sesi MP3 veya doğal TTS)
+    this.speak(step.voice || step.instruction, step.audio);
 
     // Gerçekçi Kalem Çizim Animasyonu
     if (step.image) {
