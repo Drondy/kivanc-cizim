@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Kıvanç Çizim">
+  <title>🎨 Kıvanç'ın Çizim Atölyesi - Adım Adım Kağıda Çizim</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Arka plan neşeli baloncuklar -->
+  <div class="bg-decorations" aria-hidden="true">
+    <span class="bubble b1">🎈</span>
+    <span class="bubble b2">⭐</span>
+    <span class="bubble b3">🎨</span>
+    <span class="bubble b4">🚀</span>
+    <span class="bubble b5">🌟</span>
+  </div>
+
+  <!-- ANA EKRAN: Karakter / Nesne Seçimi -->
+  <section id="screen-home" class="screen active">
+    <header class="app-header">
+      <div class="header-content">
+        <div class="title-group">
+          <span class="logo-emoji">🎨</span>
+          <div>
+            <h1>Kıvanç'ın Çizim Atölyesi</h1>
+            <p class="subtitle">Kağıdını ve kalemlerini hazırla, birlikte çizelim!</p>
+          </div>
+        </div>
+        <div class="header-badges">
+          <button id="btn-show-ipad-qr" class="icon-pill" title="iPad'e Bağlan">
+            <span class="pill-icon">📱</span>
+            <span class="pill-text">iPad'e Bağlan</span>
+          </button>
+          <button id="btn-sound-toggle" class="icon-pill" title="Ses Aç/Kapat">
+            <span class="pill-icon">🔊</span>
+            <span class="pill-text">Ses Açık</span>
+          </button>
+          <button id="btn-fullscreen" class="icon-pill" title="Tam Ekran">
+            <span class="pill-icon">⛶</span>
+            <span class="pill-text">Tam Ekran</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Hızlı Arama Çubuğu -->
+      <div class="search-bar-container">
+        <div class="search-input-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="Yüzlerce çizim arasından ara... (Örn: Kaplan, Ferrari, Ejderha, T-Rex, Ninja, Kurt)" autocomplete="off">
+          <button id="btn-clear-search" class="btn-clear-search hidden" title="Temizle">✕</button>
+        </div>
+      </div>
+
+      <!-- Seviye Filtreleri -->
+      <div class="level-filter-bar">
+        <span class="filter-label">Zorluk Seviyesi:</span>
+        <button class="level-btn active" data-level="all">✨ Tümü</button>
+        <button class="level-btn lvl-1" data-level="1">🟢 Çırak</button>
+        <button class="level-btn lvl-2" data-level="2">🟡 Ressam</button>
+        <button class="level-btn lvl-3" data-level="3">🔴 Usta Sanatçı</button>
+      </div>
+
+      <!-- Kategori Gezinti Başlığı ve Geri Butonu -->
+      <div id="category-breadcrumb-bar" class="breadcrumb-bar hidden">
+        <button id="btn-back-categories" class="btn-breadcrumb">
+          <span>⬅️ Tüm Dünyalar</span>
+        </button>
+        <div class="active-category-info">
+          <span id="active-cat-emoji" class="active-cat-emoji">🐱</span>
+          <h2 id="active-cat-title">Kediler Dünyası</h2>
+          <span id="active-cat-badge" class="active-cat-badge">3 Farklı Çizim</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="gallery-container">
+      <!-- 1. Kategori Klasörleri Izgarası (Ana Görünüm) -->
+      <div id="category-folders-grid" class="category-folders-grid">
+        <!-- JS ile doldurulacak -->
+      </div>
+
+      <!-- 2. Kategori İçi Resimler Izgarası (Kategori Tıklanınca Açılır) -->
+      <div id="drawing-grid" class="drawing-grid hidden">
+        <!-- Javascript dinamik yükleyecek -->
+      </div>
+    </main>
+  </section>
+
+  <!-- ÇİZİM EKRANI: Adım Adım Rehber -->
+  <section id="screen-workshop" class="screen">
+    <!-- Üst Kontrol Barı -->
+    <header class="workshop-header">
+      <button id="btn-back-home" class="btn-round btn-back" title="Menüye Dön">
+        <span class="btn-icon">⬅️</span>
+        <span class="btn-label">Menü</span>
+      </button>
+
+      <div class="current-info">
+        <div class="item-title-wrapper">
+          <span id="current-item-emoji" class="item-emoji">🐱</span>
+          <h2 id="current-item-title">Sevimli Kedi</h2>
+        </div>
+        <div class="step-progress-wrapper">
+          <div class="step-dots" id="step-dots-container"></div>
+          <span id="step-counter-text" class="step-counter">Adım 1 / 5</span>
+        </div>
+      </div>
+
+      <div class="timer-mode-box">
+        <button id="btn-toggle-timer" class="btn-timer" title="Otomatik Bekleme Modu">
+          <span class="timer-icon">⏱️</span>
+          <span class="timer-text">Sayaç: <b id="timer-status">Kapalı</b></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Ana Çalışma Alanı -->
+    <main class="workshop-main">
+      <!-- Çizim Tahtası (Tablet Ekranı) -->
+      <div class="canvas-stage-wrapper">
+        <div class="canvas-board" id="canvas-board">
+          <!-- SVG Çizim Alanı -->
+          <svg id="drawing-svg" viewBox="0 0 600 600" class="drawing-svg">
+            <defs>
+              <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+                <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.15"/>
+              </filter>
+            </defs>
+            <!-- Bitmiş çizgiler (gri/önceki adımlar) -->
+            <g id="layer-previous" class="layer-previous"></g>
+            <!-- Şimdiki adım (kalın siyah canlı çizgi) -->
+            <g id="layer-current" class="layer-current"></g>
+            <!-- Boyama katmanı -->
+            <g id="layer-coloring" class="layer-coloring"></g>
+          </svg>
+
+          <!-- Çizen Sihirli Kalem İmleci -->
+          <div id="magic-pencil" class="magic-pencil" aria-hidden="true">
+            <span class="pencil-body">✏️</span>
+          </div>
+
+          <!-- Canlı Geri Sayım Çemberi (Otomatik Mod) -->
+          <div id="countdown-overlay" class="countdown-overlay hidden">
+            <svg class="countdown-svg" viewBox="0 0 100 100">
+              <circle class="countdown-bg" cx="50" cy="50" r="45"></circle>
+              <circle id="countdown-progress" class="countdown-meter" cx="50" cy="50" r="45"></circle>
+            </svg>
+            <div class="countdown-number" id="countdown-text">15</div>
+          </div>
+        </div>
+
+        <!-- Adım Yönergesi & Ses Butonu -->
+        <div class="instruction-card">
+          <button id="btn-speak-step" class="btn-speak" title="Tekrar Oku">
+            <span>🗣️</span>
+          </button>
+          <div class="instruction-content">
+            <h3 id="instruction-title">1. Adım: Kafayı Çizelim</h3>
+            <p id="instruction-desc">Kağıdının ortasına kocaman yuvarlak bir daire çiz!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sağ/Alt: Kıvanç için Dev Kontrol Butonları -->
+      <aside class="workshop-controls">
+        <!-- Büyük "Çizdim! Sıradaki Adım" Butonu -->
+        <button id="btn-next-step" class="action-btn btn-primary">
+          <span class="action-emoji">✅</span>
+          <div class="action-text-group">
+            <span class="action-title">ÇİZDİM!</span>
+            <span class="action-sub">Sıradaki Adıma Geç</span>
+          </div>
+        </button>
+
+        <div class="sub-controls-grid">
+          <!-- Tekrar Çiz Butonu -->
+          <button id="btn-replay-step" class="action-btn btn-warning">
+            <span class="action-emoji">🔄</span>
+            <div class="action-text-group">
+              <span class="action-title">Tekrar Çiz</span>
+              <span class="action-sub">Nasıl çizildiğini gör</span>
+            </div>
+          </button>
+
+          <!-- Önceki Adım -->
+          <button id="btn-prev-step" class="action-btn btn-secondary">
+            <span class="action-emoji">⏮️</span>
+            <div class="action-text-group">
+              <span class="action-title">Bir Geri</span>
+              <span class="action-sub">Önceki adım</span>
+            </div>
+          </button>
+        </div>
+
+        <!-- Renk Paleti Rehberi (Boya Kutusu) -->
+        <div class="color-palette-card">
+          <h4>🖍️ Kağıtta Bu Boyaları Kullanabilirsin:</h4>
+          <div id="color-chips" class="color-chips">
+            <!-- Dinamik doldurulur -->
+          </div>
+        </div>
+      </aside>
+    </main>
+  </section>
+
+  <!-- KUTLAMA MODALI -->
+  <div id="celebration-modal" class="modal-overlay hidden">
+    <div class="modal-card">
+      <div class="confetti-cannon">🎉 🌟 🎨 🥳</div>
+      <h2 id="congrats-title">HARİKASIN KIVANÇ!</h2>
+      <p id="congrats-text">Çizimini başarıyla tamamladın! Şimdi boya kalemlerini alıp kağıdını rengarenk boyama zamanı!</p>
+      
+      <div class="modal-preview" id="modal-preview-box">
+        <!-- Biten resim önizlemesi -->
+      </div>
+
+      <div class="modal-actions">
+        <button id="btn-finish-replay" class="btn-large btn-warning">
+          <span>🔄 Baştan Çiz</span>
+        </button>
+        <button id="btn-finish-home" class="btn-large btn-primary">
+          <span>🎨 Yeni Bir Resim Seç</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- IPAD BAĞLANTI MODALI -->
+  <div id="ipad-modal" class="modal-overlay hidden">
+    <div class="modal-card">
+      <div class="confetti-cannon">📱 📶 🎨</div>
+      <h2>iPad'den Açma Rehberi</h2>
+      <p>Aynı ev Wi-Fi ağına bağlı iPad'inden bu adresi Safari ile aç:</p>
+      
+      <div class="ipad-url-box">
+        <a id="ipad-link-display" href="#" target="_blank" class="ipad-url-badge">http://192.168.1.6:8080</a>
+      </div>
+
+      <div class="qr-container">
+        <img id="ipad-qr-img" src="" alt="iPad QR Kod" class="qr-image" />
+        <p class="qr-hint">💡 iPad kamerasını bilgisayar ekranındaki bu QR koda tutarak doğrudan açabilirsin!</p>
+      </div>
+
+      <div class="ipad-tip-card">
+        <strong>✨ Kıvanç İçin Tam Ekran İpucu:</strong>
+        <p>iPad Safari'de alttaki/üstteki <b>Paylaş</b> butonuna basıp <b>"Ana Ekrana Ekle"</b> dersen, tam ekran gerçek bir iPad uygulaması gibi açılır!</p>
+      </div>
+
+      <div class="modal-actions" style="margin-top: 18px;">
+        <button id="btn-close-ipad-modal" class="btn-large btn-primary">
+          <span>👍 Anladım, Kapat</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ses efektleri ve uygulama mantığı -->
+  <script src="config.js"></script>
+  <script src="drawings.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
