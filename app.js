@@ -739,14 +739,25 @@ class KivancDrawingApp {
       `;
       this.magicPencil.classList.remove('visible');
     } else {
-      // SVG desteği: Mavi kılavuz çizgilerini (stroke="#3b82f6") sonraki adımlarda layerPrevious içine ekleme (çocuk silmiş gibi olsun)
       let prevSvg = '';
       for (let i = 0; i < this.currentStep; i++) {
         prevSvg += (this.currentDrawing.steps[i].svg || '');
       }
       const tempDiv = document.createElement('div');
       tempDiv.innerHTML = `<svg>${prevSvg}</svg>`;
-      tempDiv.querySelectorAll('[stroke="#3b82f6"]').forEach(el => el.remove());
+
+      const isFinalStep = (this.currentStep === total - 1);
+      if (isFinalStep) {
+        // Son adım tam renklendirme ve kutlama adımıdır: Mavi kılavuz çizgileri silinir
+        tempDiv.querySelectorAll('[stroke="#3b82f6"], [stroke="#60a5fa"], .guide-stroke').forEach(el => el.remove());
+      } else {
+        // Çizim esnasında: Mavi kılavuz çizgileri silinmez, açık mavi ve kesikli kalarak çocuğun nereye çizdiğini gösterir!
+        tempDiv.querySelectorAll('[stroke="#3b82f6"]').forEach(el => {
+          el.setAttribute('stroke', '#60a5fa');
+          el.setAttribute('opacity', '0.45');
+          el.setAttribute('stroke-dasharray', '8 6');
+        });
+      }
       const cleanPrevSvg = tempDiv.querySelector('svg').innerHTML;
 
       this.layerPrevious.innerHTML = `<g class="svg-stroke-prev">${cleanPrevSvg}</g>`;
@@ -773,6 +784,10 @@ class KivancDrawingApp {
     // Gerçekçi Kalem Çizim Animasyonu
     if (step.image) {
       this.magicPencil.classList.remove('visible');
+    } else if (this.currentStep === total - 1) {
+      // Son adım tam renklendirme ve kutlama adımıdır: Kalemi gizle, kutlama çal
+      this.magicPencil.classList.remove('visible');
+      this.audio.playCelebration();
     } else if (shouldAnimate) {
       this.startStrokeAnimation();
     } else {
