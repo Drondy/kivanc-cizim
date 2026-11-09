@@ -1,5 +1,7 @@
-// Kıvanç'ın Çizim Atölyesi - Uygulama Motoru
-// Ses Efektleri (Web Audio), Türkçe Seslendirme (TTS), SVG Çizim Animasyonu & iPad Kontrolleri
+// =========================================================================
+// KIVANÇ ÇİZİM ATÖLYESİ — PROFESSIONAL DRAWING ACADEMY
+// iPad-First, Dokunmatik & Gerçekçi Kalem Animasyon Motoru
+// =========================================================================
 
 class AudioEngine {
   constructor() {
@@ -24,22 +26,24 @@ class AudioEngine {
     this.init();
     if (!this.ctx) return;
 
-    const osc = this.ctx.createOscillator();
-    const gain = this.ctx.createGain();
-    const now = this.ctx.currentTime;
+    try {
+      const osc = this.ctx.createOscillator();
+      const gain = this.ctx.createGain();
+      const now = this.ctx.currentTime;
 
-    osc.type = 'sine';
-    osc.frequency.setValueAtTime(450, now);
-    osc.frequency.exponentialRampToValueAtTime(800, now + 0.08);
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(450, now);
+      osc.frequency.exponentialRampToValueAtTime(800, now + 0.08);
 
-    gain.gain.setValueAtTime(0.25, now);
-    gain.gain.exponentialRampToValueAtTime(0.01, now + 0.08);
+      gain.gain.setValueAtTime(0.25, now);
+      gain.gain.exponentialRampToValueAtTime(0.01, now + 0.08);
 
-    osc.connect(gain);
-    gain.connect(this.ctx.destination);
+      osc.connect(gain);
+      gain.connect(this.ctx.destination);
 
-    osc.start(now);
-    osc.stop(now + 0.08);
+      osc.start(now);
+      osc.stop(now + 0.08);
+    } catch (e) {}
   }
 
   playChime() {
@@ -47,24 +51,26 @@ class AudioEngine {
     this.init();
     if (!this.ctx) return;
 
-    const notes = [523.25, 659.25, 783.99, 1046.50]; // C5, E5, G5, C6
-    notes.forEach((freq, idx) => {
-      const osc = this.ctx.createOscillator();
-      const gain = this.ctx.createGain();
-      const now = this.ctx.currentTime + idx * 0.07;
+    try {
+      const notes = [523.25, 659.25, 783.99, 1046.50]; // C5, E5, G5, C6
+      notes.forEach((freq, idx) => {
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        const now = this.ctx.currentTime + idx * 0.07;
 
-      osc.type = 'triangle';
-      osc.frequency.setValueAtTime(freq, now);
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(freq, now);
 
-      gain.gain.setValueAtTime(0.2, now);
-      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
+        gain.gain.setValueAtTime(0.2, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
 
-      osc.connect(gain);
-      gain.connect(this.ctx.destination);
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
 
-      osc.start(now);
-      osc.stop(now + 0.35);
-    });
+        osc.start(now);
+        osc.stop(now + 0.35);
+      });
+    } catch (e) {}
   }
 
   playTick() {
@@ -72,19 +78,21 @@ class AudioEngine {
     this.init();
     if (!this.ctx) return;
 
-    const osc = this.ctx.createOscillator();
-    const gain = this.ctx.createGain();
-    const now = this.ctx.currentTime;
+    try {
+      const osc = this.ctx.createOscillator();
+      const gain = this.ctx.createGain();
+      const now = this.ctx.currentTime;
 
-    osc.type = 'sine';
-    osc.frequency.setValueAtTime(900, now);
-    gain.gain.setValueAtTime(0.12, now);
-    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.04);
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(900, now);
+      gain.gain.setValueAtTime(0.12, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.04);
 
-    osc.connect(gain);
-    gain.connect(this.ctx.destination);
-    osc.start(now);
-    osc.stop(now + 0.04);
+      osc.connect(gain);
+      gain.connect(this.ctx.destination);
+      osc.start(now);
+      osc.stop(now + 0.04);
+    } catch (e) {}
   }
 
   playVictoryFanfare() {
@@ -92,54 +100,62 @@ class AudioEngine {
     this.init();
     if (!this.ctx) return;
 
-    // Neşeli zafer melodisi
-    const melody = [
-      { f: 523.25, d: 0.15 }, // Do
-      { f: 659.25, d: 0.15 }, // Mi
-      { f: 783.99, d: 0.18 }, // Sol
-      { f: 1046.5, d: 0.45 }  // Do (Tiz)
-    ];
+    try {
+      const melody = [
+        { f: 523.25, d: 0.15 },
+        { f: 659.25, d: 0.15 },
+        { f: 783.99, d: 0.18 },
+        { f: 1046.5, d: 0.45 }
+      ];
 
-    let t = this.ctx.currentTime;
-    melody.forEach((item) => {
-      const osc = this.ctx.createOscillator();
-      const gain = this.ctx.createGain();
+      let t = this.ctx.currentTime;
+      melody.forEach((item) => {
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
 
-      osc.type = 'triangle';
-      osc.frequency.setValueAtTime(item.f, t);
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(item.f, t);
 
-      gain.gain.setValueAtTime(0.3, t);
-      gain.gain.exponentialRampToValueAtTime(0.001, t + item.d);
+        gain.gain.setValueAtTime(0.3, t);
+        gain.gain.exponentialRampToValueAtTime(0.001, t + item.d);
 
-      osc.connect(gain);
-      gain.connect(this.ctx.destination);
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
 
-      osc.start(t);
-      osc.stop(t + item.d);
+        osc.start(t);
+        osc.stop(t + item.d);
 
-      t += item.d + 0.04;
-    });
+        t += item.d + 0.04;
+      });
+    } catch (e) {}
   }
 }
 
-// ============================================================
-// UYGULAMA ANA SINIFI
-// ============================================================
+// =========================================================================
+// UYGULAMA MOTORU: KIVANÇ ÇİZİM AKADEMİSİ
+// =========================================================================
 class KivancDrawingApp {
   constructor() {
     this.audio = new AudioEngine();
     this.currentDrawing = null;
     this.currentStep = 0;
-    this.activeCategory = null; // null = kategoriler görünümü, string = seçili kategori
-    this.activeLevel = 'all'; // 'all', '1', '2', '3'
+    this.activeCategory = 'all'; // 'all', 'hayvanlar', 'arabalar', 'dinozorlar', etc.
+    this.activeLevel = 'all';    // 'all', '1', '2', '3'
+    this.pendingDrawingId = null;
 
-    // Otomatik sayaç modu (15 saniye)
+    // Gerçekçi Çizim Animasyonu Durumu
+    this.isPaused = false;
+    this.playbackSpeed = 1.0; // 1.0x, 1.5x, 0.5x
+    this.animFrameId = null;
+    this.activeStrokeAnimation = null;
+
+    // Otomatik Sayaç Modu (Eller serbest çizim için isteğe bağlı)
     this.timerMode = false;
     this.timerSeconds = 15;
     this.timerRemaining = 15;
     this.timerInterval = null;
 
-    // Türkçe Ses Motoru
+    // Türkçe Ses Sentezi Motoru (TTS)
     this.synth = window.speechSynthesis || null;
     this.speechVoice = null;
     this.initVoice();
@@ -162,13 +178,13 @@ class KivancDrawingApp {
   }
 
   speak(text) {
-    if (!this.synth || !this.audio.soundEnabled) return;
+    if (!this.synth || !this.audio.soundEnabled || !text) return;
     try {
-      this.synth.cancel(); // Önceki ses bitirilsin
+      this.synth.cancel();
       const utter = new SpeechSynthesisUtterance(text);
       utter.lang = 'tr-TR';
-      utter.rate = 0.94; // Çocukların rahat anlaması için hafif tane tane
-      utter.pitch = 1.15; // Neşeli ve dostça ton
+      utter.rate = 0.92;  // 6 yaşındaki çocuğun net anlaması için hafif tane tane
+      utter.pitch = 1.15; // Neşeli ve dostça öğretmen tonu
       if (this.speechVoice) {
         utter.voice = this.speechVoice;
       }
@@ -179,53 +195,72 @@ class KivancDrawingApp {
   }
 
   cacheDom() {
+    // Ekranlar
     this.screenHome = document.getElementById('screen-home');
     this.screenWorkshop = document.getElementById('screen-workshop');
-    this.drawingGrid = document.getElementById('drawing-grid');
+
+    // Kategori ve Galeri
+    this.categoryPillsBar = document.getElementById('category-pills-bar');
+    this.catPillBtns = document.querySelectorAll('.cat-pill-btn');
+    this.levelBtns = document.querySelectorAll('.level-btn');
     this.categoryFoldersGrid = document.getElementById('category-folders-grid');
+    this.drawingGrid = document.getElementById('drawing-grid');
     this.categoryBreadcrumbBar = document.getElementById('category-breadcrumb-bar');
     this.btnBackCategories = document.getElementById('btn-back-categories');
     this.activeCatEmoji = document.getElementById('active-cat-emoji');
     this.activeCatTitle = document.getElementById('active-cat-title');
     this.activeCatBadge = document.getElementById('active-cat-badge');
-    this.levelBtns = document.querySelectorAll('.level-btn');
-    this.searchInput = document.getElementById('search-input');
-    this.btnClearSearch = document.getElementById('btn-clear-search');
-    this.searchQuery = "";
 
-    // Workshop Elemanları
+    // Üst Araçlar
+    this.btnSoundToggle = document.getElementById('btn-sound-toggle');
+    this.btnFullscreen = document.getElementById('btn-fullscreen');
+    this.btnShowIpadQr = document.getElementById('btn-show-ipad-qr');
+
+    // Workshop Başlık & Kontroller
     this.btnBackHome = document.getElementById('btn-back-home');
     this.currentItemEmoji = document.getElementById('current-item-emoji');
     this.currentItemTitle = document.getElementById('current-item-title');
     this.stepDotsContainer = document.getElementById('step-dots-container');
     this.stepCounterText = document.getElementById('step-counter-text');
+    this.btnPauseStep = document.getElementById('btn-pause-step');
+    this.btnSpeedToggle = document.getElementById('btn-speed-toggle');
+    this.speedLabel = document.getElementById('speed-label');
+    this.btnToggleTimer = document.getElementById('btn-toggle-timer');
+    this.timerStatus = document.getElementById('timer-status');
 
-    // SVG Katmanları
+    // Workshop Çizim Tahtası & Kalem
+    this.canvasBoard = document.getElementById('canvas-board');
     this.drawingSvg = document.getElementById('drawing-svg');
     this.layerPrevious = document.getElementById('layer-previous');
     this.layerCurrent = document.getElementById('layer-current');
     this.layerColoring = document.getElementById('layer-coloring');
     this.magicPencil = document.getElementById('magic-pencil');
+    this.countdownOverlay = document.getElementById('countdown-overlay');
+    this.countdownText = document.getElementById('countdown-text');
+    this.countdownProgress = document.getElementById('countdown-progress');
 
-    // Yönerge
+    // Yönerge Kartı
     this.instructionTitle = document.getElementById('instruction-title');
     this.instructionDesc = document.getElementById('instruction-desc');
     this.btnSpeakStep = document.getElementById('btn-speak-step');
 
-    // Kıvanç Butonları
+    // Büyük Kontrol Butonları
     this.btnNextStep = document.getElementById('btn-next-step');
     this.btnReplayStep = document.getElementById('btn-replay-step');
     this.btnPrevStep = document.getElementById('btn-prev-step');
     this.colorChips = document.getElementById('color-chips');
 
-    // Sayaç & Ses
-    this.btnToggleTimer = document.getElementById('btn-toggle-timer');
-    this.timerStatus = document.getElementById('timer-status');
-    this.countdownOverlay = document.getElementById('countdown-overlay');
-    this.countdownText = document.getElementById('countdown-text');
-    this.countdownProgress = document.getElementById('countdown-progress');
-    this.btnSoundToggle = document.getElementById('btn-sound-toggle');
-    this.btnFullscreen = document.getElementById('btn-fullscreen');
+    // Ders Öncesi Referans Modalı (Pre-Lesson Showcase)
+    this.preLessonModal = document.getElementById('pre-lesson-modal');
+    this.preLessonSvg = document.getElementById('pre-lesson-svg');
+    this.preLessonEmoji = document.getElementById('pre-lesson-emoji');
+    this.preLessonTitle = document.getElementById('pre-lesson-title');
+    this.preLessonLevel = document.getElementById('pre-lesson-level');
+    this.preLessonSteps = document.getElementById('pre-lesson-steps');
+    this.preLessonDesc = document.getElementById('pre-lesson-desc');
+    this.preLessonColors = document.getElementById('pre-lesson-colors');
+    this.btnStartLesson = document.getElementById('btn-start-lesson');
+    this.btnClosePreLesson = document.getElementById('btn-close-pre-lesson');
 
     // Kutlama Modalı
     this.celebrationModal = document.getElementById('celebration-modal');
@@ -234,7 +269,6 @@ class KivancDrawingApp {
     this.btnFinishHome = document.getElementById('btn-finish-home');
 
     // iPad Bağlantı Modalı
-    this.btnShowIpadQr = document.getElementById('btn-show-ipad-qr');
     this.ipadModal = document.getElementById('ipad-modal');
     this.ipadLinkDisplay = document.getElementById('ipad-link-display');
     this.ipadQrImg = document.getElementById('ipad-qr-img');
@@ -242,30 +276,20 @@ class KivancDrawingApp {
   }
 
   bindEvents() {
-    // Arama Çubuğu
-    if (this.searchInput) {
-      this.searchInput.addEventListener('input', (e) => {
-        this.searchQuery = e.target.value.trim().toLowerCase();
-        if (this.searchQuery.length > 0) {
-          this.btnClearSearch.classList.remove('hidden');
-        } else {
-          this.btnClearSearch.classList.add('hidden');
-        }
-        this.renderView();
+    // 1. Dokunmatik Kategori Hap Butonları
+    if (this.catPillBtns) {
+      this.catPillBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          this.audio.playPop();
+          this.catPillBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          this.activeCategory = btn.dataset.cat;
+          this.renderView();
+        });
       });
     }
 
-    if (this.btnClearSearch) {
-      this.btnClearSearch.addEventListener('click', () => {
-        this.audio.playPop();
-        this.searchInput.value = '';
-        this.searchQuery = '';
-        this.btnClearSearch.classList.add('hidden');
-        this.renderView();
-      });
-    }
-
-    // Seviye Filtreleme
+    // 2. Seviye Filtreleri (🟢 Çırak, 🟡 Ressam, 🔴 Usta Sanatçı)
     if (this.levelBtns) {
       this.levelBtns.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -278,36 +302,53 @@ class KivancDrawingApp {
       });
     }
 
-    // Kategorilere Geri Dön Butonu
+    // 3. Breadcrumb Geri Butonu
     if (this.btnBackCategories) {
       this.btnBackCategories.addEventListener('click', () => {
         this.audio.playPop();
-        this.activeCategory = null;
+        this.activeCategory = 'all';
+        this.updateCategoryPills();
         this.renderView();
       });
     }
 
-    // Menüye Dön
+    // 4. Workshop Başlık Butonları
     this.btnBackHome.addEventListener('click', () => {
       this.audio.playPop();
+      this.stopStrokeAnimation();
       this.stopTimer();
+      if (this.synth) this.synth.cancel();
       this.showScreen('home');
       this.renderView();
     });
 
-    // Sıradaki Adım
+    // 5. Oynat / Duraklat Butonu
+    if (this.btnPauseStep) {
+      this.btnPauseStep.addEventListener('click', () => {
+        this.togglePause();
+      });
+    }
+
+    // 6. Çizim Hızı Değiştirme Butonu (1x, 1.5x, 0.5x)
+    if (this.btnSpeedToggle) {
+      this.btnSpeedToggle.addEventListener('click', () => {
+        this.cycleSpeed();
+      });
+    }
+
+    // 7. Sıradaki Adım Butonu
     this.btnNextStep.addEventListener('click', () => {
       this.audio.playPop();
       this.nextStep();
     });
 
-    // Tekrar Çiz
+    // 8. Tekrar Çiz Butonu
     this.btnReplayStep.addEventListener('click', () => {
       this.audio.playPop();
       this.renderCurrentStep(true);
     });
 
-    // Bir Geri
+    // 9. Bir Geri Butonu
     this.btnPrevStep.addEventListener('click', () => {
       this.audio.playPop();
       if (this.currentStep > 0) {
@@ -316,20 +357,38 @@ class KivancDrawingApp {
       }
     });
 
-    // Yönergeyi Oku
+    // 10. Yönergeyi Seslendir
     this.btnSpeakStep.addEventListener('click', () => {
       this.audio.playPop();
       const step = this.currentDrawing.steps[this.currentStep];
       if (step) this.speak(step.voice || step.instruction);
     });
 
-    // Sayaç Aç / Kapat
+    // 11. Sayaç Aç / Kapat
     this.btnToggleTimer.addEventListener('click', () => {
       this.audio.playPop();
       this.toggleTimer();
     });
 
-    // Ses Aç / Kapat
+    // 12. Ders Öncesi Modal Butonları
+    if (this.btnStartLesson) {
+      this.btnStartLesson.addEventListener('click', () => {
+        this.audio.playPop();
+        this.closePreLessonModal();
+        if (this.pendingDrawingId) {
+          this.startDrawing(this.pendingDrawingId);
+        }
+      });
+    }
+
+    if (this.btnClosePreLesson) {
+      this.btnClosePreLesson.addEventListener('click', () => {
+        this.audio.playPop();
+        this.closePreLessonModal();
+      });
+    }
+
+    // 13. Ses Aç / Kapat
     this.btnSoundToggle.addEventListener('click', () => {
       this.audio.soundEnabled = !this.audio.soundEnabled;
       this.audio.playPop();
@@ -345,7 +404,7 @@ class KivancDrawingApp {
       }
     });
 
-    // Tam Ekran
+    // 14. Tam Ekran
     this.btnFullscreen.addEventListener('click', () => {
       this.audio.playPop();
       if (!document.fullscreenElement) {
@@ -355,7 +414,7 @@ class KivancDrawingApp {
       }
     });
 
-    // Kutlama Modalı Butonları
+    // 15. Kutlama Modalı Butonları
     this.btnFinishReplay.addEventListener('click', () => {
       this.audio.playPop();
       this.celebrationModal.classList.add('hidden');
@@ -369,14 +428,16 @@ class KivancDrawingApp {
       this.renderView();
     });
 
-    // iPad Bağlantı Modalı
+    // 16. iPad Bağlantı Modalı
     if (this.btnShowIpadQr) {
       this.btnShowIpadQr.addEventListener('click', () => {
         this.audio.playPop();
         const serverIp = window.SERVER_IP || '192.168.1.6';
         const serverPort = window.SERVER_PORT || 8080;
-        const targetUrl = `http://${serverIp}:${serverPort}`;
-        
+        const targetUrl = window.location.origin.includes('github.io')
+          ? window.location.href
+          : `http://${serverIp}:${serverPort}`;
+
         this.ipadLinkDisplay.textContent = targetUrl;
         this.ipadLinkDisplay.href = targetUrl;
         this.ipadQrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=${encodeURIComponent(targetUrl)}`;
@@ -391,7 +452,7 @@ class KivancDrawingApp {
       });
     }
 
-    // İlk dokunuşta ses motorunu başlat (iPad için kilit açma)
+    // iPad / Safari Ses Motoru İlk Dokunuş Kilidi Açma
     document.addEventListener('touchstart', () => this.audio.init(), { once: true });
     document.addEventListener('click', () => this.audio.init(), { once: true });
   }
@@ -406,52 +467,61 @@ class KivancDrawingApp {
     }
   }
 
-  renderView() {
-    if (this.searchQuery && this.searchQuery.length > 0) {
-      // 0. Arama Sonuçları Görünümü
-      this.categoryFoldersGrid.classList.add('hidden');
-      this.drawingGrid.classList.remove('hidden');
-      this.categoryBreadcrumbBar.classList.remove('hidden');
-      this.renderSearchResults();
-    } else if (this.activeCategory === null) {
-      // 1. Kategori Klasörleri Görünümü
-      this.categoryFoldersGrid.classList.remove('hidden');
-      this.drawingGrid.classList.add('hidden');
-      this.categoryBreadcrumbBar.classList.add('hidden');
-      this.renderCategoryFolders();
-    } else {
-      // 2. Kategori İçi Resimler Görünümü
-      this.categoryFoldersGrid.classList.add('hidden');
-      this.drawingGrid.classList.remove('hidden');
-      this.categoryBreadcrumbBar.classList.remove('hidden');
-      this.renderCategoryDrawings();
-    }
+  updateCategoryPills() {
+    if (!this.catPillBtns) return;
+    this.catPillBtns.forEach(btn => {
+      if (btn.dataset.cat === this.activeCategory) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
   }
 
-  renderSearchResults() {
-    this.activeCatEmoji.textContent = "🔍";
-    this.activeCatTitle.textContent = `"${this.searchQuery}" Arama Sonuçları`;
+  // =========================================================================
+  // GÖRÜNÜM YÖNETİMİ & KART LİSTESİ
+  // =========================================================================
+  renderView() {
+    this.updateCategoryPills();
 
-    const q = this.searchQuery;
-    let list = DRAWINGS_DATA.filter(d => {
-      const matchName = d.name.toLowerCase().includes(q);
-      const matchDesc = d.description && d.description.toLowerCase().includes(q);
-      const matchTags = d.tags && d.tags.some(t => t.toLowerCase().includes(q));
-      return matchName || matchDesc || matchTags;
-    });
+    if (this.activeCategory === 'all') {
+      // Tüm Çizimler Görünümü
+      this.categoryBreadcrumbBar.classList.add('hidden');
+      this.categoryFoldersGrid.classList.remove('hidden');
+      this.drawingGrid.classList.remove('hidden');
+      this.renderCategoryFolders();
 
-    if (this.activeLevel !== 'all') {
-      list = list.filter(d => String(d.level) === this.activeLevel);
+      let list = DRAWINGS_DATA;
+      if (this.activeLevel !== 'all') {
+        list = list.filter(d => String(d.level) === this.activeLevel);
+      }
+      this.renderDrawingsListToGrid(list);
+    } else {
+      // Seçili Kategori Görünümü
+      const cat = CATEGORIES_DATA.find(c => c.id === this.activeCategory);
+      if (cat) {
+        this.activeCatEmoji.textContent = cat.emoji;
+        this.activeCatTitle.textContent = cat.name;
+      }
+
+      this.categoryFoldersGrid.classList.add('hidden');
+      this.categoryBreadcrumbBar.classList.remove('hidden');
+      this.drawingGrid.classList.remove('hidden');
+
+      let list = DRAWINGS_DATA.filter(d => d.categoryId === this.activeCategory);
+      if (this.activeLevel !== 'all') {
+        list = list.filter(d => String(d.level) === this.activeLevel);
+      }
+      this.activeCatBadge.textContent = `${list.length} Çizim Hazır`;
+      this.renderDrawingsListToGrid(list);
     }
-
-    this.activeCatBadge.textContent = `${list.length} Çizim Bulundu`;
-    this.renderDrawingsListToGrid(list);
   }
 
   renderCategoryFolders() {
     this.categoryFoldersGrid.innerHTML = '';
-    CATEGORIES_DATA.forEach(cat => {
-      // Bu kategorideki resim sayısı (seviye filtresine göre)
+    const categoriesToDisplay = CATEGORIES_DATA.filter(c => c.id !== 'all');
+
+    categoriesToDisplay.forEach(cat => {
       const count = this.activeLevel === 'all'
         ? DRAWINGS_DATA.filter(d => d.categoryId === cat.id).length
         : DRAWINGS_DATA.filter(d => d.categoryId === cat.id && String(d.level) === this.activeLevel).length;
@@ -461,42 +531,21 @@ class KivancDrawingApp {
       card.innerHTML = `
         <span class="cat-card-icon">${cat.emoji}</span>
         <h3 class="cat-card-title">${cat.name}</h3>
-        <p class="cat-card-desc">${cat.desc}</p>
+        <p class="cat-card-desc">${cat.desc || 'Keşfetmeye hazır çizim dünyası'}</p>
         <div class="cat-card-footer">
-          <span class="cat-badge-count">${count} Farklı Çizim</span>
-          <span class="cat-card-enter">İncele ➔</span>
+          <span class="cat-badge-count">${count} Çizim</span>
+          <span class="cat-card-enter">Aç ➔</span>
         </div>
       `;
 
       card.addEventListener('click', () => {
         this.audio.playPop();
-        this.openCategory(cat.id);
+        this.activeCategory = cat.id;
+        this.renderView();
       });
 
       this.categoryFoldersGrid.appendChild(card);
     });
-  }
-
-  openCategory(categoryId) {
-    this.activeCategory = categoryId;
-    this.renderView();
-  }
-
-  renderCategoryDrawings() {
-    const cat = CATEGORIES_DATA.find(c => c.id === this.activeCategory);
-    if (!cat) return;
-
-    this.activeCatEmoji.textContent = cat.emoji;
-    this.activeCatTitle.textContent = cat.name;
-
-    // Resimleri filtrele (Kategori + Seviye)
-    let list = DRAWINGS_DATA.filter(d => d.categoryId === this.activeCategory);
-    if (this.activeLevel !== 'all') {
-      list = list.filter(d => String(d.level) === this.activeLevel);
-    }
-
-    this.activeCatBadge.textContent = `${list.length} Çizim Hazır`;
-    this.renderDrawingsListToGrid(list);
   }
 
   renderDrawingsListToGrid(list) {
@@ -504,10 +553,10 @@ class KivancDrawingApp {
 
     if (list.length === 0) {
       this.drawingGrid.innerHTML = `
-        <div style="grid-column: 1 / -1; text-align: center; padding: 40px; background: #ffffff; border-radius: 20px; border: 2px dashed #cbd5e1;">
-          <span style="font-size: 3rem;">🔍</span>
-          <h3 style="font-size: 1.4rem; font-weight: 700; margin: 10px 0;">Çizim Bulunamadı</h3>
-          <p style="color: #64748b; font-weight: 600;">Farklı bir arama yapabilir veya yukarıdan 'Tümü' seçeneğini seçebilirsiniz.</p>
+        <div class="empty-state-card">
+          <span class="empty-state-emoji">🎨</span>
+          <h3>Bu Seviyede Henüz Çizim Yok</h3>
+          <p>Yukarıdaki '✨ Tümü' seviyesini seçerek tüm harika çizimleri görebilirsin!</p>
         </div>
       `;
       return;
@@ -517,16 +566,13 @@ class KivancDrawingApp {
       const card = document.createElement('div');
       card.className = 'drawing-card';
 
-      // Kart için bitmiş çizimin tam SVG'si
-      const allPaths = item.steps.map(s => s.svg).join('');
-
+      // Kartta profesyonel bitmiş illüstrasyon gösterilir (previewSvg)
       card.innerHTML = `
-        <svg viewBox="0 0 600 600" class="card-preview-svg">
-          <g fill="none" stroke="#1e293b" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
-            ${allPaths}
-          </g>
-          ${item.coloring || ''}
-        </svg>
+        <div class="card-svg-wrapper">
+          <svg viewBox="0 0 600 600" class="card-preview-svg">
+            ${item.previewSvg}
+          </svg>
+        </div>
         <h3 class="card-title">${item.emoji} ${item.name}</h3>
         <p class="card-desc">${item.description || ''}</p>
         <div class="card-meta">
@@ -535,31 +581,82 @@ class KivancDrawingApp {
         </div>
         <button class="card-cta-btn">
           <span>Bunu Çizmek İstiyorum</span>
-          <span>✏️</span>
+          <span class="btn-hand-icon">✏️</span>
         </button>
       `;
 
+      // Karta dokununca DERS ÖNCESİ BİTMİŞ RESİM REFERANSI açılır
       card.addEventListener('click', () => {
         this.audio.playPop();
-        this.startDrawing(item.id);
+        this.openPreLessonModal(item.id);
       });
 
       this.drawingGrid.appendChild(card);
     });
   }
 
+  // =========================================================================
+  // DERS ÖNCESİ BİTMİŞ RESİM REFERANS MODALI (PRE-LESSON SHOWCASE)
+  // =========================================================================
+  openPreLessonModal(drawingId) {
+    const drawing = DRAWINGS_DATA.find(d => d.id === drawingId);
+    if (!drawing) return;
+
+    this.pendingDrawingId = drawingId;
+    this.preLessonEmoji.textContent = drawing.emoji;
+    this.preLessonTitle.textContent = drawing.name;
+    this.preLessonDesc.textContent = drawing.description || '';
+
+    // Seviye Rozeti
+    this.preLessonLevel.className = `tag-difficulty lvl-tag-${drawing.level}`;
+    this.preLessonLevel.textContent = drawing.levelBadge;
+    this.preLessonSteps.textContent = `${drawing.steps.length} Adımda Tamamla`;
+
+    // Bitmiş Profesyonel Referans İllüstrasyonu Yükle
+    this.preLessonSvg.innerHTML = drawing.previewSvg;
+
+    // Renk Paleti Çipleri
+    this.preLessonColors.innerHTML = '';
+    if (drawing.colors && drawing.colors.length > 0) {
+      drawing.colors.forEach(col => {
+        const chip = document.createElement('span');
+        chip.className = 'color-chip';
+        chip.innerHTML = `
+          <span class="chip-circle" style="background-color: ${col.hex}"></span>
+          <span>${col.name}</span>
+        `;
+        this.preLessonColors.appendChild(chip);
+      });
+    }
+
+    this.preLessonModal.classList.remove('hidden');
+
+    // Kıvanç'a sıcak sesli karşılama
+    this.speak(`${drawing.name} çizmeye hazır mısın Kıvanç? Kağıdını ve kalemini hazırla, birlikte çizelim!`);
+  }
+
+  closePreLessonModal() {
+    if (this.preLessonModal) {
+      this.preLessonModal.classList.add('hidden');
+    }
+  }
+
+  // =========================================================================
+  // ÇİZİM DERSİ BAŞLATMA
+  // =========================================================================
   startDrawing(drawingId) {
     const drawing = DRAWINGS_DATA.find(d => d.id === drawingId);
     if (!drawing) return;
 
     this.currentDrawing = drawing;
     this.currentStep = 0;
+    this.isPaused = false;
+    this.updatePauseButton();
 
-    // Başlık ve emojiyi güncelle
     this.currentItemEmoji.textContent = drawing.emoji;
     this.currentItemTitle.textContent = drawing.name;
 
-    // Adım noktalarını oluştur
+    // Adım Noktaları
     this.stepDotsContainer.innerHTML = '';
     drawing.steps.forEach((_, idx) => {
       const dot = document.createElement('div');
@@ -567,7 +664,7 @@ class KivancDrawingApp {
       this.stepDotsContainer.appendChild(dot);
     });
 
-    // Renk kutusunu güncelle
+    // Renk Kutusu
     this.renderColorChips(drawing.colors);
 
     this.showScreen('workshop');
@@ -589,8 +686,15 @@ class KivancDrawingApp {
     });
   }
 
+  // =========================================================================
+  // ADIM RENDER VE DOĞAL ÇİZGİ ANİMASYON MOTORU
+  // =========================================================================
   renderCurrentStep(shouldAnimate = true) {
     if (!this.currentDrawing) return;
+
+    this.stopStrokeAnimation();
+    this.isPaused = false;
+    this.updatePauseButton();
 
     const total = this.currentDrawing.steps.length;
     const step = this.currentDrawing.steps[this.currentStep];
@@ -608,7 +712,7 @@ class KivancDrawingApp {
     this.instructionTitle.textContent = step.title;
     this.instructionDesc.textContent = step.instruction;
 
-    // Önceki adımların SVG'si (açık gri/tamamlanmış)
+    // Önceki adımların SVG çizgileri (gri / tamamlanmış)
     let prevSvg = '';
     for (let i = 0; i < this.currentStep; i++) {
       prevSvg += this.currentDrawing.steps[i].svg;
@@ -619,9 +723,9 @@ class KivancDrawingApp {
       </g>
     `;
 
-    // Şimdiki adımın SVG'si (kalın canlı siyah çizgi)
+    // Şimdiki adımın SVG çizgileri (kalın canlı siyah / mavi kılavuz)
     this.layerCurrent.innerHTML = `
-      <g class="svg-stroke-current ${shouldAnimate ? 'svg-stroke-animating' : ''}">
+      <g class="svg-stroke-current">
         ${step.svg}
       </g>
     `;
@@ -629,7 +733,7 @@ class KivancDrawingApp {
     // Boyama katmanı sıfırla
     this.layerColoring.innerHTML = '';
 
-    // Buton metni güncellemesi (Son adım mı?)
+    // İlerleme butonu metni (Son adım mı?)
     const actionTitle = this.btnNextStep.querySelector('.action-title');
     const actionSub = this.btnNextStep.querySelector('.action-sub');
     if (this.currentStep === total - 1) {
@@ -643,42 +747,219 @@ class KivancDrawingApp {
     // Sesli anlatım
     this.speak(step.voice || step.instruction);
 
-    // Animasyon kalemi
+    // Gerçekçi Kalem Çizim Animasyonu
     if (shouldAnimate) {
-      this.animateMagicPencil();
+      this.startStrokeAnimation();
+    } else {
+      this.magicPencil.classList.remove('visible');
     }
 
-    // Eğer sayaç modu açıksa sayacı yeniden başlat
+    // Otomatik sayaç modu açıksa başlat
     if (this.timerMode) {
       this.resetTimer();
     }
   }
 
-  animateMagicPencil() {
-    this.magicPencil.classList.remove('visible');
-    // Kalemin hafif hareket etmesi için ufak animasyon
-    const bboxTarget = this.layerCurrent.querySelector('path, circle, rect, ellipse');
-    if (bboxTarget && bboxTarget.getBBox) {
-      try {
-        const box = bboxTarget.getBBox();
-        const svgRect = this.drawingSvg.getBoundingClientRect();
-        const scaleX = svgRect.width / 600;
-        const scaleY = svgRect.height / 600;
+  // =========================================================================
+  // GERÇEKÇİ KALEM TAKİPLİ SVG VEKTÖR ANİMASYONU
+  // =========================================================================
+  stopStrokeAnimation() {
+    if (this.animFrameId) {
+      cancelAnimationFrame(this.animFrameId);
+      this.animFrameId = null;
+    }
+    this.activeStrokeAnimation = null;
+    if (this.magicPencil) {
+      this.magicPencil.classList.remove('visible');
+    }
+  }
 
-        const leftPx = (box.x + box.width) * scaleX;
-        const topPx = (box.y + box.height / 2) * scaleY;
+  startStrokeAnimation() {
+    this.stopStrokeAnimation();
+    this.isPaused = false;
+    this.updatePauseButton();
 
-        this.magicPencil.style.left = `${leftPx}px`;
-        this.magicPencil.style.top = `${topPx}px`;
-        this.magicPencil.classList.add('visible');
+    // layerCurrent içindeki çizilebilir tüm elemanları topla
+    const elements = Array.from(
+      this.layerCurrent.querySelectorAll('path, circle, line, rect, ellipse, polyline, polygon')
+    );
 
-        setTimeout(() => {
+    if (elements.length === 0) {
+      this.magicPencil.classList.remove('visible');
+      return;
+    }
+
+    const strokeQueue = [];
+    elements.forEach(el => {
+      let len = 0;
+      if (el.getTotalLength) {
+        try { len = el.getTotalLength(); } catch (e) { len = 300; }
+      }
+      if (!len || len < 5) {
+        if (el.tagName.toLowerCase() === 'circle') {
+          const r = parseFloat(el.getAttribute('r')) || 30;
+          len = 2 * Math.PI * r;
+        } else if (el.tagName.toLowerCase() === 'line') {
+          const x1 = parseFloat(el.getAttribute('x1')) || 0;
+          const y1 = parseFloat(el.getAttribute('y1')) || 0;
+          const x2 = parseFloat(el.getAttribute('x2')) || 0;
+          const y2 = parseFloat(el.getAttribute('y2')) || 0;
+          len = Math.hypot(x2 - x1, y2 - y1);
+        } else {
+          len = 200;
+        }
+      }
+
+      // Çizgiyi sıfırdan çizilecek şekilde gizle
+      el.style.strokeDasharray = `${len} ${len}`;
+      el.style.strokeDashoffset = len;
+
+      // Çizim süresi: Hıza ve uzunluğa göre ayarlı (~320 px/saniye)
+      const baseDuration = Math.max(650, Math.min(2400, (len / 320) * 1000));
+      const duration = baseDuration / this.playbackSpeed;
+
+      strokeQueue.push({
+        element: el,
+        length: len,
+        duration: duration
+      });
+    });
+
+    this.activeStrokeAnimation = {
+      queue: strokeQueue,
+      currentIndex: 0,
+      startTime: null,
+      elapsedBeforePause: 0
+    };
+
+    this.magicPencil.classList.add('visible');
+    this.animFrameId = requestAnimationFrame(ts => this.runStrokeFrame(ts));
+  }
+
+  runStrokeFrame(timestamp) {
+    if (!this.activeStrokeAnimation || this.isPaused) return;
+
+    const anim = this.activeStrokeAnimation;
+    if (anim.currentIndex >= anim.queue.length) {
+      // Adımdaki tüm çizgiler bitti
+      setTimeout(() => {
+        if (!this.activeStrokeAnimation || anim.currentIndex >= anim.queue.length) {
           this.magicPencil.classList.remove('visible');
-        }, 1800);
-      } catch (e) {
-        // SVG henüz tam render edilmemişse yoksay
+        }
+      }, 600);
+      return;
+    }
+
+    const currentItem = anim.queue[anim.currentIndex];
+    if (!anim.startTime) {
+      anim.startTime = timestamp;
+    }
+
+    const elapsed = (timestamp - anim.startTime) + anim.elapsedBeforePause;
+    const progress = Math.min(1, elapsed / currentItem.duration);
+
+    // Çizgi ilerlemesini uygula
+    const currentOffset = currentItem.length * (1 - progress);
+    currentItem.element.style.strokeDashoffset = currentOffset;
+
+    // Kalem ucunu çizginin tam ucuna konumlandır
+    try {
+      const drawnDist = currentItem.length * progress;
+      let pt = { x: 300, y: 300 };
+
+      if (currentItem.element.getPointAtLength) {
+        pt = currentItem.element.getPointAtLength(drawnDist);
+      } else if (currentItem.element.tagName.toLowerCase() === 'circle') {
+        const cx = parseFloat(currentItem.element.getAttribute('cx')) || 300;
+        const cy = parseFloat(currentItem.element.getAttribute('cy')) || 300;
+        const r = parseFloat(currentItem.element.getAttribute('r')) || 50;
+        const angle = progress * 2 * Math.PI;
+        pt = { x: cx + r * Math.cos(angle), y: cy + r * Math.sin(angle) };
+      }
+
+      // SVG noktasını ekran piksellerine dönüştür
+      const boardRect = this.canvasBoard.getBoundingClientRect();
+      const svgRect = this.drawingSvg.getBoundingClientRect();
+      const scaleX = svgRect.width / 600;
+      const scaleY = svgRect.height / 600;
+      const xPx = (svgRect.left - boardRect.left) + pt.x * scaleX;
+      const yPx = (svgRect.top - boardRect.top) + pt.y * scaleY;
+
+      this.magicPencil.style.left = `${xPx}px`;
+      this.magicPencil.style.top = `${yPx}px`;
+    } catch (e) {}
+
+    if (progress < 1) {
+      this.animFrameId = requestAnimationFrame(ts => this.runStrokeFrame(ts));
+    } else {
+      // Bu çizgi bitti, sıradakine geç
+      currentItem.element.style.strokeDashoffset = 0;
+      anim.currentIndex++;
+      anim.startTime = null;
+      anim.elapsedBeforePause = 0;
+      this.animFrameId = requestAnimationFrame(ts => this.runStrokeFrame(ts));
+    }
+  }
+
+  togglePause() {
+    this.isPaused = !this.isPaused;
+    this.audio.playPop();
+
+    if (this.isPaused) {
+      if (this.animFrameId) {
+        cancelAnimationFrame(this.animFrameId);
+        this.animFrameId = null;
+      }
+      if (this.activeStrokeAnimation && this.activeStrokeAnimation.startTime) {
+        this.activeStrokeAnimation.elapsedBeforePause += (performance.now() - this.activeStrokeAnimation.startTime);
+        this.activeStrokeAnimation.startTime = null;
+      }
+      if (this.synth) this.synth.pause();
+    } else {
+      if (this.synth) this.synth.resume();
+      if (this.activeStrokeAnimation) {
+        this.activeStrokeAnimation.startTime = performance.now();
+        this.animFrameId = requestAnimationFrame(ts => this.runStrokeFrame(ts));
+      } else {
+        this.startStrokeAnimation();
       }
     }
+
+    this.updatePauseButton();
+  }
+
+  updatePauseButton() {
+    if (!this.btnPauseStep) return;
+    const icon = this.btnPauseStep.querySelector('.tool-icon');
+    const label = this.btnPauseStep.querySelector('.tool-label');
+
+    if (this.isPaused) {
+      if (icon) icon.textContent = '▶️';
+      if (label) label.textContent = 'Devam Et';
+      this.btnPauseStep.classList.add('paused');
+    } else {
+      if (icon) icon.textContent = '⏸️';
+      if (label) label.textContent = 'Duraklat';
+      this.btnPauseStep.classList.remove('paused');
+    }
+  }
+
+  cycleSpeed() {
+    this.audio.playPop();
+    if (this.playbackSpeed === 1.0) {
+      this.playbackSpeed = 1.5;
+    } else if (this.playbackSpeed === 1.5) {
+      this.playbackSpeed = 0.5;
+    } else {
+      this.playbackSpeed = 1.0;
+    }
+
+    if (this.speedLabel) {
+      this.speedLabel.textContent = `Hız: ${this.playbackSpeed}x`;
+    }
+
+    // Yeni hızla adımı baştan çiz
+    this.renderCurrentStep(true);
   }
 
   nextStep() {
@@ -688,28 +969,19 @@ class KivancDrawingApp {
       this.audio.playChime();
       this.renderCurrentStep(true);
     } else {
-      // Resim tamamlandı! Kutlama!
       this.completeDrawing();
     }
   }
 
   completeDrawing() {
+    this.stopStrokeAnimation();
     this.stopTimer();
     this.audio.playVictoryFanfare();
 
-    // Boyama katmanını ekle
-    if (this.currentDrawing.coloring) {
-      this.layerColoring.innerHTML = this.currentDrawing.coloring;
-    }
-
-    // Kutlama Modalı
-    const allPaths = this.currentDrawing.steps.map(s => s.svg).join('');
+    // Tamamlanan eseri kutlama modalında göster
     this.modalPreviewBox.innerHTML = `
       <svg viewBox="0 0 600 600">
-        <g fill="none" stroke="#1e293b" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
-          ${allPaths}
-        </g>
-        ${this.currentDrawing.coloring || ''}
+        ${this.currentDrawing.previewSvg}
       </svg>
     `;
 
@@ -720,7 +992,6 @@ class KivancDrawingApp {
   }
 
   triggerConfetti() {
-    // Hafif ve eğlenceli CSS konfeti patlaması
     const container = document.createElement('div');
     container.style.position = 'fixed';
     container.style.inset = '0';
@@ -761,9 +1032,9 @@ class KivancDrawingApp {
     }, 4000);
   }
 
-  // ============================================================
-  // OTOMATİK SAYAÇ / BEKLEME MOTORU (Eller Kağıttayken Kolaylık)
-  // ============================================================
+  // =========================================================================
+  // İSTEĞE BAĞLI OTOMATİK SAYAÇ MODU
+  // =========================================================================
   toggleTimer() {
     this.timerMode = !this.timerMode;
     if (this.timerMode) {
@@ -801,7 +1072,7 @@ class KivancDrawingApp {
 
   updateTimerDisplay() {
     this.countdownText.textContent = this.timerRemaining;
-    const perimeter = 283; // 2 * PI * 45
+    const perimeter = 283;
     const offset = perimeter - (this.timerRemaining / this.timerSeconds) * perimeter;
     this.countdownProgress.style.strokeDashoffset = offset;
   }
@@ -814,7 +1085,7 @@ class KivancDrawingApp {
   }
 }
 
-// Sayfa yüklendiğinde başlat
+// Uygulamayı Başlat
 window.addEventListener('DOMContentLoaded', () => {
   window.app = new KivancDrawingApp();
 });

@@ -49,13 +49,15 @@
         </div>
       </div>
 
-      <!-- Hızlı Arama Çubuğu -->
-      <div class="search-bar-container">
-        <div class="search-input-wrapper">
-          <span class="search-icon">🔍</span>
-          <input type="text" id="search-input" placeholder="Yüzlerce çizim arasından ara... (Örn: Kaplan, Ferrari, Ejderha, T-Rex, Ninja, Kurt)" autocomplete="off">
-          <button id="btn-clear-search" class="btn-clear-search hidden" title="Temizle">✕</button>
-        </div>
+      <!-- Dokunmatik Kategori Hap Butonları (Yazı Yazmak Yok) -->
+      <div class="category-pills-bar" id="category-pills-bar">
+        <button class="cat-pill-btn active" data-cat="all"><span class="cat-pill-emoji">✨</span><span>Tümü</span></button>
+        <button class="cat-pill-btn" data-cat="hayvanlar"><span class="cat-pill-emoji">🦁</span><span>Hayvanlar</span></button>
+        <button class="cat-pill-btn" data-cat="arabalar"><span class="cat-pill-emoji">🏎️</span><span>Arabalar</span></button>
+        <button class="cat-pill-btn" data-cat="dinozorlar"><span class="cat-pill-emoji">🦖</span><span>Dinozorlar</span></button>
+        <button class="cat-pill-btn" data-cat="deniz"><span class="cat-pill-emoji">🌊</span><span>Deniz</span></button>
+        <button class="cat-pill-btn" data-cat="uzay"><span class="cat-pill-emoji">🚀</span><span>Uzay</span></button>
+        <button class="cat-pill-btn" data-cat="kahramanlar"><span class="cat-pill-emoji">🥷</span><span>Kahramanlar</span></button>
       </div>
 
       <!-- Seviye Filtreleri -->
@@ -113,10 +115,23 @@
         </div>
       </div>
 
-      <div class="timer-mode-box">
-        <button id="btn-toggle-timer" class="btn-timer" title="Otomatik Bekleme Modu">
-          <span class="timer-icon">⏱️</span>
-          <span class="timer-text">Sayaç: <b id="timer-status">Kapalı</b></span>
+      <div class="workshop-header-tools">
+        <!-- Oynat / Duraklat -->
+        <button id="btn-pause-step" class="btn-tool" title="Çizimi Duraklat / Devam Et">
+          <span class="tool-icon">⏸️</span>
+          <span class="tool-label">Duraklat</span>
+        </button>
+
+        <!-- Çizim Hızı -->
+        <button id="btn-speed-toggle" class="btn-tool" title="Çizim Hızını Ayarla">
+          <span class="tool-icon">⚡</span>
+          <span class="tool-label" id="speed-label">Hız: 1x</span>
+        </button>
+
+        <!-- Otomatik Sayaç -->
+        <button id="btn-toggle-timer" class="btn-tool btn-timer" title="Otomatik Bekleme Modu">
+          <span class="tool-icon">⏱️</span>
+          <span class="tool-label">Sayaç: <b id="timer-status">Kapalı</b></span>
         </button>
       </div>
     </header>
@@ -141,9 +156,20 @@
             <g id="layer-coloring" class="layer-coloring"></g>
           </svg>
 
-          <!-- Çizen Sihirli Kalem İmleci -->
+          <!-- Çizen Sihirli Sanatçı Kalemi İmleci -->
           <div id="magic-pencil" class="magic-pencil" aria-hidden="true">
-            <span class="pencil-body">✏️</span>
+            <svg class="pencil-vector" viewBox="0 0 64 64" width="56" height="56">
+              <!-- Gerçek Kurşun Kalem İllüstrasyonu: Çizen grafit ucu tam altta -->
+              <g transform="rotate(-35 32 32)">
+                <polygon points="30,52 34,52 32,62" fill="#0f172a"/>
+                <polygon points="27,38 37,38 34,52 30,52" fill="#fde047"/>
+                <rect x="27" y="12" width="10" height="26" fill="#f59e0b" rx="1"/>
+                <line x1="30" y1="12" x2="30" y2="38" stroke="#d97706" stroke-width="1.5"/>
+                <line x1="34" y1="12" x2="34" y2="38" stroke="#fbbf24" stroke-width="1.5"/>
+                <rect x="27" y="7" width="10" height="5" fill="#94a3b8"/>
+                <rect x="27" y="2" width="10" height="5" fill="#f43f5e" rx="2"/>
+              </g>
+            </svg>
           </div>
 
           <!-- Canlı Geri Sayım Çemberi (Otomatik Mod) -->
@@ -209,6 +235,67 @@
       </aside>
     </main>
   </section>
+
+  <!-- DERS ÖNCESİ BİTMİŞ RESİM REFERANS MODALI (Pre-Lesson Showcase) -->
+  <div id="pre-lesson-modal" class="modal-overlay hidden">
+    <div class="pre-lesson-card">
+      <button id="btn-close-pre-lesson" class="btn-modal-close" title="Kapat">✕</button>
+
+      <div class="pre-lesson-layout">
+        <!-- Sol/Üst: Hedeflenen Bitmiş Eser Önizlemesi -->
+        <div class="pre-lesson-visual">
+          <div class="visual-badge">
+            <span class="sparkle-icon">✨</span>
+            <span>Hedeflenen Bitmiş Resim</span>
+          </div>
+          <div class="visual-frame">
+            <svg id="pre-lesson-svg" viewBox="0 0 600 600" class="pre-lesson-svg"></svg>
+          </div>
+          <span class="visual-hint">👀 Kıvanç, çizimini bitirdiğinde kağıdında tam olarak bu resmi göreceksin!</span>
+        </div>
+
+        <!-- Sağ/Alt: Bilgiler, Malzemeler ve Başlat Butonu -->
+        <div class="pre-lesson-info">
+          <div class="pre-header-text">
+            <span id="pre-lesson-emoji" class="pre-emoji">🦊</span>
+            <div>
+              <h2 id="pre-lesson-title">Zarif Kızıl Tilki</h2>
+              <div class="pre-meta-tags">
+                <span id="pre-lesson-level" class="tag-difficulty lvl-tag-1">🟢 Çırak</span>
+                <span id="pre-lesson-steps" class="tag-steps">6 Adım</span>
+              </div>
+            </div>
+          </div>
+
+          <p id="pre-lesson-desc" class="pre-description">
+            Temel geometrik daireler ve üçgenlerden inşa edilen asil bir kızıl tilki.
+          </p>
+
+          <!-- Kağıt Çizim Malzemeleri -->
+          <div class="materials-section">
+            <h4 class="section-title">📄 Masanda Bunları Hazırla:</h4>
+            <div class="materials-chips">
+              <span class="mat-chip">📄 1 Adet Boş Kağıt</span>
+              <span class="mat-chip">✏️ Kurşun Kalem</span>
+              <span class="mat-chip">🧹 Silgi</span>
+            </div>
+          </div>
+
+          <!-- Boya Kalemleri -->
+          <div class="colors-section">
+            <h4 class="section-title">🖍️ Boyamak İçin Renkler:</h4>
+            <div id="pre-lesson-colors" class="color-chips"></div>
+          </div>
+
+          <!-- Dev Başlat Butonu -->
+          <button id="btn-start-lesson" class="btn-start-lesson">
+            <span class="start-icon">✏️</span>
+            <span class="start-title">Hadi Birlikte Çizelim!</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- KUTLAMA MODALI -->
   <div id="celebration-modal" class="modal-overlay hidden">
