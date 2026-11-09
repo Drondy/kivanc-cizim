@@ -7,7 +7,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Kıvanç Çizim">
   <title>🎨 Kıvanç'ın Çizim Atölyesi - Adım Adım Kağıda Çizim</title>
-  <link rel="stylesheet" href="style.css?v=20261109_10">
+  <link rel="stylesheet" href="style.css?v=20261109_11">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@700;900&display=swap" rel="stylesheet">
@@ -83,6 +83,21 @@
     </header>
 
     <main class="gallery-container">
+      <!-- Kıvanç Başarı ve Koleksiyon İlerleme Rozet Barı -->
+      <div id="progress-stats-bar" class="progress-stats-bar">
+        <div class="progress-stats-left">
+          <span class="progress-stats-trophy">🏆</span>
+          <div>
+            <h3 class="progress-stats-title">Kıvanç'ın Resim Koleksiyonu</h3>
+            <p id="progress-stats-desc" class="progress-stats-desc">Tamamladığın harika eserler burada toplanıyor!</p>
+          </div>
+        </div>
+        <div id="progress-stats-pill" class="progress-stats-pill">
+          <span>⭐</span>
+          <span id="progress-stats-count">0 Tamamlandı</span>
+        </div>
+      </div>
+
       <!-- 1. Kategori Klasörleri Izgarası (Ana Görünüm) -->
       <div id="category-folders-grid" class="category-folders-grid">
         <!-- JS ile doldurulacak -->
@@ -271,6 +286,9 @@
             Temel geometrik daireler ve üçgenlerden inşa edilen asil bir kızıl tilki.
           </p>
 
+          
+          <!-- Önceden Çizildiyse Başarı Bildirimi -->
+          <div id="pre-lesson-completed-alert" class="pre-lesson-completed-alert hidden"></div>
           <!-- Kağıt Çizim Malzemeleri -->
           <div class="materials-section">
             <h4 class="section-title">📄 Masanda Bunları Hazırla:</h4>
@@ -349,8 +367,8 @@
   </div>
 
   <!-- Ses efektleri ve uygulama mantığı -->
-  <script src="config.js?v=20261109_10"></script>
-  <script src="drawings.js?v=20261109_10"></script>
-  <script src="app.js?v=20261109_10"></script>
+  <script src="config.js?v=20261109_11"></script>
+  <script src="drawings.js?v=20261109_11"></script>
+  <script src="app.js?v=20261109_11"></script>
 </body>
 </html>

@@ -1541,3 +1541,172 @@ body {
 .drawing-grid:not(.hidden) {
   animation: pageTransition 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+
+/* =========================================================================
+   TAMAMLANAN ÇİZİMLER (COMPLETED DRAWING BADGES & PROGRESS)
+   ========================================================================= */
+
+/* Kart Üzerinde Tamamlandı Görünümü */
+.drawing-card.is-completed {
+  border-color: #10b981 !important;
+  background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 40%) !important;
+  box-shadow: 0 12px 28px -6px rgba(16, 185, 129, 0.3) !important;
+}
+
+.drawing-card.is-completed::before {
+  background: linear-gradient(90deg, #10b981, #059669, #34d399, #10b981) !important;
+}
+
+/* Köşe Şerit Rozeti (Ribbon) */
+.card-completed-ribbon {
+  position: absolute;
+  top: 18px;
+  right: -36px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 900;
+  padding: 5px 36px;
+  transform: rotate(45deg);
+  box-shadow: 0 4px 10px rgba(16, 185, 129, 0.4);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  z-index: 4;
+  pointer-events: none;
+}
+
+/* Sol Üst Başarı Damgası */
+.card-completed-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #ecfdf5;
+  border: 2px solid #10b981;
+  color: #065f46;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 4;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.2);
+}
+
+/* Tamamlanan Kartın Aksiyon Butonu */
+.drawing-card.is-completed .card-cta-btn {
+  background: linear-gradient(135deg, #10b981, #059669) !important;
+  border-color: #047857 !important;
+  color: #ffffff !important;
+}
+
+.drawing-card.is-completed .card-cta-btn:hover {
+  background: linear-gradient(135deg, #059669, #047857) !important;
+}
+
+/* Kategori Kartında Tamamlanma Sayacı */
+.cat-badge-completed {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #6ee7b7;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+/* Genel İlerleme / Başarı Rozet Barı */
+.progress-stats-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 2.5px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 12px 20px;
+  margin: 0 auto 24px auto;
+  max-width: 900px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+}
+
+.progress-stats-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.progress-stats-trophy {
+  font-size: 28px;
+  animation: bounceTrophy 2s infinite ease-in-out;
+}
+
+@keyframes bounceTrophy {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.progress-stats-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0;
+}
+
+.progress-stats-desc {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  margin: 0;
+}
+
+.progress-stats-pill {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 900;
+  box-shadow: 0 3px 8px rgba(16, 185, 129, 0.35);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+/* Ders Öncesi Modalında Tamamlandı Bildirimi */
+.pre-lesson-completed-alert {
+  background: #ecfdf5;
+  border: 2px dashed #10b981;
+  color: #065f46;
+  padding: 10px 16px;
+  border-radius: 14px;
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn-toggle-done {
+  background: #ffffff;
+  border: 1.5px solid #10b981;
+  color: #059669;
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-toggle-done:hover {
+  background: #10b981;
+  color: #ffffff;
+}

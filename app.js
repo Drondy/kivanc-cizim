@@ -142,6 +142,12 @@ class KivancDrawingApp {
     this.activeCategory = 'all'; // 'all', 'hayvanlar', 'arabalar', 'dinozorlar', etc.
     this.activeLevel = 'all';    // 'all', '1', '2', '3'
     this.pendingDrawingId = null;
+    // Kıvanç'ın Tamamladığı Çizimler Koleksiyonu (Kalıcı LocalStorage)
+    try {
+      this.completedDrawings = new Set(JSON.parse(localStorage.getItem('kivanc_completed_drawings') || '[]'));
+    } catch (e) {
+      this.completedDrawings = new Set();
+    }
 
     // Gerçekçi Çizim Animasyonu Durumu
     this.isPaused = false;
@@ -250,6 +256,11 @@ class KivancDrawingApp {
     this.activeCatEmoji = document.getElementById('active-cat-emoji');
     this.activeCatTitle = document.getElementById('active-cat-title');
     this.activeCatBadge = document.getElementById('active-cat-badge');
+    // Başarı ve İlerleme Widget'ları
+    this.progressStatsBar = document.getElementById('progress-stats-bar');
+    this.progressStatsCount = document.getElementById('progress-stats-count');
+    this.progressStatsDesc = document.getElementById('progress-stats-desc');
+    this.preLessonCompletedAlert = document.getElementById('pre-lesson-completed-alert');
 
     // Üst Araçlar
     this.btnSoundToggle = document.getElementById('btn-sound-toggle');
@@ -565,11 +576,96 @@ class KivancDrawingApp {
     }
   }
 
+  
+  saveCompletedDrawings() {
+    try {
+      localStorage.setItem('kivanc_completed_drawings', JSON.stringify([...this.completedDrawings]));
+    } catch (e) {
+      console.warn('LocalStorage kayıt hatası:', e);
+    }
+  }
+
+  toggleDrawingCompleted(drawingId) {
+    if (this.completedDrawings.has(drawingId)) {
+      this.completedDrawings.delete(drawingId);
+    } else {
+      this.completedDrawings.add(drawingId);
+      this.audio.playVictoryFanfare();
+      this.triggerConfetti();
+    }
+    this.saveCompletedDrawings();
+    this.updateProgressStatsBar();
+    this.renderCategoryFolders();
+    if (!this.drawingGrid.classList.contains('hidden')) {
+      const cat = this.activeCategory;
+      let list = DRAWINGS_DATA.filter(d => d.categoryId === cat);
+      if (this.activeLevel !== 'all') {
+        list = list.filter(d => String(d.level) === this.activeLevel);
+      }
+      this.renderDrawingsListToGrid(list);
+    }
+    if (this.pendingDrawingId === drawingId) {
+      this.updatePreLessonModalCompletion(drawingId);
+    }
+  }
+
+  updateProgressStatsBar() {
+    if (!this.progressStatsCount) return;
+    const count = this.completedDrawings.size;
+    const total = DRAWINGS_DATA.length;
+    this.progressStatsCount.textContent = `${count} / ${total} Çizildi ⭐`;
+
+    if (this.progressStatsDesc) {
+      if (count === 0) {
+        this.progressStatsDesc.textContent = 'Henüz tamamlanan çizim yok. Hadi bir resim seçip başlayalım! 🎨';
+      } else if (count < total) {
+        this.progressStatsDesc.textContent = `Harikasın Kıvanç! ${count} resmi başarıyla çizdin! 🏆`;
+      } else {
+        this.progressStatsDesc.textContent = 'İnanılmaz! Koleksiyondaki TÜM resimleri çizdin! Efsanesin Kıvanç! 🌟';
+      }
+    }
+  }
+
+  updatePreLessonModalCompletion(drawingId) {
+    if (!this.preLessonCompletedAlert) return;
+    const isDone = this.completedDrawings.has(drawingId);
+    if (isDone) {
+      this.preLessonCompletedAlert.classList.remove('hidden');
+      this.preLessonCompletedAlert.innerHTML = `
+        <div style="display:flex;align-items:center;gap:6px;">
+          <span>🏆</span>
+          <span>Bu resmi daha önce başarıyla tamamladın! Harikasın!</span>
+        </div>
+        <button type="button" class="btn-toggle-done" id="btn-toggle-done">İşareti Kaldır ↺</button>
+      `;
+    } else {
+      this.preLessonCompletedAlert.classList.remove('hidden');
+      this.preLessonCompletedAlert.innerHTML = `
+        <div style="display:flex;align-items:center;gap:6px;">
+          <span>🎨</span>
+          <span>Bu resmi kağıda çizdiysen işaretle:</span>
+        </div>
+        <button type="button" class="btn-toggle-done" id="btn-toggle-done">Çizdim Olarak İşaretle ✓</button>
+      `;
+    }
+
+    const toggleBtn = document.getElementById('btn-toggle-done');
+    if (toggleBtn) {
+      toggleBtn.onclick = (e) => {
+        e.stopPropagation();
+        this.audio.playPop();
+        this.toggleDrawingCompleted(drawingId);
+      };
+    }
+  }
+
   renderCategoryFolders() {
     this.categoryFoldersGrid.innerHTML = '';
     const categoriesToDisplay = CATEGORIES_DATA.filter(c => c.id !== 'all');
 
     categoriesToDisplay.forEach(cat => {
+      const catDrawings = DRAWINGS_DATA.filter(d => d.categoryId === cat.id);
+      const completedInCat = catDrawings.filter(d => this.completedDrawings.has(d.id)).length;
       const count = this.activeLevel === 'all'
         ? DRAWINGS_DATA.filter(d => d.categoryId === cat.id).length
         : DRAWINGS_DATA.filter(d => d.categoryId === cat.id && String(d.level) === this.activeLevel).length;
@@ -585,6 +681,7 @@ class KivancDrawingApp {
         <p class="cat-card-desc">${cat.desc || 'Keşfetmeye hazır çizim dünyası'}</p>
         <div class="cat-card-footer">
           <span class="cat-badge-count">${count} Çizim</span>
+          ${completedInCat > 0 ? `<span class="cat-badge-completed">⭐ ${completedInCat}/${count} Tamam</span>` : ''}
           <span class="cat-card-enter">Aç →</span>
         </div>
       `;
@@ -617,8 +714,9 @@ class KivancDrawingApp {
     }
 
     list.forEach(item => {
+      const isCompleted = this.completedDrawings.has(item.id);
       const card = document.createElement('div');
-      card.className = 'drawing-card';
+      card.className = `drawing-card ${isCompleted ? 'is-completed' : ''}`;
 
       // previewSvg yerine gerçek resim desteği:
       const previewContent = item.previewImage 
@@ -627,6 +725,10 @@ class KivancDrawingApp {
 
       // Kartta profesyonel bitmiş illüstrasyon gösterilir (previewContent)
       card.innerHTML = `
+        ${isCompleted ? `
+          <div class="card-completed-ribbon">⭐ ÇİZDİM! 🏆</div>
+          <div class="card-completed-badge"><span>✅</span><span>Çizildi</span></div>
+        ` : ''}
         <div class="card-svg-wrapper">
           <svg viewBox="0 0 600 600" class="card-preview-svg">
             ${previewContent}
@@ -639,8 +741,8 @@ class KivancDrawingApp {
           <span class="tag-steps">${item.steps.length} Adım</span>
         </div>
         <button class="card-cta-btn">
-          <span>Bunu Çizmek İstiyorum</span>
-          <span class="btn-hand-icon">✏️</span>
+          <span>${isCompleted ? 'Tekrar Çiz' : 'Bunu Çizmek İstiyorum'}</span>
+          <span class="btn-hand-icon">${isCompleted ? '✨' : '✏️'}</span>
         </button>
       `;
 
@@ -1061,6 +1163,9 @@ class KivancDrawingApp {
       </svg>
     `;
 
+    this.completedDrawings.add(this.currentDrawing.id);
+    this.saveCompletedDrawings();
+    this.updateProgressStatsBar();
     this.celebrationModal.classList.remove('hidden');
     this.triggerConfetti();
 
