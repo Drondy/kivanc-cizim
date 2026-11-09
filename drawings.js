@@ -1,28 +1,28 @@
+// ============================================================================
 // KIVANÇ ÇİZİM ATÖLYESİ — PROFESSIONAL DRAWING ACADEMY
-// Kapsamlı ve Pedagojik Profesyonel Çizim Veritabanı
-// Seviyeler:
-// 1 = 🟢 ÇIRAK (Temiz geometri, kılavuz iskelet çizgileri, harika bitmiş illüstrasyon)
-// 2 = 🟡 RESSAM (Anatomik hacim, oran-orantı, gövde kasları ve ince detaylar)
-// 3 = 🔴 USTA SANATÇI (Konsept sanat kalitesi, dinamik kompozisyon, profesyonel gölgelendirme ve zengin doku)
+// 🟢 ÇIRAK SEVİYESİ (LEVEL 1) — 11 ADIMLI PEDAGOJİK ÇİZİM SİSTEMİ
+//
+// Standartlar:
+// - viewBox: 0 0 600 600 (cx=300, cy=300 merkezli)
+// - Organik Cubic Bezier (C, S, Q) yumuşak hatlar
+// - Canlı lineer gradyanlar, ışık/gölge katmanları, çift yansımalı parlak gözler
+// - Mavi kılavuz çizgileri (stroke="#3b82f6" stroke-dasharray="10 8") sonraki adımlarda gizlenir
+// ============================================================================
 
 const CATEGORIES_DATA = [
-  { id: "all", name: "Tüm Çizimler", emoji: "✨", count: 23 },
-  { id: "hayvanlar", name: "Vahşi & Sevimli Hayvanlar", emoji: "🦁", count: 4 },
-  { id: "arabalar", name: "Süper Arabalar & Taşıtlar", emoji: "🏎️", count: 3 },
-  { id: "dinozorlar", name: "Dinozorlar & Ejderhalar", emoji: "🦖", count: 10 },
-  { id: "deniz", name: "Derin Deniz Canlıları", emoji: "🌊", count: 2 },
-  { id: "uzay", name: "Uzay Gemileri & Mecha", emoji: "🚀", count: 2 },
-  { id: "kahramanlar", name: "Anime & Kahramanlar", emoji: "🥷", count: 2 }
+  { id: "all", name: "Tüm Çizimler", emoji: "🎨", count: 6 },
+  { id: "dinozorlar", name: "Dinozorlar & Ejderhalar", emoji: "🦖", count: 1 },
+  { id: "hayvanlar", name: "Vahşi & Sevimli Hayvanlar", emoji: "🦁", count: 1 },
+  { id: "arabalar", name: "Süper Arabalar & Taşıtlar", emoji: "🏎️", count: 1 },
+  { id: "deniz", name: "Derin Deniz Canlıları", emoji: "🐬", count: 1 },
+  { id: "uzay", name: "Uzay Gemileri & Roketler", emoji: "🚀", count: 1 },
+  { id: "kahramanlar", name: "Anime & Süper Kahramanlar", emoji: "🥷", count: 1 }
 ];
 
 const DRAWINGS_DATA = [
-
   // =========================================================================
-  // PAKET 1: DİNOZORLAR & EJDERHALAR (5 ADET 🟢 ÇIRAK DERSİ)
+  // 1. SEVİMLİ ATEŞ EJDERHASI (11 ADIM - 🟢 ÇIRAK)
   // =========================================================================
-  // -------------------------------------------------------------------------
-  // 1. SEVİMLİ ATEŞ EJDERHASI (12 ADIM - 🟢 ÇIRAK)
-  // -------------------------------------------------------------------------
   {
     id: "cirak_ates_ejderhasi",
     categoryId: "dinozorlar",
@@ -31,8 +31,8 @@ const DRAWINGS_DATA = [
     level: 1,
     levelName: "Çırak (Seviye 1)",
     levelBadge: "🟢 Çırak",
-    description: "Mavi kılavuz çizgileriyle adım adım inşa edilen, parlak gözlü, kıvrık boynuzlu ve turuncu kanatlı Ateş Ejderhası.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Kırmızı, Turuncu, Sarı Boya Kalemleri",
+    description: "Mavi kılavuz çizgileriyle adım adım inşa edilen, kıvrık boynuzlu, büyük parlak gözlü ve kaya kaidesinde oturan kırmızı Ateş Ejderhası.",
+    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Kırmızı, Turuncu, Sarı, Gri Boya Kalemleri",
     colors: [
       { name: "Ateş Kırmızısı", hex: "#ef4444" },
       { name: "Kanat Turuncusu", hex: "#f97316" },
@@ -42,1797 +42,840 @@ const DRAWINGS_DATA = [
     previewSvg: `
       <defs>
         <linearGradient id="fireDrgBody" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#ff5722"/>
-          <stop offset="100%" stop-color="#b91c1c"/>
+          <stop offset="0%" stop-color="#ff6b4a"/>
+          <stop offset="60%" stop-color="#ef4444"/>
+          <stop offset="100%" stop-color="#991b1b"/>
+        </linearGradient>
+        <linearGradient id="fireDrgBelly" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#fef08a"/>
+          <stop offset="100%" stop-color="#f59e0b"/>
         </linearGradient>
         <linearGradient id="fireDrgWing" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stop-color="#fde047"/>
+          <stop offset="60%" stop-color="#f97316"/>
           <stop offset="100%" stop-color="#ea580c"/>
         </linearGradient>
+        <linearGradient id="fireDrgRock" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#94a3b8"/>
+          <stop offset="100%" stop-color="#334155"/>
+        </linearGradient>
+        <linearGradient id="fireDrgHorn" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#fef08a"/>
+          <stop offset="100%" stop-color="#d97706"/>
+        </linearGradient>
       </defs>
-      <path d="M 120 510 C 160 470, 440 470, 490 515 C 450 545, 150 545, 120 510 Z" fill="#64748b" stroke="#0f172a" stroke-width="8"/>
-      <path d="M 275 290 C 210 190, 110 175, 55 245 C 95 265, 120 295, 110 345 C 155 320, 195 330, 215 365 C 240 340, 265 340, 285 350 Z" fill="url(#fireDrgWing)" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>
-      <path d="M 185 225 L 110 345 M 225 250 L 215 365" stroke="#b91c1c" stroke-width="6" fill="none"/>
-      <path d="M 235 445 C 130 465, 85 410, 115 355 C 125 385, 160 415, 225 405 Z" fill="url(#fireDrgBody)" stroke="#0f172a" stroke-width="10"/>
-      <polygon points="115,355 95,360 115,330 135,355" fill="#ef4444" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
-      <path d="M 285 240 C 235 280, 215 380, 240 475 L 385 475 C 405 390, 395 295, 355 240 Z" fill="url(#fireDrgBody)" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 325 245 C 300 310, 300 395, 320 475 L 375 475 C 390 395, 385 310, 355 245 Z" fill="#fde047" stroke="#0f172a" stroke-width="8"/>
-      <line x1="308" y1="290" x2="380" y2="290" stroke="#ca8a04" stroke-width="5"/>
-      <line x1="305" y1="335" x2="385" y2="335" stroke="#ca8a04" stroke-width="5"/>
-      <line x1="306" y1="380" x2="384" y2="380" stroke="#ca8a04" stroke-width="5"/>
-      <path d="M 230 375 C 185 395, 190 465, 245 485 L 295 485 C 295 450, 270 395, 230 375 Z" fill="url(#fireDrgBody)" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 290 330 L 285 485 L 335 485 L 335 340" fill="url(#fireDrgBody)" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 365 330 L 370 485 L 415 485 L 405 335" fill="url(#fireDrgBody)" stroke="#0f172a" stroke-width="10"/>
+      <!-- Kaya Kaidesi -->
+      <path d="M 110 515 C 160 475, 440 475, 490 515 C 450 550, 150 550, 110 515 Z" fill="url(#fireDrgRock)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+      <!-- Arka Kanat -->
+      <path d="M 280 285 C 220 180, 120 170, 65 240 C 105 260, 130 290, 120 340 C 165 315, 205 325, 225 360 C 250 335, 275 335, 295 345 Z" fill="url(#fireDrgWing)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+      <path d="M 195 220 L 120 340 M 235 245 L 225 360" stroke="#b91c1c" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <!-- Kıvrık Kuyruk ve Ok Ucu -->
+      <path d="M 230 450 C 130 470, 85 410, 115 355 C 125 385, 160 415, 220 410 Z" fill="url(#fireDrgBody)" stroke="#0f172a" stroke-width="9"/>
+      <polygon points="115,355 90,360 115,325 140,355" fill="#f97316" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/>
+      <!-- Tombul Gövde -->
+      <path d="M 285 240 C 235 285, 215 380, 240 480 L 385 480 C 405 390, 395 295, 355 240 Z" fill="url(#fireDrgBody)" stroke="#0f172a" stroke-width="10"/>
+      <!-- Karın Zırhı -->
+      <path d="M 325 245 C 300 310, 300 395, 320 480 L 375 480 C 390 395, 385 310, 355 245 Z" fill="url(#fireDrgBelly)" stroke="#0f172a" stroke-width="8"/>
+      <line x1="308" y1="295" x2="380" y2="295" stroke="#ca8a04" stroke-width="5" stroke-linecap="round"/>
+      <line x1="305" y1="340" x2="385" y2="340" stroke="#ca8a04" stroke-width="5" stroke-linecap="round"/>
+      <line x1="306" y1="385" x2="384" y2="385" stroke="#ca8a04" stroke-width="5" stroke-linecap="round"/>
+      <line x1="310" y1="430" x2="380" y2="430" stroke="#ca8a04" stroke-width="5" stroke-linecap="round"/>
+      <!-- Arka Bacak ve Pençeler -->
+      <path d="M 230 380 C 185 400, 190 470, 245 490 L 295 490 C 295 455, 270 400, 230 380 Z" fill="url(#fireDrgBody)" stroke="#0f172a" stroke-width="9"/>
+      <!-- Ön Bacaklar -->
+      <path d="M 290 335 L 285 490 L 335 490 L 335 345 Z" fill="url(#fireDrgBody)" stroke="#0f172a" stroke-width="9"/>
+      <path d="M 365 335 L 370 490 L 415 490 L 405 340 Z" fill="url(#fireDrgBody)" stroke="#0f172a" stroke-width="9"/>
+      <!-- Pençe Tırnakları -->
+      <circle cx="295" cy="490" r="7" fill="#fde047" stroke="#0f172a" stroke-width="4"/>
+      <circle cx="312" cy="490" r="7" fill="#fde047" stroke="#0f172a" stroke-width="4"/>
+      <circle cx="380" cy="490" r="7" fill="#fde047" stroke="#0f172a" stroke-width="4"/>
+      <circle cx="398" cy="490" r="7" fill="#fde047" stroke="#0f172a" stroke-width="4"/>
+      <!-- Sevimli Baş ve Yanaklar -->
       <path d="M 265 175 C 265 105, 395 105, 415 170 C 455 180, 455 230, 410 240 C 395 265, 330 265, 295 240 C 265 225, 265 195, 265 175 Z" fill="url(#fireDrgBody)" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 295 135 C 255 115, 245 80, 265 65 C 280 85, 295 105, 320 120 Z" fill="#facc15" stroke="#0f172a" stroke-width="8"/>
-      <path d="M 335 120 C 315 95, 315 70, 330 55 C 345 75, 355 95, 365 120 Z" fill="#facc15" stroke="#0f172a" stroke-width="8"/>
+      <!-- Boynuzlar -->
+      <path d="M 295 135 C 255 115, 245 75, 265 60 C 280 80, 295 100, 320 120 Z" fill="url(#fireDrgHorn)" stroke="#0f172a" stroke-width="8"/>
+      <path d="M 335 120 C 315 95, 315 65, 330 50 C 345 70, 355 90, 365 120 Z" fill="url(#fireDrgHorn)" stroke="#0f172a" stroke-width="8"/>
+      <!-- Büyük Parlak Göz -->
       <ellipse cx="355" cy="175" rx="22" ry="26" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
-      <circle cx="362" cy="177" r="11" fill="#0f172a"/>
-      <circle cx="354" cy="167" r="6" fill="#ffffff"/>
+      <circle cx="362" cy="177" r="12" fill="#0f172a"/>
+      <circle cx="355" cy="168" r="6" fill="#ffffff"/>
+      <circle cx="367" cy="183" r="3" fill="#ffffff"/>
+      <path d="M 335 142 Q 355 132, 375 142" stroke="#0f172a" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <!-- Burun Deliği ve Gülümseyen Ağız -->
+      <circle cx="426" cy="185" r="4" fill="#0f172a"/>
       <path d="M 365 215 C 385 235, 420 235, 430 215 C 425 245, 385 250, 365 215 Z" fill="#991b1b" stroke="#0f172a" stroke-width="6"/>
+      <polygon points="380,222 386,232 392,223" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
+      <polygon points="410,222 415,231 420,222" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
     `,
     steps: [
       {
-        title: "1. Adım: Kafa ve Gövde Kılavuzu (Mavi)",
-        instruction: "Kalemini hiç bastırmadan üstte kafa için bir yumurta, altta gövde için tombul bir armut kılavuzu çiz.",
-        voice: "Önce kalemini hiç bastırmadan kafa için bir yumurta, altına da gövde için tombul bir armut şekli çizelim.",
-        svg: `<ellipse cx="345" cy="185" rx="75" ry="62" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="12 8"/><path d="M 285 240 C 235 285, 220 390, 250 475 C 300 490, 380 490, 395 450 C 405 370, 390 280, 355 240 Z" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="12 8"/>`
+        title: "1. Adım: Kafa ve Gövde Kılavuz Ovali (Mavi)",
+        instruction: "Kalemini hiç bastırmadan üstte kafa için yatık bir yumurta, altta gövde için tombul bir armut kılavuzu çiz.",
+        voice: "Önce kalemini hiç bastırmadan kafa için bir yumurta, altına gövde için tombul bir armut çizelim.",
+        svg: `<ellipse cx="345" cy="185" rx="75" ry="62" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/><path d="M 285 240 C 235 285, 220 390, 250 480 C 300 495, 380 495, 395 450 C 405 370, 390 280, 355 240 Z" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
       },
       {
-        title: "2. Adım: Kuyruk ve Kanat Kılavuz Yayları (Mavi)",
-        instruction: "Sola kıvrılan kuyruk yayını ve sırttan açılan kanat kılavuz çizgisini hafifçe ekle.",
-        voice: "Şimdi arkaya doğru kıvrılan kuyruk çizgisini ve kanadın yerini belirleyen kılavuz yayımızı hafifçe çizelim.",
-        svg: `<path d="M 235 445 C 125 465, 85 405, 115 350" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/><path d="M 275 290 C 205 185, 105 175, 55 245" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
+        title: "2. Adım: Kuyruk ve Kanat Kılavuz Hatları (Mavi)",
+        instruction: "Sola kıvrılan kuyruk yayını ve sırttan yukarı açılan kanat kılavuz çizgisini hafifçe ekle.",
+        voice: "Şimdi arkaya doğru kıvrılan kuyruk çizgisini ve kanadın kılavuz yayını hafifçe çizelim.",
+        svg: `<path d="M 235 450 C 125 470, 85 410, 115 350" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/><path d="M 280 285 C 210 180, 110 170, 65 240" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
       },
       {
-        title: "3. Adım: Kafa ve Sevimli Burun Konturu",
-        instruction: "Mavi kafa kılavuzunun üzerinden geçerek yuvarlak alnı, çıkıntılı burnu ve yanak hattını çiz.",
-        voice: "Kafa kılavuzunun üzerinden geçerek ejderhamızın sevimli burnunu ve kafasını çizelim.",
-        svg: `<path d="M 265 175 C 265 105, 395 105, 415 170 C 455 180, 455 230, 410 240 C 395 265, 330 265, 295 240 C 265 225, 265 195, 265 175 Z" fill="none" stroke="#0f172a" stroke-width="10"/>`
+        title: "3. Adım: Kafa ve Burun/Çene Ana Konturu",
+        instruction: "Mavi kafa kılavuzunun üzerinden geçerek yuvarlak alnı, sevimli çıkıntılı burnu ve çene hattını çiz.",
+        voice: "Kafa kılavuzunun üzerinden geçerek ejderhamızın sevimli burnunu ve çenesini çiziyoruz.",
+        svg: `<path d="M 265 175 C 265 105, 395 105, 415 170 C 455 180, 455 230, 410 240 C 395 265, 330 265, 295 240 C 265 225, 265 195, 265 175 Z" fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>`
       },
       {
-        title: "4. Adım: Gülümseyen Ağız ve Minik Dişler",
-        instruction: "Burnun üstüne burun deliği, altına ise mutlu gülümseyen ağzı ve iki minik sivri dişi ekle.",
-        voice: "Ejderhamızın neşeli gülümseyen ağzını ve iki minik sevimli dişini çiziyoruz.",
-        svg: `<path d="M 422 188 C 426 182, 434 185, 432 192" fill="none" stroke="#0f172a" stroke-width="6"/><path d="M 365 215 C 385 235, 420 235, 430 215 C 425 245, 385 250, 365 215 Z" fill="none" stroke="#0f172a" stroke-width="8"/><polygon points="382,223 388,233 394,225" fill="#ffffff" stroke="#0f172a" stroke-width="4"/><polygon points="412,223 417,232 422,222" fill="#ffffff" stroke="#0f172a" stroke-width="4"/>`
+        title: "4. Adım: Ağız, Gülümseme, Dişler ve Burun Deliği",
+        instruction: "Burnun üstüne minik bir burun deliği, altına neşeyle gülümseyen ağzı ve iki küçük sivri dişi çiz.",
+        voice: "Ejderhamızın neşeli gülümseyen ağzını ve iki minik sevimli dişini ekleyelim.",
+        svg: `<circle cx="426" cy="185" r="4" fill="#0f172a"/><path d="M 365 215 C 385 235, 420 235, 430 215 C 425 245, 385 250, 365 215 Z" fill="none" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/><polygon points="380,222 386,232 392,223" fill="#ffffff" stroke="#0f172a" stroke-width="4"/><polygon points="410,222 415,231 420,222" fill="#ffffff" stroke="#0f172a" stroke-width="4"/>`
       },
       {
         title: "5. Adım: Büyük Parlak Gözler",
-        instruction: "Yüzün ortasına kocaman oval bir göz, içine gözbebeği ve parlayan iki ışık yuvarlağı çiz.",
-        voice: "Şimdi kocaman parlak bir göz çizelim. Gözün içine iki küçük ışık yuvarlağı bırakmayı unutma!",
-        svg: `<ellipse cx="355" cy="175" rx="22" ry="26" fill="none" stroke="#0f172a" stroke-width="8"/><circle cx="360" cy="177" r="13" fill="#0f172a"/><circle cx="353" cy="168" r="5" fill="#ffffff"/><circle cx="366" cy="184" r="3" fill="#ffffff"/><path d="M 332 142 Q 355 130, 375 142" fill="none" stroke="#0f172a" stroke-width="7"/>`
+        instruction: "Yüzün ortasına kocaman oval bir göz, içine gözbebeği, iki parlayan beyaz ışık dairesi ve sevimli kaş çiz.",
+        voice: "Şimdi kocaman parlak bir göz çizelim. İçine iki küçük beyaz ışık yuvarlağı bırakmayı unutma!",
+        svg: `<ellipse cx="355" cy="175" rx="22" ry="26" fill="none" stroke="#0f172a" stroke-width="8"/><circle cx="362" cy="177" r="12" fill="#0f172a"/><circle cx="355" cy="168" r="6" fill="#ffffff"/><circle cx="367" cy="183" r="3" fill="#ffffff"/><path d="M 335 142 Q 355 132, 375 142" stroke="#0f172a" stroke-width="6" stroke-linecap="round" fill="none"/>`
       },
       {
-        title: "6. Adım: Kıvrımlı Boynuzlar ve Yanak Dikenleri",
-        instruction: "Başın tepesine geriye kıvrılan iki boynuz ve yanağın soluna üçgen kulakçıklar ekle.",
-        voice: "Başının üstüne geriye doğru kıvrılan iki güzel boynuz ve yanak dikenlerini ekleyelim.",
-        svg: `<path d="M 295 135 C 255 115, 245 80, 265 65 C 280 85, 295 105, 320 120 Z" fill="none" stroke="#0f172a" stroke-width="9"/><path d="M 335 120 C 315 95, 315 70, 330 55 C 345 75, 355 95, 365 120 Z" fill="none" stroke="#0f172a" stroke-width="9"/><path d="M 266 175 L 238 188 L 268 202 L 242 215 L 275 225" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>`
+        title: "6. Adım: Kıvrımlı Boynuzlar ve Yanak Yeleleri",
+        instruction: "Başın tepesine geriye doğru kıvrılan iki altın boynuz ve yanakların soluna küçük zikzak yeleler ekle.",
+        voice: "Başının üstüne geriye doğru kıvrılan iki güzel boynuz ve yanak yelelerini çiziyoruz.",
+        svg: `<path d="M 295 135 C 255 115, 245 75, 265 60 C 280 80, 295 100, 320 120 Z" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/><path d="M 335 120 C 315 95, 315 65, 330 50 C 345 70, 355 90, 365 120 Z" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/><path d="M 265 175 L 240 190 L 268 202 L 245 215 L 275 225" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>`
       },
       {
         title: "7. Adım: Boyun, Göğüs ve Ön Bacaklar",
-        instruction: "Kafanın altından aşağıya inen göğsü ve yere sağlam basan iki ön bacağı çiz.",
+        instruction: "Kafanın altından aşağıya inen göğüs çizgisini ve yere sağlam basan iki ön bacağı çiz.",
         voice: "Boynundan aşağıya inerek göğsünü ve yere sağlam basan iki ön bacağını çiziyoruz.",
-        svg: `<path d="M 285 240 C 255 270, 240 320, 235 375" fill="none" stroke="#0f172a" stroke-width="10"/><path d="M 290 330 L 285 485 L 335 485 L 335 340" fill="none" stroke="#0f172a" stroke-width="10"/><path d="M 365 330 L 370 485 L 415 485 L 405 335" fill="none" stroke="#0f172a" stroke-width="10"/>`
+        svg: `<path d="M 285 240 C 255 270, 240 320, 235 375" fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/><path d="M 290 335 L 285 490 L 335 490 L 335 345" fill="none" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/><path d="M 365 335 L 370 490 L 415 490 L 405 340" fill="none" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>`
       },
       {
-        title: "8. Adım: Arka Bacak ve Sevimli Pençeler",
-        instruction: "Yan tarafa bükülü duran tombul arka bacağı ve tüm ayakların ucundaki tırnakları çiz.",
-        voice: "Yan tarafa kıvrılmış arka bacağını ve ayaklarının ucundaki sevimli tırnakları yapalım.",
-        svg: `<path d="M 230 375 C 185 395, 190 465, 245 485 L 285 485" fill="none" stroke="#0f172a" stroke-width="10"/><circle cx="245" cy="485" r="9" fill="#fde047" stroke="#0f172a" stroke-width="5"/><circle cx="265" cy="485" r="9" fill="#fde047" stroke="#0f172a" stroke-width="5"/><circle cx="295" cy="485" r="9" fill="#fde047" stroke="#0f172a" stroke-width="5"/><circle cx="312" cy="485" r="9" fill="#fde047" stroke="#0f172a" stroke-width="5"/><circle cx="380" cy="485" r="9" fill="#fde047" stroke="#0f172a" stroke-width="5"/><circle cx="400" cy="485" r="9" fill="#fde047" stroke="#0f172a" stroke-width="5"/>`
+        title: "8. Adım: Sırt, Tombul Karın ve Arka Bacak Pençeleri",
+        instruction: "Gövdenin sağ sırt kavisini, sol tarafta oturan arka bacağı ve ayakların ucundaki tırnakları ekle.",
+        voice: "Sırt kavisini, oturan tombul arka bacağını ve ayaklarındaki sevimli tırnakları çizelim.",
+        svg: `<path d="M 355 240 C 395 295, 405 390, 385 480" fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/><path d="M 230 380 C 185 400, 190 470, 245 490 L 285 490" fill="none" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/><circle cx="295" cy="490" r="7" fill="#ffffff" stroke="#0f172a" stroke-width="4"/><circle cx="312" cy="490" r="7" fill="#ffffff" stroke="#0f172a" stroke-width="4"/><circle cx="380" cy="490" r="7" fill="#ffffff" stroke="#0f172a" stroke-width="4"/><circle cx="398" cy="490" r="7" fill="#ffffff" stroke="#0f172a" stroke-width="4"/>`
       },
       {
-        title: "9. Adım: Kıvrık Kuyruk ve Ok Ucu",
-        instruction: "Arkaya doğru kıvrılan kuyruğu tamamla ve en ucuna üçgen bir ok şekli ekle.",
-        voice: "Arkaya doğru uzanan kıvrık kuyruğumuzu ve ucundaki üçgen ok şeklini çizelim.",
-        svg: `<path d="M 225 455 C 125 465, 85 410, 115 355 C 125 385, 160 415, 210 410" fill="none" stroke="#0f172a" stroke-width="10"/><polygon points="115,355 95,360 115,330 135,355" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>`
+        title: "9. Adım: Açılan Ateş Kanadı ve Ok Uçlu Kuyruk",
+        instruction: "Sırttan yukarı büyük bir kanat aç, içindeki parmak çizgilerini birleştir ve arkaya kıvrılan kuyruğu ok ucuyla tamamla.",
+        voice: "Sırttan yukarı büyük bir kanat açalım ve arkadaki kıvrık kuyruğun ucuna ok şeklini ekleyelim.",
+        svg: `<path d="M 280 285 C 220 180, 120 170, 65 240 C 105 260, 130 290, 120 340 C 165 315, 205 325, 225 360 C 250 335, 275 335, 295 345" fill="none" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/><path d="M 195 220 L 120 340 M 235 245 L 225 360" fill="none" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/><path d="M 230 450 C 130 470, 85 410, 115 355 C 125 385, 160 415, 220 410" fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/><polygon points="115,355 90,360 115,325 140,355" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>`
       },
       {
-        title: "10. Adım: Kanat İskeleti ve Kanat Zarı",
-        instruction: "Sırttan yukarı uzanan kanat kolunu, içindeki parmak çubuklarını ve dalgalı kanat zarını çiz.",
-        voice: "Sırttan yukarı büyük bir kanat açıp içindeki parmak çizgilerini ve dalgalı zarını birleştirelim.",
-        svg: `<path d="M 275 290 C 210 190, 110 175, 55 245 C 95 265, 120 295, 110 345 C 155 320, 195 330, 215 365 C 240 340, 265 340, 285 350" fill="none" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/><path d="M 185 225 L 110 345 M 225 250 L 215 365" fill="none" stroke="#0f172a" stroke-width="6"/>`
+        title: "10. Adım: Karın Zırhı Çizgileri ve Kaya Kaidesi",
+        instruction: "Karnına yatay zırh çizgilerini çiz ve ejderhamızın üzerine oturduğu büyük sağlam kayayı tamamla.",
+        voice: "Karnındaki zırh çizgilerini ve altındaki kayayı çiziyoruz. Mavi kılavuz çizgileri silebilirsin!",
+        svg: `<path d="M 325 245 C 300 310, 300 395, 320 480 M 375 480 C 390 395, 385 310, 355 245" fill="none" stroke="#0f172a" stroke-width="7"/><line x1="308" y1="295" x2="380" y2="295" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/><line x1="305" y1="340" x2="385" y2="340" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/><line x1="306" y1="385" x2="384" y2="385" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/><line x1="310" y1="430" x2="380" y2="430" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/><path d="M 110 515 C 160 475, 440 475, 490 515 C 450 550, 150 550, 110 515 Z" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>`
       },
       {
-        title: "11. Adım: Karın Zırhı, Sırt Dikenleri ve Kaya",
-        instruction: "Göğsündeki yatay karın dilimlerini, sırt dikenlerini ve üzerinde oturduğu kayayı çiz.",
-        voice: "Karnına yatay zırh çizgilerini, sırtındaki küçük dikenleri ve altındaki kayayı ekleyelim.",
-        svg: `<path d="M 325 245 C 305 305, 305 385, 318 450 M 360 245 C 380 305, 380 385, 370 450" fill="none" stroke="#0f172a" stroke-width="7"/><line x1="312" y1="280" x2="368" y2="280" stroke="#0f172a" stroke-width="5"/><line x1="308" y1="315" x2="375" y2="315" stroke="#0f172a" stroke-width="5"/><line x1="308" y1="350" x2="375" y2="350" stroke="#0f172a" stroke-width="5"/><path d="M 120 510 C 160 470, 440 470, 490 515 C 450 545, 150 545, 120 510 Z" fill="none" stroke="#0f172a" stroke-width="8"/>`
-      },
-      {
-        title: "12. Adım: Canlı Renklendirme",
-        instruction: "Gövdeyi ateş kırmızısına, karın ve kanat içlerini ise altın sarısı ve turuncuya boya!",
-        voice: "Harika iş çıkardın Kıvanç! Şimdi ejderhamızı kırmızı, sarı ve turuncuya boyayabilirsin!",
-        svg: `<g opacity="0.95"><path d="M 120 510 C 160 470, 440 470, 490 515 C 450 545, 150 545, 120 510 Z" fill="#64748b" stroke="#0f172a" stroke-width="8"/><path d="M 275 290 C 210 190, 110 175, 55 245 C 95 265, 120 295, 110 345 C 155 320, 195 330, 215 365 C 240 340, 265 340, 285 350 Z" fill="#f97316" stroke="#0f172a" stroke-width="10"/><path d="M 285 240 C 235 280, 215 380, 240 475 L 385 475 C 405 390, 395 295, 355 240 Z" fill="#ef4444" stroke="#0f172a" stroke-width="10"/><path d="M 325 245 C 300 310, 300 395, 320 475 L 375 475 C 390 395, 385 310, 355 245 Z" fill="#fde047" stroke="#0f172a" stroke-width="8"/><path d="M 265 175 C 265 105, 395 105, 415 170 C 455 180, 455 230, 410 240 C 395 265, 330 265, 295 240 C 265 225, 265 195, 265 175 Z" fill="#ef4444" stroke="#0f172a" stroke-width="10"/></g>`
-      }
-    ]
-  },
-
-  // -------------------------------------------------------------------------
-  // 2. BEBEK KRAL T-REX (10 ADIM - 🟢 ÇIRAK)
-  // -------------------------------------------------------------------------
-  {
-    id: "cirak_bebek_trex",
-    categoryId: "dinozorlar",
-    name: "Sevimli Bebek T-Rex",
-    emoji: "🦖",
-    level: 1,
-    levelName: "Çırak (Seviye 1)",
-    levelBadge: "🟢 Çırak",
-    description: "Kocaman kafası, neşeli dişleri, minik kolları ve güçlü bacaklarıyla 10 adımda sevimli T-Rex.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Yeşil, Açık Yeşil, Sarı Boya Kalemleri",
-    colors: [
-      { name: "Dinozor Yeşili", hex: "#22c55e" },
-      { name: "Karın Sarısı", hex: "#fef08a" },
-      { name: "Sırt Koyu Yeşil", hex: "#15803d" }
-    ],
-    previewSvg: `
-      <ellipse cx="300" cy="515" rx="170" ry="25" fill="#dcfce7" stroke="#15803d" stroke-width="6"/>
-      <path d="M 220 380 C 130 410, 90 365, 80 315 C 115 340, 155 345, 215 335 Z" fill="#22c55e" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 225 245 C 195 310, 195 405, 235 475 L 355 475 C 385 415, 375 315, 335 250 Z" fill="#22c55e" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 305 255 C 285 320, 285 405, 305 475 L 350 475 C 375 410, 370 320, 335 255 Z" fill="#fef08a" stroke="#0f172a" stroke-width="8"/>
-      <path d="M 220 385 C 195 410, 200 465, 235 495 L 290 495 L 285 425" fill="#16a34a" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 315 395 L 320 495 L 375 495 L 360 395" fill="#22c55e" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 215 165 C 215 85, 385 85, 425 145 C 460 155, 455 210, 405 220 C 395 255, 285 260, 235 230 C 210 215, 215 185, 215 165 Z" fill="#22c55e" stroke="#0f172a" stroke-width="10"/>
-      <circle cx="335" cy="155" r="22" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
-      <circle cx="342" cy="155" r="11" fill="#0f172a"/>
-      <circle cx="336" cy="147" r="5" fill="#ffffff"/>
-      <path d="M 335 205 L 350 222 L 365 206 L 380 222 L 395 206" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
-      <path d="M 340 315 L 385 335 L 375 350 L 335 340" fill="#22c55e" stroke="#0f172a" stroke-width="9"/>
-    `,
-    steps: [
-      {
-        title: "1. Adım: Büyük Kafa ve Gövde Kılavuzu (Mavi)",
-        instruction: "Üste büyük yatık bir yumurta, altına ise dikey bir armut kılavuzu çiz.",
-        voice: "Bebek T-Rex için önce üstte kocaman bir yumurta kafa, altına da tombul bir gövde kılavuzu çizelim.",
-        svg: `<ellipse cx="330" cy="170" rx="105" ry="70" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/><ellipse cx="290" cy="365" rx="78" ry="110" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
-      },
-      {
-        title: "2. Adım: Kuyruk Kılavuz Çizgisi (Mavi)",
-        instruction: "Gövdenin sol altından yukarı doğru kıvrılan üçgen kuyruk kılavuzunu ekle.",
-        voice: "Şimdi arkaya doğru neşeyle sallanan kuyruk kılavuzumuzu hafifçe çiziyoruz.",
-        svg: `<path d="M 220 380 C 130 410, 90 365, 80 315 C 115 340, 155 345, 215 335" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
-      },
-      {
-        title: "3. Adım: Sevimli T-Rex Kafası ve Büyük Burun",
-        instruction: "Kafa kılavuzunun üzerinden geçerek yüksek alnı, koca burnu ve alt çeneyi çiz.",
-        voice: "Mavi çizginin üzerinden geçerek T-Rex'in kocaman sevimli kafasını ve burnunu çizelim.",
-        svg: `<path d="M 215 165 C 215 85, 385 85, 425 145 C 460 155, 455 210, 405 220 C 395 255, 285 260, 235 230 C 210 215, 215 185, 215 165 Z" fill="none" stroke="#0f172a" stroke-width="10"/>`
-      },
-      {
-        title: "4. Adım: Parlak Göz ve Neşeli Zikzak Dişler",
-        instruction: "Kocaman bir göz, burun deliği ve gülümseyen ağız hattına üçgen dişler ekle.",
-        voice: "Parlak gözünü, burun deliğini ve gülümseyen ağzındaki üçgen dişlerini çiziyoruz.",
-        svg: `<circle cx="335" cy="155" r="22" fill="none" stroke="#0f172a" stroke-width="8"/><circle cx="342" cy="155" r="11" fill="#0f172a"/><circle cx="336" cy="147" r="5" fill="#ffffff"/><circle cx="418" cy="162" r="5" fill="#0f172a"/><path d="M 325 202 Q 375 212, 415 202" fill="none" stroke="#0f172a" stroke-width="8"/><path d="M 335 205 L 350 222 L 365 206 L 380 222 L 395 206" fill="none" stroke="#0f172a" stroke-width="6"/>`
-      },
-      {
-        title: "5. Adım: Tombul Gövde ve Minik T-Rex Kolları",
-        instruction: "Kafanın altından inen sırt-göğüs hattını ve T-Rex'in meşhur iki minik kolunu çiz.",
-        voice: "Şimdi tombul gövdesini ve T-Rex'in o meşhur küçücük sevimli kollarını çizelim.",
-        svg: `<path d="M 225 245 C 195 310, 195 405, 235 475 M 335 250 C 375 315, 385 415, 355 475" fill="none" stroke="#0f172a" stroke-width="10"/><path d="M 340 315 L 385 335 L 375 350 L 335 340" fill="none" stroke="#0f172a" stroke-width="9"/>`
-      },
-      {
-        title: "6. Adım: Güçlü Arka Bacaklar",
-        instruction: "Gövdenin alt kısmına yere sağlam basan iki güçlü dinozor bacağı ekle.",
-        voice: "T-Rex'in güçlü bacaklarını ve büyük ayaklarını yere sağlam basacak şekilde çiziyoruz.",
-        svg: `<path d="M 220 385 C 195 410, 200 465, 235 495 L 290 495 L 285 425" fill="none" stroke="#0f172a" stroke-width="10"/><path d="M 315 395 L 320 495 L 375 495 L 360 395" fill="none" stroke="#0f172a" stroke-width="10"/>`
-      },
-      {
-        title: "7. Adım: Dinozor Pençeleri ve Kuyruk",
-        instruction: "Ayak uçlarına üçer tırnak ve arkaya doğru uzanan kalın kuyruğu çiz.",
-        voice: "Ayaklarına üçer tane tırnak ekleyelim ve arkasındaki kalın kuyruğunu tamamlayalım.",
-        svg: `<path d="M 220 380 C 130 410, 90 365, 80 315 C 115 340, 155 345, 215 335" fill="none" stroke="#0f172a" stroke-width="10"/><circle cx="245" cy="495" r="8" fill="#ffffff" stroke="#0f172a" stroke-width="5"/><circle cx="268" cy="495" r="8" fill="#ffffff" stroke="#0f172a" stroke-width="5"/><circle cx="335" cy="495" r="8" fill="#ffffff" stroke="#0f172a" stroke-width="5"/><circle cx="358" cy="495" r="8" fill="#ffffff" stroke="#0f172a" stroke-width="5"/>`
-      },
-      {
-        title: "8. Adım: Karın Çizgileri",
-        instruction: "Göğsünden aşağıya inen karın ayrım çizgisini ve yatay boğumlarını ekle.",
-        voice: "Göğsünden karnına inen zırh çizgisini ve yatay boğumlarını çizelim.",
-        svg: `<path d="M 305 255 C 285 320, 285 405, 305 475" fill="none" stroke="#0f172a" stroke-width="7"/><line x1="295" y1="300" x2="355" y2="300" stroke="#0f172a" stroke-width="5"/><line x1="292" y1="350" x2="365" y2="350" stroke="#0f172a" stroke-width="5"/><line x1="292" y1="400" x2="365" y2="400" stroke="#0f172a" stroke-width="5"/>`
-      },
-      {
-        title: "9. Adım: Sırt Benekleri ve Çimenlik Zemin",
-        instruction: "Sırtına ve başına yuvarlak dinozor benekleri, ayaklarının altına da zemin çiz.",
-        voice: "Sırtına sevimli dinozor benekleri ekleyelim. Artık mavi kılavuz çizgilerini silebilirsin!",
-        svg: `<circle cx="255" cy="145" r="10" fill="none" stroke="#0f172a" stroke-width="5"/><circle cx="235" cy="175" r="7" fill="none" stroke="#0f172a" stroke-width="5"/><circle cx="245" cy="310" r="12" fill="none" stroke="#0f172a" stroke-width="5"/><circle cx="235" cy="350" r="8" fill="none" stroke="#0f172a" stroke-width="5"/><ellipse cx="300" cy="515" rx="170" ry="25" fill="none" stroke="#0f172a" stroke-width="6"/>`
-      },
-      {
-        title: "10. Adım: Renklendirme",
-        instruction: "T-Rex'i canlı yeşile, karnını ise açık sarıya boyayarak tamamla!",
-        voice: "Harikasın Kıvanç! Şimdi Bebek T-Rex'i canlı yeşil ve sarı tonlarıyla boyayabilirsin!",
-        svg: `<g opacity="0.95"><path d="M 220 380 C 130 410, 90 365, 80 315 C 115 340, 155 345, 215 335 Z" fill="#22c55e" stroke="#0f172a" stroke-width="10"/><path d="M 225 245 C 195 310, 195 405, 235 475 L 355 475 C 385 415, 375 315, 335 250 Z" fill="#22c55e" stroke="#0f172a" stroke-width="10"/><path d="M 305 255 C 285 320, 285 405, 305 475 L 350 475 C 375 410, 370 320, 335 255 Z" fill="#fef08a" stroke="#0f172a" stroke-width="8"/><path d="M 215 165 C 215 85, 385 85, 425 145 C 460 155, 455 210, 405 220 C 395 255, 285 260, 235 230 C 210 215, 215 185, 215 165 Z" fill="#22c55e" stroke="#0f172a" stroke-width="10"/></g>`
-      }
-    ]
-  },
-
-  // -------------------------------------------------------------------------
-  // 3. ÜÇ BOYNUZLU TRICERATOPS (10 ADIM - 🟢 ÇIRAK)
-  // -------------------------------------------------------------------------
-  {
-    id: "cirak_triceratops",
-    categoryId: "dinozorlar",
-    name: "Cesur Triceratops (Üç Boynuz)",
-    emoji: "🦕",
-    level: 1,
-    levelName: "Çırak (Seviye 1)",
-    levelBadge: "🟢 Çırak",
-    description: "Taç gibi geniş baş kalkanı, üç boynuzu ve sağlam dört bacağıyla sevimli Triceratops.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Turuncu, Sarı, Krem Boya Kalemleri",
-    colors: [
-      { name: "Mercan Turuncusu", hex: "#f97316" },
-      { name: "Kalkan Sarısı", hex: "#facc15" },
-      { name: "Boynuz Kremi", hex: "#fef9c3" }
-    ],
-    previewSvg: `
-      <path d="M 110 350 C 110 245, 290 245, 330 350 L 330 475 L 130 475 Z" fill="#f97316" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 115 375 C 55 375, 35 335, 55 295 C 70 330, 95 340, 120 340 Z" fill="#f97316" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 285 275 C 245 145, 385 115, 435 225 C 445 275, 395 335, 325 320 Z" fill="#facc15" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 325 235 C 325 185, 455 195, 485 265 C 505 295, 465 335, 440 325 C 395 335, 345 320, 325 285 Z" fill="#f97316" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 395 215 L 475 145 L 420 230 Z" fill="#fef9c3" stroke="#0f172a" stroke-width="8"/>
-      <path d="M 365 205 L 430 135 L 388 218 Z" fill="#fef9c3" stroke="#0f172a" stroke-width="8"/>
-      <path d="M 465 255 L 505 220 L 482 272 Z" fill="#fef9c3" stroke="#0f172a" stroke-width="8"/>
-      <circle cx="410" cy="255" r="16" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
-      <circle cx="415" cy="255" r="8" fill="#0f172a"/>
-      <rect x="135" y="395" width="45" height="95" rx="18" fill="#ea580c" stroke="#0f172a" stroke-width="9"/>
-      <rect x="275" y="395" width="45" height="95" rx="18" fill="#ea580c" stroke="#0f172a" stroke-width="9"/>
-    `,
-    steps: [
-      {
-        title: "1. Adım: Gövde ve Kafa Kılavuz Çemberleri (Mavi)",
-        instruction: "Solda büyük gövde ovali, sağında kafa çemberi ve kalkan yayını hafifçe çiz.",
-        voice: "Önce gövde için büyük bir oval, yanına da kafa ve baş kalkanı için kılavuz çemberlerimizi çizelim.",
-        svg: `<ellipse cx="220" cy="365" rx="115" ry="90" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/><circle cx="405" cy="265" r="65" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
-      },
-      {
-        title: "2. Adım: Baş ve Papağan Gaga Burun",
-        instruction: "Sağdaki kafa çemberinin üzerinden geçerek Triceratops'un sevimli gaga burnunu çiz.",
-        voice: "Kafa kılavuzunun üzerinden geçerek dinozorumuzun sevimli gaga burnunu ve yüzünü çiziyoruz.",
-        svg: `<path d="M 325 235 C 325 185, 455 195, 485 265 C 505 295, 465 335, 440 325 C 395 335, 345 320, 325 285" fill="none" stroke="#0f172a" stroke-width="10"/>`
-      },
-      {
-        title: "3. Adım: Meşhur Üç Boynuz",
-        instruction: "Burnun üstüne bir küçük boynuz, alnına ise ileri uzanan iki uzun boynuz ekle.",
-        voice: "Şimdi onu çok güçlü yapan üç boynuzunu çizelim: Biri burnunun üstünde, ikisi alnında!",
-        svg: `<path d="M 395 215 L 475 145 L 420 230 Z" fill="none" stroke="#0f172a" stroke-width="8"/><path d="M 365 205 L 430 135 L 388 218 Z" fill="none" stroke="#0f172a" stroke-width="8"/><path d="M 465 255 L 505 220 L 482 272 Z" fill="none" stroke="#0f172a" stroke-width="8"/>`
-      },
-      {
-        title: "4. Adım: Geniş Taç Kalkanı",
-        instruction: "Kafanın arkasından yukarı doğru yelpaze gibi açılan dalgalı koruyucu kalkanı çiz.",
-        voice: "Başının arkasında bir kral tacı gibi duran büyük dalgalı kalkanını çizelim.",
-        svg: `<path d="M 345 215 C 275 125, 405 115, 435 225 C 445 275, 395 335, 325 320" fill="none" stroke="#0f172a" stroke-width="10"/>`
-      },
-      {
-        title: "5. Adım: Parlak Göz ve Gülümseyen Ağız",
-        instruction: "Yüze parlak bir göz ve gaga ucuna mutlu bir gülümseme çizgisi ekle.",
-        voice: "Parlak sevimli gözünü ve gülümseyen ağzını ekleyelim.",
-        svg: `<circle cx="410" cy="255" r="16" fill="none" stroke="#0f172a" stroke-width="7"/><circle cx="415" cy="255" r="8" fill="#0f172a"/><circle cx="412" cy="250" r="3" fill="#ffffff"/><path d="M 435 305 Q 465 315, 480 295" fill="none" stroke="#0f172a" stroke-width="7"/>`
-      },
-      {
-        title: "6. Adım: Kubbe Sırt ve Güçlü Gövde",
-        instruction: "Kalkanın arkasından sola doğru yükselen kubbe sırtı ve karın hattını çiz.",
-        voice: "Kalkanın arkasından devam eden güçlü sırtını ve tombul gövdesini çiziyoruz.",
-        svg: `<path d="M 315 275 C 245 245, 135 255, 110 350 L 130 465 L 330 465" fill="none" stroke="#0f172a" stroke-width="10"/>`
-      },
-      {
-        title: "7. Adım: Sütun Gibi Dört Sağlam Bacak",
-        instruction: "Gövdenin altına yere sağlam basan kalın dinozor bacaklarını çiz.",
-        voice: "Gövdenin altına fil ayağı gibi sağlam basan kalın bacaklarını çizelim.",
-        svg: `<rect x="135" y="395" width="45" height="95" rx="18" fill="none" stroke="#0f172a" stroke-width="9"/><rect x="195" y="405" width="40" height="80" rx="15" fill="none" stroke="#0f172a" stroke-width="8"/><rect x="275" y="395" width="45" height="95" rx="18" fill="none" stroke="#0f172a" stroke-width="9"/>`
-      },
-      {
-        title: "8. Adım: Kıvrık Kuyruk ve Ayak Tırnakları",
-        instruction: "Arkaya yukarı kıvrılan kuyruğu ve ayakların ucundaki yuvarlak tırnakları ekle.",
-        voice: "Arkaya kıvrılan sevimli kuyruğunu ve ayak tırnaklarını tamamlayalım.",
-        svg: `<path d="M 115 375 C 55 375, 35 335, 55 295 C 70 330, 95 340, 120 340" fill="none" stroke="#0f172a" stroke-width="10"/>`
-      },
-      {
-        title: "9. Adım: Kalkan Süsleri ve Sırt Benekleri",
-        instruction: "Baş kalkanının kenarlarına yarım daire süsler ve sırtına benekler çiz.",
-        voice: "Kalkanının kenarına süslemeler ve sırtına benekler ekleyelim. Mavi kılavuzları silebilirsin!",
-        svg: `<circle cx="335" cy="175" r="8" fill="none" stroke="#0f172a" stroke-width="5"/><circle cx="365" cy="155" r="8" fill="none" stroke="#0f172a" stroke-width="5"/><circle cx="220" cy="315" r="14" fill="none" stroke="#0f172a" stroke-width="5"/><circle cx="175" cy="335" r="10" fill="none" stroke="#0f172a" stroke-width="5"/>`
-      },
-      {
-        title: "10. Adım: Renklendirme",
-        instruction: "Gövdeyi turuncuya, kalkanı sarıya ve boynuzları krem rengine boya!",
-        voice: "Harika oldu Kıvanç! Şimdi Triceratops'u turuncu ve sarı renklerle boyayabilirsin!",
-        svg: `<g opacity="0.95"><path d="M 110 350 C 110 245, 290 245, 330 350 L 330 475 L 130 475 Z" fill="#f97316" stroke="#0f172a" stroke-width="10"/><path d="M 285 275 C 245 145, 385 115, 435 225 C 445 275, 395 335, 325 320 Z" fill="#facc15" stroke="#0f172a" stroke-width="10"/><path d="M 325 235 C 325 185, 455 195, 485 265 C 505 295, 465 335, 440 325 C 395 335, 345 320, 325 285 Z" fill="#f97316" stroke="#0f172a" stroke-width="10"/></g>`
-      }
-    ]
-  },
-
-  // -------------------------------------------------------------------------
-  // 4. KRİSTAL BUZ EJDERHASI (10 ADIM - 🟢 ÇIRAK)
-  // -------------------------------------------------------------------------
-  {
-    id: "cirak_buz_ejderhasi",
-    categoryId: "dinozorlar",
-    name: "Kristal Buz Ejderhası",
-    emoji: "❄️",
-    level: 1,
-    levelName: "Çırak (Seviye 1)",
-    levelBadge: "🟢 Çırak",
-    description: "Elmas gibi buz kristali boynuzları, kar tanesi kuyruğu ve buz mavisi kanatlarıyla Buz Ejderhası.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Açık Mavi, Lacivert, Mor Boya Kalemleri",
-    colors: [
-      { name: "Buz Mavisi", hex: "#38bdf8" },
-      { name: "Kristal BeyazMavi", hex: "#e0f2fe" },
-      { name: "Kutup Moru", hex: "#818cf8" }
-    ],
-    previewSvg: `
-      <path d="M 265 285 L 95 165 L 75 265 L 145 315 L 195 355 L 275 335 Z" fill="#e0f2fe" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 275 235 C 235 285, 225 385, 255 480 L 385 480 C 405 395, 390 295, 345 235 Z" fill="#38bdf8" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 245 450 C 140 470, 95 415, 115 355 C 135 395, 175 415, 235 410 Z" fill="#38bdf8" stroke="#0f172a" stroke-width="10"/>
-      <polygon points="115,355 90,340 115,305 140,340" fill="#818cf8" stroke="#0f172a" stroke-width="8"/>
-      <path d="M 265 175 C 265 105, 395 105, 420 175 C 455 185, 450 235, 405 240 C 375 260, 295 255, 265 175 Z" fill="#38bdf8" stroke="#0f172a" stroke-width="10"/>
-      <polygon points="285,135 245,65 315,115" fill="#818cf8" stroke="#0f172a" stroke-width="8"/>
-      <polygon points="325,120 305,55 355,115" fill="#818cf8" stroke="#0f172a" stroke-width="8"/>
-      <circle cx="355" cy="175" r="20" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
-      <circle cx="360" cy="175" r="10" fill="#0284c7"/>
-    `,
-    steps: [
-      {
-        title: "1. Adım: Kafa ve Gövde Kılavuzu (Mavi)",
-        instruction: "Üste kafa çemberini, altına ise oturan gövde ovalini hafifçe çiz.",
-        voice: "Buz Ejderhamız için önce kafa ve gövde kılavuz çemberlerimizi hafifçe çizelim.",
-        svg: `<circle cx="345" cy="180" r="65" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/><ellipse cx="315" cy="365" rx="75" ry="110" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
-      },
-      {
-        title: "2. Adım: Sevimli Kafa ve Burun",
-        instruction: "Kafa kılavuzunun üzerinden geçerek yüz hatlarını ve gülümseyen ağzını çiz.",
-        voice: "Kafa kılavuzunun üzerinden geçerek Buz Ejderhasının sevimli yüzünü ve gülümsemesini çiziyoruz.",
-        svg: `<path d="M 265 175 C 265 105, 395 105, 420 175 C 455 185, 450 235, 405 240 C 375 260, 295 255, 265 175 Z" fill="none" stroke="#0f172a" stroke-width="10"/><path d="M 375 215 Q 405 230, 428 212" fill="none" stroke="#0f172a" stroke-width="7"/>`
-      },
-      {
-        title: "3. Adım: Parlak Buz Gözleri",
-        instruction: "Kocaman parlak gözünü ve içindeki ışık parlamasını ekle.",
-        voice: "Şimdi buz gibi parlayan kocaman güzel gözünü çizelim.",
-        svg: `<circle cx="355" cy="175" r="20" fill="none" stroke="#0f172a" stroke-width="8"/><circle cx="360" cy="175" r="10" fill="#0f172a"/><circle cx="355" cy="168" r="4" fill="#ffffff"/>`
-      },
-      {
-        title: "4. Adım: Kristal Sivri Boynuzlar",
-        instruction: "Başının üstüne buz sarkıtı gibi düz ve köşeli iki kristal boynuz çiz.",
-        voice: "Başının tepesine buz kristali şeklinde iki parlak boynuz ekliyoruz.",
-        svg: `<polygon points="285,135 245,65 315,115" fill="none" stroke="#0f172a" stroke-width="8"/><polygon points="325,120 305,55 355,115" fill="none" stroke="#0f172a" stroke-width="8"/>`
-      },
-      {
-        title: "5. Adım: Zarif Gövde ve Ön Bacaklar",
-        instruction: "Boyundan aşağı inen gövdeyi ve yere basan iki ön bacağı çiz.",
-        voice: "Boynundan aşağıya inen gövdesini ve yere basan ön bacaklarını çizelim.",
-        svg: `<path d="M 275 235 C 235 285, 225 385, 255 480 L 385 480 C 405 395, 390 295, 345 235" fill="none" stroke="#0f172a" stroke-width="10"/><line x1="315" y1="350" x2="315" y2="480" stroke="#0f172a" stroke-width="9"/>`
-      },
-      {
-        title: "6. Adım: Kristal Kanat",
-        instruction: "Sırtından sola doğru açılan köşeli kristal kanadını çiz.",
-        voice: "Sırtından yana doğru açılan buz kristali kanadını çiziyoruz.",
-        svg: `<path d="M 265 285 L 95 165 L 75 265 L 145 315 L 195 355 L 275 335" fill="none" stroke="#0f172a" stroke-width="10"/><line x1="95" y1="165" x2="145" y2="315" stroke="#0f172a" stroke-width="6"/>`
-      },
-      {
-        title: "7. Adım: Elmas Uçlu Kuyruk",
-        instruction: "Sola kıvrılan kuyruğu ve ucundaki elmas şeklindeki buz kristalini çiz.",
-        voice: "Arkaya uzanan kuyruğunu ve ucundaki elmas buz kristalini yapalım.",
-        svg: `<path d="M 245 450 C 140 470, 95 415, 115 355 C 135 395, 175 415, 235 410" fill="none" stroke="#0f172a" stroke-width="10"/><polygon points="115,355 90,340 115,305 140,340" fill="none" stroke="#0f172a" stroke-width="8"/>`
-      },
-      {
-        title: "8. Adım: Sırtındaki Buz Kristali Dikenleri",
-        instruction: "Sırtından kuyruğuna kadar elmas şeklinde dizilen buz dikenlerini ekle.",
-        voice: "Sırtına parlak buz kristali dikenlerini tek tek dizelim.",
-        svg: `<polygon points="245,295 225,280 238,315" fill="none" stroke="#0f172a" stroke-width="6"/><polygon points="235,345 212,335 230,368" fill="none" stroke="#0f172a" stroke-width="6"/>`
-      },
-      {
-        title: "9. Adım: Karın Zırhı ve Kar Taneleri",
-        instruction: "Göğüs çizgilerini ve etrafında uçuşan kar tanelerini ekle.",
-        voice: "Karnındaki çizgileri ve etraftaki kar tanelerini ekleyelim. Mavi kılavuzları silebilirsin!",
-        svg: `<path d="M 325 245 C 310 315, 310 400, 325 480" fill="none" stroke="#0f172a" stroke-width="6"/><circle cx="480" cy="150" r="8" fill="#38bdf8"/><circle cx="140" cy="120" r="8" fill="#38bdf8"/>`
-      },
-      {
-        title: "10. Adım: Renklendirme",
-        instruction: "Buz mavisi, açık mavi ve mor tonlarıyla Kristal Ejderhayı boya!",
-        voice: "Harika iş Kıvanç! Şimdi Buz Ejderhasını mavi ve mor tonlarıyla boyayabilirsin!",
-        svg: `<g opacity="0.95"><path d="M 265 285 L 95 165 L 75 265 L 145 315 L 195 355 L 275 335 Z" fill="#e0f2fe" stroke="#0f172a" stroke-width="10"/><path d="M 275 235 C 235 285, 225 385, 255 480 L 385 480 C 405 395, 390 295, 345 235 Z" fill="#38bdf8" stroke="#0f172a" stroke-width="10"/><path d="M 265 175 C 265 105, 395 105, 420 175 C 455 185, 450 235, 405 240 C 375 260, 295 255, 265 175 Z" fill="#38bdf8" stroke="#0f172a" stroke-width="10"/></g>`
-      }
-    ]
-  },
-
-  // -------------------------------------------------------------------------
-  // 5. NEŞELİ UZUN BOYUN BRACHIOSAURUS (10 ADIM - 🟢 ÇIRAK)
-  // -------------------------------------------------------------------------
-  {
-    id: "cirak_brachiosaurus",
-    categoryId: "dinozorlar",
-    name: "Neşeli Uzun Boyun (Brachiosaurus)",
-    emoji: "🦕",
-    level: 1,
-    levelName: "Çırak (Seviye 1)",
-    levelBadge: "🟢 Çırak",
-    description: "Bulutlara uzanan upuzun boynu, sevimli tepe hörgücü ve yaprak yiyen neşeli yüzüyle Brachiosaurus.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Turkuaz, Yeşil, Sarı Boya Kalemleri",
-    colors: [
-      { name: "Turkuaz Yeşil", hex: "#14b8a6" },
-      { name: "Karın Sarısı", hex: "#fde047" },
-      { name: "Benek Mavisi", hex: "#0f766e" }
-    ],
-    previewSvg: `
-      <path d="M 215 115 C 215 70, 295 70, 310 115 C 335 120, 335 155, 295 160 L 265 320 C 335 310, 415 335, 435 405 C 475 415, 515 405, 540 365 C 535 425, 485 455, 430 445 L 425 505 L 380 505 L 375 435 L 265 435 L 260 505 L 210 505 L 210 340 L 235 155 C 215 150, 215 130, 215 115 Z" fill="#14b8a6" stroke="#0f172a" stroke-width="10"/>
-      <circle cx="275" cy="115" r="12" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
-      <circle cx="278" cy="115" r="6" fill="#0f172a"/>
-      <circle cx="345" cy="365" r="18" fill="#0f766e"/>
-      <circle cx="385" cy="385" r="12" fill="#0f766e"/>
-    `,
-    steps: [
-      {
-        title: "1. Adım: Küçük Kafa ve Gövde Kılavuzu (Mavi)",
-        instruction: "Sol üste küçük bir kafa çemberi, sağ alta ise büyük gövde ovalini hafifçe çiz.",
-        voice: "Önce sol üste küçük bir kafa çemberi, sağ alta da büyük gövde ovalini hafifçe çizelim.",
-        svg: `<circle cx="265" cy="115" r="45" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/><ellipse cx="325" cy="385" rx="110" ry="65" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
-      },
-      {
-        title: "2. Adım: Uzun Boyun Kılavuz Çizgisi (Mavi)",
-        instruction: "Kafayı gövdeye bağlayan uzun boyun yayını hafifçe ekle.",
-        voice: "Kafadan gövdeye inen upuzun boyun kılavuzumuzu hafifçe çiziyoruz.",
-        svg: `<path d="M 250 155 L 220 350 M 285 155 L 265 325" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
-      },
-      {
-        title: "3. Adım: Tepe Hörgüçlü Sevimli Baş",
-        instruction: "Tepesi hafif bombeli başını ve yuvarlak burnunu çiz.",
-        voice: "Şimdi sevimli başını ve yuvarlak burnunu gerçek çizgilerle çizelim.",
-        svg: `<path d="M 215 115 C 215 70, 295 70, 310 115 C 335 120, 335 155, 295 160 C 265 165, 215 150, 215 115 Z" fill="none" stroke="#0f172a" stroke-width="10"/>`
-      },
-      {
-        title: "4. Adım: Parlak Göz ve Mutlu Gülümseme",
-        instruction: "Yüzüne parlak bir göz ve ağzında tatlı bir gülümseme ekle.",
-        voice: "Parlak gözünü ve neşeli gülümsemesini ekleyelim.",
-        svg: `<circle cx="275" cy="115" r="12" fill="none" stroke="#0f172a" stroke-width="6"/><circle cx="278" cy="115" r="6" fill="#0f172a"/><path d="M 285 142 Q 305 150, 320 138" fill="none" stroke="#0f172a" stroke-width="6"/>`
-      },
-      {
-        title: "5. Adım: Upuzun Zarif Boyun",
-        instruction: "Baştan aşağıya doğru hafif genişleyerek inen uzun boynu çiz.",
-        voice: "Ağaçların en üst yapraklarına yetişen upuzun boynunu aşağıya doğru indiriyoruz.",
-        svg: `<path d="M 235 155 L 210 340 M 295 160 L 265 320" fill="none" stroke="#0f172a" stroke-width="10"/>`
-      },
-      {
-        title: "6. Adım: Kubbe Sırt ve Gövde",
-        instruction: "Boynun devamından arkaya doğru kavislenen sırtı ve karnı çiz.",
-        voice: "Boynun bittiği yerden geriye doğru dağ gibi kavislenen sırtını çizelim.",
-        svg: `<path d="M 265 320 C 335 310, 415 335, 435 405 M 265 435 L 375 435" fill="none" stroke="#0f172a" stroke-width="10"/>`
-      },
-      {
-        title: "7. Adım: Uzun Ön ve Arka Sütun Bacaklar",
-        instruction: "Gövdenin altına yere sağlam basan kalın bacaklarını çiz.",
-        voice: "Şimdi dev gövdesini taşıyan uzun ve sağlam bacaklarını çiziyoruz.",
-        svg: `<path d="M 210 340 L 210 505 L 260 505 L 265 435 M 375 435 L 380 505 L 425 505 L 430 445" fill="none" stroke="#0f172a" stroke-width="10"/>`
-      },
-      {
-        title: "8. Adım: Kıvrılan Kuyruk",
-        instruction: "Gövdenin arkasından sağa doğru kıvrılan sevimli kuyruğu ekle.",
-        voice: "Arkada yukarı doğru neşeyle kıvrılan kuyruğunu tamamlayalım.",
-        svg: `<path d="M 435 405 C 475 415, 515 405, 540 365 C 535 425, 485 455, 430 445" fill="none" stroke="#0f172a" stroke-width="10"/>`
-      },
-      {
-        title: "9. Adım: Sırt Benekleri ve Ayak Tırnakları",
-        instruction: "Sırtına yuvarlak benekler ve ayak uçlarına tırnaklar çiz.",
-        voice: "Sırtına sevimli benekler ve ayaklarına tırnaklar ekleyelim. Mavi kılavuzları silebilirsin!",
-        svg: `<circle cx="345" cy="365" r="18" fill="none" stroke="#0f172a" stroke-width="6"/><circle cx="385" cy="385" r="12" fill="none" stroke="#0f172a" stroke-width="6"/>`
-      },
-      {
-        title: "10. Adım: Renklendirme",
-        instruction: "Dinozorumuzu turkuaz yeşile ve beneklerini koyu yeşile boya!",
-        voice: "Harikasın Kıvanç! Şimdi Uzun Boyunlu dinozorumuzu turkuaz ve yeşile boyayabilirsin!",
-        svg: `<g opacity="0.95"><path d="M 215 115 C 215 70, 295 70, 310 115 C 335 120, 335 155, 295 160 L 265 320 C 335 310, 415 335, 435 405 C 475 415, 515 405, 540 365 C 535 425, 485 455, 430 445 L 425 505 L 380 505 L 375 435 L 265 435 L 260 505 L 210 505 L 210 340 L 235 155 C 215 150, 215 130, 215 115 Z" fill="#14b8a6" stroke="#0f172a" stroke-width="10"/></g>`
+        title: "11. Adım: Canlı Renklendirme ve Işık-Gölge",
+        instruction: "Gövdeyi ateş kırmızısına, karın ve boynuzları altın sarısına, kanatları ise sıcak turuncuya boya!",
+        voice: "Harika iş çıkardın Kıvanç! Şimdi Ateş Ejderhasını kırmızı, sarı ve turuncu renklerle boyayabilirsin!",
+        svg: `<g opacity="0.95"><path d="M 110 515 C 160 475, 440 475, 490 515 C 450 550, 150 550, 110 515 Z" fill="#64748b" stroke="#0f172a" stroke-width="8"/><path d="M 280 285 C 220 180, 120 170, 65 240 C 105 260, 130 290, 120 340 C 165 315, 205 325, 225 360 C 250 335, 275 335, 295 345 Z" fill="#f97316" stroke="#0f172a" stroke-width="9"/><path d="M 285 240 C 235 285, 215 380, 240 480 L 385 480 C 405 390, 395 295, 355 240 Z" fill="#ef4444" stroke="#0f172a" stroke-width="10"/><path d="M 325 245 C 300 310, 300 395, 320 480 L 375 480 C 390 395, 385 310, 355 245 Z" fill="#facc15" stroke="#0f172a" stroke-width="8"/><path d="M 265 175 C 265 105, 395 105, 415 170 C 455 180, 455 230, 410 240 C 395 265, 330 265, 295 240 C 265 225, 265 195, 265 175 Z" fill="#ef4444" stroke="#0f172a" stroke-width="10"/><path d="M 295 135 C 255 115, 245 75, 265 60 C 280 80, 295 100, 320 120 Z" fill="#facc15" stroke="#0f172a" stroke-width="8"/><path d="M 335 120 C 315 95, 315 65, 330 50 C 345 70, 355 90, 365 120 Z" fill="#facc15" stroke="#0f172a" stroke-width="8"/></g>`
       }
     ]
   },
   // =========================================================================
-  // 1. ZARİF KIZIL TİLKİ (SEVİYE 1: ÇIRAK)
+  // 2. ZARİF KIZIL TİLKİ (11 ADIM - 🟢 ÇIRAK)
   // =========================================================================
   {
-    id: "tilki_zarif",
+    id: "cirak_kizil_tilki",
     categoryId: "hayvanlar",
     name: "Zarif Kızıl Tilki",
     emoji: "🦊",
     level: 1,
     levelName: "Çırak (Seviye 1)",
     levelBadge: "🟢 Çırak",
-    description: "Temel geometrik daireler ve üçgenlerden inşa edilen, koca pofuduk kuyruklu asil bir kızıl tilki.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Turuncu-Siyah Boya Kalemleri",
+    description: "Büyük pofuduk kuyruğu, kar beyazı göğsü, dik kulakları ve parlak zeki gözleriyle çimenlikte oturan asil Kızıl Tilki.",
+    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Turuncu, Beyaz, Siyah, Yeşil Boya Kalemleri",
     colors: [
       { name: "Kızıl Turuncu", hex: "#ea580c" },
       { name: "Kar Beyazı", hex: "#f8fafc" },
-      { name: "Burun Siyahı", hex: "#0f172a" }
-    ],
-    previewSvg: `
-      <circle cx="300" cy="200" r="90" fill="#ea580c" opacity="0.3"/>
-      <path d="M 230 150 L 190 60 L 270 120 Z" fill="#ea580c" stroke="#0f172a" stroke-width="12" stroke-linejoin="round"/>
-      <path d="M 370 150 L 410 60 L 330 120 Z" fill="#ea580c" stroke="#0f172a" stroke-width="12" stroke-linejoin="round"/>
-      <path d="M 210 200 C 210 140, 390 140, 390 200 C 390 260, 340 300, 300 300 C 260 300, 210 260, 210 200 Z" fill="#ea580c" stroke="#0f172a" stroke-width="14"/>
-      <path d="M 210 220 C 250 250, 280 270, 300 295 C 320 270, 350 250, 390 220 C 360 280, 330 300, 300 300 C 270 300, 240 280, 210 220 Z" fill="#f8fafc"/>
-      <circle cx="260" cy="205" r="10" fill="#0f172a"/><circle cx="340" cy="205" r="10" fill="#0f172a"/>
-      <polygon points="290,265 310,265 300,278" fill="#0f172a"/>
-      <path d="M 250 295 C 230 360, 220 440, 240 500 L 360 500 C 380 440, 370 360, 350 295" fill="#ea580c" stroke="#0f172a" stroke-width="14"/>
-      <path d="M 370 440 C 470 420, 520 320, 470 240 C 430 200, 420 280, 440 330 C 460 370, 410 470, 360 480 Z" fill="#ea580c" stroke="#0f172a" stroke-width="14"/>
-      <path d="M 470 240 C 430 200, 420 280, 440 330 C 460 300, 455 260, 470 240 Z" fill="#f8fafc"/>
-    `,
-    steps: [
-      {
-        title: "1. Adım: Hafif Kılavuz Çemberi",
-        instruction: "Kağıdının üst ortasına hafifçe bastırarak kafayı belirleyecek yuvarlak bir kılavuz çember çiz.",
-        voice: "İlk olarak kağıdının ortasına kafasını oluşturacak hafif bir çember çiziyoruz.",
-        svg: `<circle cx="300" cy="200" r="90" fill="none" stroke="#3b82f6" stroke-width="8" stroke-dasharray="10 8"/>`
-      },
-      {
-        title: "2. Adım: Sivri Tilki Kulakları",
-        instruction: "Kılavuz çemberin tepesine yukarı doğru uzanan iki büyük üçgen kulak ekle.",
-        voice: "Şimdi kafanın üzerine yukarıya bakan iki sivri kulak çiziyoruz.",
-        svg: `<path d="M 230 150 L 190 60 L 270 120 Z" fill="none" stroke="#0f172a" stroke-width="14" stroke-linejoin="round"/><path d="M 370 150 L 410 60 L 330 120 Z" fill="none" stroke="#0f172a" stroke-width="14" stroke-linejoin="round"/>`
-      },
-      {
-        title: "3. Adım: Sevimli Sivri Çene ve Yanak Hatları",
-        instruction: "Kafanın altını sivrilterek tilki burnuna doğru inen zarif çene çizgisini çiz.",
-        voice: "Kafanın altını sivrilterek tilkinin burnuna doğru inen çene çizgisini yapalım.",
-        svg: `<path d="M 210 200 C 210 140, 390 140, 390 200 C 390 260, 340 300, 300 300 C 260 300, 210 260, 210 200 Z" fill="none" stroke="#0f172a" stroke-width="14"/>`
-      },
-      {
-        title: "4. Adım: Badem Gözler ve Üçgen Burun",
-        instruction: "Yüze iki parıldayan badem göz, minik üçgen burun ve yanaklardaki beyaz kürk ayrımını ekle.",
-        voice: "Harika! Şimdi iki parıldayan göz, minik bir burun ve yanak çizgilerini çiziyoruz.",
-        svg: `<circle cx="260" cy="205" r="10" fill="#0f172a"/><circle cx="263" cy="202" r="3" fill="#ffffff"/><circle cx="340" cy="205" r="10" fill="#0f172a"/><circle cx="343" cy="202" r="3" fill="#ffffff"/><polygon points="290,265 310,265 300,278" fill="#0f172a"/><path d="M 210 220 C 250 250, 280 270, 300 295 C 320 270, 350 250, 390 220" fill="none" stroke="#0f172a" stroke-width="10"/>`
-      },
-      {
-        title: "5. Adım: Oturan Gövde ve Ön Bacaklar",
-        instruction: "Çenenin altından aşağıya doğru inen oturan gövdeyi ve yere basan ön patilerini çiz.",
-        voice: "Çenenin altından aşağıya doğru tilkimizin gövdesini ve ön patilerini çizelim.",
-        svg: `<path d="M 250 295 C 230 360, 220 440, 240 500 L 360 500 C 380 440, 370 360, 350 295" fill="none" stroke="#0f172a" stroke-width="14"/><line x1="300" y1="380" x2="300" y2="500" stroke="#0f172a" stroke-width="10"/>`
-      },
-      {
-        title: "6. Adım: Devasa Pofuduk Tilki Kuyruğu",
-        instruction: "Gövdenin yanından arkaya doğru kıvrılan kocaman ucu beyaz pofuduk kuyruğu tamamla.",
-        voice: "Son dokunuş! Tilkimizin o meşhur kocaman pofuduk kuyruğunu çizip bitiriyoruz.",
-        svg: `<path d="M 370 440 C 470 420, 520 320, 470 240 C 430 200, 420 280, 440 330 C 460 370, 410 470, 360 480 Z" fill="none" stroke="#0f172a" stroke-width="14"/><path d="M 450 260 Q 430 280, 450 310" stroke="#0f172a" stroke-width="10" fill="none"/>`
-      }
-    ]
-  },
-
-  // =========================================================================
-  // 2. KLASİK VOSVOS (SEVİYE 1: ÇIRAK)
-  // =========================================================================
-  {
-    id: "araba_klasik_vosvos",
-    categoryId: "arabalar",
-    name: "Klasik Sevimli Vosvos (Beetle)",
-    emoji: "🚗",
-    level: 1,
-    levelName: "Çırak (Seviye 1)",
-    levelBadge: "🟢 Çırak",
-    description: "Net geometrik yarım dairelerden kurulan, nostaljik yuvarlak farlı şık bir klasik vosvos.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Renkli Boya Kalemleri",
-    colors: [
-      { name: "Canlı Kırmızı", hex: "#dc2626" },
-      { name: "Krom Grisi", hex: "#cbd5e1" },
-      { name: "Cam Mavisi", hex: "#7dd3fc" }
-    ],
-    previewSvg: `
-      <circle cx="180" cy="380" r="42" fill="#0f172a"/><circle cx="180" cy="380" r="24" fill="#cbd5e1" stroke="#0f172a" stroke-width="6"/>
-      <circle cx="420" cy="380" r="42" fill="#0f172a"/><circle cx="420" cy="380" r="24" fill="#cbd5e1" stroke="#0f172a" stroke-width="6"/>
-      <path d="M 90 380 L 120 380 M 240 380 L 360 380 M 480 380 L 510 380 L 500 330 C 470 310, 410 200, 300 200 C 180 200, 130 310, 90 340 Z" fill="#dc2626" opacity="0.4" stroke="#0f172a" stroke-width="14"/>
-      <path d="M 120 380 C 130 310, 230 310, 240 380" stroke="#0f172a" stroke-width="14" fill="none"/>
-      <path d="M 360 380 C 370 310, 470 310, 480 380" stroke="#0f172a" stroke-width="14" fill="none"/>
-      <path d="M 190 310 C 210 240, 280 230, 290 310 Z" fill="#7dd3fc" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 310 310 C 320 230, 390 240, 420 310 Z" fill="#7dd3fc" stroke="#0f172a" stroke-width="10"/>
-      <line x1="300" y1="210" x2="300" y2="380" stroke="#0f172a" stroke-width="10"/>
-      <circle cx="105" cy="340" r="14" fill="#facc15" stroke="#0f172a" stroke-width="6"/>
-    `,
-    steps: [
-      {
-        title: "1. Adım: İki Yuvarlak Tekerlek",
-        instruction: "Kağıdın altına birbirinden biraz aralıklı iki tane yuvarlak tekerlek ve iç çemberlerini çiz.",
-        voice: "Arabamız için önce kağıdın altına iki yuvarlak tekerlek çiziyoruz.",
-        svg: `<circle cx="180" cy="380" r="42" fill="#0f172a"/><circle cx="180" cy="380" r="24" fill="#cbd5e1" stroke="#0f172a" stroke-width="6"/><circle cx="420" cy="380" r="42" fill="#0f172a"/><circle cx="420" cy="380" r="24" fill="#cbd5e1" stroke="#0f172a" stroke-width="6"/>`
-      },
-      {
-        title: "2. Adım: Tekerlek Üstü Çamurluk Yayları",
-        instruction: "Her iki tekerleğin de üzerinden yarım daire şeklinde geçen koruyucu çamurluk yaylarını çiz.",
-        voice: "Tekerleklerin üzerinden dolaşan yarım daire çamurlukları çizelim.",
-        svg: `<path d="M 120 380 C 130 310, 230 310, 240 380" stroke="#0f172a" stroke-width="14" fill="none"/><path d="M 360 380 C 370 310, 470 310, 480 380" stroke="#0f172a" stroke-width="14" fill="none"/>`
-      },
-      {
-        title: "3. Adım: Meşhur Kubbe Tavan ve Gövde",
-        instruction: "Önden arkaya tek bir geniş kavisle vosvosun o meşhur kubbe tavanını ve tamponları birleştir.",
-        voice: "Vosvosun o meşhur yuvarlak kubbe tavanını baştan başa çiziyoruz.",
-        svg: `<path d="M 90 380 L 120 380 M 240 380 L 360 380 M 480 380 L 510 380 L 500 330 C 470 310, 410 200, 300 200 C 180 200, 130 310, 90 340 Z" fill="none" stroke="#0f172a" stroke-width="14"/>`
-      },
-      {
-        title: "4. Adım: Yarım Ay Pencereler ve Kapı Çizgisi",
-        instruction: "Gövdenin içine iki yuvarlak pencere ve ortadan aşağıya inen kapı çizgisini ekle.",
-        voice: "Gövdenin içine şık pencereleri ve ortadaki kapı çizgisini yapalım.",
-        svg: `<path d="M 190 310 C 210 240, 280 230, 290 310 Z" fill="#7dd3fc" stroke="#0f172a" stroke-width="10"/><path d="M 310 310 C 320 230, 390 240, 420 310 Z" fill="#7dd3fc" stroke="#0f172a" stroke-width="10"/><line x1="300" y1="210" x2="300" y2="380" stroke="#0f172a" stroke-width="10"/>`
-      },
-      {
-        title: "5. Adım: Yuvarlak Farlar ve Parlak Tampon",
-        instruction: "Ön buruna büyük sarı bir far ve tekerleklerin önüne krom tampon demirlerini tamamla.",
-        voice: "Son dokunuş! Yuvarlak gülen farını ve nostaljik krom tamponlarını tamamlıyoruz.",
-        svg: `<circle cx="105" cy="340" r="14" fill="#facc15" stroke="#0f172a" stroke-width="6"/><path d="M 70 380 C 70 365, 95 365, 95 380" stroke="#0f172a" stroke-width="8" fill="none"/><path d="M 505 380 C 505 365, 530 365, 530 380" stroke="#0f172a" stroke-width="8" fill="none"/>`
-      }
-    ]
-  },
-
-  // =========================================================================
-  // 3. BRACHIOSAURUS UZUN BOYUN (SEVİYE 1: ÇIRAK)
-  // =========================================================================
-  {
-    id: "dino_uzunboyun_otobur",
-    categoryId: "dinozorlar",
-    name: "Barışçıl Brachiosaurus (Uzun Boyun)",
-    emoji: "🦕",
-    level: 1,
-    levelName: "Çırak (Seviye 1)",
-    levelBadge: "🟢 Çırak",
-    description: "Ağaçların tepesine uzanan zarif kıvrımlı boynu ve dağ gibi dost canlısı heybetli gövdesi.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Yeşil/Mavi Boya Kalemleri",
-    colors: [
-      { name: "Turkuaz Orman Yeşili", hex: "#0d9488" },
-      { name: "Açık Göbek Sarısı", hex: "#fde047" }
-    ],
-    previewSvg: `
-      <circle cx="160" cy="120" r="28" fill="#0d9488" opacity="0.4" stroke="#0f172a" stroke-width="12"/>
-      <circle cx="155" cy="115" r="5" fill="#0f172a"/>
-      <path d="M 180 135 C 220 200, 240 300, 250 400 C 280 330, 380 330, 420 380 C 470 390, 520 420, 530 460 C 510 470, 460 450, 425 430 L 430 510 L 390 510 L 380 430 L 290 430 L 280 510 L 240 510 L 230 430 L 180 400 C 180 320, 160 220, 140 145 Z" fill="#0d9488" opacity="0.45" stroke="#0f172a" stroke-width="14"/>
-    `,
-    steps: [
-      {
-        title: "1. Adım: Küçük Baş ve Göğe Uzanan Zarif Boyun",
-        instruction: "Sol üst tarafa küçük yuvarlak bir baş ve aşağıya kıvrılarak inen uzun boyun çizgilerini çiz.",
-        voice: "Uzun boyunlu sevimli dinozorumuzun gökyüzüne uzanan zarif boynunu çiziyoruz.",
-        svg: `<circle cx="160" cy="120" r="28" fill="none" stroke="#0f172a" stroke-width="12"/><circle cx="155" cy="115" r="5" fill="#0f172a"/><path d="M 180 135 C 220 200, 240 300, 250 400" stroke="#0f172a" stroke-width="14" fill="none"/><path d="M 140 145 C 160 220, 180 320, 180 400" stroke="#0f172a" stroke-width="14" fill="none"/>`
-      },
-      {
-        title: "2. Adım: Dağ Gibi Kubbe Sırt ve Bacaklar",
-        instruction: "Boynun ardından yükselen devasa sırtı ve fil gibi kalın 4 sütun bacağı çiz.",
-        voice: "Boynun bağlandığı devasa dağ gibi gövdeyi ve kalın sütun bacaklarını yapalım.",
-        svg: `<path d="M 250 400 C 280 330, 380 330, 420 380 L 430 510 L 390 510 L 380 430 L 290 430 L 280 510 L 240 510 L 230 430" stroke="#0f172a" stroke-width="14" fill="none"/>`
-      },
-      {
-        title: "3. Adım: Kıvrımlı Kırbaç Kuyruk",
-        instruction: "Sırtın sağ arkasından geriye doğru incelerek uzanan zarif kırbaç kuyruğu tamamla.",
-        voice: "Son dokunuş! Arkada neşeyle kıvrılan uzun kırbaç kuyruğunu çizip bitiriyoruz.",
-        svg: `<path d="M 420 380 C 470 390, 520 420, 530 460 C 510 470, 460 450, 425 430" stroke="#0f172a" stroke-width="14" fill="none"/>`
-      }
-    ]
-  },
-
-  // =========================================================================
-  // 4. ASİL OTURAN KEDİ (SEVİYE 2: RESSAM)
-  // =========================================================================
-  {
-    id: "kedi_asil_manga",
-    categoryId: "hayvanlar",
-    name: "Asil Duruşlu Kedi",
-    emoji: "🐈",
-    level: 2,
-    levelName: "Ressam (Seviye 2)",
-    levelBadge: "🟡 Ressam",
-    description: "Anatomik omurga kavisleri, badem kedi gözleri, patiler ve öne dolanan tüylü asil kuyruk.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Gri/Yeşil Boya Kalemleri",
-    colors: [
-      { name: "Duman Grisi", hex: "#64748b" },
-      { name: "Zümrüt Yeşili (Gözler)", hex: "#10b981" },
-      { name: "Pudra Pembe", hex: "#f472b6" }
-    ],
-    previewSvg: `
-      <path d="M 230 180 C 230 120, 370 120, 370 180 C 370 230, 330 260, 300 265 C 270 260, 230 230, 230 180 Z" fill="#94a3b8" opacity="0.4" stroke="#0f172a" stroke-width="12"/>
-      <path d="M 245 150 L 210 65 L 285 130" fill="#94a3b8" stroke="#0f172a" stroke-width="12" stroke-linejoin="round"/>
-      <path d="M 315 130 L 390 65 L 355 150" fill="#94a3b8" stroke="#0f172a" stroke-width="12" stroke-linejoin="round"/>
-      <path d="M 250 185 C 260 170, 280 175, 285 188 C 275 198, 255 195, 250 185 Z" fill="#10b981" stroke="#0f172a" stroke-width="6"/>
-      <circle cx="270" cy="183" r="4" fill="#ffffff"/>
-      <path d="M 315 188 C 320 175, 340 170, 350 185 C 345 195, 325 198, 315 188 Z" fill="#10b981" stroke="#0f172a" stroke-width="6"/>
-      <circle cx="330" cy="183" r="4" fill="#ffffff"/>
-      <polygon points="292,215 308,215 300,226" fill="#f472b6"/>
-      <path d="M 255 255 C 230 310, 230 380, 240 460 L 345 520 C 390 520, 410 470, 400 480 C 410 390, 390 300, 350 240" fill="#94a3b8" opacity="0.4" stroke="#0f172a" stroke-width="12"/>
-      <path d="M 400 475 C 460 490, 450 550, 370 545 C 300 540, 240 540, 220 525" fill="none" stroke="#0f172a" stroke-width="14"/>
-    `,
-    steps: [
-      {
-        title: "1. Adım: Baş Ovali ve Kılavuz Çizgileri",
-        instruction: "Kağıdın üstüne çeneye doğru hafif sivrilen kedi başı ovalini çiz.",
-        voice: "Kedimizin asil duruşu için hafif yana eğik oval bir kafa çizgisiyle başlıyoruz.",
-        svg: `<path d="M 230 180 C 230 120, 370 120, 370 180 C 370 230, 330 260, 300 265 C 270 260, 230 230, 230 180 Z" fill="none" stroke="#0f172a" stroke-width="14"/>`
-      },
-      {
-        title: "2. Adım: Dik Sivri Kulaklar ve İç Püsküller",
-        instruction: "Kafanın üzerine iki sivri üçgen kulak ve içlerindeki tüy çizgilerini kondur.",
-        voice: "Şimdi kafanın üzerine dikkatle etrafı dinleyen iki sivri kulak çiziyoruz.",
-        svg: `<path d="M 245 150 L 210 65 L 285 130" stroke="#0f172a" stroke-width="12" fill="none"/><path d="M 315 130 L 390 65 L 355 150" stroke="#0f172a" stroke-width="12" fill="none"/><path d="M 235 135 L 225 90 L 265 130" stroke="#0f172a" stroke-width="8" fill="none"/><path d="M 335 130 L 375 90 L 365 135" stroke="#0f172a" stroke-width="8" fill="none"/>`
-      },
-      {
-        title: "3. Adım: Büyüleyici Badem Gözler ve Pembe Burun",
-        instruction: "Yüze iki keskin badem göz, minik pembe burun ve bıyık yastıklarını ekle.",
-        voice: "Kedimizin o büyüleyici bakışları için iki badem göz, küçük bir burun ve bıyık yuvalarını ekliyoruz.",
-        svg: `<path d="M 250 185 C 260 170, 280 175, 285 188 C 275 198, 255 195, 250 185 Z" fill="#10b981" stroke="#0f172a" stroke-width="6"/><circle cx="270" cy="183" r="4" fill="#ffffff"/><path d="M 315 188 C 320 175, 340 170, 350 185 C 345 195, 325 198, 315 188 Z" fill="#10b981" stroke="#0f172a" stroke-width="6"/><circle cx="330" cy="183" r="4" fill="#ffffff"/><polygon points="292,215 308,215 300,226" fill="#f472b6"/><path d="M 300 226 Q 285 240, 275 230" stroke="#0f172a" stroke-width="8" fill="none"/><path d="M 300 226 Q 315 240, 325 230" stroke="#0f172a" stroke-width="8" fill="none"/>`
-      },
-      {
-        title: "4. Adım: Zarif Boyun, Göğüs ve Sırt Kavisleri",
-        instruction: "Çenenin altından inen göğüs kürkünü ve geriye doğru zarifçe kavislenen sırt hattını çiz.",
-        voice: "Çenenin altından göğse inen kürk çizgisini ve geriye doğru zarifçe kavislenen sırtı çizelim.",
-        svg: `<path d="M 255 255 C 230 310, 230 380, 240 460" stroke="#0f172a" stroke-width="14" fill="none"/><path d="M 350 240 C 390 300, 410 390, 400 480" stroke="#0f172a" stroke-width="14" fill="none"/>`
-      },
-      {
-        title: "5. Adım: İnce Ön Bacaklar ve Parmaklı Patiler",
-        instruction: "Öne doğru dik inen iki ince ön bacağı ve parmak çizgileri olan patileri yap.",
-        voice: "Yere sağlam basan ince ön bacakları ve parmak kıvrımları olan sevimli patileri çiziyoruz.",
-        svg: `<path d="M 255 420 L 250 510 C 250 525, 280 525, 280 510 L 290 430" stroke="#0f172a" stroke-width="12" fill="none"/><path d="M 295 430 L 305 510 C 305 525, 335 525, 335 510 L 330 420" stroke="#0f172a" stroke-width="12" fill="none"/><line x1="265" y1="510" x2="265" y2="520" stroke="#0f172a" stroke-width="6"/><line x1="320" y1="510" x2="320" y2="520" stroke="#0f172a" stroke-width="6"/>`
-      },
-      {
-        title: "6. Adım: Kıvrılan Arka But ve Öne Dolanan Kuyruk",
-        instruction: "Oturan arka bacağı ve patilerin önünden zarifçe dolanan uzun kuyruğu tamamla.",
-        voice: "Son dokunuş! Yanda oturan arka bacağı ve patilerin önünden kıvrılarak uzanan harika kuyruğu tamamlıyoruz.",
-        svg: `<path d="M 380 440 C 410 470, 390 520, 345 520" stroke="#0f172a" stroke-width="14" fill="none"/><path d="M 400 475 C 460 490, 450 550, 370 545 C 300 540, 240 540, 220 525" stroke="#0f172a" stroke-width="14" fill="none"/><line x1="240" y1="220" x2="160" y2="210" stroke="#0f172a" stroke-width="6"/><line x1="240" y1="230" x2="155" y2="235" stroke="#0f172a" stroke-width="6"/><line x1="360" y1="220" x2="440" y2="210" stroke="#0f172a" stroke-width="6"/><line x1="360" y1="230" x2="445" y2="235" stroke="#0f172a" stroke-width="6"/>`
-      }
-    ]
-  },
-
-  // =========================================================================
-  // 5. MONSTER TRUCK (SEVİYE 2: RESSAM)
-  // =========================================================================
-  {
-    id: "araba_monster_truck_pro",
-    categoryId: "arabalar",
-    name: "Monster Truck (Canavar Kamyon)",
-    emoji: "🚙",
-    level: 2,
-    levelName: "Ressam (Seviye 2)",
-    levelBadge: "🟡 Ressam",
-    description: "Devasa derin dişli çamur lastikleri, açık hidrolik amortisör yayları ve tavan lambaları.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Mavi/Sarı Boya Kalemleri",
-    colors: [
-      { name: "Elektrik Mavisi", hex: "#2563eb" },
-      { name: "Lastik Siyahı", hex: "#0f172a" },
-      { name: "Yay Kırmızısı", hex: "#ef4444" },
-      { name: "Jant Sarısı", hex: "#fde047" }
-    ],
-    previewSvg: `
-      <circle cx="170" cy="390" r="70" fill="#0f172a"/><circle cx="170" cy="390" r="35" fill="#facc15" stroke="#0f172a" stroke-width="8"/>
-      <circle cx="430" cy="390" r="70" fill="#0f172a"/><circle cx="430" cy="390" r="35" fill="#facc15" stroke="#0f172a" stroke-width="8"/>
-      <path d="M 110 270 L 110 215 L 200 215 L 260 145 L 390 145 L 415 215 L 500 215 L 500 270 Z" fill="#2563eb" opacity="0.6" stroke="#0f172a" stroke-width="14"/>
-      <path d="M 270 160 L 380 160 L 395 205 L 230 205 Z" fill="#7dd3fc" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 170 320 L 220 280 L 380 280 L 430 320" stroke="#0f172a" stroke-width="14" fill="none"/>
-      <line x1="190" y1="330" x2="210" y2="280" stroke="#ef4444" stroke-width="12"/>
-      <line x1="410" y1="330" x2="390" y2="280" stroke="#ef4444" stroke-width="12"/>
-      <circle cx="290" cy="130" r="10" fill="#facc15" stroke="#0f172a" stroke-width="6"/>
-      <circle cx="320" cy="130" r="10" fill="#facc15" stroke="#0f172a" stroke-width="6"/>
-      <circle cx="350" cy="130" r="10" fill="#facc15" stroke="#0f172a" stroke-width="6"/>
-    `,
-    steps: [
-      {
-        title: "1. Adım: İki Devasa Dişli Çamur Lastiği",
-        instruction: "Kağıdın altına birbirinden açık iki kocaman kalın lastik ve iç jant çemberlerini çiz.",
-        voice: "Canavar kamyonun önüne gelen arabaları ezip geçen devasa lastikleriyle başlıyoruz.",
-        svg: `<circle cx="170" cy="390" r="70" fill="#0f172a"/><circle cx="170" cy="390" r="35" fill="#facc15" stroke="#0f172a" stroke-width="8"/><circle cx="430" cy="390" r="70" fill="#0f172a"/><circle cx="430" cy="390" r="35" fill="#facc15" stroke="#0f172a" stroke-width="8"/>`
-      },
-      {
-        title: "2. Adım: Çelik Şasi ve Açık Süspansiyon Yayları",
-        instruction: "Lastiklerin üzerinde yükselen çelik boru şasiyi ve dev amortisör yaylarını çiz.",
-        voice: "Gövdeyi iki metre havada tutan güçlü amortisör yaylarını ve taşıyıcı çelik iskeleti çizelim.",
-        svg: `<path d="M 170 320 L 220 280 L 380 280 L 430 320" stroke="#0f172a" stroke-width="14" fill="none"/><line x1="190" y1="330" x2="210" y2="280" stroke="#ef4444" stroke-width="12"/><line x1="410" y1="330" x2="390" y2="280" stroke="#ef4444" stroke-width="12"/>`
-      },
-      {
-        title: "3. Adım: Havalı Kamyonet Gövdesi ve Camlar",
-        instruction: "Şasinin üstüne oturan kabini, ön burnu, arka kasayı ve sürücü pencerelerini çiz.",
-        voice: "Şimdi yukarıda duran heybetli kamyonet gövdesini ve pencerelerini yapıyoruz.",
-        svg: `<path d="M 110 270 L 110 215 L 200 215 L 260 145 L 390 145 L 415 215 L 500 215 L 500 270 Z" fill="none" stroke="#0f172a" stroke-width="14"/><path d="M 270 160 L 380 160 L 395 205 L 230 205 Z" fill="#7dd3fc" stroke="#0f172a" stroke-width="10"/>`
-      },
-      {
-        title: "4. Adım: Tavan Projektörleri ve Dikey Egzoz",
-        instruction: "Tavana 3 parlak sarı arama lambası ve arkaya yukarı bakan dikey egzoz borularını tamamla.",
-        voice: "Son dokunuş! Geceyi aydınlatan tepe lambalarını ve dikey çelik egzozları tamamlıyoruz.",
-        svg: `<circle cx="290" cy="130" r="10" fill="#facc15" stroke="#0f172a" stroke-width="6"/><circle cx="320" cy="130" r="10" fill="#facc15" stroke="#0f172a" stroke-width="6"/><circle cx="350" cy="130" r="10" fill="#facc15" stroke="#0f172a" stroke-width="6"/><path d="M 420 145 L 420 100 L 435 90 L 435 155" fill="#64748b" stroke="#0f172a" stroke-width="10"/>`
-      }
-    ]
-  },
-
-  // =========================================================================
-  // 6. BÜYÜK BEYAZ KÖPEKBALIĞI (SEVİYE 2: RESSAM)
-  // =========================================================================
-  {
-    id: "deniz_kopekbaligi_pro2",
-    categoryId: "deniz",
-    name: "Büyük Beyaz Köpekbalığı",
-    emoji: "🦈",
-    level: 2,
-    levelName: "Ressam (Seviye 2)",
-    levelBadge: "🟡 Ressam",
-    description: "Sivri avcı burnu, jilet sırt yüzgeci, testere dişleri ve solungaçlarıyla okyanusun hakimi.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Koyu Gri Boya Kalemi",
-    colors: [
-      { name: "Okyanus Grisi", hex: "#475569" },
-      { name: "Kar Beyazı", hex: "#f8fafc" },
-      { name: "Avcı Siyahı", hex: "#0f172a" }
-    ],
-    previewSvg: `
-      <path d="M 120 280 C 120 190, 420 220, 480 300 C 420 370, 120 360, 120 280 Z" fill="#475569" opacity="0.45" stroke="#0f172a" stroke-width="14"/>
-      <path d="M 250 230 L 290 120 C 330 180, 330 230, 350 240 Z" fill="#475569" stroke="#0f172a" stroke-width="14"/>
-      <path d="M 135 280 L 60 170 C 90 260, 90 300, 60 390 L 135 280 Z" fill="#475569" stroke="#0f172a" stroke-width="14"/>
-      <path d="M 320 320 L 290 440 L 370 410 L 380 315 Z" fill="#475569" stroke="#0f172a" stroke-width="14"/>
-      <circle cx="430" cy="275" r="9" fill="#0f172a"/>
-      <path d="M 450 320 Q 400 350, 380 325" stroke="#0f172a" stroke-width="10" fill="none"/>
-      <line x1="335" y1="280" x2="330" y2="305" stroke="#0f172a" stroke-width="6"/>
-      <line x1="345" y1="280" x2="340" y2="305" stroke="#0f172a" stroke-width="6"/>
-      <line x1="355" y1="280" x2="350" y2="305" stroke="#0f172a" stroke-width="6"/>
-      <line x1="365" y1="280" x2="360" y2="305" stroke="#0f172a" stroke-width="6"/>
-    `,
-    steps: [
-      {
-        title: "1. Adım: Sivri Torpido Gövde Silüeti",
-        instruction: "Suyu bir ok gibi yaran sivri burunlu ve arkaya incelen gövde silüetini çiz.",
-        voice: "Okyanusların en hızlı avcısının kurşun gibi keskin gövde silüetiyle başlıyoruz.",
-        svg: `<path d="M 120 280 C 120 190, 420 220, 480 300 C 420 370, 120 360, 120 280 Z" fill="none" stroke="#0f172a" stroke-width="14"/>`
-      },
-      {
-        title: "2. Adım: Jilet Sırt Yüzgeci ve Hilal Kuyruk",
-        instruction: "Sırtına dik üçgen yüzgeç ve arkaya hilal şeklinde iki kanatlı kuyruk yap.",
-        voice: "Sırtındaki o meşhur jilet gibi yüzgeci ve arkadaki güçlü hilal kuyruğunu çiziyoruz.",
-        svg: `<path d="M 250 230 L 290 120 C 330 180, 330 230, 350 240 Z" fill="none" stroke="#0f172a" stroke-width="14"/><path d="M 135 280 L 60 170 C 90 260, 90 300, 60 390 L 135 280 Z" fill="none" stroke="#0f172a" stroke-width="14"/>`
-      },
-      {
-        title: "3. Adım: Geniş Yan Kanat Yüzgeci",
-        instruction: "Gövdenin altından aşağıya doğru açılı inen manevra yüzgecini çiz.",
-        voice: "Suda hızla dönmesini sağlayan büyük yan kanat yüzgecini yapalım.",
-        svg: `<path d="M 320 320 L 290 440 L 370 410 L 380 315 Z" fill="none" stroke="#0f172a" stroke-width="14"/>`
-      },
-      {
-        title: "4. Adım: Testere Dişler ve 5 Solungaç Yarığı",
-        instruction: "Yarı açık avcı ağzı, sivri beyaz dişler ve yanına 5 solungaç yarığını tamamla.",
-        voice: "Son dokunuş! Keskin küçük dişlerini ve su altı solungaç çizgilerini çiziyoruz.",
-        svg: `<circle cx="430" cy="275" r="9" fill="#0f172a"/><path d="M 450 320 Q 400 350, 380 325" stroke="#0f172a" stroke-width="10" fill="none"/><line x1="335" y1="280" x2="330" y2="305" stroke="#0f172a" stroke-width="6"/><line x1="345" y1="280" x2="340" y2="305" stroke="#0f172a" stroke-width="6"/><line x1="355" y1="280" x2="350" y2="305" stroke="#0f172a" stroke-width="6"/><line x1="365" y1="280" x2="360" y2="305" stroke="#0f172a" stroke-width="6"/>`
-      }
-    ]
-  },
-
-  // =========================================================================
-  // 7. LAMBORGHINI AVENTADOR (SEVİYE 3: USTA SANATÇI)
-  // =========================================================================
-  {
-    id: "araba_lambo_master",
-    categoryId: "arabalar",
-    name: "Lamborghini Aventador (Süper Spor)",
-    emoji: "🏎️",
-    level: 3,
-    levelName: "Usta Sanatçı (Seviye 3)",
-    levelBadge: "🔴 Usta",
-    description: "Yere sıfır keskin kama silüeti, açılı ön difüzör, 'Y' LED farlar ve devasa yarış spoyleri.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Sarı, Siyah, Kırmızı Boya Kalemleri",
-    colors: [
-      { name: "Neon Yarış Sarısı", hex: "#eab308" },
-      { name: "Karbon Siyahı", hex: "#0f172a" },
-      { name: "Fren Kırmızısı", hex: "#dc2626" },
-      { name: "Titanyum Grisi", hex: "#64748b" }
-    ],
-    previewSvg: `
-      <path d="M 60 380 L 120 380 C 130 310, 230 310, 240 380 L 370 380 C 380 310, 480 310, 490 380 L 550 380 L 540 330 L 450 270 L 310 230 L 170 310 L 90 340 Z" fill="#eab308" opacity="0.55" stroke="#0f172a" stroke-width="14"/>
-      <circle cx="180" cy="380" r="48" fill="#0f172a"/><circle cx="180" cy="380" r="32" fill="#cbd5e1" stroke="#0f172a" stroke-width="8"/>
-      <circle cx="430" cy="380" r="48" fill="#0f172a"/><circle cx="430" cy="380" r="32" fill="#cbd5e1" stroke="#0f172a" stroke-width="8"/>
-      <path d="M 190 305 L 305 240 L 415 280 L 280 305 Z" fill="#0284c7" opacity="0.4" stroke="#0f172a" stroke-width="12"/>
-      <path d="M 285 315 L 390 315 L 360 365 L 270 365 Z" fill="#0f172a"/>
-      <path d="M 85 350 L 135 340 L 115 358 Z" fill="#facc15" stroke="#0f172a" stroke-width="8"/>
-      <line x1="60" y1="375" x2="120" y2="375" stroke="#0f172a" stroke-width="12"/>
-      <path d="M 480 300 L 535 265 L 550 280 L 505 315 Z" fill="#0f172a"/>
-    `,
-    steps: [
-      {
-        title: "1. Adım: Aerodinamik Kılavuz Taslağı",
-        instruction: "Kağıdına hafif bastırarak eğik alçak tavanı ve tekerlek yuvalarını belirleyen gövde hatlarını çiz.",
-        voice: "İlk olarak kurşunkalemini hafif tutarak arabanın yere basık hız silüetini ve tekerlek yuvalarını çiziyoruz.",
-        svg: `<path d="M 60 380 L 120 380 C 130 310, 230 310, 240 380 L 370 380 C 380 310, 480 310, 490 380 L 550 380 L 540 330 L 450 270 L 310 230 L 170 310 L 90 340 Z" fill="none" stroke="#3b82f6" stroke-width="8" stroke-dasharray="10 8"/>`
-      },
-      {
-        title: "2. Adım: Düşük Profil Lastikler ve Jant Çemberleri",
-        instruction: "Çamurlukların içine iki dev yarış tekerleği ve iç alaşım jant çemberlerini çiz.",
-        voice: "Şimdi yarış arabasını yola kenetleyen dev alaşım jantları ve düşük profil spor lastikleri çizelim.",
-        svg: `<circle cx="180" cy="380" r="48" fill="#0f172a"/><circle cx="180" cy="380" r="32" fill="#cbd5e1" stroke="#0f172a" stroke-width="8"/><circle cx="430" cy="380" r="48" fill="#0f172a"/><circle cx="430" cy="380" r="32" fill="#cbd5e1" stroke="#0f172a" stroke-width="8"/><path d="M 60 380 L 120 380 M 240 380 L 370 380 M 490 380 L 550 380" stroke="#0f172a" stroke-width="14"/>`
-      },
-      {
-        title: "3. Adım: Açılı Kokpit Camları ve Yan Hava Kanalı",
-        instruction: "Açılı ön camı, tavanı ve motora soğuk hava üfleyen büyük üçgen yan hava kanalını çiz.",
-        voice: "Arabanın açılı kokpit camlarını ve motora hava çeken yan kanallarını ekliyoruz.",
-        svg: `<path d="M 190 305 L 305 240 L 415 280 L 280 305 Z" fill="#0284c7" opacity="0.4" stroke="#0f172a" stroke-width="12"/><path d="M 285 315 L 390 315 L 360 365 L 270 365 Z" fill="#0f172a"/><line x1="330" y1="245" x2="330" y2="305" stroke="#0f172a" stroke-width="8"/>`
-      },
-      {
-        title: "4. Adım: Keskin LED Farlar ve Ön Karbon Bıçak",
-        instruction: "Ön kaputa eğik keskin LED farı ve alt tampon rüzgar difüzörünü çiz.",
-        voice: "Arabaya o öfkeli ve güçlü bakışı kazandıran keskin LED farlarını ve karbon tampon bıçaklarını yapalım.",
-        svg: `<path d="M 85 350 L 135 340 L 115 358 Z" fill="#facc15" stroke="#0f172a" stroke-width="8"/><line x1="60" y1="375" x2="120" y2="375" stroke="#0f172a" stroke-width="12"/>`
-      },
-      {
-        title: "5. Adım: Yüksek Yarış Spoyleri ve Jant Kolları",
-        instruction: "Arka bagaja yüksek karbon yarış kanadını ve jantların içine yıldız kollarını çiz.",
-        voice: "Son ustalık adımı! Yüksek hızda yere basmasını sağlayan dev yarış spoylerini ve jant kollarını çiziyoruz.",
-        svg: `<path d="M 480 300 L 535 265 L 550 280 L 505 315 Z" fill="#0f172a"/><line x1="495" y1="310" x2="495" y2="340" stroke="#0f172a" stroke-width="8"/><line x1="520" y1="295" x2="520" y2="340" stroke="#0f172a" stroke-width="8"/><line x1="180" y1="350" x2="180" y2="410" stroke="#0f172a" stroke-width="6"/><line x1="150" y1="380" x2="210" y2="380" stroke="#0f172a" stroke-width="6"/><line x1="430" y1="350" x2="430" y2="410" stroke="#0f172a" stroke-width="6"/><line x1="400" y1="380" x2="460" y2="380" stroke="#0f172a" stroke-width="6"/>`
-      }
-    ]
-  },
-
-  // =========================================================================
-  // 8. KORKUSUZ KRAL T-REX (SEVİYE 3: USTA SANATÇI)
-  // =========================================================================
-  {
-    id: "dino_trex_master2",
-    categoryId: "dinozorlar",
-    name: "Korkusuz Kral T-Rex",
-    emoji: "🦖",
-    level: 3,
-    levelName: "Usta Sanatçı (Seviye 3)",
-    levelBadge: "🔴 Usta",
-    description: "Kükreyen açık çene, hançer dişler, yırtıcı gözler, kaslı bacak ve güçlü denge kuyruğu.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Yeşil, Kahverengi Boya Kalemleri",
-    colors: [
-      { name: "Orman Yeşili", hex: "#15803d" },
-      { name: "Toprak Sarısı", hex: "#ca8a04" },
-      { name: "Diş Beyazı", hex: "#f8fafc" }
-    ],
-    previewSvg: `
-      <path d="M 280 180 C 250 140, 140 160, 140 220 L 250 240 L 160 300 L 250 280 C 270 330, 270 380, 290 410 C 300 440, 270 470, 270 520 L 335 540 L 325 520 C 370 420, 370 360, 330 330 C 360 250, 330 200, 280 180 Z" fill="#15803d" opacity="0.45" stroke="#0f172a" stroke-width="14"/>
-      <path d="M 160 223 L 166 235 L 172 224 L 178 235 L 184 225 L 190 236" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
-      <path d="M 175 290 L 182 280 L 189 290 L 196 280 L 203 290" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
-      <circle cx="230" cy="180" r="10" fill="#0f172a"/><circle cx="233" cy="177" r="3" fill="#ffffff"/>
-      <path d="M 330 450 C 410 470, 480 410, 530 230" stroke="#0f172a" stroke-width="14" fill="none"/>
-    `,
-    steps: [
-      {
-        title: "1. Adım: Devasa Kafatası ve Kükreyen Ağız",
-        instruction: "Geniş burun kemerini, yukarı kalkan burnu ve aşağıya açılan koca alt çeneyi çiz.",
-        voice: "Dinozorlar kralının yeri titreten açık kükreyen çenesiyle başlıyoruz.",
-        svg: `<path d="M 280 180 C 250 140, 140 160, 140 220 L 250 240 L 160 300 L 250 280" fill="none" stroke="#0f172a" stroke-width="14"/>`
-      },
-      {
-        title: "2. Adım: Hançer Dişler ve Yırtıcı Bakış",
-        instruction: "Çenelerden fırlayan sivri üçgen dişleri ve kaş kemiği altındaki odaklanmış gözü çiz.",
-        voice: "T-Rex'in o meşhur hançer dişlerini ve avına bakan keskin küçük gözünü yapıyoruz.",
-        svg: `<path d="M 160 223 L 166 235 L 172 224 L 178 235 L 184 225 L 190 236 L 196 226" fill="#ffffff" stroke="#0f172a" stroke-width="8"/><path d="M 175 290 L 182 280 L 189 290 L 196 280 L 203 290" fill="#ffffff" stroke="#0f172a" stroke-width="8"/><circle cx="230" cy="180" r="10" fill="#0f172a"/><circle cx="233" cy="177" r="3" fill="#ffffff"/><path d="M 215 170 Q 235 165, 245 175" stroke="#0f172a" stroke-width="10" fill="none"/>`
-      },
-      {
-        title: "3. Adım: Kaslı 'S' Boyun, Sırt ve Kalın Kuyruk",
-        instruction: "Kafanın ardından inen kalın boyun kasını ve geriye doğru uzanan heybetli sırtı çiz.",
-        voice: "Kafasından arkaya doğru uzanan dağ gibi kalın boynunu ve sırt çizgisini çizelim.",
-        svg: `<path d="M 280 180 C 330 200, 360 250, 360 330 C 420 330, 500 290, 530 230" fill="none" stroke="#0f172a" stroke-width="14"/><path d="M 250 280 C 270 330, 270 380, 290 410" fill="none" stroke="#0f172a" stroke-width="14"/>`
-      },
-      {
-        title: "4. Adım: Dev Kaslı Bacak ve Sivri Pençeler",
-        instruction: "T-Rex'i taşıyan devasa uyluk kasını ve yere basan 3 sivri pençeli ayağı çiz.",
-        voice: "Ağır gövdeyi taşıyan o devasa kaslı dinozor bacağını ve keskin pençelerini yapıyoruz.",
-        svg: `<path d="M 330 330 C 370 360, 370 420, 320 460 L 325 520 L 270 520 C 270 470, 300 440, 290 410" fill="none" stroke="#0f172a" stroke-width="14"/><path d="M 270 520 L 250 540 L 335 540 L 325 520" fill="#0f172a"/><line x1="265" y1="535" x2="255" y2="540" stroke="#ffffff" stroke-width="6"/><line x1="290" y1="535" x2="290" y2="540" stroke="#ffffff" stroke-width="6"/><line x1="320" y1="535" x2="330" y2="540" stroke="#ffffff" stroke-width="6"/>`
-      },
-      {
-        title: "5. Adım: Minik Av Kolları ve Sırt Zırhı",
-        instruction: "Öne uzanan karakteristik minik av kollarını ve sırt zırhını tamamla.",
-        voice: "Son ustalık adımı! Meşhur iki tırnaklı minik kollarını ve sırt pullarını çizip tamamlıyoruz.",
-        svg: `<path d="M 280 340 L 245 365 L 255 375 L 240 375" stroke="#0f172a" stroke-width="10" fill="none"/><path d="M 330 450 C 410 470, 480 410, 530 230" stroke="#0f172a" stroke-width="14" fill="none"/>`
-      }
-    ]
-  },
-
-  // =========================================================================
-  // 9. YIRTICI BENGAL KAPLANI (SEVİYE 3: USTA SANATÇI)
-  // =========================================================================
-  {
-    id: "hayvan_kaplan_master2",
-    categoryId: "hayvanlar",
-    name: "Yırtıcı Bengal Kaplanı",
-    emoji: "🐯",
-    level: 3,
-    levelName: "Usta Sanatçı (Seviye 3)",
-    levelBadge: "🔴 Usta",
-    description: "Kükreyen çenesi, vahşi odaklanmış sarı gözleri, kaslı omuzları ve kaplan çizgileri.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Turuncu, Siyah Boya Kalemleri",
-    colors: [
-      { name: "Alev Turuncusu", hex: "#ea580c" },
-      { name: "Karbon Siyahı", hex: "#0f172a" },
-      { name: "Göz Sarısı", hex: "#facc15" }
-    ],
-    previewSvg: `
-      <path d="M 220 180 C 220 110, 380 110, 380 180 C 420 220, 410 280, 370 310 C 340 330, 260 330, 230 310 C 190 280, 180 220, 220 180 Z" fill="#ea580c" opacity="0.45" stroke="#0f172a" stroke-width="14"/>
-      <path d="M 230 140 C 200 130, 190 90, 225 80 C 255 70, 265 110, 255 130" stroke="#0f172a" stroke-width="12" fill="none"/>
-      <path d="M 370 140 C 400 130, 410 90, 375 80 C 345 70, 335 110, 345 130" stroke="#0f172a" stroke-width="12" fill="none"/>
-      <path d="M 210 300 L 190 490 C 190 520, 250 520, 250 490" fill="none" stroke="#0f172a" stroke-width="14"/>
-      <path d="M 390 300 L 410 490 C 410 520, 350 520, 350 490" fill="none" stroke="#0f172a" stroke-width="14"/>
-      <path d="M 195 210 L 230 215 L 205 230 Z" fill="#0f172a"/><path d="M 405 210 L 370 215 L 395 230 Z" fill="#0f172a"/>
-    `,
-    steps: [
-      {
-        title: "1. Adım: Yanak Kürkleriyle Güçlü Kaplan Kafası",
-        instruction: "Geniş bir kafa kubbesi ve yanlara doğru fışkıran sivri vahşi kürk tutamlarını çiz.",
-        voice: "Kaplanımızın güçlü kafası ve iki yana açılan vahşi kürk çizgileriyle başlıyoruz.",
-        svg: `<path d="M 220 180 C 220 110, 380 110, 380 180 C 420 220, 410 280, 370 310 C 340 330, 260 330, 230 310 C 190 280, 180 220, 220 180 Z" fill="none" stroke="#0f172a" stroke-width="14"/>`
-      },
-      {
-        title: "2. Adım: Yuvarlak Kulaklar ve Alındaki Kral Çatısı",
-        instruction: "Tepede iki güçlü yuvarlak kulak ve alındaki o meşhur kaplan çatısı çizgilerini yap.",
-        voice: "Kaplanın yuvarlak kulaklarını ve alnındaki simetrik kaplan sembollerini çizelim.",
-        svg: `<path d="M 230 140 C 200 130, 190 90, 225 80 C 255 70, 265 110, 255 130" stroke="#0f172a" stroke-width="12" fill="none"/><path d="M 370 140 C 400 130, 410 90, 375 80 C 345 70, 335 110, 345 130" stroke="#0f172a" stroke-width="12" fill="none"/><path d="M 285 130 L 300 155 L 315 130" stroke="#0f172a" stroke-width="10" fill="none"/><line x1="300" y1="110" x2="300" y2="155" stroke="#0f172a" stroke-width="10"/>`
-      },
-      {
-        title: "3. Adım: Keskin Gözler, Geniş Burun ve Bıyık Yastıkları",
-        instruction: "Sert bakan iki sarı çekik göz, üçgen geniş burun ve bıyık bölgelerini çiz.",
-        voice: "Kaplanın vahşi doğada avına kilitlenen o büyüleyici gözlerini ve burnunu çiziyoruz.",
-        svg: `<path d="M 245 200 Q 275 190, 280 205 Q 265 215, 245 200 Z" fill="#0f172a"/><circle cx="265" cy="200" r="4" fill="#ffffff"/><path d="M 355 200 Q 325 190, 320 205 Q 335 215, 355 200 Z" fill="#0f172a"/><circle cx="335" cy="200" r="4" fill="#ffffff"/><path d="M 285 240 L 315 240 L 300 260 Z" fill="#0f172a"/><path d="M 300 260 L 300 275" stroke="#0f172a" stroke-width="8"/><path d="M 300 275 Q 280 290, 265 275" stroke="#0f172a" stroke-width="8" fill="none"/><path d="M 300 275 Q 320 290, 335 275" stroke="#0f172a" stroke-width="8" fill="none"/>`
-      },
-      {
-        title: "4. Adım: Kaslı Omuzlar ve Kalın Pençeler",
-        instruction: "Kafanın altından yere inen devasa omuz kaslarını ve masaya basan kalın pençeleri çiz.",
-        voice: "Yeri sarsan güçlü kalın ön pençelerini ve omuz kaslarını yapıyoruz.",
-        svg: `<path d="M 210 300 L 190 490 C 190 520, 250 520, 250 490 L 270 380" fill="none" stroke="#0f172a" stroke-width="14"/><path d="M 390 300 L 410 490 C 410 520, 350 520, 350 490 L 330 380" fill="none" stroke="#0f172a" stroke-width="14"/>`
-      },
-      {
-        title: "5. Adım: Meşhur Siyah Kaplan Çizgileri",
-        instruction: "Yanaklara, alına ve omuzlara simetrik sivri kaplan çizgilerini çekip resmi tamamla.",
-        voice: "Son ustalık adımı! Kaplanı doğanın kralı yapan o efsanevi siyah çizgileri ekliyoruz.",
-        svg: `<path d="M 195 210 L 230 215 L 205 230 Z" fill="#0f172a"/><path d="M 190 250 L 230 250 L 200 270 Z" fill="#0f172a"/><path d="M 405 210 L 370 215 L 395 230 Z" fill="#0f172a"/><path d="M 410 250 L 370 250 L 400 270 Z" fill="#0f172a"/>`
-      }
-    ]
-  },
-
-  // =========================================================================
-  // PİLOT KARAKTER: ATEŞ EJDERHASI — SEVİYE 1: 🟢 ÇIRAK (12 ADIM)
-  // =========================================================================
-  {
-    id: "ates_ejderhasi_lvl1",
-    categoryId: "dinozorlar",
-    name: "Sevimli Ateş Ejderhası",
-    emoji: "🐲",
-    level: 1,
-    levelName: "Çırak (Seviye 1)",
-    levelBadge: "🟢 Çırak",
-    description: "12 adımda kılavuz çizgilerinden başlayarak büyük parlak gözlü, kıvrık boynuzlu, sevimli ve kaliteli kırmızı Ateş Ejderhası.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Kırmızı, Turuncu, Sarı Boya Kalemleri",
-    colors: [
-      { name: "Ateş Kırmızısı", hex: "#ef4444" },
-      { name: "Kanat Turuncusu", hex: "#f97316" },
-      { name: "Altın Sarısı", hex: "#facc15" },
-      { name: "Kaya Grisi", hex: "#64748b" }
+      { name: "Gece Siyahı", hex: "#0f172a" },
+      { name: "Çimen Yeşili", hex: "#22c55e" }
     ],
     previewSvg: `
       <defs>
-        <linearGradient id="drgBody1" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#ff5722"/>
-          <stop offset="100%" stop-color="#b91c1c"/>
+        <linearGradient id="foxCoat" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#fb923c"/>
+          <stop offset="60%" stop-color="#ea580c"/>
+          <stop offset="100%" stop-color="#c2410c"/>
         </linearGradient>
-        <linearGradient id="drgWing1" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#fde047"/>
-          <stop offset="100%" stop-color="#ea580c"/>
+        <linearGradient id="foxWhite" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#ffffff"/>
+          <stop offset="100%" stop-color="#e2e8f0"/>
+        </linearGradient>
+        <linearGradient id="foxGrass" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#86efac"/>
+          <stop offset="100%" stop-color="#15803d"/>
         </linearGradient>
       </defs>
-      <!-- Kaya Kaidesi -->
-      <path d="M 120 510 C 160 470, 440 470, 490 515 C 450 545, 150 545, 120 510 Z" fill="#64748b" stroke="#0f172a" stroke-width="8"/>
-      <!-- Kanat -->
-      <path d="M 275 290 C 210 190, 110 175, 55 245 C 95 265, 120 295, 110 345 C 155 320, 195 330, 215 365 C 240 340, 265 340, 285 350 Z" fill="url(#drgWing1)" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>
-      <path d="M 275 290 C 220 205, 140 195, 55 245 M 185 225 L 110 345 M 225 250 L 215 365" stroke="#b91c1c" stroke-width="6" fill="none"/>
-      <!-- Kuyruk -->
-      <path d="M 235 445 C 130 465, 85 410, 115 355 C 125 385, 160 415, 225 405 Z" fill="url(#drgBody1)" stroke="#0f172a" stroke-width="10"/>
-      <polygon points="115,355 95,360 115,330 135,355" fill="#ef4444" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
-      <!-- Gövde ve Arka Bacak -->
-      <path d="M 285 240 C 235 280, 215 380, 240 475 L 385 475 C 405 390, 395 295, 355 240 Z" fill="url(#drgBody1)" stroke="#0f172a" stroke-width="10"/>
-      <!-- Karın Zırhı -->
-      <path d="M 325 245 C 300 310, 300 395, 320 475 L 375 475 C 390 395, 385 310, 355 245 Z" fill="#fde047" stroke="#0f172a" stroke-width="8"/>
-      <line x1="308" y1="290" x2="380" y2="290" stroke="#ca8a04" stroke-width="5"/>
-      <line x1="305" y1="335" x2="385" y2="335" stroke="#ca8a04" stroke-width="5"/>
-      <line x1="306" y1="380" x2="384" y2="380" stroke="#ca8a04" stroke-width="5"/>
-      <line x1="312" y1="425" x2="380" y2="425" stroke="#ca8a04" stroke-width="5"/>
-      <!-- Arka But ve Ön Bacaklar -->
-      <path d="M 230 375 C 185 395, 190 465, 245 485 L 295 485 C 295 450, 270 395, 230 375 Z" fill="url(#drgBody1)" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 290 330 L 285 485 L 335 485 L 335 340" fill="url(#drgBody1)" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 365 330 L 370 485 L 415 485 L 405 335" fill="url(#drgBody1)" stroke="#0f172a" stroke-width="10"/>
-      <!-- Kafa -->
-      <path d="M 265 175 C 265 105, 395 105, 415 170 C 455 180, 455 230, 410 240 C 395 265, 330 265, 295 240 C 265 225, 265 195, 265 175 Z" fill="url(#drgBody1)" stroke="#0f172a" stroke-width="10"/>
-      <!-- Boynuzlar -->
-      <path d="M 295 135 C 255 115, 245 80, 265 65 C 280 85, 295 105, 320 120 Z" fill="#facc15" stroke="#0f172a" stroke-width="8"/>
-      <path d="M 335 120 C 315 95, 315 70, 330 55 C 345 75, 355 95, 365 120 Z" fill="#facc15" stroke="#0f172a" stroke-width="8"/>
-      <!-- Büyük Parlak Göz -->
-      <ellipse cx="355" cy="175" rx="22" ry="26" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
-      <ellipse cx="360" cy="177" rx="14" ry="18" fill="#451a03"/>
-      <circle cx="362" cy="177" r="9" fill="#0f172a"/>
-      <circle cx="354" cy="167" r="6" fill="#ffffff"/>
-      <circle cx="367" cy="184" r="3" fill="#ffffff"/>
-      <!-- Gülümseyen Ağız -->
-      <path d="M 365 215 C 385 235, 420 235, 430 215 C 425 245, 385 250, 365 215 Z" fill="#991b1b" stroke="#0f172a" stroke-width="6"/>
+      <!-- Çimenlik Zemin -->
+      <ellipse cx="300" cy="510" rx="200" ry="25" fill="url(#foxGrass)" stroke="#0f172a" stroke-width="8"/>
+      <!-- Büyük Pofuduk Kuyruk (Gövdenin Arkasından Önüne Dolanır) -->
+      <path d="M 370 450 C 480 430, 530 330, 480 240 C 430 190, 410 270, 430 320 C 450 370, 410 470, 350 480 Z" fill="url(#foxCoat)" stroke="#0f172a" stroke-width="10"/>
+      <!-- Kuyruk Beyaz Ucu -->
+      <path d="M 480 240 C 455 210, 430 200, 415 220 C 420 250, 440 280, 430 320 C 445 300, 470 275, 480 240 Z" fill="url(#foxWhite)" stroke="#0f172a" stroke-width="8"/>
+      <!-- Gövde -->
+      <path d="M 245 285 C 220 350, 215 435, 240 495 L 360 495 C 380 435, 375 350, 355 285 Z" fill="url(#foxCoat)" stroke="#0f172a" stroke-width="10"/>
+      <!-- Ön Bacaklar ve Siyah Çoraplar -->
+      <rect x="250" y="380" width="38" height="115" rx="16" fill="url(#foxCoat)" stroke="#0f172a" stroke-width="9"/>
+      <rect x="312" y="380" width="38" height="115" rx="16" fill="url(#foxCoat)" stroke="#0f172a" stroke-width="9"/>
+      <path d="M 250 460 L 250 495 L 288 495 L 288 460 Z" fill="#0f172a"/>
+      <path d="M 312 460 L 312 495 L 350 495 L 350 460 Z" fill="#0f172a"/>
+      <!-- Beyaz Göğüs Bağı -->
+      <path d="M 260 285 C 275 340, 285 370, 300 395 C 315 370, 325 340, 340 285 Z" fill="url(#foxWhite)" stroke="#0f172a" stroke-width="7"/>
+      <!-- Dik Üçgen Kulaklar -->
+      <path d="M 230 150 L 190 55 L 270 120 Z" fill="url(#foxCoat)" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>
+      <path d="M 235 140 L 205 75 L 260 118 Z" fill="#0f172a"/>
+      <path d="M 370 150 L 410 55 L 330 120 Z" fill="url(#foxCoat)" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>
+      <path d="M 365 140 L 395 75 L 340 118 Z" fill="#0f172a"/>
+      <!-- Baş ve Sivri Burun -->
+      <path d="M 205 195 C 205 130, 395 130, 395 195 C 395 260, 345 300, 300 300 C 255 300, 205 260, 205 195 Z" fill="url(#foxCoat)" stroke="#0f172a" stroke-width="10"/>
+      <!-- Beyaz Yanaklar -->
+      <path d="M 205 215 C 245 245, 280 270, 300 295 C 320 270, 355 245, 395 215 C 365 275, 335 300, 300 300 C 265 300, 235 275, 205 215 Z" fill="url(#foxWhite)" stroke="#0f172a" stroke-width="8"/>
+      <!-- Parlak Gözler -->
+      <circle cx="258" cy="205" r="14" fill="#0f172a"/>
+      <circle cx="254" cy="200" r="5" fill="#ffffff"/>
+      <circle cx="262" cy="208" r="2.5" fill="#ffffff"/>
+      <circle cx="342" cy="205" r="14" fill="#0f172a"/>
+      <circle cx="338" cy="200" r="5" fill="#ffffff"/>
+      <circle cx="346" cy="208" r="2.5" fill="#ffffff"/>
+      <!-- Burun ve Bıyıklar -->
+      <polygon points="288,272 312,272 300,285" fill="#0f172a" stroke="#0f172a" stroke-width="3" stroke-linejoin="round"/>
+      <line x1="225" y1="260" x2="180" y2="255" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+      <line x1="225" y1="270" x2="185" y2="275" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+      <line x1="375" y1="260" x2="420" y2="255" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+      <line x1="375" y1="270" x2="415" y2="275" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
     `,
     steps: [
       {
         title: "1. Adım: Kafa ve Gövde Kılavuz Ovali (Mavi)",
-        instruction: "Kalemini hiç bastırmadan üstte kafa için bir yumurta, altta gövde için tombul bir armut kılavuzu çiz.",
-        voice: "Önce kalemini hiç bastırmadan kafa için bir yumurta, altına da gövde için tombul bir armut şekli çizelim.",
-        svg: `<ellipse cx="345" cy="185" rx="75" ry="62" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="12 8"/><path d="M 285 240 C 235 285, 220 390, 250 475 C 300 490, 380 490, 395 450 C 405 370, 390 280, 355 240 Z" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="12 8"/>`
+        instruction: "Kalemini bastırmadan üste kafa için bir daire, alta ise oturan gövde için hafifçe bir armut kılavuzu çiz.",
+        voice: "Önce kalemini hiç bastırmadan kafa için bir daire, altına da gövde için tombul bir armut kılavuzu çizelim.",
+        svg: `<circle cx="300" cy="195" r="80" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/><ellipse cx="300" cy="390" rx="75" ry="105" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
       },
       {
-        title: "2. Adım: Kuyruk ve Kanat Kılavuz Hattı (Mavi)",
-        instruction: "Sola doğru kıvrılan kuyruk yayını ve sırttan açılan kanat kılavuz çizgisini hafifçe ekle.",
-        voice: "Şimdi arkaya doğru kıvrılan kuyruk çizgisini ve kanadın yerini belirleyen kılavuz yayımızı hafifçe çizelim.",
-        svg: `<path d="M 235 445 C 125 465, 85 405, 115 350" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/><path d="M 275 290 C 205 185, 105 175, 55 245" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
+        title: "2. Adım: Kulak ve Kuyruk Kılavuz Hatları (Mavi)",
+        instruction: "Başın üstüne iki üçgen kulak kılavuzu ve sağ tarafa yukarı kıvrılan büyük kuyruk yayını hafifçe ekle.",
+        voice: "Şimdi başın üstüne iki üçgen kulak ve yana doğru kıvrılan büyük kuyruk yayımızı hafifçe çiziyoruz.",
+        svg: `<path d="M 230 150 L 190 55 L 270 120" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/><path d="M 370 150 L 410 55 L 330 120" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/><path d="M 370 450 C 480 430, 530 330, 480 240 C 430 190, 410 270, 430 320" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
       },
       {
-        title: "3. Adım: Kafa ve Sevimli Burun Konturu",
-        instruction: "Mavi kafa kılavuzunun üzerinden geçerek yuvarlak alnı, sevimli çıkıntılı burnu ve yanak hattını çiz.",
-        voice: "Artık gerçek çizgilerimize başlıyoruz! Kafa kılavuzunun üzerinden geçerek ejderhamızın burnunu ve kafasını çizelim.",
-        svg: `<path d="M 265 175 C 265 105, 395 105, 415 170 C 455 180, 455 230, 410 240 C 395 265, 330 265, 295 240 C 265 225, 265 195, 265 175 Z" fill="none" stroke="#0f172a" stroke-width="10"/>`
+        title: "3. Adım: Kafa ve Sivri Çene Ana Konturu",
+        instruction: "Mavi kafa dairesinin üzerinden geçerek pofuduk yanakları ve aşağıya inen zarif sivri çeneyi çiz.",
+        voice: "Kafa kılavuzunun üzerinden geçerek tilkimizin sevimli yanaklarını ve sivri çenesini çizelim.",
+        svg: `<path d="M 205 195 C 205 130, 395 130, 395 195 C 395 260, 345 300, 300 300 C 255 300, 205 260, 205 195 Z" fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>`
       },
       {
-        title: "4. Adım: Gülümseyen Ağız, Burun Deliği ve Dişler",
-        instruction: "Burnun üstüne küçük bir burun deliği, altına ise mutlu gülümseyen ağzı ve iki minik sivri dişi ekle.",
-        voice: "Ejderhamızın neşeli gülümseyen ağzını, içindeki dilini ve iki minik sevimli dişini çiziyoruz.",
-        svg: `<path d="M 422 188 C 426 182, 434 185, 432 192" fill="none" stroke="#0f172a" stroke-width="6"/><path d="M 365 215 C 385 235, 420 235, 430 215 C 425 245, 385 250, 365 215 Z" fill="none" stroke="#0f172a" stroke-width="8"/><polygon points="382,223 388,233 394,225" fill="#ffffff" stroke="#0f172a" stroke-width="4"/><polygon points="412,223 417,232 422,222" fill="#ffffff" stroke="#0f172a" stroke-width="4"/>`
+        title: "4. Adım: Burun Ucu, Ağız ve Beyaz Yanak Maskesi",
+        instruction: "Çenenin ucuna üçgen siyah bir burun ve gözlerin altından buruna inen beyaz yanak ayrım kıvrımlarını çiz.",
+        voice: "Çenesinin ucuna küçük üçgen bir burun ve beyaz yanak kıvrımlarını ekliyoruz.",
+        svg: `<polygon points="288,272 312,272 300,285" fill="#0f172a" stroke="#0f172a" stroke-width="3" stroke-linejoin="round"/><path d="M 205 215 C 245 245, 280 270, 300 295 C 320 270, 355 245, 395 215" fill="none" stroke="#0f172a" stroke-width="8" stroke-linecap="round"/>`
       },
       {
-        title: "5. Adım: Büyük Parlak Gözler ve Kaş Kıvrımı",
-        instruction: "Yüzün ortasına kocaman oval bir göz, içine gözbebeği ve parlayan iki ışık yuvarlağı çiz.",
-        voice: "Şimdi kocaman parlak bir göz çizelim. Gözün içine iki küçük ışık yuvarlağı bırakmayı sakın unutma!",
-        svg: `<ellipse cx="355" cy="175" rx="22" ry="26" fill="none" stroke="#0f172a" stroke-width="8"/><circle cx="360" cy="177" r="13" fill="#0f172a"/><circle cx="353" cy="168" r="5" fill="#ffffff"/><circle cx="366" cy="184" r="3" fill="#ffffff"/><path d="M 332 142 Q 355 130, 375 142" fill="none" stroke="#0f172a" stroke-width="7"/>`
+        title: "5. Adım: Büyük Parlak Tilki Gözleri",
+        instruction: "Yüze iki yuvarlak zeki tilki gözü, içine siyah gözbebeği ve parlayan iki beyaz ışık noktası çiz.",
+        voice: "Şimdi iki parlak göz çizelim. İçlerine küçük beyaz ışık yuvarlakları bırakmayı unutma!",
+        svg: `<circle cx="258" cy="205" r="14" fill="#0f172a"/><circle cx="254" cy="200" r="5" fill="#ffffff"/><circle cx="262" cy="208" r="2.5" fill="#ffffff"/><circle cx="342" cy="205" r="14" fill="#0f172a"/><circle cx="338" cy="200" r="5" fill="#ffffff"/><circle cx="346" cy="208" r="2.5" fill="#ffffff"/>`
       },
       {
-        title: "6. Adım: Kıvrımlı Boynuzlar ve Yanak Dikenleri",
-        instruction: "Başın tepesine geriye doğru kıvrılan iki boynuz, boynuz halkaları ve yanağın soluna üçgen kulakçıklar ekle.",
-        voice: "Başının üstüne geriye doğru kıvrılan iki güçlü boynuz ve yanak dikenlerini ekleyelim.",
-        svg: `<path d="M 295 135 C 255 115, 245 80, 265 65 C 280 85, 295 105, 320 120 Z" fill="none" stroke="#0f172a" stroke-width="9"/><path d="M 335 120 C 315 95, 315 70, 330 55 C 345 75, 355 95, 365 120 Z" fill="none" stroke="#0f172a" stroke-width="9"/><path d="M 272 108 Q 282 98, 295 104 M 262 90 Q 272 82, 282 88" fill="none" stroke="#0f172a" stroke-width="5"/><path d="M 266 175 L 238 188 L 268 202 L 242 215 L 275 225" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>`
+        title: "6. Adım: Dik Kulaklar ve İç Kürk Detayı",
+        instruction: "Başın üstüne iki dik üçgen kulak çiz ve içlerine koyu renkli iç kulak üçgenlerini ekle.",
+        voice: "Başının üstüne dimdik duran iki asil kulak ve içindeki koyu tüyleri çiziyoruz.",
+        svg: `<path d="M 230 150 L 190 55 L 270 120 Z" fill="none" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/><path d="M 235 140 L 205 75 L 260 118 Z" fill="#0f172a"/><path d="M 370 150 L 410 55 L 330 120 Z" fill="none" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/><path d="M 365 140 L 395 75 L 340 118 Z" fill="#0f172a"/>`
       },
       {
-        title: "7. Adım: Boyun, Göğüs ve Güçlü Ön Bacaklar",
-        instruction: "Kafanın altından aşağıya doğru inen göğsü ve yere sağlam basan iki ön bacağı çiz.",
-        voice: "Boynundan aşağıya doğru inerek göğsünü ve yere sağlam basan iki ön bacağını çiziyoruz.",
-        svg: `<path d="M 285 240 C 255 270, 240 320, 235 375" fill="none" stroke="#0f172a" stroke-width="10"/><path d="M 290 330 L 285 485 L 335 485 L 335 340" fill="none" stroke="#0f172a" stroke-width="10"/><path d="M 365 330 L 370 485 L 415 485 L 405 335" fill="none" stroke="#0f172a" stroke-width="10"/>`
+        title: "7. Adım: Beyaz Göğüs ve Ön Bacaklar",
+        instruction: "Kafanın altından inen beyaz göğüs yeleğini ve yere paralel basan iki düz ön bacağı çiz.",
+        voice: "Boynunun altındaki beyaz göğüs tüylerini ve yere sağlam basan iki ön bacağını çizelim.",
+        svg: `<path d="M 260 285 C 275 340, 285 370, 300 395 C 315 370, 325 340, 340 285" fill="none" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/><rect x="250" y="380" width="38" height="115" rx="16" fill="none" stroke="#0f172a" stroke-width="9"/><rect x="312" y="380" width="38" height="115" rx="16" fill="none" stroke="#0f172a" stroke-width="9"/>`
       },
       {
-        title: "8. Adım: Oturur Arka Bacak ve Yuvarlak Pençe Tırnakları",
-        instruction: "Yan tarafa bükülü duran tombul arka bacağı ve tüm ayakların ucundaki üçer tırnağı çiz.",
-        voice: "Yan tarafa kıvrılmış arka bacağını ve ayaklarının ucundaki sevimli tırnakları tek tek yapalım.",
-        svg: `<path d="M 230 375 C 185 395, 190 465, 245 485 L 285 485" fill="none" stroke="#0f172a" stroke-width="10"/><circle cx="245" cy="485" r="9" fill="#fde047" stroke="#0f172a" stroke-width="5"/><circle cx="265" cy="485" r="9" fill="#fde047" stroke="#0f172a" stroke-width="5"/><circle cx="295" cy="485" r="9" fill="#fde047" stroke="#0f172a" stroke-width="5"/><circle cx="312" cy="485" r="9" fill="#fde047" stroke="#0f172a" stroke-width="5"/><circle cx="330" cy="485" r="9" fill="#fde047" stroke="#0f172a" stroke-width="5"/><circle cx="380" cy="485" r="9" fill="#fde047" stroke="#0f172a" stroke-width="5"/><circle cx="400" cy="485" r="9" fill="#fde047" stroke="#0f172a" stroke-width="5"/>`
+        title: "8. Adım: Sırt Çizgisi, Arka Gövde ve Siyah Patiler",
+        instruction: "Gövdenin yan kıvrımlarını tamamla ve bacakların ucundaki zarif siyah pati çoraplarını çiz.",
+        voice: "Gövdenin yan çizgilerini ve tilkinin ayaklarındaki o meşhur siyah çorap patilerini yapıyoruz.",
+        svg: `<path d="M 245 285 C 220 350, 215 435, 240 495 L 360 495 C 380 435, 375 350, 355 285" fill="none" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/><line x1="250" y1="460" x2="288" y2="460" stroke="#0f172a" stroke-width="6"/><line x1="312" y1="460" x2="350" y2="460" stroke="#0f172a" stroke-width="6"/>`
       },
       {
-        title: "9. Adım: Kıvrık Kuyruk ve Üçgen Ok Ucu",
-        instruction: "Arkaya doğru kıvrılan kuyruğu tamamla ve en ucuna üçgen bir ok şekli ekle.",
-        voice: "Arkaya doğru uzanan kıvrık kuyruğumuzu ve ucundaki sevimli üçgen ok şeklini çizelim.",
-        svg: `<path d="M 225 455 C 125 465, 85 410, 115 355 C 125 385, 160 415, 210 410" fill="none" stroke="#0f172a" stroke-width="10"/><polygon points="115,355 95,360 115,330 135,355" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>`
+        title: "9. Adım: Kocaman Pofuduk Kuyruk",
+        instruction: "Gövdenin sağından öne doğru sarılan devasa pofuduk kuyruğu ve ucundaki zikzak beyaz kürk ayrımını çiz.",
+        voice: "Şimdi tilkinin en gösterişli yeri olan devasa pofuduk kuyruğunu öne doğru saralım.",
+        svg: `<path d="M 370 450 C 480 430, 530 330, 480 240 C 430 190, 410 270, 430 320 C 450 370, 410 470, 350 480" fill="none" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/><path d="M 430 320 C 445 300, 470 275, 480 240" fill="none" stroke="#0f172a" stroke-width="8" stroke-linecap="round"/>`
       },
       {
-        title: "10. Adım: Açılan Kanat İskeleti ve Kanat Zarı",
-        instruction: "Sırttan yukarı uzanan kanat kolunu, içinden inen parmak çubuklarını ve dalgalı kanat zarını çiz.",
-        voice: "Sıra kanatlarda! Sırttan yukarı büyük bir kanat açıp içindeki parmak çizgilerini ve dalgalı zarını birleştirelim.",
-        svg: `<path d="M 275 290 C 210 190, 110 175, 55 245 C 95 265, 120 295, 110 345 C 155 320, 195 330, 215 365 C 240 340, 265 340, 285 350" fill="none" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/><path d="M 185 225 L 110 345 M 225 250 L 215 365" fill="none" stroke="#0f172a" stroke-width="6"/>`
+        title: "10. Adım: Bıyıklar ve Çimenlik Zemin",
+        instruction: "Yanaklarına ince bıyık çizgileri ve ayaklarının altına oturduğu çimenlik zemini ekle.",
+        voice: "Yanaklarına zarif bıyıklar ve oturduğu çimeni ekleyelim. Mavi kılavuz çizgileri silebilirsin!",
+        svg: `<line x1="225" y1="260" x2="180" y2="255" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/><line x1="225" y1="270" x2="185" y2="275" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/><line x1="375" y1="260" x2="420" y2="255" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/><line x1="375" y1="270" x2="415" y2="275" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/><ellipse cx="300" cy="510" rx="200" ry="25" fill="none" stroke="#0f172a" stroke-width="8"/>`
       },
       {
-        title: "11. Adım: Karın Zırhı Çizgileri, Sırt Dikenleri ve Kaya",
-        instruction: "Göğsündeki yatay karın dilimlerini, sırt dikenlerini ve üzerinde oturduğu kayayı çiz.",
-        voice: "Karnına yatay zırh çizgilerini, sırtındaki küçük dikenleri ve altındaki kayayı ekleyelim. Artık mavi kılavuzları silebilirsin!",
-        svg: `<path d="M 325 245 C 305 305, 305 385, 318 450 M 360 245 C 380 305, 380 385, 370 450" fill="none" stroke="#0f172a" stroke-width="7"/><line x1="312" y1="280" x2="368" y2="280" stroke="#0f172a" stroke-width="5"/><line x1="308" y1="315" x2="375" y2="315" stroke="#0f172a" stroke-width="5"/><line x1="308" y1="350" x2="375" y2="350" stroke="#0f172a" stroke-width="5"/><path d="M 242 350 L 225 360 L 236 372 M 195 412 L 178 402 L 175 418 M 155 405 L 142 392 L 140 408" fill="none" stroke="#0f172a" stroke-width="6"/><path d="M 120 510 C 160 470, 440 470, 490 515 C 450 545, 150 545, 120 510 Z" fill="none" stroke="#0f172a" stroke-width="8"/>`
-      },
-      {
-        title: "12. Adım: Canlı Renklendirme ve Işık-Gölge",
-        instruction: "Gövdeyi ateş kırmızısına, karın ve kanat içlerini ise altın sarısı ve turuncuya boyayarak eseri tamamla!",
-        voice: "Harika iş çıkardın Kıvanç! Şimdi ejderhamızın gövdesini kırmızıya, karnını ve kanatlarını sarı ve turuncuya boyayabilirsin!",
-        svg: `<g opacity="0.95">
-          <path d="M 120 510 C 160 470, 440 470, 490 515 C 450 545, 150 545, 120 510 Z" fill="#64748b" stroke="#0f172a" stroke-width="8"/>
-          <path d="M 275 290 C 210 190, 110 175, 55 245 C 95 265, 120 295, 110 345 C 155 320, 195 330, 215 365 C 240 340, 265 340, 285 350 Z" fill="#f97316" stroke="#0f172a" stroke-width="10"/>
-          <path d="M 235 445 C 130 465, 85 410, 115 355 C 125 385, 160 415, 225 405 Z" fill="#ef4444" stroke="#0f172a" stroke-width="10"/>
-          <path d="M 285 240 C 235 280, 215 380, 240 475 L 385 475 C 405 390, 395 295, 355 240 Z" fill="#ef4444" stroke="#0f172a" stroke-width="10"/>
-          <path d="M 325 245 C 300 310, 300 395, 320 475 L 375 475 C 390 395, 385 310, 355 245 Z" fill="#fde047" stroke="#0f172a" stroke-width="8"/>
-          <path d="M 265 175 C 265 105, 395 105, 415 170 C 455 180, 455 230, 410 240 C 395 265, 330 265, 295 240 C 265 225, 265 195, 265 175 Z" fill="#ef4444" stroke="#0f172a" stroke-width="10"/>
-          <path d="M 295 135 C 255 115, 245 80, 265 65 C 280 85, 295 105, 320 120 Z" fill="#facc15" stroke="#0f172a" stroke-width="8"/>
-          <ellipse cx="355" cy="175" rx="22" ry="26" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
-          <circle cx="360" cy="177" r="12" fill="#0f172a"/>
-          <circle cx="354" cy="167" r="5" fill="#ffffff"/>
-        </g>`
+        title: "11. Adım: Canlı Renklendirme ve Kürk Tonları",
+        instruction: "Tilkiyi kızıl turuncuya, göğsünü ve kuyruk ucunu bembeyaz boyayarak tamamla!",
+        voice: "Muhteşem oldu Kıvanç! Şimdi zarif tilkimizi canlı kızıl turuncu, beyaz ve yeşille boyayabilirsin!",
+        svg: `<g opacity="0.95"><ellipse cx="300" cy="510" rx="200" ry="25" fill="#22c55e" stroke="#0f172a" stroke-width="8"/><path d="M 370 450 C 480 430, 530 330, 480 240 C 430 190, 410 270, 430 320 C 450 370, 410 470, 350 480 Z" fill="#ea580c" stroke="#0f172a" stroke-width="10"/><path d="M 480 240 C 455 210, 430 200, 415 220 C 420 250, 440 280, 430 320 Z" fill="#f8fafc" stroke="#0f172a" stroke-width="8"/><path d="M 245 285 C 220 350, 215 435, 240 495 L 360 495 C 380 435, 375 350, 355 285 Z" fill="#ea580c" stroke="#0f172a" stroke-width="10"/><path d="M 260 285 C 275 340, 285 370, 300 395 C 315 370, 325 340, 340 285 Z" fill="#f8fafc" stroke="#0f172a" stroke-width="7"/><path d="M 205 195 C 205 130, 395 130, 395 195 C 395 260, 345 300, 300 300 C 255 300, 205 260, 205 195 Z" fill="#ea580c" stroke="#0f172a" stroke-width="10"/><path d="M 205 215 C 245 245, 280 270, 300 295 C 320 270, 355 245, 395 215 C 365 275, 335 300, 300 300 C 265 300, 235 275, 205 215 Z" fill="#f8fafc" stroke="#0f172a" stroke-width="8"/></g>`
       }
     ]
   },
-
   // =========================================================================
-  // PİLOT KARAKTER: ATEŞ EJDERHASI — SEVİYE 2: 🟡 RESSAM (16 ADIM)
-  // =========================================================================
-  {
-    id: "ates_ejderhasi_lvl2",
-    categoryId: "dinozorlar",
-    name: "Soylu Ateş Ejderhası",
-    emoji: "🐉",
-    level: 2,
-    levelName: "Ressam (Seviye 2)",
-    levelBadge: "🟡 Ressam",
-    description: "16 adımda doğru anatomik oranlar, S-kıvrımlı güçlü boyun, dört ayak üzerinde heybetli duruş ve kanat kemik yapısıyla Ressam seviyesi Ateş Ejderhası.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Kırmızı, Koyu Kırmızı, Turuncu, Sarı Kalemler",
-    colors: [
-      { name: "Kızıl Zırh", hex: "#dc2626" },
-      { name: "Gölge Bordo", hex: "#7f1d1d" },
-      { name: "Alev Turuncusu", hex: "#ea580c" },
-      { name: "Altın Göğüs", hex: "#eab308" }
-    ],
-    previewSvg: `
-      <path d="M 90 520 L 210 475 L 390 475 L 510 520 Z" fill="#475569" stroke="#0f172a" stroke-width="8"/>
-      <path d="M 290 250 L 95 120 C 60 190, 75 260, 50 320 C 120 295, 165 315, 185 355 C 225 320, 260 320, 290 330 Z" fill="#ea580c" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 330 235 L 445 135 C 485 195, 495 255, 535 295 C 470 285, 430 305, 405 335 Z" fill="#c2410c" stroke="#0f172a" stroke-width="9"/>
-      <path d="M 345 115 C 405 110, 465 130, 475 155 L 420 170 L 460 190 C 425 205, 385 190, 355 175 C 375 230, 385 295, 350 365 L 220 405 C 145 435, 95 415, 85 365 C 115 395, 165 395, 215 360 C 265 310, 325 245, 315 160 Z" fill="#dc2626" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 225 365 L 195 490 L 235 490 L 265 385" fill="#b91c1c" stroke="#0f172a" stroke-width="9"/>
-      <path d="M 325 355 L 355 490 L 395 490 L 365 345" fill="#dc2626" stroke="#0f172a" stroke-width="9"/>
-    `,
-    steps: [
-      {
-        title: "1. Adım: Kafa, Göğüs ve Kalça Anatomi Çemberleri (Mavi)",
-        instruction: "Kalemini hafif tutarak üstte küçük köşeli kafa çemberi, ortada geniş göğüs kafesi ve solda kalça çemberini çiz.",
-        voice: "Ressam seviyesinde gerçek anatomiyle başlıyoruz! Kafa, göğüs kafesi ve kalça çemberlerini hafifçe çizelim.",
-        svg: `<circle cx="395" cy="145" r="35" fill="none" stroke="#3b82f6" stroke-width="5" stroke-dasharray="10 8"/><ellipse cx="325" cy="315" rx="60" ry="48" fill="none" stroke="#3b82f6" stroke-width="5" stroke-dasharray="10 8"/><circle cx="235" cy="365" r="42" fill="none" stroke="#3b82f6" stroke-width="5" stroke-dasharray="10 8"/>`
-      },
-      {
-        title: "2. Adım: S-Kıvrımlı Omurga ve Kuyruk Akış Çizgisi (Mavi)",
-        instruction: "Kafadan göğse S çizerek inen boyun hattını ve kalçadan sola kıvrılan kuyruk omurgasını ekle.",
-        voice: "Şimdi üç çemberimizi birbirine bağlayan S şeklindeki omurga ve kuyruk akış çizgisini çiziyoruz.",
-        svg: `<path d="M 395 145 C 340 180, 385 265, 325 315 C 275 350, 140 445, 85 365" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
-      },
-      {
-        title: "3. Adım: Bacak Eklemleri ve Kanat Açısı Kılavuzu (Mavi)",
-        instruction: "Dört bacağın diz/dirsek kırılma açılarını ve iki yana açılan kanat kollarını kılavuz olarak belirle.",
-        voice: "Bacakların eklem açılarını ve sırtından yükselen iki kanadın ana iskelet çizgilerini hafifçe belirleyelim.",
-        svg: `<path d="M 345 340 L 370 415 L 375 490 M 305 345 L 295 420 L 305 490 M 235 365 L 195 425 L 215 490" fill="none" stroke="#3b82f6" stroke-width="5" stroke-dasharray="8 8"/><path d="M 295 270 L 95 120 M 335 255 L 445 135" fill="none" stroke="#3b82f6" stroke-width="5" stroke-dasharray="8 8"/>`
-      },
-      {
-        title: "4. Adım: Köşeli Ejderha Kafatası ve Üst Çene",
-        instruction: "Sağa doğru uzanan keskin burun kemiğini, kaş çıkıntısını ve üst çene hattını çiz.",
-        voice: "Kafatasının keskin üst çenesini ve güçlü kaş kemiğini net çizgilerle çizmeye başlıyoruz.",
-        svg: `<path d="M 345 125 C 385 112, 445 125, 475 155 L 415 168" fill="none" stroke="#0f172a" stroke-width="8"/>`
-      },
-      {
-        title: "5. Adım: Alt Çene, Sivri Dişler ve Yırtıcı Göz",
-        instruction: "Hafif aralık duran alt çeneyi, içerideki sivri dişleri ve kaşın altındaki çekik gözü çiz.",
-        voice: "Alt çeneyi, keskin dişlerini ve ileriye odaklanmış yırtıcı ejderha gözünü yapalım.",
-        svg: `<path d="M 415 168 L 460 190 C 425 205, 385 192, 355 175" fill="none" stroke="#0f172a" stroke-width="8"/><path d="M 425 165 L 430 175 L 436 164 L 442 174 L 450 162" fill="none" stroke="#0f172a" stroke-width="5"/><polygon points="395,142 418,146 402,155" fill="#facc15" stroke="#0f172a" stroke-width="5"/>`
-      },
-      {
-        title: "6. Adım: Uzun Boynuzlar ve Yanak Zırh Dikenleri",
-        instruction: "Kafanın arkasından geriye doğru uzanan boğumlu iki uzun boynuzu ve çene altı dikenlerini çiz.",
-        voice: "Kafanın arkasından geriye uzanan uzun boynuzları ve yanak zırh dikenlerini ekliyoruz.",
-        svg: `<path d="M 355 125 L 275 85 L 335 140 M 345 140 L 265 115 L 330 155" fill="none" stroke="#0f172a" stroke-width="7"/><path d="M 335 160 L 295 165 L 340 175 L 308 188 L 350 190" fill="none" stroke="#0f172a" stroke-width="6"/>`
-      },
-      {
-        title: "7. Adım: Kaslı S-Boyun ve Boğaz Zırhı",
-        instruction: "Kafadan göğse doğru kıvrılarak kalınlaşan güçlü boyun kaslarını çiz.",
-        voice: "Şimdi kafadan göğse doğru S çizerek inen kaslı ve güçlü boynu çizelim.",
-        svg: `<path d="M 318 165 C 335 215, 310 265, 285 295 M 365 185 C 390 235, 395 295, 365 345" fill="none" stroke="#0f172a" stroke-width="9"/>`
-      },
-      {
-        title: "8. Adım: Ön Omuz Kasları ve Ön Bacaklar",
-        instruction: "Göğsün altından yere doğru uzanan kaslı iki ön bacağı dirsek çıkıntılarıyla birlikte çiz.",
-        voice: "Ejderhanın ağırlığını taşıyan kaslı omuzlarını ve yere basan iki ön bacağını çiziyoruz.",
-        svg: `<path d="M 325 335 L 345 420 L 355 485 L 390 485 L 378 415 L 368 335" fill="none" stroke="#0f172a" stroke-width="9"/><path d="M 295 345 L 285 425 L 290 485 L 322 485 L 318 420 L 320 355" fill="none" stroke="#0f172a" stroke-width="8"/>`
-      },
-      {
-        title: "9. Adım: Gövde, Karın Hattı ve Kaslı Arka Bacaklar",
-        instruction: "Kaburga altından kalçaya uzanan karın çizgisini ve güçlü arka bacak kaslarını çiz.",
-        voice: "Gövdenin alt kısmını ve kayaya sağlam basan güçlü arka bacak kaslarını tamamlayalım.",
-        svg: `<path d="M 290 380 L 245 390" fill="none" stroke="#0f172a" stroke-width="8"/><path d="M 225 345 C 185 370, 185 420, 210 445 L 195 485 L 235 485 L 255 435 C 270 410, 265 370, 250 350" fill="none" stroke="#0f172a" stroke-width="9"/>`
-      },
-      {
-        title: "10. Adım: Keskin Pençeler ve Kaya Zemini",
-        instruction: "Dört ayağın ucuna kayayı kavrayan sivri pençe tırnaklarını ve altındaki kayalık tepeyi çiz.",
-        voice: "Ayak uçlarına kayayı sıkıca kavrayan keskin pençeleri ve üzerinde durduğu kayayı çiziyoruz.",
-        svg: `<path d="M 355 485 L 370 502 L 375 485 L 392 500 L 398 485 M 290 485 L 302 500 L 310 485 M 195 485 L 185 502 L 208 488 L 205 504 L 225 488" fill="none" stroke="#0f172a" stroke-width="6"/><path d="M 90 520 L 210 475 L 390 475 L 510 520" fill="none" stroke="#0f172a" stroke-width="8"/>`
-      },
-      {
-        title: "11. Adım: Kamçı Kuyruk ve Kuyruk Ucu Bıçağı",
-        instruction: "Kalçadan sola doğru kıvrılarak incelen uzun kuyruğu ve ucundaki keskin mızrak ucunu çiz.",
-        voice: "Arkaya doğru kıvrılarak uzanan güçlü kuyruğu ve ucundaki keskin kuyruk bıçağını yapalım.",
-        svg: `<path d="M 215 355 C 155 395, 110 395, 85 360 C 95 415, 145 435, 210 405" fill="none" stroke="#0f172a" stroke-width="9"/><polygon points="85,360 65,355 80,330 102,350" fill="none" stroke="#0f172a" stroke-width="7"/>`
-      },
-      {
-        title: "12. Adım: Sol Ana Kanat Kemiği ve Pençesi",
-        instruction: "Sırttan sol üste doğru yükselen kalın kanat kolu kemiğini ve dirsekteki kanat pençesini çiz.",
-        voice: "Şimdi sırttan gökyüzüne doğru açılan sol ana kanat kemiğini ve tepesindeki pençeyi çiziyoruz.",
-        svg: `<path d="M 290 265 L 95 120 L 80 100 L 108 112 L 298 250" fill="none" stroke="#0f172a" stroke-width="9"/>`
-      },
-      {
-        title: "13. Adım: Sol Kanat Parmakları ve Gerilmiş Kanat Zarı",
-        instruction: "Kanat dirseğinden aşağıya açılan 3 uzun parmak kemiğini ve aralarındaki kavisli zarı birleştir.",
-        voice: "Kanat dirseğinden aşağıya inen uzun parmak kemiklerini ve rüzgarla dolan kanat zarını çizelim.",
-        svg: `<path d="M 95 120 C 60 190, 75 260, 50 320 C 120 295, 165 315, 185 355 C 225 320, 260 320, 285 330" fill="none" stroke="#0f172a" stroke-width="8"/><path d="M 95 120 L 185 355 M 95 120 L 245 325" fill="none" stroke="#0f172a" stroke-width="6"/>`
-      },
-      {
-        title: "14. Adım: Sağ Arka Kanat (Perspektif Derinliği)",
-        instruction: "Boynun arkasında kalan ikinci kanadı perspektife uygun olarak sağ üste doğru aç.",
-        voice: "Resmimize derinlik katmak için arkada kalan ikinci kanadı da sağ tarafa doğru açıyoruz.",
-        svg: `<path d="M 350 235 L 445 135 C 485 195, 495 255, 535 295 C 470 285, 430 305, 385 325" fill="none" stroke="#0f172a" stroke-width="8"/><line x1="445" y1="135" x2="455" y2="290" stroke="#0f172a" stroke-width="5"/>`
-      },
-      {
-        title: "15. Adım: Göğüs Zırh Plakaları, Sırt Dikenleri ve Kas Taramaları",
-        instruction: "Boyundan karna inen zırh dilimlerini, sırt dikenlerini ve bacaklardaki pul dokularını ekle.",
-        voice: "Göğüs zırhı dilimlerini, sırt dikenlerini ve kasların üzerindeki pul çizgilerini özenle tamamlayalım.",
-        svg: `<path d="M 340 185 C 365 235, 365 295, 345 345" fill="none" stroke="#0f172a" stroke-width="6"/><line x1="335" y1="210" x2="375" y2="205" stroke="#0f172a" stroke-width="4"/><line x1="342" y1="235" x2="382" y2="230" stroke="#0f172a" stroke-width="4"/><line x1="345" y1="260" x2="386" y2="255" stroke="#0f172a" stroke-width="4"/><line x1="342" y1="285" x2="384" y2="285" stroke="#0f172a" stroke-width="4"/><path d="M 312 185 L 295 192 L 315 205 L 298 215 L 315 230 M 245 335 L 230 322 L 225 342 L 205 335 L 202 355" fill="none" stroke="#0f172a" stroke-width="5"/>`
-      },
-      {
-        title: "16. Adım: Profesyonel Tonlama ve Alev Renklendirmesi",
-        instruction: "Koyu kızıl gölgeleri, turuncu-sarı kanat zarlarını ve göğüs zırhını boyayarak Ressam eserini bitir!",
-        voice: "Muhteşem bir Ressam çalışması oldu Kıvanç! Şimdi kızıl, turuncu ve altın sarısı tonlarıyla ejderhamızı renklendirebilirsin!",
-        svg: `<g opacity="0.9">
-          <path d="M 90 520 L 210 475 L 390 475 L 510 520 Z" fill="#475569" stroke="#0f172a" stroke-width="8"/>
-          <path d="M 290 250 L 95 120 C 60 190, 75 260, 50 320 C 120 295, 165 315, 185 355 C 225 320, 260 320, 290 330 Z" fill="#ea580c" stroke="#0f172a" stroke-width="9"/>
-          <path d="M 330 235 L 445 135 C 485 195, 495 255, 535 295 C 470 285, 430 305, 405 335 Z" fill="#c2410c" stroke="#0f172a" stroke-width="8"/>
-          <path d="M 345 115 C 405 110, 465 130, 475 155 L 420 170 L 460 190 C 425 205, 385 190, 355 175 C 375 230, 385 295, 350 365 L 220 405 C 145 435, 95 415, 85 365 C 115 395, 165 395, 215 360 C 265 310, 325 245, 315 160 Z" fill="#dc2626" stroke="#0f172a" stroke-width="9"/>
-        </g>`
-      }
-    ]
-  },
-
-  // =========================================================================
-  // PİLOT KARAKTER: ATEŞ EJDERHASI — SEVİYE 3: 🔴 USTA SANATÇI (22 ADIM)
+  // 3. SÜPER YARIŞ ARABASI FERRARI (11 ADIM - 🟢 ÇIRAK)
   // =========================================================================
   {
-    id: "ates_ejderhasi_lvl3",
-    categoryId: "dinozorlar",
-    name: "Efsanevi Ateş Ejderhası (Usta)",
-    emoji: "🔥",
-    level: 3,
-    levelName: "Usta Sanatçı (Seviye 3)",
-    levelBadge: "🔴 Usta",
-    previewImage: "assets/images/ates_ejderhasi_master.jpg",
-    description: "22 adımda profesyonel konsept sanat kalitesinde kükreyen çene, tam pul zırh dokusu, dev yarasa kanatları ve ağzından fışkıran ateş fırtınası.",
-    materials: "1 Adet Kağıt, Dereceli Kurşun Kalemler, Silgi ve Koyu Bordo, Kırmızı, Turuncu, Parlak Sarı Kalemler",
-    colors: [
-      { name: "Ejderha Bordosu", hex: "#7f1d1d" },
-      { name: "Kor Kırmızısı", hex: "#dc2626" },
-      { name: "Magma Turuncusu", hex: "#f97316" },
-      { name: "Akkor Alev Sarısı", hex: "#fef08a" }
-    ],
-    previewSvg: `
-      <path d="M 70 535 L 180 465 L 340 455 L 470 535 Z" fill="#1e293b" stroke="#0f172a" stroke-width="8"/>
-      <path d="M 265 245 L 45 95 C 25 185, 35 275, 20 355 C 95 315, 145 335, 175 375 C 215 335, 245 335, 275 345 Z" fill="#b91c1c" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 315 230 L 445 105 C 485 175, 495 235, 535 280 C 465 275, 415 295, 375 325 Z" fill="#7f1d1d" stroke="#0f172a" stroke-width="9"/>
-      <path d="M 325 105 C 390 95, 455 115, 465 140 L 405 160 L 455 195 C 410 215, 375 195, 345 175 C 375 235, 380 305, 335 375 L 195 420 C 125 450, 75 435, 55 385 C 95 415, 145 410, 195 370 C 245 315, 305 245, 295 150 Z" fill="#991b1b" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 435 165 C 485 185, 535 225, 585 285 C 530 295, 480 265, 430 185 Z" fill="#facc15" stroke="#ea580c" stroke-width="8"/>
-    `,
-    steps: [
-      {
-        title: "1. Adım: Dinamik Aksiyon Hattı ve Perspektif Ekseni (Mavi)",
-        instruction: "Sol alttan sağ üste yükselen güçlü S-aksiyon çizgisini ve kaya zirvesi üçgenini hafifçe kur.",
-        voice: "Usta Sanatçı dersimize hoş geldin Kıvanç! İlk olarak ejderhanın dinamik S hareket çizgisini ve kaya zirvesini hafifçe çiziyoruz.",
-        svg: `<path d="M 65 415 C 185 445, 365 295, 335 135" fill="none" stroke="#3b82f6" stroke-width="5" stroke-dasharray="10 8"/><path d="M 70 535 L 250 455 L 470 535" fill="none" stroke="#3b82f6" stroke-width="5" stroke-dasharray="10 8"/>`
-      },
-      {
-        title: "2. Adım: Kafatası Kutusu, Toraks ve Pelvis Kütleleri (Mavi)",
-        instruction: "Açılı kafatası bloğunu, geniş göğüs kafesini ve kalça kütlesini üç boyutlu hacim olarak yerleştir.",
-        voice: "Şimdi kafatası bloğunu, geniş göğüs kafesini ve kalça hacmini üç boyutlu olarak yerleştiriyoruz.",
-        svg: `<polygon points="320,115 455,125 445,195 325,175" fill="none" stroke="#3b82f6" stroke-width="5" stroke-dasharray="8 8"/><ellipse cx="315" cy="315" rx="62" ry="50" fill="none" stroke="#3b82f6" stroke-width="5" stroke-dasharray="8 8"/><circle cx="215" cy="375" r="45" fill="none" stroke="#3b82f6" stroke-width="5" stroke-dasharray="8 8"/>`
-      },
-      {
-        title: "3. Adım: Dev Kanat Açıklığı ve Alev Konisi Kılavuzu (Mavi)",
-        instruction: "İki yana açılan devasa kanat yaylarını ve ağızdan sağ alta püsküren ateş konisini hafifçe belirle.",
-        voice: "Devasa kanatların sınırlarını ve ağzından püskürecek ateş fırtınasının kılavuz konisini hafifçe çizelim.",
-        svg: `<path d="M 275 255 L 45 95 L 20 355 M 325 235 L 445 105 L 535 280" fill="none" stroke="#3b82f6" stroke-width="5" stroke-dasharray="8 8"/><path d="M 435 165 L 585 245 L 545 335 Z" fill="none" stroke="#f97316" stroke-width="5" stroke-dasharray="8 8"/>`
-      },
-      {
-        title: "4. Adım: Üst Çene, Burun Kemiği ve Kaş Zırhı",
-        instruction: "Girintili çıkıntılı kemik yapısıyla üst çeneyi, burun deliğini ve sert kaş zırhını çiz.",
-        voice: "Kafatasının sert kemik yapısını, burun çıkıntısını ve öfkeli kaş zırhını keskin çizgilerle çiziyoruz.",
-        svg: `<path d="M 325 115 L 365 108 L 395 118 L 435 122 L 465 140 L 405 160" fill="none" stroke="#0f172a" stroke-width="8"/>`
-      },
-      {
-        title: "5. Adım: Kükreyen Alt Çene ve İç Ağız Bağları",
-        instruction: "Sonuna kadar açılmış alt çeneyi ve iki çeneyi birbirine bağlayan gerilmiş ağız kaslarını çiz.",
-        voice: "Kükreyerek açılan güçlü alt çeneyi ve çene kaslarını detaylıca çizelim.",
-        svg: `<path d="M 405 160 L 455 195 C 415 215, 375 198, 345 175" fill="none" stroke="#0f172a" stroke-width="8"/><path d="M 392 158 C 402 172, 405 182, 398 192" fill="none" stroke="#0f172a" stroke-width="6"/>`
-      },
-      {
-        title: "6. Adım: Hançer Dişler ve Yırtıcı Sürüngen Gözü",
-        instruction: "Üst ve alt çeneye dizilmiş sivri hançer dişleri ve dikey gözbebekli yırtıcı gözü ekle.",
-        voice: "Şimdi çenelerdeki keskin hançer dişleri ve parlayan sürüngen gözünü ince uçla işliyoruz.",
-        svg: `<path d="M 412 156 L 418 168 L 424 154 L 430 166 L 438 150 L 445 164 L 454 146" fill="none" stroke="#0f172a" stroke-width="5"/><path d="M 410 188 L 416 176 L 424 190 L 432 178 L 442 192" fill="none" stroke="#0f172a" stroke-width="5"/><polygon points="375,132 402,136 385,146" fill="#fef08a" stroke="#0f172a" stroke-width="5"/>`
-      },
-      {
-        title: "7. Adım: Taç Boynuzlar ve Baş Arkası Mızrak Dikenleri",
-        instruction: "Kafatasından geriye uzanan uzun boğumlu boynuzları ve yanak zırh dikenlerini katman katman çiz.",
-        voice: "Kafanın arkasından geriye doğru uzanan krallık boynuzlarını ve keskin yanak dikenlerini çizelim.",
-        svg: `<path d="M 335 115 L 235 65 L 315 135 M 325 132 L 225 98 L 308 150 M 315 152 L 255 145 L 312 168" fill="none" stroke="#0f172a" stroke-width="7"/>`
-      },
-      {
-        title: "8. Adım: Güçlü Boyun Kasları ve Boğaz Zırh Plakaları",
-        instruction: "S şeklinde kıvrılan kalın boynu ve ön boğaz boyunca üst üste binen zırh plakalarını çiz.",
-        voice: "Boynun güçlü kas kıvrımlarını ve boğazını koruyan üst üste binmiş zırh plakalarını çiziyoruz.",
-        svg: `<path d="M 295 155 C 315 215, 290 265, 265 300 M 355 180 C 385 235, 385 295, 355 350" fill="none" stroke="#0f172a" stroke-width="9"/><path d="M 325 185 C 350 235, 350 295, 325 350" fill="none" stroke="#0f172a" stroke-width="6"/>`
-      },
-      {
-        title: "9. Adım: Kaslı Omuzlar ve Ön Kol Anatomisi",
-        instruction: "Omuz başındaki üçgen deltoid kaslarını, dirsek eklemini ve güçlü ön bacakları çiz.",
-        voice: "Omuz başındaki güçlü kas liflerini ve kayaya uzanan ön bacaklarını anatomik olarak çizelim.",
-        svg: `<path d="M 310 330 C 335 355, 345 405, 355 470 L 390 470 L 375 395 L 365 335" fill="none" stroke="#0f172a" stroke-width="9"/><path d="M 275 340 L 265 415 L 275 470 L 308 470 L 302 405 L 305 350" fill="none" stroke="#0f172a" stroke-width="8"/>`
-      },
-      {
-        title: "10. Adım: Gövde Kaburga Hacmi ve Güçlü Arka Bacak",
-        instruction: "Göğüsten kalçaya daralan karın hattını ve kaslı arka uyluk ile bilek eklemini çiz.",
-        voice: "Gövdenin kaburga hacmini ve sıçramaya hazır güçlü arka bacak kaslarını çiziyoruz.",
-        svg: `<path d="M 205 345 C 165 375, 165 425, 195 450 L 180 475 L 225 475 L 245 430 C 260 400, 250 365, 235 345" fill="none" stroke="#0f172a" stroke-width="9"/>`
-      },
-      {
-        title: "11. Adım: Kayayı Parçalayan Yırtıcı Pençeler",
-        instruction: "Her ayakta boğumlu parmakları ve kayaya saplanan kavisli siyah kartal pençelerini çiz.",
-        voice: "Ayak parmaklarının boğumlarını ve kayaya saplanan keskin pençe tırnaklarını tek tek işleyelim.",
-        svg: `<path d="M 355 470 L 372 492 L 375 470 L 395 490 L 398 470 M 275 470 L 288 490 L 295 470 L 310 488 M 180 475 L 168 495 L 195 478 L 192 498 L 215 478" fill="none" stroke="#0f172a" stroke-width="7"/>`
-      },
-      {
-        title: "12. Adım: Zırhlı Kamçı Kuyruk ve Kuyruk Dikenleri",
-        instruction: "Kalçadan sola doğru kıvrılan uzun kuyruğu ve sırtından kuyruk ucuna dizilen mızrak dikenleri çiz.",
-        voice: "Arkaya doğru kıvrılan zırhlı kuyruğu ve üzerindeki keskin sırt dikenlerini tamamlıyoruz.",
-        svg: `<path d="M 195 355 C 135 400, 90 400, 55 375 C 75 430, 125 450, 195 415" fill="none" stroke="#0f172a" stroke-width="9"/><path d="M 185 350 L 168 335 L 165 358 L 145 345 L 142 368 L 120 355 L 118 375" fill="none" stroke="#0f172a" stroke-width="6"/>`
-      },
-      {
-        title: "13. Adım: Sol Dev Kanat Kolu ve Omuz Kasları",
-        instruction: "Sırttan sol üst köşeye fırlayan kalın kanat kemiğini ve tepedeki boynuzlu kanat pençesini çiz.",
-        voice: "Şimdi sırttan sol üst köşeye yükselen devasa ana kanat kemiğini ve dirsek pençesini çizelim.",
-        svg: `<path d="M 270 255 L 45 95 L 28 72 L 62 88 L 282 240" fill="none" stroke="#0f172a" stroke-width="10"/>`
-      },
-      {
-        title: "14. Adım: Kanat Parmak Kemikleri (4 Parmaklı Anatomi)",
-        instruction: "Kanat dirseğinden yelpaze gibi açılan 4 uzun parmak kemiğini uçlarındaki pençelerle çiz.",
-        voice: "Kanat dirseğinden yelpaze gibi açılan dört uzun parmak kemiğini aşağıya doğru uzatıyoruz.",
-        svg: `<path d="M 45 95 L 20 355 M 45 95 L 115 335 M 45 95 L 175 375 M 45 95 L 235 335" fill="none" stroke="#0f172a" stroke-width="6"/>`
-      },
-      {
-        title: "15. Adım: Gerilmiş Yırtık Kanat Zarları ve Damar Dokusu",
-        instruction: "Parmak kemiklerinin arasını kavisli kanat zarlarıyla birleştir ve içine ince zar damarları ekle.",
-        voice: "Parmak kemiklerinin arasını gerilmiş kanat zarlarıyla birleştirip içine ince damar çizgileri ekleyelim.",
-        svg: `<path d="M 20 355 C 65 320, 95 320, 115 335 C 140 325, 160 340, 175 375 C 205 335, 225 335, 275 345" fill="none" stroke="#0f172a" stroke-width="8"/><path d="M 65 215 L 45 275 M 105 225 L 95 285 M 145 245 L 155 315" fill="none" stroke="#0f172a" stroke-width="4"/>`
-      },
-      {
-        title: "16. Adım: Sağ Arka Kanat İskeleti ve Zarları",
-        instruction: "Boynun arkasından sağ üste açılan ikinci büyük kanadı parmak kemikleriyle birlikte tamamla.",
-        voice: "Ejderhanın sağ tarafında yükselen ikinci devasa kanadını da tüm ihtişamıyla çiziyoruz.",
-        svg: `<path d="M 315 230 L 445 105 C 485 175, 495 235, 535 280 C 465 275, 415 295, 375 325" fill="none" stroke="#0f172a" stroke-width="8"/><path d="M 445 105 L 475 278 M 445 105 L 420 295" fill="none" stroke="#0f172a" stroke-width="5"/>`
-      },
-      {
-        title: "17. Adım: Boyun ve Göğüs Zırh Dilimleri",
-        instruction: "Çene altından kuyruk altına kadar uzanan kalın zırh plakalarını kavisli yatay çizgilerle böl.",
-        voice: "Boğazından karnına kadar inen güçlü zırh plakalarını yatay boğum çizgileriyle tek tek bölüyoruz.",
-        svg: `<path d="M 315 195 L 360 190 M 322 215 L 370 210 M 325 235 L 375 232 M 325 255 L 378 255 M 322 275 L 375 278 M 315 295 L 370 300 M 305 315 L 362 322" fill="none" stroke="#0f172a" stroke-width="5"/>`
-      },
-      {
-        title: "18. Adım: Omuz, Bacak ve Sırt Pul Dokusu (Scale Texture)",
-        instruction: "Boyun yanlarına, omuz üstlerine ve uyluk kaslarına elmas dizilimli ejderha pullarını işle.",
-        voice: "Gerçek bir Usta Sanatçı dokunuşu! Omuzlarına ve bacaklarına elmas şeklinde ejderha pulları işliyoruz.",
-        svg: `<path d="M 295 275 Q 305 285, 315 275 Q 325 285, 335 275 M 290 290 Q 300 300, 310 290 Q 320 300, 330 290 M 205 370 Q 215 380, 225 370 Q 235 380, 245 370 M 200 385 Q 210 395, 220 385 Q 230 395, 240 385" fill="none" stroke="#0f172a" stroke-width="4"/>`
-      },
-      {
-        title: "19. Adım: Ağızdan Fışkıran Ateş Çekirdeği",
-        instruction: "Açık çenenin içinden sağ alta doğru fışkıran akıcı ilk alev dalgasını çiz.",
-        voice: "Şimdi ejderhanın ağzından fışkıran o yakıcı ateşin merkez çekirdek dalgasını çiziyoruz.",
-        svg: `<path d="M 425 165 C 475 185, 525 220, 575 265 C 525 265, 475 235, 420 180" fill="none" stroke="#ea580c" stroke-width="7"/>`
-      },
-      {
-        title: "20. Adım: Dönen Alev Dilleri ve Kıvılcımlar",
-        instruction: "Ateş çekirdeğinin etrafına kıvrılan büyük alev dillerini ve uçuşan kor kıvılcımları ekle.",
-        voice: "Alevin etrafında dönen büyük ateş dalgalarını ve etrafa saçılan kıvılcımları ekleyelim.",
-        svg: `<path d="M 445 170 C 505 180, 555 215, 590 285 C 555 280, 545 305, 565 325 C 505 315, 465 265, 425 185" fill="none" stroke="#dc2626" stroke-width="8"/><circle cx="545" cy="205" r="5" fill="#facc15"/><circle cx="575" cy="235" r="6" fill="#f97316"/><circle cx="495" cy="295" r="5" fill="#facc15"/>`
-      },
-      {
-        title: "21. Adım: Parçalanmış Volkanik Kaya ve Gölgelendirme Taramaları",
-        instruction: "Ayakların altındaki keskin volkanik kaya çatlaklarını ve kanat altı tarama gölgelerini çiz.",
-        voice: "Ayakların altındaki volkanik kaya çatlaklarını ve derinlik veren gölge taramalarını tamamlıyoruz.",
-        svg: `<path d="M 70 535 L 180 465 L 340 455 L 470 535 M 215 470 L 245 525 M 335 460 L 310 515 M 355 475 L 410 525" fill="none" stroke="#0f172a" stroke-width="7"/>`
-      },
-      {
-        title: "22. Adım: Usta Sanatçı Konsept Boyama ve Alev Işıması",
-        instruction: "Sırtı koyu bordo-kırmızıya, kanat içlerini kor turuncusuna ve ateşi parlak sarıya boyayarak şaheserini tamamla!",
-        voice: "Tebrikler Usta Sanatçı Kıvanç! 22 adımlık bu dev şaheseri başarıyla tamamladın! Şimdi alevlerin ışığıyla boyayabilirsin!",
-        svg: `<g opacity="0.92">
-          <path d="M 70 535 L 180 465 L 340 455 L 470 535 Z" fill="#1e293b" stroke="#0f172a" stroke-width="8"/>
-          <path d="M 265 245 L 45 95 C 25 185, 35 275, 20 355 C 95 315, 145 335, 175 375 C 215 335, 245 335, 275 345 Z" fill="#ea580c" stroke="#0f172a" stroke-width="10"/>
-          <path d="M 315 230 L 445 105 C 485 175, 495 235, 535 280 C 465 275, 415 295, 375 325 Z" fill="#7f1d1d" stroke="#0f172a" stroke-width="9"/>
-          <path d="M 325 105 C 390 95, 455 115, 465 140 L 405 160 L 455 195 C 410 215, 375 195, 345 175 C 375 235, 380 305, 335 375 L 195 420 C 125 450, 75 435, 55 385 C 95 415, 145 410, 195 370 C 245 315, 305 245, 295 150 Z" fill="#991b1b" stroke="#0f172a" stroke-width="10"/>
-          <path d="M 435 165 C 485 185, 555 225, 590 285 C 535 315, 480 265, 425 185 Z" fill="#facc15" stroke="#ea580c" stroke-width="8"/>
-        </g>`
-      }
-    ]
-  },
-
-  // =========================================================================
-  // 11. TÜL YÜZGEÇLİ BETTA (SEVİYE 3: USTA SANATÇI)
-  // =========================================================================
-  {
-    id: "deniz_betta_pro",
-    categoryId: "deniz",
-    name: "Tül Yüzgeçli Betta Balığı",
-    emoji: "🐟",
-    level: 3,
-    levelName: "Usta Sanatçı (Seviye 3)",
-    levelBadge: "🔴 Usta",
-    description: "Suda ipek bir kumaş gibi dalgalanan dev tül yüzgeçleri, ışıltılı pulları ve asil duruşu.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Mavi/Pembe Boya Kalemleri",
-    colors: [
-      { name: "Kraliyet Mavisi", hex: "#1d4ed8" },
-      { name: "Vişne Pembesi", hex: "#db2777" },
-      { name: "Turkuaz Işıltı", hex: "#22d3ee" }
-    ],
-    previewSvg: `
-      <path d="M 160 300 C 160 240, 280 230, 350 290 C 280 340, 160 350, 160 300 Z" fill="#1d4ed8" opacity="0.5" stroke="#0f172a" stroke-width="12"/>
-      <path d="M 280 245 C 300 130, 420 110, 460 170 C 430 210, 380 220, 345 285 Z" fill="#db2777" opacity="0.4" stroke="#0f172a" stroke-width="12"/>
-      <path d="M 350 290 C 440 220, 520 220, 540 300 C 560 380, 470 420, 345 315 Z" fill="#1d4ed8" opacity="0.5" stroke="#0f172a" stroke-width="12"/>
-      <circle cx="210" cy="275" r="10" fill="#0f172a"/>
-    `,
-    steps: [
-      {
-        title: "1. Adım: Akıcı Balık Gövdesi ve Baş",
-        instruction: "Sol tarafa bakan, burnu hafif yukarı kıvrık zarif balık gövdesini çiz.",
-        voice: "Betta balığımızın akıcı ve zarif gövde çizgileriyle başlıyoruz.",
-        svg: `<path d="M 160 300 C 160 240, 280 230, 350 290 C 280 340, 160 350, 160 300 Z" fill="#1d4ed8" opacity="0.4" stroke="#0f172a" stroke-width="12"/><circle cx="210" cy="275" r="10" fill="#0f172a"/>`
-      },
-      {
-        title: "2. Adım: Göğe Yükselen İpek Sırt Yüzgeci",
-        instruction: "Sırtından yukarı doğru rüzgarda dalgalanan ipek gibi devasa bir yüzgeç aç.",
-        voice: "Balığın sırtından yukarı doğru ipek gibi dalgalanan dev yüzgecini çiziyoruz.",
-        svg: `<path d="M 280 245 C 300 130, 420 110, 460 170 C 430 210, 380 220, 345 285 Z" fill="#db2777" opacity="0.4" stroke="#0f172a" stroke-width="12"/>`
-      },
-      {
-        title: "3. Adım: Devasa Katmanlı Tül Kuyruk",
-        instruction: "Gövdenin arkasından fışkıran alev gibi kat kat yayılan dev tül kuyruğu çiz.",
-        voice: "Betta'nın en büyüleyici yeri! Suda bir kumaş gibi dans eden devasa tül kuyruğunu çizelim.",
-        svg: `<path d="M 350 290 C 440 220, 520 220, 540 300 C 560 380, 470 420, 345 315 Z" fill="#1d4ed8" opacity="0.5" stroke="#0f172a" stroke-width="12"/><path d="M 370 290 Q 460 290, 520 300" stroke="#0f172a" stroke-width="6" fill="none"/>`
-      },
-      {
-        title: "4. Adım: Sarkan Kurdele Yüzgeçler",
-        instruction: "Balığın altından aşağıya süzülen iki ince zarif kurdele yüzgeci tamamla.",
-        voice: "Son ustalık adımı! Balığın altından aşağıya zarifçe sarkan kurdele yüzgeçlerini tamamlıyoruz.",
-        svg: `<path d="M 220 320 C 230 420, 200 480, 215 500 C 230 480, 250 410, 240 325 Z" fill="#db2777" stroke="#0f172a" stroke-width="10"/>`
-      }
-    ]
-  },
-
-  // =========================================================================
-  // 12. YILDIZ SAVAŞÇISI (SEVİYE 3: USTA SANATÇI)
-  // =========================================================================
-  {
-    id: "uzay_starfighter_pro",
-    categoryId: "uzay",
-    name: "Yıldız Savaşçısı (Starfighter X)",
-    emoji: "🛸",
-    level: 3,
-    levelName: "Usta Sanatçı (Seviye 3)",
-    levelBadge: "🔴 Usta",
-    description: "Süpersonik elmas gövde, açılı savaş kanatları, lazer namluları ve ikiz plazma motorları.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Gri/Kırmızı/Mavi Boya Kalemleri",
-    colors: [
-      { name: "Uzay Grisi", hex: "#475569" },
-      { name: "Plazma Mavisi", hex: "#06b6d4" },
-      { name: "Lazer Kırmızısı", hex: "#ef4444" }
-    ],
-    previewSvg: `
-      <path d="M 300 70 L 350 240 L 500 400 L 500 450 L 100 450 L 100 400 L 250 240 Z" fill="#475569" opacity="0.4" stroke="#0f172a" stroke-width="14"/>
-      <path d="M 300 140 L 330 230 L 300 280 L 270 230 Z" fill="#38bdf8" stroke="#0f172a" stroke-width="10"/>
-      <rect x="85" y="360" width="15" height="100" rx="4" fill="#ef4444"/>
-      <rect x="500" y="360" width="15" height="100" rx="4" fill="#ef4444"/>
-      <path d="M 265 470 L 275 540 L 285 470 Z" fill="#06b6d4"/>
-      <path d="M 315 470 L 325 540 L 335 470 Z" fill="#06b6d4"/>
-    `,
-    steps: [
-      {
-        title: "1. Adım: Sivri Elmas Gövde Silüeti",
-        instruction: "Yukarı doğru sivrilen elmas biçimli keskin uzay mekiği gövdesini çiz.",
-        voice: "Yıldız savaşçımızın süpersonik sivri elmas gövde çizgileriyle başlıyoruz.",
-        svg: `<path d="M 300 70 L 350 240 L 350 440 L 250 440 L 250 240 Z" fill="none" stroke="#0f172a" stroke-width="14"/>`
-      },
-      {
-        title: "2. Adım: Açılı Kokpit Camı ve Zırh Panelleri",
-        instruction: "Gövdenin içine açılı fütüristik kokpit camını ve çelik panel çizgilerini çiz.",
-        voice: "Pilotun uzayı izlediği yüksek teknolojili zırhlı kokpit camını yapalım.",
-        svg: `<path d="M 300 140 L 330 230 L 300 280 L 270 230 Z" fill="#38bdf8" opacity="0.5" stroke="#0f172a" stroke-width="10"/><line x1="300" y1="140" x2="300" y2="280" stroke="#0f172a" stroke-width="8"/>`
-      },
-      {
-        title: "3. Adım: İki Yana Açılan Lazerli Savaş Kanatları",
-        instruction: "Sağa ve sola dev üçgen kanatlar aç ve uçlarına lazer namluları koy.",
-        voice: "Şimdi iki yana açılan devasa savaş kanatlarını ve uçlarındaki lazer toplarını çiziyoruz.",
-        svg: `<path d="M 250 280 L 100 400 L 100 450 L 250 420 Z" fill="#475569" opacity="0.4" stroke="#0f172a" stroke-width="14"/><path d="M 350 280 L 500 400 L 500 450 L 350 420 Z" fill="#475569" opacity="0.4" stroke="#0f172a" stroke-width="14"/><rect x="85" y="360" width="15" height="100" rx="4" fill="#ef4444" stroke="#0f172a" stroke-width="6"/><rect x="500" y="360" width="15" height="100" rx="4" fill="#ef4444" stroke="#0f172a" stroke-width="6"/>`
-      },
-      {
-        title: "4. Adım: İkiz İyon Motorları ve Plazma Işıkları",
-        instruction: "Geminin altına iki yuvarlak turbo motor ve arkadan fışkıran plazma ışıklarını tamamla.",
-        voice: "Son ustalık adımı! Işık hızına çıkan iyon motorlarını ve arkadan taşan plazma alevlerini çiziyoruz.",
-        svg: `<rect x="260" y="440" width="30" height="30" rx="6" stroke="#0f172a" stroke-width="10" fill="#64748b"/><rect x="310" y="440" width="30" height="30" rx="6" stroke="#0f172a" stroke-width="10" fill="#64748b"/><path d="M 265 470 L 275 540 L 285 470 Z" fill="#06b6d4"/><path d="M 315 470 L 325 540 L 335 470 Z" fill="#06b6d4"/>`
-      }
-    ]
-  },
-
-  // =========================================================================
-  // 13. ZIRHLI MECHA ROBOT (SEVİYE 3: USTA SANATÇI)
-  // =========================================================================
-  {
-    id: "uzay_mecha_pro",
-    categoryId: "uzay",
-    name: "Zırhlı Mecha Savaş Robotu",
-    emoji: "🤖",
-    level: 3,
-    levelName: "Usta Sanatçı (Seviye 3)",
-    levelBadge: "🔴 Usta",
-    description: "Samuray robot kaskı, geniş omuz kalkanları, enerji reaktörü ve parlayan lazer kılıcı.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Gri, Sarı, Mavi Boya Kalemleri",
-    colors: [
-      { name: "Çelik Grisi", hex: "#64748b" },
-      { name: "Lazer Sarısı", hex: "#fde047" },
-      { name: "Enerji Mavisi", hex: "#38bdf8" }
-    ],
-    previewSvg: `
-      <path d="M 240 180 L 270 120 L 330 120 L 360 180 L 300 210 Z" fill="#64748b" opacity="0.4" stroke="#0f172a" stroke-width="12"/>
-      <rect x="260" y="150" width="80" height="18" rx="4" fill="#38bdf8"/>
-      <path d="M 200 200 L 240 220 L 230 280 L 180 250 Z" fill="#64748b" stroke="#0f172a" stroke-width="10"/>
-      <path d="M 400 200 L 360 220 L 370 280 L 420 250 Z" fill="#64748b" stroke="#0f172a" stroke-width="10"/>
-      <rect x="250" y="220" width="100" height="90" rx="10" fill="#64748b" opacity="0.4" stroke="#0f172a" stroke-width="12"/>
-      <circle cx="300" cy="265" r="16" fill="#fde047"/>
-      <path d="M 435 340 L 480 180 L 470 175 L 425 335 Z" fill="#38bdf8"/>
-    `,
-    steps: [
-      {
-        title: "1. Adım: Köşeli Çelik Kask ve Vizör",
-        instruction: "Köşeli samuray robot kaskı ve ortasında tek parça parlayan lazer vizörü çiz.",
-        voice: "Mecha robotumuzun köşeli çelik kaskı ve parlayan lazer vizörüyle başlıyoruz.",
-        svg: `<path d="M 240 180 L 270 120 L 330 120 L 360 180 L 300 210 Z" fill="#64748b" opacity="0.4" stroke="#0f172a" stroke-width="12"/><rect x="260" y="150" width="80" height="18" rx="4" fill="#38bdf8" stroke="#0f172a" stroke-width="6"/>`
-      },
-      {
-        title: "2. Adım: Geniş Omuz Zırhları ve Göğüs Reaktörü",
-        instruction: "Kafanın iki yanına dev omuz zırhları ve göğse parıldayan reaktör çemberi çiz.",
-        voice: "Robotun güçlü omuz kalkanlarını ve göğsündeki enerji reaktörünü çiziyoruz.",
-        svg: `<path d="M 200 200 L 240 220 L 230 280 L 180 250 Z" fill="#64748b" stroke="#0f172a" stroke-width="10"/><path d="M 400 200 L 360 220 L 370 280 L 420 250 Z" fill="#64748b" stroke="#0f172a" stroke-width="10"/><rect x="250" y="220" width="100" height="90" rx="10" fill="#64748b" opacity="0.4" stroke="#0f172a" stroke-width="12"/><circle cx="300" cy="265" r="16" fill="#fde047" stroke="#0f172a" stroke-width="6"/>`
-      },
-      {
-        title: "3. Adım: Lazer Enerji Kılıcı ve Zırhlı Kollar",
-        instruction: "Sağ kola yukarı doğru uzanan parlayan enerji kılıcını ve sol kola kalkan ekle.",
-        voice: "Robotun eline geleceğin parıldayan lazer kılıcını ve kalkanını çizelim.",
-        svg: `<path d="M 180 250 L 160 350 L 190 350" stroke="#0f172a" stroke-width="12" fill="none"/><path d="M 420 250 L 440 330 L 420 340" stroke="#0f172a" stroke-width="12" fill="none"/><path d="M 435 340 L 480 180 L 470 175 L 425 335 Z" fill="#38bdf8" stroke="#0f172a" stroke-width="8"/>`
-      },
-      {
-        title: "4. Adım: Hidrolik Sağlam Bacaklar ve Çelik Botlar",
-        instruction: "Ağır gövdeyi taşıyan iki kalın hidrolik bacak ve zırhlı botları tamamla.",
-        voice: "Son dokunuş! Yeri titreten güçlü hidrolik bacakları ve çelik botları tamamlıyoruz.",
-        svg: `<rect x="235" y="320" width="50" height="150" rx="8" fill="#64748b" stroke="#0f172a" stroke-width="10"/><rect x="315" y="320" width="50" height="150" rx="8" fill="#64748b" stroke="#0f172a" stroke-width="10"/><path d="M 220 470 L 290 470 L 290 510 L 210 510 Z" fill="#0f172a"/><path d="M 310 470 L 380 470 L 390 510 L 310 510 Z" fill="#0f172a"/>`
-      }
-    ]
-  },
-
-  // =========================================================================
-  // 14. GÖLGE SAVAŞÇISI NİNJA (SEVİYE 2: RESSAM)
-  // =========================================================================
-  {
-    id: "kahraman_ninja_pro",
-    categoryId: "kahramanlar",
-    name: "Gölge Savaşçısı Ninja",
-    emoji: "🥷",
-    level: 2,
-    levelName: "Ressam (Seviye 2)",
-    levelBadge: "🟡 Ressam",
-    description: "Rüzgarda uçuşan kırmızı kafa bandı, sırtındaki katana kılıcı ve keskin odaklanmış gözleri.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Siyah/Kırmızı Boya Kalemleri",
-    colors: [
-      { name: "Gece Siyahı", hex: "#0f172a" },
-      { name: "Kızıl Kafa Bandı", hex: "#dc2626" },
-      { name: "Kılıç Çeliği", hex: "#e2e8f0" }
-    ],
-    previewSvg: `
-      <path d="M 230 180 C 230 120, 370 120, 370 180 L 360 280 C 340 310, 260 310, 240 280 Z" fill="#0f172a"/>
-      <rect x="245" y="195" width="110" height="35" rx="6" fill="#f8fafc"/>
-      <circle cx="280" cy="215" r="4" fill="#0f172a"/><circle cx="320" cy="215" r="4" fill="#0f172a"/>
-      <rect x="225" y="160" width="150" height="25" rx="4" fill="#dc2626"/>
-      <path d="M 370 170 C 420 150, 460 170, 500 140 Z" fill="#dc2626"/>
-      <line x1="200" y1="180" x2="380" y2="400" stroke="#cbd5e1" stroke-width="12"/>
-    `,
-    steps: [
-      {
-        title: "1. Adım: Yüz Maskesi ve Keskin Odaklanmış Gözler",
-        instruction: "Yüzünü örten ninja maskesini ve ortadaki kararlı keskin gözleri çiz.",
-        voice: "Gölge ninjamızın yüzünü örten maskesi ve hedefine kilitlenen keskin gözleriyle başlıyoruz.",
-        svg: `<path d="M 230 180 C 230 120, 370 120, 370 180 L 360 280 C 340 310, 260 310, 240 280 Z" fill="#0f172a"/><rect x="245" y="195" width="110" height="35" rx="6" fill="#f8fafc"/><circle cx="280" cy="215" r="4" fill="#0f172a"/><circle cx="320" cy="215" r="4" fill="#0f172a"/>`
-      },
-      {
-        title: "2. Adım: Rüzgarda Uçuşan Kırmızı Kafa Bandı",
-        instruction: "Alnına kırmızı bir bandana ve arkaya doğru dalgalanan uzun şeritlerini çiz.",
-        voice: "Ninjanın alnındaki bandanayı ve arkasında rüzgarla uçuşan kırmızı kumaşı çizelim.",
-        svg: `<rect x="225" y="160" width="150" height="25" rx="4" fill="#dc2626" stroke="#0f172a" stroke-width="6"/><path d="M 370 170 C 420 150, 460 170, 500 140 C 470 180, 430 170, 375 185 Z" fill="#dc2626" stroke="#0f172a" stroke-width="6"/>`
-      },
-      {
-        title: "3. Adım: Çapraz Katana Kılıcı ve Zırhlı Gövde",
-        instruction: "Sırtından çapraz uzanan samuray kılıcının kabzasını ve gövdeyi çiz.",
-        voice: "Ninjanın sırtında taşıdığı efsanevi katana kılıcını ve dövüş duruşunu çiziyoruz.",
-        svg: `<path d="M 230 280 L 210 420 L 390 420 L 370 280 Z" fill="#0f172a"/><line x1="200" y1="180" x2="380" y2="400" stroke="#cbd5e1" stroke-width="12"/>`
-      },
-      {
-        title: "4. Adım: Şuriken Fırlatma Yıldızları",
-        instruction: "Ninjanın yanına havada dönen 4 köşeli metal şuriken yıldızlarını tamamla.",
-        voice: "Son dokunuş! Ninjanın düşmanlarına fırlattığı metal şuriken yıldızlarını çiziyoruz.",
-        svg: `<path d="M 140 240 L 150 260 L 170 265 L 150 275 L 140 295 L 130 275 L 110 265 L 130 260 Z" fill="#cbd5e1" stroke="#0f172a" stroke-width="6"/><circle cx="140" cy="267" r="6" fill="#0f172a"/>`
-      }
-    ]
-  },
-
-  // =========================================================================
-  // 15. EFSANEVİ SAMURAY (SEVİYE 2: RESSAM)
-  // =========================================================================
-  {
-    id: "kahraman_samuray_pro",
-    categoryId: "kahramanlar",
-    name: "Onurlu Japon Samurayı",
-    emoji: "⚔️",
-    level: 2,
-    levelName: "Ressam (Seviye 2)",
-    levelBadge: "🟡 Ressam",
-    description: "Hilal boynuzlu samuray miğferi (kabuto), zırhlı omuz plakaları ve çift katana.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Altın/Siyah Boya Kalemleri",
-    colors: [
-      { name: "Zırh Siyahı", hex: "#0f172a" },
-      { name: "Miğfer Altını", hex: "#f59e0b" },
-      { name: "Kızıl İpek", hex: "#dc2626" }
-    ],
-    previewSvg: `
-      <path d="M 220 180 C 220 110, 380 110, 380 180 L 390 240 L 210 240 Z" fill="#0f172a" stroke="#0f172a" stroke-width="12"/>
-      <path d="M 190 140 C 240 70, 360 70, 410 140 C 370 120, 230 120, 190 140 Z" fill="#f59e0b" stroke="#0f172a" stroke-width="8"/>
-      <circle cx="300" cy="115" r="16" fill="#f59e0b" stroke="#0f172a" stroke-width="6"/>
-      <rect x="230" y="240" width="140" height="150" rx="10" fill="#0f172a"/>
-    `,
-    steps: [
-      {
-        title: "1. Adım: Samuray Miğferi ve Hilal Arması",
-        instruction: "Geniş çelik miğfer kubbesini ve tepesindeki altın hilal boynuz armayı çiz.",
-        voice: "Samurayın başını koruyan görkemli miğferi ve altın hilal armasıyla başlıyoruz.",
-        svg: `<path d="M 220 180 C 220 110, 380 110, 380 180 L 390 240 L 210 240 Z" fill="#0f172a" stroke="#0f172a" stroke-width="12"/><path d="M 190 140 C 240 70, 360 70, 410 140 C 370 120, 230 120, 190 140 Z" fill="#f59e0b" stroke="#0f172a" stroke-width="8"/><circle cx="300" cy="115" r="16" fill="#f59e0b" stroke="#0f172a" stroke-width="6"/>`
-      },
-      {
-        title: "2. Adım: Yüz Zırhı ve Odaklanmış Bakış",
-        instruction: "Miğferin altından bakan kararlı savaşçı gözlerini ve yanak koruma kanatlarını çiz.",
-        voice: "Miğferin altından bakan kararlı gözleri ve yanak zırhlarını çizelim.",
-        svg: `<rect x="250" y="200" width="100" height="25" rx="4" fill="#f8fafc"/><circle cx="280" cy="212" r="5" fill="#0f172a"/><circle cx="320" cy="212" r="5" fill="#0f172a"/><path d="M 190 220 L 220 280 L 240 250" stroke="#0f172a" stroke-width="10" fill="none"/><path d="M 410 220 L 380 280 L 360 250" stroke="#0f172a" stroke-width="10" fill="none"/>`
-      },
-      {
-        title: "3. Adım: Katmanlı Göğüs Zırhı ve Omuzluklar",
-        instruction: "İpek bağcıklarla birbirine bağlanan basamaklı omuz zırh plakalarını ve göğüslüğü çiz.",
-        voice: "Samuray zırhının basamaklı omuz plakalarını ve göğüs zırhını çiziyoruz.",
-        svg: `<rect x="230" y="250" width="140" height="150" rx="10" fill="#0f172a" stroke="#0f172a" stroke-width="10"/><line x1="230" y1="300" x2="370" y2="300" stroke="#dc2626" stroke-width="8"/><line x1="230" y1="340" x2="370" y2="340" stroke="#dc2626" stroke-width="8"/>`
-      },
-      {
-        title: "4. Adım: Keskin Çift Katana Kılıçları",
-        instruction: "Kemerine asılı duran kavisli uzun katanayı ve kısa kılıcın kabzalarını tamamla.",
-        voice: "Son ustalık adımı! Samurayın kuşağındaki asil katana kılıçlarını tamamlıyoruz.",
-        svg: `<line x1="160" y1="350" x2="320" y2="460" stroke="#cbd5e1" stroke-width="12"/><rect x="300" y="445" width="40" height="16" rx="3" fill="#f59e0b" stroke="#0f172a" stroke-width="6"/>`
-      }
-    ]
-  },
-
-  // =========================================================================
-  // 16. FORMULA 1 HIZ MAKİNESİ (SEVİYE 3: USTA SANATÇI)
-  // =========================================================================
-  {
-    id: "araba_f1_master",
+    id: "cirak_yaris_arabasi",
     categoryId: "arabalar",
-    name: "Formula 1 Hız Canavarı",
+    name: "Süper Yarış Arabası Ferrari",
     emoji: "🏎️",
-    level: 3,
-    levelName: "Usta Sanatçı (Seviye 3)",
-    levelBadge: "🔴 Usta",
-    description: "Geniş dış slick lastikler, aerodinamik ön burun difüzörü, halo güvenlik barı ve dev çift katlı arka kanat.",
-    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Kırmızı, Sarı, Siyah Boya Kalemleri",
+    level: 1,
+    levelName: "Çırak (Seviye 1)",
+    levelBadge: "🟢 Çırak",
+    description: "Alçak aerodinamik burnu, cam kubbesi, yüksek GT arka spoyleri, sarı yarış jantları ve yarış şeritleriyle kırmızı Süper Ferrari.",
+    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Kırmızı, Sarı, Açık Mavi, Siyah Boya Kalemleri",
     colors: [
-      { name: "Ferrari Kırmızısı", hex: "#dc2626" },
-      { name: "Pirelli Sarısı", hex: "#fde047" },
-      { name: "Karbon Siyahı", hex: "#0f172a" }
+      { name: "Yarış Kırmızısı", hex: "#ef4444" },
+      { name: "Pist Sarısı", hex: "#facc15" },
+      { name: "Cam Mavisi", hex: "#38bdf8" },
+      { name: "Asfalt Siyahı", hex: "#0f172a" }
     ],
     previewSvg: `
-      <path d="M 60 380 L 170 380 L 220 330 L 440 330 L 500 370 L 540 370 L 530 330 L 420 290 L 260 300 L 120 340 L 60 370 Z" fill="#dc2626" opacity="0.6" stroke="#0f172a" stroke-width="14"/>
-      <rect x="110" y="330" width="55" height="90" rx="16" fill="#0f172a"/>
-      <rect x="440" y="310" width="65" height="110" rx="18" fill="#0f172a"/>
-      <circle cx="340" cy="275" r="16" fill="#facc15" stroke="#0f172a" stroke-width="8"/>
-      <path d="M 480 260 L 550 260 L 550 290 L 480 290 Z" fill="#0f172a"/>
+      <defs>
+        <linearGradient id="carBodyRed" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#ef4444"/>
+          <stop offset="50%" stop-color="#dc2626"/>
+          <stop offset="100%" stop-color="#991b1b"/>
+        </linearGradient>
+        <linearGradient id="carGlass" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#bae6fd"/>
+          <stop offset="100%" stop-color="#0284c7"/>
+        </linearGradient>
+        <linearGradient id="carRim" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#fef08a"/>
+          <stop offset="100%" stop-color="#ca8a04"/>
+        </linearGradient>
+        <linearGradient id="carAsphalt" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#64748b"/>
+          <stop offset="100%" stop-color="#1e293b"/>
+        </linearGradient>
+      </defs>
+      <!-- Asfalt Zemin -->
+      <ellipse cx="300" cy="480" rx="230" ry="20" fill="url(#carAsphalt)" stroke="#0f172a" stroke-width="8"/>
+      <!-- Yüksek Arka Spoyler -->
+      <path d="M 105 270 L 155 270 L 145 320 L 115 320 Z" fill="#991b1b" stroke="#0f172a" stroke-width="8"/>
+      <path d="M 85 260 L 175 260 L 165 275 L 75 275 Z" fill="#ef4444" stroke="#0f172a" stroke-width="8"/>
+      <!-- Ana Gövde -->
+      <path d="M 95 385 C 80 340, 140 310, 200 310 L 260 250 C 310 220, 390 220, 420 260 L 480 320 C 520 330, 545 360, 535 395 C 525 435, 495 440, 465 440 L 125 440 C 95 440, 90 410, 95 385 Z" fill="url(#carBodyRed)" stroke="#0f172a" stroke-width="10"/>
+      <!-- Kabin Camı -->
+      <path d="M 270 260 C 310 235, 380 235, 405 265 L 455 315 L 225 315 Z" fill="url(#carGlass)" stroke="#0f172a" stroke-width="8"/>
+      <!-- Yan Ayna -->
+      <ellipse cx="250" cy="305" rx="14" ry="8" fill="#ef4444" stroke="#0f172a" stroke-width="5"/>
+      <!-- Ön Farlar -->
+      <path d="M 490 345 L 530 365 L 505 380 Z" fill="#fef08a" stroke="#0f172a" stroke-width="6"/>
+      <path d="M 500 355 L 520 368" stroke="#ca8a04" stroke-width="4"/>
+      <!-- Ön Tampon Alt Izgara -->
+      <path d="M 485 410 L 530 405 L 525 430 L 480 430 Z" fill="#0f172a" stroke="#0f172a" stroke-width="6"/>
+      <!-- Beyaz-Sarı Yarış Şeridi -->
+      <path d="M 215 315 L 255 255 L 285 255 L 245 315 Z" fill="#ffffff" opacity="0.9"/>
+      <path d="M 330 315 L 365 240 L 385 240 L 350 315 Z" fill="#ffffff" opacity="0.9"/>
+      <!-- Arka Tekerlek -->
+      <circle cx="175" cy="435" r="48" fill="#0f172a" stroke="#0f172a" stroke-width="6"/>
+      <circle cx="175" cy="435" r="28" fill="url(#carRim)" stroke="#0f172a" stroke-width="6"/>
+      <circle cx="175" cy="435" r="10" fill="#0f172a"/>
+      <!-- Ön Tekerlek -->
+      <circle cx="435" cy="435" r="48" fill="#0f172a" stroke="#0f172a" stroke-width="6"/>
+      <circle cx="435" cy="435" r="28" fill="url(#carRim)" stroke="#0f172a" stroke-width="6"/>
+      <circle cx="435" cy="435" r="10" fill="#0f172a"/>
     `,
     steps: [
       {
-        title: "1. Adım: Alçak Mermi Gövde ve Burun Kanadı",
-        instruction: "Öne doğru sivrilen dar burun konisini ve ön rüzgar bıçağını çiz.",
-        voice: "Formula 1 aracının havalı sivri ön burnu ve rüzgarı kesen kanatlarıyla başlıyoruz.",
-        svg: `<path d="M 60 380 L 170 380 L 220 330 L 440 330 L 500 370 L 540 370 L 530 330 L 420 290 L 260 300 L 120 340 L 60 370 Z" fill="none" stroke="#0f172a" stroke-width="14"/>`
+        title: "1. Adım: Aerodinamik Gövde ve Kabin Kılavuzu (Mavi)",
+        instruction: "Kalemini bastırmadan altta uzun yatay bir dikdörtgen gövde, üstte ise kubbe kabin kılavuzunu hafifçe çiz.",
+        voice: "Önce kalemini hiç bastırmadan altta uzun yarış arabası gövdesini, üstte de kabin kılavuzunu çizelim.",
+        svg: `<path d="M 95 385 C 80 340, 140 310, 200 310 L 260 250 C 310 220, 390 220, 420 260 L 480 320 L 535 395 L 465 440 L 125 440 Z" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
       },
       {
-        title: "2. Adım: Dışarıda Duran 2 Geniş Slick Lastik",
-        instruction: "Gövdenin tamamen dışında duran geniş tabanlı ön ve arka yarış tekerleklerini çiz.",
-        voice: "Gövdenin dışında duran koca yarış tekerleklerini ve sarı hız çizgilerini yapalım.",
-        svg: `<rect x="110" y="330" width="55" height="90" rx="16" fill="#0f172a"/><rect x="440" y="310" width="65" height="110" rx="18" fill="#0f172a"/>`
+        title: "2. Adım: İki Tekerlek Yuvası Kılavuzu (Mavi)",
+        instruction: "Gövdenin altına ön ve arka tekerleklerin yerini belirleyen iki dairesel kılavuz çiz.",
+        voice: "Şimdi ön ve arka tekerleklerin geleceği yerlere iki kılavuz çemberi hafifçe çiziyoruz.",
+        svg: `<circle cx="175" cy="435" r="48" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/><circle cx="435" cy="435" r="48" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
       },
       {
-        title: "3. Adım: Sürücü Kokpiti ve Halo Koruması",
-        instruction: "Pilotun kaskını, direksiyonunu ve kafasını koruyan titanyum Halo barını çiz.",
-        voice: "Pilotun oturduğu güvenli kokpiti ve başının üzerindeki Halo koruma barını çiziyoruz.",
-        svg: `<circle cx="340" cy="275" r="16" fill="#facc15" stroke="#0f172a" stroke-width="8"/><path d="M 310 290 C 330 250, 360 250, 380 290" stroke="#0f172a" stroke-width="12" fill="none"/>`
+        title: "3. Adım: Burun, Kaput ve Ön Tampon Konturu",
+        instruction: "Mavi kılavuzun üzerinden geçerek yere yakın alçak yarış burnunu ve eğimli kaput hattını çiz.",
+        voice: "Mavi çizginin üzerinden geçerek Ferrari'nin yere yakın alçak burnunu ve kaputunu çiziyoruz.",
+        svg: `<path d="M 420 260 L 480 320 C 520 330, 545 360, 535 395 C 525 435, 495 440, 465 440" fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>`
       },
       {
-        title: "4. Adım: Dev Arka Rüzgarlık Kanadı (DRS)",
-        instruction: "Arka kapağın üstüne çift katlı aerodinamik arka spoyleri ve hava giriş bacasını tamamla.",
-        voice: "Son ustalık adımı! Formula 1'e o muazzam hızını veren çift katlı arka kanadı tamamlıyoruz.",
-        svg: `<path d="M 480 260 L 550 260 L 550 290 L 480 290 Z" fill="#0f172a"/><line x1="500" y1="290" x2="500" y2="340" stroke="#0f172a" stroke-width="10"/><path d="M 360 240 L 410 240 L 410 290 Z" fill="#dc2626" stroke="#0f172a" stroke-width="8"/>`
+        title: "4. Adım: Ön Izgara, Hava Girişi ve Bölücü (Splitter)",
+        instruction: "Tamponun altına yarış havasını emen geniş siyah ızgara kutusunu ve aerodinamik bıçağı çiz.",
+        voice: "Ön tamponun altına yarış motorunu soğutan geniş hava ızgarasını ekleyelim.",
+        svg: `<path d="M 485 410 L 530 405 L 525 430 L 480 430 Z" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>`
+      },
+      {
+        title: "5. Adım: Dinamik Damla Farlar ve Yan Ayna",
+        instruction: "Kaputun köşesine geriye doğru uzanan damla farı ve kapı kenarına küçük yarış aynasını çiz.",
+        voice: "Kaputun üstüne rüzgar gibi akan şık farını ve aerodinamik yan aynasını çizelim.",
+        svg: `<path d="M 490 345 L 530 365 L 505 380 Z" fill="none" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/><line x1="500" y1="355" x2="520" y2="368" stroke="#0f172a" stroke-width="5"/><ellipse cx="250" cy="305" rx="14" ry="8" fill="none" stroke="#0f172a" stroke-width="6"/>`
+      },
+      {
+        title: "6. Adım: Kabin Tavanı ve Cam Kubbe",
+        instruction: "Sürücünün oturduğu bombeli tavan yayını ve eğimli ön-yan cam hatlarını çiz.",
+        voice: "Sürücü kabininin aerodinamik cam kubbesini ve tavan yayını çiziyoruz.",
+        svg: `<path d="M 200 310 L 260 250 C 310 220, 390 220, 420 260" fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/><path d="M 270 260 C 310 235, 380 235, 405 265 L 455 315 L 225 315 Z" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>`
+      },
+      {
+        title: "7. Adım: Ön Çamurluk ve Kalın Ön Tekerlek",
+        instruction: "Ön tekerlek yuvasını ve içinde dönen kalın yarış lastiği çemberini çiz.",
+        voice: "Ön çamurluk kavisini ve yere sımsıkı tutunan kalın ön lastiğimizi çizelim.",
+        svg: `<circle cx="435" cy="435" r="48" fill="none" stroke="#0f172a" stroke-width="10"/><circle cx="435" cy="435" r="28" fill="none" stroke="#0f172a" stroke-width="8"/>`
+      },
+      {
+        title: "8. Adım: Yan Marşpiyel, Arka Çamurluk ve Arka Tekerlek",
+        instruction: "İki tekerlek arasındaki alçak yan eteği ve arkadaki kalın çekiş tekerleğini çiz.",
+        voice: "İki tekerlek arasındaki alt yarış marşpiyelini ve arka tekerleği tamamlayalım.",
+        svg: `<path d="M 95 385 C 90 410, 95 440, 125 440 L 387 440" fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/><circle cx="175" cy="435" r="48" fill="none" stroke="#0f172a" stroke-width="10"/><circle cx="175" cy="435" r="28" fill="none" stroke="#0f172a" stroke-width="8"/>`
+      },
+      {
+        title: "9. Adım: Yüksek GT Arka Spoyler",
+        instruction: "Bagajın üstüne arabayı yere bastıran yüksek yarış spoylerini ve iki ayağını çiz.",
+        voice: "Arabanın virajlarda uçmasını engelleyen o harika yüksek arka spoyleri çiziyoruz.",
+        svg: `<path d="M 105 270 L 155 270 L 145 320 L 115 320 Z" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/><path d="M 85 260 L 175 260 L 165 275 L 75 275 Z" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/><path d="M 95 385 C 80 340, 140 310, 200 310" fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>`
+      },
+      {
+        title: "10. Adım: Spor Jant Kolları, Yarış Şeritleri ve Asfalt Zemin",
+        instruction: "Jantların içine göbek dairelerini, kaputun üstüne yarış çizgilerini ve altındaki asfalt yolu çiz.",
+        voice: "Jantların göbeğini, havalı yarış şeritlerini ve asfalt pisti çizelim. Kılavuz çizgileri silebilirsin!",
+        svg: `<circle cx="175" cy="435" r="10" fill="#0f172a"/><circle cx="435" cy="435" r="10" fill="#0f172a"/><line x1="250" y1="260" x2="225" y2="315" stroke="#0f172a" stroke-width="5"/><line x1="365" y1="240" x2="340" y2="315" stroke="#0f172a" stroke-width="5"/><ellipse cx="300" cy="480" rx="230" ry="20" fill="none" stroke="#0f172a" stroke-width="8"/>`
+      },
+      {
+        title: "11. Adım: Canlı Ferrari Kırmızısı Renklendirme",
+        instruction: "Gövdeyi alev kırmızısına, camları gök mavisine ve jantları altın sarısına boya!",
+        voice: "Harika oldu Kıvanç! Şimdi Ferrari yarış arabasını parlak kırmızı, sarı ve mavi renklerle boyayabilirsin!",
+        svg: `<g opacity="0.95"><ellipse cx="300" cy="480" rx="230" ry="20" fill="#334155" stroke="#0f172a" stroke-width="8"/><path d="M 85 260 L 175 260 L 165 275 L 75 275 Z" fill="#ef4444" stroke="#0f172a" stroke-width="8"/><path d="M 95 385 C 80 340, 140 310, 200 310 L 260 250 C 310 220, 390 220, 420 260 L 480 320 C 520 330, 545 360, 535 395 C 525 435, 495 440, 465 440 L 125 440 Z" fill="#ef4444" stroke="#0f172a" stroke-width="10"/><path d="M 270 260 C 310 235, 380 235, 405 265 L 455 315 L 225 315 Z" fill="#38bdf8" stroke="#0f172a" stroke-width="8"/><path d="M 490 345 L 530 365 L 505 380 Z" fill="#facc15" stroke="#0f172a" stroke-width="6"/><circle cx="175" cy="435" r="48" fill="#0f172a"/><circle cx="175" cy="435" r="28" fill="#facc15" stroke="#0f172a" stroke-width="6"/><circle cx="435" cy="435" r="48" fill="#0f172a"/><circle cx="435" cy="435" r="28" fill="#facc15" stroke="#0f172a" stroke-width="6"/></g>`
+      }
+    ]
+  },
+  // =========================================================================
+  // 4. SEVİMLİ YUNUS BALIĞI (11 ADIM - 🟢 ÇIRAK)
+  // =========================================================================
+  {
+    id: "cirak_yunus_baligi",
+    categoryId: "deniz",
+    name: "Sevimli Yunus Balığı",
+    emoji: "🐬",
+    level: 1,
+    levelName: "Çırak (Seviye 1)",
+    levelBadge: "🟢 Çırak",
+    description: "Masmavi dalgaların üzerinden neşeyle sıçrayan, pırıl pırıl gözlü, gülümseyen sevimli Yunus Balığı.",
+    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Açık Mavi, Koyu Mavi, Turkuaz Boya Kalemleri",
+    colors: [
+      { name: "Okyanus Mavisi", hex: "#0284c7" },
+      { name: "Bebek Mavisi", hex: "#38bdf8" },
+      { name: "Köpük Beyazı", hex: "#f0fdfa" },
+      { name: "Derin Deniz", hex: "#0369a1" }
+    ],
+    previewSvg: `
+      <defs>
+        <linearGradient id="dolphinBody" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#38bdf8"/>
+          <stop offset="60%" stop-color="#0284c7"/>
+          <stop offset="100%" stop-color="#0369a1"/>
+        </linearGradient>
+        <linearGradient id="dolphinBelly" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#ffffff"/>
+          <stop offset="100%" stop-color="#e0f2fe"/>
+        </linearGradient>
+        <linearGradient id="oceanWaves" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#22d3ee"/>
+          <stop offset="100%" stop-color="#0e7490"/>
+        </linearGradient>
+      </defs>
+      <!-- Dalgalı Deniz Kaidesi -->
+      <path d="M 80 490 C 130 460, 180 520, 240 480 C 300 450, 350 510, 420 475 C 470 450, 520 490, 550 480 C 550 540, 80 540, 80 490 Z" fill="url(#oceanWaves)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+      <!-- Sıçrayan Su Damlacıkları -->
+      <circle cx="150" cy="440" r="10" fill="#38bdf8" stroke="#0f172a" stroke-width="4"/>
+      <circle cx="180" cy="410" r="7" fill="#38bdf8" stroke="#0f172a" stroke-width="4"/>
+      <circle cx="450" cy="420" r="9" fill="#38bdf8" stroke="#0f172a" stroke-width="4"/>
+      <circle cx="475" cy="445" r="6" fill="#38bdf8" stroke="#0f172a" stroke-width="3"/>
+      <!-- Çift Kanatlı Kuyruk Yüzgeci (Fluke) -->
+      <path d="M 125 415 C 80 395, 55 425, 75 460 C 105 450, 125 435, 140 435 C 135 455, 125 480, 155 485 C 170 460, 155 430, 140 420 Z" fill="url(#dolphinBody)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+      <!-- Sırt Yüzgeci (Dorsal Fin) -->
+      <path d="M 320 185 C 330 115, 380 125, 395 180 Z" fill="url(#dolphinBody)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+      <!-- Ana Yunus Gövdesi -->
+      <path d="M 440 210 C 490 220, 520 245, 515 270 C 490 280, 455 275, 430 265 C 350 310, 220 380, 130 425 C 220 340, 310 260, 390 215 C 405 210, 425 205, 440 210 Z" fill="url(#dolphinBody)" stroke="#0f172a" stroke-width="10"/>
+      <!-- Beyaz Karın Bölgesi -->
+      <path d="M 475 270 C 440 275, 410 295, 360 325 C 270 375, 180 415, 130 425 C 210 370, 310 310, 420 270 Z" fill="url(#dolphinBelly)" stroke="#0f172a" stroke-width="6"/>
+      <!-- Yan Yüzgeç (Pectoral Fin) -->
+      <path d="M 360 305 C 350 365, 390 380, 405 340 C 395 320, 380 305, 360 305 Z" fill="url(#dolphinBody)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+      <!-- Şişe Burun ve Gülümseyen Ağız -->
+      <path d="M 465 255 Q 495 260, 515 270" stroke="#0f172a" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <!-- Büyük Parlak Göz -->
+      <circle cx="435" cy="235" r="14" fill="#0f172a"/>
+      <circle cx="431" cy="230" r="5" fill="#ffffff"/>
+      <circle cx="439" cy="238" r="2.5" fill="#ffffff"/>
+      <!-- Nefes Deliği -->
+      <ellipse cx="400" cy="205" rx="5" ry="3" fill="#0f172a"/>
+    `,
+    steps: [
+      {
+        title: "1. Adım: Sıçrayan Gövde Yay Kılavuzu (Mavi)",
+        instruction: "Kalemini bastırmadan sağ üstten sol alta doğru kıvrılan muz/yay şeklinde büyük bir gövde kılavuzu çiz.",
+        voice: "Önce dalgalardan sıçrayan neşeli yunusumuzun gövde yayını hafifçe çizelim.",
+        svg: `<path d="M 440 210 C 510 230, 520 270, 475 275 C 370 330, 220 380, 130 425 C 220 340, 330 240, 440 210 Z" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
+      },
+      {
+        title: "2. Adım: Yüzgeç ve Kuyruk Kılavuzları (Mavi)",
+        instruction: "Sırtına sivri yüzgeç, göğsüne yan yüzgeç ve arkaya çift kanatlı kuyruk kılavuzlarını hafifçe ekle.",
+        voice: "Şimdi sırt yüzgecini, yan yüzgecini ve arkadaki kuyruğun yerini hafifçe çiziyoruz.",
+        svg: `<path d="M 320 185 C 330 115, 380 125, 395 180" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/><path d="M 360 305 C 350 365, 390 380, 405 340" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/><path d="M 125 415 L 75 460 M 140 435 L 155 485" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
+      },
+      {
+        title: "3. Adım: Sevimli Baş ve Şişe Burun Konturu",
+        instruction: "Mavi kılavuzun üzerinden geçerek bombeli alnı, yuvarlak burnu ve çene hattını çiz.",
+        voice: "Yunusumuzun pürüzsüz bombeli alnını ve sevimli şişe burnunu çiziyoruz.",
+        svg: `<path d="M 390 215 C 420 205, 450 205, 470 215 C 500 225, 520 245, 515 270 C 490 280, 455 275, 430 265" fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>`
+      },
+      {
+        title: "4. Adım: Gülümseyen Ağız Çizgisi ve Nefes Deliği",
+        instruction: "Burnun ucundan geriye tatlı bir gülümseme çizgisi ve başının tepesine minik bir nefes deliği ekle.",
+        voice: "Burnun ucuna mutlu bir gülümseme ve başının üstüne minik nefes deliğini çizelim.",
+        svg: `<path d="M 465 255 Q 495 260, 515 270" stroke="#0f172a" stroke-width="7" stroke-linecap="round" fill="none"/><ellipse cx="400" cy="205" rx="5" ry="3" fill="#0f172a"/>`
+      },
+      {
+        title: "5. Adım: Büyük Parlak Yunus Gözü",
+        instruction: "Yüze kocaman dost canlısı bir göz, siyah gözbebeği ve parlayan iki beyaz ışık dairesi çiz.",
+        voice: "Kocaman parlayan dost canlısı bir göz çizelim. İçindeki beyaz ışıkları unutma!",
+        svg: `<circle cx="435" cy="235" r="14" fill="#0f172a"/><circle cx="431" cy="230" r="5" fill="#ffffff"/><circle cx="439" cy="238" r="2.5" fill="#ffffff"/>`
+      },
+      {
+        title: "6. Adım: Geriye Kıvrık Sırt Yüzgeci (Dorsal Fin)",
+        instruction: "Sırtının en tepe noktasına arkaya doğru zarifçe eğilen pürüzsüz sırt yüzgecini çiz.",
+        voice: "Sırtının tepesine geriye doğru eğilen o güzel sırt yüzgecini çiziyoruz.",
+        svg: `<path d="M 320 185 C 330 115, 380 125, 395 180 Z" fill="none" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>`
+      },
+      {
+        title: "7. Adım: Pürüzsüz Göğüs ve Yan Yüzgeç",
+        instruction: "Boynunun altından inen göğüs kavisini ve suyun içinde yön veren yan yüzgeci çiz.",
+        voice: "Gövdesinin altına suyun içinde kaymasını sağlayan yan yüzgecini çizelim.",
+        svg: `<path d="M 360 305 C 350 365, 390 380, 405 340 C 395 320, 380 305, 360 305 Z" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>`
+      },
+      {
+        title: "8. Adım: Kavisli Gövde ve Kuyruk Sapı",
+        instruction: "Sırt yüzgecinden arkaya doğru inen pürüzsüz sırt hattını ve alt karın kıvrımını tamamla.",
+        voice: "Sırtından kuyruğuna doğru inen ipeksi gövde çizgisini birleştirelim.",
+        svg: `<path d="M 320 185 C 250 250, 180 330, 130 425 M 360 305 C 280 350, 200 395, 140 435" fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>`
+      },
+      {
+        title: "9. Adım: Çift Kanatlı Kuyruk Yüzgeci (Fluke)",
+        instruction: "Kuyruk sapının ucuna hilal şeklinde açılan iki kanatlı geniş kuyruk yüzgecini çiz.",
+        voice: "Kuyruğun ucuna yunusu hızla fırlatan iki kanatlı geniş kuyruk yüzgecini çiziyoruz.",
+        svg: `<path d="M 125 415 C 80 395, 55 425, 75 460 C 105 450, 125 435, 140 435 C 135 455, 125 480, 155 485 C 170 460, 155 430, 140 420 Z" fill="none" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>`
+      },
+      {
+        title: "10. Adım: Karın Renk Ayrım Hattı, Dalgalar ve Damlalar",
+        instruction: "Gövdenin ortasına beyaz karın ayrım çizgisini, alt tarafa köpüklü deniz dalgalarını ve damlaları ekle.",
+        voice: "Karnındaki açık renk çizgisini ve altındaki coşkulu dalgaları çizelim. Mavi kılavuzları silebilirsin!",
+        svg: `<path d="M 475 270 C 440 275, 410 295, 360 325 C 270 375, 180 415, 130 425" fill="none" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/><path d="M 80 490 C 130 460, 180 520, 240 480 C 300 450, 350 510, 420 475 C 470 450, 520 490, 550 480" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/><circle cx="150" cy="440" r="10" fill="none" stroke="#0f172a" stroke-width="5"/><circle cx="450" cy="420" r="9" fill="none" stroke="#0f172a" stroke-width="5"/>`
+      },
+      {
+        title: "11. Adım: Canlı Okyanus Renkleriyle Boyama",
+        instruction: "Yunusumuzu pırıl pırıl gök mavisine, karnını kar beyazına, dalgaları ise turkuaza boya!",
+        voice: "Harika iş çıkardın Kıvanç! Şimdi sevimli yunusumuzu masmavi okyanus renkleriyle boyayabilirsin!",
+        svg: `<g opacity="0.95"><path d="M 80 490 C 130 460, 180 520, 240 480 C 300 450, 350 510, 420 475 C 470 450, 520 490, 550 480 C 550 540, 80 540, 80 490 Z" fill="#06b6d4" stroke="#0f172a" stroke-width="8"/><path d="M 125 415 C 80 395, 55 425, 75 460 C 105 450, 125 435, 140 435 C 135 455, 125 480, 155 485 C 170 460, 155 430, 140 420 Z" fill="#0284c7" stroke="#0f172a" stroke-width="9"/><path d="M 320 185 C 330 115, 380 125, 395 180 Z" fill="#0284c7" stroke="#0f172a" stroke-width="9"/><path d="M 440 210 C 490 220, 520 245, 515 270 C 490 280, 455 275, 430 265 C 350 310, 220 380, 130 425 C 220 340, 310 260, 390 215 C 405 210, 425 205, 440 210 Z" fill="#38bdf8" stroke="#0f172a" stroke-width="10"/><path d="M 475 270 C 440 275, 410 295, 360 325 C 270 375, 180 415, 130 425 C 210 370, 310 310, 420 270 Z" fill="#f0fdfa" stroke="#0f172a" stroke-width="6"/><path d="M 360 305 C 350 365, 390 380, 405 340 C 395 320, 380 305, 360 305 Z" fill="#0284c7" stroke="#0f172a" stroke-width="8"/></g>`
+      }
+    ]
+  },
+  // =========================================================================
+  // 5. UZAY ROKETİ (11 ADIM - 🟢 ÇIRAK)
+  // =========================================================================
+  {
+    id: "cirak_uzay_roketi",
+    categoryId: "uzay",
+    name: "Uzay Roketi",
+    emoji: "🚀",
+    level: 1,
+    levelName: "Çırak (Seviye 1)",
+    levelBadge: "🟢 Çırak",
+    description: "Kırmızı burun konisi, yuvarlak parlak lumbuzu, üçlü denge kanatları ve alev fışkırtan motoruyla uzaya fırlayan Uzay Roketi.",
+    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Kırmızı, Açık Mavi, Sarı, Turuncu Boya Kalemleri",
+    colors: [
+      { name: "Kutup Kırmızısı", hex: "#ef4444" },
+      { name: "Kabin Beyazı", hex: "#f8fafc" },
+      { name: "Lumbuz Camı", hex: "#38bdf8" },
+      { name: "Alev Turuncusu", hex: "#f97316" }
+    ],
+    previewSvg: `
+      <defs>
+        <linearGradient id="rocketBody" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#ffffff"/>
+          <stop offset="60%" stop-color="#e2e8f0"/>
+          <stop offset="100%" stop-color="#94a3b8"/>
+        </linearGradient>
+        <linearGradient id="rocketRed" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#f87171"/>
+          <stop offset="60%" stop-color="#ef4444"/>
+          <stop offset="100%" stop-color="#991b1b"/>
+        </linearGradient>
+        <linearGradient id="rocketWindow" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#67e8f9"/>
+          <stop offset="100%" stop-color="#0284c7"/>
+        </linearGradient>
+        <linearGradient id="rocketFlame" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#fef08a"/>
+          <stop offset="40%" stop-color="#f97316"/>
+          <stop offset="100%" stop-color="#dc2626"/>
+        </linearGradient>
+        <linearGradient id="planetGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#c084fc"/>
+          <stop offset="100%" stop-color="#6b21a8"/>
+        </linearGradient>
+      </defs>
+      <!-- Arka Plandaki Mor Gezegen -->
+      <circle cx="470" cy="140" r="45" fill="url(#planetGrad)" stroke="#0f172a" stroke-width="7"/>
+      <ellipse cx="470" cy="140" rx="65" ry="15" fill="none" stroke="#fef08a" stroke-width="6"/>
+      <!-- Parlayan Uzay Yıldızları -->
+      <polygon points="120,110 125,125 140,130 125,135 120,150 115,135 100,130 115,125" fill="#facc15"/>
+      <polygon points="460,450 463,460 473,463 463,466 460,476 457,466 447,463 457,460" fill="#facc15"/>
+      <!-- Büyük Alev Demeti -->
+      <path d="M 265 435 C 240 480, 260 540, 300 565 C 340 540, 360 480, 335 435 Z" fill="url(#rocketFlame)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M 280 435 C 270 470, 285 510, 300 525 C 315 510, 330 470, 320 435 Z" fill="#fef08a"/>
+      <!-- Sol ve Sağ Kanatlar -->
+      <path d="M 235 340 C 160 380, 150 450, 195 460 C 220 460, 235 430, 240 400 Z" fill="url(#rocketRed)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+      <path d="M 365 340 C 440 380, 450 450, 405 460 C 380 460, 365 430, 360 400 Z" fill="url(#rocketRed)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+      <!-- Gövde -->
+      <path d="M 300 90 C 250 160, 235 270, 240 435 L 360 435 C 365 270, 350 160, 300 90 Z" fill="url(#rocketBody)" stroke="#0f172a" stroke-width="10"/>
+      <!-- Kırmızı Burun Şapkası -->
+      <path d="M 300 90 C 280 120, 265 160, 258 190 L 342 190 C 335 160, 320 120, 300 90 Z" fill="url(#rocketRed)" stroke="#0f172a" stroke-width="9"/>
+      <!-- Tepe Anteni -->
+      <line x1="300" y1="90" x2="300" y2="45" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="300" cy="40" r="10" fill="#facc15" stroke="#0f172a" stroke-width="5"/>
+      <!-- Alt Motor Nozulu -->
+      <path d="M 255 435 L 265 460 L 335 460 L 345 435 Z" fill="#475569" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+      <!-- Orta Denge Kanatçığı -->
+      <rect x="294" y="360" width="12" height="75" rx="6" fill="url(#rocketRed)" stroke="#0f172a" stroke-width="5"/>
+      <!-- Büyük Lumbuz Pencere -->
+      <circle cx="300" cy="270" r="42" fill="#475569" stroke="#0f172a" stroke-width="8"/>
+      <circle cx="300" cy="270" r="30" fill="url(#rocketWindow)" stroke="#0f172a" stroke-width="5"/>
+      <circle cx="290" cy="260" r="8" fill="#ffffff" opacity="0.8"/>
+      <!-- Perçin Vidaları -->
+      <circle cx="270" cy="270" r="3" fill="#ffffff"/>
+      <circle cx="330" cy="270" r="3" fill="#ffffff"/>
+      <circle cx="300" cy="240" r="3" fill="#ffffff"/>
+      <circle cx="300" cy="300" r="3" fill="#ffffff"/>
+    `,
+    steps: [
+      {
+        title: "1. Adım: Füze Gövdesi Kılavuzu (Mavi)",
+        instruction: "Kalemini bastırmadan ortada uzun mermi şeklinde dik bir gövde kılavuzu çiz.",
+        voice: "Önce uzaya fırlayacak roketimiz için mermi şeklinde dik bir gövde kılavuzu çizelim.",
+        svg: `<path d="M 300 90 C 250 160, 235 270, 240 435 L 360 435 C 365 270, 350 160, 300 90 Z" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
+      },
+      {
+        title: "2. Adım: Kanat ve Alev Kılavuzları (Mavi)",
+        instruction: "Gövdenin iki yanına üçgen kanat kılavuzlarını ve altına alev üçgenini hafifçe ekle.",
+        voice: "Şimdi iki yanındaki kanatların ve alttaki büyük roket alevinin kılavuzunu hafifçe çiziyoruz.",
+        svg: `<path d="M 235 340 L 160 450 L 240 435" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/><path d="M 365 340 L 440 450 L 360 435" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/><path d="M 265 435 L 300 565 L 335 435" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
+      },
+      {
+        title: "3. Adım: Mermi Burun ve Aerodinamik Gövde Konturu",
+        instruction: "Mavi kılavuzun üzerinden geçerek yukarı doğru sivrilen aerodinamik gövde hatlarını çiz.",
+        voice: "Mavi çizginin üzerinden geçerek roketimizin pürüzsüz gövde çizgilerini çizelim.",
+        svg: `<path d="M 300 90 C 250 160, 235 270, 240 435 M 300 90 C 350 160, 365 270, 360 435" fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>`
+      },
+      {
+        title: "4. Adım: İletişim Anteni ve Burun Şapkası Çizgisi",
+        instruction: "Roketin tepesine dik bir anten çubuğu, ucuna sinyal topu ve burnuna yatay ayrım yayını çiz.",
+        voice: "Roketin tepesine uzayla haberleşen antenini ve burun şapkasının ayrım çizgisini çiziyoruz.",
+        svg: `<line x1="300" y1="90" x2="300" y2="45" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/><circle cx="300" cy="40" r="10" fill="none" stroke="#0f172a" stroke-width="6"/><path d="M 258 190 C 285 200, 315 200, 342 190" fill="none" stroke="#0f172a" stroke-width="8" stroke-linecap="round"/>`
+      },
+      {
+        title: "5. Adım: Büyük Dairesel Lumbuz Pencere",
+        instruction: "Gövdenin tam ortasına astronotun dışarıyı izlediği çift halkalı büyük daire pencereyi çiz.",
+        voice: "Astronotun yıldızları izleyeceği kocaman dairesel lumbuz penceresini çizelim.",
+        svg: `<circle cx="300" cy="270" r="42" fill="none" stroke="#0f172a" stroke-width="9"/><circle cx="300" cy="270" r="30" fill="none" stroke="#0f172a" stroke-width="7"/><circle cx="290" cy="260" r="8" fill="#0f172a"/>`
+      },
+      {
+        title: "6. Adım: Pencere Perçinleri ve Gövde Kuşağı",
+        instruction: "Pencere çerçevesine 4 adet sağlam vida noktası ve gövdenin altına yatay kuşak çizgisini ekle.",
+        voice: "Pencerenin sağlam montaj vidalarını ve roketin alt gövde kuşağını çiziyoruz.",
+        svg: `<circle cx="270" cy="270" r="3.5" fill="#0f172a"/><circle cx="330" cy="270" r="3.5" fill="#0f172a"/><circle cx="300" cy="240" r="3.5" fill="#0f172a"/><circle cx="300" cy="300" r="3.5" fill="#0f172a"/><line x1="240" y1="360" x2="360" y2="360" stroke="#0f172a" stroke-width="6"/>`
+      },
+      {
+        title: "7. Adım: Sol ve Sağ Dengeleme Kanatları",
+        instruction: "Roketin iki yanından dışarı açılan kavisli büyük kırmızı kanatları çiz.",
+        voice: "Roketin havada dengede kalmasını sağlayan sol ve sağ büyük kanatlarını çizelim.",
+        svg: `<path d="M 235 340 C 160 380, 150 450, 195 460 C 220 460, 235 430, 240 400" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/><path d="M 365 340 C 440 380, 450 450, 405 460 C 380 460, 365 430, 360 400" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>`
+      },
+      {
+        title: "8. Adım: Motor Nozulu ve Orta Denge Kanatçığı",
+        instruction: "Gövdenin alt tabanına motor nozulunu ve gövdenin tam ortasına dik küçük kanatçığı çiz.",
+        voice: "Altındaki roket motoru çıkışını ve ortadaki dikey denge kanatçığını çiziyoruz.",
+        svg: `<path d="M 255 435 L 265 460 L 335 460 L 345 435 Z" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/><rect x="294" y="360" width="12" height="75" rx="6" fill="none" stroke="#0f172a" stroke-width="6"/>`
+      },
+      {
+        title: "9. Adım: Kükreyen Roket Alevi",
+        instruction: "Motorun altından fışkıran dalgalı büyük alev demetini ve içindeki sıcak çekirdek alevini çiz.",
+        voice: "Roketi gökyüzüne fırlatan o devasa kükreyen ateş demetini çizelim.",
+        svg: `<path d="M 265 435 C 240 480, 260 540, 300 565 C 340 540, 360 480, 335 435" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/><path d="M 280 435 C 270 470, 285 510, 300 525 C 315 510, 330 470, 320 435" fill="none" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>`
+      },
+      {
+        title: "10. Adım: Halkalı Gezegen ve Parlayan Yıldızlar",
+        instruction: "Uzay boşluğuna halkalı bir gezegen ve parlayan dört köşeli yıldızlar ekle.",
+        voice: "Arka plana halkalı bir uzay gezegeni ve parlayan yıldızlar ekleyelim. Mavi çizgileri silebilirsin!",
+        svg: `<circle cx="470" cy="140" r="45" fill="none" stroke="#0f172a" stroke-width="7"/><ellipse cx="470" cy="140" rx="65" ry="15" fill="none" stroke="#0f172a" stroke-width="6"/><polygon points="120,110 125,125 140,130 125,135 120,150 115,135 100,130 115,125" fill="none" stroke="#0f172a" stroke-width="4"/><polygon points="460,450 463,460 473,463 463,466 460,476 457,466 447,463 457,460" fill="none" stroke="#0f172a" stroke-width="3"/>`
+      },
+      {
+        title: "11. Adım: Canlı Uzay Renkleriyle Boyama",
+        instruction: "Roketi beyaz, kırmızı ve sarıya, alevleri turuncuya ve gezegeni mora boyayarak tamamla!",
+        voice: "Uçuşa hazır Kıvanç! Şimdi roketini canlı kırmızı, beyaz, sarı ve mor renklerle boyayabilirsin!",
+        svg: `<g opacity="0.95"><circle cx="470" cy="140" r="45" fill="#c084fc" stroke="#0f172a" stroke-width="7"/><path d="M 265 435 C 240 480, 260 540, 300 565 C 340 540, 360 480, 335 435 Z" fill="#f97316" stroke="#0f172a" stroke-width="8"/><path d="M 280 435 C 270 470, 285 510, 300 525 C 315 510, 330 470, 320 435 Z" fill="#fef08a"/><path d="M 235 340 C 160 380, 150 450, 195 460 C 220 460, 235 430, 240 400 Z" fill="#ef4444" stroke="#0f172a" stroke-width="9"/><path d="M 365 340 C 440 380, 450 450, 405 460 C 380 460, 365 430, 360 400 Z" fill="#ef4444" stroke="#0f172a" stroke-width="9"/><path d="M 300 90 C 250 160, 235 270, 240 435 L 360 435 C 365 270, 350 160, 300 90 Z" fill="#f8fafc" stroke="#0f172a" stroke-width="10"/><path d="M 300 90 C 280 120, 265 160, 258 190 L 342 190 C 335 160, 320 120, 300 90 Z" fill="#ef4444" stroke="#0f172a" stroke-width="9"/><circle cx="300" cy="270" r="42" fill="#475569" stroke="#0f172a" stroke-width="8"/><circle cx="300" cy="270" r="30" fill="#38bdf8" stroke="#0f172a" stroke-width="5"/></g>`
+      }
+    ]
+  },
+  // =========================================================================
+  // 6. GÖLGE NİNJA (11 ADIM - 🟢 ÇIRAK)
+  // =========================================================================
+  {
+    id: "cirak_golge_ninja",
+    categoryId: "kahramanlar",
+    name: "Gölge Ninja",
+    emoji: "🥷",
+    level: 1,
+    levelName: "Çırak (Seviye 1)",
+    levelBadge: "🟢 Çırak",
+    description: "Alın koruyucu metal plakası, kararlı anime gözleri, sırttaki katana kılıcı, uçuşan kırmızı bandanası ve duman bulutuyla sevimli Gölge Ninja.",
+    materials: "1 Adet Kağıt, Kurşun Kalem, Silgi ve Gece Siyahı, Kırmızı, Gümüş Gri, Sarı Boya Kalemleri",
+    colors: [
+      { name: "Gölge Siyahı", hex: "#0f172a" },
+      { name: "Savaşçı Kırmızısı", hex: "#ef4444" },
+      { name: "Alınlık Grisi", hex: "#94a3b8" },
+      { name: "Ten Rengi", hex: "#fed7aa" }
+    ],
+    previewSvg: `
+      <defs>
+        <linearGradient id="ninjaSuit" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#334155"/>
+          <stop offset="60%" stop-color="#1e293b"/>
+          <stop offset="100%" stop-color="#0f172a"/>
+        </linearGradient>
+        <linearGradient id="ninjaRed" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#f87171"/>
+          <stop offset="100%" stop-color="#b91c1c"/>
+        </linearGradient>
+        <linearGradient id="ninjaPlate" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#f1f5f9"/>
+          <stop offset="100%" stop-color="#64748b"/>
+        </linearGradient>
+        <linearGradient id="ninjaSmoke" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#cbd5e1"/>
+          <stop offset="100%" stop-color="#475569"/>
+        </linearGradient>
+      </defs>
+      <!-- Sis/Duman Kaidesi -->
+      <path d="M 120 515 C 160 480, 220 500, 260 485 C 300 470, 360 480, 400 485 C 440 495, 480 480, 500 515 C 450 550, 160 550, 120 515 Z" fill="url(#ninjaSmoke)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+      <!-- Sırttaki Katana Kılıcı Kını ve Kabzası -->
+      <path d="M 370 190 L 450 110 L 465 125 L 385 205 Z" fill="#94a3b8" stroke="#0f172a" stroke-width="7"/>
+      <rect x="445" y="105" width="25" height="10" rx="3" fill="#ca8a04" stroke="#0f172a" stroke-width="4" transform="rotate(-45 445 105)"/>
+      <path d="M 455 100 L 490 65 L 505 80 L 470 115 Z" fill="url(#ninjaRed)" stroke="#0f172a" stroke-width="7"/>
+      <!-- Uçuşan Kırmızı Kafa Bandı Bağcıkları -->
+      <path d="M 230 170 C 180 160, 140 210, 95 200 C 130 225, 170 215, 230 190 Z" fill="url(#ninjaRed)" stroke="#0f172a" stroke-width="7"/>
+      <path d="M 230 180 C 170 190, 130 250, 85 250 C 120 270, 160 250, 230 205 Z" fill="url(#ninjaRed)" stroke="#0f172a" stroke-width="7"/>
+      <!-- Gövde ve Giysi -->
+      <path d="M 250 280 C 230 330, 220 400, 240 485 L 360 485 C 380 400, 370 330, 350 280 Z" fill="url(#ninjaSuit)" stroke="#0f172a" stroke-width="10"/>
+      <!-- Kırmızı Bel Kuşağı -->
+      <rect x="235" y="375" width="130" height="24" rx="6" fill="url(#ninjaRed)" stroke="#0f172a" stroke-width="7"/>
+      <!-- Sol ve Sağ Bacaklar -->
+      <line x1="300" y1="400" x2="300" y2="485" stroke="#0f172a" stroke-width="8"/>
+      <!-- Kollar ve Shuriken (Yıldız) Tutan Eller -->
+      <path d="M 240 290 L 195 345 L 230 365 L 260 320" fill="url(#ninjaSuit)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M 360 290 L 405 345 L 370 365 L 340 320" fill="url(#ninjaSuit)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+      <circle cx="195" cy="355" r="12" fill="#fed7aa" stroke="#0f172a" stroke-width="5"/>
+      <circle cx="405" cy="355" r="12" fill="#fed7aa" stroke="#0f172a" stroke-width="5"/>
+      <!-- Eldeki Shuriken Yıldızı -->
+      <polygon points="405,335 410,350 425,355 410,360 405,375 400,360 385,355 400,350" fill="#94a3b8" stroke="#0f172a" stroke-width="4"/>
+      <!-- Baş ve Maske -->
+      <ellipse cx="300" cy="180" rx="75" ry="70" fill="url(#ninjaSuit)" stroke="#0f172a" stroke-width="10"/>
+      <!-- Yüz Açıklığı (Ten Rengi) -->
+      <path d="M 245 165 C 245 155, 355 155, 355 165 C 355 210, 245 210, 245 165 Z" fill="#fed7aa" stroke="#0f172a" stroke-width="7"/>
+      <!-- Alınlık Metal Plakası -->
+      <rect x="240" y="130" width="120" height="28" rx="6" fill="url(#ninjaPlate)" stroke="#0f172a" stroke-width="7"/>
+      <circle cx="248" cy="144" r="3" fill="#0f172a"/>
+      <circle cx="352" cy="144" r="3" fill="#0f172a"/>
+      <!-- Alınlık Sembolü (Ninja Yıldızı) -->
+      <polygon points="300,136 303,142 309,144 303,146 300,152 297,146 291,144 297,142" fill="#0f172a"/>
+      <!-- Kararlı Anime Gözleri -->
+      <path d="M 260 175 Q 275 165, 290 178" stroke="#0f172a" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <circle cx="275" cy="182" r="9" fill="#0f172a"/>
+      <circle cx="272" cy="179" r="3" fill="#ffffff"/>
+      <path d="M 340 175 Q 325 165, 310 178" stroke="#0f172a" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <circle cx="325" cy="182" r="9" fill="#0f172a"/>
+      <circle cx="322" cy="179" r="3" fill="#ffffff"/>
+    `,
+    steps: [
+      {
+        title: "1. Adım: Baş ve Gövde Kılavuz Ovali (Mavi)",
+        instruction: "Kalemini bastırmadan üstte büyük yuvarlak kafa dairesi, altta ise atletik gövde kılavuzunu çiz.",
+        voice: "Önce kalemini hiç bastırmadan ninjamızın yuvarlak kafasını ve altındaki gövde kılavuzunu çizelim.",
+        svg: `<circle cx="300" cy="180" r="75" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/><path d="M 250 280 L 235 485 L 365 485 L 350 280 Z" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
+      },
+      {
+        title: "2. Adım: Kılıç ve Bandana Kılavuz Hatları (Mavi)",
+        instruction: "Sırttan çapraz uzanan kılıç çizgisini ve kafanın solundan geriye uçuşan bandana yayını hafifçe ekle.",
+        voice: "Şimdi sırtındaki çapraz kılıç hattını ve rüzgarda uçuşan bandanasını hafifçe çiziyoruz.",
+        svg: `<line x1="370" y1="190" x2="505" y2="70" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/><path d="M 230 170 C 150 160, 100 240, 85 250" fill="none" stroke="#3b82f6" stroke-width="6" stroke-dasharray="10 8"/>`
+      },
+      {
+        title: "3. Adım: Maskeli Kafa ve Yüz Açıklığı Konturu",
+        instruction: "Mavi kafa kılavuzunun üzerinden geçerek yuvarlak başı ve ortadaki yatay yüz açıklığını çiz.",
+        voice: "Kafa kılavuzunun üzerinden geçerek ninjanın maskesini ve göz açıklığını çizelim.",
+        svg: `<ellipse cx="300" cy="180" rx="75" ry="70" fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/><path d="M 245 165 C 245 155, 355 155, 355 165 C 355 210, 245 210, 245 165 Z" fill="none" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/>`
+      },
+      {
+        title: "4. Adım: Alın Koruyucu Metal Plaka",
+        instruction: "Alnın üstüne metal koruyucu plakayı, köşelerindeki perçinleri ve ortadaki ninja sembolünü çiz.",
+        voice: "Alnına sağlam metal koruyucusunu, vidalarını ve ninja amblemini çiziyoruz.",
+        svg: `<rect x="240" y="130" width="120" height="28" rx="6" fill="none" stroke="#0f172a" stroke-width="8"/><circle cx="248" cy="144" r="3" fill="#0f172a"/><circle cx="352" cy="144" r="3" fill="#0f172a"/><polygon points="300,136 303,142 309,144 303,146 300,152 297,146 291,144 297,142" fill="#0f172a"/>`
+      },
+      {
+        title: "5. Adım: Kararlı Anime Gözleri",
+        instruction: "Yüz açıklığına iki kararlı, keskin anime gözü, koyu gözbebekleri ve parlayan beyaz ışıkları çiz.",
+        voice: "Şimdi ninjamızın hedefe odaklanan kararlı ve parlak anime gözlerini çizelim.",
+        svg: `<path d="M 260 175 Q 275 165, 290 178" stroke="#0f172a" stroke-width="6" stroke-linecap="round" fill="none"/><circle cx="275" cy="182" r="9" fill="#0f172a"/><circle cx="272" cy="179" r="3" fill="#ffffff"/><path d="M 340 175 Q 325 165, 310 178" stroke="#0f172a" stroke-width="6" stroke-linecap="round" fill="none"/><circle cx="325" cy="182" r="9" fill="#0f172a"/><circle cx="322" cy="179" r="3" fill="#ffffff"/>`
+      },
+      {
+        title: "6. Adım: Uçuşan Kırmızı Kafa Bandı Kuyrukları",
+        instruction: "Kafanın sol tarafından rüzgarla arkaya doğru dalgalanan iki kırmızı bandana şeridini çiz.",
+        voice: "Başının solundan rüzgarla uçuşan o harika kırmızı bandana kurdelelerini çiziyoruz.",
+        svg: `<path d="M 230 170 C 180 160, 140 210, 95 200 C 130 225, 170 215, 230 190 Z" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/><path d="M 230 180 C 170 190, 130 250, 85 250 C 120 270, 160 250, 230 205 Z" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>`
+      },
+      {
+        title: "7. Adım: Gövde Yeleği ve Kırmızı Bel Kuşağı",
+        instruction: "Boyundan aşağıya inen ninja cübbesini ve beline bağlanan geniş kırmızı kuşağı çiz.",
+        voice: "Boyundan aşağıya inen ninja yeleğini ve belindeki kırmızı savaş kuşağını çizelim.",
+        svg: `<path d="M 250 280 C 230 330, 220 400, 240 485 L 360 485 C 380 400, 370 330, 350 280 Z" fill="none" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/><rect x="235" y="375" width="130" height="24" rx="6" fill="none" stroke="#0f172a" stroke-width="8"/>`
+      },
+      {
+        title: "8. Adım: Ninja Kolları, Eller ve Shuriken (Fırlatma Yıldızı)",
+        instruction: "İki yana bükülü kolları, yumrukları ve sağ elindeki sivri 4 köşeli ninja yıldızını çiz.",
+        voice: "Kollarını, ellerini ve elindeki sivri ninja yıldızını çiziyoruz.",
+        svg: `<path d="M 240 290 L 195 345 L 230 365 L 260 320" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/><path d="M 360 290 L 405 345 L 370 365 L 340 320" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/><circle cx="195" cy="355" r="12" fill="none" stroke="#0f172a" stroke-width="6"/><circle cx="405" cy="355" r="12" fill="none" stroke="#0f172a" stroke-width="6"/><polygon points="405,335 410,350 425,355 410,360 405,375 400,360 385,355 400,350" fill="none" stroke="#0f172a" stroke-width="5" stroke-linejoin="round"/>`
+      },
+      {
+        title: "9. Adım: Sırttaki Katana Kılıcı ve Kabzası",
+        instruction: "Omzun arkasından yukarı uzanan kılıç kınını, el siperliğini ve örgülü kabzayı çiz.",
+        voice: "Sırtında taşıdığı efsanevi katana kılıcının kınını ve kabzasını çizelim.",
+        svg: `<path d="M 370 190 L 450 110 L 465 125 L 385 205 Z" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/><rect x="445" y="105" width="25" height="10" rx="3" fill="none" stroke="#0f172a" stroke-width="5" transform="rotate(-45 445 105)"/><path d="M 455 100 L 490 65 L 505 80 L 470 115 Z" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>`
+      },
+      {
+        title: "10. Adım: Bacak Çizgisi ve Gizemli Duman Bulutu",
+        instruction: "Bacakların ortasına dikey ayrım çizgisini ve ninjanın bastığı kıvrımlı sis dumanını ekle.",
+        voice: "Bacak ayrımını ve altındaki gizemli duman bulutunu çiziyoruz. Mavi kılavuzları silebilirsin!",
+        svg: `<line x1="300" y1="400" x2="300" y2="485" stroke="#0f172a" stroke-width="8" stroke-linecap="round"/><path d="M 120 515 C 160 480, 220 500, 260 485 C 300 470, 360 480, 400 485 C 440 495, 480 480, 500 515 C 450 550, 160 550, 120 515" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>`
+      },
+      {
+        title: "11. Adım: Canlı Gölge Ninja Renkleri",
+        instruction: "Kostümü gece siyahına, bandanayı ve kuşağı canlı kırmızıya, alınlığı ise parlak griye boya!",
+        voice: "Görevin tamamlandı Kıvanç! Şimdi ninjamızı asil siyah, kırmızı ve gri renklerle boyayabilirsin!",
+        svg: `<g opacity="0.95"><path d="M 120 515 C 160 480, 220 500, 260 485 C 300 470, 360 480, 400 485 C 440 495, 480 480, 500 515 C 450 550, 160 550, 120 515 Z" fill="#94a3b8" stroke="#0f172a" stroke-width="8"/><path d="M 230 170 C 180 160, 140 210, 95 200 C 130 225, 170 215, 230 190 Z" fill="#ef4444" stroke="#0f172a" stroke-width="7"/><path d="M 250 280 C 230 330, 220 400, 240 485 L 360 485 C 380 400, 370 330, 350 280 Z" fill="#1e293b" stroke="#0f172a" stroke-width="10"/><rect x="235" y="375" width="130" height="24" rx="6" fill="#ef4444" stroke="#0f172a" stroke-width="7"/><ellipse cx="300" cy="180" rx="75" ry="70" fill="#1e293b" stroke="#0f172a" stroke-width="10"/><path d="M 245 165 C 245 155, 355 155, 355 165 C 355 210, 245 210, 245 165 Z" fill="#fed7aa" stroke="#0f172a" stroke-width="7"/><rect x="240" y="130" width="120" height="28" rx="6" fill="#94a3b8" stroke="#0f172a" stroke-width="7"/></g>`
       }
     ]
   }

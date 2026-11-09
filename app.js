@@ -721,20 +721,26 @@ class KivancDrawingApp {
     this.instructionTitle.textContent = step.title;
     this.instructionDesc.textContent = step.instruction;
 
-    // Önceki ve şimdiki adım (Resim veya SVG desteği)
+    // Önceki ve şimdiki adım (Resim veya Gelişmiş SVG desteği)
     if (step.image) {
       this.layerPrevious.innerHTML = '';
       this.layerCurrent.innerHTML = `
         <image href="${step.image}" x="0" y="0" width="600" height="600" preserveAspectRatio="xMidYMid meet" />
       `;
+      this.magicPencil.classList.remove('visible');
     } else {
-      // Eski SVG desteği
+      // SVG desteği: Mavi kılavuz çizgilerini (stroke="#3b82f6") sonraki adımlarda layerPrevious içine ekleme (çocuk silmiş gibi olsun)
       let prevSvg = '';
       for (let i = 0; i < this.currentStep; i++) {
-        prevSvg += this.currentDrawing.steps[i].svg;
+        prevSvg += (this.currentDrawing.steps[i].svg || '');
       }
-      this.layerPrevious.innerHTML = `<g class="svg-stroke-prev">${prevSvg}</g>`;
-      this.layerCurrent.innerHTML = `<g class="svg-stroke-current">${step.svg}</g>`;
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = `<svg>${prevSvg}</svg>`;
+      tempDiv.querySelectorAll('[stroke="#3b82f6"]').forEach(el => el.remove());
+      const cleanPrevSvg = tempDiv.querySelector('svg').innerHTML;
+
+      this.layerPrevious.innerHTML = `<g class="svg-stroke-prev">${cleanPrevSvg}</g>`;
+      this.layerCurrent.innerHTML = `<g class="svg-stroke-current">${step.svg || ''}</g>`;
     }
 
     // Boyama katmanı sıfırla
@@ -755,7 +761,9 @@ class KivancDrawingApp {
     this.speak(step.voice || step.instruction);
 
     // Gerçekçi Kalem Çizim Animasyonu
-    if (shouldAnimate) {
+    if (step.image) {
+      this.magicPencil.classList.remove('visible');
+    } else if (shouldAnimate) {
       this.startStrokeAnimation();
     } else {
       this.magicPencil.classList.remove('visible');
