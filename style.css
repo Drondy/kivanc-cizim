@@ -39,6 +39,15 @@ body {
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
+/* GENEL GİZLEME SINIFI — ASLA EZİLEMEZ */
+.hidden,
+.category-folders-grid.hidden,
+.drawing-grid.hidden,
+.breadcrumb-bar.hidden,
+.category-pills-bar.hidden {
+  display: none !important;
+}
+
 /* Arka plan süsleri */
 .bg-decorations {
   position: fixed;

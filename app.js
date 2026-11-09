@@ -492,9 +492,10 @@ class KivancDrawingApp {
       this.categoryBreadcrumbBar.classList.add('hidden');
       this.categoryFoldersGrid.classList.remove('hidden');
       this.drawingGrid.classList.add('hidden');
+      if (this.categoryPillsBar) this.categoryPillsBar.classList.add('hidden');
       this.renderCategoryFolders();
     } else {
-      // Seçili Kategori Görünümü
+      // Seçili Kategori Görünümü (Yeni Sayfa Deneyimi)
       const cat = CATEGORIES_DATA.find(c => c.id === this.activeCategory);
       if (cat) {
         this.activeCatEmoji.textContent = cat.emoji;
@@ -504,6 +505,7 @@ class KivancDrawingApp {
       this.categoryFoldersGrid.classList.add('hidden');
       this.categoryBreadcrumbBar.classList.remove('hidden');
       this.drawingGrid.classList.remove('hidden');
+      if (this.categoryPillsBar) this.categoryPillsBar.classList.remove('hidden');
 
       let list = DRAWINGS_DATA.filter(d => d.categoryId === this.activeCategory);
       if (this.activeLevel !== 'all') {
