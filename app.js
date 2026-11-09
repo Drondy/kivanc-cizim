@@ -484,18 +484,15 @@ class KivancDrawingApp {
   renderView() {
     this.updateCategoryPills();
 
+    // Sayfayı her görünüm değişiminde en tepeye al
+    window.scrollTo({ top: 0, behavior: 'instant' });
+
     if (this.activeCategory === 'all') {
-      // Tüm Çizimler Görünümü
+      // Tüm Dünyalar (Ana Sayfa Görünümü): Sadece Kategori Dünyaları gösterilir
       this.categoryBreadcrumbBar.classList.add('hidden');
       this.categoryFoldersGrid.classList.remove('hidden');
-      this.drawingGrid.classList.remove('hidden');
+      this.drawingGrid.classList.add('hidden');
       this.renderCategoryFolders();
-
-      let list = DRAWINGS_DATA;
-      if (this.activeLevel !== 'all') {
-        list = list.filter(d => String(d.level) === this.activeLevel);
-      }
-      this.renderDrawingsListToGrid(list);
     } else {
       // Seçili Kategori Görünümü
       const cat = CATEGORIES_DATA.find(c => c.id === this.activeCategory);
