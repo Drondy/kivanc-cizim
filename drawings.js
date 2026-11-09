@@ -6,87 +6,16 @@
 // 3 = 🔴 USTA SANATÇI (Konsept sanat kalitesi, dinamik kompozisyon, profesyonel gölgelendirme ve zengin doku)
 
 const CATEGORIES_DATA = [
-  { id: "all", name: "Tüm Çizimler", emoji: "✨", count: 24 },
+  { id: "all", name: "Tüm Çizimler", emoji: "✨", count: 23 },
   { id: "hayvanlar", name: "Vahşi & Sevimli Hayvanlar", emoji: "🦁", count: 4 },
   { id: "arabalar", name: "Süper Arabalar & Taşıtlar", emoji: "🏎️", count: 3 },
-  { id: "dinozorlar", name: "Dinozorlar & Ejderhalar", emoji: "🦖", count: 11 },
+  { id: "dinozorlar", name: "Dinozorlar & Ejderhalar", emoji: "🦖", count: 10 },
   { id: "deniz", name: "Derin Deniz Canlıları", emoji: "🌊", count: 2 },
   { id: "uzay", name: "Uzay Gemileri & Mecha", emoji: "🚀", count: 2 },
   { id: "kahramanlar", name: "Anime & Kahramanlar", emoji: "🥷", count: 2 }
 ];
 
 const DRAWINGS_DATA = [
-  // =========================================================================
-  // PILOT GERCEK RESIMLI DERS: ATES EJDERHASI (SEVIYE 1: CIRAK)
-  // =========================================================================
-  {
-    id: "ates_ejderhasi_gercek",
-    categoryId: "dinozorlar",
-    name: "Ateş Ejderhası",
-    emoji: "🐲",
-    level: 1,
-    levelName: "Çırak (Seviye 1)",
-    levelBadge: "🟢 Çırak",
-    description: "Adım adım gerçek çizim dersleriyle sevimli Ateş Ejderhası.",
-    materials: "Kağıt, Kurşun Kalem, Silgi ve Kırmızı, Turuncu, Sarı Boyalar",
-    colors: [
-      { name: "Ateş Kırmızısı", hex: "#ef4444" },
-      { name: "Kanat Turuncusu", hex: "#f97316" },
-      { name: "Altın Sarısı", hex: "#facc15" }
-    ],
-    previewImage: "img/ejderha_final.jpg",
-    previewSvg: `<image href="img/ejderha_final.jpg" x="0" y="0" width="600" height="600"/>`,
-    steps: [
-      {
-        title: "1. Adım: Kafa ve Gövde Kılavuzu",
-        instruction: "Kalemini hiç bastırmadan kafa için bir yumurta, gövde için bir armut ve kuyruk çizgisi çiz.",
-        voice: "Önce kalemini hiç bastırmadan kafa için bir yumurta, altına gövde için tombul bir armut ve kuyruk çizgisi çizelim.",
-        image: "img/ejderha_1.jpg"
-      },
-      {
-        title: "2. Adım: Kafa, Ağız ve Boynuzlar",
-        instruction: "Mavi kafa yuvarlağının üzerinden geçerek burnunu, gülümseyen ağzını ve boynuzlarını çiz.",
-        voice: "Şimdi mavi kafa yuvarlağının üzerinden geçerek ejderhamızın sevimli burnunu, ağzını ve boynuzlarını çizelim.",
-        image: "img/ejderha_2.jpg"
-      },
-      {
-        title: "3. Adım: Büyük Parlak Gözler",
-        instruction: "Kocaman parlak gözünü, burun deliğini ve boynuz halkalarını ekle.",
-        voice: "Kocaman parlak bir göz çizelim, içine ışık yuvarlakları bırakmayı unutma!",
-        image: "img/ejderha_3.jpg"
-      },
-      {
-        title: "4. Adım: Boyun ve Ön Bacaklar",
-        instruction: "Boynundan aşağı inerek göğsünü ve yere sağlam basan iki ön bacağını çiz.",
-        voice: "Boynundan aşağı doğru inerek göğsünü ve yere basan iki sevimli ön bacağını çizelim.",
-        image: "img/ejderha_4.jpg"
-      },
-      {
-        title: "5. Adım: Arka Bacak ve Ok Uçlu Kuyruk",
-        instruction: "Oturur pozisyondaki arka bacağını, sırt dikenlerini ve ok uçlu kuyruğunu tamamla.",
-        voice: "Oturur pozisyondaki arka bacağını ve üçgen ok uçlu kıvrık kuyruğunu tamamlayalım.",
-        image: "img/ejderha_5.jpg"
-      },
-      {
-        title: "6. Adım: Açılan Kanatlar",
-        instruction: "Sırtından yukarı doğru büyük bir kanat aç ve içindeki parmak çizgilerini birleştir.",
-        voice: "Sırtından yukarı doğru büyük bir kanat açalım. Artık mavi kılavuz çizgileri silebilirsin!",
-        image: "img/ejderha_6.jpg"
-      },
-      {
-        title: "7. Adım: Karın Zırhı, Pullar ve Kaya",
-        instruction: "Karnındaki yatay çizgileri, omuzlarındaki benekleri ve altındaki kayayı çiz.",
-        voice: "Karnına yatay zırh çizgilerini, beneklerini ve altındaki kayayı ekleyelim.",
-        image: "img/ejderha_7.jpg"
-      },
-      {
-        title: "8. Adım: Renklendirme Zamanı!",
-        instruction: "Gövdesini kırmızıya, karnını ve kanatlarını sarı ve turuncuya boya!",
-        voice: "Harika iş çıkardın Kıvanç! Şimdi ejderhamızı kırmızı, sarı ve turuncuya boyayabilirsin!",
-        image: "img/ejderha_final.jpg"
-      }
-    ]
-  },
 
   // =========================================================================
   // PAKET 1: DİNOZORLAR & EJDERHALAR (5 ADET 🟢 ÇIRAK DERSİ)
