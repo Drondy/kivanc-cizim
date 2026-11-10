@@ -672,10 +672,11 @@ class KivancDrawingApp {
 
       const card = document.createElement('button');
       card.type = 'button';
-      card.className = 'category-folder-card';
+      card.className = `category-folder-card ${cat.id === 'sonic' ? 'cat-card-sonic' : ''}`;
       card.setAttribute('role', 'button');
       card.setAttribute('tabindex', '0');
       card.innerHTML = `
+        ${cat.id === 'sonic' ? '<span class="cat-new-pill">⚡ ÖZEL DÜNYA</span>' : ''}
         <span class="cat-card-icon">${cat.emoji}</span>
         <h3 class="cat-card-title">${cat.name}</h3>
         <p class="cat-card-desc">${cat.desc || 'Keşfetmeye hazır çizim dünyası'}</p>

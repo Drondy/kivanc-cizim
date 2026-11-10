@@ -1710,3 +1710,31 @@ body {
   background: #10b981;
   color: #ffffff;
 }
+
+
+/* =========================================================================
+   KİRPİ SONİC ÖZEL KATEGORİ VURGUSU
+   ========================================================================= */
+.category-folder-card.cat-card-sonic {
+  border-color: #2563eb;
+  background: linear-gradient(180deg, #eff6ff 0%, #ffffff 55%);
+  box-shadow: 0 12px 30px -6px rgba(37, 99, 235, 0.25);
+}
+
+.category-folder-card.cat-card-sonic::before {
+  background: linear-gradient(90deg, #2563eb, #38bdf8, #facc15, #ef4444);
+}
+
+.cat-new-pill {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #facc15;
+  font-size: 11px;
+  font-weight: 900;
+  padding: 4px 10px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(37, 99, 235, 0.35);
+  letter-spacing: 0.4px;
+}
