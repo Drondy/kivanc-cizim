@@ -1738,3 +1738,30 @@ body {
   box-shadow: 0 3px 10px rgba(37, 99, 235, 0.35);
   letter-spacing: 0.4px;
 }
+
+.cat-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 82px;
+}
+
+.cat-card-icon svg {
+  width: 82px;
+  height: 82px;
+  display: block;
+}
+
+.active-cat-emoji svg {
+  width: 38px;
+  height: 38px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cat-pill-emoji svg {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+}

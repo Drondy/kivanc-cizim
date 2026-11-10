@@ -558,7 +558,7 @@ class KivancDrawingApp {
       // Seçili Kategori Görünümü (Yeni Sayfa Deneyimi)
       const cat = CATEGORIES_DATA.find(c => c.id === this.activeCategory);
       if (cat) {
-        this.activeCatEmoji.textContent = cat.emoji;
+        this.activeCatEmoji.innerHTML = cat.iconSvg || cat.emoji;
         this.activeCatTitle.textContent = cat.name;
       }
 
@@ -677,7 +677,7 @@ class KivancDrawingApp {
       card.setAttribute('tabindex', '0');
       card.innerHTML = `
         ${cat.id === 'sonic' ? '<span class="cat-new-pill">⚡ ÖZEL DÜNYA</span>' : ''}
-        <span class="cat-card-icon">${cat.emoji}</span>
+        <span class="cat-card-icon">${cat.iconSvg || cat.emoji}</span>
         <h3 class="cat-card-title">${cat.name}</h3>
         <p class="cat-card-desc">${cat.desc || 'Keşfetmeye hazır çizim dünyası'}</p>
         <div class="cat-card-footer">
