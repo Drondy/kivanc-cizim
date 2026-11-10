@@ -14,15 +14,15 @@ const CATEGORIES_DATA = [
     "id": "all",
     "name": "Tüm Dünyalar",
     "emoji": "🎨",
-    "count": 31
+    "count": 41
   },
   {
     "id": "sonic",
     "name": "Kirpi Sonic Dünyası",
     "emoji": "💨",
     "iconSvg": `<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="catSRing" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#fef08a"/><stop offset="50%" stop-color="#facc15"/><stop offset="100%" stop-color="#d97706"/></linearGradient><linearGradient id="catSBlue" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#60a5fa"/><stop offset="45%" stop-color="#2563eb"/><stop offset="100%" stop-color="#1e40af"/></linearGradient><linearGradient id="catSPeach" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ffedd5"/><stop offset="100%" stop-color="#fdba74"/></linearGradient></defs><circle cx="62" cy="60" r="46" fill="none" stroke="url(#catSRing)" stroke-width="11"/><circle cx="62" cy="60" r="51.5" fill="none" stroke="#0f172a" stroke-width="3.5"/><circle cx="62" cy="60" r="40.5" fill="none" stroke="#0f172a" stroke-width="3.5"/><path d="M 74 34 L 91 13 L 94 40 Z" fill="url(#catSBlue)" stroke="#0f172a" stroke-width="4.5" stroke-linejoin="round"/><path d="M 42 36 C 64 16, 98 28, 98 62 C 98 84, 70 96, 48 84 C 36 92, 22 97, 16 93 C 20 82, 28 74, 36 68 C 22 72, 10 73, 5 67 C 10 56, 22 48, 36 46 C 24 44, 14 41, 8 36 C 18 24, 32 24, 42 36 Z" fill="url(#catSBlue)" stroke="#0f172a" stroke-width="4.8" stroke-linejoin="round"/><path d="M 44 38 L 36 11 L 63 27 Z" fill="url(#catSBlue)" stroke="#0f172a" stroke-width="4.5" stroke-linejoin="round"/><path d="M 46 34 L 41 19 L 57 28 Z" fill="url(#catSPeach)" stroke="#0f172a" stroke-width="2.5" stroke-linejoin="round"/><path d="M 52 67 C 49 36, 73 31, 78 52 C 83 32, 101 38, 97 67 Z" fill="#ffffff" stroke="#0f172a" stroke-width="4" stroke-linejoin="round"/><ellipse cx="70" cy="54" rx="6.5" ry="10.5" fill="#22c55e" stroke="#0f172a" stroke-width="2.2"/><ellipse cx="71" cy="54" rx="3.8" ry="6.8" fill="#0f172a"/><circle cx="69" cy="49.5" r="2.2" fill="#ffffff"/><ellipse cx="87" cy="54" rx="5.5" ry="10" fill="#22c55e" stroke="#0f172a" stroke-width="2.2"/><ellipse cx="88" cy="54" rx="3.2" ry="6.4" fill="#0f172a"/><circle cx="86" cy="49.5" r="2" fill="#ffffff"/><path d="M 45 77 C 45 60, 66 60, 77 68 C 87 60, 102 62, 101 77 C 96 96, 56 97, 45 77 Z" fill="url(#catSPeach)" stroke="#0f172a" stroke-width="4" stroke-linejoin="round"/><ellipse cx="102" cy="65" rx="7" ry="4.8" fill="#0f172a" transform="rotate(-12 102 65)"/><ellipse cx="101" cy="63.5" rx="2.5" ry="1.2" fill="#ffffff" opacity="0.6" transform="rotate(-12 101 63.5)"/><path d="M 67 80 C 78 88, 89 84, 94 76" fill="none" stroke="#0f172a" stroke-width="3.8" stroke-linecap="round"/></svg>`,
-    "count": 13,
-    "desc": "Sonic, Süper Sonic, Tails, Knuckles, Shadow, Amy Rose, Metal Sonic, Silver, Dr. Eggman ve dahası!"
+    "count": 23,
+    "desc": "23 efsane Sonic karakteri, aracı, robotu ve Kaos Zümrütleri!"
   },
   {
     "id": "dinozorlar",
@@ -7096,6 +7096,2372 @@ const DRAWINGS_DATA = [
           <path d="M 490 376 A 32 32 0 1 0 490 440 A 32 32 0 1 0 490 376 Z M 490 390 A 18 18 0 1 1 490 426 A 18 18 0 1 1 490 390 Z" fill="url(#ringGoldEm)" stroke="#0f172a" stroke-width="6"/>
 `,
         audio: "audio/voices/cirak_sonic_zumrutler/step_18.mp3"
+      },
+    ]
+  },
+
+  // =========================================================================
+  // ⚡ KİRPİ SONİC DÜNYASI: ATEŞLI KEDI BLAZE
+  // =========================================================================
+  {
+    id: "cirak_sonic_blaze",
+    categoryId: "sonic",
+    name: "Ate\u015fli Kedi Blaze",
+    emoji: "\ud83d\udd25",
+    level: 1,
+    levelName: "\u00c7\u0131rak",
+    levelBadge: "\ud83d\udfe2 \u00c7\u0131rak",
+    description: "Alev g\u00fc\u00e7lerine sahip asil mor kedi prenses Blaze! Aln\u0131ndaki yakut ta\u015f\u0131, y\u00fcksek at kuyru\u011fu ve elindeki alev toplar\u0131!",
+    materials: "Resim ka\u011f\u0131d\u0131, kur\u015fun kalem, silgi, mor, lila, k\u0131rm\u0131z\u0131, sar\u0131 ve turuncu boyalar",
+    welcomeText: "Alevler parlas\u0131n! Merhaba K\u0131van\u00e7! Ate\u015f g\u00fc\u00e7leriyle s\u00fcper h\u0131zl\u0131 ko\u015fabilen cesur mor kedi Blaze geldi! Birlikte alevleri \u00e7izelim!",
+    welcomeAudio: "audio/voices/cirak_sonic_blaze/welcome.mp3",
+    colors: ["#a855f7", "#c084fc", "#f97316", "#ef4444"],
+    previewSvg: `
+          <defs>
+            <linearGradient id="blzLilac" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#e9d5ff"/>
+              <stop offset="50%" stop-color="#c084fc"/>
+              <stop offset="100%" stop-color="#9333ea"/>
+            </linearGradient>
+            <linearGradient id="blzCoat" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#9333ea"/>
+              <stop offset="100%" stop-color="#581c87"/>
+            </linearGradient>
+            <linearGradient id="blzFire" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0%" stop-color="#ef4444"/>
+              <stop offset="50%" stop-color="#f97316"/>
+              <stop offset="100%" stop-color="#fef08a"/>
+            </linearGradient>
+          </defs>
+          <path d="M 180 494 Q 300 484, 420 494" stroke="#cbd5e1" stroke-width="9" stroke-linecap="round"/>
+          <path d="M 248 360 C 200 375, 175 345, 155 365 C 145 375, 155 390, 170 385" fill="none" stroke="#0f172a" stroke-width="14" stroke-linecap="round"/>
+          <path d="M 248 360 C 200 375, 175 345, 155 365 C 145 375, 155 390, 170 385" fill="none" stroke="#c084fc" stroke-width="7" stroke-linecap="round"/>
+          <path d="M 278 390 L 268 445 M 322 390 L 332 445" stroke="#0f172a" stroke-width="16" stroke-linecap="round"/>
+          <path d="M 278 390 L 268 445 M 322 390 L 332 445" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+          <path d="M 235 455 C 232 482, 260 488, 290 482 C 296 472, 288 455, 266 455 Z" fill="#ec4899" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <ellipse cx="266" cy="448" rx="16" ry="9" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 334 455 C 312 455, 304 472, 310 482 C 340 488, 368 482, 365 455 Z" fill="#ec4899" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <ellipse cx="334" cy="448" rx="16" ry="9" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 268 272 C 235 282, 210 278, 185 262" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 268 272 C 235 282, 210 278, 185 262" fill="none" stroke="url(#blzCoat)" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="168" cy="245" r="16" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
+          <ellipse cx="182" cy="258" rx="12" ry="9" fill="#ffffff" stroke="#0f172a" stroke-width="6" transform="rotate(-30 182 258)"/>
+          <path d="M 168 228 C 145 215, 145 185, 168 165 C 175 182, 188 182, 185 168 C 202 188, 195 218, 168 228 Z" fill="url(#blzFire)" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>
+          <path d="M 332 272 C 365 282, 390 278, 415 262" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 332 272 C 365 282, 390 278, 415 262" fill="none" stroke="url(#blzCoat)" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="432" cy="245" r="16" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
+          <path d="M 432 228 C 408 215, 412 185, 432 165 C 440 182, 452 180, 448 168 C 464 190, 455 218, 432 228 Z" fill="url(#blzFire)" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>
+          <path d="M 272 268 L 265 322 L 242 385 C 275 398, 325 398, 358 385 L 335 322 L 328 268 Z" fill="url(#blzCoat)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 248 370 Q 300 385, 352 370 L 358 385 C 325 398, 275 398, 242 385 Z" fill="#ffffff" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 275 240 L 265 268 Q 300 282, 335 268 L 325 240 Z" fill="#ffffff" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/>
+          <circle cx="300" cy="295" r="5" fill="#facc15"/>
+          <circle cx="300" cy="318" r="5" fill="#facc15"/>
+          <path d="M 225 142 C 165 110, 125 145, 110 185 C 145 180, 185 168, 222 155 Z" fill="url(#blzLilac)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <circle cx="235" cy="148" r="11" fill="#ef4444" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 250 155 L 235 90 L 285 135 Z" fill="url(#blzLilac)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 254 146 L 245 106 L 275 136 Z" fill="#fbcfe8" stroke="#0f172a" stroke-width="4"/>
+          <path d="M 315 135 L 365 90 L 350 155 Z" fill="url(#blzLilac)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 325 136 L 355 106 L 346 146 Z" fill="#fbcfe8" stroke="#0f172a" stroke-width="4"/>
+          <path d="M 245 180 C 245 128, 355 128, 355 180 L 382 195 L 362 205 L 378 215 L 348 218 C 340 242, 260 242, 252 218 L 222 215 L 238 205 L 218 195 Z" fill="url(#blzLilac)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 252 216 C 258 242, 342 242, 348 216 C 328 205, 272 205, 252 216 Z" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <polygon points="300,142 308,154 300,166 292,154" fill="#ef4444" stroke="#0f172a" stroke-width="4"/>
+          <ellipse cx="278" cy="188" rx="9" ry="13" fill="#facc15" stroke="#0f172a" stroke-width="4"/>
+          <circle cx="279" cy="188" r="5" fill="#0f172a"/>
+          <circle cx="276" cy="184" r="2.2" fill="#ffffff"/>
+          <ellipse cx="322" cy="188" rx="9" ry="13" fill="#facc15" stroke="#0f172a" stroke-width="4"/>
+          <circle cx="321" cy="188" r="5" fill="#0f172a"/>
+          <circle cx="318" cy="184" r="2.2" fill="#ffffff"/>
+          <polygon points="295,204 305,204 300,211" fill="#0f172a"/>
+          <path d="M 288 220 Q 300 228, 312 220" stroke="#0f172a" stroke-width="5" stroke-linecap="round" fill="none"/>
+`,
+    steps: [
+      {
+        title: "1. Ad\u0131m: Kedi Kafa Yuvarla\u011f\u0131",
+        instruction: "Sayfan\u0131n \u00fcst ortas\u0131na Blaze'in kibar oval kafa hatt\u0131n\u0131 \u00e7iz.",
+        voice: "Ka\u011f\u0131d\u0131m\u0131z\u0131n \u00fcst ortas\u0131na mor kedi Blaze'in zarif yuvarlak kafa \u00e7izgisini yapal\u0131m.",
+        svg: `<path d="M 245 180 C 245 128, 355 128, 355 180 C 355 215, 245 215, 245 180 Z" fill="none" stroke="#0f172a" stroke-width="9" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_blaze/step_1.mp3"
+      },
+      {
+        title: "2. Ad\u0131m: \u0130ki Sivri Kedi Kula\u011f\u0131",
+        instruction: "Ba\u015f\u0131n \u00fcst\u00fcne iki b\u00fcy\u00fck sivri \u00fc\u00e7gen kedi kula\u011f\u0131 ve i\u00e7 \u00fc\u00e7genleri \u00e7iz.",
+        voice: "Ba\u015f\u0131n\u0131n tepesine iki b\u00fcy\u00fck sivri kedi kula\u011f\u0131 ve i\u00e7 \u00fc\u00e7genlerini \u00e7izelim.",
+        svg: `<path d="M 250 155 L 235 90 L 285 135 M 315 135 L 365 90 L 350 155" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/><path d="M 254 146 L 245 106 L 275 136 M 325 136 L 355 106 L 346 146" fill="none" stroke="#0f172a" stroke-width="4.5" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_blaze/step_2.mp3"
+      },
+      {
+        title: "3. Ad\u0131m: K\u0131rm\u0131z\u0131 Al\u0131n M\u00fccevheri ve Yanak T\u00fcyleri",
+        instruction: "Aln\u0131n\u0131n ortas\u0131na elmas \u015feklinde yakut ta\u015f\u0131, iki yana sivri kedi yanak t\u00fcyleri yap.",
+        voice: "Aln\u0131n\u0131n tam ortas\u0131na parlak k\u0131rm\u0131z\u0131 yakut ta\u015f\u0131n\u0131 ve iki yan\u0131na kedi t\u00fcylerini \u00e7izelim.",
+        svg: `<polygon points="300,142 308,154 300,166 292,154" fill="none" stroke="#0f172a" stroke-width="5"/><path d="M 245 185 L 218 195 L 238 205 L 222 215 L 252 218 M 355 185 L 382 195 L 362 205 L 378 215 L 348 218" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_blaze/step_3.mp3"
+      },
+      {
+        title: "4. Ad\u0131m: Arkaya Uzanan Y\u00fcksek At Kuyru\u011fu",
+        instruction: "Ba\u015f\u0131n arkas\u0131ndan sola do\u011fru toka ile tutturulmu\u015f uzun at kuyru\u011fu sa\u00e7\u0131n\u0131 \u00e7iz.",
+        voice: "Ba\u015f\u0131n\u0131n arkas\u0131ndan r\u00fczgarda u\u00e7u\u015fan y\u00fcksek at kuyru\u011fu sa\u00e7\u0131n\u0131 k\u0131vr\u0131mla \u00e7izelim!",
+        svg: `<ellipse cx="235" cy="148" rx="12" ry="12" fill="none" stroke="#0f172a" stroke-width="7"/><path d="M 225 142 C 165 110, 125 145, 110 185 C 145 180, 185 168, 222 155" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_blaze/step_4.mp3"
+      },
+      {
+        title: "5. Ad\u0131m: Alt\u0131n Kedi G\u00f6zleri ve Kirpikler",
+        instruction: "Y\u00fcz\u00fcne hafif \u00e7ekik asil g\u00f6zleri, g\u00f6zbebeklerini ve \u015f\u0131k kirpikleri \u00e7iz.",
+        voice: "Y\u00fcz\u00fcne asil kedi bak\u0131\u015fl\u0131 alt\u0131n g\u00f6zlerini ve d\u0131\u015f kenar kirpiklerini ekleyelim.",
+        svg: `<path d="M 255 198 C 258 168, 288 168, 294 190 M 306 190 C 312 168, 342 168, 345 198" fill="none" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/><ellipse cx="278" cy="188" rx="8" ry="12" fill="none" stroke="#0f172a" stroke-width="4.5"/><circle cx="279" cy="188" r="5" fill="#0f172a"/><circle cx="276" cy="184" r="2" fill="#ffffff"/><ellipse cx="322" cy="188" rx="8" ry="12" fill="none" stroke="#0f172a" stroke-width="4.5"/><circle cx="321" cy="188" r="5" fill="#0f172a"/><circle cx="318" cy="184" r="2" fill="#ffffff"/>`,
+        audio: "audio/voices/cirak_sonic_blaze/step_5.mp3"
+      },
+      {
+        title: "6. Ad\u0131m: Sevimli Kedi Burnu ve G\u00fcl\u00fcmseme",
+        instruction: "Alt yanak kavisini, k\u00fc\u00e7\u00fck \u00fc\u00e7gen burnu ve tatl\u0131 g\u00fcl\u00fc\u015f\u00fc \u00e7iz.",
+        voice: "Alt y\u00fcz\u00fcne minik \u00fc\u00e7gen kedi burnunu ve zarif g\u00fcl\u00fcmsemesini kondural\u0131m.",
+        svg: `<path d="M 252 216 C 258 242, 342 242, 348 216" fill="none" stroke="#0f172a" stroke-width="7"/><polygon points="295,204 305,204 300,211" fill="#0f172a"/><path d="M 288 220 Q 300 228, 312 220" stroke="#0f172a" stroke-width="5" stroke-linecap="round" fill="none"/>`,
+        audio: "audio/voices/cirak_sonic_blaze/step_6.mp3"
+      },
+      {
+        title: "7. Ad\u0131m: Beyaz T\u00fcyl\u00fc Yakal\u0131 Mor Ceket \u00dcst\u00fc",
+        instruction: "Boynun alt\u0131na beyaz k\u00fcrk yakal\u0131 \u015f\u0131k mor ceketin \u00fcst\u00fcn\u00fc \u00e7iz.",
+        voice: "Boynunun alt\u0131na kabar\u0131k beyaz t\u00fcyl\u00fc \u015f\u0131k mor kraliyet ceketini yapal\u0131m!",
+        svg: `<path d="M 275 240 L 265 268 Q 300 282, 335 268 L 325 240" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/><path d="M 272 268 L 265 322 L 335 322 L 328 268" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_blaze/step_7.mp3"
+      },
+      {
+        title: "8. Ad\u0131m: Alt\u0131n D\u00fc\u011fmeli Uzun Ceket Ete\u011fi",
+        instruction: "Belin alt\u0131ndan a\u00e7\u0131lan uzun mor ceket ete\u011fini ve beyaz alt t\u00fcy \u015feridini yap.",
+        voice: "Belinden a\u015fa\u011f\u0131ya do\u011fru zarif\u00e7e a\u00e7\u0131lan uzun mor ceket ete\u011fini \u00e7izelim.",
+        svg: `<path d="M 265 322 L 242 385 C 275 398, 325 398, 358 385 L 335 322" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/><path d="M 248 370 Q 300 385, 352 370" fill="none" stroke="#0f172a" stroke-width="6"/><line x1="300" y1="278" x2="300" y2="378" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_blaze/step_8.mp3"
+      },
+      {
+        title: "9. Ad\u0131m: Sol Alev Tutan Kol ve Eldiven",
+        instruction: "Sola do\u011fru uzanan zarif kolu, beyaz man\u015feti ve avucu a\u00e7\u0131k eldivenini \u00e7iz.",
+        voice: "Sol kolunu ate\u015f topu olu\u015fturmak \u00fczere yana do\u011fru uzatal\u0131m!",
+        svg: `<path d="M 268 272 C 235 282, 210 278, 185 262" fill="none" stroke="#0f172a" stroke-width="16" stroke-linecap="round"/><ellipse cx="182" cy="258" rx="12" ry="9" fill="none" stroke="#0f172a" stroke-width="6" transform="rotate(-30 182 258)"/><circle cx="168" cy="245" r="16" fill="none" stroke="#0f172a" stroke-width="7"/>`,
+        audio: "audio/voices/cirak_sonic_blaze/step_9.mp3"
+      },
+      {
+        title: "10. Ad\u0131m: Elde Parlayan Alev Topu (Sol)",
+        instruction: "Sol eldiveninin \u00fcst\u00fcnde dans eden parlak alev topunu \u00e7iz.",
+        voice: "Sol elinin hemen \u00fcst\u00fcnde parlayan b\u00fcy\u00fcl\u00fc alev topunu \u00e7izelim!",
+        svg: `<path d="M 168 228 C 145 215, 145 185, 168 165 C 175 182, 188 182, 185 168 C 202 188, 195 218, 168 228 Z" fill="none" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_blaze/step_10.mp3"
+      },
+      {
+        title: "11. Ad\u0131m: Sa\u011f Alev Tutan Kol ve \u0130kinci Alev",
+        instruction: "Sa\u011f tarafa da ayn\u0131 g\u00fc\u00e7le uzanan kolunu ve ikinci alev topunu yap.",
+        voice: "Sa\u011f elinin \u00fcst\u00fcne de ate\u015f g\u00fcc\u00fcn\u00fc g\u00f6steren ikinci alev topunu \u00e7izelim!",
+        svg: `<path d="M 332 272 C 365 282, 390 278, 415 262" fill="none" stroke="#0f172a" stroke-width="16" stroke-linecap="round"/><circle cx="432" cy="245" r="16" fill="none" stroke="#0f172a" stroke-width="7"/><path d="M 432 228 C 408 215, 412 185, 432 165 C 440 182, 452 180, 448 168 C 464 190, 455 218, 432 228 Z" fill="none" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_blaze/step_11.mp3"
+      },
+      {
+        title: "12. Ad\u0131m: Zarif Kedi Kuyru\u011fu (Arkadan S\u00fcz\u00fclen)",
+        instruction: "Ceketin alt\u0131ndan sola do\u011fru k\u0131vr\u0131lan ince zarif kedi kuyru\u011funu yap.",
+        voice: "Arka taraftan S harfi gibi zarif\u00e7e k\u0131vr\u0131lan ince kedi kuyru\u011funu uzatal\u0131m.",
+        svg: `<path d="M 248 360 C 200 375, 175 345, 155 365 C 145 375, 155 390, 170 385" fill="none" stroke="#0f172a" stroke-width="8" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_blaze/step_12.mp3"
+      },
+      {
+        title: "13. Ad\u0131m: \u0130nce Uzun Bacaklar (Taytl\u0131)",
+        instruction: "Ete\u011fin alt\u0131ndan inen iki zarif beyaz taytl\u0131 baca\u011f\u0131 \u00e7iz.",
+        voice: "Ete\u011fin alt\u0131ndan yere inen zarif bacaklar\u0131n\u0131 \u00e7izelim.",
+        svg: `<path d="M 278 390 L 268 445 M 322 390 L 332 445" stroke="#0f172a" stroke-width="9" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_blaze/step_13.mp3"
+      },
+      {
+        title: "14. Ad\u0131m: T\u00fcyl\u00fc K\u0131rm\u0131z\u0131-Mor Topuklu \u00c7izmeler",
+        instruction: "Bileklere pofuduk beyaz \u00e7izme t\u00fcylerini ve k\u0131rm\u0131z\u0131 ayakkab\u0131lar\u0131 yap.",
+        voice: "Ayak bileklerine pofuduk k\u00fcrk man\u015fetlerini ve zarif k\u0131rm\u0131z\u0131-beyaz \u00e7izmelerini \u00e7izelim.",
+        svg: `<ellipse cx="266" cy="448" rx="16" ry="9" fill="none" stroke="#0f172a" stroke-width="6"/><path d="M 235 455 C 232 482, 260 488, 290 482 C 296 472, 288 455, 266 455 Z" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/><ellipse cx="334" cy="448" rx="16" ry="9" fill="none" stroke="#0f172a" stroke-width="6"/><path d="M 334 455 C 312 455, 304 472, 310 482 C 340 488, 368 482, 365 455 Z" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_blaze/step_14.mp3"
+      },
+      {
+        title: "15. Ad\u0131m: Alt\u0131n Ceket Kemeri",
+        instruction: "Ceketin g\u00f6\u011f\u00fcs ortas\u0131na alt\u0131n d\u00fc\u011fme detaylar\u0131 ekle.",
+        voice: "Ceketin \u00f6n k\u0131sm\u0131na \u015f\u0131k alt\u0131n d\u00fc\u011fme detaylar\u0131 kondural\u0131m.",
+        svg: `<circle cx="300" cy="295" r="5" fill="#0f172a"/><circle cx="300" cy="318" r="5" fill="#0f172a"/>`,
+        audio: "audio/voices/cirak_sonic_blaze/step_15.mp3"
+      },
+      {
+        title: "16. Ad\u0131m: Ate\u015f K\u0131v\u0131lc\u0131mlar\u0131",
+        instruction: "Ellerindeki alevlerin etraf\u0131na u\u00e7an k\u00fc\u00e7\u00fck ate\u015f k\u0131v\u0131lc\u0131mlar\u0131 yap.",
+        voice: "Alevlerin etraf\u0131na g\u00f6ky\u00fcz\u00fcne y\u00fckselen minik ate\u015f k\u0131v\u0131lc\u0131mlar\u0131 ekleyelim.",
+        svg: `<circle cx="140" cy="165" r="4" fill="#0f172a"/><circle cx="195" cy="145" r="5" fill="#0f172a"/><circle cx="458" cy="160" r="4.5" fill="#0f172a"/>`,
+        audio: "audio/voices/cirak_sonic_blaze/step_16.mp3"
+      },
+      {
+        title: "17. Ad\u0131m: S\u0131cak Zemin \u00c7izgisi",
+        instruction: "\u00c7izmelerinin alt\u0131na asil duru\u015funu g\u00f6steren zemin \u00e7izgisi \u00e7ek.",
+        voice: "Ayaklar\u0131n\u0131n alt\u0131na ate\u015f g\u00fcc\u00fcyle parlayan zemin \u00e7izgimizi \u00e7ekelim.",
+        svg: `<path d="M 180 494 Q 300 484, 420 494" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_blaze/step_17.mp3"
+      },
+      {
+        title: "18. Ad\u0131m: Canl\u0131 Renklendirme (Lila ve Alev Turuncusu Blaze!)",
+        instruction: "Tebrikler K\u0131van\u00e7! Blaze'i asil lila k\u00fcrk\u00fc, mor kraliyet ceketi ve turuncu alevlerle boya!",
+        voice: "Harikas\u0131n K\u0131van\u00e7! Ate\u015fli kedi Blaze muhte\u015fem g\u00f6r\u00fcn\u00fcyor! \u015eimdi onu lila t\u00fcyleri, mor ceketi ve parlak alev toplar\u0131yla boya!",
+        svg: `
+          <defs>
+            <linearGradient id="blzLilac" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#e9d5ff"/>
+              <stop offset="50%" stop-color="#c084fc"/>
+              <stop offset="100%" stop-color="#9333ea"/>
+            </linearGradient>
+            <linearGradient id="blzCoat" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#9333ea"/>
+              <stop offset="100%" stop-color="#581c87"/>
+            </linearGradient>
+            <linearGradient id="blzFire" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0%" stop-color="#ef4444"/>
+              <stop offset="50%" stop-color="#f97316"/>
+              <stop offset="100%" stop-color="#fef08a"/>
+            </linearGradient>
+          </defs>
+          <path d="M 180 494 Q 300 484, 420 494" stroke="#cbd5e1" stroke-width="9" stroke-linecap="round"/>
+          <path d="M 248 360 C 200 375, 175 345, 155 365 C 145 375, 155 390, 170 385" fill="none" stroke="#0f172a" stroke-width="14" stroke-linecap="round"/>
+          <path d="M 248 360 C 200 375, 175 345, 155 365 C 145 375, 155 390, 170 385" fill="none" stroke="#c084fc" stroke-width="7" stroke-linecap="round"/>
+          <path d="M 278 390 L 268 445 M 322 390 L 332 445" stroke="#0f172a" stroke-width="16" stroke-linecap="round"/>
+          <path d="M 278 390 L 268 445 M 322 390 L 332 445" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+          <path d="M 235 455 C 232 482, 260 488, 290 482 C 296 472, 288 455, 266 455 Z" fill="#ec4899" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <ellipse cx="266" cy="448" rx="16" ry="9" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 334 455 C 312 455, 304 472, 310 482 C 340 488, 368 482, 365 455 Z" fill="#ec4899" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <ellipse cx="334" cy="448" rx="16" ry="9" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 268 272 C 235 282, 210 278, 185 262" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 268 272 C 235 282, 210 278, 185 262" fill="none" stroke="url(#blzCoat)" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="168" cy="245" r="16" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
+          <ellipse cx="182" cy="258" rx="12" ry="9" fill="#ffffff" stroke="#0f172a" stroke-width="6" transform="rotate(-30 182 258)"/>
+          <path d="M 168 228 C 145 215, 145 185, 168 165 C 175 182, 188 182, 185 168 C 202 188, 195 218, 168 228 Z" fill="url(#blzFire)" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>
+          <path d="M 332 272 C 365 282, 390 278, 415 262" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 332 272 C 365 282, 390 278, 415 262" fill="none" stroke="url(#blzCoat)" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="432" cy="245" r="16" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
+          <path d="M 432 228 C 408 215, 412 185, 432 165 C 440 182, 452 180, 448 168 C 464 190, 455 218, 432 228 Z" fill="url(#blzFire)" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>
+          <path d="M 272 268 L 265 322 L 242 385 C 275 398, 325 398, 358 385 L 335 322 L 328 268 Z" fill="url(#blzCoat)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 248 370 Q 300 385, 352 370 L 358 385 C 325 398, 275 398, 242 385 Z" fill="#ffffff" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 275 240 L 265 268 Q 300 282, 335 268 L 325 240 Z" fill="#ffffff" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/>
+          <circle cx="300" cy="295" r="5" fill="#facc15"/>
+          <circle cx="300" cy="318" r="5" fill="#facc15"/>
+          <path d="M 225 142 C 165 110, 125 145, 110 185 C 145 180, 185 168, 222 155 Z" fill="url(#blzLilac)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <circle cx="235" cy="148" r="11" fill="#ef4444" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 250 155 L 235 90 L 285 135 Z" fill="url(#blzLilac)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 254 146 L 245 106 L 275 136 Z" fill="#fbcfe8" stroke="#0f172a" stroke-width="4"/>
+          <path d="M 315 135 L 365 90 L 350 155 Z" fill="url(#blzLilac)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 325 136 L 355 106 L 346 146 Z" fill="#fbcfe8" stroke="#0f172a" stroke-width="4"/>
+          <path d="M 245 180 C 245 128, 355 128, 355 180 L 382 195 L 362 205 L 378 215 L 348 218 C 340 242, 260 242, 252 218 L 222 215 L 238 205 L 218 195 Z" fill="url(#blzLilac)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 252 216 C 258 242, 342 242, 348 216 C 328 205, 272 205, 252 216 Z" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <polygon points="300,142 308,154 300,166 292,154" fill="#ef4444" stroke="#0f172a" stroke-width="4"/>
+          <ellipse cx="278" cy="188" rx="9" ry="13" fill="#facc15" stroke="#0f172a" stroke-width="4"/>
+          <circle cx="279" cy="188" r="5" fill="#0f172a"/>
+          <circle cx="276" cy="184" r="2.2" fill="#ffffff"/>
+          <ellipse cx="322" cy="188" rx="9" ry="13" fill="#facc15" stroke="#0f172a" stroke-width="4"/>
+          <circle cx="321" cy="188" r="5" fill="#0f172a"/>
+          <circle cx="318" cy="184" r="2.2" fill="#ffffff"/>
+          <polygon points="295,204 305,204 300,211" fill="#0f172a"/>
+          <path d="M 288 220 Q 300 228, 312 220" stroke="#0f172a" stroke-width="5" stroke-linecap="round" fill="none"/>
+`,
+        audio: "audio/voices/cirak_sonic_blaze/step_18.mp3"
+      },
+    ]
+  },
+
+  // =========================================================================
+  // ⚡ KİRPİ SONİC DÜNYASI: TAVŞAN CREAM VE CHEESE
+  // =========================================================================
+  {
+    id: "cirak_sonic_cream",
+    categoryId: "sonic",
+    name: "Tav\u015fan Cream ve Cheese",
+    emoji: "\ud83d\udc30",
+    level: 1,
+    levelName: "\u00c7\u0131rak",
+    levelBadge: "\ud83d\udfe2 \u00c7\u0131rak",
+    description: "Tatl\u0131 k\u00fc\u00e7\u00fck tav\u015fan Cream ve en yak\u0131n dostu papyonlu minik Chao Cheese! Uzun kulaklar, turuncu elbise ve mavi kurdele!",
+    materials: "Resim ka\u011f\u0131d\u0131, kur\u015fun kalem, silgi, krem sar\u0131s\u0131, turuncu, mavi ve pembe boyalar",
+    welcomeText: "Merhaba K\u0131van\u00e7! \u0130ki uzun kulakl\u0131 sevimli tav\u015fan Cream ve onun u\u00e7an k\u00fc\u00e7\u00fck arkada\u015f\u0131 Cheese geldi! Haydi ikisini birlikte \u00e7izelim!",
+    welcomeAudio: "audio/voices/cirak_sonic_cream/welcome.mp3",
+    colors: ["#fde68a", "#f97316", "#38bdf8", "#ec4899"],
+    previewSvg: `
+          <defs>
+            <linearGradient id="crmFur" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#fef3c7"/>
+              <stop offset="100%" stop-color="#fde68a"/>
+            </linearGradient>
+            <linearGradient id="crmDress" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#fb923c"/>
+              <stop offset="100%" stop-color="#ea580c"/>
+            </linearGradient>
+          </defs>
+          <path d="M 110 482 Q 300 468, 490 482 L 490 515 L 110 515 Z" fill="#86efac" stroke="#0f172a" stroke-width="6"/>
+          <circle cx="145" cy="465" r="7" fill="#facc15" stroke="#0f172a" stroke-width="4"/>
+          <circle cx="425" cy="462" r="7" fill="#f472b6" stroke="#0f172a" stroke-width="4"/>
+          <circle cx="225" cy="340" r="12" fill="url(#crmFur)" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 255 375 L 250 432 M 295 375 L 300 432" stroke="#0f172a" stroke-width="14" stroke-linecap="round"/>
+          <path d="M 255 375 L 250 432 M 295 375 L 300 432" stroke="#fde68a" stroke-width="7" stroke-linecap="round"/>
+          <path d="M 225 442 C 222 470, 248 480, 275 474 C 282 465, 275 442, 250 442 Z" fill="url(#crmDress)" stroke="#0f172a" stroke-width="8"/>
+          <ellipse cx="250" cy="436" rx="14" ry="8" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 295 442 C 282 442, 278 465, 285 474 C 312 480, 338 470, 332 442 Z" fill="url(#crmDress)" stroke="#0f172a" stroke-width="8"/>
+          <ellipse cx="300" cy="436" rx="14" ry="8" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 245 270 C 215 282, 195 275, 182 260" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 245 270 C 215 282, 195 275, 182 260" fill="none" stroke="url(#crmFur)" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="168" cy="248" r="16" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
+          <path d="M 305 270 C 335 282, 355 275, 368 265" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 305 270 C 335 282, 355 275, 368 265" fill="none" stroke="url(#crmFur)" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="382" cy="260" r="16" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
+          <path d="M 248 258 L 222 365 C 255 382, 295 382, 328 365 L 302 258 Z" fill="url(#crmDress)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 228 348 Q 275 365, 322 348 L 328 365 C 295 382, 255 382, 222 365 Z" fill="#ffffff" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 268 250 L 245 238 L 245 266 Z M 282 250 L 305 238 L 305 266 Z" fill="#38bdf8" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>
+          <circle cx="275" cy="252" r="8" fill="#0284c7" stroke="#0f172a" stroke-width="5"/>
+          <ellipse cx="275" cy="195" rx="60" ry="52" fill="url(#crmFur)" stroke="#0f172a" stroke-width="9"/>
+          <path d="M 255 148 C 215 110, 170 155, 178 235 C 185 262, 212 262, 222 232 C 228 202, 232 175, 250 158 Z" fill="url(#crmFur)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 180 215 Q 202 222, 224 215 C 212 255, 188 255, 180 215 Z" fill="#f97316" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 295 148 C 335 110, 380 155, 372 235 C 365 262, 338 262, 328 232 C 322 202, 318 175, 300 158 Z" fill="url(#crmFur)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 326 215 Q 348 222, 370 215 C 362 255, 338 255, 326 215 Z" fill="#f97316" stroke="#0f172a" stroke-width="5"/>
+          <ellipse cx="275" cy="212" rx="34" ry="20" fill="#ffffff" stroke="#0f172a" stroke-width="4"/>
+          <ellipse cx="255" cy="182" rx="12" ry="18" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <ellipse cx="257" cy="183" rx="8" ry="12" fill="#d97706"/>
+          <circle cx="257" cy="183" r="5" fill="#0f172a"/>
+          <circle cx="254" cy="177" r="3" fill="#ffffff"/>
+          <ellipse cx="295" cy="182" rx="12" ry="18" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <ellipse cx="293" cy="183" rx="8" ry="12" fill="#d97706"/>
+          <circle cx="293" cy="183" r="5" fill="#0f172a"/>
+          <circle cx="290" cy="177" r="3" fill="#ffffff"/>
+          <circle cx="275" cy="204" r="5" fill="#f97316"/>
+          <path d="M 262 216 Q 275 228, 288 216" fill="none" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="460" cy="115" r="10" fill="#facc15" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 438 245 C 418 232, 412 252, 435 262 M 482 245 C 502 232, 508 252, 485 262 Z" fill="#ffffff" stroke="#0f172a" stroke-width="5"/>
+          <ellipse cx="448" cy="282" rx="9" ry="7" fill="#facc15" stroke="#0f172a" stroke-width="5"/>
+          <ellipse cx="472" cy="282" rx="9" ry="7" fill="#facc15" stroke="#0f172a" stroke-width="5"/>
+          <ellipse cx="460" cy="252" rx="22" ry="26" fill="#38bdf8" stroke="#0f172a" stroke-width="7"/>
+          <polygon points="460,224 445,216 445,232" fill="#ef4444" stroke="#0f172a" stroke-width="4"/>
+          <polygon points="460,224 475,216 475,232" fill="#ef4444" stroke="#0f172a" stroke-width="4"/>
+          <path d="M 420 200 C 415 162, 448 152, 460 135 C 472 152, 505 162, 500 200 C 495 225, 425 225, 420 200 Z" fill="#38bdf8" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/>
+          <circle cx="445" cy="190" r="5" fill="#0f172a"/>
+          <circle cx="444" cy="188" r="1.8" fill="#ffffff"/>
+          <circle cx="475" cy="190" r="5" fill="#0f172a"/>
+          <circle cx="474" cy="188" r="1.8" fill="#ffffff"/>
+          <path d="M 455 204 Q 460 210, 465 204" stroke="#0f172a" stroke-width="4" fill="none"/>
+`,
+    steps: [
+      {
+        title: "1. Ad\u0131m: Sevimli Yuvarlak Tav\u015fan Kafas\u0131",
+        instruction: "Sayfan\u0131n ortas\u0131na Cream'in tatl\u0131 yuvarlak kafas\u0131n\u0131 \u00e7iz.",
+        voice: "Ka\u011f\u0131d\u0131m\u0131z\u0131n \u00fcst ortas\u0131na sevimli tav\u015fan Cream'in tatl\u0131 yuvarlak kafas\u0131n\u0131 \u00e7izelim.",
+        svg: `<ellipse cx="275" cy="195" rx="60" ry="52" fill="none" stroke="#0f172a" stroke-width="9"/>`,
+        audio: "audio/voices/cirak_sonic_cream/step_1.mp3"
+      },
+      {
+        title: "2. Ad\u0131m: \u0130ki Uzun Sark\u0131k Tav\u015fan Kula\u011f\u0131",
+        instruction: "Kafan\u0131n \u00fcst\u00fcnden a\u015fa\u011f\u0131ya do\u011fru yumu\u015fak\u00e7a sarkan iki uzun tav\u015fan kula\u011f\u0131 \u00e7iz.",
+        voice: "Tav\u015fanlar\u0131n uzun kulaklar\u0131 me\u015fhurdur! Tepeden iki yana sark\u0131k iki uzun tav\u015fan kula\u011f\u0131 \u00e7izelim.",
+        svg: `<path d="M 255 148 C 215 110, 170 155, 178 235 C 185 262, 212 262, 222 232 C 228 202, 232 175, 250 158" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/><path d="M 295 148 C 335 110, 380 155, 372 235 C 365 262, 338 262, 328 232 C 322 202, 318 175, 300 158" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_cream/step_2.mp3"
+      },
+      {
+        title: "3. Ad\u0131m: Yanak Rengi \u00c7izgisi ve Sevimli Burun",
+        instruction: "G\u00f6zlerin ortas\u0131ndan inen renk ayr\u0131m\u0131n\u0131, minik burnu ve mutlu g\u00fcl\u00fc\u015f\u00fc yap.",
+        voice: "Y\u00fcz\u00fcn\u00fcn ortas\u0131ndaki tatl\u0131 deseni, minik pembe burnunu ve ne\u015feli g\u00fcl\u00fc\u015f\u00fcn\u00fc \u00e7izelim.",
+        svg: `<ellipse cx="275" cy="212" rx="34" ry="20" fill="none" stroke="#0f172a" stroke-width="5"/><circle cx="275" cy="204" r="5" fill="#0f172a"/><path d="M 262 216 Q 275 228, 288 216" fill="none" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_cream/step_3.mp3"
+      },
+      {
+        title: "4. Ad\u0131m: Kocaman Parlak Tav\u015fan G\u00f6zleri",
+        instruction: "\u0130ki kocaman oval g\u00f6z, kirpikler ve beyaz par\u0131lt\u0131lar \u00e7iz.",
+        voice: "\u0130ki tane kocaman parlak tav\u015fan g\u00f6z\u00fc ve \u015firin kirpikler ekleyelim.",
+        svg: `<ellipse cx="255" cy="182" rx="12" ry="18" fill="none" stroke="#0f172a" stroke-width="6"/><circle cx="257" cy="183" r="7" fill="#0f172a"/><circle cx="254" cy="177" r="3.5" fill="#ffffff"/><ellipse cx="295" cy="182" rx="12" ry="18" fill="none" stroke="#0f172a" stroke-width="6"/><circle cx="293" cy="183" r="7" fill="#0f172a"/><circle cx="290" cy="177" r="3.5" fill="#ffffff"/>`,
+        audio: "audio/voices/cirak_sonic_cream/step_4.mp3"
+      },
+      {
+        title: "5. Ad\u0131m: Yakadaki Mavi Kurdele Fiyongu",
+        instruction: "Boynunun \u00f6n\u00fcne b\u00fcy\u00fck tatl\u0131 bir mavi kurdele fiyongu yap.",
+        voice: "Boynunun \u00f6n\u00fcne \u00e7ok \u015f\u0131k duran mavi kurdele fiyongunu \u00e7izelim!",
+        svg: `<circle cx="275" cy="252" r="8" fill="none" stroke="#0f172a" stroke-width="6"/><path d="M 268 250 L 245 238 L 245 266 Z M 282 250 L 305 238 L 305 266 Z" fill="none" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_cream/step_5.mp3"
+      },
+      {
+        title: "6. Ad\u0131m: Turuncu Elbise ve Beyaz Etek Band\u0131",
+        instruction: "Kurdelenin alt\u0131na \u00e7an \u015feklinde kabaran \u015firin turuncu elbiseyi \u00e7iz.",
+        voice: "Kurdelenin alt\u0131na ne\u015feli turuncu elbisesini ve alt\u0131ndaki beyaz \u015feridi \u00e7izelim.",
+        svg: `<path d="M 248 258 L 222 365 C 255 382, 295 382, 328 365 L 302 258" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/><path d="M 228 348 Q 275 365, 322 348" fill="none" stroke="#0f172a" stroke-width="6"/>`,
+        audio: "audio/voices/cirak_sonic_cream/step_6.mp3"
+      },
+      {
+        title: "7. Ad\u0131m: Sol Kol ve El Sallayan Eldiven",
+        instruction: "Sol tarafa do\u011fru sevimli kolunu ve el sallayan beyaz eldivenini yap.",
+        voice: "Sol kolunu yana a\u00e7\u0131p el sallarken \u00e7izelim!",
+        svg: `<path d="M 245 270 C 215 282, 195 275, 182 260" fill="none" stroke="#0f172a" stroke-width="16" stroke-linecap="round"/><circle cx="168" cy="248" r="16" fill="none" stroke="#0f172a" stroke-width="7"/>`,
+        audio: "audio/voices/cirak_sonic_cream/step_7.mp3"
+      },
+      {
+        title: "8. Ad\u0131m: Sa\u011f Kol ve Cheese'i \u0130\u015faret Eden El",
+        instruction: "Sa\u011f tarafa do\u011fru uzanan kolunu ve beyaz eldiveni \u00e7iz.",
+        voice: "Sa\u011f elini de en iyi dostu Cheese'i g\u00f6sterir gibi uzatal\u0131m.",
+        svg: `<path d="M 305 270 C 335 282, 355 275, 368 265" fill="none" stroke="#0f172a" stroke-width="16" stroke-linecap="round"/><circle cx="382" cy="260" r="16" fill="none" stroke="#0f172a" stroke-width="7"/>`,
+        audio: "audio/voices/cirak_sonic_cream/step_8.mp3"
+      },
+      {
+        title: "9. Ad\u0131m: \u0130nce Bacaklar ve Sevimli Turuncu Ayakkab\u0131lar",
+        instruction: "Ete\u011fin alt\u0131ndan inen iki tav\u015fan baca\u011f\u0131n\u0131 ve sar\u0131-turuncu ayakkab\u0131lar\u0131 yap.",
+        voice: "Alt\u0131na z\u0131playan tav\u015fan bacaklar\u0131n\u0131 ve sevimli turuncu-beyaz ayakkab\u0131lar\u0131n\u0131 \u00e7izelim.",
+        svg: `<path d="M 255 375 L 250 432 M 295 375 L 300 432" stroke="#0f172a" stroke-width="9" stroke-linecap="round"/><ellipse cx="250" cy="436" rx="14" ry="8" fill="none" stroke="#0f172a" stroke-width="6"/><ellipse cx="300" cy="436" rx="14" ry="8" fill="none" stroke="#0f172a" stroke-width="6"/><path d="M 225 442 C 222 470, 248 480, 275 474 C 282 465, 275 442, 250 442 Z" fill="none" stroke="#0f172a" stroke-width="8"/><path d="M 295 442 C 282 442, 278 465, 285 474 C 312 480, 338 470, 332 442 Z" fill="none" stroke="#0f172a" stroke-width="8"/>`,
+        audio: "audio/voices/cirak_sonic_cream/step_9.mp3"
+      },
+      {
+        title: "10. Ad\u0131m: U\u00e7an Arkada\u015f\u0131 Minik Cheese (Kafa ve Top)",
+        instruction: "Sa\u011f \u00fcst tarafa Cream'in minik mavi arkada\u015f\u0131 Chao Cheese'in kafas\u0131n\u0131 ve u\u00e7an sar\u0131 topunu \u00e7iz.",
+        voice: "\u015eimdi en e\u011flenceli yer! Sa\u011f tarafa Cream'in minik arkada\u015f\u0131 papyonlu Cheese'i \u00e7izelim!",
+        svg: `<path d="M 420 200 C 415 162, 448 152, 460 135 C 472 152, 505 162, 500 200 C 495 225, 425 225, 420 200 Z" fill="none" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/><circle cx="460" cy="115" r="10" fill="none" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_cream/step_10.mp3"
+      },
+      {
+        title: "11. Ad\u0131m: Cheese'in G\u00f6zleri ve Papyonu!",
+        instruction: "Cheese'in y\u00fcz\u00fcne parlak g\u00f6zler ve boynuna \u00fcnl\u00fc k\u0131rm\u0131z\u0131 papyonunu tak.",
+        voice: "Cheese'e parlak minik g\u00f6zlerini ve \u00e7ok sevdi\u011fi k\u0131rm\u0131z\u0131 papyonunu takal\u0131m!",
+        svg: `<circle cx="445" cy="190" r="5" fill="#0f172a"/><circle cx="475" cy="190" r="5" fill="#0f172a"/><path d="M 455 204 Q 460 210, 465 204" stroke="#0f172a" stroke-width="4" fill="none"/><polygon points="460,224 445,216 445,232" fill="none" stroke="#0f172a" stroke-width="5"/><polygon points="460,224 475,216 475,232" fill="none" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_cream/step_11.mp3"
+      },
+      {
+        title: "12. Ad\u0131m: Cheese'in Tombi\u015f G\u00f6vdesi ve Kanatlar\u0131",
+        instruction: "Alt\u0131na minik tombul g\u00f6vdeyi, kanatlar\u0131 ve ayaklar\u0131 ekle.",
+        voice: "Cheese'in tombul minik g\u00f6vdesini ve u\u00e7an sevimli kanatlar\u0131n\u0131 ekleyelim.",
+        svg: `<ellipse cx="460" cy="252" rx="22" ry="26" fill="none" stroke="#0f172a" stroke-width="7"/><path d="M 438 245 C 418 232, 412 252, 435 262 M 482 245 C 502 232, 508 252, 485 262" fill="none" stroke="#0f172a" stroke-width="6"/><ellipse cx="448" cy="282" rx="9" ry="7" fill="none" stroke="#0f172a" stroke-width="5"/><ellipse cx="472" cy="282" rx="9" ry="7" fill="none" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_cream/step_12.mp3"
+      },
+      {
+        title: "13. Ad\u0131m: Minik Ponpon Tav\u015fan Kuyru\u011fu",
+        instruction: "Cream'in ete\u011finin arkas\u0131na yuvarlak pamuk tav\u015fan kuyru\u011funu ekle.",
+        voice: "Cream'in elbisesinin arkas\u0131na pamuk gibi yuvarlak minik tav\u015fan kuyru\u011funu \u00e7izelim.",
+        svg: `<circle cx="225" cy="340" r="12" fill="none" stroke="#0f172a" stroke-width="6"/>`,
+        audio: "audio/voices/cirak_sonic_cream/step_13.mp3"
+      },
+      {
+        title: "14. Ad\u0131m: Kulak Ucu Renk \u00c7izgileri",
+        instruction: "Her iki tav\u015fan kula\u011f\u0131n\u0131n ucuna \u015firin renk ay\u0131rma \u00e7izgisi \u00e7iz.",
+        voice: "Tav\u015fan kulaklar\u0131n\u0131n u\u00e7lar\u0131na \u015firin turuncu u\u00e7 \u00e7izgilerini \u00e7izelim.",
+        svg: `<path d="M 180 215 Q 202 222, 224 215 M 326 215 Q 348 222, 370 215" stroke="#0f172a" stroke-width="5" fill="none"/>`,
+        audio: "audio/voices/cirak_sonic_cream/step_14.mp3"
+      },
+      {
+        title: "15. Ad\u0131m: Zemin \u00c7i\u00e7ekleri",
+        instruction: "Ayaklar\u0131n\u0131n alt\u0131na sevimli bahar papatyalar\u0131 \u00e7iz.",
+        voice: "\u00c7imlerin \u00fczerine tatl\u0131 bahar \u00e7i\u00e7ekleri kondural\u0131m.",
+        svg: `<circle cx="145" cy="465" r="7" fill="none" stroke="#0f172a" stroke-width="4"/><circle cx="425" cy="462" r="7" fill="none" stroke="#0f172a" stroke-width="4"/>`,
+        audio: "audio/voices/cirak_sonic_cream/step_15.mp3"
+      },
+      {
+        title: "16. Ad\u0131m: U\u00e7an Kalpler",
+        instruction: "\u0130ki arkada\u015f\u0131n aras\u0131na ne\u015fe y\u0131ld\u0131z\u0131 ve kalp \u00e7iz.",
+        voice: "\u0130ki iyi arkada\u015f\u0131n etraf\u0131na mutluluk y\u0131ld\u0131zlar\u0131 koyal\u0131m.",
+        svg: `<path d="M 460 80 L 460 95 M 452 88 L 468 88" stroke="#0f172a" stroke-width="4.5" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_cream/step_16.mp3"
+      },
+      {
+        title: "17. Ad\u0131m: Ye\u015fil \u00c7im Zemini",
+        instruction: "Alt k\u0131sma tatl\u0131 piknik \u00e7imi \u00e7izgisini \u00e7ek.",
+        voice: "Ayaklar\u0131n\u0131n alt\u0131na yemye\u015fil \u00e7imen tepesini \u00e7izelim.",
+        svg: `<path d="M 110 482 Q 300 468, 490 482" stroke="#0f172a" stroke-width="8" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_cream/step_17.mp3"
+      },
+      {
+        title: "18. Ad\u0131m: Canl\u0131 Renklendirme (S\u0131cac\u0131k Krem & Turuncu Tav\u015fan!)",
+        instruction: "Tebrikler K\u0131van\u00e7! Cream'i krem sar\u0131s\u0131, turuncu elbisesi ve g\u00f6k mavisi dostu Cheese ile boya!",
+        voice: "\u00c7ok tatl\u0131 oldular K\u0131van\u00e7! Tav\u015fan Cream ve arkada\u015f\u0131 Cheese yan yana parl\u0131yor! \u015eimdi onlar\u0131 krem sar\u0131s\u0131, parlak turuncu ve g\u00f6k mavisi boyalar\u0131nla renklendir!",
+        svg: `
+          <defs>
+            <linearGradient id="crmFur" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#fef3c7"/>
+              <stop offset="100%" stop-color="#fde68a"/>
+            </linearGradient>
+            <linearGradient id="crmDress" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#fb923c"/>
+              <stop offset="100%" stop-color="#ea580c"/>
+            </linearGradient>
+          </defs>
+          <path d="M 110 482 Q 300 468, 490 482 L 490 515 L 110 515 Z" fill="#86efac" stroke="#0f172a" stroke-width="6"/>
+          <circle cx="145" cy="465" r="7" fill="#facc15" stroke="#0f172a" stroke-width="4"/>
+          <circle cx="425" cy="462" r="7" fill="#f472b6" stroke="#0f172a" stroke-width="4"/>
+          <circle cx="225" cy="340" r="12" fill="url(#crmFur)" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 255 375 L 250 432 M 295 375 L 300 432" stroke="#0f172a" stroke-width="14" stroke-linecap="round"/>
+          <path d="M 255 375 L 250 432 M 295 375 L 300 432" stroke="#fde68a" stroke-width="7" stroke-linecap="round"/>
+          <path d="M 225 442 C 222 470, 248 480, 275 474 C 282 465, 275 442, 250 442 Z" fill="url(#crmDress)" stroke="#0f172a" stroke-width="8"/>
+          <ellipse cx="250" cy="436" rx="14" ry="8" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 295 442 C 282 442, 278 465, 285 474 C 312 480, 338 470, 332 442 Z" fill="url(#crmDress)" stroke="#0f172a" stroke-width="8"/>
+          <ellipse cx="300" cy="436" rx="14" ry="8" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 245 270 C 215 282, 195 275, 182 260" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 245 270 C 215 282, 195 275, 182 260" fill="none" stroke="url(#crmFur)" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="168" cy="248" r="16" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
+          <path d="M 305 270 C 335 282, 355 275, 368 265" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 305 270 C 335 282, 355 275, 368 265" fill="none" stroke="url(#crmFur)" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="382" cy="260" r="16" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
+          <path d="M 248 258 L 222 365 C 255 382, 295 382, 328 365 L 302 258 Z" fill="url(#crmDress)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 228 348 Q 275 365, 322 348 L 328 365 C 295 382, 255 382, 222 365 Z" fill="#ffffff" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 268 250 L 245 238 L 245 266 Z M 282 250 L 305 238 L 305 266 Z" fill="#38bdf8" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>
+          <circle cx="275" cy="252" r="8" fill="#0284c7" stroke="#0f172a" stroke-width="5"/>
+          <ellipse cx="275" cy="195" rx="60" ry="52" fill="url(#crmFur)" stroke="#0f172a" stroke-width="9"/>
+          <path d="M 255 148 C 215 110, 170 155, 178 235 C 185 262, 212 262, 222 232 C 228 202, 232 175, 250 158 Z" fill="url(#crmFur)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 180 215 Q 202 222, 224 215 C 212 255, 188 255, 180 215 Z" fill="#f97316" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 295 148 C 335 110, 380 155, 372 235 C 365 262, 338 262, 328 232 C 322 202, 318 175, 300 158 Z" fill="url(#crmFur)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 326 215 Q 348 222, 370 215 C 362 255, 338 255, 326 215 Z" fill="#f97316" stroke="#0f172a" stroke-width="5"/>
+          <ellipse cx="275" cy="212" rx="34" ry="20" fill="#ffffff" stroke="#0f172a" stroke-width="4"/>
+          <ellipse cx="255" cy="182" rx="12" ry="18" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <ellipse cx="257" cy="183" rx="8" ry="12" fill="#d97706"/>
+          <circle cx="257" cy="183" r="5" fill="#0f172a"/>
+          <circle cx="254" cy="177" r="3" fill="#ffffff"/>
+          <ellipse cx="295" cy="182" rx="12" ry="18" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <ellipse cx="293" cy="183" rx="8" ry="12" fill="#d97706"/>
+          <circle cx="293" cy="183" r="5" fill="#0f172a"/>
+          <circle cx="290" cy="177" r="3" fill="#ffffff"/>
+          <circle cx="275" cy="204" r="5" fill="#f97316"/>
+          <path d="M 262 216 Q 275 228, 288 216" fill="none" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="460" cy="115" r="10" fill="#facc15" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 438 245 C 418 232, 412 252, 435 262 M 482 245 C 502 232, 508 252, 485 262 Z" fill="#ffffff" stroke="#0f172a" stroke-width="5"/>
+          <ellipse cx="448" cy="282" rx="9" ry="7" fill="#facc15" stroke="#0f172a" stroke-width="5"/>
+          <ellipse cx="472" cy="282" rx="9" ry="7" fill="#facc15" stroke="#0f172a" stroke-width="5"/>
+          <ellipse cx="460" cy="252" rx="22" ry="26" fill="#38bdf8" stroke="#0f172a" stroke-width="7"/>
+          <polygon points="460,224 445,216 445,232" fill="#ef4444" stroke="#0f172a" stroke-width="4"/>
+          <polygon points="460,224 475,216 475,232" fill="#ef4444" stroke="#0f172a" stroke-width="4"/>
+          <path d="M 420 200 C 415 162, 448 152, 460 135 C 472 152, 505 162, 500 200 C 495 225, 425 225, 420 200 Z" fill="#38bdf8" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/>
+          <circle cx="445" cy="190" r="5" fill="#0f172a"/>
+          <circle cx="444" cy="188" r="1.8" fill="#ffffff"/>
+          <circle cx="475" cy="190" r="5" fill="#0f172a"/>
+          <circle cx="474" cy="188" r="1.8" fill="#ffffff"/>
+          <path d="M 455 204 Q 460 210, 465 204" stroke="#0f172a" stroke-width="4" fill="none"/>
+`,
+        audio: "audio/voices/cirak_sonic_cream/step_18.mp3"
+      },
+    ]
+  },
+
+  // =========================================================================
+  // ⚡ KİRPİ SONİC DÜNYASI: YARASA ROUGE
+  // =========================================================================
+  {
+    id: "cirak_sonic_rouge",
+    categoryId: "sonic",
+    name: "Yarasa Rouge",
+    emoji: "\ud83e\udd87",
+    level: 1,
+    levelName: "\u00c7\u0131rak",
+    levelBadge: "\ud83d\udfe2 \u00c7\u0131rak",
+    description: "M\u00fccevher avc\u0131s\u0131 haval\u0131 beyaz yarasa Rouge! B\u00fcy\u00fck yarasa kanatlar\u0131, pembe kalp z\u0131rh\u0131 ve elindeki parlayan elmas z\u00fcmr\u00fct!",
+    materials: "Resim ka\u011f\u0131d\u0131, kur\u015fun kalem, silgi, beyaz, koyu mor, \u015feker pembe ve mavi boyalar",
+    welcomeText: "\u00c7ok haval\u0131! Selam K\u0131van\u00e7! G\u00f6klerde s\u00fcz\u00fclen hazine avc\u0131s\u0131 beyaz yarasa Rouge'u \u00e7izmeye haz\u0131r m\u0131s\u0131n? Haydi kanatlar\u0131n\u0131 a\u00e7al\u0131m!",
+    welcomeAudio: "audio/voices/cirak_sonic_rouge/welcome.mp3",
+    colors: ["#ffffff", "#6366f1", "#ec4899", "#06b6d4"],
+    previewSvg: `
+          <defs>
+            <linearGradient id="rgWing" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#6366f1"/>
+              <stop offset="100%" stop-color="#312e81"/>
+            </linearGradient>
+          </defs>
+          <path d="M 190 492 Q 300 482, 410 492" stroke="#cbd5e1" stroke-width="9" stroke-linecap="round"/>
+          <path d="M 455 152 L 455 168 M 447 160 L 463 160" stroke="#facc15" stroke-width="5" stroke-linecap="round"/>
+          <path d="M 270 265 C 205 220, 145 215, 110 235 C 125 255, 130 275, 120 295 C 150 285, 175 295, 185 318 C 215 300, 245 305, 268 310 Z" fill="url(#rgWing)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 330 265 C 395 220, 455 215, 490 235 C 475 255, 470 275, 480 295 C 450 285, 425 295, 415 318 C 385 300, 355 305, 332 310 Z" fill="url(#rgWing)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 280 360 L 268 440 M 320 360 L 332 440" stroke="#0f172a" stroke-width="16" stroke-linecap="round"/>
+          <path d="M 280 360 L 268 440 M 320 360 L 332 440" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+          <path d="M 245 445 C 240 475, 265 485, 295 478 C 302 468, 292 445, 268 445 Z" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
+          <ellipse cx="268" cy="442" rx="14" ry="8" fill="#ec4899" stroke="#0f172a" stroke-width="6"/>
+          <circle cx="268" cy="462" r="5" fill="#ec4899"/>
+          <path d="M 332 445 C 308 445, 298 468, 305 478 C 335 485, 360 475, 355 445 Z" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
+          <ellipse cx="332" cy="442" rx="14" ry="8" fill="#ec4899" stroke="#0f172a" stroke-width="6"/>
+          <circle cx="332" cy="462" r="5" fill="#ec4899"/>
+          <path d="M 272 238 L 265 360 L 335 360 L 328 238 Z" fill="#1e293b" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 268 258 C 265 242, 290 240, 300 256 C 310 240, 335 242, 332 258 C 330 282, 300 302, 300 302 C 300 302, 270 282, 268 258 Z" fill="#f472b6" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>
+          <path d="M 268 258 C 235 280, 230 320, 260 335" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 268 258 C 235 280, 230 320, 260 335" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="265" cy="340" r="14" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
+          <path d="M 332 258 C 365 265, 395 255, 415 232" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 332 258 C 365 265, 395 255, 415 232" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="426" cy="222" r="15" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
+          <polygon points="415,175 438,175 448,188 426,210 405,188" fill="#06b6d4" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>
+          <path d="M 255 152 L 222 72 L 285 134 Z" fill="#ffffff" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 258 142 L 236 92 L 278 134 Z" fill="#fbcfe8" stroke="#0f172a" stroke-width="4"/>
+          <path d="M 315 134 L 378 72 L 345 152 Z" fill="#ffffff" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 322 134 L 364 92 L 342 142 Z" fill="#fbcfe8" stroke="#0f172a" stroke-width="4"/>
+          <path d="M 248 180 C 248 130, 352 130, 352 180 L 372 208 L 348 212 C 338 238, 262 238, 252 212 L 228 208 Z" fill="#ffffff" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <ellipse cx="278" cy="182" rx="13" ry="17" fill="#38bdf8" stroke="#0f172a" stroke-width="5"/>
+          <ellipse cx="279" cy="185" rx="9" ry="11" fill="#2dd4bf"/>
+          <circle cx="280" cy="185" r="5.5" fill="#0f172a"/>
+          <circle cx="277" cy="180" r="2.5" fill="#ffffff"/>
+          <ellipse cx="322" cy="182" rx="13" ry="17" fill="#38bdf8" stroke="#0f172a" stroke-width="5"/>
+          <ellipse cx="321" cy="185" rx="9" ry="11" fill="#2dd4bf"/>
+          <circle cx="320" cy="185" r="5.5" fill="#0f172a"/>
+          <circle cx="317" cy="180" r="2.5" fill="#ffffff"/>
+          <ellipse cx="300" cy="202" rx="6.5" ry="4.5" fill="#0f172a"/>
+          <path d="M 288 216 Q 302 226, 314 214" stroke="#0f172a" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+`,
+    steps: [
+      {
+        title: "1. Ad\u0131m: Kafa Yuvarla\u011f\u0131 ve D\u0131\u015fa K\u0131vr\u0131k Sa\u00e7lar",
+        instruction: "Sayfan\u0131n \u00fcst ortas\u0131na Rouge'un yuvarlak ba\u015f\u0131n\u0131 ve iki yana \u015f\u0131k\u00e7a k\u0131vr\u0131lan sa\u00e7 u\u00e7lar\u0131n\u0131 \u00e7iz.",
+        voice: "Ka\u011f\u0131d\u0131m\u0131z\u0131n \u00fcst ortas\u0131na Yarasa Rouge'un y\u00fcz\u00fcn\u00fc ve yanlara haval\u0131 \u015fekilde k\u0131vr\u0131lan sa\u00e7lar\u0131n\u0131 \u00e7izelim.",
+        svg: `<path d="M 248 180 C 248 130, 352 130, 352 180 L 372 208 L 348 212 C 338 238, 262 238, 252 212 L 228 208 Z" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_rouge/step_1.mp3"
+      },
+      {
+        title: "2. Ad\u0131m: \u0130ki Kocaman Sivri Yarasa Kula\u011f\u0131",
+        instruction: "Kafas\u0131n\u0131n tepesine yarasalara \u00f6zg\u00fc iki b\u00fcy\u00fck \u00fc\u00e7gen kulak ve i\u00e7 k\u0131vr\u0131mlar\u0131n\u0131 \u00e7iz.",
+        voice: "Yarasa oldu\u011fu hemen belli olsun! Tepesine iki kocaman b\u00fcy\u00fck sivri yarasa kula\u011f\u0131 yapal\u0131m!",
+        svg: `<path d="M 255 152 L 222 72 L 285 134 M 315 134 L 378 72 L 345 152" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/><path d="M 258 142 L 236 92 L 278 134 M 322 134 L 364 92 L 342 142" fill="none" stroke="#0f172a" stroke-width="4.5" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_rouge/step_2.mp3"
+      },
+      {
+        title: "3. Ad\u0131m: Mavi G\u00f6z Farl\u0131 \u0130ri G\u00f6zler ve Kirpikler",
+        instruction: "Y\u00fcz\u00fcne turkuaz farl\u0131 g\u00f6z kemeri, kirpikler ve siyah g\u00f6zbebeklerini yap.",
+        voice: "\u015eimdi g\u00f6z kapaklar\u0131na g\u00f6z far\u0131 \u00e7izgisi, \u015f\u0131k kirpikleri ve parlak g\u00f6zlerini ekleyelim.",
+        svg: `<ellipse cx="278" cy="182" rx="13" ry="17" fill="none" stroke="#0f172a" stroke-width="6"/><circle cx="280" cy="183" r="6.5" fill="#0f172a"/><circle cx="277" cy="179" r="2.5" fill="#ffffff"/><ellipse cx="322" cy="182" rx="13" ry="17" fill="none" stroke="#0f172a" stroke-width="6"/><circle cx="320" cy="183" r="6.5" fill="#0f172a"/><circle cx="317" cy="179" r="2.5" fill="#ffffff"/><path d="M 265 170 L 254 162 M 335 170 L 346 162" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_rouge/step_3.mp3"
+      },
+      {
+        title: "4. Ad\u0131m: K\u00fc\u00e7\u00fck Burun ve G\u00fcl\u00fcmseyen Dudaklar",
+        instruction: "Ortaya k\u00fc\u00e7\u00fck sevimli burun ve ne\u015feli g\u00fcl\u00fcmseme \u00e7iz.",
+        voice: "Minik burnunu ve kendine g\u00fcvenen g\u00fcl\u00fcmsemesini kondural\u0131m.",
+        svg: `<ellipse cx="300" cy="202" rx="6.5" ry="4.5" fill="#0f172a"/><path d="M 288 216 Q 302 226, 314 214" stroke="#0f172a" stroke-width="5.5" stroke-linecap="round" fill="none"/>`,
+        audio: "audio/voices/cirak_sonic_rouge/step_4.mp3"
+      },
+      {
+        title: "5. Ad\u0131m: Kalp \u015eekilli Pembe G\u00f6\u011f\u00fcs Kalkan\u0131 ve Kost\u00fcm",
+        instruction: "Boynun alt\u0131na ince g\u00f6vdesini ve g\u00f6\u011fs\u00fcne Rouge'un \u00fcnl\u00fc pembe kalp desenini yap!",
+        voice: "\u0130\u015fte Rouge'un \u015f\u0131k kost\u00fcm\u00fc! G\u00f6vdesinin \u00fcst\u00fcne \u00fcnl\u00fc kalp \u015feklinde yaka desenini \u00e7izelim!",
+        svg: `<path d="M 272 238 L 265 360 L 335 360 L 328 238" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/><path d="M 268 258 C 265 242, 290 240, 300 256 C 310 240, 335 242, 332 258 C 330 282, 300 302, 300 302 C 300 302, 270 282, 268 258 Z" fill="none" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_rouge/step_5.mp3"
+      },
+      {
+        title: "6. Ad\u0131m: Dev Sol Yarasa Kanad\u0131",
+        instruction: "S\u0131rt\u0131ndan sola do\u011fru a\u00e7\u0131lan dalgal\u0131 yarasa kanad\u0131n\u0131 \u00e7iz.",
+        voice: "S\u0131rt\u0131ndan sola do\u011fru a\u00e7\u0131lan b\u00fcy\u00fck mor yarasa kanad\u0131n\u0131 yapal\u0131m!",
+        svg: `<path d="M 270 265 C 205 220, 145 215, 110 235 C 125 255, 130 275, 120 295 C 150 285, 175 295, 185 318 C 215 300, 245 305, 268 310" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_rouge/step_6.mp3"
+      },
+      {
+        title: "7. Ad\u0131m: Dev Sa\u011f Yarasa Kanad\u0131",
+        instruction: "Sa\u011f tarafa da e\u015fle\u015fen ikinci geni\u015f yarasa kanad\u0131n\u0131 \u00e7iz.",
+        voice: "Sa\u011f tarafa da ayn\u0131 g\u00fc\u00e7te a\u00e7\u0131lan ikinci yarasa kanad\u0131n\u0131 \u00e7izelim!",
+        svg: `<path d="M 330 265 C 395 220, 455 215, 490 235 C 475 255, 470 275, 480 295 C 450 285, 425 295, 415 318 C 385 300, 355 305, 332 310" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_rouge/step_7.mp3"
+      },
+      {
+        title: "8. Ad\u0131m: Kanat \u0130\u00e7i Kemik \u00c7izgileri",
+        instruction: "Her iki kanad\u0131n i\u00e7ine iki\u015fer tane yarasa kanat kemi\u011fi \u00e7izgisi \u00e7ek.",
+        voice: "Kanatlar\u0131n\u0131n i\u00e7ine zarif yarasa kanad\u0131 destek \u00e7izgilerini \u00e7ekelim.",
+        svg: `<line x1="250" y1="265" x2="120" y2="295" stroke="#0f172a" stroke-width="5"/><line x1="255" y1="280" x2="185" y2="318" stroke="#0f172a" stroke-width="5"/><line x1="350" y1="265" x2="480" y2="295" stroke="#0f172a" stroke-width="5"/><line x1="345" y1="280" x2="415" y2="318" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_rouge/step_8.mp3"
+      },
+      {
+        title: "9. Ad\u0131m: Belde Duran Sol Kol ve Uzun Eldiven",
+        instruction: "Belinde duran sol kolunu \u00e7iz.",
+        voice: "Sol elini beline koymu\u015f haval\u0131 duru\u015funu \u00e7izelim.",
+        svg: `<path d="M 268 258 C 235 280, 230 320, 260 335" fill="none" stroke="#0f172a" stroke-width="16" stroke-linecap="round"/><circle cx="265" cy="340" r="14" fill="none" stroke="#0f172a" stroke-width="7"/>`,
+        audio: "audio/voices/cirak_sonic_rouge/step_9.mp3"
+      },
+      {
+        title: "10. Ad\u0131m: M\u00fccevher Tutan Sa\u011f Kol ve Eldiven",
+        instruction: "Sa\u011f elini de\u011ferli bir elmas\u0131 incelerken havaya kald\u0131rm\u0131\u015f \u00e7iz.",
+        voice: "Sa\u011f kolunu en sevdi\u011fi parlak m\u00fccevheri havada tutarken \u00e7izelim!",
+        svg: `<path d="M 332 258 C 365 265, 395 255, 415 232" fill="none" stroke="#0f172a" stroke-width="16" stroke-linecap="round"/><circle cx="426" cy="222" r="15" fill="none" stroke="#0f172a" stroke-width="7"/>`,
+        audio: "audio/voices/cirak_sonic_rouge/step_10.mp3"
+      },
+      {
+        title: "11. Ad\u0131m: Sa\u011f Elindeki Parlayan Kaos Z\u00fcmr\u00fcd\u00fc",
+        instruction: "Sa\u011f elinin hemen \u00fcst\u00fcne kocaman mavi-ye\u015fil bir m\u00fccevher \u00e7iz.",
+        voice: "Avucunun hemen \u00fczerine g\u00f6z kama\u015ft\u0131ran b\u00fcy\u00fck elmas m\u00fccevheri kondural\u0131m!",
+        svg: `<polygon points="415,175 438,175 448,188 426,210 405,188" fill="none" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_rouge/step_11.mp3"
+      },
+      {
+        title: "12. Ad\u0131m: \u0130nce Uzun Bacaklar ve Kalpli \u00c7izmeler (Sol)",
+        instruction: "Sol baca\u011f\u0131 ve kalp s\u00fcsl\u00fc uzun beyaz-pembe \u00e7izmesini yap.",
+        voice: "Sol baca\u011f\u0131n\u0131 ve \u00fcst\u00fc pembe kalp desenli \u015f\u0131k uzun \u00e7izmesini \u00e7izelim.",
+        svg: `<path d="M 280 360 L 268 440" stroke="#0f172a" stroke-width="14" stroke-linecap="round"/><path d="M 245 445 C 240 475, 265 485, 295 478 C 302 468, 292 445, 268 445 Z" fill="none" stroke="#0f172a" stroke-width="8"/><ellipse cx="268" cy="442" rx="14" ry="8" fill="none" stroke="#0f172a" stroke-width="6"/>`,
+        audio: "audio/voices/cirak_sonic_rouge/step_12.mp3"
+      },
+      {
+        title: "13. Ad\u0131m: Sa\u011f Bacak ve Uzun \u00c7izme",
+        instruction: "Sa\u011f baca\u011f\u0131 ve di\u011fer \u00e7izmesini tamamla.",
+        voice: "Sa\u011f baca\u011f\u0131n\u0131 ve di\u011fer \u00e7izmesini de ekleyelim.",
+        svg: `<path d="M 320 360 L 332 440" stroke="#0f172a" stroke-width="14" stroke-linecap="round"/><path d="M 332 445 C 308 445, 298 468, 305 478 C 335 485, 360 475, 355 445 Z" fill="none" stroke="#0f172a" stroke-width="8"/><ellipse cx="332" cy="442" rx="14" ry="8" fill="none" stroke="#0f172a" stroke-width="6"/>`,
+        audio: "audio/voices/cirak_sonic_rouge/step_13.mp3"
+      },
+      {
+        title: "14. Ad\u0131m: \u00c7izme Kalp Detaylar\u0131",
+        instruction: "\u00c7izmelerin \u00fcst bileklerine k\u00fc\u00e7\u00fck pembe kalpler koy.",
+        voice: "\u00c7izmelerinin u\u00e7lar\u0131na k\u00fc\u00e7\u00fck kalp s\u00fcslerini kondural\u0131m.",
+        svg: `<circle cx="268" cy="462" r="5" fill="#0f172a"/><circle cx="332" cy="462" r="5" fill="#0f172a"/>`,
+        audio: "audio/voices/cirak_sonic_rouge/step_14.mp3"
+      },
+      {
+        title: "15. Ad\u0131m: Minik Yarasa Kuyru\u011fu",
+        instruction: "Bacaklar\u0131n arkas\u0131nda k\u00fc\u00e7\u00fck sivri kuyru\u011funu yap.",
+        voice: "Arkada g\u00f6r\u00fcnen minik yarasa kuyru\u011fu ucunu ekleyelim.",
+        svg: `<path d="M 265 352 L 245 362 L 265 368" fill="none" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_rouge/step_15.mp3"
+      },
+      {
+        title: "16. Ad\u0131m: Elmas Parlama Y\u0131ld\u0131zlar\u0131",
+        instruction: "Elmas m\u00fccevherin etraf\u0131na parlama y\u0131ld\u0131zlar\u0131 \u00e7iz.",
+        voice: "M\u00fccevherin etraf\u0131na par\u0131l par\u0131l parlayan y\u0131ld\u0131z \u0131\u015f\u0131klar\u0131 \u00e7izelim!",
+        svg: `<path d="M 455 152 L 455 168 M 447 160 L 463 160 M 395 162 L 395 174 M 389 168 L 401 168" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_rouge/step_16.mp3"
+      },
+      {
+        title: "17. Ad\u0131m: Hazine Zemin \u00c7izgisi",
+        instruction: "\u00c7izmelerinin alt\u0131na zemin \u00e7izgisini \u00e7ek.",
+        voice: "Ayaklar\u0131n\u0131n alt\u0131na temiz bir zemin \u00e7izgisi \u00e7ekelim.",
+        svg: `<path d="M 190 492 Q 300 482, 410 492" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_rouge/step_17.mp3"
+      },
+      {
+        title: "18. Ad\u0131m: Canl\u0131 Renklendirme (Koyu Mor Kanatlar & Pembe Kalp!)",
+        instruction: "Tebrikler K\u0131van\u00e7! Rouge'u kar beyaz\u0131 t\u00fcyler, mor yarasa kanatlar\u0131 ve pembe kalp z\u0131rh\u0131yla boya!",
+        voice: "Muhte\u015fem oldu K\u0131van\u00e7! Hazine avc\u0131s\u0131 Yarasa Rouge u\u00e7u\u015fa haz\u0131r! \u015eimdi onu beyaz t\u00fcyleri, pembe kalp kost\u00fcm\u00fc ve parlak elmas\u0131yla boya!",
+        svg: `
+          <defs>
+            <linearGradient id="rgWing" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#6366f1"/>
+              <stop offset="100%" stop-color="#312e81"/>
+            </linearGradient>
+          </defs>
+          <path d="M 190 492 Q 300 482, 410 492" stroke="#cbd5e1" stroke-width="9" stroke-linecap="round"/>
+          <path d="M 455 152 L 455 168 M 447 160 L 463 160" stroke="#facc15" stroke-width="5" stroke-linecap="round"/>
+          <path d="M 270 265 C 205 220, 145 215, 110 235 C 125 255, 130 275, 120 295 C 150 285, 175 295, 185 318 C 215 300, 245 305, 268 310 Z" fill="url(#rgWing)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 330 265 C 395 220, 455 215, 490 235 C 475 255, 470 275, 480 295 C 450 285, 425 295, 415 318 C 385 300, 355 305, 332 310 Z" fill="url(#rgWing)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 280 360 L 268 440 M 320 360 L 332 440" stroke="#0f172a" stroke-width="16" stroke-linecap="round"/>
+          <path d="M 280 360 L 268 440 M 320 360 L 332 440" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+          <path d="M 245 445 C 240 475, 265 485, 295 478 C 302 468, 292 445, 268 445 Z" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
+          <ellipse cx="268" cy="442" rx="14" ry="8" fill="#ec4899" stroke="#0f172a" stroke-width="6"/>
+          <circle cx="268" cy="462" r="5" fill="#ec4899"/>
+          <path d="M 332 445 C 308 445, 298 468, 305 478 C 335 485, 360 475, 355 445 Z" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
+          <ellipse cx="332" cy="442" rx="14" ry="8" fill="#ec4899" stroke="#0f172a" stroke-width="6"/>
+          <circle cx="332" cy="462" r="5" fill="#ec4899"/>
+          <path d="M 272 238 L 265 360 L 335 360 L 328 238 Z" fill="#1e293b" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 268 258 C 265 242, 290 240, 300 256 C 310 240, 335 242, 332 258 C 330 282, 300 302, 300 302 C 300 302, 270 282, 268 258 Z" fill="#f472b6" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>
+          <path d="M 268 258 C 235 280, 230 320, 260 335" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 268 258 C 235 280, 230 320, 260 335" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="265" cy="340" r="14" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
+          <path d="M 332 258 C 365 265, 395 255, 415 232" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 332 258 C 365 265, 395 255, 415 232" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="426" cy="222" r="15" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
+          <polygon points="415,175 438,175 448,188 426,210 405,188" fill="#06b6d4" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>
+          <path d="M 255 152 L 222 72 L 285 134 Z" fill="#ffffff" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 258 142 L 236 92 L 278 134 Z" fill="#fbcfe8" stroke="#0f172a" stroke-width="4"/>
+          <path d="M 315 134 L 378 72 L 345 152 Z" fill="#ffffff" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 322 134 L 364 92 L 342 142 Z" fill="#fbcfe8" stroke="#0f172a" stroke-width="4"/>
+          <path d="M 248 180 C 248 130, 352 130, 352 180 L 372 208 L 348 212 C 338 238, 262 238, 252 212 L 228 208 Z" fill="#ffffff" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <ellipse cx="278" cy="182" rx="13" ry="17" fill="#38bdf8" stroke="#0f172a" stroke-width="5"/>
+          <ellipse cx="279" cy="185" rx="9" ry="11" fill="#2dd4bf"/>
+          <circle cx="280" cy="185" r="5.5" fill="#0f172a"/>
+          <circle cx="277" cy="180" r="2.5" fill="#ffffff"/>
+          <ellipse cx="322" cy="182" rx="13" ry="17" fill="#38bdf8" stroke="#0f172a" stroke-width="5"/>
+          <ellipse cx="321" cy="185" rx="9" ry="11" fill="#2dd4bf"/>
+          <circle cx="320" cy="185" r="5.5" fill="#0f172a"/>
+          <circle cx="317" cy="180" r="2.5" fill="#ffffff"/>
+          <ellipse cx="300" cy="202" rx="6.5" ry="4.5" fill="#0f172a"/>
+          <path d="M 288 216 Q 302 226, 314 214" stroke="#0f172a" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+`,
+        audio: "audio/voices/cirak_sonic_rouge/step_18.mp3"
+      },
+    ]
+  },
+
+  // =========================================================================
+  // ⚡ KİRPİ SONİC DÜNYASI: DEV ROBOT OMEGA
+  // =========================================================================
+  {
+    id: "cirak_sonic_omega",
+    categoryId: "sonic",
+    name: "Dev Robot Omega",
+    emoji: "\ud83e\uddbe",
+    level: 1,
+    levelName: "\u00c7\u0131rak",
+    levelBadge: "\ud83d\udfe2 \u00c7\u0131rak",
+    description: "Shadow ve Rouge'un dev robot arkada\u015f\u0131 E-123 Omega! Devasa omuz z\u0131rhlar\u0131, parlak k\u0131rm\u0131z\u0131 g\u00f6zleri ve s\u00fcper pen\u00e7e kollar\u0131!",
+    materials: "Resim ka\u011f\u0131d\u0131, kur\u015fun kalem, silgi, k\u0131rm\u0131z\u0131, sar\u0131, koyu gri ve siyah boyalar",
+    welcomeText: "Sistem aktif! Selam K\u0131van\u00e7! Dev z\u0131rhl\u0131 s\u00fcper robot E-123 Omega g\u00f6reve haz\u0131r! Bu g\u00fc\u00e7l\u00fc robotu ad\u0131m ad\u0131m \u00e7izelim!",
+    welcomeAudio: "audio/voices/cirak_sonic_omega/welcome.mp3",
+    colors: ["#ef4444", "#facc15", "#475569", "#0f172a"],
+    previewSvg: `
+          <defs>
+            <linearGradient id="omgRed" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#f87171"/>
+              <stop offset="50%" stop-color="#ef4444"/>
+              <stop offset="100%" stop-color="#991b1b"/>
+            </linearGradient>
+            <linearGradient id="omgSteel" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#94a3b8"/>
+              <stop offset="100%" stop-color="#334155"/>
+            </linearGradient>
+          </defs>
+          <line x1="160" y1="482" x2="440" y2="482" stroke="#475569" stroke-width="10" stroke-linecap="round"/>
+          <path d="M 262 325 L 245 435 L 290 435 L 295 325 Z" fill="url(#omgSteel)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 305 325 L 310 435 L 355 435 L 338 325 Z" fill="url(#omgSteel)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 232 435 L 220 475 L 295 475 L 292 435 Z" fill="url(#omgRed)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 308 435 L 305 475 L 380 475 L 368 435 Z" fill="url(#omgRed)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <rect x="262" y="295" width="76" height="30" rx="6" fill="#1e293b" stroke="#0f172a" stroke-width="8"/>
+          <path d="M 168 262 L 152 335 L 210 342 L 222 262 Z" fill="url(#omgSteel)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <line x1="160" y1="295" x2="215" y2="295" stroke="#facc15" stroke-width="8"/>
+          <path d="M 155 340 L 145 372 M 178 342 L 178 378 M 202 342 L 212 372" stroke="#1e293b" stroke-width="9" stroke-linecap="round"/>
+          <path d="M 378 262 L 390 342 L 448 335 L 432 262 Z" fill="url(#omgSteel)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <line x1="385" y1="295" x2="440" y2="295" stroke="#facc15" stroke-width="8"/>
+          <path d="M 398 342 L 388 372 M 422 342 L 422 378 M 445 340 L 455 372" stroke="#1e293b" stroke-width="9" stroke-linecap="round"/>
+          <path d="M 235 185 L 365 185 L 348 295 L 252 295 Z" fill="url(#omgRed)" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>
+          <path d="M 255 202 L 345 202 L 328 265 L 272 265 Z" fill="#facc15" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/>
+          <path d="M 235 185 C 180 180, 155 215, 165 262 L 228 262 Z" fill="url(#omgRed)" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>
+          <circle cx="198" cy="222" r="14" fill="none" stroke="#ffffff" stroke-width="5"/>
+          <line x1="186" y1="236" x2="210" y2="236" stroke="#ffffff" stroke-width="5"/>
+          <path d="M 365 185 C 420 180, 445 215, 435 262 L 372 262 Z" fill="url(#omgRed)" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>
+          <path d="M 265 180 C 265 130, 335 130, 335 180 Z" fill="url(#omgRed)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <rect x="272" y="152" width="56" height="22" rx="4" fill="#0f172a" stroke="#0f172a" stroke-width="5"/>
+          <circle cx="286" cy="163" r="5" fill="#ef4444"/>
+          <circle cx="314" cy="163" r="5" fill="#ef4444"/>
+`,
+    steps: [
+      {
+        title: "1. Ad\u0131m: Kask \u015eeklinde Robot Kafas\u0131",
+        instruction: "Sayfan\u0131n \u00fcst ortas\u0131na Omega'n\u0131n yuvarlak z\u0131rhl\u0131 ba\u015f\u0131n\u0131 \u00e7iz.",
+        voice: "Ka\u011f\u0131d\u0131m\u0131z\u0131n \u00fcst ortas\u0131na dev robot Omega'n\u0131n sa\u011flam z\u0131rhl\u0131 kafas\u0131n\u0131 \u00e7izelim.",
+        svg: `<path d="M 265 180 C 265 130, 335 130, 335 180 Z" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_omega/step_1.mp3"
+      },
+      {
+        title: "2. Ad\u0131m: Siyah Ekran Viz\u00f6r\u00fc ve \u0130ki K\u0131rm\u0131z\u0131 Robot G\u00f6z\u00fc",
+        instruction: "Ba\u015f\u0131n \u00f6n\u00fcne dikd\u00f6rtgenimsi g\u00f6z penceresi ve iki parlak k\u0131rm\u0131z\u0131 robot g\u00f6z\u00fc yap.",
+        voice: "Kafan\u0131n ortas\u0131na karanl\u0131k ekran penceresini ve \u00fczerinde yanan iki parlak k\u0131rm\u0131z\u0131 robot g\u00f6z\u00fcn\u00fc \u00e7izelim!",
+        svg: `<rect x="272" y="152" width="56" height="22" rx="4" fill="none" stroke="#0f172a" stroke-width="6"/><circle cx="286" cy="163" r="5" fill="#0f172a"/><circle cx="314" cy="163" r="5" fill="#0f172a"/>`,
+        audio: "audio/voices/cirak_sonic_omega/step_2.mp3"
+      },
+      {
+        title: "3. Ad\u0131m: Devasa K\u0131rm\u0131z\u0131-Sar\u0131 G\u00f6vde Z\u0131rh\u0131",
+        instruction: "Ba\u015f\u0131n alt\u0131na geni\u015f be\u015fgen \u015feklinde dev g\u00f6\u011f\u00fcs z\u0131rh\u0131n\u0131 \u00e7iz.",
+        voice: "Kafas\u0131n\u0131n alt\u0131na kocaman z\u0131rhl\u0131 geni\u015f robot g\u00f6vdesini \u00e7izelim!",
+        svg: `<path d="M 235 185 L 365 185 L 348 295 L 252 295 Z" fill="none" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_omega/step_3.mp3"
+      },
+      {
+        title: "4. Ad\u0131m: G\u00f6\u011f\u00fcsteki B\u00fcy\u00fck Sar\u0131 Z\u0131rh Plakas\u0131",
+        instruction: "G\u00f6\u011fs\u00fcn ortas\u0131na V \u015feklinde sar\u0131 metal g\u00f6\u011f\u00fcs plakas\u0131n\u0131 yerle\u015ftir.",
+        voice: "G\u00f6\u011fs\u00fcn\u00fcn ortas\u0131na parlak sar\u0131 metal z\u0131rh plakas\u0131n\u0131 \u00e7izelim.",
+        svg: `<path d="M 255 202 L 345 202 L 328 265 L 272 265 Z" fill="none" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_omega/step_4.mp3"
+      },
+      {
+        title: "5. Ad\u0131m: Dev Sol Omuz Kalkan\u0131",
+        instruction: "G\u00f6vdenin sol \u00fcst\u00fcne k\u00fcre gibi b\u00fcy\u00fck koruyucu omuz kalkan\u0131n\u0131 \u00e7iz.",
+        voice: "\u0130\u015fte Omega'n\u0131n heybetli omuzluklar\u0131! Sol omzuna devasa z\u0131rh kalkan\u0131n\u0131 \u00e7izelim!",
+        svg: `<path d="M 235 185 C 180 180, 155 215, 165 262 L 228 262 Z" fill="none" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_omega/step_5.mp3"
+      },
+      {
+        title: "6. Ad\u0131m: Dev Sa\u011f Omuz Kalkan\u0131",
+        instruction: "Sa\u011f omzuna da e\u015fle\u015fen b\u00fcy\u00fck omuz kalkan\u0131n\u0131 ekle.",
+        voice: "Sa\u011f omzuna da ayn\u0131 dev koruyucu kalkan\u0131 \u00e7izelim!",
+        svg: `<path d="M 365 185 C 420 180, 445 215, 435 262 L 372 262 Z" fill="none" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_omega/step_6.mp3"
+      },
+      {
+        title: "7. Ad\u0131m: Omuzdaki Beyaz Omega (\u03a9) Sembol\u00fc",
+        instruction: "Sol omuz kalkan\u0131n\u0131n i\u00e7ine k\u00fc\u00e7\u00fck \u015firin Omega sembol\u00fcn\u00fc \u00e7iz.",
+        voice: "Sol omuzlu\u011funun ortas\u0131na Omega'n\u0131n kendi ad\u0131n\u0131 ta\u015f\u0131yan sembol\u00fcn\u00fc yapal\u0131m!",
+        svg: `<circle cx="198" cy="222" r="14" fill="none" stroke="#0f172a" stroke-width="5"/><line x1="186" y1="236" x2="210" y2="236" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_omega/step_7.mp3"
+      },
+      {
+        title: "8. Ad\u0131m: Dev Sol Kol Silindiri ve 3 Robot Pen\u00e7esi",
+        instruction: "Sol omzun alt\u0131ndan inen kal\u0131n kol topunu ve ucundaki \u00fc\u00e7 dev pen\u00e7eyi \u00e7iz.",
+        voice: "Sol omzunun alt\u0131na dev robot kolunu ve \u00fc\u00e7 b\u00fcy\u00fck metal pen\u00e7esini \u00e7izelim!",
+        svg: `<path d="M 168 262 L 152 335 L 210 342 L 222 262" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/><path d="M 155 340 L 145 372 M 178 342 L 178 378 M 202 342 L 212 372" stroke="#0f172a" stroke-width="8" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_omega/step_8.mp3"
+      },
+      {
+        title: "9. Ad\u0131m: Dev Sa\u011f Kol Silindiri ve 3 Robot Pen\u00e7esi",
+        instruction: "Sa\u011f tarafa da ayn\u0131 b\u00fcy\u00fck robot kolunu ve g\u00fc\u00e7l\u00fc pen\u00e7elerini yap.",
+        voice: "Sa\u011f tarafa da ayn\u0131 g\u00fc\u00e7l\u00fc robot kolunu ve \u00fc\u00e7 b\u00fcy\u00fck pen\u00e7esini \u00e7izelim!",
+        svg: `<path d="M 378 262 L 390 342 L 448 335 L 432 262" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/><path d="M 398 342 L 388 372 M 422 342 L 422 378 M 445 340 L 455 372" stroke="#0f172a" stroke-width="8" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_omega/step_9.mp3"
+      },
+      {
+        title: "10. Ad\u0131m: Sa\u011flam Bel Mekanizmas\u0131",
+        instruction: "G\u00f6vdenin alt\u0131na bacaklar\u0131 ba\u011flayan siyah metal bel par\u00e7as\u0131n\u0131 \u00e7iz.",
+        voice: "G\u00f6vdenin alt\u0131na bacaklar\u0131 ta\u015f\u0131yan g\u00fc\u00e7l\u00fc bel eklemini ekleyelim.",
+        svg: `<rect x="262" y="295" width="76" height="30" rx="6" fill="none" stroke="#0f172a" stroke-width="8"/>`,
+        audio: "audio/voices/cirak_sonic_omega/step_10.mp3"
+      },
+      {
+        title: "11. Ad\u0131m: Sol G\u00fc\u00e7l\u00fc Bacak Z\u0131rh\u0131",
+        instruction: "Belin alt\u0131ndan yere do\u011fru inen kal\u0131n robot baca\u011f\u0131n\u0131 \u00e7iz.",
+        voice: "Belinin sol alt\u0131ndan inen z\u0131rhl\u0131 dev robot baca\u011f\u0131n\u0131 \u00e7izelim!",
+        svg: `<path d="M 262 325 L 245 435 L 290 435 L 295 325" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_omega/step_11.mp3"
+      },
+      {
+        title: "12. Ad\u0131m: Sa\u011f G\u00fc\u00e7l\u00fc Bacak Z\u0131rh\u0131",
+        instruction: "Sa\u011f tarafa da di\u011fer sa\u011flam robot baca\u011f\u0131n\u0131 yap.",
+        voice: "Sa\u011f tarafa da di\u011fer g\u00fc\u00e7l\u00fc z\u0131rhl\u0131 baca\u011f\u0131n\u0131 ekleyelim.",
+        svg: `<path d="M 305 325 L 310 435 L 355 435 L 338 325" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_omega/step_12.mp3"
+      },
+      {
+        title: "13. Ad\u0131m: Sol Dev Metal Ayak",
+        instruction: "Sol baca\u011f\u0131n alt\u0131na yere a\u011f\u0131r basan k\u0131rm\u0131z\u0131-sar\u0131 dev robot aya\u011f\u0131n\u0131 yap.",
+        voice: "Sol aya\u011f\u0131na yere sa\u011flamca basan kocaman metal botunu \u00e7izelim!",
+        svg: `<path d="M 232 435 L 220 475 L 295 475 L 292 435 Z" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_omega/step_13.mp3"
+      },
+      {
+        title: "14. Ad\u0131m: Sa\u011f Dev Metal Ayak",
+        instruction: "Sa\u011f aya\u011f\u0131na da e\u015fle\u015fen dev robot botunu \u00e7iz.",
+        voice: "Sa\u011f aya\u011f\u0131na da ayn\u0131 heybetli metal botunu ekleyelim.",
+        svg: `<path d="M 308 435 L 305 475 L 380 475 L 368 435 Z" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_omega/step_14.mp3"
+      },
+      {
+        title: "15. Ad\u0131m: Kol Band\u0131 ve Dize \u015eerit \u00c7izgileri",
+        instruction: "Kollara sar\u0131 metal \u00e7izgiler ve bacaklara diz korumas\u0131 ekle.",
+        voice: "Kol ve diz z\u0131rhlar\u0131na sar\u0131 \u015ferit \u00e7izgilerini ekleyelim.",
+        svg: `<line x1="160" y1="295" x2="215" y2="295" stroke="#0f172a" stroke-width="6"/><line x1="385" y1="295" x2="440" y2="295" stroke="#0f172a" stroke-width="6"/>`,
+        audio: "audio/voices/cirak_sonic_omega/step_15.mp3"
+      },
+      {
+        title: "16. Ad\u0131m: K\u0131rm\u0131z\u0131 Lazer K\u0131v\u0131lc\u0131mlar\u0131",
+        instruction: "Etraf\u0131na y\u00fcksek robot enerjisini g\u00f6steren k\u0131v\u0131lc\u0131m \u00e7izgileri yap.",
+        voice: "Etraf\u0131na s\u00fcper robot g\u00fcc\u00fcn\u00fc g\u00f6steren enerji \u00e7izgileri \u00e7izelim.",
+        svg: `<line x1="120" y1="210" x2="145" y2="210" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/><line x1="455" y1="210" x2="480" y2="210" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_omega/step_16.mp3"
+      },
+      {
+        title: "17. Ad\u0131m: A\u011f\u0131r Zemin \u00c7atlak \u00c7izgisi",
+        instruction: "A\u011f\u0131r ayaklar\u0131n\u0131n bast\u0131\u011f\u0131 zemin \u00e7izgisini \u00e7ek.",
+        voice: "Dev robotun bast\u0131\u011f\u0131 sa\u011flam metal pist zeminini \u00e7izelim.",
+        svg: `<line x1="160" y1="482" x2="440" y2="482" stroke="#0f172a" stroke-width="9" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_omega/step_17.mp3"
+      },
+      {
+        title: "18. Ad\u0131m: Canl\u0131 Renklendirme (Ate\u015f K\u0131rm\u0131z\u0131s\u0131 & Sar\u0131 Omega!)",
+        instruction: "Tebrikler K\u0131van\u00e7! Dev robot Omega'y\u0131 parlak k\u0131rm\u0131z\u0131, alt\u0131n sar\u0131s\u0131 ve koyu \u00e7elik griyle boya!",
+        voice: "\u0130nan\u0131lmaz g\u00fc\u00e7l\u00fc oldu K\u0131van\u00e7! Dev robot E-123 Omega g\u00f6reve haz\u0131r! \u015eimdi onu parlak k\u0131rm\u0131z\u0131, sar\u0131 z\u0131rhlar ve koyu \u00e7elik griyle boya!",
+        svg: `
+          <defs>
+            <linearGradient id="omgRed" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#f87171"/>
+              <stop offset="50%" stop-color="#ef4444"/>
+              <stop offset="100%" stop-color="#991b1b"/>
+            </linearGradient>
+            <linearGradient id="omgSteel" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#94a3b8"/>
+              <stop offset="100%" stop-color="#334155"/>
+            </linearGradient>
+          </defs>
+          <line x1="160" y1="482" x2="440" y2="482" stroke="#475569" stroke-width="10" stroke-linecap="round"/>
+          <path d="M 262 325 L 245 435 L 290 435 L 295 325 Z" fill="url(#omgSteel)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 305 325 L 310 435 L 355 435 L 338 325 Z" fill="url(#omgSteel)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 232 435 L 220 475 L 295 475 L 292 435 Z" fill="url(#omgRed)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 308 435 L 305 475 L 380 475 L 368 435 Z" fill="url(#omgRed)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <rect x="262" y="295" width="76" height="30" rx="6" fill="#1e293b" stroke="#0f172a" stroke-width="8"/>
+          <path d="M 168 262 L 152 335 L 210 342 L 222 262 Z" fill="url(#omgSteel)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <line x1="160" y1="295" x2="215" y2="295" stroke="#facc15" stroke-width="8"/>
+          <path d="M 155 340 L 145 372 M 178 342 L 178 378 M 202 342 L 212 372" stroke="#1e293b" stroke-width="9" stroke-linecap="round"/>
+          <path d="M 378 262 L 390 342 L 448 335 L 432 262 Z" fill="url(#omgSteel)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <line x1="385" y1="295" x2="440" y2="295" stroke="#facc15" stroke-width="8"/>
+          <path d="M 398 342 L 388 372 M 422 342 L 422 378 M 445 340 L 455 372" stroke="#1e293b" stroke-width="9" stroke-linecap="round"/>
+          <path d="M 235 185 L 365 185 L 348 295 L 252 295 Z" fill="url(#omgRed)" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>
+          <path d="M 255 202 L 345 202 L 328 265 L 272 265 Z" fill="#facc15" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/>
+          <path d="M 235 185 C 180 180, 155 215, 165 262 L 228 262 Z" fill="url(#omgRed)" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>
+          <circle cx="198" cy="222" r="14" fill="none" stroke="#ffffff" stroke-width="5"/>
+          <line x1="186" y1="236" x2="210" y2="236" stroke="#ffffff" stroke-width="5"/>
+          <path d="M 365 185 C 420 180, 445 215, 435 262 L 372 262 Z" fill="url(#omgRed)" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>
+          <path d="M 265 180 C 265 130, 335 130, 335 180 Z" fill="url(#omgRed)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <rect x="272" y="152" width="56" height="22" rx="4" fill="#0f172a" stroke="#0f172a" stroke-width="5"/>
+          <circle cx="286" cy="163" r="5" fill="#ef4444"/>
+          <circle cx="314" cy="163" r="5" fill="#ef4444"/>
+`,
+        audio: "audio/voices/cirak_sonic_omega/step_18.mp3"
+      },
+    ]
+  },
+
+  // =========================================================================
+  // ⚡ KİRPİ SONİC DÜNYASI: TOMBUL KEDI BIG VE FROGGY
+  // =========================================================================
+  {
+    id: "cirak_sonic_big",
+    categoryId: "sonic",
+    name: "Tombul Kedi Big ve Froggy",
+    emoji: "\ud83d\udc31",
+    level: 1,
+    levelName: "\u00c7\u0131rak",
+    levelBadge: "\ud83d\udfe2 \u00c7\u0131rak",
+    description: "Bal\u0131k tutmay\u0131 \u00e7ok seven koca y\u00fcrekli tombul mor kedi Big ve minik ye\u015fil kurba\u011fa dostu Froggy!",
+    materials: "Resim ka\u011f\u0131d\u0131, kur\u015fun kalem, silgi, mor, lila, a\u00e7\u0131k ye\u015fil, sar\u0131 ve kahverengi boyalar",
+    welcomeText: "Merhaba K\u0131van\u00e7! Bal\u0131k tutmay\u0131 \u00e7ok seven kocaman sevimli mor kedi Big ve z\u0131playan k\u00fc\u00e7\u00fck arkada\u015f\u0131 kurba\u011fa Froggy geldi!",
+    welcomeAudio: "audio/voices/cirak_sonic_big/welcome.mp3",
+    colors: ["#8b5cf6", "#c4b5fd", "#22c55e", "#facc15"],
+    previewSvg: `
+          <defs>
+            <linearGradient id="bigPurple" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#a78bfa"/>
+              <stop offset="60%" stop-color="#8b5cf6"/>
+              <stop offset="100%" stop-color="#6d28d9"/>
+            </linearGradient>
+          </defs>
+          <path d="M 140 475 Q 260 468, 380 475" stroke="#86efac" stroke-width="9" stroke-linecap="round"/>
+          <ellipse cx="495" cy="465" rx="48" ry="14" fill="#22c55e" stroke="#0f172a" stroke-width="7"/>
+          <circle cx="482" cy="410" r="9" fill="#86efac" stroke="#0f172a" stroke-width="6"/>
+          <circle cx="508" cy="410" r="9" fill="#86efac" stroke="#0f172a" stroke-width="6"/>
+          <ellipse cx="495" cy="435" rx="28" ry="22" fill="#4ade80" stroke="#0f172a" stroke-width="7"/>
+          <circle cx="482" cy="410" r="3.5" fill="#0f172a"/>
+          <circle cx="508" cy="410" r="3.5" fill="#0f172a"/>
+          <path d="M 480 438 Q 495 448, 510 438" stroke="#0f172a" stroke-width="5" stroke-linecap="round" fill="none"/>
+          <line x1="365" y1="365" x2="495" y2="215" stroke="#b45309" stroke-width="8" stroke-linecap="round"/>
+          <line x1="495" y1="215" x2="495" y2="385" stroke="#475569" stroke-width="4" stroke-dasharray="6 4"/>
+          <circle cx="495" cy="382" r="10" fill="#ef4444" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 175 390 C 115 395, 95 340, 118 300 C 132 285, 148 305, 138 325 C 125 350, 145 375, 175 372 Z" fill="url(#bigPurple)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <ellipse cx="215" cy="450" rx="34" ry="20" fill="#92400e" stroke="#0f172a" stroke-width="9"/>
+          <ellipse cx="305" cy="450" rx="34" ry="20" fill="#92400e" stroke="#0f172a" stroke-width="9"/>
+          <ellipse cx="260" cy="340" rx="92" ry="98" fill="url(#bigPurple)" stroke="#0f172a" stroke-width="10"/>
+          <ellipse cx="260" cy="345" rx="56" ry="64" fill="#fef3c7" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 172 340 Q 260 365, 348 340" stroke="#78350f" stroke-width="12" fill="none"/>
+          <rect x="246" y="340" width="28" height="22" rx="4" fill="#facc15" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 178 275 C 145 305, 140 345, 158 370" fill="none" stroke="#0f172a" stroke-width="22" stroke-linecap="round"/>
+          <path d="M 178 275 C 145 305, 140 345, 158 370" fill="none" stroke="url(#bigPurple)" stroke-width="11" stroke-linecap="round"/>
+          <circle cx="162" cy="382" r="20" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
+          <path d="M 342 275 C 375 295, 385 320, 380 342" fill="none" stroke="#0f172a" stroke-width="22" stroke-linecap="round"/>
+          <path d="M 342 275 C 375 295, 385 320, 380 342" fill="none" stroke="url(#bigPurple)" stroke-width="11" stroke-linecap="round"/>
+          <circle cx="378" cy="355" r="20" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
+          <path d="M 210 148 L 195 92 L 245 128 Z" fill="url(#bigPurple)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 212 138 L 204 106 L 236 130 Z" fill="#fbcfe8" stroke="#0f172a" stroke-width="4"/>
+          <path d="M 275 128 L 325 92 L 310 148 Z" fill="url(#bigPurple)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 284 130 L 316 106 L 308 138 Z" fill="#fbcfe8" stroke="#0f172a" stroke-width="4"/>
+          <ellipse cx="260" cy="185" rx="68" ry="56" fill="url(#bigPurple)" stroke="#0f172a" stroke-width="10"/>
+          <ellipse cx="260" cy="212" rx="44" ry="24" fill="#fef3c7" stroke="#0f172a" stroke-width="5"/>
+          <circle cx="240" cy="175" r="16" fill="#fef08a" stroke="#0f172a" stroke-width="6"/>
+          <circle cx="242" cy="175" r="7" fill="#0f172a"/>
+          <circle cx="239" cy="171" r="3" fill="#ffffff"/>
+          <circle cx="280" cy="175" r="16" fill="#fef08a" stroke="#0f172a" stroke-width="6"/>
+          <circle cx="278" cy="175" r="7" fill="#0f172a"/>
+          <circle cx="275" cy="171" r="3" fill="#ffffff"/>
+          <polygon points="253,196 267,196 260,204" fill="#f43f5e" stroke="#0f172a" stroke-width="3"/>
+          <path d="M 235 215 Q 260 235, 285 215" fill="none" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+          <path d="M 260 132 L 260 152 M 242 138 L 248 154 M 278 138 L 272 154" stroke="#4c1d95" stroke-width="5" stroke-linecap="round"/>
+`,
+    steps: [
+      {
+        title: "1. Ad\u0131m: Koca Sevimli Yuvarlak Kafa",
+        instruction: "Sayfan\u0131n \u00fcst soluna Big'in kocaman tombi\u015f yuvarlak kafas\u0131n\u0131 \u00e7iz.",
+        voice: "Ka\u011f\u0131d\u0131m\u0131z\u0131n \u00fcst ortas\u0131na tombul kedi Big'in kocaman yuvarlak kafas\u0131n\u0131 \u00e7izelim.",
+        svg: `<ellipse cx="260" cy="185" rx="68" ry="56" fill="none" stroke="#0f172a" stroke-width="10"/>`,
+        audio: "audio/voices/cirak_sonic_big/step_1.mp3"
+      },
+      {
+        title: "2. Ad\u0131m: \u0130ki B\u00fcy\u00fck Kedi Kula\u011f\u0131",
+        instruction: "Kafas\u0131n\u0131n tepesine geni\u015f \u00fc\u00e7gen \u015feklinde iki kulak ekle.",
+        voice: "Kafas\u0131n\u0131n \u00fcst\u00fcne iki tane b\u00fcy\u00fck sevimli kedi kula\u011f\u0131 \u00e7izelim.",
+        svg: `<path d="M 210 148 L 195 92 L 245 128 M 275 128 L 325 92 L 310 148" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/><path d="M 212 138 L 204 106 L 236 130 M 284 130 L 316 106 L 308 138" fill="none" stroke="#0f172a" stroke-width="4.5"/>`,
+        audio: "audio/voices/cirak_sonic_big/step_2.mp3"
+      },
+      {
+        title: "3. Ad\u0131m: Yuvarlak B\u00fcy\u00fck Sar\u0131 G\u00f6zler",
+        instruction: "Y\u00fcz\u00fcne Big'in kocaman \u015fa\u015fk\u0131n mutlu yuvarlak g\u00f6zlerini \u00e7iz.",
+        voice: "Y\u00fcz\u00fcne kocaman sevimli yuvarlak g\u00f6zlerini ve par\u0131lt\u0131lar\u0131n\u0131 kondural\u0131m!",
+        svg: `<circle cx="240" cy="175" r="16" fill="none" stroke="#0f172a" stroke-width="6"/><circle cx="242" cy="175" r="7" fill="#0f172a"/><circle cx="239" cy="171" r="3" fill="#ffffff"/><circle cx="280" cy="175" r="16" fill="none" stroke="#0f172a" stroke-width="6"/><circle cx="278" cy="175" r="7" fill="#0f172a"/><circle cx="275" cy="171" r="3" fill="#ffffff"/>`,
+        audio: "audio/voices/cirak_sonic_big/step_3.mp3"
+      },
+      {
+        title: "4. Ad\u0131m: Tombi\u015f Beyaz Yanaklar ve Kocaman G\u00fcl\u00fcmseme",
+        instruction: "Alt y\u00fcz\u00fcne iki yuvarlak yanak, pembe \u00fc\u00e7gen burun ve ne\u015feli geni\u015f g\u00fcl\u00fcmseme \u00e7iz.",
+        voice: "Alt y\u00fcz\u00fcne tatl\u0131 yanak yaylar\u0131n\u0131, minik burnunu ve kocaman mutlu g\u00fcl\u00fcmsemesini \u00e7izelim.",
+        svg: `<ellipse cx="260" cy="212" rx="44" ry="24" fill="none" stroke="#0f172a" stroke-width="6"/><polygon points="253,196 267,196 260,204" fill="#0f172a"/><path d="M 235 215 Q 260 235, 285 215" fill="none" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_big/step_4.mp3"
+      },
+      {
+        title: "5. Ad\u0131m: Kocaman Tombi\u015f G\u00f6bek G\u00f6vdesi",
+        instruction: "Ba\u015f\u0131n alt\u0131na kocaman ay\u0131 gibi b\u00fcy\u00fck tombul g\u00f6be\u011fini yap.",
+        voice: "Ba\u015f\u0131n\u0131n alt\u0131na o kocaman s\u0131cac\u0131k tombul g\u00f6be\u011fini ve yumu\u015fak kar\u0131n ovalini \u00e7izelim!",
+        svg: `<ellipse cx="260" cy="340" rx="92" ry="98" fill="none" stroke="#0f172a" stroke-width="10"/><ellipse cx="260" cy="345" rx="56" ry="64" fill="none" stroke="#0f172a" stroke-width="6"/>`,
+        audio: "audio/voices/cirak_sonic_big/step_5.mp3"
+      },
+      {
+        title: "6. Ad\u0131m: Kahverengi Kemer",
+        instruction: "Kocaman g\u00f6be\u011finin beline tokal\u0131 b\u00fcy\u00fck bir kahverengi kemer sar.",
+        voice: "Tombul beline alt\u0131n tokal\u0131 sa\u011flam bir kemer \u00e7izelim.",
+        svg: `<path d="M 172 340 Q 260 365, 348 340" stroke="#0f172a" stroke-width="10" fill="none"/><rect x="246" y="340" width="28" height="22" rx="4" fill="none" stroke="#0f172a" stroke-width="6"/>`,
+        audio: "audio/voices/cirak_sonic_big/step_6.mp3"
+      },
+      {
+        title: "7. Ad\u0131m: Sol Kol ve B\u00fcy\u00fck Pati",
+        instruction: "Sol yan\u0131ndan a\u015fa\u011f\u0131 sarkan kal\u0131n kolunu ve eldivenini ekle.",
+        voice: "Sol taraf\u0131na kal\u0131n kedi kolunu ve beyaz eldivenini \u00e7izelim.",
+        svg: `<path d="M 178 275 C 145 305, 140 345, 158 370" fill="none" stroke="#0f172a" stroke-width="20" stroke-linecap="round"/><circle cx="162" cy="382" r="20" fill="none" stroke="#0f172a" stroke-width="8"/>`,
+        audio: "audio/voices/cirak_sonic_big/step_7.mp3"
+      },
+      {
+        title: "8. Ad\u0131m: Olta Tutan Sa\u011f Kol ve Eldiven",
+        instruction: "Sa\u011f tarafa olta kam\u0131\u015f\u0131n\u0131 tutan b\u00fcy\u00fck beyaz eldivenli kolunu \u00e7iz.",
+        voice: "Sa\u011f kolunu bal\u0131k oltas\u0131n\u0131 ne\u015feyle tutar pozda \u00e7izelim!",
+        svg: `<path d="M 342 275 C 375 295, 385 320, 380 342" fill="none" stroke="#0f172a" stroke-width="20" stroke-linecap="round"/><circle cx="378" cy="355" r="20" fill="none" stroke="#0f172a" stroke-width="8"/>`,
+        audio: "audio/voices/cirak_sonic_big/step_8.mp3"
+      },
+      {
+        title: "9. Ad\u0131m: Uzun Olta Kam\u0131\u015f\u0131 ve Misina \u0130pi",
+        instruction: "Elinden yukar\u0131ya sa\u011f tarafa do\u011fru uzanan olta kam\u0131\u015f\u0131n\u0131 ve a\u015fa\u011f\u0131 sarkan olta ipini \u00e7iz.",
+        voice: "Elinden yukar\u0131 do\u011fru uzanan uzun bal\u0131k oltas\u0131n\u0131 ve ucundan sarkan misinay\u0131 \u00e7izelim!",
+        svg: `<line x1="365" y1="365" x2="495" y2="215" stroke="#0f172a" stroke-width="8" stroke-linecap="round"/><line x1="495" y1="215" x2="495" y2="385" stroke="#0f172a" stroke-width="4" stroke-dasharray="6 4"/>`,
+        audio: "audio/voices/cirak_sonic_big/step_9.mp3"
+      },
+      {
+        title: "10. Ad\u0131m: Big'in B\u00fcy\u00fck Parmak Aras\u0131 Sandaletleri",
+        instruction: "G\u00f6vdesinin alt\u0131na iki tane tombul bacak ve kahverengi sandalet ayaklar\u0131 yap.",
+        voice: "G\u00f6vdenin alt\u0131na tombul ayaklar\u0131n\u0131 ve sevimli sandaletlerini \u00e7izelim.",
+        svg: `<ellipse cx="215" cy="450" rx="34" ry="20" fill="none" stroke="#0f172a" stroke-width="9"/><ellipse cx="305" cy="450" rx="34" ry="20" fill="none" stroke="#0f172a" stroke-width="9"/>`,
+        audio: "audio/voices/cirak_sonic_big/step_10.mp3"
+      },
+      {
+        title: "11. Ad\u0131m: Kal\u0131n \u00c7izgili Kedi Kuyru\u011fu",
+        instruction: "Sol yandan k\u0131vr\u0131l\u0131p yukar\u0131 \u00e7\u0131kan \u00e7izgili uzun kedi kuyru\u011funu yap.",
+        voice: "Sol taraf\u0131ndan yukar\u0131 k\u0131vr\u0131lan pofuduk uzun kedi kuyru\u011funu \u00e7izelim!",
+        svg: `<path d="M 175 390 C 115 395, 95 340, 118 300 C 132 285, 148 305, 138 325 C 125 350, 145 375, 175 372" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_big/step_11.mp3"
+      },
+      {
+        title: "12. Ad\u0131m: K\u00fc\u00e7\u00fck Dostu Kurba\u011fa Froggy!",
+        instruction: "Oltan\u0131n ucunun alt\u0131na nil\u00fcfer yapra\u011f\u0131nda oturan minik kurba\u011fa Froggy'yi \u00e7iz.",
+        voice: "\u015eimdi oltan\u0131n hemen alt\u0131na minik ye\u015fil dostu Kurba\u011fa Froggy'yi \u00e7izelim!",
+        svg: `<ellipse cx="495" cy="435" rx="28" ry="22" fill="none" stroke="#0f172a" stroke-width="7"/><circle cx="482" cy="410" r="9" fill="none" stroke="#0f172a" stroke-width="6"/><circle cx="508" cy="410" r="9" fill="none" stroke="#0f172a" stroke-width="6"/><circle cx="482" cy="410" r="3.5" fill="#0f172a"/><circle cx="508" cy="410" r="3.5" fill="#0f172a"/><path d="M 480 438 Q 495 448, 510 438" stroke="#0f172a" stroke-width="5" stroke-linecap="round" fill="none"/>`,
+        audio: "audio/voices/cirak_sonic_big/step_12.mp3"
+      },
+      {
+        title: "13. Ad\u0131m: Nil\u00fcfer Yapra\u011f\u0131 ve Su Dalgas\u0131",
+        instruction: "Froggy'nin oturdu\u011fu yuvarlak ye\u015fil nil\u00fcfer yapra\u011f\u0131n\u0131 yap.",
+        voice: "Froggy'nin \u00fcst\u00fcne oturdu\u011fu b\u00fcy\u00fck nil\u00fcfer yapra\u011f\u0131n\u0131 yapal\u0131m.",
+        svg: `<ellipse cx="495" cy="465" rx="48" ry="14" fill="none" stroke="#0f172a" stroke-width="7"/>`,
+        audio: "audio/voices/cirak_sonic_big/step_13.mp3"
+      },
+      {
+        title: "14. Ad\u0131m: Al\u0131n \u00c7izgileri ve B\u0131y\u0131klar",
+        instruction: "Big'in aln\u0131na tekir kedi \u00e7izgilerini ve yanaklar\u0131na b\u0131y\u0131klar\u0131n\u0131 ekle.",
+        voice: "Aln\u0131na \u015firin tekir kedi \u00e7izgilerini ve yanak b\u0131y\u0131klar\u0131n\u0131 kondural\u0131m.",
+        svg: `<path d="M 260 132 L 260 152 M 242 138 L 248 154 M 278 138 L 272 154" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/><line x1="185" y1="205" x2="215" y2="210" stroke="#0f172a" stroke-width="4.5"/><line x1="305" y1="210" x2="335" y2="205" stroke="#0f172a" stroke-width="4.5"/>`,
+        audio: "audio/voices/cirak_sonic_big/step_14.mp3"
+      },
+      {
+        title: "15. Ad\u0131m: Kuyruk \u015eerit Desenleri",
+        instruction: "Kuyru\u011funa tekir \u015ferit halkalar\u0131n\u0131 ekle.",
+        voice: "Kuyru\u011funun \u00fczerine kedi \u015ferit \u00e7izgilerini ekleyelim.",
+        svg: `<line x1="110" y1="335" x2="132" y2="335" stroke="#0f172a" stroke-width="5"/><line x1="115" y1="365" x2="138" y2="358" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_big/step_15.mp3"
+      },
+      {
+        title: "16. Ad\u0131m: Olta Ucundaki K\u0131rm\u0131z\u0131 \u015eamand\u0131ra",
+        instruction: "Olta ipinin ucuna sevimli k\u0131rm\u0131z\u0131-beyaz \u015famand\u0131ra topunu \u00e7iz.",
+        voice: "Olta ipinin ucuna sevimli k\u0131rm\u0131z\u0131-beyaz bal\u0131k \u015famand\u0131ras\u0131 yapal\u0131m.",
+        svg: `<circle cx="495" cy="382" r="10" fill="none" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_big/step_16.mp3"
+      },
+      {
+        title: "17. Ad\u0131m: G\u00f6l K\u0131y\u0131s\u0131 \u00c7izgisi",
+        instruction: "Ayaklar\u0131n\u0131n alt\u0131na g\u00f6l kenar\u0131 \u00e7izgisi \u00e7ek.",
+        voice: "En alta huzurlu g\u00f6l kenar\u0131 zemin \u00e7izgisini \u00e7ekelim.",
+        svg: `<path d="M 140 475 Q 260 468, 380 475" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_big/step_17.mp3"
+      },
+      {
+        title: "18. Ad\u0131m: Canl\u0131 Renklendirme (Mor Tekir Big & Ye\u015fil Froggy!)",
+        instruction: "Tebrikler K\u0131van\u00e7! Tombul Kedi Big'i mor-lila t\u00fcyler ve minik kurba\u011fa Froggy'yi ye\u015fil renkle boya!",
+        voice: "\u00c7ok huzurlu ve \u015firin oldu K\u0131van\u00e7! Tombul Kedi Big ve Froggy bal\u0131k tutmaya haz\u0131r! \u015eimdi onlar\u0131 parlak mor ve yemye\u015fil boyalar\u0131nla renklendir!",
+        svg: `
+          <defs>
+            <linearGradient id="bigPurple" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#a78bfa"/>
+              <stop offset="60%" stop-color="#8b5cf6"/>
+              <stop offset="100%" stop-color="#6d28d9"/>
+            </linearGradient>
+          </defs>
+          <path d="M 140 475 Q 260 468, 380 475" stroke="#86efac" stroke-width="9" stroke-linecap="round"/>
+          <ellipse cx="495" cy="465" rx="48" ry="14" fill="#22c55e" stroke="#0f172a" stroke-width="7"/>
+          <circle cx="482" cy="410" r="9" fill="#86efac" stroke="#0f172a" stroke-width="6"/>
+          <circle cx="508" cy="410" r="9" fill="#86efac" stroke="#0f172a" stroke-width="6"/>
+          <ellipse cx="495" cy="435" rx="28" ry="22" fill="#4ade80" stroke="#0f172a" stroke-width="7"/>
+          <circle cx="482" cy="410" r="3.5" fill="#0f172a"/>
+          <circle cx="508" cy="410" r="3.5" fill="#0f172a"/>
+          <path d="M 480 438 Q 495 448, 510 438" stroke="#0f172a" stroke-width="5" stroke-linecap="round" fill="none"/>
+          <line x1="365" y1="365" x2="495" y2="215" stroke="#b45309" stroke-width="8" stroke-linecap="round"/>
+          <line x1="495" y1="215" x2="495" y2="385" stroke="#475569" stroke-width="4" stroke-dasharray="6 4"/>
+          <circle cx="495" cy="382" r="10" fill="#ef4444" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 175 390 C 115 395, 95 340, 118 300 C 132 285, 148 305, 138 325 C 125 350, 145 375, 175 372 Z" fill="url(#bigPurple)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <ellipse cx="215" cy="450" rx="34" ry="20" fill="#92400e" stroke="#0f172a" stroke-width="9"/>
+          <ellipse cx="305" cy="450" rx="34" ry="20" fill="#92400e" stroke="#0f172a" stroke-width="9"/>
+          <ellipse cx="260" cy="340" rx="92" ry="98" fill="url(#bigPurple)" stroke="#0f172a" stroke-width="10"/>
+          <ellipse cx="260" cy="345" rx="56" ry="64" fill="#fef3c7" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 172 340 Q 260 365, 348 340" stroke="#78350f" stroke-width="12" fill="none"/>
+          <rect x="246" y="340" width="28" height="22" rx="4" fill="#facc15" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 178 275 C 145 305, 140 345, 158 370" fill="none" stroke="#0f172a" stroke-width="22" stroke-linecap="round"/>
+          <path d="M 178 275 C 145 305, 140 345, 158 370" fill="none" stroke="url(#bigPurple)" stroke-width="11" stroke-linecap="round"/>
+          <circle cx="162" cy="382" r="20" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
+          <path d="M 342 275 C 375 295, 385 320, 380 342" fill="none" stroke="#0f172a" stroke-width="22" stroke-linecap="round"/>
+          <path d="M 342 275 C 375 295, 385 320, 380 342" fill="none" stroke="url(#bigPurple)" stroke-width="11" stroke-linecap="round"/>
+          <circle cx="378" cy="355" r="20" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
+          <path d="M 210 148 L 195 92 L 245 128 Z" fill="url(#bigPurple)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 212 138 L 204 106 L 236 130 Z" fill="#fbcfe8" stroke="#0f172a" stroke-width="4"/>
+          <path d="M 275 128 L 325 92 L 310 148 Z" fill="url(#bigPurple)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 284 130 L 316 106 L 308 138 Z" fill="#fbcfe8" stroke="#0f172a" stroke-width="4"/>
+          <ellipse cx="260" cy="185" rx="68" ry="56" fill="url(#bigPurple)" stroke="#0f172a" stroke-width="10"/>
+          <ellipse cx="260" cy="212" rx="44" ry="24" fill="#fef3c7" stroke="#0f172a" stroke-width="5"/>
+          <circle cx="240" cy="175" r="16" fill="#fef08a" stroke="#0f172a" stroke-width="6"/>
+          <circle cx="242" cy="175" r="7" fill="#0f172a"/>
+          <circle cx="239" cy="171" r="3" fill="#ffffff"/>
+          <circle cx="280" cy="175" r="16" fill="#fef08a" stroke="#0f172a" stroke-width="6"/>
+          <circle cx="278" cy="175" r="7" fill="#0f172a"/>
+          <circle cx="275" cy="171" r="3" fill="#ffffff"/>
+          <polygon points="253,196 267,196 260,204" fill="#f43f5e" stroke="#0f172a" stroke-width="3"/>
+          <path d="M 235 215 Q 260 235, 285 215" fill="none" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+          <path d="M 260 132 L 260 152 M 242 138 L 248 154 M 278 138 L 272 154" stroke="#4c1d95" stroke-width="5" stroke-linecap="round"/>
+`,
+        audio: "audio/voices/cirak_sonic_big/step_18.mp3"
+      },
+    ]
+  },
+
+  // =========================================================================
+  // ⚡ KİRPİ SONİC DÜNYASI: TAILS TORNADO UÇAĞI
+  // =========================================================================
+  {
+    id: "cirak_sonic_tornado",
+    categoryId: "sonic",
+    name: "Tails Tornado U\u00e7a\u011f\u0131",
+    emoji: "\u2708\ufe0f",
+    level: 1,
+    levelName: "\u00c7\u0131rak",
+    levelBadge: "\ud83d\udfe2 \u00c7\u0131rak",
+    description: "Sonic ve Tails'\u0131n g\u00f6klerde u\u00e7an \u00fcnl\u00fc k\u0131rm\u0131z\u0131 \u00e7ift kanatl\u0131 Tornado u\u00e7a\u011f\u0131! D\u00f6nen pervane ve alt\u0131n y\u0131ld\u0131z amblemi!",
+    materials: "Resim ka\u011f\u0131d\u0131, kur\u015fun kalem, silgi, parlak k\u0131rm\u0131z\u0131, turuncu, beyaz ve g\u00f6k mavisi boyalar",
+    welcomeText: "Kalk\u0131\u015fa haz\u0131r m\u0131s\u0131n K\u0131van\u00e7? Tails'\u0131n pilotluk yapt\u0131\u011f\u0131 k\u0131rm\u0131z\u0131 \u00e7ift kanatl\u0131 Tornado u\u00e7a\u011f\u0131n\u0131 bulutlar\u0131n \u00fcst\u00fcnde \u00e7iziyoruz!",
+    welcomeAudio: "audio/voices/cirak_sonic_tornado/welcome.mp3",
+    colors: ["#ef4444", "#ffffff", "#f97316", "#38bdf8"],
+    previewSvg: `
+          <defs>
+            <linearGradient id="torRed" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#f87171"/>
+              <stop offset="50%" stop-color="#ef4444"/>
+              <stop offset="100%" stop-color="#b91c1c"/>
+            </linearGradient>
+          </defs>
+          <path d="M 65 215 C 65 190, 95 185, 110 202 C 125 185, 160 192, 158 218 Z" fill="#e0f2fe" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>
+          <path d="M 110 470 C 130 442, 180 442, 200 470 C 225 450, 275 450, 295 475 L 295 505 L 110 505 Z" fill="#e0f2fe" stroke="#0f172a" stroke-width="7"/>
+          <line x1="45" y1="290" x2="95" y2="290" stroke="#38bdf8" stroke-width="6" stroke-linecap="round"/>
+          <line x1="55" y1="325" x2="105" y2="325" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+          <path d="M 188 272 C 188 230, 250 230, 250 272 Z" fill="#f97316" stroke="#0f172a" stroke-width="8"/>
+          <path d="M 192 248 L 182 212 L 212 232 Z" fill="#f97316" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/>
+          <path d="M 230 232 L 258 212 L 248 248 Z" fill="#f97316" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/>
+          <path d="M 195 268 C 195 252, 244 252, 244 268 Z" fill="#ffffff" stroke="#0f172a" stroke-width="4"/>
+          <rect x="195" y="238" width="48" height="16" rx="6" fill="#38bdf8" stroke="#0f172a" stroke-width="5"/>
+          <circle cx="212" cy="260" r="4" fill="#0f172a"/>
+          <circle cx="234" cy="260" r="4" fill="#0f172a"/>
+          <path d="M 248 272 L 268 250 L 268 272 Z" fill="#93c5fd" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>
+          <line x1="340" y1="365" x2="365" y2="412" stroke="#475569" stroke-width="9"/>
+          <circle cx="372" cy="425" r="24" fill="#1e293b" stroke="#0f172a" stroke-width="9"/>
+          <circle cx="372" cy="425" r="10" fill="#e2e8f0" stroke="#0f172a" stroke-width="5"/>
+          <circle cx="135" cy="338" r="12" fill="#1e293b" stroke="#0f172a" stroke-width="7"/>
+          <path d="M 110 290 L 90 228 C 115 225, 145 245, 165 282 Z" fill="url(#torRed)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 110 290 C 175 268, 355 262, 435 282 L 435 352 C 355 372, 175 362, 110 315 Z" fill="url(#torRed)" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>
+          <line x1="255" y1="312" x2="415" y2="312" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
+          <polygon points="215,295 220,308 234,308 223,316 227,328 215,320 203,328 207,316 196,308 210,308" fill="#ffffff" stroke="#0f172a" stroke-width="4" stroke-linejoin="round"/>
+          <line x1="275" y1="220" x2="275" y2="275" stroke="#475569" stroke-width="8"/>
+          <line x1="360" y1="220" x2="360" y2="275" stroke="#475569" stroke-width="8"/>
+          <rect x="235" y="192" width="165" height="28" rx="12" fill="url(#torRed)" stroke="#0f172a" stroke-width="9"/>
+          <rect x="245" y="342" width="145" height="26" rx="12" fill="url(#torRed)" stroke="#0f172a" stroke-width="9"/>
+          <ellipse cx="445" cy="317" rx="18" ry="26" fill="#facc15" stroke="#0f172a" stroke-width="8"/>
+          <ellipse cx="475" cy="317" rx="10" ry="68" fill="#cbd5e1" opacity="0.75" stroke="#0f172a" stroke-width="7"/>
+          <path d="M 495 268 Q 512 317, 495 366" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" fill="none"/>
+`,
+    steps: [
+      {
+        title: "1. Ad\u0131m: U\u00e7a\u011f\u0131n Yuvarlak Ana G\u00f6vdesi",
+        instruction: "Sayfan\u0131n ortas\u0131na sa\u011fa do\u011fru bakan k\u0131rm\u0131z\u0131 Tornado u\u00e7ak g\u00f6vdesini \u00e7iz.",
+        voice: "Ka\u011f\u0131d\u0131m\u0131z\u0131n ortas\u0131na Tornado u\u00e7a\u011f\u0131m\u0131z\u0131n h\u0131zl\u0131 yuvarlak g\u00f6vdesini \u00e7izelim.",
+        svg: `<path d="M 110 290 C 175 268, 355 262, 435 282 L 435 352 C 355 372, 175 362, 110 315 Z" fill="none" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_tornado/step_1.mp3"
+      },
+      {
+        title: "2. Ad\u0131m: K\u0131rm\u0131z\u0131 \u00dcst Kanat ve Alt Kanat",
+        instruction: "U\u00e7a\u011f\u0131n g\u00f6vdesinin \u00fcst\u00fcne geni\u015f \u00fcst kanad\u0131 ve alt\u0131na da ikinci kanad\u0131 \u00e7iz.",
+        voice: "\u00c7ift kanatl\u0131 u\u00e7ak! \u00dcst k\u0131sma uzun \u00fcst kanad\u0131 ve alt k\u0131sma ikinci kanad\u0131n\u0131 \u00e7izelim!",
+        svg: `<rect x="235" y="192" width="165" height="28" rx="12" fill="none" stroke="#0f172a" stroke-width="9"/><rect x="245" y="342" width="145" height="26" rx="12" fill="none" stroke="#0f172a" stroke-width="9"/>`,
+        audio: "audio/voices/cirak_sonic_tornado/step_2.mp3"
+      },
+      {
+        title: "3. Ad\u0131m: Kanatlar\u0131 Birle\u015ftiren Dik Destek Direkleri",
+        instruction: "\u00dcst kanatla g\u00f6vdeyi birbirine ba\u011flayan dikey destek \u00e7ubuklar\u0131n\u0131 \u00e7ek.",
+        voice: "\u00dcst kanad\u0131 g\u00f6vdeye sa\u011flamca tutan dikey \u00e7elik \u00e7ubuklar\u0131 \u00e7izelim.",
+        svg: `<line x1="275" y1="220" x2="275" y2="275" stroke="#0f172a" stroke-width="8"/><line x1="360" y1="220" x2="360" y2="275" stroke="#0f172a" stroke-width="8"/>`,
+        audio: "audio/voices/cirak_sonic_tornado/step_3.mp3"
+      },
+      {
+        title: "4. Ad\u0131m: Arka Kuyruk Kanad\u0131 ve D\u00fcmeni",
+        instruction: "G\u00f6vdenin arkas\u0131na yukar\u0131 kalkan kuyruk d\u00fcmenini yap.",
+        voice: "Arka tarafa u\u00e7a\u011f\u0131n y\u00f6n vermesini sa\u011flayan dik kuyruk kanad\u0131n\u0131 yapal\u0131m.",
+        svg: `<path d="M 110 290 L 90 228 C 115 225, 145 245, 165 282" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_tornado/step_4.mp3"
+      },
+      {
+        title: "5. Ad\u0131m: U\u00e7a\u011f\u0131n \u00d6n Motor Burnu ve D\u00f6nen Pervane",
+        instruction: "En \u00f6ne yuvarlak pervane ba\u015fl\u0131\u011f\u0131n\u0131 ve d\u00f6nen dikey pervane kanatlar\u0131n\u0131 \u00e7iz.",
+        voice: "En \u00f6ne motor kapa\u011f\u0131n\u0131 ve h\u0131zl\u0131 d\u00f6nen b\u00fcy\u00fck u\u00e7ak pervanesini \u00e7izelim!",
+        svg: `<ellipse cx="445" cy="317" rx="18" ry="26" fill="none" stroke="#0f172a" stroke-width="8"/><ellipse cx="475" cy="317" rx="10" ry="68" fill="none" stroke="#0f172a" stroke-width="7"/>`,
+        audio: "audio/voices/cirak_sonic_tornado/step_5.mp3"
+      },
+      {
+        title: "6. Ad\u0131m: Kokpitte Pilot Tilki Tails!",
+        instruction: "\u00dcst kanad\u0131n \u00f6n\u00fcne kokpitte ne\u015feyle oturan Tails'in ba\u015f\u0131n\u0131, tilki kulaklar\u0131n\u0131 ve pilot g\u00f6zl\u00fc\u011f\u00fcn\u00fc \u00e7iz!",
+        voice: "Kokpitin i\u00e7ine pilot g\u00f6zl\u00fc\u011f\u00fc takm\u0131\u015f g\u00fcl\u00fcmseyen tilki Tails'i \u00e7izelim!",
+        svg: `<path d="M 188 272 C 188 230, 250 230, 250 272" fill="none" stroke="#0f172a" stroke-width="8"/><path d="M 192 248 L 182 212 L 212 232 M 230 232 L 258 212 L 248 248" fill="none" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/><rect x="195" y="238" width="48" height="16" rx="6" fill="none" stroke="#0f172a" stroke-width="5"/><circle cx="212" cy="260" r="4" fill="#0f172a"/><circle cx="234" cy="260" r="4" fill="#0f172a"/>`,
+        audio: "audio/voices/cirak_sonic_tornado/step_6.mp3"
+      },
+      {
+        title: "7. Ad\u0131m: Alt \u0130ni\u015f Tekerlekleri",
+        instruction: "G\u00f6vdenin alt\u0131na ini\u015f \u00e7ubuklar\u0131n\u0131 ve iki sa\u011flam lastik tekerle\u011fi \u00e7iz.",
+        voice: "G\u00f6vdenin alt\u0131na piste ini\u015f yapmas\u0131n\u0131 sa\u011flayan tekerleklerini ekleyelim.",
+        svg: `<line x1="340" y1="365" x2="365" y2="412" stroke="#0f172a" stroke-width="8"/><circle cx="372" cy="425" r="24" fill="none" stroke="#0f172a" stroke-width="9"/><circle cx="372" cy="425" r="10" fill="none" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_tornado/step_7.mp3"
+      },
+      {
+        title: "8. Ad\u0131m: Arka Kuyruk Mini Tekerle\u011fi",
+        instruction: "Kuyru\u011fun alt\u0131na minik destek tekerle\u011fini yap.",
+        voice: "Kuyruk alt\u0131na da k\u00fc\u00e7\u00fck destek tekerle\u011fini kondural\u0131m.",
+        svg: `<circle cx="135" cy="338" r="12" fill="none" stroke="#0f172a" stroke-width="7"/>`,
+        audio: "audio/voices/cirak_sonic_tornado/step_8.mp3"
+      },
+      {
+        title: "9. Ad\u0131m: G\u00f6vde Yan\u0131ndaki Alt\u0131n Y\u0131ld\u0131z Amblemi",
+        instruction: "U\u00e7a\u011f\u0131n k\u0131rm\u0131z\u0131 yan g\u00f6vdesine Sonic tak\u0131m\u0131n\u0131n y\u0131ld\u0131z i\u015faretini yap.",
+        voice: "U\u00e7a\u011f\u0131n yan g\u00f6vdesine parlak beyaz y\u0131ld\u0131z amblemini \u00e7izelim!",
+        svg: `<polygon points="215,295 220,308 234,308 223,316 227,328 215,320 203,328 207,316 196,308 210,308" fill="none" stroke="#0f172a" stroke-width="5" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_tornado/step_9.mp3"
+      },
+      {
+        title: "10. Ad\u0131m: Kanat Kenar\u0131 Beyaz \u00c7izgisi",
+        instruction: "K\u0131rm\u0131z\u0131 g\u00f6vdeye h\u0131zl\u0131 beyaz yar\u0131\u015f \u00e7izgisi \u00e7ek.",
+        voice: "G\u00f6vde boyunca \u015f\u0131k bir yar\u0131\u015f \u015feridi \u00e7izgisi \u00e7ekelim.",
+        svg: `<line x1="255" y1="312" x2="415" y2="312" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_tornado/step_10.mp3"
+      },
+      {
+        title: "11. Ad\u0131m: \u00d6n Cam Koruyucusu",
+        instruction: "Tails'in \u00f6n\u00fcne r\u00fczgar kesen minik u\u00e7ak cam\u0131n\u0131 ekle.",
+        voice: "Tails'in \u00f6n\u00fcne \u015feffaf pilot cam\u0131n\u0131 \u00e7izelim.",
+        svg: `<path d="M 248 272 L 268 250 L 268 272" fill="none" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_tornado/step_11.mp3"
+      },
+      {
+        title: "12. Ad\u0131m: Tails'in Ne\u015feli G\u00fcl\u00fcmsemesi",
+        instruction: "Tails'in y\u00fcz\u00fcne minik burnu ve g\u00fcl\u00fcmsemeyi koy.",
+        voice: "Tails'in y\u00fcz\u00fcne sevimli burnunu ve pilot g\u00fcl\u00fcmsemesini koyal\u0131m.",
+        svg: `<circle cx="225" cy="264" r="3" fill="#0f172a"/>`,
+        audio: "audio/voices/cirak_sonic_tornado/step_12.mp3"
+      },
+      {
+        title: "13. Ad\u0131m: Arkada U\u00e7an Bulut K\u00fcmesi (Sol)",
+        instruction: "U\u00e7a\u011f\u0131n arkas\u0131nda kalan pofuduk beyaz g\u00f6ky\u00fcz\u00fc bulutunu \u00e7iz.",
+        voice: "G\u00f6ky\u00fcz\u00fcnde s\u00fcz\u00fcld\u00fc\u011f\u00fc i\u00e7in arkas\u0131na puf puf bir bulut \u00e7izelim.",
+        svg: `<path d="M 65 215 C 65 190, 95 185, 110 202 C 125 185, 160 192, 158 218 Z" fill="none" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_tornado/step_13.mp3"
+      },
+      {
+        title: "14. Ad\u0131m: Alt G\u00f6ky\u00fcz\u00fc Bulutlar\u0131",
+        instruction: "U\u00e7a\u011f\u0131n alt\u0131nda s\u00fcz\u00fclen geni\u015f beyaz bulutlar\u0131 yap.",
+        voice: "Alt tarafa g\u00f6ky\u00fcz\u00fcnde y\u00fczen b\u00fcy\u00fck yumu\u015fak bulutlar \u00e7izelim.",
+        svg: `<path d="M 110 470 C 130 442, 180 442, 200 470 C 225 450, 275 450, 295 475" fill="none" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_tornado/step_14.mp3"
+      },
+      {
+        title: "15. Ad\u0131m: Pervane D\u00f6n\u00fc\u015f Hareket Yaylar\u0131",
+        instruction: "D\u00f6nen pervanenin \u00f6n\u00fcne f\u0131r\u0131l f\u0131r\u0131l d\u00f6nme \u00e7izgileri ekle.",
+        voice: "Pervanenin \u00e7ok h\u0131zl\u0131 d\u00f6nd\u00fc\u011f\u00fcn\u00fc g\u00f6steren yay \u00e7izgilerini yapal\u0131m.",
+        svg: `<path d="M 495 268 Q 512 317, 495 366" stroke="#0f172a" stroke-width="6" stroke-linecap="round" fill="none"/>`,
+        audio: "audio/voices/cirak_sonic_tornado/step_15.mp3"
+      },
+      {
+        title: "16. Ad\u0131m: Egzoz Borusu",
+        instruction: "Motor kapa\u011f\u0131n\u0131n yan\u0131na k\u0131sa egzoz borusu ekle.",
+        voice: "Motorun yan\u0131na k\u00fc\u00e7\u00fck egzoz \u00e7\u0131k\u0131\u015f\u0131n\u0131 kondural\u0131m.",
+        svg: `<line x1="395" y1="335" x2="365" y2="340" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_tornado/step_16.mp3"
+      },
+      {
+        title: "17. Ad\u0131m: R\u00fczgar H\u0131z \u00c7izgileri",
+        instruction: "Kuyru\u011fun arkas\u0131ndan uzayan h\u0131zl\u0131 r\u00fczgar \u00e7izgilerini \u00e7ek.",
+        voice: "Arka tarafa u\u00e7a\u011f\u0131m\u0131z\u0131n h\u0131z\u0131n\u0131 g\u00f6steren r\u00fczgar \u00e7izgilerini \u00e7ekelim.",
+        svg: `<line x1="45" y1="290" x2="95" y2="290" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/><line x1="55" y1="325" x2="105" y2="325" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_tornado/step_17.mp3"
+      },
+      {
+        title: "18. Ad\u0131m: Canl\u0131 Renklendirme (Ate\u015f K\u0131rm\u0131z\u0131s\u0131 Tornado!)",
+        instruction: "Tebrikler K\u0131van\u00e7! Tornado u\u00e7a\u011f\u0131n\u0131 parlak k\u0131rm\u0131z\u0131, beyaz \u015feritler ve turuncu pilot Tails ile boya!",
+        voice: "\u015eahane oldu K\u0131van\u00e7! Tails'\u0131n k\u0131rm\u0131z\u0131 Tornado u\u00e7a\u011f\u0131 g\u00f6klerde s\u00fcz\u00fcl\u00fcyor! \u015eimdi onu ate\u015f k\u0131rm\u0131z\u0131s\u0131 ve beyaz bulutlarla boya!",
+        svg: `
+          <defs>
+            <linearGradient id="torRed" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#f87171"/>
+              <stop offset="50%" stop-color="#ef4444"/>
+              <stop offset="100%" stop-color="#b91c1c"/>
+            </linearGradient>
+          </defs>
+          <path d="M 65 215 C 65 190, 95 185, 110 202 C 125 185, 160 192, 158 218 Z" fill="#e0f2fe" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>
+          <path d="M 110 470 C 130 442, 180 442, 200 470 C 225 450, 275 450, 295 475 L 295 505 L 110 505 Z" fill="#e0f2fe" stroke="#0f172a" stroke-width="7"/>
+          <line x1="45" y1="290" x2="95" y2="290" stroke="#38bdf8" stroke-width="6" stroke-linecap="round"/>
+          <line x1="55" y1="325" x2="105" y2="325" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+          <path d="M 188 272 C 188 230, 250 230, 250 272 Z" fill="#f97316" stroke="#0f172a" stroke-width="8"/>
+          <path d="M 192 248 L 182 212 L 212 232 Z" fill="#f97316" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/>
+          <path d="M 230 232 L 258 212 L 248 248 Z" fill="#f97316" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/>
+          <path d="M 195 268 C 195 252, 244 252, 244 268 Z" fill="#ffffff" stroke="#0f172a" stroke-width="4"/>
+          <rect x="195" y="238" width="48" height="16" rx="6" fill="#38bdf8" stroke="#0f172a" stroke-width="5"/>
+          <circle cx="212" cy="260" r="4" fill="#0f172a"/>
+          <circle cx="234" cy="260" r="4" fill="#0f172a"/>
+          <path d="M 248 272 L 268 250 L 268 272 Z" fill="#93c5fd" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>
+          <line x1="340" y1="365" x2="365" y2="412" stroke="#475569" stroke-width="9"/>
+          <circle cx="372" cy="425" r="24" fill="#1e293b" stroke="#0f172a" stroke-width="9"/>
+          <circle cx="372" cy="425" r="10" fill="#e2e8f0" stroke="#0f172a" stroke-width="5"/>
+          <circle cx="135" cy="338" r="12" fill="#1e293b" stroke="#0f172a" stroke-width="7"/>
+          <path d="M 110 290 L 90 228 C 115 225, 145 245, 165 282 Z" fill="url(#torRed)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 110 290 C 175 268, 355 262, 435 282 L 435 352 C 355 372, 175 362, 110 315 Z" fill="url(#torRed)" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>
+          <line x1="255" y1="312" x2="415" y2="312" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
+          <polygon points="215,295 220,308 234,308 223,316 227,328 215,320 203,328 207,316 196,308 210,308" fill="#ffffff" stroke="#0f172a" stroke-width="4" stroke-linejoin="round"/>
+          <line x1="275" y1="220" x2="275" y2="275" stroke="#475569" stroke-width="8"/>
+          <line x1="360" y1="220" x2="360" y2="275" stroke="#475569" stroke-width="8"/>
+          <rect x="235" y="192" width="165" height="28" rx="12" fill="url(#torRed)" stroke="#0f172a" stroke-width="9"/>
+          <rect x="245" y="342" width="145" height="26" rx="12" fill="url(#torRed)" stroke="#0f172a" stroke-width="9"/>
+          <ellipse cx="445" cy="317" rx="18" ry="26" fill="#facc15" stroke="#0f172a" stroke-width="8"/>
+          <ellipse cx="475" cy="317" rx="10" ry="68" fill="#cbd5e1" opacity="0.75" stroke="#0f172a" stroke-width="7"/>
+          <path d="M 495 268 Q 512 317, 495 366" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" fill="none"/>
+`,
+        audio: "audio/voices/cirak_sonic_tornado/step_18.mp3"
+      },
+    ]
+  },
+
+  // =========================================================================
+  // ⚡ KİRPİ SONİC DÜNYASI: EGGMAN UÇAN EGGMOBILE
+  // =========================================================================
+  {
+    id: "cirak_sonic_eggmobile",
+    categoryId: "sonic",
+    name: "Eggman U\u00e7an Eggmobile",
+    emoji: "\ud83d\udef8",
+    level: 1,
+    levelName: "\u00c7\u0131rak",
+    levelBadge: "\ud83d\udfe2 \u00c7\u0131rak",
+    description: "Doktor Eggman'\u0131n me\u015fhur yar\u0131m k\u00fcre u\u00e7an arac\u0131 Eggmobile! Sar\u0131-siyah tehlike \u015feridi, cam kokpit ve alt roket motorlar\u0131!",
+    materials: "Resim ka\u011f\u0131d\u0131, kur\u015fun kalem, silgi, k\u0131rm\u0131z\u0131, sar\u0131, siyah, gri ve g\u00f6k mavisi boyalar",
+    welcomeText: "Haha! Merhaba K\u0131van\u00e7! Doktor Eggman'\u0131n haval\u0131 u\u00e7an uzay k\u00fcresi Eggmobile geliyor! Sar\u0131-siyah \u015feritli arac\u0131 birlikte \u00e7izelim!",
+    welcomeAudio: "audio/voices/cirak_sonic_eggmobile/welcome.mp3",
+    colors: ["#ef4444", "#facc15", "#1e293b", "#38bdf8"],
+    previewSvg: `
+          <defs>
+            <linearGradient id="egmRed" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#f87171"/>
+              <stop offset="50%" stop-color="#ef4444"/>
+              <stop offset="100%" stop-color="#991b1b"/>
+            </linearGradient>
+          </defs>
+          <path d="M 452 162 Q 465 174, 452 188 M 464 155 Q 480 174, 464 195" stroke="#facc15" stroke-width="5" stroke-linecap="round" fill="none"/>
+          <path d="M 178 425 L 185 462 L 198 442 L 210 465 L 218 425 Z" fill="#f97316" stroke="#facc15" stroke-width="4" stroke-linejoin="round"/>
+          <path d="M 382 425 L 390 465 L 402 442 L 415 462 L 422 425 Z" fill="#f97316" stroke="#facc15" stroke-width="4" stroke-linejoin="round"/>
+          <path d="M 190 382 L 172 425 L 222 425 L 230 392 Z" fill="#475569" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 410 382 L 428 425 L 378 425 L 370 392 Z" fill="#475569" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <line x1="400" y1="220" x2="432" y2="178" stroke="#475569" stroke-width="7" stroke-linecap="round"/>
+          <circle cx="436" cy="174" r="7" fill="#ef4444" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 185 275 C 185 155, 415 155, 415 275 Z" fill="#bae6fd" opacity="0.6" stroke="#0f172a" stroke-width="9"/>
+          <circle cx="300" cy="222" r="32" fill="#fed7aa" stroke="#0f172a" stroke-width="7"/>
+          <circle cx="286" cy="218" r="10" fill="#38bdf8" stroke="#0f172a" stroke-width="5"/>
+          <circle cx="314" cy="218" r="10" fill="#38bdf8" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 295 232 C 265 225, 225 230, 212 246 L 245 250 L 222 260 C 252 256, 275 248, 295 238 Z" fill="#92400e" stroke="#0f172a" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M 305 232 C 335 225, 375 230, 388 246 L 355 250 L 378 260 C 348 256, 325 248, 305 238 Z" fill="#92400e" stroke="#0f172a" stroke-width="5" stroke-linejoin="round"/>
+          <circle cx="300" cy="226" r="7" fill="#f87171" stroke="#0f172a" stroke-width="4"/>
+          <circle cx="300" cy="268" r="12" fill="#ffffff" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 215 245 Q 230 198, 275 182" stroke="#ffffff" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.8"/>
+          <path d="M 155 290 C 155 430, 445 430, 445 290 Z" fill="url(#egmRed)" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>
+          <rect x="150" y="275" width="300" height="28" rx="8" fill="#facc15" stroke="#0f172a" stroke-width="8"/>
+          <rect x="150" y="275" width="50" height="28" rx="4" fill="#1e293b"/>
+          <rect x="250" y="275" width="50" height="28" fill="#1e293b"/>
+          <rect x="350" y="275" width="50" height="28" fill="#1e293b"/>
+          <rect x="150" y="275" width="300" height="28" rx="8" fill="none" stroke="#0f172a" stroke-width="8"/>
+          <ellipse cx="145" cy="288" rx="10" ry="16" fill="#94a3b8" stroke="#0f172a" stroke-width="7"/>
+          <ellipse cx="455" cy="288" rx="10" ry="16" fill="#94a3b8" stroke="#0f172a" stroke-width="7"/>
+          <circle cx="195" cy="340" r="24" fill="#64748b" stroke="#0f172a" stroke-width="8"/>
+          <circle cx="195" cy="340" r="14" fill="#fef08a" stroke="#0f172a" stroke-width="5"/>
+          <circle cx="405" cy="340" r="24" fill="#64748b" stroke="#0f172a" stroke-width="8"/>
+          <circle cx="405" cy="340" r="14" fill="#fef08a" stroke="#0f172a" stroke-width="5"/>
+          <circle cx="300" cy="345" r="22" fill="#facc15" stroke="#0f172a" stroke-width="7"/>
+          <line x1="286" y1="348" x2="314" y2="348" stroke="#0f172a" stroke-width="5"/>
+`,
+    steps: [
+      {
+        title: "1. Ad\u0131m: Alt Yar\u0131m Yumurta K\u00fcre G\u00f6vdesi",
+        instruction: "Sayfan\u0131n ortas\u0131na b\u00fcy\u00fck bir kase \u015feklinde u\u00e7an daire alt g\u00f6vdesini \u00e7iz.",
+        voice: "Ka\u011f\u0131d\u0131m\u0131z\u0131n ortas\u0131na Eggmobile'in b\u00fcy\u00fck kase \u015feklindeki k\u0131rm\u0131z\u0131 alt k\u00fcresini \u00e7izelim.",
+        svg: `<path d="M 155 290 C 155 430, 445 430, 445 290 Z" fill="none" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_eggmobile/step_1.mp3"
+      },
+      {
+        title: "2. Ad\u0131m: Sar\u0131-Siyah Tehlike \u015eeridi Kemeri",
+        instruction: "K\u00fcrenin \u00fcst kenar\u0131 boyunca kal\u0131n kemer \u015feridini \u00e7iz ve damal\u0131 karelere b\u00f6l.",
+        voice: "K\u00fcrenin \u00fcst kenar\u0131na Eggman'\u0131n \u00fcnl\u00fc siyah-sar\u0131 tehlike \u015feridini kare kare \u00e7izelim!",
+        svg: `<rect x="150" y="275" width="300" height="28" rx="8" fill="none" stroke="#0f172a" stroke-width="8"/><line x1="200" y1="275" x2="200" y2="303" stroke="#0f172a" stroke-width="6"/><line x1="250" y1="275" x2="250" y2="303" stroke="#0f172a" stroke-width="6"/><line x1="300" y1="275" x2="300" y2="303" stroke="#0f172a" stroke-width="6"/><line x1="350" y1="275" x2="350" y2="303" stroke="#0f172a" stroke-width="6"/><line x1="400" y1="275" x2="400" y2="303" stroke="#0f172a" stroke-width="6"/>`,
+        audio: "audio/voices/cirak_sonic_eggmobile/step_2.mp3"
+      },
+      {
+        title: "3. Ad\u0131m: B\u00fcy\u00fck Cam Kokpit Kubbesi",
+        instruction: "Arac\u0131n tepesine yar\u0131m daire \u015feklinde \u015feffaf \u00f6n cam kubbesini ekle.",
+        voice: "\u00dcst taraf\u0131na Doktor Eggman'\u0131 koruyan b\u00fcy\u00fck \u015feffaf cam kubbeyi \u00e7izelim.",
+        svg: `<path d="M 185 275 C 185 155, 415 155, 415 275" fill="none" stroke="#0f172a" stroke-width="9" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_eggmobile/step_3.mp3"
+      },
+      {
+        title: "4. Ad\u0131m: Kokpitin \u0130\u00e7inde S\u0131r\u0131tan Doktor Eggman!",
+        instruction: "Cam\u0131n i\u00e7ine Eggman'\u0131n yuvarlak kel ba\u015f\u0131n\u0131, mavi g\u00f6zl\u00fc\u011f\u00fcn\u00fc ve dev b\u0131y\u0131klar\u0131n\u0131 \u00e7iz!",
+        voice: "\u015eimdi cam\u0131n i\u00e7ine kumanday\u0131 y\u00f6neten kel kafal\u0131 ve kocaman b\u0131y\u0131kl\u0131 Doktor Eggman'\u0131 \u00e7izelim!",
+        svg: `<circle cx="300" cy="222" r="32" fill="none" stroke="#0f172a" stroke-width="7"/><circle cx="286" cy="218" r="10" fill="none" stroke="#0f172a" stroke-width="5"/><circle cx="314" cy="218" r="10" fill="none" stroke="#0f172a" stroke-width="5"/><path d="M 295 232 C 265 225, 225 230, 212 246 L 245 250 L 222 260 C 252 256, 275 248, 295 238 M 305 232 C 335 225, 375 230, 388 246 L 355 250 L 378 260 C 348 256, 325 248, 305 238" fill="none" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_eggmobile/step_4.mp3"
+      },
+      {
+        title: "5. Ad\u0131m: Eggman'\u0131n K\u0131rm\u0131z\u0131 Burnu ve Kontrol Kolu",
+        instruction: "Y\u00fcz\u00fcne yuvarlak burnunu ve \u00f6n\u00fcnde tuttu\u011fu joystick kolunu yap.",
+        voice: "Burnunu ve elindeki kumanda kolunu ekleyelim.",
+        svg: `<circle cx="300" cy="226" r="7" fill="#0f172a"/><circle cx="300" cy="268" r="12" fill="none" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_eggmobile/step_5.mp3"
+      },
+      {
+        title: "6. Ad\u0131m: Sol Yan Far Lambas\u0131",
+        instruction: "Arac\u0131n sol yan\u0131na parlak b\u00fcy\u00fck bir sar\u0131 \u00f6n far \u00e7iz.",
+        voice: "Eggmobile'in sol taraf\u0131na yolunu ayd\u0131nlatan dev yuvarlak \u00f6n far\u0131 \u00e7izelim.",
+        svg: `<circle cx="195" cy="340" r="24" fill="none" stroke="#0f172a" stroke-width="8"/><circle cx="195" cy="340" r="12" fill="none" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_eggmobile/step_6.mp3"
+      },
+      {
+        title: "7. Ad\u0131m: Sa\u011f Yan Far Lambas\u0131",
+        instruction: "Sa\u011f yan\u0131na da ayn\u0131 b\u00fcy\u00fck yuvarlak far\u0131 yap.",
+        voice: "Sa\u011f tarafa da di\u011fer b\u00fcy\u00fck yuvarlak far\u0131n\u0131 ekleyelim.",
+        svg: `<circle cx="405" cy="340" r="24" fill="none" stroke="#0f172a" stroke-width="8"/><circle cx="405" cy="340" r="12" fill="none" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_eggmobile/step_7.mp3"
+      },
+      {
+        title: "8. Ad\u0131m: \u00d6n Ortadaki \u00dcnl\u00fc Eggman Logosu",
+        instruction: "Tam ortaya sar\u0131 yuvarlak \u00fczerine k\u00fc\u00e7\u00fck Eggman logosunu yerle\u015ftir.",
+        voice: "\u00d6n g\u00f6vdenin tam ortas\u0131na Eggman'\u0131n logosunu \u00e7izelim!",
+        svg: `<circle cx="300" cy="345" r="22" fill="none" stroke="#0f172a" stroke-width="7"/><line x1="286" y1="348" x2="314" y2="348" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_eggmobile/step_8.mp3"
+      },
+      {
+        title: "9. Ad\u0131m: Sol ve Sa\u011f Yan Jet Motorlar\u0131",
+        instruction: "K\u00fcrenin iki alt yan\u0131na havada tutan silindir jet motorlar\u0131 \u00e7iz.",
+        voice: "Arac\u0131 havada tutan sa\u011f ve sol yan jet motor t\u00fcplerini \u00e7izelim!",
+        svg: `<path d="M 190 382 L 172 425 L 222 425 L 230 392 M 410 382 L 428 425 L 378 425 L 370 392" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_eggmobile/step_9.mp3"
+      },
+      {
+        title: "10. Ad\u0131m: Alt Orta Ana \u0130tici Motor ve Alevler!",
+        instruction: "Motorlar\u0131n alt\u0131ndan yere do\u011fru hararetli roket ate\u015f dillerini yap.",
+        voice: "Motorlar\u0131n alt\u0131ndan alev alev yanan roket ate\u015flerini \u00e7izelim!",
+        svg: `<path d="M 178 425 L 185 462 L 198 442 L 210 465 L 218 425 M 382 425 L 390 465 L 402 442 L 415 462 L 422 425" fill="none" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_eggmobile/step_10.mp3"
+      },
+      {
+        title: "11. Ad\u0131m: Cam \u00dczerinde I\u015f\u0131k Yans\u0131mas\u0131",
+        instruction: "Cam kubbenin sol \u00fcst\u00fcne parlak cam yans\u0131mas\u0131 \u00e7izgisi \u00e7ek.",
+        voice: "Cam kubbenin parlad\u0131\u011f\u0131n\u0131 g\u00f6steren \u015f\u0131k bir \u0131\u015f\u0131k yans\u0131ma \u00e7izgisi yapal\u0131m.",
+        svg: `<path d="M 215 245 Q 230 198, 275 182" stroke="#0f172a" stroke-width="5" stroke-linecap="round" fill="none"/>`,
+        audio: "audio/voices/cirak_sonic_eggmobile/step_11.mp3"
+      },
+      {
+        title: "12. Ad\u0131m: Yan Tampon Koruyucu Halkas\u0131",
+        instruction: "\u0130ki yandaki gri tampon \u00e7\u0131k\u0131nt\u0131lar\u0131n\u0131 ekle.",
+        voice: "\u0130ki yan\u0131na k\u00fc\u00e7\u00fck koruma tamponu kulaklar\u0131n\u0131 \u00e7izelim.",
+        svg: `<ellipse cx="145" cy="288" rx="10" ry="16" fill="none" stroke="#0f172a" stroke-width="7"/><ellipse cx="455" cy="288" rx="10" ry="16" fill="none" stroke="#0f172a" stroke-width="7"/>`,
+        audio: "audio/voices/cirak_sonic_eggmobile/step_12.mp3"
+      },
+      {
+        title: "13. Ad\u0131m: Anten \u00c7ubu\u011fu",
+        instruction: "Yan tarafa k\u0131rm\u0131z\u0131 sinyalli minik bir telsiz anteni ekle.",
+        voice: "\u00dcst kenara robotlara emir g\u00f6nderen minik telsiz antenini dikelim.",
+        svg: `<line x1="400" y1="220" x2="432" y2="178" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/><circle cx="436" cy="174" r="7" fill="none" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_eggmobile/step_13.mp3"
+      },
+      {
+        title: "14. Ad\u0131m: S\u0131cak Hava Dalgalar\u0131",
+        instruction: "Alevlerin alt\u0131na u\u00e7u\u015f sars\u0131nt\u0131 yaylar\u0131 ekle.",
+        voice: "Roket ate\u015flerinin alt\u0131na u\u00e7tu\u011funu g\u00f6steren yaylar \u00e7izelim.",
+        svg: `<path d="M 160 478 Q 198 490, 235 478 M 365 478 Q 402 490, 440 478" stroke="#0f172a" stroke-width="5" stroke-linecap="round" fill="none"/>`,
+        audio: "audio/voices/cirak_sonic_eggmobile/step_14.mp3"
+      },
+      {
+        title: "15. Ad\u0131m: Alt Metal Kaplama \u00c7izgisi",
+        instruction: "G\u00f6vdenin alt k\u0131sm\u0131na metal par\u00e7a \u00e7izgisi ekle.",
+        voice: "Alt g\u00f6vdeye panel ayr\u0131m \u00e7izgisi \u00e7izelim.",
+        svg: `<path d="M 245 385 Q 300 400, 355 385" stroke="#0f172a" stroke-width="6" fill="none"/>`,
+        audio: "audio/voices/cirak_sonic_eggmobile/step_15.mp3"
+      },
+      {
+        title: "16. Ad\u0131m: U\u00e7an Bulutlar",
+        instruction: "Arka g\u00f6ky\u00fcz\u00fcne iki k\u00fc\u00e7\u00fck pofuduk bulut yap.",
+        voice: "G\u00f6ky\u00fcz\u00fcne Eggmobile'in etraf\u0131ndaki tatl\u0131 bulutlar\u0131 ekleyelim.",
+        svg: `<path d="M 75 215 C 85 198, 115 198, 125 215" stroke="#0f172a" stroke-width="5" stroke-linecap="round" fill="none"/>`,
+        audio: "audio/voices/cirak_sonic_eggmobile/step_16.mp3"
+      },
+      {
+        title: "17. Ad\u0131m: Parlayan Enerji Y\u0131ld\u0131zlar\u0131",
+        instruction: "Anten ucuna sinyal dalgalar\u0131 \u00e7iz.",
+        voice: "Antenin ucundan yay\u0131lan telsiz sinyal halkalar\u0131n\u0131 yapal\u0131m!",
+        svg: `<path d="M 452 162 Q 465 174, 452 188 M 464 155 Q 480 174, 464 195" stroke="#0f172a" stroke-width="5" stroke-linecap="round" fill="none"/>`,
+        audio: "audio/voices/cirak_sonic_eggmobile/step_17.mp3"
+      },
+      {
+        title: "18. Ad\u0131m: Canl\u0131 Renklendirme (Ate\u015f K\u0131rm\u0131z\u0131s\u0131 & Sar\u0131 Eggmobile!)",
+        instruction: "Tebrikler K\u0131van\u00e7! Eggmobile'i k\u0131rm\u0131z\u0131 g\u00f6vde, sar\u0131-siyah damal\u0131 \u015ferit ve cam mavi kubbeyle boya!",
+        voice: "S\u00fcper haval\u0131 oldu K\u0131van\u00e7! Doktor Eggman'\u0131n Eggmobile arac\u0131 g\u00f6klerde u\u00e7uyor! \u015eimdi onu parlak k\u0131rm\u0131z\u0131 ve sar\u0131-siyah \u015feritlerle renklendir!",
+        svg: `
+          <defs>
+            <linearGradient id="egmRed" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#f87171"/>
+              <stop offset="50%" stop-color="#ef4444"/>
+              <stop offset="100%" stop-color="#991b1b"/>
+            </linearGradient>
+          </defs>
+          <path d="M 452 162 Q 465 174, 452 188 M 464 155 Q 480 174, 464 195" stroke="#facc15" stroke-width="5" stroke-linecap="round" fill="none"/>
+          <path d="M 178 425 L 185 462 L 198 442 L 210 465 L 218 425 Z" fill="#f97316" stroke="#facc15" stroke-width="4" stroke-linejoin="round"/>
+          <path d="M 382 425 L 390 465 L 402 442 L 415 462 L 422 425 Z" fill="#f97316" stroke="#facc15" stroke-width="4" stroke-linejoin="round"/>
+          <path d="M 190 382 L 172 425 L 222 425 L 230 392 Z" fill="#475569" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 410 382 L 428 425 L 378 425 L 370 392 Z" fill="#475569" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <line x1="400" y1="220" x2="432" y2="178" stroke="#475569" stroke-width="7" stroke-linecap="round"/>
+          <circle cx="436" cy="174" r="7" fill="#ef4444" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 185 275 C 185 155, 415 155, 415 275 Z" fill="#bae6fd" opacity="0.6" stroke="#0f172a" stroke-width="9"/>
+          <circle cx="300" cy="222" r="32" fill="#fed7aa" stroke="#0f172a" stroke-width="7"/>
+          <circle cx="286" cy="218" r="10" fill="#38bdf8" stroke="#0f172a" stroke-width="5"/>
+          <circle cx="314" cy="218" r="10" fill="#38bdf8" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 295 232 C 265 225, 225 230, 212 246 L 245 250 L 222 260 C 252 256, 275 248, 295 238 Z" fill="#92400e" stroke="#0f172a" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M 305 232 C 335 225, 375 230, 388 246 L 355 250 L 378 260 C 348 256, 325 248, 305 238 Z" fill="#92400e" stroke="#0f172a" stroke-width="5" stroke-linejoin="round"/>
+          <circle cx="300" cy="226" r="7" fill="#f87171" stroke="#0f172a" stroke-width="4"/>
+          <circle cx="300" cy="268" r="12" fill="#ffffff" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 215 245 Q 230 198, 275 182" stroke="#ffffff" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.8"/>
+          <path d="M 155 290 C 155 430, 445 430, 445 290 Z" fill="url(#egmRed)" stroke="#0f172a" stroke-width="10" stroke-linejoin="round"/>
+          <rect x="150" y="275" width="300" height="28" rx="8" fill="#facc15" stroke="#0f172a" stroke-width="8"/>
+          <rect x="150" y="275" width="50" height="28" rx="4" fill="#1e293b"/>
+          <rect x="250" y="275" width="50" height="28" fill="#1e293b"/>
+          <rect x="350" y="275" width="50" height="28" fill="#1e293b"/>
+          <rect x="150" y="275" width="300" height="28" rx="8" fill="none" stroke="#0f172a" stroke-width="8"/>
+          <ellipse cx="145" cy="288" rx="10" ry="16" fill="#94a3b8" stroke="#0f172a" stroke-width="7"/>
+          <ellipse cx="455" cy="288" rx="10" ry="16" fill="#94a3b8" stroke="#0f172a" stroke-width="7"/>
+          <circle cx="195" cy="340" r="24" fill="#64748b" stroke="#0f172a" stroke-width="8"/>
+          <circle cx="195" cy="340" r="14" fill="#fef08a" stroke="#0f172a" stroke-width="5"/>
+          <circle cx="405" cy="340" r="24" fill="#64748b" stroke="#0f172a" stroke-width="8"/>
+          <circle cx="405" cy="340" r="14" fill="#fef08a" stroke="#0f172a" stroke-width="5"/>
+          <circle cx="300" cy="345" r="22" fill="#facc15" stroke="#0f172a" stroke-width="7"/>
+          <line x1="286" y1="348" x2="314" y2="348" stroke="#0f172a" stroke-width="5"/>
+`,
+        audio: "audio/voices/cirak_sonic_eggmobile/step_18.mp3"
+      },
+    ]
+  },
+
+  // =========================================================================
+  // ⚡ KİRPİ SONİC DÜNYASI: UÇAN KAYKAYLI SONIC
+  // =========================================================================
+  {
+    id: "cirak_sonic_kaykay",
+    categoryId: "sonic",
+    name: "U\u00e7an Kaykayl\u0131 Sonic",
+    emoji: "\ud83d\udef9",
+    level: 1,
+    levelName: "\u00c7\u0131rak",
+    levelBadge: "\ud83d\udfe2 \u00c7\u0131rak",
+    description: "Havada s\u00fcz\u00fclen roketli Extreme Gear kaykay\u0131n\u0131n \u00fcst\u00fcnde dengede duran s\u00fcper haval\u0131 Kirpi Sonic!",
+    materials: "Resim ka\u011f\u0131d\u0131, kur\u015fun kalem, silgi, kobalt mavisi, alt\u0131n sar\u0131s\u0131, k\u0131rm\u0131z\u0131 ve turkuaz boyalar",
+    welcomeText: "S\u00fcper s\u00f6rf! Merhaba K\u0131van\u00e7! U\u00e7an roketli kaykay\u0131n\u0131n \u00fczerinde havada numara yapan haval\u0131 Sonic'i \u00e7izmeye haz\u0131r m\u0131s\u0131n?",
+    welcomeAudio: "audio/voices/cirak_sonic_kaykay/welcome.mp3",
+    colors: ["#2563eb", "#06b6d4", "#facc15", "#ef4444"],
+    previewSvg: `
+          <defs>
+            <linearGradient id="skSonicBlue" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#3b82f6"/>
+              <stop offset="100%" stop-color="#1d4ed8"/>
+            </linearGradient>
+          </defs>
+          <path d="M 110 475 L 490 475" stroke="#cbd5e1" stroke-width="9" stroke-linecap="round"/>
+          <ellipse cx="225" cy="446" rx="34" ry="8" fill="#22d3ee" opacity="0.6" stroke="#06b6d4" stroke-width="4"/>
+          <ellipse cx="375" cy="432" rx="34" ry="8" fill="#22d3ee" opacity="0.6" stroke="#06b6d4" stroke-width="4"/>
+          <line x1="65" y1="265" x2="145" y2="265" stroke="#38bdf8" stroke-width="6" stroke-linecap="round"/>
+          <line x1="55" y1="305" x2="125" y2="305" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+          <path d="M 515 291 A 24 24 0 1 0 515 339 A 24 24 0 1 0 515 291 Z M 515 303 A 12 12 0 1 1 515 327 A 12 12 0 1 1 515 303 Z" fill="#facc15" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 122 418 L 72 415 L 92 426 L 68 436 L 128 430 Z" fill="#22d3ee" stroke="#0f172a" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M 125 405 L 445 375 C 475 372, 490 385, 465 402 L 155 432 C 125 435, 110 415, 125 405 Z" fill="#2563eb" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <line x1="190" y1="412" x2="425" y2="390" stroke="#facc15" stroke-width="8" stroke-linecap="round"/>
+          <path d="M 268 242 L 235 256 L 265 268 Z" fill="url(#skSonicBlue)" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/>
+          <path d="M 250 352 L 265 305 L 288 288 M 352 344 L 335 302 L 315 288" fill="none" stroke="#0f172a" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 250 352 L 265 305 L 288 288 M 352 344 L 335 302 L 315 288" fill="none" stroke="#2563eb" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 225 365 C 222 390, 245 398, 288 392 C 296 382, 286 364, 258 364 Z" fill="#ef4444" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <line x1="252" y1="365" x2="274" y2="392" stroke="#ffffff" stroke-width="6"/>
+          <ellipse cx="250" cy="360" rx="15" ry="9" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 325 358 C 322 384, 345 392, 392 384 C 400 374, 388 356, 358 356 Z" fill="#ef4444" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <line x1="352" y1="358" x2="375" y2="384" stroke="#ffffff" stroke-width="6"/>
+          <ellipse cx="352" cy="352" rx="15" ry="9" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 272 222 C 260 258, 268 292, 298 296 C 328 294, 336 258, 326 222 Z" fill="url(#skSonicBlue)" stroke="#0f172a" stroke-width="9"/>
+          <ellipse cx="305" cy="258" rx="18" ry="26" fill="#fed7aa" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 270 232 C 235 230, 210 220, 192 205" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 270 232 C 235 230, 210 220, 192 205" fill="none" stroke="#fdba74" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="178" cy="195" r="18" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
+          <path d="M 326 232 C 362 240, 392 248, 412 242" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 326 232 C 362 240, 392 248, 412 242" fill="none" stroke="#fdba74" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="426" cy="240" r="18" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
+          <path d="M 315 114 L 336 82 L 340 128 Z" fill="url(#skSonicBlue)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 255 125 C 295 102, 355 125, 358 182 C 350 222, 275 235, 240 220 C 215 232, 185 242, 160 245 C 165 228, 185 215, 212 205 C 185 208, 160 212, 138 208 C 155 188, 182 178, 212 172 C 188 165, 168 158, 148 150 C 175 125, 215 118, 255 125 Z" fill="url(#skSonicBlue)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 256 128 L 246 82 L 285 112 Z" fill="url(#skSonicBlue)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 248 205 C 248 180, 285 180, 310 192 C 335 180, 362 185, 360 210 C 346 235, 265 235, 248 205 Z" fill="#fed7aa" stroke="#0f172a" stroke-width="7"/>
+          <ellipse cx="362" cy="190" rx="10" ry="7" fill="#0f172a"/>
+          <path d="M 295 212 Q 325 224, 342 208" stroke="#0f172a" stroke-width="6" stroke-linecap="round" fill="none"/>
+          <path d="M 262 152 L 352 152 L 348 185 Q 325 192, 308 176 L 302 176 Q 285 192, 265 185 Z" fill="#0f172a" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>
+          <line x1="274" y1="160" x2="288" y2="174" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+          <line x1="318" y1="160" x2="332" y2="174" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+`,
+    steps: [
+      {
+        title: "1. Ad\u0131m: U\u00e7an Roketli Extreme Gear Kaykay\u0131 (G\u00f6vde)",
+        instruction: "Sayfan\u0131n alt k\u0131sm\u0131na yatay s\u00f6rf tahtas\u0131 \u015feklinde f\u00fct\u00fcristik u\u00e7an kaykay\u0131 \u00e7iz.",
+        voice: "Ka\u011f\u0131d\u0131m\u0131z\u0131n alt k\u0131sm\u0131na roketli u\u00e7an kaykay tahtas\u0131n\u0131 \u00e7apraz ve \u015f\u0131k bir \u015fekille \u00e7izelim!",
+        svg: `<path d="M 125 405 L 445 375 C 475 372, 490 385, 465 402 L 155 432 C 125 435, 110 415, 125 405 Z" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_kaykay/step_1.mp3"
+      },
+      {
+        title: "2. Ad\u0131m: Kaykay\u0131n Alt Roket T\u00fcrbinleri",
+        instruction: "Kaykay\u0131n arkas\u0131na h\u0131z kazand\u0131ran iki turbo egzoz t\u00fcp\u00fc ve alev ekle.",
+        voice: "Kaykay\u0131n arkas\u0131na g\u00f6ky\u00fcz\u00fcnde u\u00e7mas\u0131n\u0131 sa\u011flayan turbo jet \u00e7\u0131k\u0131\u015f\u0131n\u0131 ve alevini yapal\u0131m!",
+        svg: `<path d="M 122 418 L 72 415 L 92 426 L 68 436 L 128 430" fill="none" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_kaykay/step_2.mp3"
+      },
+      {
+        title: "3. Ad\u0131m: Sonic'in Kaykaya Basan Ayaklar\u0131 (\u00d6n ve Arka)",
+        instruction: "Kaykay\u0131n \u00fczerine sa\u011flamca basan iki b\u00fcy\u00fck k\u0131rm\u0131z\u0131 ko\u015fu ayakkab\u0131s\u0131n\u0131 \u00e7iz.",
+        voice: "Kaykay\u0131n \u00fczerine sa\u011flamca basan iki b\u00fcy\u00fck k\u0131rm\u0131z\u0131-beyaz Sonic ayakkab\u0131s\u0131n\u0131 \u00e7izelim!",
+        svg: `<path d="M 225 365 C 222 390, 245 398, 288 392 C 296 382, 286 364, 258 364 Z" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/><path d="M 325 358 C 322 384, 345 392, 392 384 C 400 374, 388 356, 358 356 Z" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_kaykay/step_3.mp3"
+      },
+      {
+        title: "4. Ad\u0131m: B\u00fck\u00fcl\u00fc S\u00f6rf Bacaklar\u0131 ve \u00c7oraplar",
+        instruction: "Ayakkab\u0131lardan yukar\u0131 do\u011fru dizlerini k\u0131rm\u0131\u015f dengede duran bacaklar\u0131 yap.",
+        voice: "Dizlerini k\u0131rarak dengede duran bacaklar\u0131n\u0131 ve beyaz \u00e7orap bilekliklerini \u00e7izelim.",
+        svg: `<ellipse cx="250" cy="360" rx="15" ry="9" fill="none" stroke="#0f172a" stroke-width="6"/><ellipse cx="352" cy="352" rx="15" ry="9" fill="none" stroke="#0f172a" stroke-width="6"/><path d="M 250 352 L 265 305 L 288 288 M 352 344 L 335 302 L 315 288" fill="none" stroke="#0f172a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_kaykay/step_4.mp3"
+      },
+      {
+        title: "5. Ad\u0131m: \u00d6ne E\u011filmi\u015f \u00c7evik G\u00f6vde",
+        instruction: "Bacaklar\u0131n \u00fcst\u00fcne s\u00f6rf yaparken \u00f6ne e\u011filmi\u015f Sonic g\u00f6vdesini ve \u015feftali karn\u0131n\u0131 yap.",
+        voice: "\u015eimdi h\u0131z r\u00fczgar\u0131na kar\u015f\u0131 hafif\u00e7e e\u011filmi\u015f g\u00f6vdesini ve oval karn\u0131n\u0131 \u00e7izelim.",
+        svg: `<path d="M 272 222 C 260 258, 268 292, 298 296 C 328 294, 336 258, 326 222" fill="none" stroke="#0f172a" stroke-width="9"/><ellipse cx="305" cy="258" rx="18" ry="26" fill="none" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_kaykay/step_5.mp3"
+      },
+      {
+        title: "6. Ad\u0131m: Denge Kuran A\u00e7\u0131k Kollar (Sol ve Sa\u011f)",
+        instruction: "\u0130ki yana r\u00fczgar s\u00f6rf\u00fc yapar gibi a\u00e7\u0131lm\u0131\u015f kollar\u0131 ve b\u00fcy\u00fck beyaz eldivenleri ekle.",
+        voice: "\u0130ki yana r\u00fczgar s\u00f6rf\u00fc yapar gibi a\u00e7\u0131lm\u0131\u015f denge kollar\u0131n\u0131 ve beyaz eldivenlerini yapal\u0131m!",
+        svg: `<path d="M 270 232 C 235 230, 210 220, 192 205" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/><circle cx="178" cy="195" r="18" fill="none" stroke="#0f172a" stroke-width="8"/><path d="M 326 232 C 362 240, 392 248, 412 242" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/><circle cx="426" cy="240" r="18" fill="none" stroke="#0f172a" stroke-width="8"/>`,
+        audio: "audio/voices/cirak_sonic_kaykay/step_6.mp3"
+      },
+      {
+        title: "7. Ad\u0131m: Kirpi Sonic'in Ba\u015f\u0131 ve R\u00fczgarl\u0131 Dikenleri",
+        instruction: "G\u00f6vdenin \u00fcst\u00fcne Sonic'in yuvarlak ba\u015f\u0131n\u0131 ve r\u00fczgardan arkaya yatm\u0131\u015f 3 mavi dikeni \u00e7iz.",
+        voice: "Ba\u015f\u0131na Sonic'in yuvarlak aln\u0131n\u0131 ve h\u0131z r\u00fczgar\u0131yla arkaya u\u00e7u\u015fan \u00fc\u00e7 b\u00fcy\u00fck dikenini \u00e7izelim!",
+        svg: `<path d="M 255 125 C 295 102, 355 125, 358 182 C 350 222, 275 235, 240 220 C 215 232, 185 242, 160 245 C 165 228, 185 215, 212 205 C 185 208, 160 212, 138 208 C 155 188, 182 178, 212 172 C 188 165, 168 158, 148 150 C 175 125, 215 118, 255 125 Z" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_kaykay/step_7.mp3"
+      },
+      {
+        title: "8. Ad\u0131m: Sivri Kulaklar ve Haval\u0131 G\u00fcne\u015f G\u00f6zl\u00fc\u011f\u00fc!",
+        instruction: "Kulaklar\u0131 ekle ve bu \u00e7izime \u00f6zel Sonic'in g\u00f6zlerine haval\u0131 koyu kaykay g\u00fcne\u015f g\u00f6zl\u00fc\u011f\u00fc \u00e7iz!",
+        voice: "Kaykayc\u0131lar g\u00fcne\u015f g\u00f6zl\u00fc\u011f\u00fc takar! Kula\u011f\u0131n\u0131 \u00e7izip g\u00f6zlerine s\u00fcper haval\u0131 kaykay g\u00fcne\u015f g\u00f6zl\u00fc\u011f\u00fc ekleyelim!",
+        svg: `<path d="M 256 128 L 246 82 L 285 112 M 315 114 L 336 82 L 340 128" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/><path d="M 262 152 L 352 152 L 348 185 Q 325 192, 308 176 L 302 176 Q 285 192, 265 185 Z" fill="none" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_kaykay/step_8.mp3"
+      },
+      {
+        title: "9. Ad\u0131m: \u00d6zg\u00fcvenli G\u00fcl\u00fcmseme ve Siyah Burun",
+        instruction: "G\u00f6zl\u00fc\u011f\u00fcn alt\u0131na \u015feftali a\u011f\u0131z yay\u0131n\u0131, siyah burnu ve haval\u0131 s\u0131r\u0131t\u0131\u015f\u0131 koy.",
+        voice: "G\u00f6zl\u00fc\u011f\u00fcn alt\u0131na siyah burnunu ve \u00e7ok haval\u0131 g\u00fcl\u00fcmsemesini kondural\u0131m!",
+        svg: `<path d="M 248 205 C 248 180, 285 180, 310 192 C 335 180, 362 185, 360 210 C 346 235, 265 235, 248 205 Z" fill="none" stroke="#0f172a" stroke-width="7"/><ellipse cx="362" cy="190" rx="10" ry="7" fill="#0f172a"/><path d="M 295 212 Q 325 224, 342 208" stroke="#0f172a" stroke-width="6" stroke-linecap="round" fill="none"/>`,
+        audio: "audio/voices/cirak_sonic_kaykay/step_9.mp3"
+      },
+      {
+        title: "10. Ad\u0131m: Kaykay Desen \u00c7izgileri",
+        instruction: "Kaykay\u0131n yan taraf\u0131na h\u0131zl\u0131 y\u0131ld\u0131z deseni \u00e7iz.",
+        voice: "Kaykay\u0131n\u0131n kenar\u0131na haval\u0131 bir y\u0131ld\u0131r\u0131m h\u0131z \u00e7izgisi yapal\u0131m.",
+        svg: `<line x1="190" y1="412" x2="425" y2="390" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_kaykay/step_10.mp3"
+      },
+      {
+        title: "11. Ad\u0131m: Kaykay\u0131n Alt\u0131ndan \u00c7\u0131kan Turkuaz Anti-Yer\u00e7ekimi I\u015f\u0131n\u0131",
+        instruction: "Tahtan\u0131n alt\u0131na havada durmas\u0131n\u0131 sa\u011flayan \u0131\u015f\u0131n halkalar\u0131n\u0131 \u00e7iz.",
+        voice: "Kaykay\u0131n yere de\u011fmeden havada u\u00e7tu\u011funu g\u00f6steren halkalar \u00e7izelim!",
+        svg: `<ellipse cx="225" cy="446" rx="34" ry="8" fill="none" stroke="#0f172a" stroke-width="5"/><ellipse cx="375" cy="432" rx="34" ry="8" fill="none" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_kaykay/step_11.mp3"
+      },
+      {
+        title: "12. Ad\u0131m: Ayakkab\u0131 Beyaz \u015eeritleri",
+        instruction: "Ayakkab\u0131lar\u0131n ortas\u0131na beyaz \u015feritleri ekle.",
+        voice: "Ayakkab\u0131lar\u0131n\u0131n \u00fcst\u00fcne beyaz h\u0131z \u015feritlerini \u00e7izelim.",
+        svg: `<line x1="252" y1="365" x2="274" y2="392" stroke="#0f172a" stroke-width="5"/><line x1="352" y1="358" x2="375" y2="384" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_kaykay/step_12.mp3"
+      },
+      {
+        title: "13. Ad\u0131m: Arkada Kalan S\u0131rt Dikeni",
+        instruction: "S\u0131rt\u0131ndan r\u00fczgarla uzayan s\u0131rt dikenini ekle.",
+        voice: "S\u0131rt\u0131ndaki sivri mavi dikenini de ekleyelim.",
+        svg: `<path d="M 268 242 L 235 256 L 265 268" fill="none" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_kaykay/step_13.mp3"
+      },
+      {
+        title: "14. Ad\u0131m: G\u00fcne\u015f G\u00f6zl\u00fc\u011f\u00fc Cam Par\u0131lt\u0131s\u0131",
+        instruction: "G\u00f6zl\u00fc\u011f\u00fcn \u00fczerine iki par\u0131lt\u0131 \u00e7izgisi \u00e7ek.",
+        voice: "G\u00fcne\u015f g\u00f6zl\u00fc\u011f\u00fcn\u00fcn camlar\u0131na haval\u0131 beyaz par\u0131lt\u0131 \u00e7izgileri \u00e7ekelim!",
+        svg: `<line x1="274" y1="160" x2="288" y2="174" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/><line x1="318" y1="160" x2="332" y2="174" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_kaykay/step_14.mp3"
+      },
+      {
+        title: "15. Ad\u0131m: \u00d6nde U\u00e7an Alt\u0131n Y\u00fcz\u00fckler",
+        instruction: "Kaykay\u0131n \u00f6n\u00fcne havada toplad\u0131\u011f\u0131 iki Alt\u0131n Y\u00fcz\u00fck yap.",
+        voice: "\u00d6n taraf\u0131na havada yakalad\u0131\u011f\u0131 iki parlak Alt\u0131n Y\u00fcz\u00fck \u00e7izelim!",
+        svg: `<circle cx="515" cy="315" r="24" fill="none" stroke="#0f172a" stroke-width="7"/><circle cx="515" cy="315" r="12" fill="none" stroke="#0f172a" stroke-width="4"/>`,
+        audio: "audio/voices/cirak_sonic_kaykay/step_15.mp3"
+      },
+      {
+        title: "16. Ad\u0131m: G\u00f6ky\u00fcz\u00fc R\u00fczgar \u00c7izgileri",
+        instruction: "Arkaya h\u0131zla kayd\u0131\u011f\u0131n\u0131 g\u00f6steren uzun r\u00fczgar \u00e7izgileri yap.",
+        voice: "Arkas\u0131na s\u00fcper h\u0131z r\u00fczgar \u00e7izgilerini \u00e7ekelim.",
+        svg: `<line x1="65" y1="265" x2="145" y2="265" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/><line x1="55" y1="305" x2="125" y2="305" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_kaykay/step_16.mp3"
+      },
+      {
+        title: "17. Ad\u0131m: Alt G\u00f6ky\u00fcz\u00fc Yolu",
+        instruction: "En alta yer g\u00f6lgesini g\u00f6steren \u00e7izgiyi ekle.",
+        voice: "Alt\u0131na havada ne kadar y\u00fcksekte s\u00fcz\u00fcld\u00fc\u011f\u00fcn\u00fc g\u00f6steren zemin \u00e7izgisi \u00e7izelim.",
+        svg: `<path d="M 110 475 L 490 475" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_kaykay/step_17.mp3"
+      },
+      {
+        title: "18. Ad\u0131m: Canl\u0131 Renklendirme (Extreme Gear Mavi-Turkuaz!)",
+        instruction: "Tebrikler K\u0131van\u00e7! U\u00e7an kaykayl\u0131 Sonic'i elektrik mavisi, g\u00fcne\u015f g\u00f6zl\u00fc\u011f\u00fc ve turkuaz roket aleviyle boya!",
+        voice: "\u00c7ok haval\u0131 oldu K\u0131van\u00e7! U\u00e7an kaykayl\u0131 Sonic r\u00fczgar gibi s\u00fcz\u00fcl\u00fcyor! \u015eimdi onu elektrik mavisi, sar\u0131 kaykay ve turkuaz \u0131\u015f\u0131klarla renklendir!",
+        svg: `
+          <defs>
+            <linearGradient id="skSonicBlue" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#3b82f6"/>
+              <stop offset="100%" stop-color="#1d4ed8"/>
+            </linearGradient>
+          </defs>
+          <path d="M 110 475 L 490 475" stroke="#cbd5e1" stroke-width="9" stroke-linecap="round"/>
+          <ellipse cx="225" cy="446" rx="34" ry="8" fill="#22d3ee" opacity="0.6" stroke="#06b6d4" stroke-width="4"/>
+          <ellipse cx="375" cy="432" rx="34" ry="8" fill="#22d3ee" opacity="0.6" stroke="#06b6d4" stroke-width="4"/>
+          <line x1="65" y1="265" x2="145" y2="265" stroke="#38bdf8" stroke-width="6" stroke-linecap="round"/>
+          <line x1="55" y1="305" x2="125" y2="305" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+          <path d="M 515 291 A 24 24 0 1 0 515 339 A 24 24 0 1 0 515 291 Z M 515 303 A 12 12 0 1 1 515 327 A 12 12 0 1 1 515 303 Z" fill="#facc15" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 122 418 L 72 415 L 92 426 L 68 436 L 128 430 Z" fill="#22d3ee" stroke="#0f172a" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M 125 405 L 445 375 C 475 372, 490 385, 465 402 L 155 432 C 125 435, 110 415, 125 405 Z" fill="#2563eb" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <line x1="190" y1="412" x2="425" y2="390" stroke="#facc15" stroke-width="8" stroke-linecap="round"/>
+          <path d="M 268 242 L 235 256 L 265 268 Z" fill="url(#skSonicBlue)" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/>
+          <path d="M 250 352 L 265 305 L 288 288 M 352 344 L 335 302 L 315 288" fill="none" stroke="#0f172a" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 250 352 L 265 305 L 288 288 M 352 344 L 335 302 L 315 288" fill="none" stroke="#2563eb" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 225 365 C 222 390, 245 398, 288 392 C 296 382, 286 364, 258 364 Z" fill="#ef4444" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <line x1="252" y1="365" x2="274" y2="392" stroke="#ffffff" stroke-width="6"/>
+          <ellipse cx="250" cy="360" rx="15" ry="9" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 325 358 C 322 384, 345 392, 392 384 C 400 374, 388 356, 358 356 Z" fill="#ef4444" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <line x1="352" y1="358" x2="375" y2="384" stroke="#ffffff" stroke-width="6"/>
+          <ellipse cx="352" cy="352" rx="15" ry="9" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 272 222 C 260 258, 268 292, 298 296 C 328 294, 336 258, 326 222 Z" fill="url(#skSonicBlue)" stroke="#0f172a" stroke-width="9"/>
+          <ellipse cx="305" cy="258" rx="18" ry="26" fill="#fed7aa" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 270 232 C 235 230, 210 220, 192 205" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 270 232 C 235 230, 210 220, 192 205" fill="none" stroke="#fdba74" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="178" cy="195" r="18" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
+          <path d="M 326 232 C 362 240, 392 248, 412 242" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 326 232 C 362 240, 392 248, 412 242" fill="none" stroke="#fdba74" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="426" cy="240" r="18" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
+          <path d="M 315 114 L 336 82 L 340 128 Z" fill="url(#skSonicBlue)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 255 125 C 295 102, 355 125, 358 182 C 350 222, 275 235, 240 220 C 215 232, 185 242, 160 245 C 165 228, 185 215, 212 205 C 185 208, 160 212, 138 208 C 155 188, 182 178, 212 172 C 188 165, 168 158, 148 150 C 175 125, 215 118, 255 125 Z" fill="url(#skSonicBlue)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 256 128 L 246 82 L 285 112 Z" fill="url(#skSonicBlue)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 248 205 C 248 180, 285 180, 310 192 C 335 180, 362 185, 360 210 C 346 235, 265 235, 248 205 Z" fill="#fed7aa" stroke="#0f172a" stroke-width="7"/>
+          <ellipse cx="362" cy="190" rx="10" ry="7" fill="#0f172a"/>
+          <path d="M 295 212 Q 325 224, 342 208" stroke="#0f172a" stroke-width="6" stroke-linecap="round" fill="none"/>
+          <path d="M 262 152 L 352 152 L 348 185 Q 325 192, 308 176 L 302 176 Q 285 192, 265 185 Z" fill="#0f172a" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>
+          <line x1="274" y1="160" x2="288" y2="174" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+          <line x1="318" y1="160" x2="332" y2="174" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+`,
+        audio: "audio/voices/cirak_sonic_kaykay/step_18.mp3"
+      },
+    ]
+  },
+
+  // =========================================================================
+  // ⚡ KİRPİ SONİC DÜNYASI: FILM ŞIMŞEK GÜÇLÜ SONIC
+  // =========================================================================
+  {
+    id: "cirak_sonic_film_simsek",
+    categoryId: "sonic",
+    name: "Film \u015eim\u015fek G\u00fc\u00e7l\u00fc Sonic",
+    emoji: "\u26a1",
+    level: 1,
+    levelName: "\u00c7\u0131rak",
+    levelBadge: "\ud83d\udfe2 \u00c7\u0131rak",
+    description: "Sinema filmindeki mavi elektrik g\u00fc\u00e7lerini a\u00e7an \u015eim\u015fek Sonic! Parlayan elektrik g\u00f6zleri ve dikenlerinden f\u0131\u015fk\u0131ran y\u0131ld\u0131r\u0131mlar!",
+    materials: "Resim ka\u011f\u0131d\u0131, kur\u015fun kalem, silgi, parlak mavi, cam g\u00f6be\u011fi turkuaz, sar\u0131 ve k\u0131rm\u0131z\u0131 boyalar",
+    welcomeText: "Bumm! Merhaba K\u0131van\u00e7! Kirpi Sonic filmindeki o s\u00fcper g\u00fc\u00e7l\u00fc, g\u00f6zlerinden ve dikenlerinden elektrik f\u0131\u015fk\u0131ran Mavi \u015eim\u015fek Sonic'i \u00e7izelim!",
+    welcomeAudio: "audio/voices/cirak_sonic_film_simsek/welcome.mp3",
+    colors: ["#1d4ed8", "#06b6d4", "#22d3ee", "#ef4444"],
+    previewSvg: `
+          <defs>
+            <linearGradient id="movBlue" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#3b82f6"/>
+              <stop offset="50%" stop-color="#1d4ed8"/>
+              <stop offset="100%" stop-color="#1e3a8a"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="300" cy="482" rx="145" ry="16" fill="#22d3ee" opacity="0.25" stroke="#06b6d4" stroke-width="6" stroke-dasharray="16 10"/>
+          <path d="M 110 135 L 138 148 L 122 158 L 152 172 M 235 65 L 245 88 L 232 95 L 248 115 M 378 95 L 362 115 L 376 122 L 352 142 M 135 320 L 152 335 L 138 345 L 158 362 M 462 232 L 445 250 L 460 258 L 440 278 M 485 170 L 455 205 L 478 205 L 445 245" fill="none" stroke="#22d3ee" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 246 300 L 210 315 L 245 330 Z" fill="url(#movBlue)" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/>
+          <path d="M 268 370 L 250 432 M 305 370 L 325 432" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 268 370 L 250 432 M 305 370 L 325 432" stroke="#1d4ed8" stroke-width="9" stroke-linecap="round"/>
+          <path d="M 225 442 C 220 472, 248 482, 290 476 C 298 466, 288 442, 260 442 Z" fill="#ef4444" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <line x1="250" y1="444" x2="275" y2="476" stroke="#ffffff" stroke-width="6"/>
+          <ellipse cx="248" cy="436" rx="16" ry="9" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 315 442 C 310 472, 340 482, 395 474 C 405 464, 392 440, 355 440 Z" fill="#ef4444" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <line x1="342" y1="442" x2="375" y2="474" stroke="#ffffff" stroke-width="6"/>
+          <ellipse cx="328" cy="436" rx="16" ry="9" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 255 270 C 242 315, 248 362, 282 372 C 315 372, 328 320, 318 270 Z" fill="url(#movBlue)" stroke="#0f172a" stroke-width="9"/>
+          <ellipse cx="288" cy="322" rx="22" ry="32" fill="#fed7aa" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 252 282 C 218 292, 198 318, 185 338" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 252 282 C 218 292, 198 318, 185 338" fill="none" stroke="#1d4ed8" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="172" cy="350" r="22" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
+          <path d="M 320 282 C 355 288, 385 280, 412 268" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 320 282 C 355 288, 385 280, 412 268" fill="none" stroke="#1d4ed8" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="428" cy="264" r="22" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
+          <path d="M 310 124 L 340 88 L 342 142 Z" fill="url(#movBlue)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 245 140 C 292 112, 355 135, 360 198 C 350 242, 275 262, 226 248 C 198 260, 168 272, 140 278 C 142 258, 162 238, 198 218 C 170 225, 140 232, 108 232 C 122 208, 155 190, 195 182 C 172 175, 145 168, 112 162 C 145 132, 192 126, 245 140 Z" fill="url(#movBlue)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 248 142 L 236 90 L 282 124 Z" fill="url(#movBlue)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <ellipse cx="282" cy="186" rx="18" ry="22" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
+          <circle cx="284" cy="187" r="12" fill="#22d3ee"/>
+          <circle cx="285" cy="187" r="7" fill="#0f172a"/>
+          <circle cx="281" cy="181" r="4" fill="#ffffff"/>
+          <ellipse cx="332" cy="186" rx="16" ry="21" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
+          <circle cx="333" cy="187" r="11" fill="#22d3ee"/>
+          <circle cx="334" cy="187" r="6.5" fill="#0f172a"/>
+          <circle cx="330" cy="181" r="3.5" fill="#ffffff"/>
+          <path d="M 262 162 Q 282 152, 302 166 M 315 166 Q 332 152, 350 162" stroke="#0f172a" stroke-width="6" stroke-linecap="round" fill="none"/>
+          <path d="M 226 246 C 224 212, 265 206, 300 222 C 335 206, 368 210, 365 245 C 350 276, 250 276, 226 246 Z" fill="#fed7aa" stroke="#0f172a" stroke-width="8"/>
+          <ellipse cx="366" cy="215" rx="12" ry="8" fill="#0f172a"/>
+          <path d="M 288 244 C 312 258, 338 252, 348 236" fill="none" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/>
+`,
+    steps: [
+      {
+        title: "1. Ad\u0131m: \u015eim\u015fek Kafa ve \u0130ki Sivri Kulak",
+        instruction: "Sayfan\u0131n \u00fcst ortas\u0131na film Sonic'in yuvarlak ba\u015f\u0131n\u0131 ve iki sivri kula\u011f\u0131n\u0131 \u00e7iz.",
+        voice: "Ka\u011f\u0131d\u0131m\u0131z\u0131n \u00fcst ortas\u0131na filmdeki Kirpi Sonic'in aln\u0131n\u0131 ve iki sivri kula\u011f\u0131n\u0131 \u00e7izelim.",
+        svg: `<path d="M 245 140 C 292 112, 355 135, 360 198" fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/><path d="M 248 142 L 236 90 L 282 124 M 310 124 L 340 88 L 342 142" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_film_simsek/step_1.mp3"
+      },
+      {
+        title: "2. Ad\u0131m: Arkaya Uzanm\u0131\u015f 3 G\u00fcr Mavi Diken",
+        instruction: "Filmdeki gibi biraz daha t\u00fcyl\u00fc ve sivri 3 mavi dikeni arkaya do\u011fru \u00e7iz.",
+        voice: "Ba\u015f\u0131n\u0131n arkas\u0131ndan \u015fim\u015fek gibi geriye do\u011fru uzanan \u00fc\u00e7 b\u00fcy\u00fck mavi dikenini yapal\u0131m!",
+        svg: `<path d="M 245 140 C 192 126, 145 132, 112 162 C 145 168, 172 175, 195 182 C 155 190, 122 208, 108 232 C 140 232, 170 225, 198 218 C 162 238, 142 258, 140 278 C 168 272, 198 260, 226 248" fill="none" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_film_simsek/step_2.mp3"
+      },
+      {
+        title: "3. Ad\u0131m: \u015eeftali Y\u00fcz ve G\u00fc\u00e7l\u00fc A\u011f\u0131z B\u00f6lgesi",
+        instruction: "Alt y\u00fcz\u00fc kapatan yanak yay\u0131n\u0131, siyah burnu ve kararl\u0131 g\u00fcl\u00fcmsemeyi yap.",
+        voice: "Alt y\u00fcz\u00fcne g\u00fcl\u00fcmseyen \u015feftali a\u011f\u0131z b\u00f6lgesini ve siyah oval burnunu \u00e7izelim.",
+        svg: `<path d="M 226 246 C 224 212, 265 206, 300 222 C 335 206, 368 210, 365 245 C 350 276, 250 276, 226 246 Z" fill="none" stroke="#0f172a" stroke-width="8"/><ellipse cx="366" cy="215" rx="12" ry="8" fill="#0f172a"/><path d="M 288 244 C 312 258, 338 252, 348 236" fill="none" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_film_simsek/step_3.mp3"
+      },
+      {
+        title: "4. Ad\u0131m: Elektrik Sa\u00e7an \u0130ki Ayr\u0131 B\u00fcy\u00fck G\u00f6z (Film Tarz\u0131!)",
+        instruction: "Filmdeki Sonic'in iki b\u00fcy\u00fck ayr\u0131 parlayan elektrikli g\u00f6z\u00fcn\u00fc ve ka\u015f k\u0131vr\u0131m\u0131n\u0131 \u00e7iz!",
+        voice: "Filmdeki Sonic'in \u015fim\u015fek sa\u00e7an b\u00fcy\u00fck g\u00f6zlerini ve kararl\u0131 ka\u015flar\u0131n\u0131 \u00e7izelim!",
+        svg: `<ellipse cx="282" cy="186" rx="18" ry="22" fill="none" stroke="#0f172a" stroke-width="7"/><circle cx="285" cy="187" r="9" fill="#0f172a"/><circle cx="281" cy="181" r="4" fill="#ffffff"/><ellipse cx="332" cy="186" rx="16" ry="21" fill="none" stroke="#0f172a" stroke-width="7"/><circle cx="334" cy="187" r="8" fill="#0f172a"/><circle cx="330" cy="181" r="3.5" fill="#ffffff"/>`,
+        audio: "audio/voices/cirak_sonic_film_simsek/step_4.mp3"
+      },
+      {
+        title: "5. Ad\u0131m: \u00c7at\u0131k Ka\u015fl\u0131 Elektrik G\u00f6z \u00c7izgisi",
+        instruction: "G\u00f6zlerin tam \u00fcst\u00fcne s\u00fcper g\u00fc\u00e7 toplarken \u00e7at\u0131lan haval\u0131 ka\u015f kavisini yap.",
+        voice: "G\u00f6zlerinin \u00fcst\u00fcne '\u015eimdi g\u00fcc\u00fcm\u00fc g\u00f6steriyorum!' diyen haval\u0131 ka\u015f \u00e7izgisini yapal\u0131m.",
+        svg: `<path d="M 262 162 Q 282 152, 302 166 M 315 166 Q 332 152, 350 162" stroke="#0f172a" stroke-width="6" stroke-linecap="round" fill="none"/>`,
+        audio: "audio/voices/cirak_sonic_film_simsek/step_5.mp3"
+      },
+      {
+        title: "6. Ad\u0131m: G\u00fc\u00e7 Toplayan G\u00f6vde ve \u015eeftali Kar\u0131n",
+        instruction: "Ba\u015f\u0131n alt\u0131na dinamik g\u00f6vdesini ve ortas\u0131ndaki kar\u0131n ovalini \u00e7iz.",
+        voice: "G\u00f6vdesini ve ortas\u0131ndaki oval \u015feftali karn\u0131n\u0131 \u00e7izelim.",
+        svg: `<path d="M 255 270 C 242 315, 248 362, 282 372 C 315 372, 328 320, 318 270" fill="none" stroke="#0f172a" stroke-width="9"/><ellipse cx="288" cy="322" rx="22" ry="32" fill="none" stroke="#0f172a" stroke-width="6"/>`,
+        audio: "audio/voices/cirak_sonic_film_simsek/step_6.mp3"
+      },
+      {
+        title: "7. Ad\u0131m: S\u0131k\u0131l\u0131 Sol G\u00fc\u00e7 Kolu ve Yumru\u011fu",
+        instruction: "Sola do\u011fru yumru\u011funu s\u0131km\u0131\u015f elektrik toplayan sol kolunu \u00e7iz.",
+        voice: "Sol kolunu \u015fim\u015fek enerjisi toplarken s\u0131k\u0131l\u0131 beyaz yumrukla \u00e7izelim!",
+        svg: `<path d="M 252 282 C 218 292, 198 318, 185 338" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/><circle cx="172" cy="350" r="22" fill="none" stroke="#0f172a" stroke-width="8"/>`,
+        audio: "audio/voices/cirak_sonic_film_simsek/step_7.mp3"
+      },
+      {
+        title: "8. Ad\u0131m: \u0130leri F\u0131rlayan Sa\u011f Yumruk",
+        instruction: "Sa\u011f tarafa ileri do\u011fru g\u00fc\u00e7 yumru\u011fu atan sa\u011f kolunu yap.",
+        voice: "Sa\u011f tarafa da elektrik dolu g\u00fc\u00e7l\u00fc yumru\u011funu atarken \u00e7izelim!",
+        svg: `<path d="M 320 282 C 355 288, 385 280, 412 268" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/><circle cx="428" cy="264" r="22" fill="none" stroke="#0f172a" stroke-width="8"/>`,
+        audio: "audio/voices/cirak_sonic_film_simsek/step_8.mp3"
+      },
+      {
+        title: "9. Ad\u0131m: Bacaklar ve Haval\u0131 K\u0131rm\u0131z\u0131 Ko\u015fu Ayakkab\u0131lar\u0131",
+        instruction: "Yere sa\u011flam basan iki g\u00fc\u00e7l\u00fc baca\u011f\u0131n\u0131 ve k\u0131rm\u0131z\u0131 spor ayakkab\u0131lar\u0131n\u0131 yap.",
+        voice: "Yere sa\u011flam basan bacaklar\u0131n\u0131 ve filmdeki h\u0131zl\u0131 k\u0131rm\u0131z\u0131-beyaz ayakkab\u0131lar\u0131n\u0131 \u00e7izelim!",
+        svg: `<path d="M 268 370 L 250 432 M 305 370 L 325 432" stroke="#0f172a" stroke-width="16" stroke-linecap="round"/><ellipse cx="248" cy="436" rx="16" ry="9" fill="none" stroke="#0f172a" stroke-width="6"/><ellipse cx="328" cy="436" rx="16" ry="9" fill="none" stroke="#0f172a" stroke-width="6"/><path d="M 225 442 C 220 472, 248 482, 290 476 C 298 466, 288 442, 260 442 Z" fill="none" stroke="#0f172a" stroke-width="8"/><path d="M 315 442 C 310 472, 340 482, 395 474 C 405 464, 392 440, 355 440 Z" fill="none" stroke="#0f172a" stroke-width="8"/>`,
+        audio: "audio/voices/cirak_sonic_film_simsek/step_9.mp3"
+      },
+      {
+        title: "10. Ad\u0131m: Dikenlerden \u00c7\u0131kan \u015eim\u015fek \u00c7akmalar\u0131 (\u00dcst)",
+        instruction: "Ba\u015f\u0131ndaki dikenlerden etrafa s\u0131\u00e7rayan zikzak mavi \u015fim\u015fekleri \u00e7iz!",
+        voice: "\u0130\u015fte film Sonic'in s\u00fcper g\u00fcc\u00fc! Ba\u015f\u0131n\u0131n etraf\u0131ndan \u00e7akan zikzak elektrik y\u0131ld\u0131r\u0131mlar\u0131n\u0131 \u00e7izelim!",
+        svg: `<path d="M 110 135 L 138 148 L 122 158 L 152 172 M 235 65 L 245 88 L 232 95 L 248 115 M 378 95 L 362 115 L 376 122 L 352 142" fill="none" stroke="#0f172a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_film_simsek/step_10.mp3"
+      },
+      {
+        title: "11. Ad\u0131m: Yumruklardan F\u0131\u015fk\u0131ran \u015eim\u015fekler (Sol & Sa\u011f)",
+        instruction: "Her iki eldiveninin etraf\u0131nda dans eden elektrik k\u0131v\u0131lc\u0131mlar\u0131n\u0131 yap.",
+        voice: "Ellerinin etraf\u0131nda dans eden dev elektrik y\u0131ld\u0131r\u0131mlar\u0131n\u0131 ekleyelim!",
+        svg: `<path d="M 135 320 L 152 335 L 138 345 L 158 362 M 462 232 L 445 250 L 460 258 L 440 278" fill="none" stroke="#0f172a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_film_simsek/step_11.mp3"
+      },
+      {
+        title: "12. Ad\u0131m: G\u00f6vde Etraf\u0131 Elektrik Halkalar\u0131",
+        instruction: "Ayaklar\u0131n\u0131n alt\u0131na ve belinin etraf\u0131na enerji \u015fim\u015fekleri \u00e7iz.",
+        voice: "G\u00f6vdesini saran enerji \u015fim\u015fek halkalar\u0131n\u0131 \u00e7izelim.",
+        svg: `<path d="M 195 405 L 222 415 L 210 426 L 235 435 M 395 400 L 372 415 L 385 422 L 365 438" fill="none" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_film_simsek/step_12.mp3"
+      },
+      {
+        title: "13. Ad\u0131m: Beyaz Ayakkab\u0131 \u015eeritleri",
+        instruction: "Ayakkab\u0131lara h\u0131z \u015feritlerini ve tokalar\u0131 ekle.",
+        voice: "Ayakkab\u0131lar\u0131na \u015f\u0131k beyaz \u015ferit \u00e7izgilerini yapal\u0131m.",
+        svg: `<line x1="250" y1="444" x2="275" y2="476" stroke="#0f172a" stroke-width="6"/><line x1="342" y1="442" x2="375" y2="474" stroke="#0f172a" stroke-width="6"/>`,
+        audio: "audio/voices/cirak_sonic_film_simsek/step_13.mp3"
+      },
+      {
+        title: "14. Ad\u0131m: S\u0131rt Dikeni ve Kuyruk",
+        instruction: "S\u0131rt\u0131ndan uzanan s\u0131rt dikenini ve k\u00fc\u00e7\u00fck kuyru\u011funu ekle.",
+        voice: "S\u0131rt dikenini ve minik kuyru\u011funu ekleyelim.",
+        svg: `<path d="M 246 300 L 210 315 L 245 330" fill="none" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_film_simsek/step_14.mp3"
+      },
+      {
+        title: "15. Ad\u0131m: Alt Elektrik \u015eok Dairesi",
+        instruction: "Bast\u0131\u011f\u0131 yere enerjinin yay\u0131ld\u0131\u011f\u0131 zemin halkas\u0131n\u0131 \u00e7iz.",
+        voice: "Ayaklar\u0131n\u0131n bast\u0131\u011f\u0131 yere enerji halkas\u0131 \u00e7izelim.",
+        svg: `<ellipse cx="300" cy="482" rx="145" ry="16" fill="none" stroke="#0f172a" stroke-width="6" stroke-dasharray="16 10"/>`,
+        audio: "audio/voices/cirak_sonic_film_simsek/step_15.mp3"
+      },
+      {
+        title: "16. Ad\u0131m: Mavi K\u0131v\u0131lc\u0131m Noktalar\u0131",
+        instruction: "Havada u\u00e7u\u015fan elektrik k\u0131v\u0131lc\u0131m noktalar\u0131n\u0131 yerle\u015ftir.",
+        voice: "Havada parlayan k\u00fc\u00e7\u00fck mavi k\u0131v\u0131lc\u0131m noktalar\u0131n\u0131 kondural\u0131m.",
+        svg: `<circle cx="155" cy="285" r="4" fill="#0f172a"/><circle cx="455" cy="310" r="5" fill="#0f172a"/><circle cx="195" cy="110" r="4" fill="#0f172a"/>`,
+        audio: "audio/voices/cirak_sonic_film_simsek/step_16.mp3"
+      },
+      {
+        title: "17. Ad\u0131m: S\u00fcper \u015eim\u015fek \u00c7izgisi",
+        instruction: "G\u00f6kten inen y\u0131ld\u0131r\u0131m \u00e7izgilerini ekle.",
+        voice: "Arka plana s\u00fcper g\u00fc\u00e7 y\u0131ld\u0131r\u0131mlar\u0131n\u0131 \u00e7izelim!",
+        svg: `<path d="M 485 170 L 455 205 L 478 205 L 445 245" fill="none" stroke="#0f172a" stroke-width="6" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_film_simsek/step_17.mp3"
+      },
+      {
+        title: "18. Ad\u0131m: Canl\u0131 Renklendirme (Cam G\u00f6be\u011fi Y\u0131ld\u0131r\u0131m G\u00fcc\u00fc!)",
+        instruction: "Tebrikler K\u0131van\u00e7! Film Sonic'i parlak safir mavisi ve \u0131\u015f\u0131l \u0131\u015f\u0131l turkuaz \u015fim\u015feklerle boya!",
+        voice: "Efsane oldu K\u0131van\u00e7! Filmdeki \u015eim\u015fek Sonic d\u00fcnyay\u0131 kurtarmaya haz\u0131r! \u015eimdi onu safir mavisi ve parlak turkuaz y\u0131ld\u0131r\u0131mlarla renklendir!",
+        svg: `
+          <defs>
+            <linearGradient id="movBlue" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#3b82f6"/>
+              <stop offset="50%" stop-color="#1d4ed8"/>
+              <stop offset="100%" stop-color="#1e3a8a"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="300" cy="482" rx="145" ry="16" fill="#22d3ee" opacity="0.25" stroke="#06b6d4" stroke-width="6" stroke-dasharray="16 10"/>
+          <path d="M 110 135 L 138 148 L 122 158 L 152 172 M 235 65 L 245 88 L 232 95 L 248 115 M 378 95 L 362 115 L 376 122 L 352 142 M 135 320 L 152 335 L 138 345 L 158 362 M 462 232 L 445 250 L 460 258 L 440 278 M 485 170 L 455 205 L 478 205 L 445 245" fill="none" stroke="#22d3ee" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 246 300 L 210 315 L 245 330 Z" fill="url(#movBlue)" stroke="#0f172a" stroke-width="7" stroke-linejoin="round"/>
+          <path d="M 268 370 L 250 432 M 305 370 L 325 432" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 268 370 L 250 432 M 305 370 L 325 432" stroke="#1d4ed8" stroke-width="9" stroke-linecap="round"/>
+          <path d="M 225 442 C 220 472, 248 482, 290 476 C 298 466, 288 442, 260 442 Z" fill="#ef4444" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <line x1="250" y1="444" x2="275" y2="476" stroke="#ffffff" stroke-width="6"/>
+          <ellipse cx="248" cy="436" rx="16" ry="9" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 315 442 C 310 472, 340 482, 395 474 C 405 464, 392 440, 355 440 Z" fill="#ef4444" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <line x1="342" y1="442" x2="375" y2="474" stroke="#ffffff" stroke-width="6"/>
+          <ellipse cx="328" cy="436" rx="16" ry="9" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 255 270 C 242 315, 248 362, 282 372 C 315 372, 328 320, 318 270 Z" fill="url(#movBlue)" stroke="#0f172a" stroke-width="9"/>
+          <ellipse cx="288" cy="322" rx="22" ry="32" fill="#fed7aa" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 252 282 C 218 292, 198 318, 185 338" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 252 282 C 218 292, 198 318, 185 338" fill="none" stroke="#1d4ed8" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="172" cy="350" r="22" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
+          <path d="M 320 282 C 355 288, 385 280, 412 268" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 320 282 C 355 288, 385 280, 412 268" fill="none" stroke="#1d4ed8" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="428" cy="264" r="22" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
+          <path d="M 310 124 L 340 88 L 342 142 Z" fill="url(#movBlue)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 245 140 C 292 112, 355 135, 360 198 C 350 242, 275 262, 226 248 C 198 260, 168 272, 140 278 C 142 258, 162 238, 198 218 C 170 225, 140 232, 108 232 C 122 208, 155 190, 195 182 C 172 175, 145 168, 112 162 C 145 132, 192 126, 245 140 Z" fill="url(#movBlue)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <path d="M 248 142 L 236 90 L 282 124 Z" fill="url(#movBlue)" stroke="#0f172a" stroke-width="9" stroke-linejoin="round"/>
+          <ellipse cx="282" cy="186" rx="18" ry="22" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
+          <circle cx="284" cy="187" r="12" fill="#22d3ee"/>
+          <circle cx="285" cy="187" r="7" fill="#0f172a"/>
+          <circle cx="281" cy="181" r="4" fill="#ffffff"/>
+          <ellipse cx="332" cy="186" rx="16" ry="21" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
+          <circle cx="333" cy="187" r="11" fill="#22d3ee"/>
+          <circle cx="334" cy="187" r="6.5" fill="#0f172a"/>
+          <circle cx="330" cy="181" r="3.5" fill="#ffffff"/>
+          <path d="M 262 162 Q 282 152, 302 166 M 315 166 Q 332 152, 350 162" stroke="#0f172a" stroke-width="6" stroke-linecap="round" fill="none"/>
+          <path d="M 226 246 C 224 212, 265 206, 300 222 C 335 206, 368 210, 365 245 C 350 276, 250 276, 226 246 Z" fill="#fed7aa" stroke="#0f172a" stroke-width="8"/>
+          <ellipse cx="366" cy="215" rx="12" ry="8" fill="#0f172a"/>
+          <path d="M 288 244 C 312 258, 338 252, 348 236" fill="none" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/>
+`,
+        audio: "audio/voices/cirak_sonic_film_simsek/step_18.mp3"
+      },
+    ]
+  },
+
+  // =========================================================================
+  // ⚡ KİRPİ SONİC DÜNYASI: GÖKKUŞAĞI HYPER SONIC
+  // =========================================================================
+  {
+    id: "cirak_sonic_hyper",
+    categoryId: "sonic",
+    name: "G\u00f6kku\u015fa\u011f\u0131 Hyper Sonic",
+    emoji: "\ud83c\udf08",
+    level: 1,
+    levelName: "\u00c7\u0131rak",
+    levelBadge: "\ud83d\udfe2 \u00c7\u0131rak",
+    description: "Sonic'in en \u00fcst\u00fcn g\u00f6kku\u015fa\u011f\u0131 formu Hyper Sonic! Etraf\u0131nda u\u00e7an S\u00fcper Z\u00fcmr\u00fctler ve g\u00f6ky\u00fcz\u00fcne \u015fahlanan elmas dikenleri!",
+    materials: "Resim ka\u011f\u0131d\u0131, kur\u015fun kalem, silgi, beyaz, g\u00f6kku\u015fa\u011f\u0131 pembe, mavi, ye\u015fil, sar\u0131 boyalar",
+    welcomeText: "\u0130nan\u0131lmaz \u0131\u015f\u0131klar! Merhaba K\u0131van\u00e7! Sonic'in en nadir g\u00f6kku\u015fa\u011f\u0131 g\u00fcc\u00fc Hyper Sonic ile tan\u0131\u015f! B\u00fct\u00fcn elmas renkleriyle \u00e7izelim!",
+    welcomeAudio: "audio/voices/cirak_sonic_hyper/welcome.mp3",
+    colors: ["#f472b6", "#38bdf8", "#facc15", "#22c55e"],
+    previewSvg: `
+          <defs>
+            <linearGradient id="hypRainbow" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#fbcfe8"/>
+              <stop offset="35%" stop-color="#bae6fd"/>
+              <stop offset="70%" stop-color="#fef08a"/>
+              <stop offset="100%" stop-color="#bbf7d0"/>
+            </linearGradient>
+          </defs>
+          <circle cx="300" cy="270" r="195" fill="url(#hypRainbow)" opacity="0.22" stroke="#f472b6" stroke-width="5" stroke-dasharray="14 10"/>
+          <path d="M 110 120 L 110 142 M 99 131 L 121 131 M 490 120 L 490 142 M 479 131 L 501 131" stroke="#facc15" stroke-width="5" stroke-linecap="round"/>
+          <polygon points="288,18 312,18 322,30 300,52 278,30" fill="#22c55e" stroke="#0f172a" stroke-width="5"/>
+          <polygon points="105,255 128,255 138,268 116,292 95,268" fill="#3b82f6" stroke="#0f172a" stroke-width="6"/>
+          <polygon points="135,345 158,345 168,358 146,382 125,358" fill="#a855f7" stroke="#0f172a" stroke-width="6"/>
+          <polygon points="472,255 495,255 505,268 483,292 462,268" fill="#ef4444" stroke="#0f172a" stroke-width="6"/>
+          <polygon points="442,345 465,345 475,358 453,382 432,358" fill="#facc15" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 280 338 L 258 410 M 320 338 L 348 388 L 332 422" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 280 338 L 258 410 M 320 338 L 348 388 L 332 422" fill="none" stroke="url(#hypRainbow)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 225 420 C 220 452, 248 462, 285 454 C 292 444, 284 420, 255 420 Z" fill="#ef4444" stroke="#0f172a" stroke-width="8"/>
+          <line x1="252" y1="422" x2="268" y2="454" stroke="#ffffff" stroke-width="6"/>
+          <ellipse cx="255" cy="414" rx="15" ry="9" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 318 430 C 312 460, 342 470, 385 460 C 392 450, 382 428, 345 428 Z" fill="#ef4444" stroke="#0f172a" stroke-width="8"/>
+          <line x1="342" y1="430" x2="365" y2="462" stroke="#ffffff" stroke-width="6"/>
+          <ellipse cx="330" cy="425" rx="15" ry="9" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 268 242 C 256 285, 260 335, 300 342 C 340 335, 344 285, 332 242 Z" fill="url(#hypRainbow)" stroke="#0f172a" stroke-width="9"/>
+          <ellipse cx="300" cy="292" rx="20" ry="30" fill="#fed7aa" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 266 254 C 228 248, 200 228, 185 202" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 266 254 C 228 248, 200 228, 185 202" fill="none" stroke="#fdba74" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="176" cy="190" r="19" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
+          <path d="M 334 254 C 372 248, 400 228, 415 202" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 334 254 C 372 248, 400 228, 415 202" fill="none" stroke="#fdba74" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="424" cy="190" r="19" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
+          <path d="M 250 175 L 232 128 L 275 156 Z" fill="url(#hypRainbow)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 350 175 L 368 128 L 325 156 Z" fill="url(#hypRainbow)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 278 155 L 300 55 L 322 155 Z" fill="url(#hypRainbow)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 252 162 L 185 88 L 265 148 Z" fill="url(#hypRainbow)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 348 162 L 415 88 L 335 148 Z" fill="url(#hypRainbow)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 242 195 L 158 168 L 238 212 Z" fill="url(#hypRainbow)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 358 195 L 442 168 L 362 212 Z" fill="url(#hypRainbow)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 248 205 C 248 152, 352 152, 352 205 C 352 240, 248 240, 248 205 Z" fill="url(#hypRainbow)" stroke="#0f172a" stroke-width="9"/>
+          <path d="M 254 195 C 256 162, 290 162, 300 182 C 310 162, 344 162, 346 195 Z" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
+          <ellipse cx="280" cy="184" rx="9" ry="13" fill="#ec4899" stroke="#0f172a" stroke-width="4"/>
+          <circle cx="280" cy="184" r="5.5" fill="#0f172a"/>
+          <circle cx="278" cy="180" r="2" fill="#ffffff"/>
+          <ellipse cx="320" cy="184" rx="9" ry="13" fill="#06b6d4" stroke="#0f172a" stroke-width="4"/>
+          <circle cx="320" cy="184" r="5.5" fill="#0f172a"/>
+          <circle cx="318" cy="180" r="2" fill="#ffffff"/>
+          <path d="M 248 210 C 250 190, 285 194, 300 205 C 315 194, 350 190, 352 212 C 344 246, 256 246, 248 210 Z" fill="#fed7aa" stroke="#0f172a" stroke-width="8"/>
+          <ellipse cx="300" cy="206" rx="10" ry="7" fill="#0f172a"/>
+          <path d="M 282 225 Q 300 236, 318 225" stroke="#0f172a" stroke-width="6" stroke-linecap="round" fill="none"/>
+`,
+    steps: [
+      {
+        title: "1. Ad\u0131m: Hyper Sonic Yuvarlak Ba\u015f ve Kulaklar",
+        instruction: "Sayfan\u0131n ortas\u0131na parlayan ba\u015f \u00e7emberini ve iki keskin kulak \u00fc\u00e7genini yap.",
+        voice: "Ka\u011f\u0131d\u0131m\u0131z\u0131n \u00fcst ortas\u0131na Hyper Sonic'in ba\u015f yuvarla\u011f\u0131n\u0131 ve iki keskin kula\u011f\u0131n\u0131 \u00e7izelim.",
+        svg: `<path d="M 248 205 C 248 152, 352 152, 352 205" fill="none" stroke="#0f172a" stroke-width="9"/><path d="M 250 175 L 232 128 L 275 156 M 350 175 L 368 128 L 325 156" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_hyper/step_1.mp3"
+      },
+      {
+        title: "2. Ad\u0131m: G\u00f6ky\u00fcz\u00fcne F\u0131rlayan 5 I\u015f\u0131k Dikeni",
+        instruction: "Tepesinden g\u00fcne\u015f \u0131\u015f\u0131nlar\u0131 gibi yukar\u0131 ve yanlara a\u00e7\u0131lan 5 Hyper dikeni \u00e7iz.",
+        voice: "Hyper Sonic'in dikenleri y\u0131ld\u0131z gibi parlar! Yukar\u0131 do\u011fru \u015fahlanan 5 s\u00fcper \u0131\u015f\u0131k dikenini \u00e7izelim!",
+        svg: `<path d="M 278 155 L 300 55 L 322 155 M 252 162 L 185 88 L 265 148 M 348 162 L 415 88 L 335 148 M 242 195 L 158 168 L 238 212 M 358 195 L 442 168 L 362 212" fill="none" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>`,
+        audio: "audio/voices/cirak_sonic_hyper/step_2.mp3"
+      },
+      {
+        title: "3. Ad\u0131m: \u015eeftali Y\u00fcz ve Siyah Burun",
+        instruction: "Alt y\u00fcz\u00fcne yanak k\u0131vr\u0131m\u0131n\u0131, siyah burnunu ve zafer g\u00fcl\u00fcmsemesini ekle.",
+        voice: "Y\u00fcz\u00fcn\u00fcn alt\u0131na g\u00fcl\u00fcmseyen a\u011f\u0131z b\u00f6lgesini ve siyah burnunu \u00e7izelim.",
+        svg: `<path d="M 248 210 C 250 190, 285 194, 300 205 C 315 194, 350 190, 352 212 C 344 246, 256 246, 248 210 Z" fill="none" stroke="#0f172a" stroke-width="8"/><ellipse cx="300" cy="206" rx="10" ry="7" fill="#0f172a"/><path d="M 282 225 Q 300 236, 318 225" stroke="#0f172a" stroke-width="6" stroke-linecap="round" fill="none"/>`,
+        audio: "audio/voices/cirak_sonic_hyper/step_3.mp3"
+      },
+      {
+        title: "4. Ad\u0131m: G\u00f6kku\u015fa\u011f\u0131 Parlayan G\u00f6zler",
+        instruction: "G\u00f6z kemerinin i\u00e7ine \u0131\u015f\u0131ldayan k\u0131rm\u0131z\u0131-mavi Hyper g\u00f6zleri \u00e7iz.",
+        voice: "G\u00f6z kemerinin i\u00e7ine par\u0131ldayan Hyper Sonic g\u00f6zlerini yapal\u0131m.",
+        svg: `<path d="M 254 195 C 256 162, 290 162, 300 182 C 310 162, 344 162, 346 195" fill="none" stroke="#0f172a" stroke-width="7"/><ellipse cx="280" cy="184" rx="9" ry="13" fill="none" stroke="#0f172a" stroke-width="4.5"/><circle cx="280" cy="184" r="5.5" fill="#0f172a"/><circle cx="278" cy="180" r="2" fill="#ffffff"/><ellipse cx="320" cy="184" rx="9" ry="13" fill="none" stroke="#0f172a" stroke-width="4.5"/><circle cx="320" cy="184" r="5.5" fill="#0f172a"/><circle cx="318" cy="180" r="2" fill="#ffffff"/>`,
+        audio: "audio/voices/cirak_sonic_hyper/step_4.mp3"
+      },
+      {
+        title: "5. Ad\u0131m: Havada S\u00fcz\u00fclen \u00c7evik G\u00f6vde",
+        instruction: "Ba\u015f\u0131n alt\u0131na yumu\u015fak kavisli g\u00f6vde ve oval kar\u0131n deseni \u00e7iz.",
+        voice: "Alt\u0131na havada s\u00fcz\u00fclen \u00e7evik g\u00f6vdesini ve kar\u0131n ovalini \u00e7izelim.",
+        svg: `<path d="M 268 242 C 256 285, 260 335, 300 342 C 340 335, 344 285, 332 242" fill="none" stroke="#0f172a" stroke-width="9"/><ellipse cx="300" cy="292" rx="20" ry="30" fill="none" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_hyper/step_5.mp3"
+      },
+      {
+        title: "6. Ad\u0131m: G\u00f6ky\u00fcz\u00fcne A\u00e7\u0131lan Sol Kol ve Eldiven",
+        instruction: "Sola yukar\u0131 do\u011fru enerji sa\u00e7arak a\u00e7t\u0131\u011f\u0131 kolunu ve eldivenini yap.",
+        voice: "\u0130ki elini zafer kazanm\u0131\u015f gibi havaya kald\u0131r\u0131p g\u00fc\u00e7 sa\u00e7arken \u00e7izelim! \u00d6nce sol kol!",
+        svg: `<path d="M 266 254 C 228 248, 200 228, 185 202" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/><circle cx="176" cy="190" r="19" fill="none" stroke="#0f172a" stroke-width="8"/>`,
+        audio: "audio/voices/cirak_sonic_hyper/step_6.mp3"
+      },
+      {
+        title: "7. Ad\u0131m: G\u00f6ky\u00fcz\u00fcne A\u00e7\u0131lan Sa\u011f Kol ve Eldiven",
+        instruction: "Sa\u011f tarafa da e\u015fle\u015fen yukar\u0131 kalkan kolunu ve eldivenini ekle.",
+        voice: "\u015eimdi sa\u011f kolunu ve beyaz eldivenini de g\u00f6\u011fe do\u011fru kald\u0131ral\u0131m!",
+        svg: `<path d="M 334 254 C 372 248, 400 228, 415 202" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/><circle cx="424" cy="190" r="19" fill="none" stroke="#0f172a" stroke-width="8"/>`,
+        audio: "audio/voices/cirak_sonic_hyper/step_7.mp3"
+      },
+      {
+        title: "8. Ad\u0131m: Havada B\u00fck\u00fclen Zafer Bacaklar\u0131",
+        instruction: "Biri d\u00fcz biri b\u00fck\u00fcl\u00fc havada s\u00fcz\u00fclen bacaklar\u0131 ve ayakkab\u0131lar\u0131 yap.",
+        voice: "Havada s\u00fcz\u00fclen bacaklar\u0131n\u0131 ve k\u0131rm\u0131z\u0131-beyaz h\u0131zl\u0131 ayakkab\u0131lar\u0131n\u0131 \u00e7izelim!",
+        svg: `<path d="M 280 338 L 258 410 M 320 338 L 348 388 L 332 422" fill="none" stroke="#0f172a" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="255" cy="414" rx="15" ry="9" fill="none" stroke="#0f172a" stroke-width="6"/><ellipse cx="330" cy="425" rx="15" ry="9" fill="none" stroke="#0f172a" stroke-width="6"/><path d="M 225 420 C 220 452, 248 462, 285 454 C 292 444, 284 420, 255 420 Z" fill="none" stroke="#0f172a" stroke-width="8"/><path d="M 318 430 C 312 460, 342 470, 385 460 C 392 450, 382 428, 345 428 Z" fill="none" stroke="#0f172a" stroke-width="8"/>`,
+        audio: "audio/voices/cirak_sonic_hyper/step_8.mp3"
+      },
+      {
+        title: "9. Ad\u0131m: Etraf\u0131nda D\u00f6nen 4 Dev S\u00fcper Z\u00fcmr\u00fct (Sol)",
+        instruction: "Hyper Sonic'in sol etraf\u0131nda d\u00f6nen iki parlak S\u00fcper Z\u00fcmr\u00fct elmas \u00e7iz.",
+        voice: "Hyper Sonic'in etraf\u0131nda d\u00f6nen S\u00fcper Z\u00fcmr\u00fct elmaslar\u0131n\u0131 \u00e7izelim! \u0130ki tane sol tarafa yapal\u0131m!",
+        svg: `<polygon points="105,255 128,255 138,268 116,292 95,268" fill="none" stroke="#0f172a" stroke-width="6"/><polygon points="135,345 158,345 168,358 146,382 125,358" fill="none" stroke="#0f172a" stroke-width="6"/>`,
+        audio: "audio/voices/cirak_sonic_hyper/step_9.mp3"
+      },
+      {
+        title: "10. Ad\u0131m: Etraf\u0131nda D\u00f6nen Dev S\u00fcper Z\u00fcmr\u00fctler (Sa\u011f)",
+        instruction: "Sa\u011f tarafa da e\u015fle\u015fen iki b\u00fcy\u00fck S\u00fcper Z\u00fcmr\u00fct elmas \u00e7iz.",
+        voice: "Sa\u011f tarafa da parlayan iki S\u00fcper Z\u00fcmr\u00fct elmas ekleyelim!",
+        svg: `<polygon points="472,255 495,255 505,268 483,292 462,268" fill="none" stroke="#0f172a" stroke-width="6"/><polygon points="442,345 465,345 475,358 453,382 432,358" fill="none" stroke="#0f172a" stroke-width="6"/>`,
+        audio: "audio/voices/cirak_sonic_hyper/step_10.mp3"
+      },
+      {
+        title: "11. Ad\u0131m: B\u00fcy\u00fck G\u00f6kku\u015fa\u011f\u0131 Enerji \u00c7emberi",
+        instruction: "B\u00fct\u00fcn z\u00fcmr\u00fctleri birbirine ba\u011flayan b\u00fcy\u00fck kesik enerji \u00e7emberini yap.",
+        voice: "Z\u00fcmr\u00fctlerin etraf\u0131nda d\u00f6nd\u00fc\u011f\u00fcn\u00fc g\u00f6steren b\u00fcy\u00fck y\u00f6r\u00fcnge \u00e7emberini \u00e7izelim!",
+        svg: `<circle cx="300" cy="270" r="195" fill="none" stroke="#0f172a" stroke-width="5" stroke-dasharray="14 10"/>`,
+        audio: "audio/voices/cirak_sonic_hyper/step_11.mp3"
+      },
+      {
+        title: "12. Ad\u0131m: Tepedeki Kral Elmas\u0131",
+        instruction: "En tepeye be\u015finci \u0131\u015f\u0131ldayan S\u00fcper Z\u00fcmr\u00fct elmas\u0131n\u0131 ekle.",
+        voice: "Y\u00f6r\u00fcngenin en tepesine be\u015finci S\u00fcper Z\u00fcmr\u00fct\u00fc kondural\u0131m.",
+        svg: `<polygon points="288,18 312,18 322,30 300,52 278,30" fill="none" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_hyper/step_12.mp3"
+      },
+      {
+        title: "13. Ad\u0131m: 4 K\u00f6\u015feli Parlayan Elmas Y\u0131ld\u0131zlar\u0131",
+        instruction: "Hyper Sonic'in etraf\u0131na \u0131\u015f\u0131lt\u0131l\u0131 y\u0131ld\u0131z par\u0131lt\u0131lar\u0131 koy.",
+        voice: "G\u00f6kku\u015fa\u011f\u0131 \u0131\u015f\u0131klar\u0131n\u0131 g\u00f6steren d\u00f6rt k\u00f6\u015feli par\u0131lt\u0131 y\u0131ld\u0131zlar\u0131 \u00e7izelim.",
+        svg: `<path d="M 110 120 L 110 142 M 99 131 L 121 131 M 490 120 L 490 142 M 479 131 L 501 131" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_hyper/step_13.mp3"
+      },
+      {
+        title: "14. Ad\u0131m: Alt Enerji I\u015f\u0131nlar\u0131",
+        instruction: "Ayaklar\u0131n\u0131n alt\u0131na \u0131\u015f\u0131k sa\u00e7an \u00e7izgileri ekle.",
+        voice: "Ayaklar\u0131n\u0131n alt\u0131na havada s\u00fcz\u00fclme \u0131\u015f\u0131nlar\u0131 \u00e7izelim.",
+        svg: `<path d="M 215 485 Q 300 475, 385 485" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_hyper/step_14.mp3"
+      },
+      {
+        title: "15. Ad\u0131m: Eldiven I\u015f\u0131k Halkalar\u0131",
+        instruction: "Eldiven bileklerine parlak beyaz bileklik \u00e7iz.",
+        voice: "Eldivenlerinin bileklerine man\u015fet halkalar\u0131 ekleyelim.",
+        svg: `<circle cx="182" cy="202" r="9" fill="none" stroke="#0f172a" stroke-width="5"/><circle cx="418" cy="202" r="9" fill="none" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_hyper/step_15.mp3"
+      },
+      {
+        title: "16. Ad\u0131m: Ayakkab\u0131 H\u0131z \u015eeritleri",
+        instruction: "Ayakkab\u0131lar\u0131n ortas\u0131na beyaz \u015ferit \u00e7ek.",
+        voice: "Ayakkab\u0131lar\u0131na h\u0131z \u015feritlerini ekleyelim.",
+        svg: `<line x1="252" y1="422" x2="268" y2="454" stroke="#0f172a" stroke-width="5"/><line x1="342" y1="430" x2="365" y2="462" stroke="#0f172a" stroke-width="5"/>`,
+        audio: "audio/voices/cirak_sonic_hyper/step_16.mp3"
+      },
+      {
+        title: "17. Ad\u0131m: G\u00f6kku\u015fa\u011f\u0131 Aura Yaylar\u0131",
+        instruction: "Ba\u015f\u0131n yanlar\u0131na iki \u0131\u015f\u0131k yay\u0131n\u0131 ekle.",
+        voice: "Ba\u015f\u0131n\u0131n yanlar\u0131na parlayan \u0131\u015f\u0131k aura yaylar\u0131 yapal\u0131m.",
+        svg: `<path d="M 140 205 Q 130 245, 145 280 M 460 205 Q 470 245, 455 280" stroke="#0f172a" stroke-width="5" fill="none" stroke-linecap="round"/>`,
+        audio: "audio/voices/cirak_sonic_hyper/step_17.mp3"
+      },
+      {
+        title: "18. Ad\u0131m: Canl\u0131 Renklendirme (G\u00f6kku\u015fa\u011f\u0131 P\u0131rlanta Hyper Sonic!)",
+        instruction: "Tebrikler K\u0131van\u00e7! Hyper Sonic'i g\u00f6kku\u015fa\u011f\u0131 ge\u00e7i\u015fli \u0131\u015f\u0131klar ve renkli S\u00fcper Z\u00fcmr\u00fctlerle boya!",
+        voice: "B\u00fcy\u00fcleyici oldu K\u0131van\u00e7! G\u00f6kku\u015fa\u011f\u0131 Hyper Sonic \u0131\u015f\u0131klar sa\u00e7\u0131yor! \u015eimdi onu pastel g\u00f6kku\u015fa\u011f\u0131 tonlar\u0131 ve rengarenk z\u00fcmr\u00fctlerle boya!",
+        svg: `
+          <defs>
+            <linearGradient id="hypRainbow" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#fbcfe8"/>
+              <stop offset="35%" stop-color="#bae6fd"/>
+              <stop offset="70%" stop-color="#fef08a"/>
+              <stop offset="100%" stop-color="#bbf7d0"/>
+            </linearGradient>
+          </defs>
+          <circle cx="300" cy="270" r="195" fill="url(#hypRainbow)" opacity="0.22" stroke="#f472b6" stroke-width="5" stroke-dasharray="14 10"/>
+          <path d="M 110 120 L 110 142 M 99 131 L 121 131 M 490 120 L 490 142 M 479 131 L 501 131" stroke="#facc15" stroke-width="5" stroke-linecap="round"/>
+          <polygon points="288,18 312,18 322,30 300,52 278,30" fill="#22c55e" stroke="#0f172a" stroke-width="5"/>
+          <polygon points="105,255 128,255 138,268 116,292 95,268" fill="#3b82f6" stroke="#0f172a" stroke-width="6"/>
+          <polygon points="135,345 158,345 168,358 146,382 125,358" fill="#a855f7" stroke="#0f172a" stroke-width="6"/>
+          <polygon points="472,255 495,255 505,268 483,292 462,268" fill="#ef4444" stroke="#0f172a" stroke-width="6"/>
+          <polygon points="442,345 465,345 475,358 453,382 432,358" fill="#facc15" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 280 338 L 258 410 M 320 338 L 348 388 L 332 422" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 280 338 L 258 410 M 320 338 L 348 388 L 332 422" fill="none" stroke="url(#hypRainbow)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 225 420 C 220 452, 248 462, 285 454 C 292 444, 284 420, 255 420 Z" fill="#ef4444" stroke="#0f172a" stroke-width="8"/>
+          <line x1="252" y1="422" x2="268" y2="454" stroke="#ffffff" stroke-width="6"/>
+          <ellipse cx="255" cy="414" rx="15" ry="9" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 318 430 C 312 460, 342 470, 385 460 C 392 450, 382 428, 345 428 Z" fill="#ef4444" stroke="#0f172a" stroke-width="8"/>
+          <line x1="342" y1="430" x2="365" y2="462" stroke="#ffffff" stroke-width="6"/>
+          <ellipse cx="330" cy="425" rx="15" ry="9" fill="#ffffff" stroke="#0f172a" stroke-width="6"/>
+          <path d="M 268 242 C 256 285, 260 335, 300 342 C 340 335, 344 285, 332 242 Z" fill="url(#hypRainbow)" stroke="#0f172a" stroke-width="9"/>
+          <ellipse cx="300" cy="292" rx="20" ry="30" fill="#fed7aa" stroke="#0f172a" stroke-width="5"/>
+          <path d="M 266 254 C 228 248, 200 228, 185 202" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 266 254 C 228 248, 200 228, 185 202" fill="none" stroke="#fdba74" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="176" cy="190" r="19" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
+          <path d="M 334 254 C 372 248, 400 228, 415 202" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+          <path d="M 334 254 C 372 248, 400 228, 415 202" fill="none" stroke="#fdba74" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="424" cy="190" r="19" fill="#ffffff" stroke="#0f172a" stroke-width="8"/>
+          <path d="M 250 175 L 232 128 L 275 156 Z" fill="url(#hypRainbow)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 350 175 L 368 128 L 325 156 Z" fill="url(#hypRainbow)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 278 155 L 300 55 L 322 155 Z" fill="url(#hypRainbow)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 252 162 L 185 88 L 265 148 Z" fill="url(#hypRainbow)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 348 162 L 415 88 L 335 148 Z" fill="url(#hypRainbow)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 242 195 L 158 168 L 238 212 Z" fill="url(#hypRainbow)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 358 195 L 442 168 L 362 212 Z" fill="url(#hypRainbow)" stroke="#0f172a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M 248 205 C 248 152, 352 152, 352 205 C 352 240, 248 240, 248 205 Z" fill="url(#hypRainbow)" stroke="#0f172a" stroke-width="9"/>
+          <path d="M 254 195 C 256 162, 290 162, 300 182 C 310 162, 344 162, 346 195 Z" fill="#ffffff" stroke="#0f172a" stroke-width="7"/>
+          <ellipse cx="280" cy="184" rx="9" ry="13" fill="#ec4899" stroke="#0f172a" stroke-width="4"/>
+          <circle cx="280" cy="184" r="5.5" fill="#0f172a"/>
+          <circle cx="278" cy="180" r="2" fill="#ffffff"/>
+          <ellipse cx="320" cy="184" rx="9" ry="13" fill="#06b6d4" stroke="#0f172a" stroke-width="4"/>
+          <circle cx="320" cy="184" r="5.5" fill="#0f172a"/>
+          <circle cx="318" cy="180" r="2" fill="#ffffff"/>
+          <path d="M 248 210 C 250 190, 285 194, 300 205 C 315 194, 350 190, 352 212 C 344 246, 256 246, 248 210 Z" fill="#fed7aa" stroke="#0f172a" stroke-width="8"/>
+          <ellipse cx="300" cy="206" rx="10" ry="7" fill="#0f172a"/>
+          <path d="M 282 225 Q 300 236, 318 225" stroke="#0f172a" stroke-width="6" stroke-linecap="round" fill="none"/>
+`,
+        audio: "audio/voices/cirak_sonic_hyper/step_18.mp3"
       },
     ]
   },
