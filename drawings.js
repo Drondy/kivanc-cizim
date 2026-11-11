@@ -14,15 +14,15 @@ const CATEGORIES_DATA = [
     "id": "all",
     "name": "Tüm Dünyalar",
     "emoji": "🎨",
-    "count": 41
+    "count": 56
   },
   {
     "id": "sonic",
     "name": "Kirpi Sonic Dünyası",
     "emoji": "💨",
     "iconSvg": `<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="catSRing" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#fef08a"/><stop offset="50%" stop-color="#facc15"/><stop offset="100%" stop-color="#d97706"/></linearGradient><linearGradient id="catSBlue" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#60a5fa"/><stop offset="45%" stop-color="#2563eb"/><stop offset="100%" stop-color="#1e40af"/></linearGradient><linearGradient id="catSPeach" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ffedd5"/><stop offset="100%" stop-color="#fdba74"/></linearGradient></defs><circle cx="62" cy="60" r="46" fill="none" stroke="url(#catSRing)" stroke-width="11"/><circle cx="62" cy="60" r="51.5" fill="none" stroke="#0f172a" stroke-width="3.5"/><circle cx="62" cy="60" r="40.5" fill="none" stroke="#0f172a" stroke-width="3.5"/><path d="M 74 34 L 91 13 L 94 40 Z" fill="url(#catSBlue)" stroke="#0f172a" stroke-width="4.5" stroke-linejoin="round"/><path d="M 42 36 C 64 16, 98 28, 98 62 C 98 84, 70 96, 48 84 C 36 92, 22 97, 16 93 C 20 82, 28 74, 36 68 C 22 72, 10 73, 5 67 C 10 56, 22 48, 36 46 C 24 44, 14 41, 8 36 C 18 24, 32 24, 42 36 Z" fill="url(#catSBlue)" stroke="#0f172a" stroke-width="4.8" stroke-linejoin="round"/><path d="M 44 38 L 36 11 L 63 27 Z" fill="url(#catSBlue)" stroke="#0f172a" stroke-width="4.5" stroke-linejoin="round"/><path d="M 46 34 L 41 19 L 57 28 Z" fill="url(#catSPeach)" stroke="#0f172a" stroke-width="2.5" stroke-linejoin="round"/><path d="M 52 67 C 49 36, 73 31, 78 52 C 83 32, 101 38, 97 67 Z" fill="#ffffff" stroke="#0f172a" stroke-width="4" stroke-linejoin="round"/><ellipse cx="70" cy="54" rx="6.5" ry="10.5" fill="#22c55e" stroke="#0f172a" stroke-width="2.2"/><ellipse cx="71" cy="54" rx="3.8" ry="6.8" fill="#0f172a"/><circle cx="69" cy="49.5" r="2.2" fill="#ffffff"/><ellipse cx="87" cy="54" rx="5.5" ry="10" fill="#22c55e" stroke="#0f172a" stroke-width="2.2"/><ellipse cx="88" cy="54" rx="3.2" ry="6.4" fill="#0f172a"/><circle cx="86" cy="49.5" r="2" fill="#ffffff"/><path d="M 45 77 C 45 60, 66 60, 77 68 C 87 60, 102 62, 101 77 C 96 96, 56 97, 45 77 Z" fill="url(#catSPeach)" stroke="#0f172a" stroke-width="4" stroke-linejoin="round"/><ellipse cx="102" cy="65" rx="7" ry="4.8" fill="#0f172a" transform="rotate(-12 102 65)"/><ellipse cx="101" cy="63.5" rx="2.5" ry="1.2" fill="#ffffff" opacity="0.6" transform="rotate(-12 101 63.5)"/><path d="M 67 80 C 78 88, 89 84, 94 76" fill="none" stroke="#0f172a" stroke-width="3.8" stroke-linecap="round"/></svg>`,
-    "count": 23,
-    "desc": "23 efsane Sonic karakteri, aracı, robotu ve Kaos Zümrütleri!"
+    "count": 38,
+    "desc": "38 efsane Sonic karakteri, aracı, robotu, bossları ve bölgeleri!"
   },
   {
     "id": "dinozorlar",
@@ -9465,4 +9465,2404 @@ const DRAWINGS_DATA = [
       },
     ]
   },
+  {
+    "id": "cirak_sonic_espio",
+    "categoryId": "sonic",
+    "name": "Ninja Bukalemun Espio",
+    "emoji": "🦎",
+    "level": 1,
+    "levelName": "Çırak",
+    "levelBadge": "🟢 Çırak",
+    "description": "Görünmez olabilen ninja bukalemun Espio! Alnındaki sarı boynuz, kıvrık kuyruk ve elindeki ninja yıldızı!",
+    "materials": "Resim kağıdı, kurşun kalem, silgi, mor, sarı, yeşil ve gri boyalar",
+    "welcomeText": "Sessiz ve hızlı! Selam Kıvanç! Kaçabilen ve görünmez olabilen ninja bukalemun Espio ile birlikte ninja yıldızı fırlatmaya hazır mısın?",
+    "welcomeAudio": "audio/voices/cirak_sonic_espio/welcome.mp3",
+    "colors": [
+      {
+        "name": "Ninja Moru",
+        "hex": "#9333ea"
+      },
+      {
+        "name": "Altın Sarısı",
+        "hex": "#facc15"
+      },
+      {
+        "name": "Timsah Yeşili",
+        "hex": "#22c55e"
+      },
+      {
+        "name": "Çelik Grisi",
+        "hex": "#94a3b8"
+      }
+    ],
+    "previewSvg": "<defs>\n            <linearGradient id=\"espPurple\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n              <stop offset=\"0%\" stop-color=\"#a855f7\"/>\n              <stop offset=\"50%\" stop-color=\"#9333ea\"/>\n              <stop offset=\"100%\" stop-color=\"#6b21a8\"/>\n            </linearGradient>\n          </defs>\n          <path d=\"M 160 482 L 440 482\" stroke=\"#cbd5e1\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 255 322 C 190 335, 145 365, 138 405 C 132 438, 168 455, 192 435 C 208 420, 195 395, 175 405\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 255 322 C 190 335, 145 365, 138 405 C 132 438, 168 455, 192 435 C 208 420, 195 395, 175 405\" fill=\"none\" stroke=\"url(#espPurple)\" stroke-width=\"10\" stroke-linecap=\"round\"/>\n          <path d=\"M 278 340 L 252 425 M 315 340 L 348 422\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 278 340 L 252 425 M 315 340 L 348 422\" stroke=\"url(#espPurple)\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 222 436 C 218 468, 248 478, 285 470 C 292 460, 282 436, 255 436 Z\" fill=\"#9333ea\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <line x1=\"235\" y1=\"452\" x2=\"278\" y2=\"452\" stroke=\"#1e293b\" stroke-width=\"6\"/>\n          <ellipse cx=\"248\" cy=\"430\" rx=\"16\" ry=\"10\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 332 434 C 325 466, 355 476, 405 468 C 414 456, 398 432, 362 432 Z\" fill=\"#9333ea\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <line x1=\"342\" y1=\"450\" x2=\"395\" y2=\"450\" stroke=\"#1e293b\" stroke-width=\"6\"/>\n          <ellipse cx=\"350\" cy=\"428\" rx=\"16\" ry=\"10\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 248 228 L 222 242 L 248 254 L 220 268 L 248 278 Z\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linejoin=\"round\"/>\n          <path d=\"M 262 232 C 248 278, 255 335, 295 345 C 330 338, 336 280, 326 232 Z\" fill=\"url(#espPurple)\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <ellipse cx=\"300\" cy=\"288\" rx=\"20\" ry=\"30\" fill=\"#fed7aa\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 262 246 C 228 260, 210 285, 200 302\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 262 246 C 228 260, 210 285, 200 302\" fill=\"none\" stroke=\"url(#espPurple)\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <rect x=\"184\" y=\"295\" width=\"18\" height=\"22\" rx=\"4\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"6\" transform=\"rotate(35 193 306)\"/>\n          <circle cx=\"176\" cy=\"322\" r=\"17\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 326 246 C 362 250, 392 242, 412 228\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 326 246 C 362 250, 392 242, 412 228\" fill=\"none\" stroke=\"url(#espPurple)\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <rect x=\"400\" y=\"218\" width=\"16\" height=\"22\" rx=\"4\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"6\" transform=\"rotate(-25 408 229)\"/>\n          <circle cx=\"426\" cy=\"222\" r=\"17\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <polygon points=\"455,180 462,202 484,209 462,216 455,238 448,216 426,209 448,202\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n          <circle cx=\"455\" cy=\"209\" r=\"5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"3\"/>\n          <path d=\"M 255 148 L 195 155 L 245 180 Z\" fill=\"url(#espPurple)\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <path d=\"M 248 182 C 248 128, 355 128, 355 182 C 350 222, 250 222, 248 182 Z\" fill=\"url(#espPurple)\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <path d=\"M 252 202 C 258 236, 350 236, 356 202 C 332 192, 275 192, 252 202 Z\" fill=\"#fed7aa\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <ellipse cx=\"288\" cy=\"178\" rx=\"14\" ry=\"17\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <ellipse cx=\"290\" cy=\"178\" rx=\"9\" ry=\"11\" fill=\"#facc15\"/>\n          <circle cx=\"290\" cy=\"178\" r=\"5\" fill=\"#0f172a\"/>\n          <circle cx=\"287\" cy=\"174\" r=\"2.5\" fill=\"#ffffff\"/>\n          <ellipse cx=\"332\" cy=\"178\" rx=\"12\" ry=\"16\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <ellipse cx=\"334\" cy=\"178\" rx=\"8\" ry=\"10\" fill=\"#facc15\"/>\n          <circle cx=\"334\" cy=\"178\" r=\"4.5\" fill=\"#0f172a\"/>\n          <circle cx=\"331\" cy=\"174\" r=\"2.2\" fill=\"#ffffff\"/>\n          <path d=\"M 322 142 C 335 112, 358 100, 368 90 C 362 115, 352 135, 342 152 Z\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"7\" stroke-linejoin=\"round\"/>\n          <path d=\"M 308 214 Q 328 218, 340 210\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linecap=\"round\" fill=\"none\"/>",
+    "steps": [
+      {
+        "title": "1. Adım: Bukalemun Baş Çemberi ve Arka Baş Dikeni",
+        "instruction": "Sayfanın üst ortasına Espio'nun yuvarlak başını ve arkaya uzanan sivri dikeni çiz.",
+        "voice": "Kağıdımızın üst ortasına Ninja Bukalemun Espio'nun kafa hattını ve arkadaki sivri baş dikenini çizelim.",
+        "svg": "<path d=\"M 248 182 C 248 128, 355 128, 355 182 C 350 222, 250 222, 248 182 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\"/><path d=\"M 255 148 L 195 155 L 245 180\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_espio/step_1.mp3"
+      },
+      {
+        "title": "2. Adım: Alnındaki Ünlü Sarı Boynuz",
+        "instruction": "Alnının ön tepesine yukarı doğru kıvrılan büyük sarı bukalemun boynuzunu yap.",
+        "voice": "İşte Espio'nun en ünlü yeri! Alnının ön üstüne yukarı kıvrılan sarı boynuzunu çizelim!",
+        "svg": "<path d=\"M 322 142 C 335 112, 358 100, 368 90 C 362 115, 352 135, 342 152 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_espio/step_2.mp3"
+      },
+      {
+        "title": "3. Adım: Yüz Maskesi / Şeftali Çene ve Ağız",
+        "instruction": "Alt yüzüne üçgenimsi bukalemun burnunu ve ciddi ninja ağzını yap.",
+        "voice": "Alt yüzüne bukalemun yanak yayını ve ninja duruşuna yakışan ciddi gülümsemesini çizelim.",
+        "svg": "<path d=\"M 252 202 C 258 236, 350 236, 356 202\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/><path d=\"M 308 214 Q 328 218, 340 210\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linecap=\"round\" fill=\"none\"/>",
+        "audio": "audio/voices/cirak_sonic_espio/step_3.mp3"
+      },
+      {
+        "title": "4. Adım: Sarı Gözlü İki Keskin Ninja Gözü",
+        "instruction": "Yüzüne hafif çatık kaşlı iri gözler ve siyah gözbebeklerini yerleştir.",
+        "voice": "Yüzüne keskin bakışlı altın rengi ninja gözlerini çizelim!",
+        "svg": "<ellipse cx=\"288\" cy=\"178\" rx=\"14\" ry=\"17\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><circle cx=\"290\" cy=\"178\" r=\"7\" fill=\"#0f172a\"/><circle cx=\"287\" cy=\"174\" r=\"2.5\" fill=\"#ffffff\"/><ellipse cx=\"332\" cy=\"178\" rx=\"12\" ry=\"16\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><circle cx=\"334\" cy=\"178\" r=\"6.5\" fill=\"#0f172a\"/><circle cx=\"331\" cy=\"174\" r=\"2.2\" fill=\"#ffffff\"/>",
+        "audio": "audio/voices/cirak_sonic_espio/step_4.mp3"
+      },
+      {
+        "title": "5. Adım: Sırt Dikenleri Sırası",
+        "instruction": "Başın arkasından sırtına doğru inen iki siyah sırt dikenini ekle.",
+        "voice": "Başından sırtına inen küçük siyah sırt dikenlerini yapalım.",
+        "svg": "<path d=\"M 248 228 L 222 242 L 248 254 L 220 268 L 248 278\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_espio/step_5.mp3"
+      },
+      {
+        "title": "6. Adım: Çevik Ninja Gövdesi ve Şeftali Göbek",
+        "instruction": "Altına ninja duruşundaki gövdeyi ve göğüs ovalini çiz.",
+        "voice": "Başının altına çevik mor ninja gövdesini ve şeftali karın ovalini çizelim.",
+        "svg": "<path d=\"M 262 232 C 248 278, 255 335, 295 345 C 330 338, 336 280, 326 232\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\"/><ellipse cx=\"300\" cy=\"288\" rx=\"20\" ry=\"30\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_espio/step_6.mp3"
+      },
+      {
+        "title": "7. Adım: Yeşil Ninja Bileklikli Sol Kol",
+        "instruction": "Sola doğru savunmada duran kolunu ve kalın yeşil ninja sargısını yap.",
+        "voice": "Sol kolunu ninja savunma duruşunda çizip bileğine yeşil ninja bandajını yapalım!",
+        "svg": "<path d=\"M 262 246 C 228 260, 210 285, 200 302\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/><rect x=\"184\" y=\"295\" width=\"18\" height=\"22\" rx=\"4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\" transform=\"rotate(35 193 306)\"/><circle cx=\"176\" cy=\"322\" r=\"17\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/>",
+        "audio": "audio/voices/cirak_sonic_espio/step_7.mp3"
+      },
+      {
+        "title": "8. Adım: Yıldız Fırlatan Sağ Kol ve Ninja Shuriken!",
+        "instruction": "Sağ tarafa ileri uzanan kolunu ve elindeki 4 köşeli keskin ninja yıldızını çiz.",
+        "voice": "Sağ elinde tuttuğu dört köşeli ninja shuriken yıldızını ve kolunu çizelim!",
+        "svg": "<path d=\"M 326 246 C 362 250, 392 242, 412 228\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/><circle cx=\"426\" cy=\"222\" r=\"17\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/><polygon points=\"455,180 462,202 484,209 462,216 455,238 448,216 426,209 448,202\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_espio/step_8.mp3"
+      },
+      {
+        "title": "9. Adım: Sol ve Sağ Bacak ile Yeşil Diz Sargıları",
+        "instruction": "Geniş ninja adımı atan iki bacağı ve yeşil diz sargılı çizmeleri yap.",
+        "voice": "Geniş adım atan bacaklarını ve yeşil ninja sargılı ayakkabılarını çizelim!",
+        "svg": "<path d=\"M 278 340 L 252 425 M 315 340 L 348 422\" stroke=\"#0f172a\" stroke-width=\"16\" stroke-linecap=\"round\"/><ellipse cx=\"248\" cy=\"430\" rx=\"16\" ry=\"10\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><ellipse cx=\"350\" cy=\"428\" rx=\"16\" ry=\"10\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><path d=\"M 222 436 C 218 468, 248 478, 285 470 C 292 460, 282 436, 255 436 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/><path d=\"M 332 434 C 325 466, 355 476, 405 468 C 414 456, 398 432, 362 432 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/>",
+        "audio": "audio/voices/cirak_sonic_espio/step_9.mp3"
+      },
+      {
+        "title": "10. Adım: Kıvrımlı Spiral Bukalemun Kuyruğu!",
+        "instruction": "Sol tarafa doğru kıvrılıp helezon yapan ünlü bukalemun kuyruğunu çiz!",
+        "voice": "İşte bukalemunun kıvrık helezon kuyruğu! Sol tarafa sarmal şeklinde kıvrılan kuyruğunu çizelim!",
+        "svg": "<path d=\"M 255 322 C 190 335, 145 365, 138 405 C 132 438, 168 455, 192 435 C 208 420, 195 395, 175 405\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"14\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_espio/step_10.mp3"
+      },
+      {
+        "title": "11. Adım: Mor Ayakkabı Bantları ve Çizgiler",
+        "instruction": "Ayakkabıların üzerine siyah koruma bantları çiz.",
+        "voice": "Ninja ayakkabılarına siyah bantlarını ekleyelim.",
+        "svg": "<line x1=\"235\" y1=\"452\" x2=\"278\" y2=\"452\" stroke=\"#0f172a\" stroke-width=\"5\"/><line x1=\"342\" y1=\"450\" x2=\"395\" y2=\"450\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_espio/step_11.mp3"
+      },
+      {
+        "title": "12. Adım: Burun Ucu Boynuzu ve Şakak Çizgisi",
+        "instruction": "Göz kenarına belirgin ninja çizgisi ekle.",
+        "voice": "Gözünün yanına ninja yüz çizgisini yapalım.",
+        "svg": "<path d=\"M 262 162 Q 288 152, 304 166\" stroke=\"#0f172a\" stroke-width=\"5\" fill=\"none\"/>",
+        "audio": "audio/voices/cirak_sonic_espio/step_12.mp3"
+      },
+      {
+        "title": "13. Adım: Sağ Bilek Sargısı",
+        "instruction": "Sağ kolun ucuna yeşil sargı bandı ekle.",
+        "voice": "Sağ el bileğine de yeşil ninja bandını ekleyelim.",
+        "svg": "<rect x=\"400\" y=\"218\" width=\"16\" height=\"22\" rx=\"4\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\" transform=\"rotate(-25 408 229)\"/>",
+        "audio": "audio/voices/cirak_sonic_espio/step_13.mp3"
+      },
+      {
+        "title": "14. Adım: Shuriken İç Halkası",
+        "instruction": "Ninja yıldızının tam ortasına minik daire deliğini koy.",
+        "voice": "Ninja yıldızının tam ortasına yuvarlak deliğini çizelim.",
+        "svg": "<circle cx=\"455\" cy=\"209\" r=\"5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3.5\"/>",
+        "audio": "audio/voices/cirak_sonic_espio/step_14.mp3"
+      },
+      {
+        "title": "15. Adım: Yaprak ve Ninja Dumanı",
+        "instruction": "Altına ninja gibi sis dumanı kıvrımları yap.",
+        "voice": "Ninja güçlerini gösteren hafif rüzgar dumanı kıvrımları ekleyelim.",
+        "svg": "<path d=\"M 425 415 C 445 395, 475 405, 468 425\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_espio/step_15.mp3"
+      },
+      {
+        "title": "16. Adım: Shuriken Hız Çizgisi",
+        "instruction": "Ninja yıldızının arkasından fırlatma izi çizgileri çek.",
+        "voice": "Ninja yıldızının hız çizgilerini ekleyelim.",
+        "svg": "<line x1=\"485\" y1=\"190\" x2=\"515\" y2=\"175\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_espio/step_16.mp3"
+      },
+      {
+        "title": "17. Adım: Zemin Çizgisi",
+        "instruction": "Ayaklarının altına düz zemin çizgisi çek.",
+        "voice": "Zemin çizgimizi çekerek ninjamızı yere bastıralım.",
+        "svg": "<path d=\"M 160 482 L 440 482\" stroke=\"#0f172a\" stroke-width=\"7\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_espio/step_17.mp3"
+      },
+      {
+        "title": "18. Adım: Canlı Renklendirme (Mor & Yeşil Ninja Espio!)",
+        "instruction": "Tebrikler Kıvanç! Espio'yu parlak mor, sarı boynuz ve zümrüt yeşili ninja sargılarıyla boya!",
+        "voice": "Harikasın Kıvanç! Ninja bukalemun Espio göreve hazır! Şimdi onu parlak mor, sarı boynuzu ve yeşil ninja sargılarıyla renklendir!",
+        "svg": "<defs>\n            <linearGradient id=\"espPurple\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n              <stop offset=\"0%\" stop-color=\"#a855f7\"/>\n              <stop offset=\"50%\" stop-color=\"#9333ea\"/>\n              <stop offset=\"100%\" stop-color=\"#6b21a8\"/>\n            </linearGradient>\n          </defs>\n          <path d=\"M 160 482 L 440 482\" stroke=\"#cbd5e1\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 255 322 C 190 335, 145 365, 138 405 C 132 438, 168 455, 192 435 C 208 420, 195 395, 175 405\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 255 322 C 190 335, 145 365, 138 405 C 132 438, 168 455, 192 435 C 208 420, 195 395, 175 405\" fill=\"none\" stroke=\"url(#espPurple)\" stroke-width=\"10\" stroke-linecap=\"round\"/>\n          <path d=\"M 278 340 L 252 425 M 315 340 L 348 422\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 278 340 L 252 425 M 315 340 L 348 422\" stroke=\"url(#espPurple)\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 222 436 C 218 468, 248 478, 285 470 C 292 460, 282 436, 255 436 Z\" fill=\"#9333ea\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <line x1=\"235\" y1=\"452\" x2=\"278\" y2=\"452\" stroke=\"#1e293b\" stroke-width=\"6\"/>\n          <ellipse cx=\"248\" cy=\"430\" rx=\"16\" ry=\"10\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 332 434 C 325 466, 355 476, 405 468 C 414 456, 398 432, 362 432 Z\" fill=\"#9333ea\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <line x1=\"342\" y1=\"450\" x2=\"395\" y2=\"450\" stroke=\"#1e293b\" stroke-width=\"6\"/>\n          <ellipse cx=\"350\" cy=\"428\" rx=\"16\" ry=\"10\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 248 228 L 222 242 L 248 254 L 220 268 L 248 278 Z\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linejoin=\"round\"/>\n          <path d=\"M 262 232 C 248 278, 255 335, 295 345 C 330 338, 336 280, 326 232 Z\" fill=\"url(#espPurple)\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <ellipse cx=\"300\" cy=\"288\" rx=\"20\" ry=\"30\" fill=\"#fed7aa\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 262 246 C 228 260, 210 285, 200 302\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 262 246 C 228 260, 210 285, 200 302\" fill=\"none\" stroke=\"url(#espPurple)\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <rect x=\"184\" y=\"295\" width=\"18\" height=\"22\" rx=\"4\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"6\" transform=\"rotate(35 193 306)\"/>\n          <circle cx=\"176\" cy=\"322\" r=\"17\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 326 246 C 362 250, 392 242, 412 228\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 326 246 C 362 250, 392 242, 412 228\" fill=\"none\" stroke=\"url(#espPurple)\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <rect x=\"400\" y=\"218\" width=\"16\" height=\"22\" rx=\"4\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"6\" transform=\"rotate(-25 408 229)\"/>\n          <circle cx=\"426\" cy=\"222\" r=\"17\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <polygon points=\"455,180 462,202 484,209 462,216 455,238 448,216 426,209 448,202\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n          <circle cx=\"455\" cy=\"209\" r=\"5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"3\"/>\n          <path d=\"M 255 148 L 195 155 L 245 180 Z\" fill=\"url(#espPurple)\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <path d=\"M 248 182 C 248 128, 355 128, 355 182 C 350 222, 250 222, 248 182 Z\" fill=\"url(#espPurple)\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <path d=\"M 252 202 C 258 236, 350 236, 356 202 C 332 192, 275 192, 252 202 Z\" fill=\"#fed7aa\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <ellipse cx=\"288\" cy=\"178\" rx=\"14\" ry=\"17\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <ellipse cx=\"290\" cy=\"178\" rx=\"9\" ry=\"11\" fill=\"#facc15\"/>\n          <circle cx=\"290\" cy=\"178\" r=\"5\" fill=\"#0f172a\"/>\n          <circle cx=\"287\" cy=\"174\" r=\"2.5\" fill=\"#ffffff\"/>\n          <ellipse cx=\"332\" cy=\"178\" rx=\"12\" ry=\"16\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <ellipse cx=\"334\" cy=\"178\" rx=\"8\" ry=\"10\" fill=\"#facc15\"/>\n          <circle cx=\"334\" cy=\"178\" r=\"4.5\" fill=\"#0f172a\"/>\n          <circle cx=\"331\" cy=\"174\" r=\"2.2\" fill=\"#ffffff\"/>\n          <path d=\"M 322 142 C 335 112, 358 100, 368 90 C 362 115, 352 135, 342 152 Z\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"7\" stroke-linejoin=\"round\"/>\n          <path d=\"M 308 214 Q 328 218, 340 210\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linecap=\"round\" fill=\"none\"/>",
+        "audio": "audio/voices/cirak_sonic_espio/step_18.mp3"
+      }
+    ]
+  },
+  {
+    "id": "cirak_sonic_vector",
+    "categoryId": "sonic",
+    "name": "DJ Timsah Vector",
+    "emoji": "🐊",
+    "level": 1,
+    "levelName": "Çırak",
+    "levelBadge": "🟢 Çırak",
+    "description": "Müzik tutkunu güçlü timsah Vector! Turuncu dev kulaklıkları, altın kolyesi ve gülümseyen timsah dişleri!",
+    "materials": "Resim kağıdı, kurşun kalem, silgi, yeşil, turuncu, sarı ve beyaz boyalar",
+    "welcomeText": "Haydi müzik başlasın! Selam Kıvanç! Dev turuncu kulaklıkları ve altın kolyesiyle çok havalı DJ Timsah Vector geldi!",
+    "welcomeAudio": "audio/voices/cirak_sonic_vector/welcome.mp3",
+    "colors": [
+      {
+        "name": "Timsah Yeşili",
+        "hex": "#22c55e"
+      },
+      {
+        "name": "Canlı Turuncu",
+        "hex": "#f97316"
+      },
+      {
+        "name": "Altın Sarısı",
+        "hex": "#facc15"
+      },
+      {
+        "name": "Koyu Siyah",
+        "hex": "#0f172a"
+      }
+    ],
+    "previewSvg": "<defs>\n            <linearGradient id=\"vecGreen\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n              <stop offset=\"0%\" stop-color=\"#4ade80\"/>\n              <stop offset=\"50%\" stop-color=\"#22c55e\"/>\n              <stop offset=\"100%\" stop-color=\"#15803d\"/>\n            </linearGradient>\n          </defs>\n          <path d=\"M 160 482 L 440 482\" stroke=\"#cbd5e1\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 455 170 L 455 128 L 485 122 L 485 162\" fill=\"none\" stroke=\"#facc15\" stroke-width=\"6\"/>\n          <circle cx=\"448\" cy=\"172\" r=\"8\" fill=\"#facc15\"/>\n          <circle cx=\"478\" cy=\"164\" r=\"8\" fill=\"#facc15\"/>\n          <path d=\"M 235 335 C 175 352, 125 335, 95 305 C 122 365, 175 395, 248 368 Z\" fill=\"url(#vecGreen)\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 232 162 L 195 170 L 228 190 M 235 235 L 192 248 L 228 265 L 192 288 L 225 305 Z\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"7\" stroke-linejoin=\"round\"/>\n          <path d=\"M 262 368 L 248 430 M 310 368 L 325 430\" stroke=\"#0f172a\" stroke-width=\"20\" stroke-linecap=\"round\"/>\n          <path d=\"M 262 368 L 248 430 M 310 368 L 325 430\" stroke=\"url(#vecGreen)\" stroke-width=\"10\" stroke-linecap=\"round\"/>\n          <path d=\"M 222 436 C 218 470, 248 480, 285 472 C 292 462, 282 436, 255 436 Z\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"250\" cy=\"432\" rx=\"16\" ry=\"9\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 312 436 C 308 470, 338 480, 392 470 C 400 460, 388 436, 350 436 Z\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"326\" cy=\"432\" rx=\"16\" ry=\"9\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 242 220 C 218 275, 222 352, 265 368 C 325 372, 345 295, 325 220 Z\" fill=\"url(#vecGreen)\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <ellipse cx=\"290\" cy=\"298\" rx=\"32\" ry=\"52\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <line x1=\"262\" y1=\"278\" x2=\"318\" y2=\"278\" stroke=\"#ca8a04\" stroke-width=\"4\"/>\n          <line x1=\"260\" y1=\"305\" x2=\"320\" y2=\"305\" stroke=\"#ca8a04\" stroke-width=\"4\"/>\n          <path d=\"M 248 228 Q 290 258, 325 228\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"16\" stroke-linecap=\"round\"/>\n          <path d=\"M 248 228 Q 290 258, 325 228\" fill=\"none\" stroke=\"#facc15\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 238 248 C 202 260, 178 282, 168 302\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 238 248 C 202 260, 178 282, 168 302\" fill=\"none\" stroke=\"url(#vecGreen)\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"156\" cy=\"316\" r=\"19\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <path d=\"M 326 248 C 362 252, 392 245, 412 232\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 326 248 C 362 252, 392 245, 412 232\" fill=\"none\" stroke=\"url(#vecGreen)\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"426\" cy=\"226\" r=\"19\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <path d=\"M 225 180 C 235 125, 325 130, 355 155 C 395 162, 412 188, 385 215 L 250 222 Z\" fill=\"url(#vecGreen)\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <ellipse cx=\"308\" cy=\"148\" rx=\"14\" ry=\"18\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <circle cx=\"310\" cy=\"149\" r=\"7\" fill=\"#0f172a\"/>\n          <circle cx=\"307\" cy=\"145\" r=\"2.5\" fill=\"#ffffff\"/>\n          <ellipse cx=\"342\" cy=\"152\" rx=\"12\" ry=\"16\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <circle cx=\"344\" cy=\"153\" r=\"6\" fill=\"#0f172a\"/>\n          <circle cx=\"341\" cy=\"149\" r=\"2\" fill=\"#ffffff\"/>\n          <path d=\"M 335 202 L 344 218 L 352 200 M 365 198 L 372 212 L 380 195\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linejoin=\"round\"/>\n          <path d=\"M 275 198 C 315 210, 365 202, 392 188\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linecap=\"round\" fill=\"none\"/>\n          <circle cx=\"385\" cy=\"168\" r=\"4\" fill=\"#0f172a\"/>\n          <path d=\"M 255 155 Q 282 110, 318 140\" stroke=\"#0f172a\" stroke-width=\"11\" stroke-linecap=\"round\" fill=\"none\"/>\n          <path d=\"M 255 155 Q 282 110, 318 140\" stroke=\"#334155\" stroke-width=\"5\" stroke-linecap=\"round\" fill=\"none\"/>\n          <ellipse cx=\"255\" cy=\"175\" rx=\"22\" ry=\"26\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <circle cx=\"255\" cy=\"175\" r=\"10\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"4\"/>",
+    "steps": [
+      {
+        "title": "1. Adım: Uzun Gülümseyen Timsah Ağzı ve Kafası",
+        "instruction": "Sayfanın üst kısmına sağa uzanan uzun sevimli timsah burnu ve başını çiz.",
+        "voice": "Kağıdımızın üst ortasına DJ Timsah Vector'ün uzun ve neşeli timsah başını çizelim.",
+        "svg": "<path d=\"M 225 180 C 235 125, 325 130, 355 155 C 395 162, 412 188, 385 215 L 250 222 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_vector/step_1.mp3"
+      },
+      {
+        "title": "2. Adım: Büyük Timsah Gülümsemesi ve Tatlı Dişler",
+        "instruction": "Uzun burnunun altından gülümseyen ağız çizgisi ve üçgen timsah dişlerini yap.",
+        "voice": "Ağzının altına gülümseyen çizgiyi ve iki tane şirin üçgen timsah dişini ekleyelim!",
+        "svg": "<path d=\"M 275 198 C 315 210, 365 202, 392 188\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linecap=\"round\" fill=\"none\"/><path d=\"M 335 202 L 344 218 L 352 200 M 365 198 L 372 212 L 380 195\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_vector/step_2.mp3"
+      },
+      {
+        "title": "3. Adım: Kafasındaki Büyük DJ Kulaklıkları!",
+        "instruction": "Başının tepesine kavisli kulaklık bandını ve kulağının üstüne büyük yuvarlak DJ kulaklığını çiz.",
+        "voice": "İşte Vector'ün en sevdiği eşya! Başına büyük yuvarlak turuncu DJ kulaklıklarını takalım!",
+        "svg": "<path d=\"M 255 155 Q 282 110, 318 140\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linecap=\"round\" fill=\"none\"/><ellipse cx=\"255\" cy=\"175\" rx=\"22\" ry=\"26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/>",
+        "audio": "audio/voices/cirak_sonic_vector/step_3.mp3"
+      },
+      {
+        "title": "4. Adım: Parlak Altın Gözler",
+        "instruction": "Başının üstüne çıkan büyük timsah gözlerini yerleştir.",
+        "voice": "Gülümseyen başının üstüne iri altın rengi timsah gözlerini koyalım.",
+        "svg": "<ellipse cx=\"308\" cy=\"148\" rx=\"14\" ry=\"18\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><circle cx=\"310\" cy=\"149\" r=\"7\" fill=\"#0f172a\"/><circle cx=\"307\" cy=\"145\" r=\"2.5\" fill=\"#ffffff\"/><ellipse cx=\"342\" cy=\"152\" rx=\"12\" ry=\"16\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><circle cx=\"344\" cy=\"153\" r=\"6\" fill=\"#0f172a\"/><circle cx=\"341\" cy=\"149\" r=\"2\" fill=\"#ffffff\"/>",
+        "audio": "audio/voices/cirak_sonic_vector/step_4.mp3"
+      },
+      {
+        "title": "5. Adım: Tombul Timsah Gövdesi ve Şeritli Göbek",
+        "instruction": "Altına kalın timsah gövdesini ve yatay çizgili sarı-krem göbek plakasını yap.",
+        "voice": "Altına güçlü yeşil timsah gövdesini ve yatay şeritli karnını çizelim!",
+        "svg": "<path d=\"M 242 220 C 218 275, 222 352, 265 368 C 325 372, 345 295, 325 220\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\"/><ellipse cx=\"290\" cy=\"298\" rx=\"32\" ry=\"52\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><line x1=\"262\" y1=\"278\" x2=\"318\" y2=\"278\" stroke=\"#0f172a\" stroke-width=\"5\"/><line x1=\"260\" y1=\"305\" x2=\"320\" y2=\"305\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_vector/step_5.mp3"
+      },
+      {
+        "title": "6. Adım: Büyük Altın Zincir Kolye!",
+        "instruction": "Boynunun etrafına kocaman parlak bir rapçi altın kolye halkası çiz.",
+        "voice": "Boynuna DJ Vector'ün ünlü kalın altın zincir kolyesini takalım!",
+        "svg": "<path d=\"M 248 228 Q 290 258, 325 228\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"12\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_vector/step_6.mp3"
+      },
+      {
+        "title": "7. Adım: Sırtındaki Kırmızı Timsah Dikenleri",
+        "instruction": "Başından ve sırtından arkaya doğru dizilmiş üçgen kırmızı sırt dikenlerini ekle.",
+        "voice": "Sırtının arkasına kırmızı timsah sırt çıkıntılarını çizelim!",
+        "svg": "<path d=\"M 232 162 L 195 170 L 228 190 M 235 235 L 192 248 L 228 265 L 192 288 L 225 305\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_vector/step_7.mp3"
+      },
+      {
+        "title": "8. Adım: Ritim Tutan Sol Kol ve Siyah Kolluk",
+        "instruction": "Sola doğru müzik çalarken açtığı kaslı kolunu, siyah bilekliğini ve beyaz eldivenini yap.",
+        "voice": "Sol kolunu müzik ritmi tutarken açalım ve siyah bilekliğini ekleyelim!",
+        "svg": "<path d=\"M 238 248 C 202 260, 178 282, 168 302\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/><circle cx=\"156\" cy=\"316\" r=\"19\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/>",
+        "audio": "audio/voices/cirak_sonic_vector/step_8.mp3"
+      },
+      {
+        "title": "9. Adım: Havalı İşaret Yapan Sağ Kol",
+        "instruction": "Sağ tarafa doğru ileri uzanan mutlu kolunu ve büyük beyaz eldivenini ekle.",
+        "voice": "Sağ kolunu da 'Süper müzik!' işareti yaparken uzatalım!",
+        "svg": "<path d=\"M 326 248 C 362 252, 392 245, 412 232\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/><circle cx=\"426\" cy=\"226\" r=\"19\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/>",
+        "audio": "audio/voices/cirak_sonic_vector/step_9.mp3"
+      },
+      {
+        "title": "10. Adım: Kalın Timsah Kuyruğu",
+        "instruction": "Arka taraftan aşağı kıvrılan büyük güçlü timsah kuyruğunu çiz.",
+        "voice": "Arka taraftan uzanan kalın ve güçlü timsah kuyruğunu yapalım.",
+        "svg": "<path d=\"M 235 335 C 175 352, 125 335, 95 305 C 122 365, 175 395, 248 368\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_vector/step_10.mp3"
+      },
+      {
+        "title": "11. Adım: Bacaklar ve Dev Ayakkabılar",
+        "instruction": "Gövdesinin altına sağlam bacaklarını ve turuncu-siyah büyük spor ayakkabılarını çiz.",
+        "voice": "Sağlam yeşil bacaklarını ve büyük siyah-turuncu DJ ayakkabılarını çizelim!",
+        "svg": "<path d=\"M 262 368 L 248 430 M 310 368 L 325 430\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/><path d=\"M 222 436 C 218 470, 248 480, 285 472 C 292 462, 282 436, 255 436 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/><path d=\"M 312 436 C 308 470, 338 480, 392 470 C 400 460, 388 436, 350 436 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/>",
+        "audio": "audio/voices/cirak_sonic_vector/step_11.mp3"
+      },
+      {
+        "title": "12. Adım: Siyah Kol-Bacak Bilek Bantları",
+        "instruction": "Bileklere havalı siyah bilek bantları koy.",
+        "voice": "Bileklerine havalı siyah rockçı bilekliklerini takalım.",
+        "svg": "<ellipse cx=\"250\" cy=\"432\" rx=\"16\" ry=\"9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><ellipse cx=\"326\" cy=\"432\" rx=\"16\" ry=\"9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/>",
+        "audio": "audio/voices/cirak_sonic_vector/step_12.mp3"
+      },
+      {
+        "title": "13. Adım: Etrafta Uçan Müzik Notaları!",
+        "instruction": "Vector'ün etrafına neşeyle dans eden müzik notaları çiz!",
+        "voice": "Vector DJ olduğu için etrafına dans eden şık müzik notaları konduralım!",
+        "svg": "<path d=\"M 455 170 L 455 128 L 485 122 L 485 162\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linejoin=\"round\"/><circle cx=\"448\" cy=\"172\" r=\"8\" fill=\"#0f172a\"/><circle cx=\"478\" cy=\"164\" r=\"8\" fill=\"#0f172a\"/>",
+        "audio": "audio/voices/cirak_sonic_vector/step_13.mp3"
+      },
+      {
+        "title": "14. Adım: İkinci Müzik Notası",
+        "instruction": "Sol tarafa da küçük bir müzik notası ekle.",
+        "voice": "Sol üst köşeye de küçük bir müzik notası yapalım.",
+        "svg": "<line x1=\"155\" y1=\"155\" x2=\"155\" y2=\"122\" stroke=\"#0f172a\" stroke-width=\"5\"/><circle cx=\"148\" cy=\"155\" r=\"7\" fill=\"#0f172a\"/>",
+        "audio": "audio/voices/cirak_sonic_vector/step_14.mp3"
+      },
+      {
+        "title": "15. Adım: Burun Deliği",
+        "instruction": "Burnunun ucuna küçük timsah burun deliğini ekle.",
+        "voice": "Burnunun ucuna minik bir burun deliği konduralım.",
+        "svg": "<circle cx=\"385\" cy=\"168\" r=\"4\" fill=\"#0f172a\"/>",
+        "audio": "audio/voices/cirak_sonic_vector/step_15.mp3"
+      },
+      {
+        "title": "16. Adım: Kulaklık İç Detayı",
+        "instruction": "Turuncu kulaklığın ortasına küçük beyaz ses daireciği koy.",
+        "voice": "Kulaklığın içine yuvarlak ses detayını çizelim.",
+        "svg": "<circle cx=\"255\" cy=\"175\" r=\"10\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_vector/step_16.mp3"
+      },
+      {
+        "title": "17. Adım: Dans Pisti Zemin Çizgisi",
+        "instruction": "Ayaklarının altına düz zemin çizgisi çek.",
+        "voice": "Dans pisti zemin çizgisini de çekelim.",
+        "svg": "<path d=\"M 160 482 L 440 482\" stroke=\"#0f172a\" stroke-width=\"7\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_vector/step_17.mp3"
+      },
+      {
+        "title": "18. Adım: Canlı Renklendirme (Orman Yeşili & Turuncu Kulaklık!)",
+        "instruction": "Tebrikler Kıvanç! DJ Vector'ü parlak yeşil, turuncu kulaklık ve altın zinciriyle boya!",
+        "voice": "Harika oldu Kıvanç! DJ Timsah Vector partiyi başlattı! Şimdi onu parlak yeşil, turuncu kulaklık ve altın zincirle boya!",
+        "svg": "<defs>\n            <linearGradient id=\"vecGreen\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n              <stop offset=\"0%\" stop-color=\"#4ade80\"/>\n              <stop offset=\"50%\" stop-color=\"#22c55e\"/>\n              <stop offset=\"100%\" stop-color=\"#15803d\"/>\n            </linearGradient>\n          </defs>\n          <path d=\"M 160 482 L 440 482\" stroke=\"#cbd5e1\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 455 170 L 455 128 L 485 122 L 485 162\" fill=\"none\" stroke=\"#facc15\" stroke-width=\"6\"/>\n          <circle cx=\"448\" cy=\"172\" r=\"8\" fill=\"#facc15\"/>\n          <circle cx=\"478\" cy=\"164\" r=\"8\" fill=\"#facc15\"/>\n          <path d=\"M 235 335 C 175 352, 125 335, 95 305 C 122 365, 175 395, 248 368 Z\" fill=\"url(#vecGreen)\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 232 162 L 195 170 L 228 190 M 235 235 L 192 248 L 228 265 L 192 288 L 225 305 Z\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"7\" stroke-linejoin=\"round\"/>\n          <path d=\"M 262 368 L 248 430 M 310 368 L 325 430\" stroke=\"#0f172a\" stroke-width=\"20\" stroke-linecap=\"round\"/>\n          <path d=\"M 262 368 L 248 430 M 310 368 L 325 430\" stroke=\"url(#vecGreen)\" stroke-width=\"10\" stroke-linecap=\"round\"/>\n          <path d=\"M 222 436 C 218 470, 248 480, 285 472 C 292 462, 282 436, 255 436 Z\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"250\" cy=\"432\" rx=\"16\" ry=\"9\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 312 436 C 308 470, 338 480, 392 470 C 400 460, 388 436, 350 436 Z\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"326\" cy=\"432\" rx=\"16\" ry=\"9\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 242 220 C 218 275, 222 352, 265 368 C 325 372, 345 295, 325 220 Z\" fill=\"url(#vecGreen)\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <ellipse cx=\"290\" cy=\"298\" rx=\"32\" ry=\"52\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <line x1=\"262\" y1=\"278\" x2=\"318\" y2=\"278\" stroke=\"#ca8a04\" stroke-width=\"4\"/>\n          <line x1=\"260\" y1=\"305\" x2=\"320\" y2=\"305\" stroke=\"#ca8a04\" stroke-width=\"4\"/>\n          <path d=\"M 248 228 Q 290 258, 325 228\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"16\" stroke-linecap=\"round\"/>\n          <path d=\"M 248 228 Q 290 258, 325 228\" fill=\"none\" stroke=\"#facc15\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 238 248 C 202 260, 178 282, 168 302\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 238 248 C 202 260, 178 282, 168 302\" fill=\"none\" stroke=\"url(#vecGreen)\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"156\" cy=\"316\" r=\"19\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <path d=\"M 326 248 C 362 252, 392 245, 412 232\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 326 248 C 362 252, 392 245, 412 232\" fill=\"none\" stroke=\"url(#vecGreen)\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"426\" cy=\"226\" r=\"19\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <path d=\"M 225 180 C 235 125, 325 130, 355 155 C 395 162, 412 188, 385 215 L 250 222 Z\" fill=\"url(#vecGreen)\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <ellipse cx=\"308\" cy=\"148\" rx=\"14\" ry=\"18\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <circle cx=\"310\" cy=\"149\" r=\"7\" fill=\"#0f172a\"/>\n          <circle cx=\"307\" cy=\"145\" r=\"2.5\" fill=\"#ffffff\"/>\n          <ellipse cx=\"342\" cy=\"152\" rx=\"12\" ry=\"16\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <circle cx=\"344\" cy=\"153\" r=\"6\" fill=\"#0f172a\"/>\n          <circle cx=\"341\" cy=\"149\" r=\"2\" fill=\"#ffffff\"/>\n          <path d=\"M 335 202 L 344 218 L 352 200 M 365 198 L 372 212 L 380 195\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linejoin=\"round\"/>\n          <path d=\"M 275 198 C 315 210, 365 202, 392 188\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linecap=\"round\" fill=\"none\"/>\n          <circle cx=\"385\" cy=\"168\" r=\"4\" fill=\"#0f172a\"/>\n          <path d=\"M 255 155 Q 282 110, 318 140\" stroke=\"#0f172a\" stroke-width=\"11\" stroke-linecap=\"round\" fill=\"none\"/>\n          <path d=\"M 255 155 Q 282 110, 318 140\" stroke=\"#334155\" stroke-width=\"5\" stroke-linecap=\"round\" fill=\"none\"/>\n          <ellipse cx=\"255\" cy=\"175\" rx=\"22\" ry=\"26\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <circle cx=\"255\" cy=\"175\" r=\"10\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"4\"/>",
+        "audio": "audio/voices/cirak_sonic_vector/step_18.mp3"
+      }
+    ]
+  },
+  {
+    "id": "cirak_sonic_charmy",
+    "categoryId": "sonic",
+    "name": "Neşeli Arı Charmy",
+    "emoji": "🐝",
+    "level": 1,
+    "levelName": "Çırak",
+    "levelBadge": "🟢 Çırak",
+    "description": "Vector ve Espio'nun hiperaktif küçük arkadaşı arı Charmy! Pilot kaskı, sevimli arı çizgileri ve vızıldayan kanatları!",
+    "materials": "Resim kağıdı, kurşun kalem, silgi, sarı, siyah, turuncu, mavi ve beyaz boyalar",
+    "welcomeText": "Vızzz! Selam Kıvanç! Pilot kasklı ve kanatlı çok neşeli küçük arı Charmy geldi! Vızıldayarak birlikte çizelim!",
+    "welcomeAudio": "audio/voices/cirak_sonic_charmy/welcome.mp3",
+    "colors": [
+      {
+        "name": "Altın Sarısı",
+        "hex": "#facc15"
+      },
+      {
+        "name": "Gece Siyahı",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "Canlı Turuncu",
+        "hex": "#f97316"
+      },
+      {
+        "name": "Gökyüzü Mavisi",
+        "hex": "#38bdf8"
+      }
+    ],
+    "previewSvg": "<path d=\"M 110 462 Q 300 452, 460 462\" stroke=\"#86efac\" stroke-width=\"8\" stroke-linecap=\"round\"/>\n          <line x1=\"145\" y1=\"423\" x2=\"145\" y2=\"455\" stroke=\"#22c55e\" stroke-width=\"5\"/>\n          <circle cx=\"145\" cy=\"415\" r=\"8\" fill=\"#f472b6\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <path d=\"M 415 395 C 445 385, 455 355, 435 355 C 420 355, 432 385, 465 375\" fill=\"none\" stroke=\"#facc15\" stroke-width=\"4.5\" stroke-dasharray=\"8 6\"/>\n          <path d=\"M 260 315 C 215 318, 200 345, 222 365 C 242 375, 268 358, 275 345 Z\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <path d=\"M 212 355 L 195 368 L 222 365 Z\" fill=\"#0f172a\"/>\n          <ellipse cx=\"222\" cy=\"252\" rx=\"44\" ry=\"20\" fill=\"#e0f2fe\" opacity=\"0.8\" stroke=\"#0f172a\" stroke-width=\"7\" transform=\"rotate(-22 222 252)\"/>\n          <ellipse cx=\"378\" cy=\"252\" rx=\"44\" ry=\"20\" fill=\"#e0f2fe\" opacity=\"0.8\" stroke=\"#0f172a\" stroke-width=\"7\" transform=\"rotate(22 378 252)\"/>\n          <path d=\"M 282 348 L 272 405 M 318 348 L 328 405\" stroke=\"#0f172a\" stroke-width=\"16\" stroke-linecap=\"round\"/>\n          <path d=\"M 282 348 L 272 405 M 318 348 L 328 405\" stroke=\"#1e293b\" stroke-width=\"8\" stroke-linecap=\"round\"/>\n          <path d=\"M 248 416 C 245 442, 268 450, 295 442 C 300 432, 292 415, 270 415 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"270\" cy=\"410\" rx=\"14\" ry=\"8\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 325 415 C 308 415, 302 432, 308 442 C 335 450, 358 442, 352 416 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"330\" cy=\"410\" rx=\"14\" ry=\"8\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 268 250 L 258 340 C 280 352, 320 352, 342 340 L 332 250 Z\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 268 250 L 265 305 L 335 305 L 332 250 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <line x1=\"262\" y1=\"305\" x2=\"338\" y2=\"305\" stroke=\"#1e293b\" stroke-width=\"10\"/>\n          <line x1=\"260\" y1=\"325\" x2=\"340\" y2=\"325\" stroke=\"#1e293b\" stroke-width=\"10\"/>\n          <path d=\"M 265 268 C 232 278, 212 292, 198 308\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"16\" stroke-linecap=\"round\"/>\n          <path d=\"M 265 268 C 232 278, 212 292, 198 308\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"8\" stroke-linecap=\"round\"/>\n          <circle cx=\"186\" cy=\"318\" r=\"16\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 335 268 C 368 278, 388 292, 402 308\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"16\" stroke-linecap=\"round\"/>\n          <path d=\"M 335 268 C 368 278, 388 292, 402 308\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"8\" stroke-linecap=\"round\"/>\n          <circle cx=\"414\" cy=\"318\" r=\"16\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <circle cx=\"300\" cy=\"195\" r=\"56\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <path d=\"M 252 212 C 254 242, 346 242, 348 212 C 330 200, 270 200, 252 212 Z\" fill=\"#fed7aa\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 258 202 C 258 170, 294 170, 300 188 C 306 170, 342 170, 342 202 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <circle cx=\"282\" cy=\"192\" r=\"8\" fill=\"#0f172a\"/>\n          <circle cx=\"280\" cy=\"189\" r=\"3\" fill=\"#ffffff\"/>\n          <circle cx=\"318\" cy=\"192\" r=\"8\" fill=\"#0f172a\"/>\n          <circle cx=\"316\" cy=\"189\" r=\"3\" fill=\"#ffffff\"/>\n          <ellipse cx=\"300\" cy=\"212\" rx=\"7\" ry=\"5\" fill=\"#0f172a\"/>\n          <path d=\"M 280 225 Q 300 242, 320 225\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linecap=\"round\" fill=\"none\"/>\n          <path d=\"M 244 185 C 244 125, 356 125, 356 185 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <rect x=\"260\" y=\"142\" width=\"36\" height=\"24\" rx=\"8\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <rect x=\"304\" y=\"142\" width=\"36\" height=\"24\" rx=\"8\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 282 135 Q 272 105, 260 98 M 318 135 Q 328 105, 340 98\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linecap=\"round\" fill=\"none\"/>\n          <circle cx=\"258\" cy=\"96\" r=\"7\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"342\" cy=\"96\" r=\"7\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"4\"/>",
+    "steps": [
+      {
+        "title": "1. Adım: Sevimli Yuvarlak Kafa ve Pilot Kaskı",
+        "instruction": "Sayfanın üst ortasına yuvarlak arı kafasını ve üstüne pilot başlığını çiz.",
+        "voice": "Kağıdımızın üst ortasına sevimli Arı Charmy'nin kafasını ve başındaki turuncu pilot kaskını çizelim!",
+        "svg": "<circle cx=\"300\" cy=\"195\" r=\"56\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\"/><path d=\"M 244 185 C 244 125, 356 125, 356 185\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\"/>",
+        "audio": "audio/voices/cirak_sonic_charmy/step_1.mp3"
+      },
+      {
+        "title": "2. Adım: Pilot Gözlüğü ve Arı Antenleri",
+        "instruction": "Kaskın önüne büyük pilot gözlüğü camlarını ve tepesine iki zıplayan arı antenini yap.",
+        "voice": "Kaskının tepesine büyük uçuş gözlüğünü ve iki tatlı arı antenini çizelim!",
+        "svg": "<rect x=\"260\" y=\"142\" width=\"36\" height=\"24\" rx=\"8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><rect x=\"304\" y=\"142\" width=\"36\" height=\"24\" rx=\"8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><path d=\"M 282 135 Q 272 105, 260 98 M 318 135 Q 328 105, 340 98\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linecap=\"round\" fill=\"none\"/><circle cx=\"258\" cy=\"96\" r=\"7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/><circle cx=\"342\" cy=\"96\" r=\"7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_charmy/step_2.mp3"
+      },
+      {
+        "title": "3. Adım: Büyük Neşeli Arı Gözleri ve Gülümseme",
+        "instruction": "Yüzün ortasına bitişik göz kemerini ve çok mutlu gülen ağzını çiz.",
+        "voice": "Yüzüne kocaman sevimli arı gözlerini ve neşe dolu gülümsemesini yapalım.",
+        "svg": "<path d=\"M 258 202 C 258 170, 294 170, 300 188 C 306 170, 342 170, 342 202\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/><circle cx=\"282\" cy=\"192\" r=\"8\" fill=\"#0f172a\"/><circle cx=\"280\" cy=\"189\" r=\"3\" fill=\"#ffffff\"/><circle cx=\"318\" cy=\"192\" r=\"8\" fill=\"#0f172a\"/><circle cx=\"316\" cy=\"189\" r=\"3\" fill=\"#ffffff\"/><ellipse cx=\"300\" cy=\"212\" rx=\"7\" ry=\"5\" fill=\"#0f172a\"/><path d=\"M 280 225 Q 300 242, 320 225\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linecap=\"round\" fill=\"none\"/>",
+        "audio": "audio/voices/cirak_sonic_charmy/step_3.mp3"
+      },
+      {
+        "title": "4. Adım: Turuncu Pilot Yeleği ve Şeritli Arı Gövdesi",
+        "instruction": "Başın altına küçük sevimli gövdesini ve arkasından çıkan çizgili arı karnını çiz.",
+        "voice": "Kafanın altına sarı-siyah çizgili arı gövdesini ve turuncu yeleğini çizelim!",
+        "svg": "<path d=\"M 268 250 L 258 340 C 280 352, 320 352, 342 340 L 332 250\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/><line x1=\"262\" y1=\"305\" x2=\"338\" y2=\"305\" stroke=\"#0f172a\" stroke-width=\"7\"/><line x1=\"260\" y1=\"325\" x2=\"340\" y2=\"325\" stroke=\"#0f172a\" stroke-width=\"7\"/>",
+        "audio": "audio/voices/cirak_sonic_charmy/step_4.mp3"
+      },
+      {
+        "title": "5. Adım: Sevimli Çizgili Arı Kuyruğu ve İğnesi",
+        "instruction": "Gövdenin sol arkasına tombul arı poposunu ve minik sivri iğneyi yap.",
+        "voice": "Arkasına tombul arı kuyruğunu ve ucundaki minik arı iğnesini çizelim.",
+        "svg": "<path d=\"M 260 315 C 215 318, 200 345, 222 365 C 242 375, 268 358, 275 345\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/><path d=\"M 212 355 L 195 368 L 222 365\" fill=\"#0f172a\"/>",
+        "audio": "audio/voices/cirak_sonic_charmy/step_5.mp3"
+      },
+      {
+        "title": "6. Adım: Vızıldayan Şeffaf Arı Kanatları (Sol & Sağ)",
+        "instruction": "Sırtından iki yana açılan büyük oval şeffaf kanatlarını ekle.",
+        "voice": "Sırtından iki yana vızıldayarak açılan iki parlak arı kanadını çizelim!",
+        "svg": "<ellipse cx=\"222\" cy=\"252\" rx=\"44\" ry=\"20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\" transform=\"rotate(-22 222 252)\"/><ellipse cx=\"378\" cy=\"252\" rx=\"44\" ry=\"20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\" transform=\"rotate(22 378 252)\"/>",
+        "audio": "audio/voices/cirak_sonic_charmy/step_6.mp3"
+      },
+      {
+        "title": "7. Adım: Uçan Neşeli Kollar ve Beyaz Eldivenler",
+        "instruction": "İki yana neşeyle açılmış kollarını ve beyaz eldivenlerini çiz.",
+        "voice": "İki yana heyecanla açtığı kollarını ve beyaz eldivenlerini çizelim.",
+        "svg": "<path d=\"M 265 268 C 232 278, 212 292, 198 308\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"16\" stroke-linecap=\"round\"/><circle cx=\"186\" cy=\"318\" r=\"16\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/><path d=\"M 335 268 C 368 278, 388 292, 402 308\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"16\" stroke-linecap=\"round\"/><circle cx=\"414\" cy=\"318\" r=\"16\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/>",
+        "audio": "audio/voices/cirak_sonic_charmy/step_7.mp3"
+      },
+      {
+        "title": "8. Adım: Havada Süzülen Bacaklar ve Küçük Ayakkabılar",
+        "instruction": "Altına havada uçan kısa bacaklarını ve turuncu-beyaz ayakkabılarını çiz.",
+        "voice": "Havada uçarken sarkan minik bacaklarını ve turuncu ayakkabılarını yapalım!",
+        "svg": "<path d=\"M 282 348 L 272 405 M 318 348 L 328 405\" stroke=\"#0f172a\" stroke-width=\"14\" stroke-linecap=\"round\"/><ellipse cx=\"270\" cy=\"410\" rx=\"14\" ry=\"8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><ellipse cx=\"330\" cy=\"410\" rx=\"14\" ry=\"8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><path d=\"M 248 416 C 245 442, 268 450, 295 442 C 300 432, 292 415, 270 415 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/><path d=\"M 325 415 C 308 415, 302 432, 308 442 C 335 450, 358 442, 352 416 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/>",
+        "audio": "audio/voices/cirak_sonic_charmy/step_8.mp3"
+      },
+      {
+        "title": "9. Adım: Yelek Fermuar Çizgisi",
+        "instruction": "Yeleğinin ortasına fermuar çizgisi çek.",
+        "voice": "Turuncu pilot yeleğinin ortasına fermuar çizgisi yapalım.",
+        "svg": "<line x1=\"300\" y1=\"252\" x2=\"300\" y2=\"302\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_charmy/step_9.mp3"
+      },
+      {
+        "title": "10. Adım: Vızıldama Dalga Çizgileri",
+        "instruction": "Kanatların etrafına vızıldama yay çizgileri yap.",
+        "voice": "Kanatlarının çok hızlı çırpıldığını gösteren vızıltı çizgilerini ekleyelim!",
+        "svg": "<path d=\"M 175 215 Q 162 232, 175 250 M 425 215 Q 438 232, 425 250\" stroke=\"#0f172a\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_charmy/step_10.mp3"
+      },
+      {
+        "title": "11. Adım: Küçük Çiçek ve Bal Damlası",
+        "instruction": "Yanına arının sevdiği tatlı bir çiçek çiz.",
+        "voice": "Yanına Charmy'nin konmayı çok sevdiği şirin bir çiçek çizelim.",
+        "svg": "<circle cx=\"145\" cy=\"415\" r=\"8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/><line x1=\"145\" y1=\"423\" x2=\"145\" y2=\"455\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_charmy/step_11.mp3"
+      },
+      {
+        "title": "12. Adım: Pilot Gözlük Yansıması",
+        "instruction": "Pilot gözlüğünün camlarına parıltı çizgileri çek.",
+        "voice": "Gözlük camlarının üzerine parıltı çizgisi çekelim.",
+        "svg": "<line x1=\"268\" y1=\"148\" x2=\"278\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"4\"/><line x1=\"312\" y1=\"148\" x2=\"322\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"4\"/>",
+        "audio": "audio/voices/cirak_sonic_charmy/step_12.mp3"
+      },
+      {
+        "title": "13. Adım: Kask Kayış Bandı",
+        "instruction": "Kulak yanından çeneye kask kayışı detayı koy.",
+        "voice": "Kaskın yanından çene kayışını ekleyelim.",
+        "svg": "<ellipse cx=\"246\" cy=\"195\" rx=\"6\" ry=\"12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/><ellipse cx=\"354\" cy=\"195\" rx=\"6\" ry=\"12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_charmy/step_13.mp3"
+      },
+      {
+        "title": "14. Adım: Kanat Damarları",
+        "instruction": "Şeffaf kanatların içine ince çizgi ekle.",
+        "voice": "Arı kanatlarının ortasına ince damar çizgisi çizelim.",
+        "svg": "<line x1=\"205\" y1=\"248\" x2=\"245\" y2=\"262\" stroke=\"#0f172a\" stroke-width=\"4\"/><line x1=\"395\" y1=\"248\" x2=\"355\" y2=\"262\" stroke=\"#0f172a\" stroke-width=\"4\"/>",
+        "audio": "audio/voices/cirak_sonic_charmy/step_14.mp3"
+      },
+      {
+        "title": "15. Adım: Uçuş İzi Kesik Çizgileri",
+        "instruction": "Arkasından süzülen halkalı uçuş çizgisi yap.",
+        "voice": "Havada nasıl zıplayarak uçtuğunu gösteren halkalı uçuş çizgisi çizelim!",
+        "svg": "<path d=\"M 415 395 C 445 385, 455 355, 435 355 C 420 355, 432 385, 465 375\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-dasharray=\"8 6\"/>",
+        "audio": "audio/voices/cirak_sonic_charmy/step_15.mp3"
+      },
+      {
+        "title": "16. Adım: Kask Kulak Yıldızı",
+        "instruction": "Altına çiçeklerin durduğu küçük yeşil çimen çiz.",
+        "voice": "Çiçeğin altına yeşil çim zemini ekleyelim.",
+        "svg": "<path d=\"M 110 462 Q 300 452, 460 462\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_charmy/step_16.mp3"
+      },
+      {
+        "title": "17. Adım: Mutlu Yıldızlar",
+        "instruction": "Üste bir parlama yıldızı kondur.",
+        "voice": "Yanına minik bir yıldız ışığı ekleyelim.",
+        "svg": "<path d=\"M 415 140 L 415 156 M 407 148 L 423 148\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_charmy/step_17.mp3"
+      },
+      {
+        "title": "18. Adım: Canlı Renklendirme (Sarı-Siyah Arı & Turuncu Kask!)",
+        "instruction": "Tebrikler Kıvanç! Arı Charmy'yi bal sarısı, siyah çizgiler ve turuncu kaskıyla boya!",
+        "voice": "Çok şirin oldu Kıvanç! Neşeli arı Charmy vızıldıyor! Şimdi onu bal sarısı, turuncu pilot kaskı ve gök mavisi gözlükleriyle renklendir!",
+        "svg": "<path d=\"M 110 462 Q 300 452, 460 462\" stroke=\"#86efac\" stroke-width=\"8\" stroke-linecap=\"round\"/>\n          <line x1=\"145\" y1=\"423\" x2=\"145\" y2=\"455\" stroke=\"#22c55e\" stroke-width=\"5\"/>\n          <circle cx=\"145\" cy=\"415\" r=\"8\" fill=\"#f472b6\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <path d=\"M 415 395 C 445 385, 455 355, 435 355 C 420 355, 432 385, 465 375\" fill=\"none\" stroke=\"#facc15\" stroke-width=\"4.5\" stroke-dasharray=\"8 6\"/>\n          <path d=\"M 260 315 C 215 318, 200 345, 222 365 C 242 375, 268 358, 275 345 Z\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <path d=\"M 212 355 L 195 368 L 222 365 Z\" fill=\"#0f172a\"/>\n          <ellipse cx=\"222\" cy=\"252\" rx=\"44\" ry=\"20\" fill=\"#e0f2fe\" opacity=\"0.8\" stroke=\"#0f172a\" stroke-width=\"7\" transform=\"rotate(-22 222 252)\"/>\n          <ellipse cx=\"378\" cy=\"252\" rx=\"44\" ry=\"20\" fill=\"#e0f2fe\" opacity=\"0.8\" stroke=\"#0f172a\" stroke-width=\"7\" transform=\"rotate(22 378 252)\"/>\n          <path d=\"M 282 348 L 272 405 M 318 348 L 328 405\" stroke=\"#0f172a\" stroke-width=\"16\" stroke-linecap=\"round\"/>\n          <path d=\"M 282 348 L 272 405 M 318 348 L 328 405\" stroke=\"#1e293b\" stroke-width=\"8\" stroke-linecap=\"round\"/>\n          <path d=\"M 248 416 C 245 442, 268 450, 295 442 C 300 432, 292 415, 270 415 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"270\" cy=\"410\" rx=\"14\" ry=\"8\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 325 415 C 308 415, 302 432, 308 442 C 335 450, 358 442, 352 416 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"330\" cy=\"410\" rx=\"14\" ry=\"8\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 268 250 L 258 340 C 280 352, 320 352, 342 340 L 332 250 Z\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 268 250 L 265 305 L 335 305 L 332 250 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <line x1=\"262\" y1=\"305\" x2=\"338\" y2=\"305\" stroke=\"#1e293b\" stroke-width=\"10\"/>\n          <line x1=\"260\" y1=\"325\" x2=\"340\" y2=\"325\" stroke=\"#1e293b\" stroke-width=\"10\"/>\n          <path d=\"M 265 268 C 232 278, 212 292, 198 308\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"16\" stroke-linecap=\"round\"/>\n          <path d=\"M 265 268 C 232 278, 212 292, 198 308\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"8\" stroke-linecap=\"round\"/>\n          <circle cx=\"186\" cy=\"318\" r=\"16\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 335 268 C 368 278, 388 292, 402 308\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"16\" stroke-linecap=\"round\"/>\n          <path d=\"M 335 268 C 368 278, 388 292, 402 308\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"8\" stroke-linecap=\"round\"/>\n          <circle cx=\"414\" cy=\"318\" r=\"16\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <circle cx=\"300\" cy=\"195\" r=\"56\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <path d=\"M 252 212 C 254 242, 346 242, 348 212 C 330 200, 270 200, 252 212 Z\" fill=\"#fed7aa\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 258 202 C 258 170, 294 170, 300 188 C 306 170, 342 170, 342 202 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <circle cx=\"282\" cy=\"192\" r=\"8\" fill=\"#0f172a\"/>\n          <circle cx=\"280\" cy=\"189\" r=\"3\" fill=\"#ffffff\"/>\n          <circle cx=\"318\" cy=\"192\" r=\"8\" fill=\"#0f172a\"/>\n          <circle cx=\"316\" cy=\"189\" r=\"3\" fill=\"#ffffff\"/>\n          <ellipse cx=\"300\" cy=\"212\" rx=\"7\" ry=\"5\" fill=\"#0f172a\"/>\n          <path d=\"M 280 225 Q 300 242, 320 225\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linecap=\"round\" fill=\"none\"/>\n          <path d=\"M 244 185 C 244 125, 356 125, 356 185 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <rect x=\"260\" y=\"142\" width=\"36\" height=\"24\" rx=\"8\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <rect x=\"304\" y=\"142\" width=\"36\" height=\"24\" rx=\"8\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 282 135 Q 272 105, 260 98 M 318 135 Q 328 105, 340 98\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linecap=\"round\" fill=\"none\"/>\n          <circle cx=\"258\" cy=\"96\" r=\"7\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"342\" cy=\"96\" r=\"7\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"4\"/>",
+        "audio": "audio/voices/cirak_sonic_charmy/step_18.mp3"
+      }
+    ]
+  },
+  {
+    "id": "cirak_sonic_jet",
+    "categoryId": "sonic",
+    "name": "Hızlı Kartal Jet",
+    "emoji": "🦅",
+    "level": 1,
+    "levelName": "Çırak",
+    "levelBadge": "🟢 Çırak",
+    "description": "Rüzgarın efendisi havalı yeşil şahin/kartal Jet! Alnındaki kırmızı gözlüğü, sivri tüyleri ve kartal gagası!",
+    "materials": "Resim kağıdı, kurşun kalem, silgi, zümrüt yeşili, kırmızı, sarı ve lacivert boyalar",
+    "welcomeText": "Rüzgar kadar hızlı! Merhaba Kıvanç! Uçan kaykayların kralı havalı yeşil kartal Jet geliyor! Hadi kanat tüylerini çizelim!",
+    "welcomeAudio": "audio/voices/cirak_sonic_jet/welcome.mp3",
+    "colors": [
+      {
+        "name": "Zümrüt Yeşili",
+        "hex": "#16a34a"
+      },
+      {
+        "name": "Çimen Yeşili",
+        "hex": "#4ade80"
+      },
+      {
+        "name": "Parlak Kırmızı",
+        "hex": "#ef4444"
+      },
+      {
+        "name": "Altın Sarısı",
+        "hex": "#facc15"
+      }
+    ],
+    "previewSvg": "<defs>\n            <linearGradient id=\"jetGr\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n              <stop offset=\"0%\" stop-color=\"#4ade80\"/>\n              <stop offset=\"50%\" stop-color=\"#16a34a\"/>\n              <stop offset=\"100%\" stop-color=\"#15803d\"/>\n            </linearGradient>\n          </defs>\n          <path d=\"M 160 482 L 440 482\" stroke=\"#cbd5e1\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <line x1=\"95\" y1=\"245\" x2=\"175\" y2=\"245\" stroke=\"#4ade80\" stroke-width=\"6\" stroke-linecap=\"round\"/>\n          <path d=\"M 445 142 C 475 135, 495 148, 485 162 C 478 170, 462 162, 468 152\" fill=\"none\" stroke=\"#22c55e\" stroke-width=\"6\" stroke-linecap=\"round\"/>\n          <path d=\"M 255 318 L 175 305 L 222 332 L 165 342 L 245 348 Z\" fill=\"url(#jetGr)\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <path d=\"M 275 348 L 258 430 M 315 348 L 335 430\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 275 348 L 258 430 M 315 348 L 335 430\" stroke=\"url(#jetGr)\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 225 440 C 222 470, 250 480, 290 472 C 296 462, 286 440, 258 440 Z\" fill=\"#16a34a\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <line x1=\"242\" y1=\"455\" x2=\"282\" y2=\"455\" stroke=\"#facc15\" stroke-width=\"6\"/>\n          <ellipse cx=\"255\" cy=\"435\" rx=\"16\" ry=\"9\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 322 440 C 315 470, 345 480, 398 470 C 406 460, 392 438, 355 438 Z\" fill=\"#16a34a\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <line x1=\"342\" y1=\"455\" x2=\"388\" y2=\"455\" stroke=\"#facc15\" stroke-width=\"6\"/>\n          <ellipse cx=\"338\" cy=\"435\" rx=\"16\" ry=\"9\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 262 232 L 252 340 C 282 355, 318 355, 338 340 L 328 232 Z\" fill=\"url(#jetGr)\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <ellipse cx=\"295\" cy=\"285\" rx=\"18\" ry=\"26\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n          <path d=\"M 262 235 Q 295 258, 328 235 L 328 250 Q 295 268, 262 250 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 258 248 C 228 265, 222 298, 245 312\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 258 248 C 228 265, 222 298, 245 312\" fill=\"none\" stroke=\"url(#jetGr)\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"242\" cy=\"322\" r=\"17\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 332 248 C 368 252, 398 240, 418 228\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 332 248 C 368 252, 398 240, 418 228\" fill=\"none\" stroke=\"url(#jetGr)\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <ellipse cx=\"416\" cy=\"228\" rx=\"9\" ry=\"14\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"5\" transform=\"rotate(-25 416 228)\"/>\n          <circle cx=\"430\" cy=\"222\" r=\"17\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 255 152 C 295 125, 355 140, 352 195 C 345 232, 268 238, 240 222 L 170 218 L 205 182 L 155 170 L 210 152 L 175 125 Z\" fill=\"url(#jetGr)\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <ellipse cx=\"288\" cy=\"182\" rx=\"12\" ry=\"16\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <ellipse cx=\"290\" cy=\"182\" rx=\"8\" ry=\"11\" fill=\"#38bdf8\"/>\n          <circle cx=\"290\" cy=\"182\" r=\"5\" fill=\"#0f172a\"/>\n          <circle cx=\"287\" cy=\"178\" r=\"2.5\" fill=\"#ffffff\"/>\n          <ellipse cx=\"328\" cy=\"182\" rx=\"11\" ry=\"15\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <ellipse cx=\"330\" cy=\"182\" rx=\"7\" ry=\"10\" fill=\"#38bdf8\"/>\n          <circle cx=\"330\" cy=\"182\" r=\"4.5\" fill=\"#0f172a\"/>\n          <circle cx=\"327\" cy=\"178\" r=\"2\" fill=\"#ffffff\"/>\n          <path d=\"M 285 205 C 315 190, 362 192, 378 210 C 355 232, 315 236, 282 222 Z\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <path d=\"M 295 215 Q 332 222, 360 212\" stroke=\"#0f172a\" stroke-width=\"5\" fill=\"none\"/>\n          <circle cx=\"348\" cy=\"202\" r=\"3.5\" fill=\"#0f172a\"/>\n          <rect x=\"262\" y=\"138\" width=\"38\" height=\"22\" rx=\"6\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <rect x=\"304\" y=\"138\" width=\"34\" height=\"22\" rx=\"6\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"6\"/>",
+    "steps": [
+      {
+        "title": "1. Adım: Kafa Yuvarlağı ve Arkaya Uzanmış Kartal Tüyleri",
+        "instruction": "Sayfanın üst ortasına yuvarlak başını ve arkaya savrulan sivri yeşil kartal tüylerini çiz.",
+        "voice": "Kağıdımızın üst ortasına Kartal Jet'in başını ve rüzgarla arkaya savrulan kartal tüylerini çizelim!",
+        "svg": "<path d=\"M 255 152 C 295 125, 355 140, 352 195 C 345 232, 268 238, 240 222 L 170 218 L 205 182 L 155 170 L 210 152 L 175 125 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_jet/step_1.mp3"
+      },
+      {
+        "title": "2. Adım: Tepedeki Kırmızı Yarışçı Gözlüğü",
+        "instruction": "Başının tepesine havalı kırmızı çerçeveli pilot/yarışçı gözlüğünü koy.",
+        "voice": "Alnının üstüne kırmızı yarışçı gözlüğünü çizelim!",
+        "svg": "<rect x=\"262\" y=\"138\" width=\"38\" height=\"22\" rx=\"6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><rect x=\"304\" y=\"138\" width=\"34\" height=\"22\" rx=\"6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/>",
+        "audio": "audio/voices/cirak_sonic_jet/step_2.mp3"
+      },
+      {
+        "title": "3. Adım: Kavisli Sarı Kartal Gagası!",
+        "instruction": "Yüzün önüne kartallara özgü keskin sarı gagayı ve havalı gülümsemeyi çiz.",
+        "voice": "Yüzünün ön tarafına sivri ve gülümseyen sarı kartal gagasını çizelim!",
+        "svg": "<path d=\"M 285 205 C 315 190, 362 192, 378 210 C 355 232, 315 236, 282 222 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/><path d=\"M 295 215 Q 332 222, 360 212\" stroke=\"#0f172a\" stroke-width=\"5\" fill=\"none\"/>",
+        "audio": "audio/voices/cirak_sonic_jet/step_3.mp3"
+      },
+      {
+        "title": "4. Adım: Mavi Keskin Kartal Gözleri",
+        "instruction": "Gözlüğün altına keskin bakışlı iki iri gözü yerleştir.",
+        "voice": "Altına hedefe odaklanmış parlak mavi gözlerini ekleyelim!",
+        "svg": "<ellipse cx=\"288\" cy=\"182\" rx=\"12\" ry=\"16\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><circle cx=\"290\" cy=\"182\" r=\"6\" fill=\"#0f172a\"/><circle cx=\"287\" cy=\"178\" r=\"2.5\" fill=\"#ffffff\"/><ellipse cx=\"328\" cy=\"182\" rx=\"11\" ry=\"15\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><circle cx=\"330\" cy=\"182\" r=\"5.5\" fill=\"#0f172a\"/><circle cx=\"327\" cy=\"178\" r=\"2\" fill=\"#ffffff\"/>",
+        "audio": "audio/voices/cirak_sonic_jet/step_4.mp3"
+      },
+      {
+        "title": "5. Adım: Boyun Beyaz Tüy Halkası ve Çevik Gövde",
+        "instruction": "Boynunun altına şık beyaz tüy halkasını ve atletik yeşil gövdesini çiz.",
+        "voice": "Boynuna kabarık beyaz tüy yakasını ve çevik gövdesini çizelim.",
+        "svg": "<path d=\"M 262 232 L 252 340 C 282 355, 318 355, 338 340 L 328 232\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\"/><path d=\"M 262 235 Q 295 258, 328 235\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/>",
+        "audio": "audio/voices/cirak_sonic_jet/step_5.mp3"
+      },
+      {
+        "title": "6. Adım: Belde Duran Sol Kol ve Kolluk",
+        "instruction": "Beline koyduğu kendinden emin kolunu ve siyah-kırmızı bilekliğini ekle.",
+        "voice": "Sol elini beline koymuş kendinden emin pozda çizelim!",
+        "svg": "<path d=\"M 258 248 C 228 265, 222 298, 245 312\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/><circle cx=\"242\" cy=\"322\" r=\"17\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/>",
+        "audio": "audio/voices/cirak_sonic_jet/step_6.mp3"
+      },
+      {
+        "title": "7. Adım: İşaret Eden Sağ Kol ve Eldiven",
+        "instruction": "Sağ tarafa ileri doğru 'Ben birinciyim!' diye gösteren kolunu yap.",
+        "voice": "Sağ kolunu da 'En hızlı benim!' der gibi yana doğru uzatalım!",
+        "svg": "<path d=\"M 332 248 C 368 252, 398 240, 418 228\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/><circle cx=\"430\" cy=\"222\" r=\"17\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/>",
+        "audio": "audio/voices/cirak_sonic_jet/step_7.mp3"
+      },
+      {
+        "title": "8. Adım: Uzun Kuş Kuyruk Tüyleri",
+        "instruction": "Gövdesinin arkasından sola çıkan uzun sivri kuyruk tüylerini yap.",
+        "voice": "Arka taraftan uzanan keskin kartal kuyruk tüylerini çizelim!",
+        "svg": "<path d=\"M 255 318 L 175 305 L 222 332 L 165 342 L 245 348\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_jet/step_8.mp3"
+      },
+      {
+        "title": "9. Adım: Bacaklar ve Havalı Yeşil-Sarı Ayakkabılar",
+        "instruction": "Altına sağlam duran bacaklarını ve kırmızı-yeşil büyük spor ayakkabılarını yap.",
+        "voice": "Yere basan bacaklarını ve yeşil-sarı hızlı ayakkabılarını çizelim!",
+        "svg": "<path d=\"M 275 348 L 258 430 M 315 348 L 335 430\" stroke=\"#0f172a\" stroke-width=\"16\" stroke-linecap=\"round\"/><ellipse cx=\"255\" cy=\"435\" rx=\"16\" ry=\"9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><ellipse cx=\"338\" cy=\"435\" rx=\"16\" ry=\"9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><path d=\"M 225 440 C 222 470, 250 480, 290 472 C 296 462, 286 440, 258 440 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/><path d=\"M 322 440 C 315 470, 345 480, 398 470 C 406 460, 392 438, 355 438 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/>",
+        "audio": "audio/voices/cirak_sonic_jet/step_9.mp3"
+      },
+      {
+        "title": "10. Adım: Beyaz Kaş / Alın Çizgisi",
+        "instruction": "Gözünün üstüne kararlı kaş kavisini ekle.",
+        "voice": "Gözlerinin üstüne havalı kaş kavisini yapalım.",
+        "svg": "<path d=\"M 268 164 Q 288 156, 304 166\" stroke=\"#0f172a\" stroke-width=\"5\" fill=\"none\"/>",
+        "audio": "audio/voices/cirak_sonic_jet/step_10.mp3"
+      },
+      {
+        "title": "11. Adım: Kırmızı Bileklik Bantları",
+        "instruction": "Eldiven bileklerine kırmızı spor bandı koy.",
+        "voice": "Bileklerine şık kırmızı spor bantları çizelim.",
+        "svg": "<ellipse cx=\"416\" cy=\"228\" rx=\"9\" ry=\"14\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" transform=\"rotate(-25 416 228)\"/>",
+        "audio": "audio/voices/cirak_sonic_jet/step_11.mp3"
+      },
+      {
+        "title": "12. Adım: Ayakkabı Sarı Şeritleri",
+        "instruction": "Ayakkabılara hız şeritleri çiz.",
+        "voice": "Ayakkabılarına sarı hız şeritlerini ekleyelim.",
+        "svg": "<line x1=\"242\" y1=\"455\" x2=\"282\" y2=\"455\" stroke=\"#0f172a\" stroke-width=\"5\"/><line x1=\"342\" y1=\"455\" x2=\"388\" y2=\"455\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_jet/step_12.mp3"
+      },
+      {
+        "title": "13. Adım: Rüzgar Dalgası",
+        "instruction": "Arkaya hız rüzgar çizgisi çek.",
+        "voice": "Arka tarafa hızlı uçuş çizgilerini çekelim.",
+        "svg": "<line x1=\"95\" y1=\"245\" x2=\"175\" y2=\"245\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_jet/step_13.mp3"
+      },
+      {
+        "title": "14. Adım: Gökkuşağı Zümrüt Simgesi",
+        "instruction": "Sağ üst köşeye Jet'in rüzgar simgesi olan esinti kıvrımını yap.",
+        "voice": "Sağ üst köşeye rüzgar simgesi kıvrımını çizelim!",
+        "svg": "<path d=\"M 445 142 C 475 135, 495 148, 485 162 C 478 170, 462 162, 468 152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_jet/step_14.mp3"
+      },
+      {
+        "title": "15. Adım: Göbek Detayı",
+        "instruction": "Göğsünün altına oval tüy deseni koy.",
+        "voice": "Göğsünün üstüne beyaz tüy bölme çizgisi koyalım.",
+        "svg": "<ellipse cx=\"295\" cy=\"285\" rx=\"18\" ry=\"26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>",
+        "audio": "audio/voices/cirak_sonic_jet/step_15.mp3"
+      },
+      {
+        "title": "16. Adım: Gaga Burun Çizgisi",
+        "instruction": "Gagasının üzerine minik nefes deliği noktası ekle.",
+        "voice": "Sarı gagasına küçük bir nokta konduralım.",
+        "svg": "<circle cx=\"348\" cy=\"202\" r=\"3.5\" fill=\"#0f172a\"/>",
+        "audio": "audio/voices/cirak_sonic_jet/step_16.mp3"
+      },
+      {
+        "title": "17. Adım: Zemin Çizgisi",
+        "instruction": "Ayaklarının altına düz pist çizgisi çiz.",
+        "voice": "Ayaklarının altına temiz bir pist çizgisi çekelim.",
+        "svg": "<path d=\"M 160 482 L 440 482\" stroke=\"#0f172a\" stroke-width=\"7\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_jet/step_17.mp3"
+      },
+      {
+        "title": "18. Adım: Canlı Renklendirme (Zümrüt Yeşili & Sarı Gaga!)",
+        "instruction": "Tebrikler Kıvanç! Kartal Jet'i parlak zümrüt yeşili, altın sarı gaga ve kırmızı gözlükle boya!",
+        "voice": "Muhteşem oldu Kıvanç! Rüzgarın kralı Kartal Jet yarışa hazır! Şimdi onu parlak yeşil, sarı gaga ve kırmızı gözlüğüyle renklendir!",
+        "svg": "<defs>\n            <linearGradient id=\"jetGr\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n              <stop offset=\"0%\" stop-color=\"#4ade80\"/>\n              <stop offset=\"50%\" stop-color=\"#16a34a\"/>\n              <stop offset=\"100%\" stop-color=\"#15803d\"/>\n            </linearGradient>\n          </defs>\n          <path d=\"M 160 482 L 440 482\" stroke=\"#cbd5e1\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <line x1=\"95\" y1=\"245\" x2=\"175\" y2=\"245\" stroke=\"#4ade80\" stroke-width=\"6\" stroke-linecap=\"round\"/>\n          <path d=\"M 445 142 C 475 135, 495 148, 485 162 C 478 170, 462 162, 468 152\" fill=\"none\" stroke=\"#22c55e\" stroke-width=\"6\" stroke-linecap=\"round\"/>\n          <path d=\"M 255 318 L 175 305 L 222 332 L 165 342 L 245 348 Z\" fill=\"url(#jetGr)\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <path d=\"M 275 348 L 258 430 M 315 348 L 335 430\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 275 348 L 258 430 M 315 348 L 335 430\" stroke=\"url(#jetGr)\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 225 440 C 222 470, 250 480, 290 472 C 296 462, 286 440, 258 440 Z\" fill=\"#16a34a\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <line x1=\"242\" y1=\"455\" x2=\"282\" y2=\"455\" stroke=\"#facc15\" stroke-width=\"6\"/>\n          <ellipse cx=\"255\" cy=\"435\" rx=\"16\" ry=\"9\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 322 440 C 315 470, 345 480, 398 470 C 406 460, 392 438, 355 438 Z\" fill=\"#16a34a\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <line x1=\"342\" y1=\"455\" x2=\"388\" y2=\"455\" stroke=\"#facc15\" stroke-width=\"6\"/>\n          <ellipse cx=\"338\" cy=\"435\" rx=\"16\" ry=\"9\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 262 232 L 252 340 C 282 355, 318 355, 338 340 L 328 232 Z\" fill=\"url(#jetGr)\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <ellipse cx=\"295\" cy=\"285\" rx=\"18\" ry=\"26\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n          <path d=\"M 262 235 Q 295 258, 328 235 L 328 250 Q 295 268, 262 250 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 258 248 C 228 265, 222 298, 245 312\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 258 248 C 228 265, 222 298, 245 312\" fill=\"none\" stroke=\"url(#jetGr)\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"242\" cy=\"322\" r=\"17\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 332 248 C 368 252, 398 240, 418 228\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 332 248 C 368 252, 398 240, 418 228\" fill=\"none\" stroke=\"url(#jetGr)\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <ellipse cx=\"416\" cy=\"228\" rx=\"9\" ry=\"14\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"5\" transform=\"rotate(-25 416 228)\"/>\n          <circle cx=\"430\" cy=\"222\" r=\"17\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 255 152 C 295 125, 355 140, 352 195 C 345 232, 268 238, 240 222 L 170 218 L 205 182 L 155 170 L 210 152 L 175 125 Z\" fill=\"url(#jetGr)\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <ellipse cx=\"288\" cy=\"182\" rx=\"12\" ry=\"16\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <ellipse cx=\"290\" cy=\"182\" rx=\"8\" ry=\"11\" fill=\"#38bdf8\"/>\n          <circle cx=\"290\" cy=\"182\" r=\"5\" fill=\"#0f172a\"/>\n          <circle cx=\"287\" cy=\"178\" r=\"2.5\" fill=\"#ffffff\"/>\n          <ellipse cx=\"328\" cy=\"182\" rx=\"11\" ry=\"15\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <ellipse cx=\"330\" cy=\"182\" rx=\"7\" ry=\"10\" fill=\"#38bdf8\"/>\n          <circle cx=\"330\" cy=\"182\" r=\"4.5\" fill=\"#0f172a\"/>\n          <circle cx=\"327\" cy=\"178\" r=\"2\" fill=\"#ffffff\"/>\n          <path d=\"M 285 205 C 315 190, 362 192, 378 210 C 355 232, 315 236, 282 222 Z\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <path d=\"M 295 215 Q 332 222, 360 212\" stroke=\"#0f172a\" stroke-width=\"5\" fill=\"none\"/>\n          <circle cx=\"348\" cy=\"202\" r=\"3.5\" fill=\"#0f172a\"/>\n          <rect x=\"262\" y=\"138\" width=\"38\" height=\"22\" rx=\"6\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <rect x=\"304\" y=\"138\" width=\"34\" height=\"22\" rx=\"6\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"6\"/>",
+        "audio": "audio/voices/cirak_sonic_jet/step_18.mp3"
+      }
+    ]
+  },
+  {
+    "id": "cirak_sonic_tikal",
+    "categoryId": "sonic",
+    "name": "Prenses Ekidne Tikal",
+    "emoji": "✨",
+    "level": 1,
+    "levelName": "Çırak",
+    "levelBadge": "🟢 Çırak",
+    "description": "Kaos Zümrütlerinin iyi kalpli koruyucusu turuncu ekidne Tikal! Mavi taç bandı, beyaz incili kolyesi ve ışık küresi!",
+    "materials": "Resim kağıdı, kurşun kalem, silgi, turuncu, gök mavisi, kırmızı, beyaz ve altın boyalar",
+    "welcomeText": "İyi kalpli koruyucu! Merhaba Kıvanç! Chao'ların en yakın dostu nazik turuncu ekidne Tikal ile parlayan ışık topunu çizelim!",
+    "welcomeAudio": "audio/voices/cirak_sonic_tikal/welcome.mp3",
+    "colors": [
+      {
+        "name": "Canlı Turuncu",
+        "hex": "#f97316"
+      },
+      {
+        "name": "Gökyüzü Mavisi",
+        "hex": "#38bdf8"
+      },
+      {
+        "name": "Ay Sarısı",
+        "hex": "#fef08a"
+      },
+      {
+        "name": "Parlak Kırmızı",
+        "hex": "#ef4444"
+      }
+    ],
+    "previewSvg": "<path d=\"M 180 482 L 420 482\" stroke=\"#cbd5e1\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"445\" cy=\"202\" r=\"22\" fill=\"#fbcfe8\" opacity=\"0.5\"/>\n          <circle cx=\"445\" cy=\"202\" r=\"15\" fill=\"#f472b6\" stroke=\"#facc15\" stroke-width=\"5\"/>\n          <path d=\"M 445 170 L 445 180 M 445 224 L 445 234 M 414 202 L 424 202 M 466 202 L 476 202\" stroke=\"#facc15\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n          <path d=\"M 248 355 L 222 365 L 245 375 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 278 384 L 268 438 M 322 384 L 332 438\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 278 384 L 268 438 M 322 384 L 332 438\" stroke=\"#fb923c\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 242 442 C 238 472, 265 480, 295 474 C 302 465, 292 442, 268 442 Z\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"268\" cy=\"438\" rx=\"14\" ry=\"8\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 332 442 C 308 442, 298 465, 305 474 C 335 480, 362 472, 358 442 Z\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"332\" cy=\"438\" rx=\"14\" ry=\"8\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 268 250 L 258 318 L 242 378 Q 300 392, 358 378 L 342 318 L 332 250 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 258 318 L 342 318 L 358 378 Q 300 392, 242 378 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 248 365 L 268 345 L 288 365 L 308 345 L 328 365 L 348 345\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"6\" stroke-linejoin=\"round\"/>\n          <path d=\"M 265 268 C 228 280, 212 310, 218 332\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 265 268 C 228 280, 212 310, 218 332\" fill=\"none\" stroke=\"#fdba74\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"215\" cy=\"342\" r=\"16\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 335 268 C 372 280, 388 265, 412 248\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 335 268 C 372 280, 388 265, 412 248\" fill=\"none\" stroke=\"#fdba74\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"425\" cy=\"240\" r=\"16\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 264 238 Q 300 268, 336 238\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"14\" stroke-linecap=\"round\"/>\n          <path d=\"M 264 238 Q 300 268, 336 238\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"8\" stroke-linecap=\"round\"/>\n          <circle cx=\"278\" cy=\"252\" r=\"6\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"300\" cy=\"258\" r=\"7\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"322\" cy=\"252\" r=\"6\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <path d=\"M 248 158 C 205 162, 185 202, 192 258 C 208 265, 228 250, 238 228 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 352 158 C 395 162, 415 202, 408 258 C 392 265, 372 250, 362 228 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <line x1=\"194\" y1=\"235\" x2=\"225\" y2=\"235\" stroke=\"#38bdf8\" stroke-width=\"7\"/>\n          <line x1=\"375\" y1=\"235\" x2=\"406\" y2=\"235\" stroke=\"#38bdf8\" stroke-width=\"7\"/>\n          <path d=\"M 248 168 C 258 118, 342 118, 352 168 C 352 210, 248 210, 248 168 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <path d=\"M 248 156 Q 300 138, 352 156 L 352 168 Q 300 150, 248 168 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <circle cx=\"300\" cy=\"148\" r=\"5\" fill=\"#facc15\"/>\n          <path d=\"M 258 188 C 258 158, 290 158, 300 178 C 310 158, 342 158, 342 188 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"280\" cy=\"178\" rx=\"9\" ry=\"13\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"280\" cy=\"178\" r=\"5\" fill=\"#0f172a\"/>\n          <circle cx=\"278\" cy=\"174\" r=\"2\" fill=\"#ffffff\"/>\n          <ellipse cx=\"320\" cy=\"178\" rx=\"9\" ry=\"13\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"320\" cy=\"178\" r=\"5\" fill=\"#0f172a\"/>\n          <circle cx=\"318\" cy=\"174\" r=\"2\" fill=\"#ffffff\"/>\n          <path d=\"M 250 206 C 252 186, 286 188, 300 202 C 314 188, 348 186, 350 206 C 340 242, 260 242, 250 206 Z\" fill=\"#fed7aa\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"300\" cy=\"200\" rx=\"8\" ry=\"6\" fill=\"#0f172a\"/>\n          <path d=\"M 284 218 Q 300 230, 316 218\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linecap=\"round\" fill=\"none\"/>",
+    "steps": [
+      {
+        "title": "1. Adım: Kafa Yuvarlağı ve Alın Bandı",
+        "instruction": "Sayfanın üst ortasına yuvarlak baş tepesini ve mavi alın taç bandını yap.",
+        "voice": "Kağıdımızın üst ortasına Prenses Tikal'ın yuvarlak kafasını ve şık taç bandını çizelim!",
+        "svg": "<path d=\"M 248 168 C 258 118, 342 118, 352 168\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\"/><path d=\"M 248 156 Q 300 138, 352 156\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/>",
+        "audio": "audio/voices/cirak_sonic_tikal/step_1.mp3"
+      },
+      {
+        "title": "2. Adım: İki Yana Dökülen Ekidne Örgü Saçları",
+        "instruction": "Başın iki yanından omuzlara dökülen yumuşak turuncu örgü dikenlerini yap.",
+        "voice": "Knuckles gibi yanlardan dökülen sevimli ekidne saçlarını iki yana çizelim.",
+        "svg": "<path d=\"M 248 158 C 205 162, 185 202, 192 258 C 208 265, 228 250, 238 228 M 352 158 C 395 162, 415 202, 408 258 C 392 265, 372 250, 362 228\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_tikal/step_2.mp3"
+      },
+      {
+        "title": "3. Adım: Gülümseyen Ağız Bölgesi ve Siyah Burun",
+        "instruction": "Yüzün altına yumuşak şeftali ağız yayını, minik siyah burnu ve gülümsemeyi çiz.",
+        "voice": "Alt yüzüne gülümseyen şeftali ağız yayını, minik burnunu ve tatlı gülüşünü çizelim.",
+        "svg": "<path d=\"M 250 206 C 252 186, 286 188, 300 202 C 314 188, 348 186, 350 206 C 340 242, 260 242, 250 206 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/><ellipse cx=\"300\" cy=\"200\" rx=\"8\" ry=\"6\" fill=\"#0f172a\"/><path d=\"M 284 218 Q 300 230, 316 218\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linecap=\"round\" fill=\"none\"/>",
+        "audio": "audio/voices/cirak_sonic_tikal/step_3.mp3"
+      },
+      {
+        "title": "4. Adım: Parlak Mavi Gözler ve Zarif Kirpikler",
+        "instruction": "Göz kemerinin içine sıcak gök mavisi gözlerini ve dış köşeye kirpikleri ekle.",
+        "voice": "İçine parlak gök mavisi gözlerini ve dış kenarına kirpikleri çizelim.",
+        "svg": "<path d=\"M 258 188 C 258 158, 290 158, 300 178 C 310 158, 342 158, 342 188\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/><ellipse cx=\"280\" cy=\"178\" rx=\"9\" ry=\"13\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/><circle cx=\"280\" cy=\"178\" r=\"5\" fill=\"#0f172a\"/><circle cx=\"278\" cy=\"174\" r=\"2\" fill=\"#ffffff\"/><ellipse cx=\"320\" cy=\"178\" rx=\"9\" ry=\"13\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/><circle cx=\"320\" cy=\"178\" r=\"5\" fill=\"#0f172a\"/><circle cx=\"318\" cy=\"174\" r=\"2\" fill=\"#ffffff\"/>",
+        "audio": "audio/voices/cirak_sonic_tikal/step_4.mp3"
+      },
+      {
+        "title": "5. Adım: Ünlü İncili Beyaz Kabile Kolyesi",
+        "instruction": "Boynunun altına büyük dairesel beyaz incili kolyesini çiz!",
+        "voice": "İşte Tikal'in en şık takısı! Boynuna yuvarlak boncuklu büyük kolyesini yapalım!",
+        "svg": "<path d=\"M 264 238 Q 300 268, 336 238\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"10\" stroke-linecap=\"round\"/><circle cx=\"278\" cy=\"252\" r=\"6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\"/><circle cx=\"300\" cy=\"258\" r=\"7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\"/><circle cx=\"322\" cy=\"252\" r=\"6\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\"/>",
+        "audio": "audio/voices/cirak_sonic_tikal/step_5.mp3"
+      },
+      {
+        "title": "6. Adım: Sevimli Kolsuz Kıyafet ve Etek",
+        "instruction": "Kolyenin altından bele ve desenli beyaz-turuncu eteğe inen kıyafetini yap.",
+        "voice": "Kolyenin altına şık beyaz üstü ve üçgen desenli etek kısmını çizelim.",
+        "svg": "<path d=\"M 268 250 L 258 318 L 342 318 L 332 250\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\"/><path d=\"M 258 318 L 242 378 Q 300 392, 358 378 L 342 318\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_tikal/step_6.mp3"
+      },
+      {
+        "title": "7. Adım: Işık Topu Tutan Eller (Sol ve Sağ)",
+        "instruction": "İki kolunu ortadaki ışıldayan pembe ışık küresini tutarken birleştir.",
+        "voice": "İki kolunu ortadaki sihirli ışık küresini sevgiyle tutarken çizelim!",
+        "svg": "<path d=\"M 265 268 C 228 280, 212 310, 218 332\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"16\" stroke-linecap=\"round\"/><circle cx=\"215\" cy=\"342\" r=\"16\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/><path d=\"M 335 268 C 372 280, 388 265, 412 248\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"16\" stroke-linecap=\"round\"/><circle cx=\"425\" cy=\"240\" r=\"16\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/>",
+        "audio": "audio/voices/cirak_sonic_tikal/step_7.mp3"
+      },
+      {
+        "title": "8. Adım: Elindeki Parlayan Işık Perisi Küresi",
+        "instruction": "Sağ elinin hemen üstüne sıcacık parlayan ışık topunu çiz.",
+        "voice": "Sağ elinin hemen üzerine dostu olan sihirli ışık küresini yapalım!",
+        "svg": "<circle cx=\"445\" cy=\"202\" r=\"18\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><path d=\"M 445 170 L 445 180 M 445 224 L 445 234 M 414 202 L 424 202 M 466 202 L 476 202\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_tikal/step_8.mp3"
+      },
+      {
+        "title": "9. Adım: İnce Bacaklar ve Renkli Sandalet Botlar",
+        "instruction": "Eteğin altından inen iki bacağını ve kırmızı-sarı bantlı ayakkabılarını çiz.",
+        "voice": "Eteğinin altından inen bacaklarını ve rengarenk bantlı ayakkabılarını yapalım.",
+        "svg": "<path d=\"M 278 384 L 268 438 M 322 384 L 332 438\" stroke=\"#0f172a\" stroke-width=\"16\" stroke-linecap=\"round\"/><path d=\"M 242 442 C 238 472, 265 480, 295 474 C 302 465, 292 442, 268 442 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/><path d=\"M 332 442 C 308 442, 298 465, 305 474 C 335 480, 362 472, 358 442 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/>",
+        "audio": "audio/voices/cirak_sonic_tikal/step_9.mp3"
+      },
+      {
+        "title": "10. Adım: Etekteki Üçgen Motif Süslemesi",
+        "instruction": "Eteğinin alt kısmına antik zikzak üçgen desenini çiz.",
+        "voice": "Eteğine şık üçgen antik motif desenleri ekleyelim.",
+        "svg": "<path d=\"M 248 365 L 268 345 L 288 365 L 308 345 L 328 365 L 348 345\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_tikal/step_10.mp3"
+      },
+      {
+        "title": "11. Adım: Saç Bantı Çizgileri",
+        "instruction": "Alnındaki taç bandına dikey süs çizgisi ekle.",
+        "voice": "Alnındaki mavi banda altın süs çizgisi yapalım.",
+        "svg": "<circle cx=\"300\" cy=\"148\" r=\"5\" fill=\"#0f172a\"/>",
+        "audio": "audio/voices/cirak_sonic_tikal/step_11.mp3"
+      },
+      {
+        "title": "12. Adım: Zikzak Kuyruk",
+        "instruction": "Arkadaki sevimli ekidne kuyruğunu yap.",
+        "voice": "Arkadaki küçük zikzak ekidne kuyruğunu unutmayalım.",
+        "svg": "<path d=\"M 248 355 L 222 365 L 245 375\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_tikal/step_12.mp3"
+      },
+      {
+        "title": "13. Adım: Sandalet Bileklikleri",
+        "instruction": "Ayak bileklerine beyaz çorap halkası çiz.",
+        "voice": "Ayak bileklerine küçük bileklikleri ekleyelim.",
+        "svg": "<ellipse cx=\"268\" cy=\"438\" rx=\"14\" ry=\"8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/><ellipse cx=\"332\" cy=\"438\" rx=\"14\" ry=\"8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_tikal/step_13.mp3"
+      },
+      {
+        "title": "14. Adım: Eldiven Halkaları",
+        "instruction": "El bileklerine beyaz eldiven manşetlerini koy.",
+        "voice": "Bileklerine yumuşak eldiven halkalarını konduralım.",
+        "svg": "<circle cx=\"222\" cy=\"332\" r=\"7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\"/><circle cx=\"415\" cy=\"246\" r=\"7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\"/>",
+        "audio": "audio/voices/cirak_sonic_tikal/step_14.mp3"
+      },
+      {
+        "title": "15. Adım: Örgü Şeritleri",
+        "instruction": "Yana sarkan turuncu saç örgülerine şerit halkası ekle.",
+        "voice": "Saç örgülerinin ucuna toka çizgilerini yapalım.",
+        "svg": "<line x1=\"194\" y1=\"235\" x2=\"225\" y2=\"235\" stroke=\"#0f172a\" stroke-width=\"5\"/><line x1=\"375\" y1=\"235\" x2=\"406\" y2=\"235\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_tikal/step_15.mp3"
+      },
+      {
+        "title": "16. Adım: Uçan Sihir Parıltıları",
+        "instruction": "Işık topunun yanına yıldız parıltıları çiz.",
+        "voice": "Işık küresinin etrafına parlayan yıldızlar ekleyelim.",
+        "svg": "<circle cx=\"472\" cy=\"175\" r=\"4\" fill=\"#0f172a\"/><circle cx=\"422\" cy=\"175\" r=\"3.5\" fill=\"#0f172a\"/>",
+        "audio": "audio/voices/cirak_sonic_tikal/step_16.mp3"
+      },
+      {
+        "title": "17. Adım: Antik Tapınak Zemini",
+        "instruction": "Ayaklarının altına tapınak taşı zemini çiz.",
+        "voice": "Ayaklarının altına düz zemin çizgisini çekelim.",
+        "svg": "<path d=\"M 180 482 L 420 482\" stroke=\"#0f172a\" stroke-width=\"7\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_tikal/step_17.mp3"
+      },
+      {
+        "title": "18. Adım: Canlı Renklendirme (Sıcacık Turuncu & Gök Mavisi Tikal!)",
+        "instruction": "Tebrikler Kıvanç! Tikal'i parlak turuncu, gök mavisi taç ve parlayan altın kolyesiyle boya!",
+        "voice": "Çok zarif ve güzel oldu Kıvanç! Prenses Tikal parlıyor! Şimdi onu sıcak turuncu, mavi taç bandı ve ışıldayan beyaz eteğiyle boya!",
+        "svg": "<path d=\"M 180 482 L 420 482\" stroke=\"#cbd5e1\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"445\" cy=\"202\" r=\"22\" fill=\"#fbcfe8\" opacity=\"0.5\"/>\n          <circle cx=\"445\" cy=\"202\" r=\"15\" fill=\"#f472b6\" stroke=\"#facc15\" stroke-width=\"5\"/>\n          <path d=\"M 445 170 L 445 180 M 445 224 L 445 234 M 414 202 L 424 202 M 466 202 L 476 202\" stroke=\"#facc15\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n          <path d=\"M 248 355 L 222 365 L 245 375 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 278 384 L 268 438 M 322 384 L 332 438\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 278 384 L 268 438 M 322 384 L 332 438\" stroke=\"#fb923c\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 242 442 C 238 472, 265 480, 295 474 C 302 465, 292 442, 268 442 Z\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"268\" cy=\"438\" rx=\"14\" ry=\"8\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 332 442 C 308 442, 298 465, 305 474 C 335 480, 362 472, 358 442 Z\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"332\" cy=\"438\" rx=\"14\" ry=\"8\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 268 250 L 258 318 L 242 378 Q 300 392, 358 378 L 342 318 L 332 250 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 258 318 L 342 318 L 358 378 Q 300 392, 242 378 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 248 365 L 268 345 L 288 365 L 308 345 L 328 365 L 348 345\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"6\" stroke-linejoin=\"round\"/>\n          <path d=\"M 265 268 C 228 280, 212 310, 218 332\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 265 268 C 228 280, 212 310, 218 332\" fill=\"none\" stroke=\"#fdba74\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"215\" cy=\"342\" r=\"16\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 335 268 C 372 280, 388 265, 412 248\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 335 268 C 372 280, 388 265, 412 248\" fill=\"none\" stroke=\"#fdba74\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"425\" cy=\"240\" r=\"16\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 264 238 Q 300 268, 336 238\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"14\" stroke-linecap=\"round\"/>\n          <path d=\"M 264 238 Q 300 268, 336 238\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"8\" stroke-linecap=\"round\"/>\n          <circle cx=\"278\" cy=\"252\" r=\"6\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"300\" cy=\"258\" r=\"7\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"322\" cy=\"252\" r=\"6\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <path d=\"M 248 158 C 205 162, 185 202, 192 258 C 208 265, 228 250, 238 228 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 352 158 C 395 162, 415 202, 408 258 C 392 265, 372 250, 362 228 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <line x1=\"194\" y1=\"235\" x2=\"225\" y2=\"235\" stroke=\"#38bdf8\" stroke-width=\"7\"/>\n          <line x1=\"375\" y1=\"235\" x2=\"406\" y2=\"235\" stroke=\"#38bdf8\" stroke-width=\"7\"/>\n          <path d=\"M 248 168 C 258 118, 342 118, 352 168 C 352 210, 248 210, 248 168 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <path d=\"M 248 156 Q 300 138, 352 156 L 352 168 Q 300 150, 248 168 Z\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <circle cx=\"300\" cy=\"148\" r=\"5\" fill=\"#facc15\"/>\n          <path d=\"M 258 188 C 258 158, 290 158, 300 178 C 310 158, 342 158, 342 188 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"280\" cy=\"178\" rx=\"9\" ry=\"13\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"280\" cy=\"178\" r=\"5\" fill=\"#0f172a\"/>\n          <circle cx=\"278\" cy=\"174\" r=\"2\" fill=\"#ffffff\"/>\n          <ellipse cx=\"320\" cy=\"178\" rx=\"9\" ry=\"13\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"320\" cy=\"178\" r=\"5\" fill=\"#0f172a\"/>\n          <circle cx=\"318\" cy=\"174\" r=\"2\" fill=\"#ffffff\"/>\n          <path d=\"M 250 206 C 252 186, 286 188, 300 202 C 314 188, 348 186, 350 206 C 340 242, 260 242, 250 206 Z\" fill=\"#fed7aa\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"300\" cy=\"200\" rx=\"8\" ry=\"6\" fill=\"#0f172a\"/>\n          <path d=\"M 284 218 Q 300 230, 316 218\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linecap=\"round\" fill=\"none\"/>",
+        "audio": "audio/voices/cirak_sonic_tikal/step_18.mp3"
+      }
+    ]
+  },
+  {
+    "id": "cirak_sonic_werehog",
+    "categoryId": "sonic",
+    "name": "Kurt Kirpi Werehog Sonic",
+    "emoji": "🐺",
+    "level": 1,
+    "levelName": "Çırak",
+    "levelBadge": "🟢 Çırak",
+    "description": "Dolunayda tüylü dev kurt kirpiye dönüşen Werehog Sonic! Kabarık beyaz göğüs kürkü, dev pençeli elleri ve parlak ay!",
+    "materials": "Resim kağıdı, kurşun kalem, silgi, gece laciverti, beyaz, kırmızı ve ay sarısı boyalar",
+    "welcomeText": "Auuu! Selam Kıvanç! Gece dolunay çıkınca süper güçlü dev kurt kirpiye dönüşen Werehog Sonic geldi! Dev pençelerini çizelim!",
+    "welcomeAudio": "audio/voices/cirak_sonic_werehog/welcome.mp3",
+    "colors": [
+      {
+        "name": "Gece Laciverti",
+        "hex": "#1e3a8a"
+      },
+      {
+        "name": "Parlak Beyaz",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Parlak Kırmızı",
+        "hex": "#ef4444"
+      },
+      {
+        "name": "Ay Sarısı",
+        "hex": "#fef08a"
+      }
+    ],
+    "previewSvg": "<circle cx=\"485\" cy=\"110\" r=\"38\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <circle cx=\"475\" cy=\"98\" r=\"7\" fill=\"#fde047\" stroke=\"#ca8a04\" stroke-width=\"3\"/>\n          <circle cx=\"498\" cy=\"122\" r=\"9\" fill=\"#fde047\" stroke=\"#ca8a04\" stroke-width=\"3\"/>\n          <path d=\"M 160 482 L 440 482\" stroke=\"#cbd5e1\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 248 340 L 210 348 L 245 362 Z\" fill=\"#1e3a8a\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 272 372 L 258 432 M 325 372 L 340 432\" stroke=\"#0f172a\" stroke-width=\"20\" stroke-linecap=\"round\"/>\n          <path d=\"M 272 372 L 258 432 M 325 372 L 340 432\" stroke=\"#1e40af\" stroke-width=\"10\" stroke-linecap=\"round\"/>\n          <path d=\"M 225 438 C 220 472, 250 482, 290 474 C 296 462, 286 438, 258 438 Z\" fill=\"#dc2626\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <line x1=\"242\" y1=\"455\" x2=\"282\" y2=\"455\" stroke=\"#ffffff\" stroke-width=\"5\"/>\n          <ellipse cx=\"258\" cy=\"435\" rx=\"16\" ry=\"9\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 322 438 C 315 462, 345 482, 398 472 C 404 460, 390 436, 355 436 Z\" fill=\"#dc2626\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <line x1=\"342\" y1=\"455\" x2=\"388\" y2=\"455\" stroke=\"#ffffff\" stroke-width=\"5\"/>\n          <ellipse cx=\"340\" cy=\"435\" rx=\"16\" ry=\"9\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 255 288 C 245 335, 258 370, 298 375 C 338 370, 350 335, 340 288 Z\" fill=\"#1e3a8a\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <path d=\"M 242 272 C 195 282, 165 305, 148 330\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"26\" stroke-linecap=\"round\"/>\n          <path d=\"M 242 272 C 195 282, 165 305, 148 330\" fill=\"none\" stroke=\"#1e40af\" stroke-width=\"14\" stroke-linecap=\"round\"/>\n          <circle cx=\"132\" cy=\"348\" r=\"28\" fill=\"#1e3a8a\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <path d=\"M 112 365 L 100 388 M 128 372 L 122 396 M 148 370 L 148 392\" stroke=\"#ffffff\" stroke-width=\"7\" stroke-linecap=\"round\"/>\n          <path d=\"M 355 272 C 402 282, 432 305, 452 330\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"26\" stroke-linecap=\"round\"/>\n          <path d=\"M 355 272 C 402 282, 432 305, 452 330\" fill=\"none\" stroke=\"#1e40af\" stroke-width=\"14\" stroke-linecap=\"round\"/>\n          <circle cx=\"468\" cy=\"348\" r=\"28\" fill=\"#1e3a8a\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <path d=\"M 452 370 L 452 392 M 472 372 L 478 396 M 488 365 L 500 388\" stroke=\"#ffffff\" stroke-width=\"7\" stroke-linecap=\"round\"/>\n          <path d=\"M 248 242 L 228 272 L 255 278 L 245 305 L 278 292 L 300 315 L 322 292 L 352 305 L 342 278 L 368 272 L 348 242 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <path d=\"M 310 132 L 348 92 L 342 155 Z\" fill=\"#1e3a8a\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 248 165 C 272 125, 345 128, 355 188 C 345 235, 270 245, 235 235 L 138 258 L 188 215 L 112 205 L 195 178 L 130 142 L 248 152 Z\" fill=\"#1e3a8a\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 130 142 L 165 145 L 155 162 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <path d=\"M 112 205 L 145 200 L 135 215 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <path d=\"M 248 158 L 228 96 L 278 132 Z\" fill=\"#1e3a8a\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 252 202 C 254 162, 292 162, 302 185 C 312 162, 348 162, 348 202 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"282\" cy=\"186\" rx=\"10\" ry=\"15\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"284\" cy=\"186\" r=\"6\" fill=\"#0f172a\"/>\n          <circle cx=\"281\" cy=\"182\" r=\"2.5\" fill=\"#ffffff\"/>\n          <ellipse cx=\"326\" cy=\"186\" rx=\"10\" ry=\"14\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"328\" cy=\"186\" r=\"5.5\" fill=\"#0f172a\"/>\n          <circle cx=\"325\" cy=\"182\" r=\"2\" fill=\"#ffffff\"/>\n          <path d=\"M 235 225 C 235 198, 278 198, 302 214 C 328 198, 365 200, 362 228 C 348 258, 250 258, 235 225 Z\" fill=\"#fed7aa\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"362\" cy=\"212\" rx=\"11\" ry=\"8\" fill=\"#0f172a\"/>\n          <path d=\"M 288 236 C 312 248, 338 242, 348 228\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <polygon points=\"302,238 308,248 314,238\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"3\"/>\n          <polygon points=\"326,238 332,248 338,236\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"3\"/>",
+    "steps": [
+      {
+        "title": "1. Adım: Kabarık Kurt Kirpi Kafa ve Kulaklar",
+        "instruction": "Sayfanın üst ortasına yuvarlak alnını, tüylü kulaklarını ve dikenlerini çiz.",
+        "voice": "Kağıdımızın üst ortasına Kurt Kirpi Werehog'un güçlü kafa yuvarlağını ve sivri kurt kulaklarını çizelim!",
+        "svg": "<path d=\"M 248 165 C 272 125, 345 128, 355 188\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M 248 158 L 228 96 L 278 132 M 310 132 L 348 92 L 342 155\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_werehog/step_1.mp3"
+      },
+      {
+        "title": "2. Adım: Beyaz Uçlu Gür Tüylü Dikenler",
+        "instruction": "Arkaya uzanan 3 gür koyu mavi dikenini tüylü ve dalgalı çiz.",
+        "voice": "Werehog'un dikenleri daha tüylüdür! Arkaya uzanan büyük kabarık dikenlerini yapalım.",
+        "svg": "<path d=\"M 248 152 L 130 142 L 195 178 L 112 205 L 188 215 L 138 258 L 235 235\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_werehog/step_2.mp3"
+      },
+      {
+        "title": "3. Adım: Sivri Dişli Gülümseyen Kurt Ağzı",
+        "instruction": "Alt yüzüne yanak çizgisi, siyah burun ve iki şirin sivri dişle sırıtan ağız çiz.",
+        "voice": "Yüzüne şirin kurt dişleriyle gülümseyen ağız bölgesini ve siyah burnunu çizelim!",
+        "svg": "<path d=\"M 235 225 C 235 198, 278 198, 302 214 C 328 198, 365 200, 362 228 C 348 258, 250 258, 235 225 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/><ellipse cx=\"362\" cy=\"212\" rx=\"11\" ry=\"8\" fill=\"#0f172a\"/><path d=\"M 288 236 C 312 248, 338 242, 348 228\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><polygon points=\"302,238 308,248 314,238\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"3\"/><polygon points=\"326,238 332,248 338,236\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"3\"/>",
+        "audio": "audio/voices/cirak_sonic_werehog/step_3.mp3"
+      },
+      {
+        "title": "4. Adım: Keskin Bakışlı Yeşil Gözler",
+        "instruction": "Werehog'un kararlı bakışlı bitişik gözlerini ve parıltılarını ekle.",
+        "voice": "Kararlı yeşil gözlerini ve parıltılarını ekleyelim.",
+        "svg": "<path d=\"M 252 202 C 254 162, 292 162, 302 185 C 312 162, 348 162, 348 202\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/><ellipse cx=\"282\" cy=\"186\" rx=\"10\" ry=\"15\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/><circle cx=\"284\" cy=\"186\" r=\"6\" fill=\"#0f172a\"/><circle cx=\"281\" cy=\"182\" r=\"2.5\" fill=\"#ffffff\"/><ellipse cx=\"326\" cy=\"186\" rx=\"10\" ry=\"14\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/><circle cx=\"328\" cy=\"186\" r=\"5.5\" fill=\"#0f172a\"/><circle cx=\"325\" cy=\"182\" r=\"2\" fill=\"#ffffff\"/>",
+        "audio": "audio/voices/cirak_sonic_werehog/step_4.mp3"
+      },
+      {
+        "title": "5. Adım: Dev Kabarık Beyaz Göğüs Yelesi",
+        "instruction": "Göğsüne zikzaklı pofuduk beyaz kurt yelesini çiz!",
+        "voice": "Werehog'un göğsünde kocaman kabarık beyaz kurt tüyleri vardır! Zikzaklı beyaz göğüs kürkünü çizelim!",
+        "svg": "<path d=\"M 248 242 L 228 272 L 255 278 L 245 305 L 278 292 L 300 315 L 322 292 L 352 305 L 342 278 L 368 272 L 348 242\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_werehog/step_5.mp3"
+      },
+      {
+        "title": "6. Adım: Geniş Kaslı Kurt Gövdesi",
+        "instruction": "Yelesinin altından bele doğru daralan güçlü kurt gövdesini çiz.",
+        "voice": "Göğüs yelesinin altına geniş güçlü gövdesini çizelim.",
+        "svg": "<path d=\"M 255 288 C 245 335, 258 370, 298 375 C 338 370, 350 335, 340 288\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\"/>",
+        "audio": "audio/voices/cirak_sonic_werehog/step_6.mp3"
+      },
+      {
+        "title": "7. Adım: DEV UZAYAN SOL KOL VE PENÇELİ EL",
+        "instruction": "Sola doğru uzanan kalın kolunu ve büyük tüylü pençeli yumruğunu yap!",
+        "voice": "Werehog'un elleri devasa pençelidir! Sola doğru dev güçlü sol kolunu ve pençeli elini çizelim!",
+        "svg": "<path d=\"M 242 272 C 195 282, 165 305, 148 330\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"24\" stroke-linecap=\"round\"/><circle cx=\"132\" cy=\"348\" r=\"28\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/><path d=\"M 112 365 L 100 388 M 128 372 L 122 396 M 148 370 L 148 392\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_werehog/step_7.mp3"
+      },
+      {
+        "title": "8. Adım: DEV SAĞ KOL VE PENÇELİ EL",
+        "instruction": "Sağ tarafa da aynı güçte dev kolunu, elini ve 3 büyük beyaz kurt pençesini yap!",
+        "voice": "Sağ tarafa da dev tüylü kolunu ve büyük pençeli elini çizelim!",
+        "svg": "<path d=\"M 355 272 C 402 282, 432 305, 452 330\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"24\" stroke-linecap=\"round\"/><circle cx=\"468\" cy=\"348\" r=\"28\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/><path d=\"M 452 370 L 452 392 M 472 372 L 478 396 M 488 365 L 500 388\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_werehog/step_8.mp3"
+      },
+      {
+        "title": "9. Adım: Sağlam Bacaklar ve Sivri Ayak Pençeli Botlar",
+        "instruction": "Altına bacaklarını ve kurt pençeli kırmızı Werehog ayakkabılarını çiz.",
+        "voice": "Altına yere sağlam basan bacaklarını ve pençeli Werehog ayakkabılarını çizelim!",
+        "svg": "<path d=\"M 272 372 L 258 432 M 325 372 L 340 432\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/><path d=\"M 225 438 C 220 472, 250 482, 290 474 C 296 462, 286 438, 258 438 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/><path d=\"M 322 438 C 315 462, 345 482, 398 472 C 404 460, 390 436, 355 436 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/>",
+        "audio": "audio/voices/cirak_sonic_werehog/step_9.mp3"
+      },
+      {
+        "title": "10. Adım: Beyaz Çizgili Bilek Tüyleri",
+        "instruction": "Kollara tüylü el bileği bantları çiz.",
+        "voice": "Her iki bileğine tüylü manşet zikzaklarını yapalım.",
+        "svg": "<circle cx=\"148\" cy=\"332\" r=\"14\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/><circle cx=\"452\" cy=\"332\" r=\"14\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_werehog/step_10.mp3"
+      },
+      {
+        "title": "11. Adım: Sol Ayakkabı Bantları",
+        "instruction": "Ayakkabıların üzerine yırtık şık kayış detayları ekle.",
+        "voice": "Werehog ayakkabılarına kayış şeritlerini çizelim.",
+        "svg": "<line x1=\"242\" y1=\"455\" x2=\"282\" y2=\"455\" stroke=\"#0f172a\" stroke-width=\"5\"/><line x1=\"342\" y1=\"455\" x2=\"388\" y2=\"455\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_werehog/step_11.mp3"
+      },
+      {
+        "title": "12. Adım: Tüylü Çorap Manşetleri",
+        "instruction": "Ayak bileklerine yumuşak beyaz bileklikler ekle.",
+        "voice": "Ayak bileklerine beyaz çoraplarını çizelim.",
+        "svg": "<ellipse cx=\"258\" cy=\"435\" rx=\"16\" ry=\"9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><ellipse cx=\"340\" cy=\"435\" rx=\"16\" ry=\"9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/>",
+        "audio": "audio/voices/cirak_sonic_werehog/step_12.mp3"
+      },
+      {
+        "title": "13. Adım: Gökyüzünde Parlayan Dolunay!",
+        "instruction": "Sağ üst köşeye Werehog gücünü veren kocaman sarı dolunay çiz!",
+        "voice": "Kurt kirpi dolunayda ortaya çıkar! Sağ üst köşeye büyük parlayan dolunayı çizelim!",
+        "svg": "<circle cx=\"485\" cy=\"110\" r=\"38\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/>",
+        "audio": "audio/voices/cirak_sonic_werehog/step_13.mp3"
+      },
+      {
+        "title": "14. Adım: Ay Kraterleri",
+        "instruction": "Dolunayın içine iki küçük ay krateri yuvarlağı yap.",
+        "voice": "Dolunayın içine küçük ay krateri halkaları ekleyelim.",
+        "svg": "<circle cx=\"475\" cy=\"98\" r=\"7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\"/><circle cx=\"498\" cy=\"122\" r=\"9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\"/>",
+        "audio": "audio/voices/cirak_sonic_werehog/step_14.mp3"
+      },
+      {
+        "title": "15. Adım: Diken Uçlarının Beyaz Çizgisi",
+        "instruction": "Arkaya bakan dikenlerin ucuna beyaz tüy çizgisi çek.",
+        "voice": "Dikenlerinin uçlarına beyaz çizgilerini ayıralım.",
+        "svg": "<line x1=\"158\" y1=\"145\" x2=\"148\" y2=\"165\" stroke=\"#0f172a\" stroke-width=\"5\"/><line x1=\"138\" y1=\"202\" x2=\"132\" y2=\"215\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_werehog/step_15.mp3"
+      },
+      {
+        "title": "16. Adım: Kabarık Kurt Kuyruğu",
+        "instruction": "Gövdesinin arkasında tüylü kurt kuyruğu ekle.",
+        "voice": "Sol yana küçük tüylü kurt kuyruğu ucunu yapalım.",
+        "svg": "<path d=\"M 248 340 L 210 348 L 245 362\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_werehog/step_16.mp3"
+      },
+      {
+        "title": "17. Adım: Gece Zemin Çizgisi",
+        "instruction": "Ayaklarının altına düz zemin çizgisi çek.",
+        "voice": "Ayaklarının altına gece zemin çizgisini çekelim.",
+        "svg": "<path d=\"M 160 482 L 440 482\" stroke=\"#0f172a\" stroke-width=\"7\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_werehog/step_17.mp3"
+      },
+      {
+        "title": "18. Adım: Canlı Renklendirme (Gece Laciverti Werehog & Sarı Dolunay!)",
+        "instruction": "Tebrikler Kıvanç! Werehog Sonic'i koyu gece mavisi, kar beyazı kürk yelesi ve sarı dolunayla boya!",
+        "voice": "Müthiş oldu Kıvanç! Kurt Kirpi Werehog Sonic dolunayda uluyor! Şimdi onu gece laciverti, beyaz yelesi ve sarı dolunayla renklendir!",
+        "svg": "<circle cx=\"485\" cy=\"110\" r=\"38\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <circle cx=\"475\" cy=\"98\" r=\"7\" fill=\"#fde047\" stroke=\"#ca8a04\" stroke-width=\"3\"/>\n          <circle cx=\"498\" cy=\"122\" r=\"9\" fill=\"#fde047\" stroke=\"#ca8a04\" stroke-width=\"3\"/>\n          <path d=\"M 160 482 L 440 482\" stroke=\"#cbd5e1\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 248 340 L 210 348 L 245 362 Z\" fill=\"#1e3a8a\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 272 372 L 258 432 M 325 372 L 340 432\" stroke=\"#0f172a\" stroke-width=\"20\" stroke-linecap=\"round\"/>\n          <path d=\"M 272 372 L 258 432 M 325 372 L 340 432\" stroke=\"#1e40af\" stroke-width=\"10\" stroke-linecap=\"round\"/>\n          <path d=\"M 225 438 C 220 472, 250 482, 290 474 C 296 462, 286 438, 258 438 Z\" fill=\"#dc2626\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <line x1=\"242\" y1=\"455\" x2=\"282\" y2=\"455\" stroke=\"#ffffff\" stroke-width=\"5\"/>\n          <ellipse cx=\"258\" cy=\"435\" rx=\"16\" ry=\"9\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 322 438 C 315 462, 345 482, 398 472 C 404 460, 390 436, 355 436 Z\" fill=\"#dc2626\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <line x1=\"342\" y1=\"455\" x2=\"388\" y2=\"455\" stroke=\"#ffffff\" stroke-width=\"5\"/>\n          <ellipse cx=\"340\" cy=\"435\" rx=\"16\" ry=\"9\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 255 288 C 245 335, 258 370, 298 375 C 338 370, 350 335, 340 288 Z\" fill=\"#1e3a8a\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <path d=\"M 242 272 C 195 282, 165 305, 148 330\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"26\" stroke-linecap=\"round\"/>\n          <path d=\"M 242 272 C 195 282, 165 305, 148 330\" fill=\"none\" stroke=\"#1e40af\" stroke-width=\"14\" stroke-linecap=\"round\"/>\n          <circle cx=\"132\" cy=\"348\" r=\"28\" fill=\"#1e3a8a\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <path d=\"M 112 365 L 100 388 M 128 372 L 122 396 M 148 370 L 148 392\" stroke=\"#ffffff\" stroke-width=\"7\" stroke-linecap=\"round\"/>\n          <path d=\"M 355 272 C 402 282, 432 305, 452 330\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"26\" stroke-linecap=\"round\"/>\n          <path d=\"M 355 272 C 402 282, 432 305, 452 330\" fill=\"none\" stroke=\"#1e40af\" stroke-width=\"14\" stroke-linecap=\"round\"/>\n          <circle cx=\"468\" cy=\"348\" r=\"28\" fill=\"#1e3a8a\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <path d=\"M 452 370 L 452 392 M 472 372 L 478 396 M 488 365 L 500 388\" stroke=\"#ffffff\" stroke-width=\"7\" stroke-linecap=\"round\"/>\n          <path d=\"M 248 242 L 228 272 L 255 278 L 245 305 L 278 292 L 300 315 L 322 292 L 352 305 L 342 278 L 368 272 L 348 242 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <path d=\"M 310 132 L 348 92 L 342 155 Z\" fill=\"#1e3a8a\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 248 165 C 272 125, 345 128, 355 188 C 345 235, 270 245, 235 235 L 138 258 L 188 215 L 112 205 L 195 178 L 130 142 L 248 152 Z\" fill=\"#1e3a8a\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 130 142 L 165 145 L 155 162 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <path d=\"M 112 205 L 145 200 L 135 215 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <path d=\"M 248 158 L 228 96 L 278 132 Z\" fill=\"#1e3a8a\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 252 202 C 254 162, 292 162, 302 185 C 312 162, 348 162, 348 202 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"282\" cy=\"186\" rx=\"10\" ry=\"15\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"284\" cy=\"186\" r=\"6\" fill=\"#0f172a\"/>\n          <circle cx=\"281\" cy=\"182\" r=\"2.5\" fill=\"#ffffff\"/>\n          <ellipse cx=\"326\" cy=\"186\" rx=\"10\" ry=\"14\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"328\" cy=\"186\" r=\"5.5\" fill=\"#0f172a\"/>\n          <circle cx=\"325\" cy=\"182\" r=\"2\" fill=\"#ffffff\"/>\n          <path d=\"M 235 225 C 235 198, 278 198, 302 214 C 328 198, 365 200, 362 228 C 348 258, 250 258, 235 225 Z\" fill=\"#fed7aa\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"362\" cy=\"212\" rx=\"11\" ry=\"8\" fill=\"#0f172a\"/>\n          <path d=\"M 288 236 C 312 248, 338 242, 348 228\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <polygon points=\"302,238 308,248 314,238\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"3\"/>\n          <polygon points=\"326,238 332,248 338,236\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"3\"/>",
+        "audio": "audio/voices/cirak_sonic_werehog/step_18.mp3"
+      }
+    ]
+  },
+  {
+    "id": "cirak_sonic_dark_shadow",
+    "categoryId": "sonic",
+    "name": "Süper Altın Shadow",
+    "emoji": "🌟",
+    "level": 1,
+    "levelName": "Çırak",
+    "levelBadge": "🟢 Çırak",
+    "description": "Kaos Zümrütleriyle altın gümüşe bürünen Süper Shadow! Kırmızı şeritli altın dikenler ve Kaos Mızrağı!",
+    "materials": "Resim kağıdı, kurşun kalem, silgi, açık altın sarısı, ateş kırmızısı ve siyah boyalar",
+    "welcomeText": "Süper Kaos Kontrol! Merhaba Kıvanç! Gölge Kirpi Shadow'un en güçlü altın formuna dönüşmüş hali Süper Shadow'u çizelim!",
+    "welcomeAudio": "audio/voices/cirak_sonic_dark_shadow/welcome.mp3",
+    "colors": [
+      {
+        "name": "Ay Sarısı",
+        "hex": "#fef08a"
+      },
+      {
+        "name": "Altın Sarısı",
+        "hex": "#facc15"
+      },
+      {
+        "name": "Parlak Kırmızı",
+        "hex": "#ef4444"
+      },
+      {
+        "name": "Parlak Beyaz",
+        "hex": "#ffffff"
+      }
+    ],
+    "previewSvg": "<path d=\"M 180 500 Q 300 492, 420 500\" stroke=\"#cbd5e1\" stroke-width=\"8\" stroke-linecap=\"round\"/>\n          <polygon points=\"105,365 130,365 140,378 118,402 95,378\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 118 290 L 138 272 L 128 272 L 148 252 M 488 310 L 468 292 L 478 292 L 458 272\" stroke=\"#facc15\" stroke-width=\"6\" stroke-linejoin=\"round\" fill=\"none\"/>\n          <path d=\"M 235 458 L 245 488 L 260 468 L 272 488 L 278 456 Z\" fill=\"#f97316\" stroke=\"#facc15\" stroke-width=\"4\"/>\n          <path d=\"M 345 456 L 358 486 L 372 465 L 385 486 L 392 454 Z\" fill=\"#f97316\" stroke=\"#facc15\" stroke-width=\"4\"/>\n          <path d=\"M 262 320 L 235 328 L 262 338 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 280 338 L 258 410 M 320 338 L 348 408\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 280 338 L 258 410 M 320 338 L 348 408\" stroke=\"#fef08a\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 225 420 C 220 452, 248 462, 285 454 C 292 444, 284 420, 255 420 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <path d=\"M 228 444 L 282 444 L 285 454 L 225 454 Z\" fill=\"#ef4444\"/>\n          <ellipse cx=\"255\" cy=\"414\" rx=\"16\" ry=\"9\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 328 418 C 322 450, 355 462, 402 452 C 408 440, 392 418, 355 418 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <path d=\"M 330 444 L 395 444 L 398 452 L 328 454 Z\" fill=\"#ef4444\"/>\n          <ellipse cx=\"350\" cy=\"412\" rx=\"16\" ry=\"9\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 268 242 C 256 285, 260 335, 300 342 C 340 335, 344 285, 332 242 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <path d=\"M 272 242 C 276 265, 286 260, 300 280 C 314 260, 324 265, 328 242 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 265 256 C 232 268, 208 288, 195 310\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 265 256 C 232 268, 208 288, 195 310\" fill=\"none\" stroke=\"#fef08a\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"195\" cy=\"312\" r=\"9\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <circle cx=\"182\" cy=\"322\" r=\"18\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 335 256 C 372 260, 400 250, 422 238\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 335 256 C 372 260, 400 250, 422 238\" fill=\"none\" stroke=\"#fef08a\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"422\" cy=\"238\" r=\"9\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <circle cx=\"436\" cy=\"232\" r=\"18\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 410 180 L 495 152 L 465 215 Z\" fill=\"#facc15\" stroke=\"#f97316\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n          <path d=\"M 285 136 L 300 82 L 315 136 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <path d=\"M 250 158 L 228 102 L 275 134 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <path d=\"M 350 158 L 372 102 L 325 134 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <path d=\"M 245 152 C 185 128, 145 95, 118 92 C 148 125, 185 155, 232 175 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 355 152 C 415 128, 455 95, 482 92 C 452 125, 415 155, 368 175 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 232 182 C 185 182, 145 178, 115 192 C 148 208, 188 212, 235 212 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 368 182 C 415 182, 455 178, 485 192 C 452 208, 412 212, 365 212 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 145 112 L 235 162 M 455 112 L 365 162 M 140 192 L 220 196 M 460 192 L 380 196\" stroke=\"#ef4444\" stroke-width=\"8\" stroke-linecap=\"round\"/>\n          <path d=\"M 248 168 C 262 122, 338 122, 352 168 C 352 215, 248 215, 248 168 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <path d=\"M 254 192 C 256 160, 290 160, 300 180 C 310 160, 344 160, 346 192 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"278\" cy=\"182\" rx=\"9\" ry=\"13\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"278\" cy=\"182\" r=\"5\" fill=\"#0f172a\"/>\n          <circle cx=\"276\" cy=\"178\" r=\"2\" fill=\"#ffffff\"/>\n          <ellipse cx=\"322\" cy=\"182\" rx=\"9\" ry=\"13\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"322\" cy=\"182\" r=\"5\" fill=\"#0f172a\"/>\n          <circle cx=\"320\" cy=\"178\" r=\"2\" fill=\"#ffffff\"/>\n          <path d=\"M 248 208 C 248 188, 285 190, 300 202 C 315 190, 352 188, 352 210 C 344 245, 256 245, 248 208 Z\" fill=\"#fed7aa\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"300\" cy=\"202\" rx=\"10\" ry=\"7\" fill=\"#0f172a\"/>\n          <path d=\"M 285 224 Q 302 232, 320 220\" stroke=\"#0f172a\" stroke-width=\"6\" fill=\"none\"/>",
+    "steps": [
+      {
+        "title": "1. Adım: Altın Alın ve İki Sivri Kulak",
+        "instruction": "Sayfanın üst ortasına yuvarlak baş tepesini ve iki sivri üçgen kulak ekle.",
+        "voice": "Kağıdımızın üst ortasına Süper Shadow'un yuvarlak alnını ve iki sivri kulağını çizelim.",
+        "svg": "<path d=\"M 248 168 C 262 122, 338 122, 352 168\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\"/><path d=\"M 250 158 L 228 102 L 275 134 M 350 158 L 372 102 L 325 134\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_dark_shadow/step_1.mp3"
+      },
+      {
+        "title": "2. Adım: Yukarı Açılan 4 Kırmızı Şeritli Altın Diken",
+        "instruction": "Başın yanlarından kanat gibi yukarı fırlayan uzun Shadow dikenlerini çiz.",
+        "voice": "Shadow'un havalı dikenleri yanlara doğru yukarı şahlanır! Dikenlerini ve ortadaki kırmızı çizgilerini yapalım!",
+        "svg": "<path d=\"M 245 152 C 185 128, 145 95, 118 92 C 148 125, 185 155, 232 175 M 355 152 C 415 128, 455 95, 482 92 C 452 125, 415 155, 368 175\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/><path d=\"M 232 182 C 185 182, 145 178, 115 192 C 148 208, 188 212, 235 212 M 368 182 C 415 182, 455 178, 485 192 C 452 208, 412 212, 365 212\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_dark_shadow/step_2.mp3"
+      },
+      {
+        "title": "3. Adım: Kırmızı Göz Şeritleri ve Yüz",
+        "instruction": "Dikenlerin ortasına şerit çizgilerini ve yüzün altına gülüşü çiz.",
+        "voice": "Alt yüzüne gülümsemesini, siyah burnunu ve dikenlerin ortasına kırmızı şerit çizgilerini çizelim!",
+        "svg": "<path d=\"M 248 208 C 248 188, 285 190, 300 202 C 315 190, 352 188, 352 210 C 344 245, 256 245, 248 208 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/><ellipse cx=\"300\" cy=\"202\" rx=\"10\" ry=\"7\" fill=\"#0f172a\"/><path d=\"M 285 224 Q 302 232, 320 220\" stroke=\"#0f172a\" stroke-width=\"6\" fill=\"none\"/><path d=\"M 145 112 L 235 162 M 455 112 L 365 162\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_dark_shadow/step_3.mp3"
+      },
+      {
+        "title": "4. Adım: Yakut Kırmızısı Cesur Gözler",
+        "instruction": "Göz kemerinin içine parlayan yakut kırmızısı gözlerini yap.",
+        "voice": "Göz kemerinin içine yakut gibi parlayan keskin gözlerini çizelim.",
+        "svg": "<path d=\"M 254 192 C 256 160, 290 160, 300 180 C 310 160, 344 160, 346 192\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/><ellipse cx=\"278\" cy=\"182\" rx=\"9\" ry=\"13\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/><circle cx=\"278\" cy=\"182\" r=\"5\" fill=\"#0f172a\"/><circle cx=\"276\" cy=\"178\" r=\"2\" fill=\"#ffffff\"/><ellipse cx=\"322\" cy=\"182\" rx=\"9\" ry=\"13\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/><circle cx=\"322\" cy=\"182\" r=\"5\" fill=\"#0f172a\"/><circle cx=\"320\" cy=\"178\" r=\"2\" fill=\"#ffffff\"/>",
+        "audio": "audio/voices/cirak_sonic_dark_shadow/step_4.mp3"
+      },
+      {
+        "title": "5. Adım: Kabarık Beyaz Göğüs Tüyü ve Gövde",
+        "instruction": "Boynun altına 3 uçlu beyaz göğüs tüyünü ve altın gövdeyi çiz.",
+        "voice": "Göğsüne üç uçlu beyaz göğüs tüyünü ve uçan çevik gövdesini çizelim.",
+        "svg": "<path d=\"M 268 242 C 256 285, 260 335, 300 342 C 340 335, 344 285, 332 242\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\"/><path d=\"M 272 242 C 276 265, 286 260, 300 280 C 314 260, 324 265, 328 242\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_dark_shadow/step_5.mp3"
+      },
+      {
+        "title": "6. Adım: Güç Toplayan Kollar ve Kaos Mızrağı!",
+        "instruction": "Sola doğru dengeleyen kolunu ve sağ elinde parlayan sarı enerji mızrağını çiz!",
+        "voice": "Sağ elinde parlayan Kaos Mızrağı enerji okunu tutarken çizelim!",
+        "svg": "<path d=\"M 265 256 C 232 268, 208 288, 195 310\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/><circle cx=\"182\" cy=\"322\" r=\"18\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/><path d=\"M 335 256 C 372 260, 400 250, 422 238\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/><circle cx=\"436\" cy=\"232\" r=\"18\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/><path d=\"M 410 180 L 495 152 L 465 215 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_dark_shadow/step_6.mp3"
+      },
+      {
+        "title": "7. Adım: Havada Süzülen Jet Ayakkabılı Bacaklar",
+        "instruction": "Altına havada süzülen bacaklarını ve roket ateşli botlarını çiz.",
+        "voice": "Altına havada uçan bacaklarını ve roket alevli jet botlarını yapalım!",
+        "svg": "<path d=\"M 280 338 L 258 410 M 320 338 L 348 408\" stroke=\"#0f172a\" stroke-width=\"16\" stroke-linecap=\"round\"/><ellipse cx=\"255\" cy=\"414\" rx=\"16\" ry=\"9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><ellipse cx=\"350\" cy=\"412\" rx=\"16\" ry=\"9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><path d=\"M 225 420 C 220 452, 248 462, 285 454 C 292 444, 284 420, 255 420 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/><path d=\"M 328 418 C 322 450, 355 462, 402 452 C 408 440, 392 418, 355 418 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/>",
+        "audio": "audio/voices/cirak_sonic_dark_shadow/step_7.mp3"
+      },
+      {
+        "title": "8. Adım: Altından Fışkıran Roket Alevleri",
+        "instruction": "Her iki botun altına alev dilleri ekle.",
+        "voice": "Jet botlarının altından fışkıran alevleri çizelim.",
+        "svg": "<path d=\"M 235 458 L 245 488 L 260 468 L 272 488 L 278 456 M 345 456 L 358 486 L 372 465 L 385 486 L 392 454\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_dark_shadow/step_8.mp3"
+      },
+      {
+        "title": "9. Adım: Kırmızı Şeritli Alt Dikenler",
+        "instruction": "Alt dikenlere şerit çizgisi ekle.",
+        "voice": "Alt dikenlerin ortasına da kırmızı şerit çizgisi çekelim.",
+        "svg": "<line x1=\"140\" y1=\"192\" x2=\"220\" y2=\"196\" stroke=\"#0f172a\" stroke-width=\"5\"/><line x1=\"460\" y1=\"192\" x2=\"380\" y2=\"196\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_dark_shadow/step_9.mp3"
+      },
+      {
+        "title": "10. Adım: Altın Bilezik Halkaları",
+        "instruction": "Kol bileklerine kalın altın güç bileziklerini ekle.",
+        "voice": "Bileklerine kalın altın halkalarını çizelim.",
+        "svg": "<circle cx=\"195\" cy=\"312\" r=\"9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/><circle cx=\"422\" cy=\"238\" r=\"9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_dark_shadow/step_10.mp3"
+      },
+      {
+        "title": "11. Adım: Parlayan Altın Enerji Yıldırımları",
+        "instruction": "Vücudunun etrafına ateşli altın enerji kıvılcımları yap.",
+        "voice": "Etrafına süper enerji şimşekleri çizelim!",
+        "svg": "<path d=\"M 118 290 L 138 272 L 128 272 L 148 252 M 488 310 L 468 292 L 478 292 L 458 272\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\" fill=\"none\"/>",
+        "audio": "audio/voices/cirak_sonic_dark_shadow/step_11.mp3"
+      },
+      {
+        "title": "12. Adım: Kırmızı Kaos Zümrüdü",
+        "instruction": "Sol alta kırmızı Kaos Zümrüdünü çiz.",
+        "voice": "Yanına kırmızı Kaos Zümrüdünü ekleyelim.",
+        "svg": "<polygon points=\"105,365 130,365 140,378 118,402 95,378\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/>",
+        "audio": "audio/voices/cirak_sonic_dark_shadow/step_12.mp3"
+      },
+      {
+        "title": "13. Adım: Bot Kırmızı Tabanları",
+        "instruction": "Botların yan kırmızı taban çizgisini çek.",
+        "voice": "Botlarının alt çizgilerini tamamlayalım.",
+        "svg": "<line x1=\"228\" y1=\"444\" x2=\"282\" y2=\"444\" stroke=\"#0f172a\" stroke-width=\"5\"/><line x1=\"330\" y1=\"444\" x2=\"395\" y2=\"444\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_dark_shadow/step_13.mp3"
+      },
+      {
+        "title": "14. Adım: Tepedeki Orta Diken",
+        "instruction": "Kulakların ortasına yukarı kalkan kısa orta diken ekle.",
+        "voice": "Kulakların tam ortasına yukarı yükselen kısa altın dikeni çizelim.",
+        "svg": "<path d=\"M 285 136 L 300 82 L 315 136\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_dark_shadow/step_14.mp3"
+      },
+      {
+        "title": "15. Adım: Kuyruk",
+        "instruction": "Arkadaki kısa sivri altın kuyruğu ekle.",
+        "voice": "Kısa sivri kuyruğunu yapalım.",
+        "svg": "<path d=\"M 262 320 L 235 328 L 262 338\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_dark_shadow/step_15.mp3"
+      },
+      {
+        "title": "16. Adım: Mızrak Işıltıları",
+        "instruction": "Kaos Mızrağının ucuna parıltı yıldızı çiz.",
+        "voice": "Kaos Mızrağının ucuna parlayan enerji yıldızı konduralım.",
+        "svg": "<path d=\"M 505 142 L 505 162 M 495 152 L 515 152\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_dark_shadow/step_16.mp3"
+      },
+      {
+        "title": "17. Adım: Uçuş Gölgesi",
+        "instruction": "En alta hafif enerji gölgesi çek.",
+        "voice": "Altına enerjinin yayıldığı zemin çizgisi çekelim.",
+        "svg": "<path d=\"M 180 500 Q 300 492, 420 500\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_dark_shadow/step_17.mp3"
+      },
+      {
+        "title": "18. Adım: Canlı Renklendirme (Krem Altın & Ateş Kırmızısı Süper Shadow!)",
+        "instruction": "Tebrikler Kıvanç! Süper Shadow'u açık krem-altın sarısı, kırmızı şeritleri ve ateşli Kaos Mızrağıyla boya!",
+        "voice": "Şahane oldu Kıvanç! Süper Altın Shadow zafer ışıkları saçıyor! Şimdi onu parlak açık altın, ateş kırmızısı şeritler ve altın okla boya!",
+        "svg": "<path d=\"M 180 500 Q 300 492, 420 500\" stroke=\"#cbd5e1\" stroke-width=\"8\" stroke-linecap=\"round\"/>\n          <polygon points=\"105,365 130,365 140,378 118,402 95,378\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 118 290 L 138 272 L 128 272 L 148 252 M 488 310 L 468 292 L 478 292 L 458 272\" stroke=\"#facc15\" stroke-width=\"6\" stroke-linejoin=\"round\" fill=\"none\"/>\n          <path d=\"M 235 458 L 245 488 L 260 468 L 272 488 L 278 456 Z\" fill=\"#f97316\" stroke=\"#facc15\" stroke-width=\"4\"/>\n          <path d=\"M 345 456 L 358 486 L 372 465 L 385 486 L 392 454 Z\" fill=\"#f97316\" stroke=\"#facc15\" stroke-width=\"4\"/>\n          <path d=\"M 262 320 L 235 328 L 262 338 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 280 338 L 258 410 M 320 338 L 348 408\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 280 338 L 258 410 M 320 338 L 348 408\" stroke=\"#fef08a\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 225 420 C 220 452, 248 462, 285 454 C 292 444, 284 420, 255 420 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <path d=\"M 228 444 L 282 444 L 285 454 L 225 454 Z\" fill=\"#ef4444\"/>\n          <ellipse cx=\"255\" cy=\"414\" rx=\"16\" ry=\"9\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 328 418 C 322 450, 355 462, 402 452 C 408 440, 392 418, 355 418 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <path d=\"M 330 444 L 395 444 L 398 452 L 328 454 Z\" fill=\"#ef4444\"/>\n          <ellipse cx=\"350\" cy=\"412\" rx=\"16\" ry=\"9\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 268 242 C 256 285, 260 335, 300 342 C 340 335, 344 285, 332 242 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <path d=\"M 272 242 C 276 265, 286 260, 300 280 C 314 260, 324 265, 328 242 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 265 256 C 232 268, 208 288, 195 310\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 265 256 C 232 268, 208 288, 195 310\" fill=\"none\" stroke=\"#fef08a\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"195\" cy=\"312\" r=\"9\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <circle cx=\"182\" cy=\"322\" r=\"18\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 335 256 C 372 260, 400 250, 422 238\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 335 256 C 372 260, 400 250, 422 238\" fill=\"none\" stroke=\"#fef08a\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"422\" cy=\"238\" r=\"9\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <circle cx=\"436\" cy=\"232\" r=\"18\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 410 180 L 495 152 L 465 215 Z\" fill=\"#facc15\" stroke=\"#f97316\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n          <path d=\"M 285 136 L 300 82 L 315 136 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <path d=\"M 250 158 L 228 102 L 275 134 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <path d=\"M 350 158 L 372 102 L 325 134 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <path d=\"M 245 152 C 185 128, 145 95, 118 92 C 148 125, 185 155, 232 175 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 355 152 C 415 128, 455 95, 482 92 C 452 125, 415 155, 368 175 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 232 182 C 185 182, 145 178, 115 192 C 148 208, 188 212, 235 212 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 368 182 C 415 182, 455 178, 485 192 C 452 208, 412 212, 365 212 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 145 112 L 235 162 M 455 112 L 365 162 M 140 192 L 220 196 M 460 192 L 380 196\" stroke=\"#ef4444\" stroke-width=\"8\" stroke-linecap=\"round\"/>\n          <path d=\"M 248 168 C 262 122, 338 122, 352 168 C 352 215, 248 215, 248 168 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <path d=\"M 254 192 C 256 160, 290 160, 300 180 C 310 160, 344 160, 346 192 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"278\" cy=\"182\" rx=\"9\" ry=\"13\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"278\" cy=\"182\" r=\"5\" fill=\"#0f172a\"/>\n          <circle cx=\"276\" cy=\"178\" r=\"2\" fill=\"#ffffff\"/>\n          <ellipse cx=\"322\" cy=\"182\" rx=\"9\" ry=\"13\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"322\" cy=\"182\" r=\"5\" fill=\"#0f172a\"/>\n          <circle cx=\"320\" cy=\"178\" r=\"2\" fill=\"#ffffff\"/>\n          <path d=\"M 248 208 C 248 188, 285 190, 300 202 C 315 190, 352 188, 352 210 C 344 245, 256 245, 248 208 Z\" fill=\"#fed7aa\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"300\" cy=\"202\" rx=\"10\" ry=\"7\" fill=\"#0f172a\"/>\n          <path d=\"M 285 224 Q 302 232, 320 220\" stroke=\"#0f172a\" stroke-width=\"6\" fill=\"none\"/>",
+        "audio": "audio/voices/cirak_sonic_dark_shadow/step_18.mp3"
+      }
+    ]
+  },
+  {
+    "id": "cirak_sonic_excalibur",
+    "categoryId": "sonic",
+    "name": "Altın Şövalye Sonic",
+    "emoji": "⚔️",
+    "level": 1,
+    "levelName": "Çırak",
+    "levelBadge": "🟢 Çırak",
+    "description": "Efsanevi altın şövalye zırhını giymiş Excalibur Sonic! Kırmızı tüylü şövalye miğferi ve kutsal Altın Kılıcı!",
+    "materials": "Resim kağıdı, kurşun kalem, silgi, parlak altın sarısı, kırmızı, lacivert ve gümüş boyalar",
+    "welcomeText": "Sihirli kılıç! Merhaba Kıvanç! Şövalye zırhı giyip parlayan altın Excalibur kılıcını tutan cesur Şövalye Sonic'i çizelim!",
+    "welcomeAudio": "audio/voices/cirak_sonic_excalibur/welcome.mp3",
+    "colors": [
+      {
+        "name": "Altın Sarısı",
+        "hex": "#facc15"
+      },
+      {
+        "name": "Parlak Kırmızı",
+        "hex": "#ef4444"
+      },
+      {
+        "name": "Sonic Mavisi",
+        "hex": "#2563eb"
+      },
+      {
+        "name": "Gümüş Beyazı",
+        "hex": "#e2e8f0"
+      }
+    ],
+    "previewSvg": "<defs>\n            <linearGradient id=\"exGold\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n              <stop offset=\"0%\" stop-color=\"#fef08a\"/>\n              <stop offset=\"50%\" stop-color=\"#facc15\"/>\n              <stop offset=\"100%\" stop-color=\"#ca8a04\"/>\n            </linearGradient>\n          </defs>\n          <path d=\"M 150 482 L 450 482\" stroke=\"#cbd5e1\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 472 105 L 472 125 M 462 115 L 482 115 M 392 120 L 392 136 M 384 128 L 400 128\" stroke=\"#facc15\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n          <path d=\"M 248 232 C 185 245, 128 282, 105 348 L 245 335 Z\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 268 348 L 252 428 M 312 348 L 332 428\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 268 348 L 252 428 M 312 348 L 332 428\" stroke=\"#2563eb\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 222 434 C 218 468, 248 478, 285 470 C 292 460, 282 434, 255 434 Z\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <path d=\"M 322 434 C 315 468, 345 478, 395 468 C 402 458, 388 434, 355 434 Z\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <circle cx=\"260\" cy=\"395\" r=\"8\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <circle cx=\"322\" cy=\"395\" r=\"8\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 255 222 L 245 335 C 275 352, 315 352, 335 335 L 325 222 Z\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 262 248 L 290 278 L 318 248\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"5\"/>\n          <line x1=\"250\" y1=\"312\" x2=\"332\" y2=\"312\" stroke=\"#ef4444\" stroke-width=\"8\"/>\n          <path d=\"M 245 248 C 218 272, 208 302, 215 322\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 245 248 C 218 272, 208 302, 215 322\" fill=\"none\" stroke=\"url(#exGold)\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"215\" cy=\"336\" r=\"17\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 418 205 L 448 205 L 442 82 L 433 65 L 424 82 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"7\" stroke-linejoin=\"round\"/>\n          <line x1=\"402\" y1=\"205\" x2=\"462\" y2=\"205\" stroke=\"url(#exGold)\" stroke-width=\"12\" stroke-linecap=\"round\"/>\n          <line x1=\"402\" y1=\"205\" x2=\"462\" y2=\"205\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linecap=\"round\"/>\n          <circle cx=\"433\" cy=\"205\" r=\"7\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <path d=\"M 335 245 C 370 250, 398 242, 420 228\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 335 245 C 370 250, 398 242, 420 228\" fill=\"none\" stroke=\"url(#exGold)\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"432\" cy=\"222\" r=\"18\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"248\" cy=\"242\" rx=\"18\" ry=\"14\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"332\" cy=\"242\" rx=\"18\" ry=\"14\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 268 128 C 250 85, 195 72, 165 98 C 195 102, 228 112, 248 135 Z\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <path d=\"M 245 142 L 152 135 L 210 168 L 135 192 L 222 200 Z\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 238 190 C 238 118, 345 118, 348 190 L 332 222 L 245 215 Z\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <polygon points=\"292,136 300,148 292,160 284,148\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <path d=\"M 255 195 C 258 162, 338 162, 342 198 C 340 228, 260 228, 255 195 Z\" fill=\"#fed7aa\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 262 192 C 264 166, 332 166, 336 192 Z\" fill=\"#ffffff\"/>\n          <circle cx=\"285\" cy=\"182\" r=\"6\" fill=\"#22c55e\"/>\n          <circle cx=\"285\" cy=\"182\" r=\"3\" fill=\"#0f172a\"/>\n          <circle cx=\"318\" cy=\"182\" r=\"6\" fill=\"#22c55e\"/>\n          <circle cx=\"318\" cy=\"182\" r=\"3\" fill=\"#0f172a\"/>\n          <ellipse cx=\"338\" cy=\"196\" rx=\"8\" ry=\"5.5\" fill=\"#0f172a\"/>\n          <path d=\"M 288 212 Q 312 222, 326 210\" stroke=\"#0f172a\" stroke-width=\"5\" fill=\"none\"/>",
+    "steps": [
+      {
+        "title": "1. Adım: Altın Şövalye Miğferi Tepesi",
+        "instruction": "Sayfanın üst ortasına Sonic'in kafasını saran altın şövalye miğferini çiz.",
+        "voice": "Kağıdımızın üst ortasına Şövalye Sonic'in parlak altın miğferini çizelim!",
+        "svg": "<path d=\"M 238 190 C 238 118, 345 118, 348 190 L 332 222 L 245 215 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_excalibur/step_1.mp3"
+      },
+      {
+        "title": "2. Adım: Arkadan Çıkan Altın Miğfer Dikenleri",
+        "instruction": "Miğferin arkasından uzanan sivri şövalye diken kanatlarını yap.",
+        "voice": "Miğferin arkasına altın kanat dikenlerini ekleyelim.",
+        "svg": "<path d=\"M 245 142 L 152 135 L 210 168 L 135 192 L 222 200\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_excalibur/step_2.mp3"
+      },
+      {
+        "title": "3. Adım: Tepedeki Kırmızı Şövalye Tüyü!",
+        "instruction": "Miğferin tepesinden arkaya doğru dalgalanan şık kırmızı sorguç tüyünü yap.",
+        "voice": "Şövalye miğferinin tam tepesine kırmızı şövalye sorgucunu çizelim!",
+        "svg": "<path d=\"M 268 128 C 250 85, 195 72, 165 98 C 195 102, 228 112, 248 135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_excalibur/step_3.mp3"
+      },
+      {
+        "title": "4. Adım: Vizör Boşluğu, Gözler ve Şövalye Gülümsemesi",
+        "instruction": "Miğferin ön penceresinden bakan kararlı gözleri, siyah burnu ve gülümsemeyi çiz.",
+        "voice": "Miğferin açık penceresinden bakan cesur gözlerini ve kararlı gülümsemesini yapalım!",
+        "svg": "<path d=\"M 255 195 C 258 162, 338 162, 342 198 C 340 228, 260 228, 255 195 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><circle cx=\"285\" cy=\"182\" r=\"6\" fill=\"#0f172a\"/><circle cx=\"318\" cy=\"182\" r=\"6\" fill=\"#0f172a\"/><ellipse cx=\"338\" cy=\"196\" rx=\"8\" ry=\"5.5\" fill=\"#0f172a\"/><path d=\"M 288 212 Q 312 222, 326 210\" stroke=\"#0f172a\" stroke-width=\"5\" fill=\"none\"/>",
+        "audio": "audio/voices/cirak_sonic_excalibur/step_4.mp3"
+      },
+      {
+        "title": "5. Adım: Altın Göğüs Zırhı ve Kırmızı Pelerin!",
+        "instruction": "Başın altına altın şövalye zırh göğsünü ve arkasında dalgalanan kırmızı pelerini çiz.",
+        "voice": "Altına parlayan altın şövalye göğüs zırhını ve arkasına büyük kırmızı pelerini çizelim!",
+        "svg": "<path d=\"M 255 222 L 245 335 C 275 352, 315 352, 335 335 L 325 222 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/><path d=\"M 248 232 C 185 245, 128 282, 105 348 L 245 335\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_excalibur/step_5.mp3"
+      },
+      {
+        "title": "6. Adım: Zırhlı Omuz Kalkanları",
+        "instruction": "Her iki omzuna şövalye omuz kalkanları ekle.",
+        "voice": "İki omzuna koruyucu şövalye zırh kalkanları koyalım.",
+        "svg": "<ellipse cx=\"248\" cy=\"242\" rx=\"18\" ry=\"14\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/><ellipse cx=\"332\" cy=\"242\" rx=\"18\" ry=\"14\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/>",
+        "audio": "audio/voices/cirak_sonic_excalibur/step_6.mp3"
+      },
+      {
+        "title": "7. Adım: Sol El ve Kutsal Altın Kılıç Excalibur!",
+        "instruction": "Sağ tarafa ileri kaldırdığı kolunu ve elinde parlayan dev Excalibur kılıcını çiz!",
+        "voice": "İşte kutsal kılıç Excalibur! Sağ elinde gökyüzüne kaldırdığı dev altın kılıcı çizelim!",
+        "svg": "<path d=\"M 335 245 C 370 250, 398 242, 420 228\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/><circle cx=\"432\" cy=\"222\" r=\"18\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/><path d=\"M 418 205 L 448 205 L 442 82 L 433 65 L 424 82 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\" stroke-linejoin=\"round\"/><line x1=\"402\" y1=\"205\" x2=\"462\" y2=\"205\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_excalibur/step_7.mp3"
+      },
+      {
+        "title": "8. Adım: Sol Zırhlı Kol",
+        "instruction": "Sol kolunu şövalye duruşunda aşağı doğru çiz.",
+        "voice": "Sol kolunu da zırhlı eldiveniyle aşağıda tutarken çizelim.",
+        "svg": "<path d=\"M 245 248 C 218 272, 208 302, 215 322\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/><circle cx=\"215\" cy=\"336\" r=\"17\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/>",
+        "audio": "audio/voices/cirak_sonic_excalibur/step_8.mp3"
+      },
+      {
+        "title": "9. Adım: Altın Zırhlı Şövalye Çizmeleri",
+        "instruction": "Gövdesinin altına sağlam duran altın zırh bacaklarını ve zırh çizmelerini yap.",
+        "voice": "Sağlam altın zırhlı bacaklarını ve şövalye çizmelerini çizelim!",
+        "svg": "<path d=\"M 268 348 L 252 428 M 312 348 L 332 428\" stroke=\"#0f172a\" stroke-width=\"16\" stroke-linecap=\"round\"/><path d=\"M 222 434 C 218 468, 248 478, 285 470 C 292 460, 282 434, 255 434 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/><path d=\"M 322 434 C 315 468, 345 478, 395 468 C 402 458, 388 434, 355 434 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/>",
+        "audio": "audio/voices/cirak_sonic_excalibur/step_9.mp3"
+      },
+      {
+        "title": "10. Adım: Kılıcın Üzerindeki Işıltı",
+        "instruction": "Excalibur kılıcının namlusuna orta kesim çizgisi ve parıltılar yap.",
+        "voice": "Altın kılıcın ortasına şık kesim çizgisi ve sihirli parıltılar ekleyelim!",
+        "svg": "<line x1=\"433\" y1=\"88\" x2=\"433\" y2=\"195\" stroke=\"#0f172a\" stroke-width=\"4.5\"/><circle cx=\"433\" cy=\"205\" r=\"7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\"/>",
+        "audio": "audio/voices/cirak_sonic_excalibur/step_10.mp3"
+      },
+      {
+        "title": "11. Adım: Zırh Kemer Tokası",
+        "instruction": "Bel zırhına altın kemer çizgisi çek.",
+        "voice": "Bel kısmına kraliyet kemeri çizgisini çekelim.",
+        "svg": "<line x1=\"250\" y1=\"312\" x2=\"332\" y2=\"312\" stroke=\"#0f172a\" stroke-width=\"6\"/>",
+        "audio": "audio/voices/cirak_sonic_excalibur/step_11.mp3"
+      },
+      {
+        "title": "12. Adım: Kılıç Etrafı Altın Yıldızlar",
+        "instruction": "Kılıcın etrafına parlayan yıldızlar çiz.",
+        "voice": "Kutsal kılıcın parladığını gösteren yıldız ışıkları konduralım!",
+        "svg": "<path d=\"M 472 105 L 472 125 M 462 115 L 482 115 M 392 120 L 392 136 M 384 128 L 400 128\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_excalibur/step_12.mp3"
+      },
+      {
+        "title": "13. Adım: Pelerin Kıvrım Çizgisi",
+        "instruction": "Pelerinin rüzgarda kıvrıldığını gösteren çizgiler ekle.",
+        "voice": "Kırmızı pelerine rüzgar kıvrımı çizelim.",
+        "svg": "<path d=\"M 155 295 Q 195 305, 225 322\" stroke=\"#0f172a\" stroke-width=\"5\" fill=\"none\"/>",
+        "audio": "audio/voices/cirak_sonic_excalibur/step_13.mp3"
+      },
+      {
+        "title": "14. Adım: Çizme Dizlikleri",
+        "instruction": "Dizlere şövalye koruma daireleri koy.",
+        "voice": "Dizlerine zırh koruma dairelerini ekleyelim.",
+        "svg": "<circle cx=\"260\" cy=\"395\" r=\"8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/><circle cx=\"322\" cy=\"395\" r=\"8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_excalibur/step_14.mp3"
+      },
+      {
+        "title": "15. Adım: Miğfer Taşı",
+        "instruction": "Miğferin alnına elmas süs çiz.",
+        "voice": "Miğferin alnına küçük bir elmas taş konduralım.",
+        "svg": "<polygon points=\"292,136 300,148 292,160 284,148\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>",
+        "audio": "audio/voices/cirak_sonic_excalibur/step_15.mp3"
+      },
+      {
+        "title": "16. Adım: Göğüs Zırh Çizgisi",
+        "instruction": "Göğüs zırhına V çizgisi çek.",
+        "voice": "Göğüs zırhına V şeklinde zırh deseni çizelim.",
+        "svg": "<path d=\"M 262 248 L 290 278 L 318 248\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_excalibur/step_16.mp3"
+      },
+      {
+        "title": "17. Adım: Kale Zemini",
+        "instruction": "Ayaklarının altına düz taş kale zemin çizgisi çek.",
+        "voice": "Altına şövalye kalesinin taş zeminini çizelim.",
+        "svg": "<path d=\"M 150 482 L 450 482\" stroke=\"#0f172a\" stroke-width=\"7\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_excalibur/step_17.mp3"
+      },
+      {
+        "title": "18. Adım: Canlı Renklendirme (Parlak Altın Zırh & Kırmızı Pelerin!)",
+        "instruction": "Tebrikler Kıvanç! Şövalye Sonic'i parlak altın zırh, kırmızı pelerin ve altın Excalibur kılıcıyla boya!",
+        "voice": "Muhteşem oldu Kıvanç! Altın Şövalye Sonic krallığı korumaya hazır! Şimdi onu parlak altın sarısı zırhı ve kırmızı peleriniyle renklendir!",
+        "svg": "<defs>\n            <linearGradient id=\"exGold\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n              <stop offset=\"0%\" stop-color=\"#fef08a\"/>\n              <stop offset=\"50%\" stop-color=\"#facc15\"/>\n              <stop offset=\"100%\" stop-color=\"#ca8a04\"/>\n            </linearGradient>\n          </defs>\n          <path d=\"M 150 482 L 450 482\" stroke=\"#cbd5e1\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 472 105 L 472 125 M 462 115 L 482 115 M 392 120 L 392 136 M 384 128 L 400 128\" stroke=\"#facc15\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n          <path d=\"M 248 232 C 185 245, 128 282, 105 348 L 245 335 Z\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 268 348 L 252 428 M 312 348 L 332 428\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 268 348 L 252 428 M 312 348 L 332 428\" stroke=\"#2563eb\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 222 434 C 218 468, 248 478, 285 470 C 292 460, 282 434, 255 434 Z\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <path d=\"M 322 434 C 315 468, 345 478, 395 468 C 402 458, 388 434, 355 434 Z\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <circle cx=\"260\" cy=\"395\" r=\"8\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <circle cx=\"322\" cy=\"395\" r=\"8\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 255 222 L 245 335 C 275 352, 315 352, 335 335 L 325 222 Z\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 262 248 L 290 278 L 318 248\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"5\"/>\n          <line x1=\"250\" y1=\"312\" x2=\"332\" y2=\"312\" stroke=\"#ef4444\" stroke-width=\"8\"/>\n          <path d=\"M 245 248 C 218 272, 208 302, 215 322\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 245 248 C 218 272, 208 302, 215 322\" fill=\"none\" stroke=\"url(#exGold)\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"215\" cy=\"336\" r=\"17\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 418 205 L 448 205 L 442 82 L 433 65 L 424 82 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"7\" stroke-linejoin=\"round\"/>\n          <line x1=\"402\" y1=\"205\" x2=\"462\" y2=\"205\" stroke=\"url(#exGold)\" stroke-width=\"12\" stroke-linecap=\"round\"/>\n          <line x1=\"402\" y1=\"205\" x2=\"462\" y2=\"205\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linecap=\"round\"/>\n          <circle cx=\"433\" cy=\"205\" r=\"7\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <path d=\"M 335 245 C 370 250, 398 242, 420 228\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 335 245 C 370 250, 398 242, 420 228\" fill=\"none\" stroke=\"url(#exGold)\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"432\" cy=\"222\" r=\"18\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"248\" cy=\"242\" rx=\"18\" ry=\"14\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"332\" cy=\"242\" rx=\"18\" ry=\"14\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 268 128 C 250 85, 195 72, 165 98 C 195 102, 228 112, 248 135 Z\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <path d=\"M 245 142 L 152 135 L 210 168 L 135 192 L 222 200 Z\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 238 190 C 238 118, 345 118, 348 190 L 332 222 L 245 215 Z\" fill=\"url(#exGold)\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <polygon points=\"292,136 300,148 292,160 284,148\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <path d=\"M 255 195 C 258 162, 338 162, 342 198 C 340 228, 260 228, 255 195 Z\" fill=\"#fed7aa\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 262 192 C 264 166, 332 166, 336 192 Z\" fill=\"#ffffff\"/>\n          <circle cx=\"285\" cy=\"182\" r=\"6\" fill=\"#22c55e\"/>\n          <circle cx=\"285\" cy=\"182\" r=\"3\" fill=\"#0f172a\"/>\n          <circle cx=\"318\" cy=\"182\" r=\"6\" fill=\"#22c55e\"/>\n          <circle cx=\"318\" cy=\"182\" r=\"3\" fill=\"#0f172a\"/>\n          <ellipse cx=\"338\" cy=\"196\" rx=\"8\" ry=\"5.5\" fill=\"#0f172a\"/>\n          <path d=\"M 288 212 Q 312 222, 326 210\" stroke=\"#0f172a\" stroke-width=\"5\" fill=\"none\"/>",
+        "audio": "audio/voices/cirak_sonic_excalibur/step_18.mp3"
+      }
+    ]
+  },
+  {
+    "id": "cirak_sonic_prime_nine",
+    "categoryId": "sonic",
+    "name": "Sonic Prime: Tilki Nine",
+    "emoji": "🦾",
+    "level": 1,
+    "levelName": "Çırak",
+    "levelBadge": "🟢 Çırak",
+    "description": "Sonic Prime çizgi filminden Tails'ın robot kollu ikizi Nine! Gözlüğü, zırhı ve arkasından açılan 7 robotik pençe kuyruğu!",
+    "materials": "Resim kağıdı, kurşun kalem, silgi, turuncu, koyu gri, altın sarısı ve gök mavisi boyalar",
+    "welcomeText": "İşte Sonic Prime kahramanı! Merhaba Kıvanç! Yedi tane mekanik robot kuyruğa sahip çok havalı Nine'ı çizmeye hazır mısın?",
+    "welcomeAudio": "audio/voices/cirak_sonic_prime_nine/welcome.mp3",
+    "colors": [
+      {
+        "name": "Canlı Turuncu",
+        "hex": "#f97316"
+      },
+      {
+        "name": "Antrasit Gri",
+        "hex": "#475569"
+      },
+      {
+        "name": "Altın Sarısı",
+        "hex": "#facc15"
+      },
+      {
+        "name": "Koyu Siyah",
+        "hex": "#0f172a"
+      }
+    ],
+    "previewSvg": "<path d=\"M 160 482 L 440 482\" stroke=\"#cbd5e1\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 262 315 C 195 280, 145 240, 110 212 M 262 325 C 185 320, 130 302, 85 288 M 262 335 C 195 362, 145 380, 110 402 M 338 315 C 405 280, 455 240, 490 212 M 338 325 C 415 320, 470 302, 515 288 M 338 335 C 405 362, 455 380, 490 402\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"15\" stroke-linecap=\"round\"/>\n          <path d=\"M 262 315 C 195 280, 145 240, 110 212 M 262 325 C 185 320, 130 302, 85 288 M 262 335 C 195 362, 145 380, 110 402 M 338 315 C 405 280, 455 240, 490 212 M 338 325 C 415 320, 470 302, 515 288 M 338 335 C 405 362, 455 380, 490 402\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"8\" stroke-linecap=\"round\"/>\n          <path d=\"M 92 205 L 110 212 L 95 228 M 68 282 L 85 288 L 72 302 M 92 395 L 110 402 L 98 418 M 508 205 L 490 212 L 505 228 M 532 282 L 515 288 L 528 302 M 508 395 L 490 402 L 502 418\" fill=\"none\" stroke=\"#facc15\" stroke-width=\"7\" stroke-linejoin=\"round\"/>\n          <circle cx=\"155\" cy=\"245\" r=\"7\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"135\" cy=\"302\" r=\"7\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"445\" cy=\"245\" r=\"7\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"465\" cy=\"302\" r=\"7\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <path d=\"M 278 358 L 268 432 M 322 358 L 332 432\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 278 358 L 268 432 M 322 358 L 332 432\" stroke=\"#f97316\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 240 438 C 235 468, 265 478, 298 470 C 304 460, 294 438, 268 438 Z\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"268\" cy=\"434\" rx=\"14\" ry=\"8\" fill=\"#64748b\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 328 438 C 312 438, 305 460, 312 470 C 345 478, 375 468, 368 438 Z\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"332\" cy=\"434\" rx=\"14\" ry=\"8\" fill=\"#64748b\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 268 248 L 260 352 C 282 365, 318 365, 340 352 L 332 248 Z\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <path d=\"M 268 250 Q 300 280, 332 250 L 332 260 Q 300 292, 268 260 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <circle cx=\"300\" cy=\"310\" r=\"9\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 265 268 C 232 280, 212 302, 200 322\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 265 268 C 232 280, 212 302, 200 322\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"192\" cy=\"332\" r=\"17\" fill=\"#475569\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 335 268 C 368 280, 388 302, 400 322\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 335 268 C 368 280, 388 302, 400 322\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"408\" cy=\"332\" r=\"17\" fill=\"#475569\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 248 156 L 212 96 L 278 130 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <path d=\"M 352 156 L 388 96 L 322 130 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <path d=\"M 245 170 C 245 122, 355 122, 355 170 L 380 192 L 365 205 L 380 218 L 352 225 C 342 252, 258 252, 248 225 L 220 218 L 235 205 L 220 192 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 288 128 L 298 102 L 308 126 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 248 225 C 258 252, 342 252, 352 225 C 330 212, 270 212, 248 225 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <ellipse cx=\"278\" cy=\"186\" rx=\"14\" ry=\"18\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <ellipse cx=\"280\" cy=\"187\" rx=\"9\" ry=\"12\" fill=\"#38bdf8\"/>\n          <circle cx=\"280\" cy=\"187\" r=\"6\" fill=\"#0f172a\"/>\n          <circle cx=\"277\" cy=\"182\" r=\"3\" fill=\"#ffffff\"/>\n          <ellipse cx=\"322\" cy=\"186\" rx=\"14\" ry=\"18\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <ellipse cx=\"320\" cy=\"187\" rx=\"9\" ry=\"12\" fill=\"#38bdf8\"/>\n          <circle cx=\"320\" cy=\"187\" r=\"6\" fill=\"#0f172a\"/>\n          <circle cx=\"317\" cy=\"182\" r=\"3\" fill=\"#ffffff\"/>\n          <circle cx=\"300\" cy=\"212\" r=\"5.5\" fill=\"#0f172a\"/>\n          <path d=\"M 285 228 Q 305 234, 322 224\" stroke=\"#0f172a\" stroke-width=\"5.5\" fill=\"none\"/>\n          <rect x=\"262\" y=\"138\" width=\"34\" height=\"20\" rx=\"5\" fill=\"#475569\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <rect x=\"304\" y=\"138\" width=\"34\" height=\"20\" rx=\"5\" fill=\"#475569\" stroke=\"#0f172a\" stroke-width=\"6\"/>",
+    "steps": [
+      {
+        "title": "1. Adım: Tilki Kafa ve Sivri Yanak Tüyleri",
+        "instruction": "Sayfanın üst ortasına Tilki Nine'ın kafasını, kulaklarını ve keskin yanak tüylerini çiz.",
+        "voice": "Kağıdımızın üst ortasına Sonic Prime'dan Nine'ın tilki kafasını ve büyük kulaklarını çizelim!",
+        "svg": "<path d=\"M 245 170 C 245 122, 355 122, 355 170 L 380 192 L 365 205 L 380 218 L 352 225 C 342 252, 258 252, 248 225 L 220 218 L 235 205 L 220 192 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/><path d=\"M 248 156 L 212 96 L 278 130 M 352 156 L 388 96 L 322 130\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_prime_nine/step_1.mp3"
+      },
+      {
+        "title": "2. Adım: Nine'ın Koyu Tamirci Gözlüğü ve Çatık Gözler",
+        "instruction": "Alnına tamirci gözlüğünü, yüzüne ise keskin bakışlı mavi tilki gözlerini ve ağzı yap.",
+        "voice": "Alnına tamirci gözlüğünü ve yüzüne keskin bakışlı mavi gözlerini ekleyelim!",
+        "svg": "<rect x=\"262\" y=\"138\" width=\"34\" height=\"20\" rx=\"5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><rect x=\"304\" y=\"138\" width=\"34\" height=\"20\" rx=\"5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><ellipse cx=\"278\" cy=\"186\" rx=\"14\" ry=\"18\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><circle cx=\"280\" cy=\"187\" r=\"7\" fill=\"#0f172a\"/><ellipse cx=\"322\" cy=\"186\" rx=\"14\" ry=\"18\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><circle cx=\"320\" cy=\"187\" r=\"7\" fill=\"#0f172a\"/><circle cx=\"300\" cy=\"212\" r=\"5.5\" fill=\"#0f172a\"/><path d=\"M 285 228 Q 305 234, 322 224\" stroke=\"#0f172a\" stroke-width=\"5.5\" fill=\"none\"/>",
+        "audio": "audio/voices/cirak_sonic_prime_nine/step_2.mp3"
+      },
+      {
+        "title": "3. Adım: Koyu Siyah Yelek ve Robotik Göğüs",
+        "instruction": "Başın altına beyaz göğüs tüylerini ve havalı koyu gri Nine gövdesini yap.",
+        "voice": "Altına beyaz tüy yakasını ve siyah-gri teknolojik gövdesini çizelim!",
+        "svg": "<path d=\"M 268 248 L 260 352 C 282 365, 318 365, 340 352 L 332 248\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"9\"/><path d=\"M 268 250 Q 300 280, 332 250\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/>",
+        "audio": "audio/voices/cirak_sonic_prime_nine/step_3.mp3"
+      },
+      {
+        "title": "4. Adım: İki Yana Açılan Tilki Kolları",
+        "instruction": "İki yana açılmış kollarını ve gri eldivenlerini çiz.",
+        "voice": "İki yanına güçlü robotik eldivenli kollarını çizelim.",
+        "svg": "<path d=\"M 265 268 C 232 280, 212 302, 200 322\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/><circle cx=\"192\" cy=\"332\" r=\"17\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/><path d=\"M 335 268 C 368 280, 388 302, 400 322\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/><circle cx=\"408\" cy=\"332\" r=\"17\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/>",
+        "audio": "audio/voices/cirak_sonic_prime_nine/step_4.mp3"
+      },
+      {
+        "title": "5. Adım: Bacaklar ve Havalı Gri-Turuncu Ayakkabılar",
+        "instruction": "Bacaklarını ve özel siyah-turuncu ayakkabılarını çiz.",
+        "voice": "Bacaklarını ve şık ayakkabılarını yapalım.",
+        "svg": "<path d=\"M 278 358 L 268 432 M 322 358 L 332 432\" stroke=\"#0f172a\" stroke-width=\"16\" stroke-linecap=\"round\"/><path d=\"M 240 438 C 235 468, 265 478, 298 470 C 304 460, 294 438, 268 438 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/><path d=\"M 328 438 C 312 438, 305 460, 312 470 C 345 478, 375 468, 368 438 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/>",
+        "audio": "audio/voices/cirak_sonic_prime_nine/step_5.mp3"
+      },
+      {
+        "title": "6. Adım: Arkadan Açılan 3 Sol Robotik Pençe Kuyruk!",
+        "instruction": "Gövdesinin sol arkasından yay gibi açılan 3 mekanik çelik robot kol kuyruğunu yap!",
+        "voice": "İşte Nine'ı Nine yapan kısım! Sol arkasından örümcek gibi açılan mekanik robot kuyruklarını ve kıskaçlarını çizelim!",
+        "svg": "<path d=\"M 262 315 C 195 280, 145 240, 110 212 M 262 325 C 185 320, 130 302, 85 288 M 262 335 C 195 362, 145 380, 110 402\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"12\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_prime_nine/step_6.mp3"
+      },
+      {
+        "title": "7. Adım: Sol Kuyrukların Sivri Robot Kıskaçları",
+        "instruction": "Sol robot kolların uçlarına açılmış metal makas/pençe uçları çiz.",
+        "voice": "Robot kuyruklarının ucuna sarı-gri açılan robot pençelerini çizelim!",
+        "svg": "<path d=\"M 92 205 L 110 212 L 95 228 M 68 282 L 85 288 L 72 302 M 92 395 L 110 402 L 98 418\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_prime_nine/step_7.mp3"
+      },
+      {
+        "title": "8. Adım: Sağdan Açılan 3 Sağ Robotik Pençe Kuyruk!",
+        "instruction": "Sağ tarafa da eşleşen 3 mekanik robot kol ve uçlarına robot kıskaçları ekle!",
+        "voice": "Sağ tarafına da aynı güçle uzanan mekanik robot kuyruklarını ve metal pençelerini yapalım!",
+        "svg": "<path d=\"M 338 315 C 405 280, 455 240, 490 212 M 338 325 C 415 320, 470 302, 515 288 M 338 335 C 405 362, 455 380, 490 402\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"12\" stroke-linecap=\"round\"/><path d=\"M 508 205 L 490 212 L 505 228 M 532 282 L 515 288 L 528 302 M 508 395 L 490 402 L 502 418\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_prime_nine/step_8.mp3"
+      },
+      {
+        "title": "9. Adım: Kendi İki Normal Tilki Kuyruğu",
+        "instruction": "Robot kuyrukların ortasında duran normal tilki kuyruğunu da ekle.",
+        "voice": "Aralarından görünen kendi turuncu tilki kuyruğunu çizelim.",
+        "svg": "<path d=\"M 278 345 C 245 385, 222 410, 200 412\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_prime_nine/step_9.mp3"
+      },
+      {
+        "title": "10. Adım: Mekanik Eklem Halkaları",
+        "instruction": "Robot kuyruk kollarının üzerine eklem boğumu yuvarlakları çiz.",
+        "voice": "Robot kuyruklarına mekanik eklem halkaları konduralım.",
+        "svg": "<circle cx=\"155\" cy=\"245\" r=\"7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\"/><circle cx=\"135\" cy=\"302\" r=\"7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\"/><circle cx=\"445\" cy=\"245\" r=\"7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\"/><circle cx=\"465\" cy=\"302\" r=\"7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\"/>",
+        "audio": "audio/voices/cirak_sonic_prime_nine/step_10.mp3"
+      },
+      {
+        "title": "11. Adım: Alın Kâkül Tüyleri",
+        "instruction": "Gözlüğünün üstüne tilki kâkülünü yap.",
+        "voice": "Alnına sevimli tilki saç tutamlarını ekleyelim.",
+        "svg": "<path d=\"M 288 128 L 298 102 L 308 126\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_prime_nine/step_11.mp3"
+      },
+      {
+        "title": "12. Adım: Göz Çift Işıkları",
+        "instruction": "Gözlerin içine beyaz ışık parıltıları koy.",
+        "voice": "Gözlerine keskin beyaz ışık parlamaları ekleyelim.",
+        "svg": "<circle cx=\"277\" cy=\"182\" r=\"3\" fill=\"#ffffff\"/><circle cx=\"317\" cy=\"182\" r=\"3\" fill=\"#ffffff\"/>",
+        "audio": "audio/voices/cirak_sonic_prime_nine/step_12.mp3"
+      },
+      {
+        "title": "13. Adım: Yelek Düğmesi",
+        "instruction": "Yeleğine teknolojik enerji düğmesi çiz.",
+        "voice": "Göğsüne mavi enerji düğmesi çizelim.",
+        "svg": "<circle cx=\"300\" cy=\"310\" r=\"9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_prime_nine/step_13.mp3"
+      },
+      {
+        "title": "14. Adım: Bilek Manşetleri",
+        "instruction": "Ayak bileklerine çorap manşetleri ekle.",
+        "voice": "Ayak bileklerine manşet halkalarını yapalım.",
+        "svg": "<ellipse cx=\"268\" cy=\"434\" rx=\"14\" ry=\"8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/><ellipse cx=\"332\" cy=\"434\" rx=\"14\" ry=\"8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_prime_nine/step_14.mp3"
+      },
+      {
+        "title": "15. Adım: Gözlük Kayışı",
+        "instruction": "Gözlüğe parlama çizgisi çek.",
+        "voice": "Gözlüğüne cam parıltısı çizgisi çizelim.",
+        "svg": "<line x1=\"270\" y1=\"145\" x2=\"282\" y2=\"154\" stroke=\"#0f172a\" stroke-width=\"4\"/>",
+        "audio": "audio/voices/cirak_sonic_prime_nine/step_15.mp3"
+      },
+      {
+        "title": "16. Adım: Mekanik Kıvılcımlar",
+        "instruction": "Kıskaçların yanına elektrik kıvılcımı yap.",
+        "voice": "Robot kıskaçlarının yanına küçük yıldız kıvılcımı koyalım.",
+        "svg": "<path d=\"M 520 205 L 520 220 M 512 212 L 528 212\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_prime_nine/step_16.mp3"
+      },
+      {
+        "title": "17. Adım: Laboratuvar Zemini",
+        "instruction": "Ayaklarının altına düz zemin çizgisi çek.",
+        "voice": "Ayaklarının altına düz atölye zeminini çizelim.",
+        "svg": "<path d=\"M 160 482 L 440 482\" stroke=\"#0f172a\" stroke-width=\"7\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_prime_nine/step_17.mp3"
+      },
+      {
+        "title": "18. Adım: Canlı Renklendirme (Çelik Robot Kollar & Turuncu Nine!)",
+        "instruction": "Tebrikler Kıvanç! Nine'ı sıcak turuncu tüyler, koyu çelik gri ve sarı kıskaçlarla boya!",
+        "voice": "Harika oldu Kıvanç! Sonic Prime kahramanı Nine bütün robot kollarını açtı! Şimdi onu turuncu, koyu gri ve sarı pençelerle boya!",
+        "svg": "<path d=\"M 160 482 L 440 482\" stroke=\"#cbd5e1\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 262 315 C 195 280, 145 240, 110 212 M 262 325 C 185 320, 130 302, 85 288 M 262 335 C 195 362, 145 380, 110 402 M 338 315 C 405 280, 455 240, 490 212 M 338 325 C 415 320, 470 302, 515 288 M 338 335 C 405 362, 455 380, 490 402\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"15\" stroke-linecap=\"round\"/>\n          <path d=\"M 262 315 C 195 280, 145 240, 110 212 M 262 325 C 185 320, 130 302, 85 288 M 262 335 C 195 362, 145 380, 110 402 M 338 315 C 405 280, 455 240, 490 212 M 338 325 C 415 320, 470 302, 515 288 M 338 335 C 405 362, 455 380, 490 402\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"8\" stroke-linecap=\"round\"/>\n          <path d=\"M 92 205 L 110 212 L 95 228 M 68 282 L 85 288 L 72 302 M 92 395 L 110 402 L 98 418 M 508 205 L 490 212 L 505 228 M 532 282 L 515 288 L 528 302 M 508 395 L 490 402 L 502 418\" fill=\"none\" stroke=\"#facc15\" stroke-width=\"7\" stroke-linejoin=\"round\"/>\n          <circle cx=\"155\" cy=\"245\" r=\"7\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"135\" cy=\"302\" r=\"7\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"445\" cy=\"245\" r=\"7\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <circle cx=\"465\" cy=\"302\" r=\"7\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <path d=\"M 278 358 L 268 432 M 322 358 L 332 432\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 278 358 L 268 432 M 322 358 L 332 432\" stroke=\"#f97316\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <path d=\"M 240 438 C 235 468, 265 478, 298 470 C 304 460, 294 438, 268 438 Z\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"268\" cy=\"434\" rx=\"14\" ry=\"8\" fill=\"#64748b\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 328 438 C 312 438, 305 460, 312 470 C 345 478, 375 468, 368 438 Z\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"332\" cy=\"434\" rx=\"14\" ry=\"8\" fill=\"#64748b\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 268 248 L 260 352 C 282 365, 318 365, 340 352 L 332 248 Z\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"9\"/>\n          <path d=\"M 268 250 Q 300 280, 332 250 L 332 260 Q 300 292, 268 260 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <circle cx=\"300\" cy=\"310\" r=\"9\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 265 268 C 232 280, 212 302, 200 322\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 265 268 C 232 280, 212 302, 200 322\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"192\" cy=\"332\" r=\"17\" fill=\"#475569\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 335 268 C 368 280, 388 302, 400 322\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n          <path d=\"M 335 268 C 368 280, 388 302, 400 322\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n          <circle cx=\"408\" cy=\"332\" r=\"17\" fill=\"#475569\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <path d=\"M 248 156 L 212 96 L 278 130 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <path d=\"M 352 156 L 388 96 L 322 130 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <path d=\"M 245 170 C 245 122, 355 122, 355 170 L 380 192 L 365 205 L 380 218 L 352 225 C 342 252, 258 252, 248 225 L 220 218 L 235 205 L 220 192 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"9\" stroke-linejoin=\"round\"/>\n          <path d=\"M 288 128 L 298 102 L 308 126 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 248 225 C 258 252, 342 252, 352 225 C 330 212, 270 212, 248 225 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <ellipse cx=\"278\" cy=\"186\" rx=\"14\" ry=\"18\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <ellipse cx=\"280\" cy=\"187\" rx=\"9\" ry=\"12\" fill=\"#38bdf8\"/>\n          <circle cx=\"280\" cy=\"187\" r=\"6\" fill=\"#0f172a\"/>\n          <circle cx=\"277\" cy=\"182\" r=\"3\" fill=\"#ffffff\"/>\n          <ellipse cx=\"322\" cy=\"186\" rx=\"14\" ry=\"18\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <ellipse cx=\"320\" cy=\"187\" rx=\"9\" ry=\"12\" fill=\"#38bdf8\"/>\n          <circle cx=\"320\" cy=\"187\" r=\"6\" fill=\"#0f172a\"/>\n          <circle cx=\"317\" cy=\"182\" r=\"3\" fill=\"#ffffff\"/>\n          <circle cx=\"300\" cy=\"212\" r=\"5.5\" fill=\"#0f172a\"/>\n          <path d=\"M 285 228 Q 305 234, 322 224\" stroke=\"#0f172a\" stroke-width=\"5.5\" fill=\"none\"/>\n          <rect x=\"262\" y=\"138\" width=\"34\" height=\"20\" rx=\"5\" fill=\"#475569\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <rect x=\"304\" y=\"138\" width=\"34\" height=\"20\" rx=\"5\" fill=\"#475569\" stroke=\"#0f172a\" stroke-width=\"6\"/>",
+        "audio": "audio/voices/cirak_sonic_prime_nine/step_18.mp3"
+      }
+    ]
+  },
+  {
+    "id": "cirak_sonic_chao_dark_melek",
+    "categoryId": "sonic",
+    "name": "Melek ve Şeytan Chao",
+    "emoji": "😇",
+    "level": 1,
+    "levelName": "Çırak",
+    "levelBadge": "🟢 Çırak",
+    "description": "Bir yanda altın haleli kar beyazı Melek Chao, diğer yanda mor boynuzlu sevimli Karanlık Şeytan Chao!",
+    "materials": "Resim kağıdı, kurşun kalem, silgi, beyaz, altın sarısı, siyah, mor ve açık mavi boyalar",
+    "welcomeText": "İki tatlı ikiz! Merhaba Kıvanç! Kar beyazı Melek Chao ile sevimli siyah Şeytan Chao ikilisini yan yana çizelim!",
+    "welcomeAudio": "audio/voices/cirak_sonic_chao_dark_melek/welcome.mp3",
+    "colors": [
+      {
+        "name": "Parlak Beyaz",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Altın Sarısı",
+        "hex": "#facc15"
+      },
+      {
+        "name": "Gece Siyahı",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "Parlak Mor",
+        "hex": "#a855f7"
+      }
+    ],
+    "previewSvg": "<path d=\"M 80 412 Q 300 400, 520 412 L 520 440 L 80 440 Z\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 300 340 A 20 20 0 1 0 300 380 A 20 20 0 1 0 300 340 Z M 300 350 A 10 10 0 1 1 300 370 A 10 10 0 1 1 300 350 Z\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 300 265 C 296 254, 282 254, 282 266 C 282 276, 300 288, 300 288 C 300 288, 318 276, 318 266 C 318 254, 304 254, 300 265 Z\" fill=\"#f43f5e\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 148 310 C 110 278, 95 312, 128 335 M 212 310 C 250 278, 265 312, 232 335 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <ellipse cx=\"156\" cy=\"384\" rx=\"16\" ry=\"11\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"204\" cy=\"384\" rx=\"16\" ry=\"11\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"180\" cy=\"330\" rx=\"35\" ry=\"44\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"180\" cy=\"336\" rx=\"18\" ry=\"22\" fill=\"#e0f2fe\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <ellipse cx=\"140\" cy=\"318\" rx=\"10\" ry=\"15\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\" transform=\"rotate(35 140 318)\"/>\n          <ellipse cx=\"220\" cy=\"318\" rx=\"10\" ry=\"15\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\" transform=\"rotate(-35 220 318)\"/>\n          <ellipse cx=\"180\" cy=\"135\" rx=\"34\" ry=\"10\" fill=\"none\" stroke=\"#facc15\" stroke-width=\"8\"/>\n          <path d=\"M 122 242 C 115 190, 165 178, 180 158 C 195 178, 245 190, 238 242 C 232 278, 128 278, 122 242 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <ellipse cx=\"158\" cy=\"222\" rx=\"11\" ry=\"15\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <circle cx=\"159\" cy=\"222\" r=\"7\" fill=\"#38bdf8\"/>\n          <circle cx=\"156\" cy=\"218\" r=\"3\" fill=\"#ffffff\"/>\n          <ellipse cx=\"202\" cy=\"222\" rx=\"11\" ry=\"15\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <circle cx=\"201\" cy=\"222\" r=\"7\" fill=\"#38bdf8\"/>\n          <circle cx=\"198\" cy=\"218\" r=\"3\" fill=\"#ffffff\"/>\n          <ellipse cx=\"140\" cy=\"236\" rx=\"7\" ry=\"4.5\" fill=\"#fda4af\"/>\n          <ellipse cx=\"220\" cy=\"236\" rx=\"7\" ry=\"4.5\" fill=\"#fda4af\"/>\n          <path d=\"M 172 244 Q 180 252, 188 244\" stroke=\"#0f172a\" stroke-width=\"5\" fill=\"none\"/>\n          <path d=\"M 388 310 L 348 282 L 358 315 L 345 330 L 385 332 M 452 310 L 492 282 L 482 315 L 495 330 L 455 332 Z\" fill=\"#a855f7\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linejoin=\"round\"/>\n          <ellipse cx=\"396\" cy=\"384\" rx=\"16\" ry=\"11\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"444\" cy=\"384\" rx=\"16\" ry=\"11\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"420\" cy=\"330\" rx=\"35\" ry=\"44\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"420\" cy=\"336\" rx=\"18\" ry=\"22\" fill=\"#475569\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <ellipse cx=\"380\" cy=\"318\" rx=\"10\" ry=\"15\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"6\" transform=\"rotate(35 380 318)\"/>\n          <ellipse cx=\"460\" cy=\"318\" rx=\"10\" ry=\"15\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"6\" transform=\"rotate(-35 460 318)\"/>\n          <polygon points=\"420,108 426,120 438,120 429,128 432,140 420,132 408,140 411,128 402,120 414,120\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n          <path d=\"M 382 175 L 368 140 L 398 164 M 458 175 L 472 140 L 442 164 Z\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 362 242 C 355 190, 405 178, 420 158 C 435 178, 485 190, 478 242 C 472 278, 368 278, 362 242 Z\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <ellipse cx=\"398\" cy=\"222\" rx=\"11\" ry=\"15\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <circle cx=\"399\" cy=\"222\" r=\"7\" fill=\"#ef4444\"/>\n          <circle cx=\"396\" cy=\"218\" r=\"3\" fill=\"#ffffff\"/>\n          <ellipse cx=\"442\" cy=\"222\" rx=\"11\" ry=\"15\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <circle cx=\"441\" cy=\"222\" r=\"7\" fill=\"#ef4444\"/>\n          <circle cx=\"438\" cy=\"218\" r=\"3\" fill=\"#ffffff\"/>\n          <path d=\"M 388 202 L 408 210 M 452 202 L 432 210\" stroke=\"#ef4444\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n          <path d=\"M 410 245 Q 420 255, 430 245\" stroke=\"#ffffff\" stroke-width=\"5\" fill=\"none\"/>",
+    "steps": [
+      {
+        "title": "1. Adım: Sol Tarafta Melek Chao'nun Yuvarlak Kafası",
+        "instruction": "Sayfanın sol tarafına Melek Chao'nun tatlı yuvarlak başını çiz.",
+        "voice": "Kağıdımızın sol tarafına melek Chao'nun pürüzsüz yuvarlak kafasını çizelim!",
+        "svg": "<path d=\"M 122 242 C 115 190, 165 178, 180 158 C 195 178, 245 190, 238 242 C 232 278, 128 278, 122 242 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_chao_dark_melek/step_1.mp3"
+      },
+      {
+        "title": "2. Adım: Melek Chao'nun Parlayan Altın Halesi",
+        "instruction": "Melek Chao'nun kafasının tam üstüne süzülen altın hale halkasını yap.",
+        "voice": "Melek Chao'nun başının üstüne havada süzülen altın ışık halesini çizelim!",
+        "svg": "<ellipse cx=\"180\" cy=\"135\" rx=\"34\" ry=\"10\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/>",
+        "audio": "audio/voices/cirak_sonic_chao_dark_melek/step_2.mp3"
+      },
+      {
+        "title": "3. Adım: Melek Chao Gözleri ve Tatlı Gülüş",
+        "instruction": "Yüzüne parlak büyük gözler ve mutlu melek gülümsemesi ekle.",
+        "voice": "Yüzüne sevimli parıltılı melek gözlerini ve tatlı gülüşünü yapalım.",
+        "svg": "<ellipse cx=\"158\" cy=\"222\" rx=\"11\" ry=\"15\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/><circle cx=\"159\" cy=\"222\" r=\"7\" fill=\"#0f172a\"/><circle cx=\"156\" cy=\"218\" r=\"3\" fill=\"#ffffff\"/><ellipse cx=\"202\" cy=\"222\" rx=\"11\" ry=\"15\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/><circle cx=\"201\" cy=\"222\" r=\"7\" fill=\"#0f172a\"/><circle cx=\"198\" cy=\"218\" r=\"3\" fill=\"#ffffff\"/><path d=\"M 172 244 Q 180 252, 188 244\" stroke=\"#0f172a\" stroke-width=\"5\" fill=\"none\"/>",
+        "audio": "audio/voices/cirak_sonic_chao_dark_melek/step_3.mp3"
+      },
+      {
+        "title": "4. Adım: Melek Chao Gövdesi, Kanatları ve Ayakları",
+        "instruction": "Altına tombul gövdeyi, iki yanına beyaz melek kanatlarını, kolları ve ayakları çiz.",
+        "voice": "Altına gövdesini, beyaz melek kanatlarını, minik kol ve ayaklarını ekleyelim!",
+        "svg": "<ellipse cx=\"180\" cy=\"330\" rx=\"35\" ry=\"44\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/><path d=\"M 148 310 C 110 278, 95 312, 128 335 M 212 310 C 250 278, 265 312, 232 335\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/><ellipse cx=\"156\" cy=\"384\" rx=\"16\" ry=\"11\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/><ellipse cx=\"204\" cy=\"384\" rx=\"16\" ry=\"11\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/>",
+        "audio": "audio/voices/cirak_sonic_chao_dark_melek/step_4.mp3"
+      },
+      {
+        "title": "5. Adım: Sağ Tarafta Karanlık Şeytan Chao Kafası!",
+        "instruction": "Sayfanın sağ tarafına ikizi olan siyah Şeytan Chao'nun iki boynuzlu kafasını çiz.",
+        "voice": "Şimdi sağ tarafına ikiz arkadaşı minik siyah Şeytan Chao'nun kafasını çizelim!",
+        "svg": "<path d=\"M 362 242 C 355 190, 405 178, 420 158 C 435 178, 485 190, 478 242 C 472 278, 368 278, 362 242 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/><path d=\"M 382 175 L 368 140 L 398 164 M 458 175 L 472 140 L 442 164\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_chao_dark_melek/step_5.mp3"
+      },
+      {
+        "title": "6. Adım: Şeytan Chao Üstündeki Dikenli Duygu Topu",
+        "instruction": "Kafasının üstüne kırmızı-mor dikenli topunu koy.",
+        "voice": "Başının tepesine havada süzülen kırmızı dikenli topunu yapalım!",
+        "svg": "<polygon points=\"420,108 426,120 438,120 429,128 432,140 420,132 408,140 411,128 402,120 414,120\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_chao_dark_melek/step_6.mp3"
+      },
+      {
+        "title": "7. Adım: Yaramaz Gülümseyen Şeytan Chao Gözleri",
+        "instruction": "Yüzüne yaramaz ama çok sevimli kaşlı gözler ve sırıtan ağız çiz.",
+        "voice": "Yüzüne sevimli yaramaz kaşları, parıltılı gözleri ve tatlı sırıtışını çizelim!",
+        "svg": "<ellipse cx=\"398\" cy=\"222\" rx=\"11\" ry=\"15\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/><circle cx=\"399\" cy=\"222\" r=\"7\" fill=\"#0f172a\"/><circle cx=\"396\" cy=\"218\" r=\"3\" fill=\"#ffffff\"/><ellipse cx=\"442\" cy=\"222\" rx=\"11\" ry=\"15\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/><circle cx=\"441\" cy=\"222\" r=\"7\" fill=\"#0f172a\"/><circle cx=\"438\" cy=\"218\" r=\"3\" fill=\"#ffffff\"/><path d=\"M 388 202 L 408 210 M 452 202 L 432 210\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><path d=\"M 410 245 Q 420 255, 430 245\" stroke=\"#0f172a\" stroke-width=\"5\" fill=\"none\"/>",
+        "audio": "audio/voices/cirak_sonic_chao_dark_melek/step_7.mp3"
+      },
+      {
+        "title": "8. Adım: Şeytan Chao Gövdesi ve Yarasa Kanatları",
+        "instruction": "Altına siyah tombul gövdeyi ve iki yanına küçük mor yarasa kanatlarını yap.",
+        "voice": "Altına tombul gövdesini ve iki yanına minik mor yarasa kanatlarını ekleyelim!",
+        "svg": "<ellipse cx=\"420\" cy=\"330\" rx=\"35\" ry=\"44\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"8\"/><path d=\"M 388 310 L 348 282 L 358 315 L 345 330 L 385 332 M 452 310 L 492 282 L 482 315 L 495 330 L 455 332\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linejoin=\"round\"/><ellipse cx=\"396\" cy=\"384\" rx=\"16\" ry=\"11\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/><ellipse cx=\"444\" cy=\"384\" rx=\"16\" ry=\"11\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"7\"/>",
+        "audio": "audio/voices/cirak_sonic_chao_dark_melek/step_8.mp3"
+      },
+      {
+        "title": "9. Adım: Melek Chao'nun Sevimli Kolları",
+        "instruction": "Melek Chao'ya küçük kollar ekle.",
+        "voice": "Melek Chao'nun minik yuvarlak kollarını çizelim.",
+        "svg": "<ellipse cx=\"140\" cy=\"318\" rx=\"10\" ry=\"15\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\" transform=\"rotate(35 140 318)\"/><ellipse cx=\"220\" cy=\"318\" rx=\"10\" ry=\"15\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\" transform=\"rotate(-35 220 318)\"/>",
+        "audio": "audio/voices/cirak_sonic_chao_dark_melek/step_9.mp3"
+      },
+      {
+        "title": "10. Adım: Şeytan Chao'nun Sevimli Kolları ve Kuyruğu",
+        "instruction": "Şeytan Chao'nun kollarını ve minik ok uçlu kuyruğunu yap.",
+        "voice": "Şeytan Chao'nun minik kollarını ve sivri kuyruğunu da yapalım!",
+        "svg": "<ellipse cx=\"380\" cy=\"318\" rx=\"10\" ry=\"15\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\" transform=\"rotate(35 380 318)\"/><ellipse cx=\"460\" cy=\"318\" rx=\"10\" ry=\"15\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\" transform=\"rotate(-35 460 318)\"/><path d=\"M 455 352 Q 490 365, 500 342 L 508 335 L 505 348\" stroke=\"#0f172a\" stroke-width=\"5\" fill=\"none\"/>",
+        "audio": "audio/voices/cirak_sonic_chao_dark_melek/step_10.mp3"
+      },
+      {
+        "title": "11. Adım: Göbek Lekeleri",
+        "instruction": "Her iki bebeğin karnına oval göbek lekesi yap.",
+        "voice": "İkisinin de göbeğine yumuşak karın ovalini ekleyelim.",
+        "svg": "<ellipse cx=\"180\" cy=\"336\" rx=\"18\" ry=\"22\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/><ellipse cx=\"420\" cy=\"336\" rx=\"18\" ry=\"22\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_chao_dark_melek/step_11.mp3"
+      },
+      {
+        "title": "12. Adım: Ortadaki Kalp Bağlantısı",
+        "instruction": "İki kardeşin ortasına ikisinin birbirini çok sevdiğini gösteren kalp ekle.",
+        "voice": "Aralarına ikisinin çok iyi kardeş olduğunu gösteren bir kalp çizelim!",
+        "svg": "<path d=\"M 300 265 C 296 254, 282 254, 282 266 C 282 276, 300 288, 300 288 C 300 288, 318 276, 318 266 C 318 254, 304 254, 300 265 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/>",
+        "audio": "audio/voices/cirak_sonic_chao_dark_melek/step_12.mp3"
+      },
+      {
+        "title": "13. Adım: Altın Yüzük",
+        "instruction": "Alt ortaya ikisinin paylaştığı Altın Yüzüğü çiz.",
+        "voice": "Alt ortaya ikisinin birlikte topladığı Altın Yüzüğü yapalım.",
+        "svg": "<circle cx=\"300\" cy=\"360\" r=\"20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><circle cx=\"300\" cy=\"360\" r=\"10\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\"/>",
+        "audio": "audio/voices/cirak_sonic_chao_dark_melek/step_13.mp3"
+      },
+      {
+        "title": "14. Adım: Melek Parıltıları",
+        "instruction": "Melek Chao'nun halesine yıldız ışığı ekle.",
+        "voice": "Melek Chao'nun etrafına yıldız parıltıları koyalım.",
+        "svg": "<path d=\"M 135 125 L 135 142 M 126 134 L 144 134\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_chao_dark_melek/step_14.mp3"
+      },
+      {
+        "title": "15. Adım: Şeytan Chao Kıvılcımları",
+        "instruction": "Şeytan Chao'nun başına da küçük parıltı yıldızı ekle.",
+        "voice": "Şeytan Chao'nun yanına da minik kıvılcım çizelim.",
+        "svg": "<path d=\"M 480 120 L 480 135 M 472 128 L 488 128\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_chao_dark_melek/step_15.mp3"
+      },
+      {
+        "title": "16. Adım: Yanak Allıkları",
+        "instruction": "Melek Chao'nun yanaklarına sevimli yuvarlak allıklar koy.",
+        "voice": "Melek Chao'ya tatlı pembe yanak allıkları ekleyelim.",
+        "svg": "<ellipse cx=\"140\" cy=\"236\" rx=\"7\" ry=\"4.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3\"/><ellipse cx=\"220\" cy=\"236\" rx=\"7\" ry=\"4.5\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3\"/>",
+        "audio": "audio/voices/cirak_sonic_chao_dark_melek/step_16.mp3"
+      },
+      {
+        "title": "17. Adım: Chao Bahçesi Zemini",
+        "instruction": "En alta yumuşak Chao Bahçesi çim çizgisini çek.",
+        "voice": "En alta ikisinin oynadığı yumuşak Chao bahçesi çimlerini çizelim!",
+        "svg": "<path d=\"M 80 412 Q 300 400, 520 412\" stroke=\"#0f172a\" stroke-width=\"7\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_chao_dark_melek/step_17.mp3"
+      },
+      {
+        "title": "18. Adım: Canlı Renklendirme (Kar Beyazı Melek & Siyah-Mor Şeytan Chao!)",
+        "instruction": "Tebrikler Kıvanç! İki sevimli Chao'yu beyaz-altın ve siyah-mor zıt renkleriyle canlandır!",
+        "voice": "Harika oldu Kıvanç! Melek ve Şeytan Chao yan yana çok şirin görünüyor! Şimdi ikisini kendi ışıl ışıl renkleriyle renklendir!",
+        "svg": "<path d=\"M 80 412 Q 300 400, 520 412 L 520 440 L 80 440 Z\" fill=\"#86efac\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 300 340 A 20 20 0 1 0 300 380 A 20 20 0 1 0 300 340 Z M 300 350 A 10 10 0 1 1 300 370 A 10 10 0 1 1 300 350 Z\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 300 265 C 296 254, 282 254, 282 266 C 282 276, 300 288, 300 288 C 300 288, 318 276, 318 266 C 318 254, 304 254, 300 265 Z\" fill=\"#f43f5e\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <path d=\"M 148 310 C 110 278, 95 312, 128 335 M 212 310 C 250 278, 265 312, 232 335 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <ellipse cx=\"156\" cy=\"384\" rx=\"16\" ry=\"11\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"204\" cy=\"384\" rx=\"16\" ry=\"11\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"180\" cy=\"330\" rx=\"35\" ry=\"44\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"180\" cy=\"336\" rx=\"18\" ry=\"22\" fill=\"#e0f2fe\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <ellipse cx=\"140\" cy=\"318\" rx=\"10\" ry=\"15\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\" transform=\"rotate(35 140 318)\"/>\n          <ellipse cx=\"220\" cy=\"318\" rx=\"10\" ry=\"15\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"6\" transform=\"rotate(-35 220 318)\"/>\n          <ellipse cx=\"180\" cy=\"135\" rx=\"34\" ry=\"10\" fill=\"none\" stroke=\"#facc15\" stroke-width=\"8\"/>\n          <path d=\"M 122 242 C 115 190, 165 178, 180 158 C 195 178, 245 190, 238 242 C 232 278, 128 278, 122 242 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <ellipse cx=\"158\" cy=\"222\" rx=\"11\" ry=\"15\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <circle cx=\"159\" cy=\"222\" r=\"7\" fill=\"#38bdf8\"/>\n          <circle cx=\"156\" cy=\"218\" r=\"3\" fill=\"#ffffff\"/>\n          <ellipse cx=\"202\" cy=\"222\" rx=\"11\" ry=\"15\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <circle cx=\"201\" cy=\"222\" r=\"7\" fill=\"#38bdf8\"/>\n          <circle cx=\"198\" cy=\"218\" r=\"3\" fill=\"#ffffff\"/>\n          <ellipse cx=\"140\" cy=\"236\" rx=\"7\" ry=\"4.5\" fill=\"#fda4af\"/>\n          <ellipse cx=\"220\" cy=\"236\" rx=\"7\" ry=\"4.5\" fill=\"#fda4af\"/>\n          <path d=\"M 172 244 Q 180 252, 188 244\" stroke=\"#0f172a\" stroke-width=\"5\" fill=\"none\"/>\n          <path d=\"M 388 310 L 348 282 L 358 315 L 345 330 L 385 332 M 452 310 L 492 282 L 482 315 L 495 330 L 455 332 Z\" fill=\"#a855f7\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linejoin=\"round\"/>\n          <ellipse cx=\"396\" cy=\"384\" rx=\"16\" ry=\"11\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"444\" cy=\"384\" rx=\"16\" ry=\"11\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"7\"/>\n          <ellipse cx=\"420\" cy=\"330\" rx=\"35\" ry=\"44\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"8\"/>\n          <ellipse cx=\"420\" cy=\"336\" rx=\"18\" ry=\"22\" fill=\"#475569\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n          <ellipse cx=\"380\" cy=\"318\" rx=\"10\" ry=\"15\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"6\" transform=\"rotate(35 380 318)\"/>\n          <ellipse cx=\"460\" cy=\"318\" rx=\"10\" ry=\"15\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"6\" transform=\"rotate(-35 460 318)\"/>\n          <polygon points=\"420,108 426,120 438,120 429,128 432,140 420,132 408,140 411,128 402,120 414,120\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n          <path d=\"M 382 175 L 368 140 L 398 164 M 458 175 L 472 140 L 442 164 Z\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n          <path d=\"M 362 242 C 355 190, 405 178, 420 158 C 435 178, 485 190, 478 242 C 472 278, 368 278, 362 242 Z\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"8\" stroke-linejoin=\"round\"/>\n          <ellipse cx=\"398\" cy=\"222\" rx=\"11\" ry=\"15\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <circle cx=\"399\" cy=\"222\" r=\"7\" fill=\"#ef4444\"/>\n          <circle cx=\"396\" cy=\"218\" r=\"3\" fill=\"#ffffff\"/>\n          <ellipse cx=\"442\" cy=\"222\" rx=\"11\" ry=\"15\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n          <circle cx=\"441\" cy=\"222\" r=\"7\" fill=\"#ef4444\"/>\n          <circle cx=\"438\" cy=\"218\" r=\"3\" fill=\"#ffffff\"/>\n          <path d=\"M 388 202 L 408 210 M 452 202 L 432 210\" stroke=\"#ef4444\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n          <path d=\"M 410 245 Q 420 255, 430 245\" stroke=\"#ffffff\" stroke-width=\"5\" fill=\"none\"/>",
+        "audio": "audio/voices/cirak_sonic_chao_dark_melek/step_18.mp3"
+      }
+    ]
+  },
+  {
+    "id": "cirak_sonic_motobug",
+    "categoryId": "sonic",
+    "name": "Robot Uğur Böceği Motobug",
+    "emoji": "🐞",
+    "level": 1,
+    "levelName": "Çırak",
+    "levelBadge": "🟢 Çırak",
+    "description": "Dr. Eggman'in hızlı ve sevimli robot uğur böceği Motobug'ı adım adım çiz!",
+    "materials": "Kağıt, siyah kalem, kırmızı, sarı ve gri boya",
+    "welcomeText": "Merhaba Kıvanç! Bugün Dr. Eggman'in en bilinen robotu Motobug'ı çizeceğiz. Kırmızı uğur böceği kabuğu ve dev tekerleğiyle çok eğlenceli olacak!",
+    "welcomeAudio": "audio/voices/cirak_sonic_motobug/welcome.mp3",
+    "colors": [
+      {
+        "name": "Uğur Böceği Kırmızısı",
+        "hex": "#dc2626"
+      },
+      {
+        "name": "Zırh Grisi",
+        "hex": "#94a3b8"
+      },
+      {
+        "name": "Lamba Sarısı",
+        "hex": "#facc15"
+      },
+      {
+        "name": "Tekerlek Siyahı",
+        "hex": "#1e293b"
+      }
+    ],
+    "previewSvg": "<defs>\n      <linearGradient id=\"mb_shell\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#f87171\"/>\n        <stop offset=\"55%\" stop-color=\"#dc2626\"/>\n        <stop offset=\"100%\" stop-color=\"#991b1b\"/>\n      </linearGradient>\n      <linearGradient id=\"mb_metal\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#e2e8f0\"/>\n        <stop offset=\"100%\" stop-color=\"#64748b\"/>\n      </linearGradient>\n      <radialGradient id=\"mb_tire\" cx=\"45%\" cy=\"40%\" r=\"60%\">\n        <stop offset=\"0%\" stop-color=\"#475569\"/>\n        <stop offset=\"100%\" stop-color=\"#0f172a\"/>\n      </radialGradient>\n    </defs>\n    <ellipse cx=\"305\" cy=\"494\" rx=\"145\" ry=\"16\" fill=\"#cbd5e1\" opacity=\"0.65\"/>\n    <path d=\"M 435,295 L 502,258 L 516,282 L 448,322 Z\" fill=\"url(#mb_metal)\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 518,252 C 530,228 564,230 562,256 C 580,265 568,295 544,288 C 530,295 512,276 518,252 Z\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linejoin=\"round\"/>\n    <path d=\"M 192,208 Q 168,145 135,152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"10\" stroke-linecap=\"round\"/>\n    <path d=\"M 192,208 Q 168,145 135,152\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"4.5\" stroke-linecap=\"round\"/>\n    <circle cx=\"128\" cy=\"154\" r=\"13\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <circle cx=\"124\" cy=\"150\" r=\"4\" fill=\"#ffffff\"/>\n    <circle cx=\"305\" cy=\"405\" r=\"84\" fill=\"url(#mb_tire)\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n    <circle cx=\"305\" cy=\"405\" r=\"52\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <path d=\"M 305,353 L 305,457 M 253,405 L 357,405\" fill=\"none\" stroke=\"#475569\" stroke-width=\"6\" stroke-linecap=\"round\"/>\n    <circle cx=\"305\" cy=\"405\" r=\"20\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <path d=\"M 135,345 C 145,165 445,165 455,345 Q 300,362 135,345 Z\" fill=\"url(#mb_shell)\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 142,272 Q 195,270 218,348 Q 175,352 135,345 C 138,315 140,292 142,272 Z\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 235,205 Q 325,248 446,338\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linecap=\"round\"/>\n    <circle cx=\"290\" cy=\"212\" r=\"24\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n    <circle cx=\"385\" cy=\"245\" r=\"26\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n    <circle cx=\"330\" cy=\"296\" r=\"20\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n    <circle cx=\"418\" cy=\"306\" r=\"15\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"3.5\"/>\n    <path d=\"M 255,196 Q 315,180 375,202\" fill=\"none\" stroke=\"#fca5a5\" stroke-width=\"7\" stroke-linecap=\"round\" opacity=\"0.75\"/>\n    <path d=\"M 148,266 L 204,296 L 152,324 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"170\" cy=\"296\" r=\"9\" fill=\"#0f172a\"/>\n    <circle cx=\"167\" cy=\"293\" r=\"3\" fill=\"#ffffff\"/>\n    <path d=\"M 136,342 L 88,356 L 106,396 L 195,382 Z\" fill=\"url(#mb_metal)\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 102,354 L 78,342 L 94,376 Z\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linejoin=\"round\"/>\n    <path d=\"M 100,378 L 76,392 L 108,396 Z\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linejoin=\"round\"/>\n    <path d=\"M 205,375 Q 170,408 130,418\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"16\" stroke-linecap=\"round\"/>\n    <path d=\"M 205,375 Q 170,408 130,418\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"7\" stroke-linecap=\"round\"/>\n    <path d=\"M 132,418 L 96,404 L 112,424 L 96,442 L 136,432 Z\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 412,438 L 485,438 M 425,456 L 474,456\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"4\" stroke-linecap=\"round\"/>",
+    "steps": [
+      {
+        "title": "1. Adım: Dev Kabuk Kubbesi",
+        "instruction": "Üst tarafa uğur böceği şeklinde kocaman kavisli bir kubbe çizelim.",
+        "voice": "Hadi Green Hill vadisinin hızlı robotu Motobug ile başlayalım! Üst tarafa büyük kavisli bir uğur böceği kabuğu çizelim.",
+        "svg": "<path d=\"M 135,345 C 145,165 445,165 455,345\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_motobug/step_1.mp3"
+      },
+      {
+        "title": "2. Adım: Kabuk Alt Çizgisi",
+        "instruction": "Kabuğun iki ucunu hafif kavisli bir taban çizgisiyle kapatalım.",
+        "voice": "Şimdi kabuğun iki ucunu tatlı bir kavisle birleştirip şekli kapatalım.",
+        "svg": "<path d=\"M 135,345 Q 300,362 455,345\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_motobug/step_2.mp3"
+      },
+      {
+        "title": "3. Adım: Kanat Ayrım Çizgisi",
+        "instruction": "Kabuğun üstünden arkaya doğru eğimli bir kanat çizgisi çekelim.",
+        "voice": "Sırt kabuğunun üstünden arkaya doğru iki kanadı ayıran çizgiyi çizelim.",
+        "svg": "<path d=\"M 235,205 Q 325,248 446,338\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_motobug/step_3.mp3"
+      },
+      {
+        "title": "4. Adım: Büyük Benekler",
+        "instruction": "Kabuğun üst kısmına iki tane büyük yuvarlak benek çizelim.",
+        "voice": "Şimdi robot uğur böceğinin sırtına iki büyük yuvarlak benek yerleştirelim.",
+        "svg": "<circle cx=\"290\" cy=\"212\" r=\"24\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/><circle cx=\"385\" cy=\"245\" r=\"26\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>",
+        "audio": "audio/voices/cirak_sonic_motobug/step_4.mp3"
+      },
+      {
+        "title": "5. Adım: Küçük Benekler",
+        "instruction": "Sağ tarafa iki tane daha küçük boyutta benek ekleyelim.",
+        "voice": "Harika! Şimdi sağ tarafa iki küçük benek daha ekleyip kabuğu süsleyelim.",
+        "svg": "<circle cx=\"330\" cy=\"296\" r=\"20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/><circle cx=\"418\" cy=\"306\" r=\"15\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\"/>",
+        "audio": "audio/voices/cirak_sonic_motobug/step_5.mp3"
+      },
+      {
+        "title": "6. Adım: Robot Kafa Ayrımı",
+        "instruction": "Sol tarafa robot kafasını kabuktan ayıran kavisli sınırı çizelim.",
+        "voice": "Sol tarafta robotun kafa bölümünü kabuktan ayıran kavisli çizgiyi çekelim.",
+        "svg": "<path d=\"M 142,272 Q 195,270 218,348\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_motobug/step_6.mp3"
+      },
+      {
+        "title": "7. Adım: Kızgın Robot Gözü",
+        "instruction": "Üçgenimsi keskin bir göz çerçevesi ve içine siyah göz bebeği çizelim.",
+        "voice": "Motobug'ın sinirli bakışlı üçgen gözünü ve ortasındaki siyah noktayı çizelim.",
+        "svg": "<path d=\"M 148,266 L 204,296 L 152,324 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/><circle cx=\"170\" cy=\"296\" r=\"8\" fill=\"#0f172a\"/>",
+        "audio": "audio/voices/cirak_sonic_motobug/step_7.mp3"
+      },
+      {
+        "title": "8. Adım: Sensör Anteni",
+        "instruction": "Kafasının tepesine kıvrık bir anten ve ucuna yuvarlak top ekleyelim.",
+        "voice": "Tepesine kıvrık metal antenini ve ucundaki yuvarlak sinyal lambasını çizelim.",
+        "svg": "<path d=\"M 192,208 Q 168,145 135,152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linecap=\"round\"/><circle cx=\"128\" cy=\"154\" r=\"13\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>",
+        "audio": "audio/voices/cirak_sonic_motobug/step_8.mp3"
+      },
+      {
+        "title": "9. Adım: Çelik Tampon Çene",
+        "instruction": "Alt ön kısma köşeli zırhlı bir tampon gövde ekleyelim.",
+        "voice": "Ön alt kısma engelleri iten güçlü çelik tampon gövdesini çizelim.",
+        "svg": "<path d=\"M 136,342 L 88,356 L 106,396 L 195,382 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_motobug/step_9.mp3"
+      },
+      {
+        "title": "10. Adım: Sivri Tampon Dişleri",
+        "instruction": "Tamponun ucuna iki tane sivri üçgen diş çizelim.",
+        "voice": "Tamponun önüne iki küçük sivri metal diş ekleyelim.",
+        "svg": "<path d=\"M 102,354 L 78,342 L 94,376\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/><path d=\"M 100,378 L 76,392 L 108,396\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_motobug/step_10.mp3"
+      },
+      {
+        "title": "11. Adım: Kıskaç Kolu",
+        "instruction": "Gövdeden öne uzanan kalın ve kıvrık robot kolunu çizelim.",
+        "voice": "Şimdi alttan öne doğru uzanan robot kolunu güzelce çizelim.",
+        "svg": "<path d=\"M 205,375 Q 170,408 130,418\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"14\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_motobug/step_11.mp3"
+      },
+      {
+        "title": "12. Adım: Kıskaç Pençesi",
+        "instruction": "Kolun ucuna açık bir V şeklinde robot pençesi yapalım.",
+        "voice": "Kolun ucuna tutucu robot kıskacını ekleyelim.",
+        "svg": "<path d=\"M 132,418 L 96,404 L 112,424 L 96,442 L 136,432 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_motobug/step_12.mp3"
+      },
+      {
+        "title": "13. Adım: Dev Tekerlek",
+        "instruction": "Kabuğun tam altına büyük yuvarlak tekerlek ve iç jant dairesi çizelim.",
+        "voice": "Motobug çok hızlı gider! Altına kocaman yuvarlak bir tekerlek ve jant çemberi çizelim.",
+        "svg": "<circle cx=\"305\" cy=\"405\" r=\"84\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/><circle cx=\"305\" cy=\"405\" r=\"52\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>",
+        "audio": "audio/voices/cirak_sonic_motobug/step_13.mp3"
+      },
+      {
+        "title": "14. Adım: Jant Telleri",
+        "instruction": "Tekerleğin merkez göbeğini ve dört jant kolunu ekleyelim.",
+        "voice": "Tekerleğin ortasına küçük daireyi ve dört yöne uzanan jant kollarını çizelim.",
+        "svg": "<circle cx=\"305\" cy=\"405\" r=\"20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/><path d=\"M 305,353 L 305,385 M 305,425 L 305,457 M 253,405 L 285,405 M 325,405 L 357,405\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_motobug/step_14.mp3"
+      },
+      {
+        "title": "15. Adım: Egzoz Borusu",
+        "instruction": "Arka kısımdan yukarı bakan kalın bir egzoz borusu çıkaralım.",
+        "voice": "Şimdi arkasından yukarı doğru uzanan kalın egzoz borusunu ekleyelim.",
+        "svg": "<path d=\"M 435,295 L 502,258 L 516,282 L 448,322 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_motobug/step_15.mp3"
+      },
+      {
+        "title": "16. Adım: Pofuduk Duman Bulutu",
+        "instruction": "Egzozun ucundan çıkan kabarık bir duman bulutu çizelim.",
+        "voice": "Egzoz borusunun ucuna pofuduk bulut gibi duman çizelim.",
+        "svg": "<path d=\"M 518,252 C 530,228 564,230 562,256 C 580,265 568,295 544,288 C 530,295 512,276 518,252 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_motobug/step_16.mp3"
+      },
+      {
+        "title": "17. Adım: Hız Çizgileri ve Gölge",
+        "instruction": "Arkaya hız çizgileri, altına da yer gölgesini ekleyelim.",
+        "voice": "Son olarak hız çizgilerini ve altındaki gölge çizgisini ekleyelim. Boyamaya hazırız!",
+        "svg": "<path d=\"M 412,438 L 485,438 M 425,456 L 474,456 M 185,492 Q 310,504 425,492\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_motobug/step_17.mp3"
+      },
+      {
+        "title": "18. Adım: Canlı Renklendirme & Parlak Gölgeler!",
+        "instruction": "Tebrikler Kıvanç! Şimdi çizimimizi canlı renkler ve parlak gölgelerle boyayıp tamamlayalım!",
+        "voice": "İşte son dokunuş! Şimdi çizimimizi canlı renklerle boyayıp parlatıyoruz. Harika bir iş çıkardın Kıvanç!",
+        "svg": "<defs>\n      <linearGradient id=\"mb_shell\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#f87171\"/>\n        <stop offset=\"55%\" stop-color=\"#dc2626\"/>\n        <stop offset=\"100%\" stop-color=\"#991b1b\"/>\n      </linearGradient>\n      <linearGradient id=\"mb_metal\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#e2e8f0\"/>\n        <stop offset=\"100%\" stop-color=\"#64748b\"/>\n      </linearGradient>\n      <radialGradient id=\"mb_tire\" cx=\"45%\" cy=\"40%\" r=\"60%\">\n        <stop offset=\"0%\" stop-color=\"#475569\"/>\n        <stop offset=\"100%\" stop-color=\"#0f172a\"/>\n      </radialGradient>\n    </defs>\n    <ellipse cx=\"305\" cy=\"494\" rx=\"145\" ry=\"16\" fill=\"#cbd5e1\" opacity=\"0.65\"/>\n    <path d=\"M 435,295 L 502,258 L 516,282 L 448,322 Z\" fill=\"url(#mb_metal)\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 518,252 C 530,228 564,230 562,256 C 580,265 568,295 544,288 C 530,295 512,276 518,252 Z\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linejoin=\"round\"/>\n    <path d=\"M 192,208 Q 168,145 135,152\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"10\" stroke-linecap=\"round\"/>\n    <path d=\"M 192,208 Q 168,145 135,152\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"4.5\" stroke-linecap=\"round\"/>\n    <circle cx=\"128\" cy=\"154\" r=\"13\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <circle cx=\"124\" cy=\"150\" r=\"4\" fill=\"#ffffff\"/>\n    <circle cx=\"305\" cy=\"405\" r=\"84\" fill=\"url(#mb_tire)\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n    <circle cx=\"305\" cy=\"405\" r=\"52\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <path d=\"M 305,353 L 305,457 M 253,405 L 357,405\" fill=\"none\" stroke=\"#475569\" stroke-width=\"6\" stroke-linecap=\"round\"/>\n    <circle cx=\"305\" cy=\"405\" r=\"20\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <path d=\"M 135,345 C 145,165 445,165 455,345 Q 300,362 135,345 Z\" fill=\"url(#mb_shell)\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 142,272 Q 195,270 218,348 Q 175,352 135,345 C 138,315 140,292 142,272 Z\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 235,205 Q 325,248 446,338\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linecap=\"round\"/>\n    <circle cx=\"290\" cy=\"212\" r=\"24\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n    <circle cx=\"385\" cy=\"245\" r=\"26\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n    <circle cx=\"330\" cy=\"296\" r=\"20\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n    <circle cx=\"418\" cy=\"306\" r=\"15\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"3.5\"/>\n    <path d=\"M 255,196 Q 315,180 375,202\" fill=\"none\" stroke=\"#fca5a5\" stroke-width=\"7\" stroke-linecap=\"round\" opacity=\"0.75\"/>\n    <path d=\"M 148,266 L 204,296 L 152,324 Z\" fill=\"#fef08a\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"170\" cy=\"296\" r=\"9\" fill=\"#0f172a\"/>\n    <circle cx=\"167\" cy=\"293\" r=\"3\" fill=\"#ffffff\"/>\n    <path d=\"M 136,342 L 88,356 L 106,396 L 195,382 Z\" fill=\"url(#mb_metal)\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 102,354 L 78,342 L 94,376 Z\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linejoin=\"round\"/>\n    <path d=\"M 100,378 L 76,392 L 108,396 Z\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linejoin=\"round\"/>\n    <path d=\"M 205,375 Q 170,408 130,418\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"16\" stroke-linecap=\"round\"/>\n    <path d=\"M 205,375 Q 170,408 130,418\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"7\" stroke-linecap=\"round\"/>\n    <path d=\"M 132,418 L 96,404 L 112,424 L 96,442 L 136,432 Z\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 412,438 L 485,438 M 425,456 L 474,456\" fill=\"none\" stroke=\"#0284c7\" stroke-width=\"4\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_motobug/step_18.mp3"
+      }
+    ]
+  },
+  {
+    "id": "cirak_sonic_buzzbomber",
+    "categoryId": "sonic",
+    "name": "Uçan Robot Arı Buzz Bomber",
+    "emoji": "🐝",
+    "level": 1,
+    "levelName": "Çırak",
+    "levelBadge": "🟢 Çırak",
+    "description": "Gökyüzünde vızıldayarak uçan mavi-sarı robot arı Buzz Bomber'ı çiz!",
+    "materials": "Kağıt, siyah kalem, mavi, sarı, açık mavi ve kırmızı boya",
+    "welcomeText": "Vızzz! Merhaba Kıvanç! Şimdi Sonic'in en hızlı uçan robot rakiplerinden Buzz Bomber arısını adım adım çizeceğiz!",
+    "welcomeAudio": "audio/voices/cirak_sonic_buzzbomber/welcome.mp3",
+    "colors": [
+      {
+        "name": "Robot Mavisi",
+        "hex": "#2563eb"
+      },
+      {
+        "name": "Arı Sarısı",
+        "hex": "#facc15"
+      },
+      {
+        "name": "Buz Mavisi",
+        "hex": "#7dd3fc"
+      },
+      {
+        "name": "Lazer Kırmızısı",
+        "hex": "#ef4444"
+      }
+    ],
+    "previewSvg": "<defs>\n      <linearGradient id=\"bb_blue\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#60a5fa\"/>\n        <stop offset=\"55%\" stop-color=\"#2563eb\"/>\n        <stop offset=\"100%\" stop-color=\"#1e3a8a\"/>\n      </linearGradient>\n      <linearGradient id=\"bb_yellow\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#fef08a\"/>\n        <stop offset=\"55%\" stop-color=\"#facc15\"/>\n        <stop offset=\"100%\" stop-color=\"#ca8a04\"/>\n      </linearGradient>\n      <linearGradient id=\"bb_wing\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#e0f2fe\" stop-opacity=\"0.9\"/>\n        <stop offset=\"100%\" stop-color=\"#7dd3fc\" stop-opacity=\"0.75\"/>\n      </linearGradient>\n    </defs>\n    <ellipse cx=\"315\" cy=\"516\" rx=\"120\" ry=\"14\" fill=\"#cbd5e1\" opacity=\"0.6\"/>\n    <path d=\"M 348,214 C 415,172 522,186 512,245 C 505,278 430,275 344,230 Z\" fill=\"url(#bb_wing)\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 382,226 L 478,224\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3.5\" stroke-linecap=\"round\"/>\n    <path d=\"M 326,204 C 370,92 490,88 492,158 C 492,202 418,225 335,218 Z\" fill=\"url(#bb_wing)\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 365,168 L 456,142\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3.5\" stroke-linecap=\"round\"/>\n    <path d=\"M 285,204 Q 332,188 345,222 L 320,242 Z\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 248,318 L 228,365 L 258,392\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"14\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    <path d=\"M 248,318 L 228,365 L 258,392\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    <path d=\"M 288,318 L 274,368 L 302,395\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"14\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    <path d=\"M 288,318 L 274,368 L 302,395\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    <path d=\"M 380,444 L 352,492 L 408,452 Z\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 342,272 C 425,275 480,335 452,418 C 430,455 375,455 346,408 C 318,365 318,312 342,272 Z\" fill=\"url(#bb_yellow)\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 330,326 Q 395,305 452,334 L 456,374 Q 395,346 328,366 Z\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n    <path d=\"M 352,412 Q 402,395 442,424 C 422,452 378,448 352,412 Z\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n    <path d=\"M 225,204 Q 204,160 176,158 M 248,198 Q 238,150 214,146\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linecap=\"round\"/>\n    <circle cx=\"172\" cy=\"158\" r=\"9\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n    <circle cx=\"211\" cy=\"146\" r=\"9\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n    <ellipse cx=\"268\" cy=\"260\" rx=\"84\" ry=\"62\" fill=\"url(#bb_blue)\" stroke=\"#0f172a\" stroke-width=\"5.5\"/>\n    <path d=\"M 205,212 Q 215,260 198,302 C 180,285 180,234 205,212 Z\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 190,236 L 240,256 L 210,278 Z\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"216\" cy=\"256\" r=\"7\" fill=\"#fef08a\"/>\n    <path d=\"M 248,214 Q 290,206 325,232\" fill=\"none\" stroke=\"#93c5fd\" stroke-width=\"7\" stroke-linecap=\"round\" opacity=\"0.75\"/>\n    <path d=\"M 345,488 L 325,512 M 340,480 L 316,492 M 356,498 L 348,522\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"4.5\" stroke-linecap=\"round\"/>\n    <path d=\"M 390,94 Q 445,74 495,94 M 415,78 Q 455,64 490,78\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3.5\" stroke-linecap=\"round\"/>",
+    "steps": [
+      {
+        "title": "1. Adım: Arı Gövde Ovali",
+        "instruction": "Sol orta kısma robot arının yatay oval gövdesini çizelim.",
+        "voice": "Hadi havada vızıldayan Buzz Bomber arısını çizelim! Ortaya yatay büyük bir oval çizerek başlayalım.",
+        "svg": "<ellipse cx=\"268\" cy=\"260\" rx=\"84\" ry=\"62\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5.5\"/>",
+        "audio": "audio/voices/cirak_sonic_buzzbomber/step_1.mp3"
+      },
+      {
+        "title": "2. Adım: Kafa Vizörü ve Göz Çerçevesi",
+        "instruction": "Ön kısmına kafa çizgisi ve keskin açılı robot gözünü çizelim.",
+        "voice": "Şimdi ön tarafına kafa ayrım çizgisini ve üçgen robot göz çerçevesini çizelim.",
+        "svg": "<path d=\"M 205,212 Q 215,260 198,302\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linecap=\"round\"/><path d=\"M 190,236 L 240,256 L 210,278 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_buzzbomber/step_2.mp3"
+      },
+      {
+        "title": "3. Adım: Göz Bebeği ve Kaş Plakası",
+        "instruction": "Gözün içine koyu göz bebeğini ve üstüne kaş plakasını ekleyelim.",
+        "voice": "Harika! Gözün ortasına siyah noktayı ve üstüne sert bakışlı kaş çizgisini koyalım.",
+        "svg": "<circle cx=\"218\" cy=\"257\" r=\"7\" fill=\"#0f172a\"/><path d=\"M 218,225 L 252,248 L 222,250 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_buzzbomber/step_3.mp3"
+      },
+      {
+        "title": "4. Adım: İki Küçük Anten",
+        "instruction": "Kafasının üstünden öne doğru iki tane kıvrık anten çizelim.",
+        "voice": "Başının üstünden iki sevimli anten sapı uzatalım.",
+        "svg": "<path d=\"M 225,204 Q 204,160 176,158 M 248,198 Q 238,150 214,146\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_buzzbomber/step_4.mp3"
+      },
+      {
+        "title": "5. Adım: Anten Uç Toplar",
+        "instruction": "Her iki antenin ucuna birer küçük yuvarlak top ekleyelim.",
+        "voice": "Antenlerin uçlarına birer küçük daire yerleştirip tamamlayalım.",
+        "svg": "<circle cx=\"172\" cy=\"158\" r=\"9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\"/><circle cx=\"211\" cy=\"146\" r=\"9\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\"/>",
+        "audio": "audio/voices/cirak_sonic_buzzbomber/step_5.mp3"
+      },
+      {
+        "title": "6. Adım: Büyük Arı Kuyruğu",
+        "instruction": "Arkaya aşağı kıvrılan büyük bir arı karın kuyruğu çizelim.",
+        "voice": "Şimdi Buzz Bomber'ın arkaya doğru uzanan büyük arı kuyruğunu çizelim.",
+        "svg": "<path d=\"M 342,272 C 425,275 480,335 452,418 C 430,455 375,455 346,408 C 318,365 318,312 342,272 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_buzzbomber/step_6.mp3"
+      },
+      {
+        "title": "7. Adım: Arı Çizgileri",
+        "instruction": "Kuyruğun üzerine iki kavisli arı şeridi çizgisi çekelim.",
+        "voice": "Arıların güzel siyah sarı çizgileri için gövdeye iki kavisli şerit çizelim.",
+        "svg": "<path d=\"M 332,326 Q 395,305 452,334\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/><path d=\"M 328,368 Q 395,346 456,378\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>",
+        "audio": "audio/voices/cirak_sonic_buzzbomber/step_7.mp3"
+      },
+      {
+        "title": "8. Adım: Alt Kuyruk Şeridi",
+        "instruction": "Kuyruğun alt ucuna bir şerit çizgisi daha ekleyelim.",
+        "voice": "Kuyruğun ucu için bir şerit çizgisi daha atalım.",
+        "svg": "<path d=\"M 356,412 Q 402,395 440,425\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>",
+        "audio": "audio/voices/cirak_sonic_buzzbomber/step_8.mp3"
+      },
+      {
+        "title": "9. Adım: Sivri İğne Lazeri",
+        "instruction": "Kuyruğun altından sivri bir üçgen iğne çıkaralım.",
+        "voice": "İşte arının lazer iğnesi! Kuyruğun altına sivri bir üçgen iğne çizelim.",
+        "svg": "<path d=\"M 380,444 L 352,492 L 408,452 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_buzzbomber/step_9.mp3"
+      },
+      {
+        "title": "10. Adım: Lazer Işın Kıvılcımları",
+        "instruction": "İğnenin ucundan çıkan üç kısa lazer kıvılcım çizgisi ekleyelim.",
+        "voice": "İğnenin ucuna minik lazer kıvılcımları ekleyelim.",
+        "svg": "<path d=\"M 345,488 L 325,512 M 340,480 L 316,492 M 356,498 L 348,522\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3.5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_buzzbomber/step_10.mp3"
+      },
+      {
+        "title": "11. Adım: Sırt Jetpack Yuvası",
+        "instruction": "Sırtının üstüne kanatların bağlandığı mekanik yuvayı çizelim.",
+        "voice": "Sırtının tepesine kanat motorunun yuvasını çizelim.",
+        "svg": "<path d=\"M 285,204 Q 332,188 345,222 L 320,242 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_buzzbomber/step_11.mp3"
+      },
+      {
+        "title": "12. Adım: Büyük Üst Kanat",
+        "instruction": "Sırtından yukarı ve geriye açılan büyük bir arı kanadı çizelim.",
+        "voice": "Şimdi hızlı uçabilmesi için kocaman bir üst kanat çizelim.",
+        "svg": "<path d=\"M 326,204 C 370,92 490,88 492,158 C 492,202 418,225 335,218 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_buzzbomber/step_12.mp3"
+      },
+      {
+        "title": "13. Adım: Küçük Alt Kanat",
+        "instruction": "Üst kanadın hemen altına ikinci küçük kanadı ekleyelim.",
+        "voice": "Altına destek için ikinci bir şeffaf kanat daha ekleyelim.",
+        "svg": "<path d=\"M 348,214 C 415,172 522,186 512,245 C 505,278 430,275 344,230 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_buzzbomber/step_13.mp3"
+      },
+      {
+        "title": "14. Adım: Kanat Damarları",
+        "instruction": "Her iki kanadın içine birer ince kanat damarı çizgisi çekelim.",
+        "voice": "Kanatların içine gerçek arı kanadı gibi ince damar çizgileri çizelim.",
+        "svg": "<path d=\"M 365,168 L 456,142 M 382,226 L 478,224\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3.5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_buzzbomber/step_14.mp3"
+      },
+      {
+        "title": "15. Adım: Ön Robot Bacağı",
+        "instruction": "Gövdenin altından kıvrılan ön bacağını kalın hatla çizelim.",
+        "voice": "Gövdenin altındaki katlı ön robot bacağını ekleyelim.",
+        "svg": "<path d=\"M 248,318 L 228,365 L 258,392\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"12\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_buzzbomber/step_15.mp3"
+      },
+      {
+        "title": "16. Adım: Arka Robot Bacağı",
+        "instruction": "Yanına aynı şekilde ikinci bir katlı bacak daha çizelim.",
+        "voice": "Hemen yanına ikinci mekanik bacağını da çizelim.",
+        "svg": "<path d=\"M 288,318 L 274,368 L 302,395\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"12\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_buzzbomber/step_16.mp3"
+      },
+      {
+        "title": "17. Adım: Vızıltı Çizgileri",
+        "instruction": "Kanat üstüne uçuş vızıltı çizgileri ve alta gölge çizgisi ekleyelim.",
+        "voice": "Kanatların üstüne vızıltı çizgilerini, alta da gölge çizgisini koyalım. Boyamaya hazır!",
+        "svg": "<path d=\"M 390,94 Q 445,74 495,94 M 415,78 Q 455,64 490,78 M 200,515 Q 315,528 430,515\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3.5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_buzzbomber/step_17.mp3"
+      },
+      {
+        "title": "18. Adım: Canlı Renklendirme & Parlak Gölgeler!",
+        "instruction": "Tebrikler Kıvanç! Şimdi çizimimizi canlı renkler ve parlak gölgelerle boyayıp tamamlayalım!",
+        "voice": "İşte son dokunuş! Şimdi çizimimizi canlı renklerle boyayıp parlatıyoruz. Harika bir iş çıkardın Kıvanç!",
+        "svg": "<defs>\n      <linearGradient id=\"bb_blue\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#60a5fa\"/>\n        <stop offset=\"55%\" stop-color=\"#2563eb\"/>\n        <stop offset=\"100%\" stop-color=\"#1e3a8a\"/>\n      </linearGradient>\n      <linearGradient id=\"bb_yellow\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#fef08a\"/>\n        <stop offset=\"55%\" stop-color=\"#facc15\"/>\n        <stop offset=\"100%\" stop-color=\"#ca8a04\"/>\n      </linearGradient>\n      <linearGradient id=\"bb_wing\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#e0f2fe\" stop-opacity=\"0.9\"/>\n        <stop offset=\"100%\" stop-color=\"#7dd3fc\" stop-opacity=\"0.75\"/>\n      </linearGradient>\n    </defs>\n    <ellipse cx=\"315\" cy=\"516\" rx=\"120\" ry=\"14\" fill=\"#cbd5e1\" opacity=\"0.6\"/>\n    <path d=\"M 348,214 C 415,172 522,186 512,245 C 505,278 430,275 344,230 Z\" fill=\"url(#bb_wing)\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 382,226 L 478,224\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3.5\" stroke-linecap=\"round\"/>\n    <path d=\"M 326,204 C 370,92 490,88 492,158 C 492,202 418,225 335,218 Z\" fill=\"url(#bb_wing)\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 365,168 L 456,142\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3.5\" stroke-linecap=\"round\"/>\n    <path d=\"M 285,204 Q 332,188 345,222 L 320,242 Z\" fill=\"#94a3b8\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 248,318 L 228,365 L 258,392\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"14\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    <path d=\"M 248,318 L 228,365 L 258,392\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    <path d=\"M 288,318 L 274,368 L 302,395\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"14\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    <path d=\"M 288,318 L 274,368 L 302,395\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    <path d=\"M 380,444 L 352,492 L 408,452 Z\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 342,272 C 425,275 480,335 452,418 C 430,455 375,455 346,408 C 318,365 318,312 342,272 Z\" fill=\"url(#bb_yellow)\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 330,326 Q 395,305 452,334 L 456,374 Q 395,346 328,366 Z\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n    <path d=\"M 352,412 Q 402,395 442,424 C 422,452 378,448 352,412 Z\" fill=\"#1e293b\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n    <path d=\"M 225,204 Q 204,160 176,158 M 248,198 Q 238,150 214,146\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linecap=\"round\"/>\n    <circle cx=\"172\" cy=\"158\" r=\"9\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n    <circle cx=\"211\" cy=\"146\" r=\"9\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"4\"/>\n    <ellipse cx=\"268\" cy=\"260\" rx=\"84\" ry=\"62\" fill=\"url(#bb_blue)\" stroke=\"#0f172a\" stroke-width=\"5.5\"/>\n    <path d=\"M 205,212 Q 215,260 198,302 C 180,285 180,234 205,212 Z\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 190,236 L 240,256 L 210,278 Z\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"216\" cy=\"256\" r=\"7\" fill=\"#fef08a\"/>\n    <path d=\"M 248,214 Q 290,206 325,232\" fill=\"none\" stroke=\"#93c5fd\" stroke-width=\"7\" stroke-linecap=\"round\" opacity=\"0.75\"/>\n    <path d=\"M 345,488 L 325,512 M 340,480 L 316,492 M 356,498 L 348,522\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"4.5\" stroke-linecap=\"round\"/>\n    <path d=\"M 390,94 Q 445,74 495,94 M 415,78 Q 455,64 490,78\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3.5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_buzzbomber/step_18.mp3"
+      }
+    ]
+  },
+  {
+    "id": "cirak_sonic_death_egg_robot",
+    "categoryId": "sonic",
+    "name": "Ölüm Yumurtası Robotu",
+    "emoji": "🤖",
+    "level": 1,
+    "levelName": "Çırak",
+    "levelBadge": "🟢 Çırak",
+    "description": "Sonic'in karşısına çıkan efsane dev boss Death Egg Robot'u çiz!",
+    "materials": "Kağıt, siyah kalem, gri, kırmızı, sarı ve yeşil boya",
+    "welcomeText": "Hazır mısın Kıvanç? Bugün en büyük patron robot Ölüm Yumurtası Robotunu çizeceğiz! Dev yumrukları ve roket botlarıyla efsane görünecek!",
+    "welcomeAudio": "audio/voices/cirak_sonic_death_egg_robot/welcome.mp3",
+    "colors": [
+      {
+        "name": "Çelik Grisi",
+        "hex": "#cbd5e1"
+      },
+      {
+        "name": "Zırh Kırmızısı",
+        "hex": "#b91c1c"
+      },
+      {
+        "name": "Altın Sarısı",
+        "hex": "#eab308"
+      },
+      {
+        "name": "Kokpit Yeşili",
+        "hex": "#4ade80"
+      }
+    ],
+    "previewSvg": "<defs>\n      <linearGradient id=\"der_body\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#f1f5f9\"/>\n        <stop offset=\"55%\" stop-color=\"#cbd5e1\"/>\n        <stop offset=\"100%\" stop-color=\"#64748b\"/>\n      </linearGradient>\n      <linearGradient id=\"der_red\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#f87171\"/>\n        <stop offset=\"100%\" stop-color=\"#b91c1c\"/>\n      </linearGradient>\n      <linearGradient id=\"der_gold\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#fef08a\"/>\n        <stop offset=\"100%\" stop-color=\"#eab308\"/>\n      </linearGradient>\n    </defs>\n    <ellipse cx=\"300\" cy=\"548\" rx=\"165\" ry=\"15\" fill=\"#cbd5e1\" opacity=\"0.65\"/>\n    <path d=\"M 155,260 L 122,315\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"24\" stroke-linecap=\"round\"/>\n    <path d=\"M 155,260 L 122,315\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"12\" stroke-linecap=\"round\"/>\n    <path d=\"M 445,260 L 478,315\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"24\" stroke-linecap=\"round\"/>\n    <path d=\"M 445,260 L 478,315\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"12\" stroke-linecap=\"round\"/>\n    <path d=\"M 252,412 L 240,468\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"32\" stroke-linecap=\"round\"/>\n    <path d=\"M 252,412 L 240,468\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n    <path d=\"M 348,412 L 360,468\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"32\" stroke-linecap=\"round\"/>\n    <path d=\"M 348,412 L 360,468\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n    <path d=\"M 220,382 Q 300,406 380,382 L 368,412 Q 300,425 232,412 Z\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 192,470 L 274,470 L 278,512 L 178,512 Q 178,482 192,470 Z\" fill=\"url(#der_red)\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 326,470 L 408,470 Q 422,482 422,512 L 322,512 Z\" fill=\"url(#der_red)\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 196,515 L 210,542 L 224,515 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 376,515 L 390,542 L 404,515 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 250,165 C 250,115 350,115 350,165 Z\" fill=\"#4ade80\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"300\" cy=\"144\" r=\"14\" fill=\"#fdba74\" stroke=\"#0f172a\" stroke-width=\"3.5\"/>\n    <circle cx=\"294\" cy=\"140\" r=\"4\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n    <circle cx=\"306\" cy=\"140\" r=\"4\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n    <path d=\"M 272,158 Q 285,148 300,158 Q 315,148 328,158\" fill=\"none\" stroke=\"#9a3412\" stroke-width=\"5.5\" stroke-linecap=\"round\"/>\n    <ellipse cx=\"300\" cy=\"272\" rx=\"115\" ry=\"122\" fill=\"url(#der_body)\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n    <path d=\"M 192,235 Q 300,256 408,235\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n    <rect x=\"275\" y=\"255\" width=\"50\" height=\"44\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <circle cx=\"300\" cy=\"277\" r=\"12\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"3\"/>\n    <path d=\"M 262,210 L 245,232 M 280,210 L 263,234 M 320,210 L 337,234 M 338,210 L 355,232\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n    <path d=\"M 195,212 C 138,168 118,225 148,266 L 194,252 Z\" fill=\"url(#der_red)\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 405,212 C 462,168 482,225 452,266 L 406,252 Z\" fill=\"url(#der_red)\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"110\" cy=\"342\" r=\"42\" fill=\"url(#der_gold)\" stroke=\"#0f172a\" stroke-width=\"5.5\"/>\n    <path d=\"M 74,322 L 50,312 L 66,340 Z M 68,358 L 48,370 L 76,372 Z\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"490\" cy=\"342\" r=\"42\" fill=\"url(#der_gold)\" stroke=\"#0f172a\" stroke-width=\"5.5\"/>\n    <path d=\"M 526,322 L 550,312 L 534,340 Z M 532,358 L 552,370 L 524,372 Z\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/>",
+    "steps": [
+      {
+        "title": "1. Adım: Dev Yumurta Gövde",
+        "instruction": "Sayfanın ortasına dev bir yumurta şeklinde robot gövdesi çizelim.",
+        "voice": "Şimdi devasa boss robot Ölüm Yumurtası Robotunu çiziyoruz! Ortaya kocaman bir yumurta gövdesi çizelim.",
+        "svg": "<ellipse cx=\"300\" cy=\"272\" rx=\"115\" ry=\"122\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\"/>",
+        "audio": "audio/voices/cirak_sonic_death_egg_robot/step_1.mp3"
+      },
+      {
+        "title": "2. Adım: Cam Kokpit Kubbesi",
+        "instruction": "Robotun tepesine Dr. Eggman'in oturduğu yarım daire cam kokpiti çizelim.",
+        "voice": "Gövdenin tam tepesine Eggman'in yönettiği yarım daire cam kokpiti ekleyelim.",
+        "svg": "<path d=\"M 250,165 C 250,115 350,115 350,165 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_death_egg_robot/step_2.mp3"
+      },
+      {
+        "title": "3. Adım: Kokpitteki Eggman",
+        "instruction": "Cam kubbenin içine Eggman'in yuvarlak başını ve dev bıyıklarını çizelim.",
+        "voice": "Camın içine Eggman'in minik yuvarlak başını ve iki yana açılan bıyıklarını çizelim!",
+        "svg": "<circle cx=\"300\" cy=\"144\" r=\"14\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\"/><path d=\"M 272,158 Q 285,148 300,158 Q 315,148 328,158\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_death_egg_robot/step_3.mp3"
+      },
+      {
+        "title": "4. Adım: Göğüs Zırhı ve Çekirdek",
+        "instruction": "Gövdenin ortasından enine bir çizgi çekip ortasına kare enerji kutusu koyalım.",
+        "voice": "Göğsüne zırh şeridini ve tam ortasına kare enerji çekirdeğini yerleştirelim.",
+        "svg": "<path d=\"M 192,235 Q 300,256 408,235\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/><rect x=\"275\" y=\"255\" width=\"50\" height=\"44\" rx=\"8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>",
+        "audio": "audio/voices/cirak_sonic_death_egg_robot/step_4.mp3"
+      },
+      {
+        "title": "5. Adım: Göğüs Havalandırmaları",
+        "instruction": "Çizginin üstüne sollu sağlı ikişer eğik havalandırma çizgisi çizelim.",
+        "voice": "Göğsün iki yanına havalandırma çizgileri çizelim.",
+        "svg": "<path d=\"M 262,210 L 245,232 M 280,210 L 263,234 M 320,210 L 337,234 M 338,210 L 355,232\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_death_egg_robot/step_5.mp3"
+      },
+      {
+        "title": "6. Adım: Sol Sivri Omuzluk",
+        "instruction": "Sol omuza yukarı kalkık kırmızı robot omuzluğu çizelim.",
+        "voice": "Şimdi sol omuza sivri dev omuzluğu çizelim.",
+        "svg": "<path d=\"M 195,212 C 138,168 118,225 148,266 L 194,252 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_death_egg_robot/step_6.mp3"
+      },
+      {
+        "title": "7. Adım: Sağ Sivri Omuzluk",
+        "instruction": "Aynısından simetrik olarak sağ omuza da çizelim.",
+        "voice": "Sağ tarafa da eş omuzluğu ekleyelim.",
+        "svg": "<path d=\"M 405,212 C 462,168 482,225 452,266 L 406,252 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_death_egg_robot/step_7.mp3"
+      },
+      {
+        "title": "8. Adım: Sol Güçlü Kol",
+        "instruction": "Sol omuzdan aşağı doğru inen kalın bir mekanik kol çizelim.",
+        "voice": "Sol omuzdan aşağı doğru kalın ve güçlü piston kolu çizelim.",
+        "svg": "<path d=\"M 155,260 L 122,315\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"20\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_death_egg_robot/step_8.mp3"
+      },
+      {
+        "title": "9. Adım: Sağ Güçlü Kol",
+        "instruction": "Sağ omuzdan aşağı inen diğer kalın kolu ekleyelim.",
+        "voice": "Sağ kolu da aşağıya doğru uzatalım.",
+        "svg": "<path d=\"M 445,260 L 478,315\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"20\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_death_egg_robot/step_9.mp3"
+      },
+      {
+        "title": "10. Adım: Sol Dikenli Yumruk",
+        "instruction": "Sol kolun ucuna yuvarlak dev yumruk ve iki sivri diken çizelim.",
+        "voice": "Sol eline yuvarlak bir dev yumruk ve dikenlerini çizelim!",
+        "svg": "<circle cx=\"110\" cy=\"342\" r=\"42\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5.5\"/><path d=\"M 74,322 L 50,312 L 66,340 M 68,358 L 48,370 L 76,372\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_death_egg_robot/step_10.mp3"
+      },
+      {
+        "title": "11. Adım: Sağ Dikenli Yumruk",
+        "instruction": "Sağ kolun ucuna da eş yuvarlak dikenli yumruğu çizelim.",
+        "voice": "Sağ eline de aynı dikenli dev yumruğu çizelim!",
+        "svg": "<circle cx=\"490\" cy=\"342\" r=\"42\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5.5\"/><path d=\"M 526,322 L 550,312 L 534,340 M 532,358 L 552,370 L 524,372\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_death_egg_robot/step_11.mp3"
+      },
+      {
+        "title": "12. Adım: Kalça Eklem Kemeri",
+        "instruction": "Yumurta gövdenin altına kemer şeklinde kalça eklemi çizelim.",
+        "voice": "Dev gövdenin altına bacakları bağlayan kemer bölümünü çizelim.",
+        "svg": "<path d=\"M 220,382 Q 300,406 380,382 L 368,412 Q 300,425 232,412 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_death_egg_robot/step_12.mp3"
+      },
+      {
+        "title": "13. Adım: Sol Kalın Bacak",
+        "instruction": "Kalçadan aşağı inen kalın bir robot bacağı çizelim.",
+        "voice": "Sol bacağı kalın mekanik boru şeklinde aşağı indirelim.",
+        "svg": "<path d=\"M 252,412 L 240,468\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"26\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_death_egg_robot/step_13.mp3"
+      },
+      {
+        "title": "14. Adım: Sağ Kalın Bacak",
+        "instruction": "Yanına aynı kalınlıkta sağ bacağı da çizelim.",
+        "voice": "Sağ bacağı da aynı şekilde çizelim.",
+        "svg": "<path d=\"M 348,412 L 360,468\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"26\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_death_egg_robot/step_14.mp3"
+      },
+      {
+        "title": "15. Adım: Dev Sol Jet Çizmesi",
+        "instruction": "Sol bacağın altına büyük köşeli dev robot ayağı çizelim.",
+        "voice": "Sol ayağına yere sağlam basan dev zırhlı robot botu çizelim.",
+        "svg": "<path d=\"M 192,470 L 274,470 L 278,512 L 178,512 Q 178,482 192,470 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_death_egg_robot/step_15.mp3"
+      },
+      {
+        "title": "16. Adım: Dev Sağ Jet Çizmesi",
+        "instruction": "Sağ bacağın altına da simetrik dev botu ekleyelim.",
+        "voice": "Sağ ayağına da büyük botunu çizelim.",
+        "svg": "<path d=\"M 326,470 L 408,470 Q 422,482 422,512 L 322,512 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_death_egg_robot/step_16.mp3"
+      },
+      {
+        "title": "17. Adım: Roket Alevi ve Zemin",
+        "instruction": "Botların altına küçük ateş üçgenleri ve yere gölge çizgisi koyalım.",
+        "voice": "Ayakların altına ateş üçgenlerini ve zemin çizgisini koyalım. Boyamaya geçiyoruz!",
+        "svg": "<path d=\"M 196,515 L 210,542 L 224,515 M 376,515 L 390,542 L 404,515\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M 145,548 Q 300,562 455,548\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_death_egg_robot/step_17.mp3"
+      },
+      {
+        "title": "18. Adım: Canlı Renklendirme & Parlak Gölgeler!",
+        "instruction": "Tebrikler Kıvanç! Şimdi çizimimizi canlı renkler ve parlak gölgelerle boyayıp tamamlayalım!",
+        "voice": "İşte son dokunuş! Şimdi çizimimizi canlı renklerle boyayıp parlatıyoruz. Harika bir iş çıkardın Kıvanç!",
+        "svg": "<defs>\n      <linearGradient id=\"der_body\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#f1f5f9\"/>\n        <stop offset=\"55%\" stop-color=\"#cbd5e1\"/>\n        <stop offset=\"100%\" stop-color=\"#64748b\"/>\n      </linearGradient>\n      <linearGradient id=\"der_red\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#f87171\"/>\n        <stop offset=\"100%\" stop-color=\"#b91c1c\"/>\n      </linearGradient>\n      <linearGradient id=\"der_gold\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#fef08a\"/>\n        <stop offset=\"100%\" stop-color=\"#eab308\"/>\n      </linearGradient>\n    </defs>\n    <ellipse cx=\"300\" cy=\"548\" rx=\"165\" ry=\"15\" fill=\"#cbd5e1\" opacity=\"0.65\"/>\n    <path d=\"M 155,260 L 122,315\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"24\" stroke-linecap=\"round\"/>\n    <path d=\"M 155,260 L 122,315\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"12\" stroke-linecap=\"round\"/>\n    <path d=\"M 445,260 L 478,315\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"24\" stroke-linecap=\"round\"/>\n    <path d=\"M 445,260 L 478,315\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"12\" stroke-linecap=\"round\"/>\n    <path d=\"M 252,412 L 240,468\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"32\" stroke-linecap=\"round\"/>\n    <path d=\"M 252,412 L 240,468\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n    <path d=\"M 348,412 L 360,468\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"32\" stroke-linecap=\"round\"/>\n    <path d=\"M 348,412 L 360,468\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"18\" stroke-linecap=\"round\"/>\n    <path d=\"M 220,382 Q 300,406 380,382 L 368,412 Q 300,425 232,412 Z\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 192,470 L 274,470 L 278,512 L 178,512 Q 178,482 192,470 Z\" fill=\"url(#der_red)\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 326,470 L 408,470 Q 422,482 422,512 L 322,512 Z\" fill=\"url(#der_red)\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 196,515 L 210,542 L 224,515 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 376,515 L 390,542 L 404,515 Z\" fill=\"#f97316\" stroke=\"#0f172a\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 250,165 C 250,115 350,115 350,165 Z\" fill=\"#4ade80\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"300\" cy=\"144\" r=\"14\" fill=\"#fdba74\" stroke=\"#0f172a\" stroke-width=\"3.5\"/>\n    <circle cx=\"294\" cy=\"140\" r=\"4\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n    <circle cx=\"306\" cy=\"140\" r=\"4\" fill=\"#38bdf8\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n    <path d=\"M 272,158 Q 285,148 300,158 Q 315,148 328,158\" fill=\"none\" stroke=\"#9a3412\" stroke-width=\"5.5\" stroke-linecap=\"round\"/>\n    <ellipse cx=\"300\" cy=\"272\" rx=\"115\" ry=\"122\" fill=\"url(#der_body)\" stroke=\"#0f172a\" stroke-width=\"6\"/>\n    <path d=\"M 192,235 Q 300,256 408,235\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/>\n    <rect x=\"275\" y=\"255\" width=\"50\" height=\"44\" rx=\"8\" fill=\"#334155\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <circle cx=\"300\" cy=\"277\" r=\"12\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"3\"/>\n    <path d=\"M 262,210 L 245,232 M 280,210 L 263,234 M 320,210 L 337,234 M 338,210 L 355,232\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n    <path d=\"M 195,212 C 138,168 118,225 148,266 L 194,252 Z\" fill=\"url(#der_red)\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 405,212 C 462,168 482,225 452,266 L 406,252 Z\" fill=\"url(#der_red)\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"110\" cy=\"342\" r=\"42\" fill=\"url(#der_gold)\" stroke=\"#0f172a\" stroke-width=\"5.5\"/>\n    <path d=\"M 74,322 L 50,312 L 66,340 Z M 68,358 L 48,370 L 76,372 Z\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"490\" cy=\"342\" r=\"42\" fill=\"url(#der_gold)\" stroke=\"#0f172a\" stroke-width=\"5.5\"/>\n    <path d=\"M 526,322 L 550,312 L 534,340 Z M 532,358 L 552,370 L 524,372 Z\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_death_egg_robot/step_18.mp3"
+      }
+    ]
+  },
+  {
+    "id": "cirak_sonic_monitor",
+    "categoryId": "sonic",
+    "name": "Sonic Güç Monitörleri",
+    "emoji": "📺",
+    "level": 1,
+    "levelName": "Çırak",
+    "levelBadge": "🟢 Çırak",
+    "description": "10 Altın Yüzük ve Süper Hız Ayakkabısı veren klasik Sonic güç monitörlerini çiz!",
+    "materials": "Kağıt, siyah kalem, gri, kırmızı, altın sarısı ve siyah boya",
+    "welcomeText": "Merhaba Kıvanç! Bugün oyunlarda Sonic'in kırıp altın yüzük ve süper hız kazandığı güç monitörlerini çizeceğiz. Çok havalı olacak!",
+    "welcomeAudio": "audio/voices/cirak_sonic_monitor/welcome.mp3",
+    "colors": [
+      {
+        "name": "Kutu Grisi",
+        "hex": "#94a3b8"
+      },
+      {
+        "name": "Altın Sarısı",
+        "hex": "#eab308"
+      },
+      {
+        "name": "Hız Kırmızısı",
+        "hex": "#ef4444"
+      },
+      {
+        "name": "Ekran Siyahı",
+        "hex": "#1e293b"
+      }
+    ],
+    "previewSvg": "<defs>\n      <linearGradient id=\"mon_gray\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#e2e8f0\"/>\n        <stop offset=\"60%\" stop-color=\"#94a3b8\"/>\n        <stop offset=\"100%\" stop-color=\"#64748b\"/>\n      </linearGradient>\n      <linearGradient id=\"mon_screen\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#1e293b\"/>\n        <stop offset=\"100%\" stop-color=\"#0f172a\"/>\n      </linearGradient>\n      <linearGradient id=\"mon_gold\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#fef08a\"/>\n        <stop offset=\"100%\" stop-color=\"#eab308\"/>\n      </linearGradient>\n    </defs>\n    <ellipse cx=\"178\" cy=\"368\" rx=\"90\" ry=\"12\" fill=\"#cbd5e1\" opacity=\"0.6\"/>\n    <ellipse cx=\"420\" cy=\"452\" rx=\"95\" ry=\"13\" fill=\"#cbd5e1\" opacity=\"0.65\"/>\n    <path d=\"M 125,135 L 102,95 M 228,135 L 250,95\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n    <circle cx=\"102\" cy=\"95\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"3\"/>\n    <circle cx=\"250\" cy=\"95\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"3\"/>\n    <path d=\"M 118,325 L 238,325 L 252,362 L 104,362 Z\" fill=\"#475569\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n    <rect x=\"75\" y=\"135\" width=\"205\" height=\"190\" rx=\"18\" fill=\"url(#mon_gray)\" stroke=\"#0f172a\" stroke-width=\"5.5\"/>\n    <rect x=\"98\" y=\"158\" width=\"159\" height=\"132\" rx=\"10\" fill=\"url(#mon_screen)\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <path d=\"M 122,298 L 146,298 M 208,298 L 232,298\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n    <circle cx=\"242\" cy=\"306\" r=\"6\" fill=\"#22c55e\"/>\n    <circle cx=\"177\" cy=\"218\" r=\"38\" fill=\"url(#mon_gold)\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <circle cx=\"177\" cy=\"218\" r=\"20\" fill=\"#0f172a\" stroke=\"#facc15\" stroke-width=\"3\"/>\n    <path d=\"M 112,254 L 112,280\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n    <ellipse cx=\"128\" cy=\"267\" rx=\"8\" ry=\"12\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"4.5\"/>\n    <path d=\"M 110,168 L 145,168\" fill=\"none\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n    <path d=\"M 358,406 L 482,406 L 498,444 L 342,444 Z\" fill=\"#475569\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n    <rect x=\"315\" y=\"210\" width=\"210\" height=\"196\" rx=\"18\" fill=\"url(#mon_gray)\" stroke=\"#0f172a\" stroke-width=\"5.5\"/>\n    <rect x=\"338\" y=\"234\" width=\"164\" height=\"136\" rx=\"10\" fill=\"url(#mon_screen)\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <path d=\"M 364,378 L 392,378 M 446,378 L 474,378\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n    <circle cx=\"486\" cy=\"386\" r=\"6\" fill=\"#22c55e\"/>\n    <path d=\"M 378,276 Q 402,258 432,276 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linejoin=\"round\"/>\n    <path d=\"M 378,276 L 430,276 Q 484,296 474,330 L 368,330 Q 368,302 378,276 Z\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 370,318 L 474,318 L 474,330 L 368,330 Z\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 372,296 L 456,296\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"8\" stroke-linecap=\"round\"/>\n    <rect x=\"394\" y=\"286\" width=\"18\" height=\"20\" rx=\"3\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"3.5\"/>\n    <path d=\"M 422,162 L 404,190 L 424,190 L 406,216\" fill=\"none\" stroke=\"#facc15\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    <path d=\"M 178,104 L 184,116 L 196,122 L 184,128 L 178,140 L 172,128 L 160,122 L 172,116 Z\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"3\" stroke-linejoin=\"round\"/>",
+    "steps": [
+      {
+        "title": "1. Adım: Sol Monitör Kutusu",
+        "instruction": "Sol üste yuvarlatılmış köşeli bir televizyon monitör çerçevesi çizelim.",
+        "voice": "Oyunlarda Sonic'e süper güçler veren monitör kutularından iki tane çizelim! Sol üste birinci kutuyu çizerek başlayalım.",
+        "svg": "<rect x=\"75\" y=\"135\" width=\"205\" height=\"190\" rx=\"18\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5.5\"/>",
+        "audio": "audio/voices/cirak_sonic_monitor/step_1.mp3"
+      },
+      {
+        "title": "2. Adım: Birinci İç Ekran",
+        "instruction": "Kutunun içine daha küçük bir iç ekran dikdörtgeni çizelim.",
+        "voice": "Kutunun tam ortasına iç ekran çerçevesini çizelim.",
+        "svg": "<rect x=\"98\" y=\"158\" width=\"159\" height=\"132\" rx=\"10\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>",
+        "audio": "audio/voices/cirak_sonic_monitor/step_2.mp3"
+      },
+      {
+        "title": "3. Adım: Monitör Ayaklığı",
+        "instruction": "Altına genişleyen yamuk şeklinde bir monitör ayağı ekleyelim.",
+        "voice": "Kutunun yere oturması için altına trapez ayaklığını çizelim.",
+        "svg": "<path d=\"M 118,325 L 238,325 L 252,362 L 104,362 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_monitor/step_3.mp3"
+      },
+      {
+        "title": "4. Adım: Düğmeler ve Hoparlör",
+        "instruction": "Ekranın altına iki kısa çizgi ve minik açma düğmesi ekleyelim.",
+        "voice": "Ekran altına hoparlör çizgilerini ve minik yuvarlak düğmeyi koyalım.",
+        "svg": "<path d=\"M 122,296 L 146,296 M 208,296 L 232,296\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linecap=\"round\"/><circle cx=\"242\" cy=\"306\" r=\"6\" fill=\"#0f172a\"/>",
+        "audio": "audio/voices/cirak_sonic_monitor/step_4.mp3"
+      },
+      {
+        "title": "5. Adım: Altın Yüzük İkonu",
+        "instruction": "Ekranın içine büyük bir altın yüzük halkası çizelim.",
+        "voice": "Birinci kutumuz 10 Altın Yüzük veriyor! İçine iç içe iki daireyle büyük bir yüzük çizelim.",
+        "svg": "<circle cx=\"177\" cy=\"218\" r=\"38\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\"/><circle cx=\"177\" cy=\"218\" r=\"22\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>",
+        "audio": "audio/voices/cirak_sonic_monitor/step_5.mp3"
+      },
+      {
+        "title": "6. Adım: 10 Sayısı",
+        "instruction": "Yüzüğün sol alt köşesine küçük bir 10 sayısı yazalım.",
+        "voice": "Köşesine 10 tane yüzük olduğunu göstermek için 10 yazalım.",
+        "svg": "<path d=\"M 114,254 L 114,280\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linecap=\"round\"/><ellipse cx=\"128\" cy=\"267\" rx=\"8\" ry=\"12\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\"/>",
+        "audio": "audio/voices/cirak_sonic_monitor/step_6.mp3"
+      },
+      {
+        "title": "7. Adım: Monitör Antenleri",
+        "instruction": "Kutunun üstünden V şeklinde iki küçük anten çıkaralım.",
+        "voice": "Kutunun tepesine sağa ve sola açılan iki küçük anten çizelim.",
+        "svg": "<path d=\"M 125,135 L 102,95 M 228,135 L 250,95\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_monitor/step_7.mp3"
+      },
+      {
+        "title": "8. Adım: Sağdaki Süper Hız Monitörü",
+        "instruction": "Sağ alt tarafa ikinci büyük monitör kutusunu çizelim.",
+        "voice": "Şimdi sağ tarafa biraz daha önde duran ikinci monitörümüzü çizelim.",
+        "svg": "<rect x=\"315\" y=\"210\" width=\"210\" height=\"196\" rx=\"18\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5.5\"/>",
+        "audio": "audio/voices/cirak_sonic_monitor/step_8.mp3"
+      },
+      {
+        "title": "9. Adım: İkinci İç Ekran",
+        "instruction": "İkinci kutunun içine de ekran dikdörtgenini yerleştirelim.",
+        "voice": "Sağdaki kutunun da ekran çerçevesini çizelim.",
+        "svg": "<rect x=\"338\" y=\"234\" width=\"164\" height=\"136\" rx=\"10\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>",
+        "audio": "audio/voices/cirak_sonic_monitor/step_9.mp3"
+      },
+      {
+        "title": "10. Adım: İkinci Ayaklık",
+        "instruction": "Bu monitörün altına da genişleyen ayaklığını çizelim.",
+        "voice": "Altına sağlam ayaklığını da ekleyelim.",
+        "svg": "<path d=\"M 358,406 L 482,406 L 498,444 L 342,444 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_monitor/step_10.mp3"
+      },
+      {
+        "title": "11. Adım: İkinci Düğme Detayı",
+        "instruction": "Alt kenara hoparlör çizgilerini ve açma düğmesini ekleyelim.",
+        "voice": "Bu ekranın da hoparlör çizgilerini ve düğmesini koyalım.",
+        "svg": "<path d=\"M 364,376 L 392,376 M 446,376 L 474,376\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linecap=\"round\"/><circle cx=\"486\" cy=\"386\" r=\"6\" fill=\"#0f172a\"/>",
+        "audio": "audio/voices/cirak_sonic_monitor/step_11.mp3"
+      },
+      {
+        "title": "12. Adım: Sonic Ayakkabı İkonu",
+        "instruction": "Ekranın içine Sonic'in kırmızı koşu ayakkabısının ana hattını çizelim.",
+        "voice": "Bu kutu Süper Hız Kutusu! İçine Sonic'in hızlı ayakkabısını çizelim.",
+        "svg": "<path d=\"M 378,276 L 430,276 Q 484,296 474,330 L 368,330 Q 368,302 378,276 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_monitor/step_12.mp3"
+      },
+      {
+        "title": "13. Adım: Ayakkabı Şeridi ve Tabanı",
+        "instruction": "Ayakkabının alt tabanını ve ortasındaki beyaz şeridi çizelim.",
+        "voice": "Ayakkabının tabanını ve yan şeridini ekleyelim.",
+        "svg": "<path d=\"M 370,316 L 474,316 M 374,296 L 456,296\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_monitor/step_13.mp3"
+      },
+      {
+        "title": "14. Adım: Altın Toka",
+        "instruction": "Şeridin üzerine küçük kare ayakkabı tokası çizelim.",
+        "voice": "Ayakkabının yanına küçük kare tokasını koyalım.",
+        "svg": "<rect x=\"394\" y=\"286\" width=\"18\" height=\"20\" rx=\"3\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3.5\"/>",
+        "audio": "audio/voices/cirak_sonic_monitor/step_14.mp3"
+      },
+      {
+        "title": "15. Adım: Ayakkabı Bilek Kıvrımı",
+        "instruction": "Ayakkabının üst kısmına yumuşak bilek kavisini ekleyelim.",
+        "voice": "Üst kısmına bilek yakasını da ekleyelim.",
+        "svg": "<path d=\"M 376,276 Q 402,258 432,276\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_monitor/step_15.mp3"
+      },
+      {
+        "title": "16. Adım: Hız Şimşeği",
+        "instruction": "Sağ monitörün tam üstüne havalı bir şimşek işareti çizelim.",
+        "voice": "Süper hız kutusunun üstüne şimşek işareti çizelim!",
+        "svg": "<path d=\"M 422,162 L 404,190 L 424,190 L 406,216\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_monitor/step_16.mp3"
+      },
+      {
+        "title": "17. Adım: Parıltı Yıldızı ve Zemin",
+        "instruction": "Üste parıltı yıldızı ve alta zemin çizgisi ekleyelim.",
+        "voice": "Sol üst tarafa parlak bir yıldız ve altlarına gölge çizgisini çizip boyamaya geçelim!",
+        "svg": "<path d=\"M 178,104 L 184,116 L 196,122 L 184,128 L 178,140 L 172,128 L 160,122 L 172,116 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><path d=\"M 85,468 Q 295,482 520,468\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_monitor/step_17.mp3"
+      },
+      {
+        "title": "18. Adım: Canlı Renklendirme & Parlak Gölgeler!",
+        "instruction": "Tebrikler Kıvanç! Şimdi çizimimizi canlı renkler ve parlak gölgelerle boyayıp tamamlayalım!",
+        "voice": "İşte son dokunuş! Şimdi çizimimizi canlı renklerle boyayıp parlatıyoruz. Harika bir iş çıkardın Kıvanç!",
+        "svg": "<defs>\n      <linearGradient id=\"mon_gray\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#e2e8f0\"/>\n        <stop offset=\"60%\" stop-color=\"#94a3b8\"/>\n        <stop offset=\"100%\" stop-color=\"#64748b\"/>\n      </linearGradient>\n      <linearGradient id=\"mon_screen\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#1e293b\"/>\n        <stop offset=\"100%\" stop-color=\"#0f172a\"/>\n      </linearGradient>\n      <linearGradient id=\"mon_gold\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#fef08a\"/>\n        <stop offset=\"100%\" stop-color=\"#eab308\"/>\n      </linearGradient>\n    </defs>\n    <ellipse cx=\"178\" cy=\"368\" rx=\"90\" ry=\"12\" fill=\"#cbd5e1\" opacity=\"0.6\"/>\n    <ellipse cx=\"420\" cy=\"452\" rx=\"95\" ry=\"13\" fill=\"#cbd5e1\" opacity=\"0.65\"/>\n    <path d=\"M 125,135 L 102,95 M 228,135 L 250,95\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n    <circle cx=\"102\" cy=\"95\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"3\"/>\n    <circle cx=\"250\" cy=\"95\" r=\"7\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"3\"/>\n    <path d=\"M 118,325 L 238,325 L 252,362 L 104,362 Z\" fill=\"#475569\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n    <rect x=\"75\" y=\"135\" width=\"205\" height=\"190\" rx=\"18\" fill=\"url(#mon_gray)\" stroke=\"#0f172a\" stroke-width=\"5.5\"/>\n    <rect x=\"98\" y=\"158\" width=\"159\" height=\"132\" rx=\"10\" fill=\"url(#mon_screen)\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <path d=\"M 122,298 L 146,298 M 208,298 L 232,298\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n    <circle cx=\"242\" cy=\"306\" r=\"6\" fill=\"#22c55e\"/>\n    <circle cx=\"177\" cy=\"218\" r=\"38\" fill=\"url(#mon_gold)\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <circle cx=\"177\" cy=\"218\" r=\"20\" fill=\"#0f172a\" stroke=\"#facc15\" stroke-width=\"3\"/>\n    <path d=\"M 112,254 L 112,280\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n    <ellipse cx=\"128\" cy=\"267\" rx=\"8\" ry=\"12\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"4.5\"/>\n    <path d=\"M 110,168 L 145,168\" fill=\"none\" stroke=\"#475569\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n    <path d=\"M 358,406 L 482,406 L 498,444 L 342,444 Z\" fill=\"#475569\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n    <rect x=\"315\" y=\"210\" width=\"210\" height=\"196\" rx=\"18\" fill=\"url(#mon_gray)\" stroke=\"#0f172a\" stroke-width=\"5.5\"/>\n    <rect x=\"338\" y=\"234\" width=\"164\" height=\"136\" rx=\"10\" fill=\"url(#mon_screen)\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <path d=\"M 364,378 L 392,378 M 446,378 L 474,378\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n    <circle cx=\"486\" cy=\"386\" r=\"6\" fill=\"#22c55e\"/>\n    <path d=\"M 378,276 Q 402,258 432,276 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linejoin=\"round\"/>\n    <path d=\"M 378,276 L 430,276 Q 484,296 474,330 L 368,330 Q 368,302 378,276 Z\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 370,318 L 474,318 L 474,330 L 368,330 Z\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 372,296 L 456,296\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"8\" stroke-linecap=\"round\"/>\n    <rect x=\"394\" y=\"286\" width=\"18\" height=\"20\" rx=\"3\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"3.5\"/>\n    <path d=\"M 422,162 L 404,190 L 424,190 L 406,216\" fill=\"none\" stroke=\"#facc15\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    <path d=\"M 178,104 L 184,116 L 196,122 L 184,128 L 178,140 L 172,128 L 160,122 L 172,116 Z\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"3\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_monitor/step_18.mp3"
+      }
+    ]
+  },
+  {
+    "id": "cirak_sonic_green_hill_kale",
+    "categoryId": "sonic",
+    "name": "Green Hill Döngü Yolu",
+    "emoji": "🌴",
+    "level": 1,
+    "levelName": "Çırak",
+    "levelBadge": "🟢 Çırak",
+    "description": "Damalı tepeleri, dev hız döngüsü, altın yüzükleri ve palmiyesiyle Green Hill Zone'u çiz!",
+    "materials": "Kağıt, siyah kalem, yeşil, kahverengi, turuncu, sarı ve mavi boya",
+    "welcomeText": "Harika bir final Kıvanç! Şimdi Sonic'in koştuğu o ünlü palmiyeli, altın yüzüklü ve damalı zeminli Green Hill Zone dünyasını çizeceğiz!",
+    "welcomeAudio": "audio/voices/cirak_sonic_green_hill_kale/welcome.mp3",
+    "colors": [
+      {
+        "name": "Çimen Yeşili",
+        "hex": "#4ade80"
+      },
+      {
+        "name": "Toprak Turuncusu",
+        "hex": "#d97706"
+      },
+      {
+        "name": "Yüzük Altını",
+        "hex": "#facc15"
+      },
+      {
+        "name": "Gökyüzü Mavisi",
+        "hex": "#bae6fd"
+      }
+    ],
+    "previewSvg": "<defs>\n      <linearGradient id=\"gh_sky\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#e0f2fe\"/>\n        <stop offset=\"100%\" stop-color=\"#bae6fd\"/>\n      </linearGradient>\n      <linearGradient id=\"gh_grass\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#4ade80\"/>\n        <stop offset=\"100%\" stop-color=\"#16a34a\"/>\n      </linearGradient>\n    </defs>\n    <rect x=\"45\" y=\"75\" width=\"510\" height=\"380\" rx=\"22\" fill=\"url(#gh_sky)\" opacity=\"0.65\"/>\n    <path d=\"M 380,108 C 392,82 430,82 440,104 C 462,102 472,128 450,136 L 382,136 C 362,132 365,108 380,108 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linejoin=\"round\"/>\n    <path d=\"M 155,455 C 125,295 215,155 308,155 C 405,155 495,295 462,455 L 410,455 C 425,315 372,212 308,212 C 245,212 192,315 208,455 Z\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 164,455 C 138,300 220,168 308,168 C 398,168 480,300 452,455\" fill=\"none\" stroke=\"#4ade80\" stroke-width=\"14\" stroke-linecap=\"round\"/>\n    <path d=\"M 178,455 C 156,305 225,182 308,182 C 392,182 460,305 438,455\" fill=\"none\" stroke=\"#fde047\" stroke-width=\"4.5\" stroke-dasharray=\"14 10\"/>\n    <rect x=\"45\" y=\"455\" width=\"510\" height=\"90\" fill=\"#92400e\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linejoin=\"round\"/>\n    <rect x=\"45\" y=\"472\" width=\"65\" height=\"38\" fill=\"#d97706\"/>\n    <rect x=\"175\" y=\"472\" width=\"65\" height=\"38\" fill=\"#d97706\"/>\n    <rect x=\"305\" y=\"472\" width=\"65\" height=\"38\" fill=\"#d97706\"/>\n    <rect x=\"435\" y=\"472\" width=\"65\" height=\"38\" fill=\"#d97706\"/>\n    <rect x=\"110\" y=\"510\" width=\"65\" height=\"35\" fill=\"#d97706\"/>\n    <rect x=\"240\" y=\"510\" width=\"65\" height=\"35\" fill=\"#d97706\"/>\n    <rect x=\"370\" y=\"510\" width=\"65\" height=\"35\" fill=\"#d97706\"/>\n    <rect x=\"500\" y=\"510\" width=\"55\" height=\"35\" fill=\"#d97706\"/>\n    <path d=\"M 110,478 L 110,545 M 175,472 L 175,545 M 240,478 L 240,545 M 305,472 L 305,545 M 370,478 L 370,545 M 435,472 L 435,545 M 500,478 L 500,545 M 45,510 L 555,510\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3.5\"/>\n    <path d=\"M 45,455 L 555,455 L 555,472 Q 500,492 435,472 Q 370,492 305,472 Q 240,492 175,472 Q 110,492 45,472 Z\" fill=\"url(#gh_grass)\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 102,455 Q 85,345 108,235 L 136,238 Q 116,345 134,455 Z\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 100,415 L 130,415 M 102,370 L 128,370 M 104,325 L 130,325 M 106,280 L 132,280\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3.5\"/>\n    <circle cx=\"110\" cy=\"245\" r=\"10\" fill=\"#78350f\" stroke=\"#0f172a\" stroke-width=\"3.5\"/>\n    <circle cx=\"130\" cy=\"246\" r=\"10\" fill=\"#78350f\" stroke=\"#0f172a\" stroke-width=\"3.5\"/>\n    <path d=\"M 118,235 C 72,188 32,218 48,255 C 66,242 92,240 118,235 Z\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 118,235 C 88,165 135,135 162,175 C 145,195 132,218 118,235 Z\" fill=\"#4ade80\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 118,235 C 152,188 202,202 195,244 C 165,240 140,238 118,235 Z\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"242\" cy=\"222\" r=\"16\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <circle cx=\"242\" cy=\"222\" r=\"7\" fill=\"#bae6fd\" stroke=\"#0f172a\" stroke-width=\"3\"/>\n    <circle cx=\"308\" cy=\"184\" r=\"17\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <circle cx=\"308\" cy=\"184\" r=\"8\" fill=\"#bae6fd\" stroke=\"#0f172a\" stroke-width=\"3\"/>\n    <circle cx=\"374\" cy=\"222\" r=\"16\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <circle cx=\"374\" cy=\"222\" r=\"7\" fill=\"#bae6fd\" stroke=\"#0f172a\" stroke-width=\"3\"/>\n    <path d=\"M 505,455 L 505,365\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"11\" stroke-linecap=\"round\"/>\n    <path d=\"M 505,455 L 505,365\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n    <circle cx=\"505\" cy=\"342\" r=\"22\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <path d=\"M 505,326 L 510,337 L 522,338 L 513,346 L 515,358 L 505,352 L 495,358 L 497,346 L 488,338 L 500,337 Z\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"3\" stroke-linejoin=\"round\"/>",
+    "steps": [
+      {
+        "title": "1. Adım: Green Hill Zemin Bloğu",
+        "instruction": "Alt tarafa geniş ve düz bir Green Hill zemin dikdörtgeni çizelim.",
+        "voice": "Son çizimimizde Sonic'in en ünlü dünyası Green Hill Zone'u çizeceğiz! Alt tarafa geniş zemin bloğunu çizerek başlayalım.",
+        "svg": "<path d=\"M 45,455 L 555,455 L 555,545 L 45,545 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_green_hill_kale/step_1.mp3"
+      },
+      {
+        "title": "2. Adım: Dalgalı Çimen Kenarı",
+        "instruction": "Zeminin üst kısmına dalga dalga sarkan çimen çizgisi çizelim.",
+        "voice": "Zeminin üst kenarına yemyeşil çimler için dalgalı sınırı çizelim.",
+        "svg": "<path d=\"M 45,472 Q 110,492 175,472 Q 240,492 305,472 Q 370,492 435,472 Q 500,492 555,472\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_green_hill_kale/step_2.mp3"
+      },
+      {
+        "title": "3. Adım: Damalı Kaya Kareleri",
+        "instruction": "Zemini dikey ve yatay çizgilerle kare kare damalı hale getirelim.",
+        "voice": "Green Hill'in meşhur damalı deseni için zemini çizgilerle kare kare bölelim!",
+        "svg": "<path d=\"M 110,478 L 110,545 M 175,472 L 175,545 M 240,478 L 240,545 M 305,472 L 305,545 M 370,478 L 370,545 M 435,472 L 435,545 M 500,478 L 500,545 M 45,510 L 555,510\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3.5\"/>",
+        "audio": "audio/voices/cirak_sonic_green_hill_kale/step_3.mp3"
+      },
+      {
+        "title": "4. Adım: Dev Döngü Yolu Dış Halkası",
+        "instruction": "Ortadan kocaman bir köprü gibi dönen dev halka yolunun dış kemerini çizelim.",
+        "voice": "Şimdi Sonic'in hızla döneceği kocaman daire yolun dış kemerini çizelim!",
+        "svg": "<path d=\"M 155,455 C 125,295 215,155 308,155 C 405,155 495,295 462,455\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_green_hill_kale/step_4.mp3"
+      },
+      {
+        "title": "5. Adım: Döngü Yolu İç Kemeri",
+        "instruction": "Dış kemerin içine ikinci bir paralel kavis çizip yolu ortaya çıkaralım.",
+        "voice": "İç tarafına da aynı kavisi çizerek dönen yolu oluşturalım.",
+        "svg": "<path d=\"M 208,455 C 192,315 245,212 308,212 C 372,212 425,315 410,455\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linecap=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_green_hill_kale/step_5.mp3"
+      },
+      {
+        "title": "6. Adım: Yolun Kesik Şerit Çizgisi",
+        "instruction": "Yolun tam ortasına kesik çizgili yarış şeridi çizelim.",
+        "voice": "Yolun ortasından kesik çizgili yarış pisti çizgisi geçirelim.",
+        "svg": "<path d=\"M 178,455 C 156,305 225,182 308,182 C 392,182 460,305 438,455\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3.5\" stroke-dasharray=\"14 10\"/>",
+        "audio": "audio/voices/cirak_sonic_green_hill_kale/step_6.mp3"
+      },
+      {
+        "title": "7. Adım: Palmiye Ağacı Gövdesi",
+        "instruction": "Sol tarafa yukarı uzanan hafif eğri bir palmiye gövdesi çizelim.",
+        "voice": "Sol tarafa tropikal bir Green Hill palmiye ağacı gövdesi çizelim.",
+        "svg": "<path d=\"M 102,455 Q 85,345 108,235 L 136,238 Q 116,345 134,455 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_green_hill_kale/step_7.mp3"
+      },
+      {
+        "title": "8. Adım: Gövde Boğumları",
+        "instruction": "Palmiye gövdesinin üzerine enine kısa boğum çizgileri ekleyelim.",
+        "voice": "Ağaç gövdesine minik çizgiler ekleyip gövdeyi gerçekçi yapalım.",
+        "svg": "<path d=\"M 100,415 L 130,415 M 102,370 L 128,370 M 104,325 L 130,325 M 106,280 L 132,280\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3.5\"/>",
+        "audio": "audio/voices/cirak_sonic_green_hill_kale/step_8.mp3"
+      },
+      {
+        "title": "9. Adım: Sol Palmiye Yaprağı",
+        "instruction": "Ağacın tepesinden sola doğru sarkan büyük bir yaprak çizelim.",
+        "voice": "Tepesinden sola uzanan yeşil bir palmiye yaprağı çizelim.",
+        "svg": "<path d=\"M 118,235 C 72,188 32,218 48,255 C 66,242 92,240 118,235 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_green_hill_kale/step_9.mp3"
+      },
+      {
+        "title": "10. Adım: Üst Palmiye Yaprağı",
+        "instruction": "Tam tepeye yukarı doğru açılan ikinci yaprağı çizelim.",
+        "voice": "Yukarı bakan ikinci büyük palmiye yaprağını ekleyelim.",
+        "svg": "<path d=\"M 118,235 C 88,165 135,135 162,175 C 145,195 132,218 118,235 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_green_hill_kale/step_10.mp3"
+      },
+      {
+        "title": "11. Adım: Sağ Palmiye Yaprağı",
+        "instruction": "Sağ tarafa açılan üçüncü palmiye yaprağını çizelim.",
+        "voice": "Sağ tarafa da güzel bir yaprak daha ekleyelim.",
+        "svg": "<path d=\"M 118,235 C 152,188 202,202 195,244 C 165,240 140,238 118,235 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_green_hill_kale/step_11.mp3"
+      },
+      {
+        "title": "12. Adım: İki Küçük Hindistan Cevizi",
+        "instruction": "Yaprakların hemen altına iki tane yuvarlak hindistan cevizi çizelim.",
+        "voice": "Yaprakların dibine iki küçük hindistan cevizi ekleyelim.",
+        "svg": "<circle cx=\"110\" cy=\"245\" r=\"10\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3.5\"/><circle cx=\"130\" cy=\"246\" r=\"10\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3.5\"/>",
+        "audio": "audio/voices/cirak_sonic_green_hill_kale/step_12.mp3"
+      },
+      {
+        "title": "13. Adım: Üç Altın Yüzük Halkası",
+        "instruction": "Döngü yolunun üst kavisine üç tane altın yüzük dairesi dizelim.",
+        "voice": "Yolun üzerine Sonic'in toplayacağı üç büyük altın yüzük çizelim!",
+        "svg": "<circle cx=\"242\" cy=\"222\" r=\"16\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/><circle cx=\"308\" cy=\"184\" r=\"17\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/><circle cx=\"374\" cy=\"222\" r=\"16\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>",
+        "audio": "audio/voices/cirak_sonic_green_hill_kale/step_13.mp3"
+      },
+      {
+        "title": "14. Adım: Yüzük İç Halkaları",
+        "instruction": "Üç yüzüğün de ortasına birer küçük iç daire ekleyelim.",
+        "voice": "Yüzüklerin ortasındaki küçük delikleri de çizelim.",
+        "svg": "<circle cx=\"242\" cy=\"222\" r=\"7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3.5\"/><circle cx=\"308\" cy=\"184\" r=\"8\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3.5\"/><circle cx=\"374\" cy=\"222\" r=\"7\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3.5\"/>",
+        "audio": "audio/voices/cirak_sonic_green_hill_kale/step_14.mp3"
+      },
+      {
+        "title": "15. Adım: Yıldızlı Kayıt Direği",
+        "instruction": "Sağ tarafa yıldızlı checkpoint direğini ve yuvarlak tabelasını çizelim.",
+        "voice": "Sağ tarafa Sonic'in geçip kaydettiği yıldızlı kontrol direğini çizelim.",
+        "svg": "<path d=\"M 505,455 L 505,365\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"6\" stroke-linecap=\"round\"/><circle cx=\"505\" cy=\"342\" r=\"22\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>",
+        "audio": "audio/voices/cirak_sonic_green_hill_kale/step_15.mp3"
+      },
+      {
+        "title": "16. Adım: Direk Yıldızı",
+        "instruction": "Yuvarlak tabelanın tam içine beş köşeli bir yıldız çizelim.",
+        "voice": "Tabelanın içine harika bir yıldız çizelim!",
+        "svg": "<path d=\"M 505,326 L 510,337 L 522,338 L 513,346 L 515,358 L 505,352 L 495,358 L 497,346 L 488,338 L 500,337 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_green_hill_kale/step_16.mp3"
+      },
+      {
+        "title": "17. Adım: Pofuduk Gökyüzü Bulutu",
+        "instruction": "Sağ üst köşeye pofuduk bir bulut çizip sahnemizi bitirelim.",
+        "voice": "Sağ üst gökyüzüne tatlı bir bulut çizelim. Şimdi Green Hill'i rengarenk boyuyoruz!",
+        "svg": "<path d=\"M 380,108 C 392,82 430,82 440,104 C 462,102 472,128 450,136 L 382,136 C 362,132 365,108 380,108 Z\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_green_hill_kale/step_17.mp3"
+      },
+      {
+        "title": "18. Adım: Canlı Renklendirme & Parlak Gölgeler!",
+        "instruction": "Tebrikler Kıvanç! Şimdi çizimimizi canlı renkler ve parlak gölgelerle boyayıp tamamlayalım!",
+        "voice": "İşte son dokunuş! Şimdi çizimimizi canlı renklerle boyayıp parlatıyoruz. Harika bir iş çıkardın Kıvanç!",
+        "svg": "<defs>\n      <linearGradient id=\"gh_sky\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#e0f2fe\"/>\n        <stop offset=\"100%\" stop-color=\"#bae6fd\"/>\n      </linearGradient>\n      <linearGradient id=\"gh_grass\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#4ade80\"/>\n        <stop offset=\"100%\" stop-color=\"#16a34a\"/>\n      </linearGradient>\n    </defs>\n    <rect x=\"45\" y=\"75\" width=\"510\" height=\"380\" rx=\"22\" fill=\"url(#gh_sky)\" opacity=\"0.65\"/>\n    <path d=\"M 380,108 C 392,82 430,82 440,104 C 462,102 472,128 450,136 L 382,136 C 362,132 365,108 380,108 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"4\" stroke-linejoin=\"round\"/>\n    <path d=\"M 155,455 C 125,295 215,155 308,155 C 405,155 495,295 462,455 L 410,455 C 425,315 372,212 308,212 C 245,212 192,315 208,455 Z\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 164,455 C 138,300 220,168 308,168 C 398,168 480,300 452,455\" fill=\"none\" stroke=\"#4ade80\" stroke-width=\"14\" stroke-linecap=\"round\"/>\n    <path d=\"M 178,455 C 156,305 225,182 308,182 C 392,182 460,305 438,455\" fill=\"none\" stroke=\"#fde047\" stroke-width=\"4.5\" stroke-dasharray=\"14 10\"/>\n    <rect x=\"45\" y=\"455\" width=\"510\" height=\"90\" fill=\"#92400e\" stroke=\"#0f172a\" stroke-width=\"5.5\" stroke-linejoin=\"round\"/>\n    <rect x=\"45\" y=\"472\" width=\"65\" height=\"38\" fill=\"#d97706\"/>\n    <rect x=\"175\" y=\"472\" width=\"65\" height=\"38\" fill=\"#d97706\"/>\n    <rect x=\"305\" y=\"472\" width=\"65\" height=\"38\" fill=\"#d97706\"/>\n    <rect x=\"435\" y=\"472\" width=\"65\" height=\"38\" fill=\"#d97706\"/>\n    <rect x=\"110\" y=\"510\" width=\"65\" height=\"35\" fill=\"#d97706\"/>\n    <rect x=\"240\" y=\"510\" width=\"65\" height=\"35\" fill=\"#d97706\"/>\n    <rect x=\"370\" y=\"510\" width=\"65\" height=\"35\" fill=\"#d97706\"/>\n    <rect x=\"500\" y=\"510\" width=\"55\" height=\"35\" fill=\"#d97706\"/>\n    <path d=\"M 110,478 L 110,545 M 175,472 L 175,545 M 240,478 L 240,545 M 305,472 L 305,545 M 370,478 L 370,545 M 435,472 L 435,545 M 500,478 L 500,545 M 45,510 L 555,510\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3.5\"/>\n    <path d=\"M 45,455 L 555,455 L 555,472 Q 500,492 435,472 Q 370,492 305,472 Q 240,492 175,472 Q 110,492 45,472 Z\" fill=\"url(#gh_grass)\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 102,455 Q 85,345 108,235 L 136,238 Q 116,345 134,455 Z\" fill=\"#b45309\" stroke=\"#0f172a\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 100,415 L 130,415 M 102,370 L 128,370 M 104,325 L 130,325 M 106,280 L 132,280\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3.5\"/>\n    <circle cx=\"110\" cy=\"245\" r=\"10\" fill=\"#78350f\" stroke=\"#0f172a\" stroke-width=\"3.5\"/>\n    <circle cx=\"130\" cy=\"246\" r=\"10\" fill=\"#78350f\" stroke=\"#0f172a\" stroke-width=\"3.5\"/>\n    <path d=\"M 118,235 C 72,188 32,218 48,255 C 66,242 92,240 118,235 Z\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 118,235 C 88,165 135,135 162,175 C 145,195 132,218 118,235 Z\" fill=\"#4ade80\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <path d=\"M 118,235 C 152,188 202,202 195,244 C 165,240 140,238 118,235 Z\" fill=\"#22c55e\" stroke=\"#0f172a\" stroke-width=\"4.5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"242\" cy=\"222\" r=\"16\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <circle cx=\"242\" cy=\"222\" r=\"7\" fill=\"#bae6fd\" stroke=\"#0f172a\" stroke-width=\"3\"/>\n    <circle cx=\"308\" cy=\"184\" r=\"17\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <circle cx=\"308\" cy=\"184\" r=\"8\" fill=\"#bae6fd\" stroke=\"#0f172a\" stroke-width=\"3\"/>\n    <circle cx=\"374\" cy=\"222\" r=\"16\" fill=\"#facc15\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <circle cx=\"374\" cy=\"222\" r=\"7\" fill=\"#bae6fd\" stroke=\"#0f172a\" stroke-width=\"3\"/>\n    <path d=\"M 505,455 L 505,365\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"11\" stroke-linecap=\"round\"/>\n    <path d=\"M 505,455 L 505,365\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n    <circle cx=\"505\" cy=\"342\" r=\"22\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"4.5\"/>\n    <path d=\"M 505,326 L 510,337 L 522,338 L 513,346 L 515,358 L 505,352 L 495,358 L 497,346 L 488,338 L 500,337 Z\" fill=\"#fde047\" stroke=\"#0f172a\" stroke-width=\"3\" stroke-linejoin=\"round\"/>",
+        "audio": "audio/voices/cirak_sonic_green_hill_kale/step_18.mp3"
+      }
+    ]
+  }
 ];
