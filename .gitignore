@@ -1,0 +1,12 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Geçici önizleme çıktıları (render_preview.py)
+scripts/.tmp/
+scripts/preview_*.html
+scripts/preview_*.png
+
+# OS / Editor
+.DS_Store
+Thumbs.db

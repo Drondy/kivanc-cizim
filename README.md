@@ -33,21 +33,32 @@ Klasördeki **`ipad_icin_baslat.bat`** dosyasına çift tıklayın.
 
 ## ✨ Özellikler
 
-- **16 Farklı Zengin Çizim:**
-  - 🐾 **Sevimli Hayvanlar:** Kedi, Köpek, Dinozor (T-Rex), Aslan, Kelebek, Kurbağa
-  - 🌊 **Deniz Dünyası:** Baloncuklu Sevimli Balık, Bebek Köpekbalığı, Süper Ahtapot
-  - 🚀 **Taşıtlar & Uzay:** Uzay Roketi, Hızlı Yarış Arabası, Yolcu Uçağı
-  - 🍦 **Eğlenceli Şeyler:** 3 Katlı Dondurma, Doğum Günü Pastası, Gülen Güneş & Bulut, Süper Robot
-- **Akıllı Kalem Animasyonu:** Her adımı gözünün önünde yavaşça çizer.
+- **56 Farklı Zengin Çizim (🟢 Çırak Seviyesi):**
+  - 💨 **Kirpi Sonic Dünyası (38 çizim):** Sonic, Tails, Knuckles, Amy, Shadow, Super Sonic, Hyper Sonic, Robotnik Eggman, Espio, Vector, Charmy, Jet, Tikal, Werehog, Nine, Motobug, Buzz Bomber, Ölüm Yumurtası Robotu, Green Hill ve daha fazlası
+  - 🐲 **Dinozorlar & Ejderhalar (3 çizim)**
+  - 🦊 **Vahşi & Sevimli Hayvanlar (3 çizim)**
+  - 🏎️ **Süper Arabalar & Taşıtlar (3 çizim)**
+  - 🐬 **Derin Deniz Canlıları (3 çizim)**
+  - 🚀 **Uzay Gemileri & Roketler (3 çizim)**
+  - 🥷 **Anime & Süper Kahramanlar (3 çizim)**
+- **Tamamlanan Çizim İşaretlemesi:** Bitirilen kartlar `localStorage` üzerinden kurdele ve rozetlerle işaretlenir.
+- **Sıfır Mavi Kılavuz & Akıllı Kalem Animasyonu:** Her adım kağıda doğrudan çizilebilen kalıcı siyah konturlar gösterir ve kalem ucunu takip ettirir.
 - **Kıvanç İçin Dev Kontrol Butonları:**
   - 🟢 **Çizdim! Sıradaki Adım** (Büyük yeşil buton)
   - 🔄 **Tekrar Çiz** (Anlamadıysa adımı baştan yavaşça gösterir)
   - ⏮️ **Bir Geri** (Önceki adıma döner)
 - **⏱️ Otomatik Sayaç Modu (Eller Kağıttayken):**
   - İsterse 15 saniyelik sayaç açılır; Kıvanç tablete hiç dokunmadan çizdikçe sistem kendisi sıradaki adıma geçer.
-- **🗣️ Türkçe Sesli Yönlendirme:**
-  - Her adımı sevimli ve anlaşılır bir ses tonuyla Türkçe söyler (*"Şimdi kağıdın ortasına kocaman bir daire çizelim!"*).
-- **🖍️ Boya Kalemi Rehberi:**
-  - Hangi renkleri kullanabileceğini renk kutucuklarıyla gösterir.
-- **🎉 Bitiş Kutlaması:**
-  - Çizim bitince zafer müziği çalar, konfetiler patlar ve boyama aşaması gösterilir.
+- **🗣️ Stüdyo Kalitesinde Doğal Türkçe Seslendirme:**
+  - Tüm karşılama ve adım anlatımları `tr-TR-EmelNeural` insan sesi (MP3) olarak doğrudan oynatılır (*"Şimdi kağıdın ortasına kocaman bir daire çizelim!"*).
+- **🖍️ Boya Kalemi Rehberi & Bitiş Kutlaması:**
+  - Kullanılacak boya kalemlerini gösterir; çizim bitince konfetiler eşliğinde canlı renkli boyama aşamasını açar.
+
+---
+
+## 🛠️ Geliştirici & Antigravity Çalışma Düzeni
+
+- **Kural & Skill:** [GEMINI.md](./GEMINI.md) ve [.agents/skills/kivanc-cizim-ekleme/SKILL.md](./.agents/skills/kivanc-cizim-ekleme/SKILL.md)
+- **Yeni Çizim Önizleme:** `python scripts/render_preview.py --batch <dosya.py>` (veya mevcut katalogdan `--from-catalog --category sonic --last 6`)
+- **Çizim & Ses Ekleme:** `python scripts/add_drawings_tool.py --batch <dosya.py>`
+- **Tam Katalog Denetimi:** `node scripts/audit_catalog.js`
